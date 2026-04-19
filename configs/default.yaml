@@ -1,0 +1,40 @@
+﻿project:
+  name: TRACE
+  seed: 2025
+
+paths:
+  data_root: data
+  raw_train_dir: data/raw/train
+  results_root: results
+  raw_results_dir: results/raw
+  processed_results_dir: results/processed
+  figure_dir: results/figures
+  log_dir: results/logs
+  source_root: src
+
+datasets:
+  names: [beers, flights, hospital, rayyan]
+  clean_file: clean.csv
+  dirty_pattern: "{dataset}_{dirty_id}.csv"
+  dirty_ids: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  constraint_files:
+    holoclean: dc_rules_holoclean.txt
+    horizon: dc_rules-validate-fd-horizon.txt
+
+cleaners:
+  baseline: mode
+  candidates: [baran, bigdansing, boostclean, holoclean, horizon, scared, unified]
+  ground_truth: groundtruth
+
+clusterers:
+  names: [KMEANS, KMEANSNF, KMEANSPPS, GMM, DBSCAN, HC]
+
+scoring:
+  metric: H_alpha
+  silhouette_normalization: "(silhouette + 1) / 2"
+  db_normalization: "1 / (1 + db)"
+
+run:
+  mode: setup_only
+  fail_fast: true
+  overwrite: false

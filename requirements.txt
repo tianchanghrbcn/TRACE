@@ -1,0 +1,10 @@
+﻿pyyaml
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+jsonschema
+pytest
+pyarrow
+optuna

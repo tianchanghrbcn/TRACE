@@ -1,0 +1,14 @@
+﻿inherits: configs/default.yaml
+
+run:
+  mode: A_RELEASE_RESULTS
+  description: "Reproduce tables, TRACE replay, and figures from archived full raw results."
+  requires_full_rerun: false
+  requires_archived_results: true
+  wall_clock_runtime_is_claim: false
+
+archived_results:
+  expected_root: results/raw
+  manifest: artifact/results_manifest.json
+  checksum_file: artifact/SHA256SUMS.txt
+  allow_missing_before_release: true

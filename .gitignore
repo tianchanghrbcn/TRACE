@@ -1,0 +1,52 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+env/
+.conda/
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Local runtime outputs
+results/raw/*
+results/processed/*
+results/figures/*
+results/logs/*
+!results/README.md
+
+# Local packaging outputs
+dist/
+artifacts_local/
+*.tar
+*.tar.gz
+*.tar.zst
+*.zip
+*.7z
+
+# Legacy/generated build artifacts inside imported methods
+src/cleaning/BoostClean/build/
+src/cleaning/BoostClean/dist/
+src/cleaning/BoostClean/*.egg-info/
+src/cleaning/holoclean-master/.vscode/
+src/cleaning/Exp_result/
+src/cleaning/Repaired_res/

@@ -1,0 +1,18 @@
+﻿inherits: configs/default.yaml
+
+run:
+  mode: B_SMOKE_FROM_SCRATCH
+  description: "Run a minimal from-scratch pipeline check."
+  fail_fast: true
+  overwrite: true
+
+datasets:
+  names: [beers]
+  dirty_ids: [1]
+
+cleaners:
+  baseline: mode
+  candidates: [baran, horizon]
+
+clusterers:
+  names: [KMEANS, HC]

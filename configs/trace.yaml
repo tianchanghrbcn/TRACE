@@ -1,0 +1,18 @@
+﻿trace:
+  name: TRACE
+  tau_turn: 0.10
+  tau_hi: 0.20
+
+  cleaner_groups:
+    norm: [unified, horizon, bigdansing]
+    sem: [baran, holoclean]
+    strong: [boostclean, scared]
+
+  target_metrics:
+    hit_95_percent_best_progress: true
+    score_retention_under_same_budget: true
+
+  replay:
+    input_trials: results/raw/trials.csv
+    output_summary: results/processed/trace_summary.csv
+    output_replay_log: results/processed/trace_replay.csv

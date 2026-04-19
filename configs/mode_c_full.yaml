@@ -1,0 +1,20 @@
+﻿inherits: configs/default.yaml
+
+run:
+  mode: C_FULL_FROM_SCRATCH
+  description: "Run the full cleaning-clustering experiment from scratch."
+  fail_fast: false
+  overwrite: false
+  wall_clock_runtime_is_claim: false
+
+datasets:
+  names: [beers, flights, hospital, rayyan]
+  dirty_ids: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+cleaners:
+  baseline: mode
+  candidates: [baran, bigdansing, boostclean, holoclean, horizon, scared, unified]
+  ground_truth: groundtruth
+
+clusterers:
+  names: [KMEANS, KMEANSNF, KMEANSPPS, GMM, DBSCAN, HC]

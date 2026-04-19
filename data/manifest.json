@@ -1,0 +1,44 @@
+﻿{
+  "datasets": {
+    "beers": {
+      "root": "data/raw/train/beers",
+      "clean": "clean.csv",
+      "dirty_pattern": "beers_{dirty_id}.csv",
+      "dirty_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+      "constraints": {
+        "holoclean": "dc_rules_holoclean.txt",
+        "horizon": "dc_rules-validate-fd-horizon.txt"
+      }
+    },
+    "flights": {
+      "root": "data/raw/train/flights",
+      "clean": "clean.csv",
+      "dirty_pattern": "flights_{dirty_id}.csv",
+      "dirty_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+      "constraints": {
+        "holoclean": "dc_rules_holoclean.txt",
+        "horizon": "dc_rules-validate-fd-horizon.txt"
+      }
+    },
+    "hospital": {
+      "root": "data/raw/train/hospital",
+      "clean": "clean.csv",
+      "dirty_pattern": "hospital_{dirty_id}.csv",
+      "dirty_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+      "constraints": {
+        "holoclean": "dc_rules_holoclean.txt",
+        "horizon": "dc_rules-validate-fd-horizon.txt"
+      }
+    },
+    "rayyan": {
+      "root": "data/raw/train/rayyan",
+      "clean": "clean.csv",
+      "dirty_pattern": "rayyan_{dirty_id}.csv",
+      "dirty_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+      "constraints": {
+        "holoclean": "dc_rules_holoclean.txt",
+        "horizon": "dc_rules-validate-fd-horizon.txt"
+      }
+    }
+  }
+}
