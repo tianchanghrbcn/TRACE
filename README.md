@@ -1,4 +1,4 @@
-﻿# TRACE
+﻿# TRACE (Trajectory-guided Recommendations from Actionable Cleaning–clustering Evidence)
 
 Reproducibility package for:
 
