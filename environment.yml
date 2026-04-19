@@ -1,4 +1,4 @@
-name: trace-runner
+﻿name: trace-runner
 channels:
   - conda-forge
 dependencies:
