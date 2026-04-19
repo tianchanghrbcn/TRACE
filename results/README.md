@@ -1,4 +1,4 @@
-﻿# Results
+# Results
 
 This directory is for local runtime outputs.
 

@@ -1,4 +1,4 @@
-﻿{
+{
   "datasets": {
     "beers": {
       "root": "data/raw/train/beers",

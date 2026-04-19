@@ -1,4 +1,4 @@
-﻿# Artifact Modes
+# Artifact Modes
 
 TRACE supports three modes:
 

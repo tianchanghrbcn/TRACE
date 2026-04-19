@@ -1,4 +1,4 @@
-﻿inherits: configs/default.yaml
+inherits: configs/default.yaml
 
 run:
   mode: B_SMOKE_FROM_SCRATCH

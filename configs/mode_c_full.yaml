@@ -1,4 +1,4 @@
-﻿inherits: configs/default.yaml
+inherits: configs/default.yaml
 
 run:
   mode: C_FULL_FROM_SCRATCH

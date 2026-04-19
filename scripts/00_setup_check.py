@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 TRACE setup checker.
 
@@ -92,6 +92,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--repo-root", default=None)
     parser.add_argument("--check-all-data", action="store_true")
     parser.add_argument("--strict", action="store_true")
+    parser.add_argument(
+        "--skip-source-check",
+        action="store_true",
+        help="Skip checking source-code files. Use this for Stage-1 validation before src is normalized.",
+    )
     parser.add_argument(
         "--require-results",
         action="store_true",
@@ -413,7 +418,11 @@ def main() -> int:
 
     ensured_dirs = ensure_dirs(root, cfg)
     root_report = check_root_files(root, errors, warnings)
-    source_report = check_source(root, errors, warnings)
+    if args.skip_source_check:
+        source_report = {"checked": False, "reason": "Skipped by --skip-source-check"}
+        warnings.append("Source-code checks were skipped for Stage-1 validation.")
+    else:
+        source_report = check_source(root, errors, warnings)
     methods_report = check_methods(cfg, errors, warnings)
     data_report = check_data(root, cfg, manifest, errors, warnings, args.check_all_data)
     mode_a_report = check_mode_a_results(root, cfg, args.require_results, errors, warnings)
@@ -424,6 +433,8 @@ def main() -> int:
         strict_warnings = []
         for w in warnings:
             if mode == "A_RELEASE_RESULTS" and "archived result file not found yet" in w and not args.require_results:
+                continue
+            if args.skip_source_check and "Source-code checks were skipped" in w:
                 continue
             strict_warnings.append(w)
         if strict_warnings:
