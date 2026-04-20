@@ -1,63 +1,108 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+Mode imputation cleaner.
+
+This cleaner fills missing values in a dirty CSV file using simple column-wise
+statistics:
+
+- Numeric columns: median value.
+- Non-numeric columns: mode value.
+
+The cleaning logic is intentionally kept simple and compatible with the original
+Mode baseline. TRACE changes are limited to path handling, CLI options, and
+English logging.
+"""
+
+from __future__ import annotations
 
 import argparse
 import os
-import pandas as pd
-import numpy as np
+from pathlib import Path
 
-def parse_args():
-    parser = argparse.ArgumentParser(description="Mode-based data correction script.")
-    parser.add_argument("--clean_path", required=True, help="Path to the clean CSV (unused here).")
-    parser.add_argument("--dirty_path", required=True, help="Path to the dirty CSV to be repaired.")
-    parser.add_argument("--task_name", required=True, help="Task name, used to name output file.")
+import pandas as pd
+
+
+PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run Mode imputation cleaner.")
+    parser.add_argument("--clean_path", required=True, help="Path to clean.csv.")
+    parser.add_argument("--dirty_path", required=True, help="Path to the dirty CSV file.")
+    parser.add_argument("--task_name", required=True, help="Dataset/task name.")
+    parser.add_argument(
+        "--output_dir",
+        default=None,
+        help=(
+            "Directory for repaired CSV output. "
+            "Default: src/cleaning/Repaired_res/mode/<task_name>."
+        ),
+    )
     return parser.parse_args()
 
-def main():
+
+def repair_with_mode(df_dirty: pd.DataFrame) -> pd.DataFrame:
+    """
+    Fill missing values without changing the original algorithmic intent.
+
+    This avoids chained inplace assignments so that the cleaner works with
+    pandas Copy-on-Write behavior.
+    """
+    repaired = df_dirty.copy()
+
+    for col in repaired.columns:
+        if not repaired[col].isna().any():
+            continue
+
+        if pd.api.types.is_numeric_dtype(repaired[col]):
+            median_val = repaired[col].median()
+            if pd.notna(median_val):
+                repaired[col] = repaired[col].fillna(median_val)
+        else:
+            mode_values = repaired[col].mode(dropna=True)
+            if not mode_values.empty:
+                repaired[col] = repaired[col].fillna(mode_values.iloc[0])
+
+    return repaired
+
+
+def main() -> None:
     args = parse_args()
-    clean_csv_path = args.clean_path   # 这里不使用
-    dirty_csv_path = args.dirty_path
-    task_name = args.task_name
 
-    # 1. 读取脏数据
-    if not os.path.isfile(dirty_csv_path):
-        print(f"[ERROR] Dirty file not found: {dirty_csv_path}")
-        return
+    dirty_path = Path(args.dirty_path).resolve()
+    clean_path = Path(args.clean_path).resolve()
 
-    df_dirty = pd.read_csv(dirty_csv_path)
+    if not dirty_path.exists():
+        raise FileNotFoundError(f"Dirty CSV file not found: {dirty_path}")
 
-    # 2. 区分数值列和非数值列
-    numeric_cols = df_dirty.select_dtypes(include=[np.number]).columns
-    cat_cols = df_dirty.select_dtypes(exclude=[np.number]).columns
+    if not clean_path.exists():
+        raise FileNotFoundError(f"Clean CSV file not found: {clean_path}")
 
-    # 3. 对数值列的缺失值：中位数填充
-    for col in numeric_cols:
-        if df_dirty[col].isnull().any():
-            median_val = df_dirty[col].median(skipna=True)
-            df_dirty[col].fillna(median_val, inplace=True)
+    if args.output_dir:
+        output_dir = Path(args.output_dir).resolve()
+    else:
+        output_dir = (
+            PROJECT_ROOT
+            / "src"
+            / "cleaning"
+            / "Repaired_res"
+            / "mode"
+            / args.task_name
+        )
 
-    # 4. 对非数值列的缺失值：众数填充 (mode)
-    for col in cat_cols:
-        if df_dirty[col].isnull().any():
-            mode_val = df_dirty[col].mode(dropna=True)
-            if not mode_val.empty:
-                df_dirty[col].fillna(mode_val.iloc[0], inplace=True)
-            else:
-                # 如果整列都是 NaN，则用“Unknown”占位
-                df_dirty[col].fillna("Unknown", inplace=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 5. 与“else: ... pattern = re.compile(r'^repaired_.*\.csv$')” 匹配对齐
-    #    所以要把修复结果放到:
-    #      /home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/mode/<task_name>/repaired_<task_name>.csv
+    df_dirty = pd.read_csv(dirty_path, encoding="utf-8-sig")
+    repaired = repair_with_mode(df_dirty)
 
-    out_dir = f"/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/mode/{task_name}"
-    os.makedirs(out_dir, exist_ok=True)
-    out_filename = os.path.join(out_dir, f"repaired_{task_name}.csv")
+    output_path = output_dir / f"repaired_{args.task_name}.csv"
+    repaired.to_csv(output_path, index=False, encoding="utf-8")
 
-    df_dirty.to_csv(out_filename, index=False)
+    print(f"Repaired data saved to {output_path}")
 
-    # 6. 打印提示 (必须包含 "Repaired data saved to ...")
-    print(f"Repaired data saved to {out_filename}")
 
 if __name__ == "__main__":
     main()

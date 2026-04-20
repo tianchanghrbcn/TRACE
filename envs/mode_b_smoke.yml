@@ -4,14 +4,22 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - numpy
-  - pandas
+
+  # Core data processing
+  - numpy>=1.24,<2
+  - pandas>=2.0,<3
   - scipy
-  - scikit-learn
+
+  # Clustering and hyperparameter search
+  - scikit-learn>=1.2,<1.4
+  - optuna
+  - kneed
+
+  # Analysis, plotting, and artifact checks
   - matplotlib
   - pyyaml
   - jsonschema
-  - pytest
   - pyarrow
-  - pip:
-      - optuna
+  - openpyxl
+  - statsmodels
+  - tqdm
