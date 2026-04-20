@@ -1,87 +1,195 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-pre-processing.py · 生成各脏文件的特征向量 (missing_rate, noise_rate, error_rate 等)
-运行流程:
-  1) 先调用 4 条注入脚本, 生成 15 份含错 CSV
-  2) 遍历 datasets/train 下各数据集文件夹, 为每个脏 CSV 计算特征
-  3) 输出 results/eigenvectors.json
+Generate feature vectors for dirty CSV files.
+
+This script computes the dataset-level features used by the original
+cleaning-clustering pipeline, including missing rate, anomaly/noise rate,
+total error rate, row count, column count, and the fixed K value.
+
+Default behavior is kept compatible with the original pipeline:
+
+1. Optionally run the error-injection scripts.
+2. Scan datasets under datasets/train.
+3. Write results/eigenvectors.json.
+
+TRACE additions:
+- CLI arguments for data directory, output file, dataset subset, and dirty-id subset.
+- --skip-injection for smoke tests that use already generated dirty tables.
+- Path handling based on the TRACE repository root.
+- English comments and logs.
 """
 
-import os
+from __future__ import annotations
+
+import argparse
 import json
-from typing import Tuple, Union
+import os
+import subprocess
+from pathlib import Path
+from typing import Iterable, Optional, Union
+
 import pandas as pd
-import numpy as np
 
-# ========== 版本&全局配置 ==========
-SCRIPT_VERSION = "eigenvectors/align-v2.2"
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "datasets", "train")
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "..", "..", "results", "eigenvectors.json")
-K_VALUE = 5  # 固定 K=5
+SCRIPT_VERSION = "eigenvectors/trace-compatible-v2.3"
 
-# 主键列：可为 int(列序号，从0起) 或 str(列名)。默认=第1列，与原逻辑一致。
+PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
+
+DEFAULT_DATA_DIR = PROJECT_ROOT / "datasets" / "train"
+DEFAULT_OUTPUT_FILE = PROJECT_ROOT / "results" / "eigenvectors.json"
+DEFAULT_INJECT_SCRIPT = Path(__file__).resolve().parent / "inject_all_errors_advanced.py"
+
+K_VALUE = 5
+
+# Primary key column used for aligning dirty and clean tables.
+# It can be either an integer column index or a column name.
 PK_COL: Union[int, str] = 0
 
-# 对齐与退化策略
-ALIGN_VERBOSE = True                # 打印对齐时的提示
-ALLOW_POSITIONAL_FALLBACK = True    # 无法按主键对齐时，允许“公共列 + 按位置对齐”
+# Alignment policy. These defaults preserve the previous robust fallback behavior.
+ALIGN_VERBOSE = True
+ALLOW_POSITIONAL_FALLBACK = True
 
-# ========== 运行 4 条注入命令的函数 ==========
 
-def run_inject_scripts():
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Generate eigenvector-style feature records for dirty CSV files."
+    )
+    parser.add_argument(
+        "--data-dir",
+        type=Path,
+        default=DEFAULT_DATA_DIR,
+        help="Directory containing dataset folders. Default: datasets/train.",
+    )
+    parser.add_argument(
+        "--output-file",
+        type=Path,
+        default=DEFAULT_OUTPUT_FILE,
+        help="Output JSON path. Default: results/eigenvectors.json.",
+    )
+    parser.add_argument(
+        "--skip-injection",
+        action="store_true",
+        help="Skip error injection and only scan existing dirty CSV files.",
+    )
+    parser.add_argument(
+        "--datasets",
+        nargs="*",
+        default=None,
+        help="Optional dataset subset, for example: --datasets beers flights.",
+    )
+    parser.add_argument(
+        "--dirty-ids",
+        nargs="*",
+        type=int,
+        default=None,
+        help="Optional dirty-file ids, for example: --dirty-ids 1 2 3.",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=42,
+        help="Random seed passed to the error-injection script.",
+    )
+    parser.add_argument(
+        "--inject-script",
+        type=Path,
+        default=DEFAULT_INJECT_SCRIPT,
+        help="Path to inject_all_errors_advanced.py.",
+    )
+    return parser.parse_args()
+
+
+def run_inject_scripts(
+    data_dir: Path,
+    inject_script: Path,
+    datasets: Optional[Iterable[str]] = None,
+    seed: int = 42,
+) -> None:
     """
-    依次执行 4 行注入命令。
-    如需更灵活控制，可改用 subprocess.run()。
-    """
-    commands = [
-        "python inject_all_errors_advanced.py --input ../../../datasets/train/beers/clean.csv "
-        "--output ../../../datasets/train/beers --task_name beers --seed 42",
-        "python inject_all_errors_advanced.py --input ../../../datasets/train/flights/clean.csv "
-        "--output ../../../datasets/train/flights --task_name flights --seed 42",
-        "python inject_all_errors_advanced.py --input ../../../datasets/train/hospital/clean.csv "
-        "--output ../../../datasets/train/hospital --task_name hospital --seed 42",
-        "python inject_all_errors_advanced.py --input ../../../datasets/train/rayyan/clean.csv "
-        "--output ../../../datasets/train/rayyan --task_name rayyan --seed 42"
-    ]
+    Run the error-injection script for each selected dataset.
 
-    print("===== 开始执行错误注入命令 =====")
-    for i, cmd in enumerate(commands, 1):
-        print(f"[{i}] 执行命令: {cmd}")
-        ret = os.system(cmd)  # 0 表示成功
-        if ret != 0:
-            print(f"警告: 命令执行出错 (返回码 {ret}): {cmd}")
+    The original implementation hard-coded four os.system commands. This version
+    keeps the same behavior but builds commands from paths and runs them through
+    subprocess for clearer error reporting.
+    """
+    if datasets is None:
+        datasets = ["beers", "flights", "hospital", "rayyan"]
+
+    inject_script = inject_script.resolve()
+    if not inject_script.exists():
+        raise FileNotFoundError(f"Injection script not found: {inject_script}")
+
+    print("===== Running error injection =====")
+    for index, dataset_name in enumerate(datasets, start=1):
+        dataset_dir = data_dir / dataset_name
+        clean_path = dataset_dir / "clean.csv"
+
+        if not clean_path.exists():
+            print(f"[WARN] clean.csv not found, skip injection for {dataset_name}: {clean_path}")
+            continue
+
+        command = [
+            "python",
+            str(inject_script),
+            "--input",
+            str(clean_path),
+            "--output",
+            str(dataset_dir),
+            "--task_name",
+            dataset_name,
+            "--seed",
+            str(seed),
+        ]
+
+        print(f"[{index}] Running: {' '.join(command)}")
+        completed = subprocess.run(command, text=True)
+        if completed.returncode != 0:
+            print(f"[WARN] Injection command returned {completed.returncode}: {dataset_name}")
         else:
-            print(f"完成: {cmd}")
-    print("===== 四条错误注入命令执行完毕 =====\n")
+            print(f"[INFO] Injection completed: {dataset_name}")
 
-# ========== 对齐与清理工具函数 ==========
+    print("===== Error injection completed =====\n")
+
 
 def _drop_unnamed_cols(df: pd.DataFrame) -> pd.DataFrame:
-    """去掉由保存索引带来的 'Unnamed:*' 临时列。"""
+    """Drop temporary columns created by saving DataFrame indices."""
     if df.empty:
         return df
     keep = ~df.columns.astype(str).str.startswith("Unnamed")
     return df.loc[:, keep].copy()
 
+
 def _strip_pk(df: pd.DataFrame) -> pd.DataFrame:
-    """返回去掉主键列(第1列)的副本（仅用于旧代码兼容，不在最终比较中直接使用）。"""
+    """Return a copy without the first column. Kept for compatibility."""
     return df.iloc[:, 1:].copy() if df.shape[1] > 1 else df.copy()
 
-def _resolve_pk_name(df: pd.DataFrame, df_clean: pd.DataFrame, pk_col: Union[int, str]) -> Union[str, None]:
+
+def _resolve_pk_name(
+    df_dirty: pd.DataFrame,
+    df_clean: pd.DataFrame,
+    pk_col: Union[int, str],
+) -> Optional[str]:
     """
-    解析主键列名：
-      - pk_col 为 int：两侧该位置列名必须一致，否则返回 None
-      - pk_col 为 str：两侧都包含此列名才返回，否则 None
+    Resolve the primary-key column name.
+
+    If pk_col is an integer, both tables must have the same column name at that
+    position. If pk_col is a string, both tables must contain that column.
     """
     if isinstance(pk_col, int):
-        if pk_col < df.shape[1] and pk_col < df_clean.shape[1]:
-            a, b = df.columns[pk_col], df_clean.columns[pk_col]
-            return a if a == b else None
+        if pk_col < df_dirty.shape[1] and pk_col < df_clean.shape[1]:
+            dirty_name = df_dirty.columns[pk_col]
+            clean_name = df_clean.columns[pk_col]
+            return dirty_name if dirty_name == clean_name else None
         return None
-    else:
-        return pk_col if (str(pk_col) in df.columns and str(pk_col) in df_clean.columns) else None
+
+    pk_name = str(pk_col)
+    if pk_name in df_dirty.columns and pk_name in df_clean.columns:
+        return pk_name
+    return None
+
 
 def _align_for_compare(
     df_dirty: pd.DataFrame,
@@ -90,221 +198,283 @@ def _align_for_compare(
     dedup_keep: str = "first",
     verbose: bool = ALIGN_VERBOSE,
     allow_positional_fallback: bool = ALLOW_POSITIONAL_FALLBACK,
-) -> Tuple[pd.DataFrame, pd.DataFrame]:
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
-    返回 (dirty_aligned, clean_aligned)，二者：
-      - 行：已对齐（优先主键交集；否则位置对齐）
-      - 列：仅保留公共列，顺序以 clean 为准
-      - 均不包含主键列（若按主键对齐）
+    Align dirty and clean tables for cell-level comparison.
 
-    额外：在最终比较前再做一次 pandas 的 align + 排序，确保标签一致。
+    The function first tries primary-key alignment. If that fails, it falls back
+    to common-column and positional alignment. The returned DataFrames have the
+    same row/column labels and exclude the primary-key column when key alignment
+    succeeds.
     """
-    A = _drop_unnamed_cols(df_dirty).copy()
-    B = _drop_unnamed_cols(df_clean).copy()
+    dirty = _drop_unnamed_cols(df_dirty).copy()
+    clean = _drop_unnamed_cols(df_clean).copy()
 
-    # —— 1) 优先尝试按主键对齐 ——
-    pk_name = _resolve_pk_name(A, B, pk_col)
+    pk_name = _resolve_pk_name(dirty, clean, pk_col)
     if pk_name is not None:
-        # 去重（若存在重复主键）
-        if not A[pk_name].is_unique:
+        if not dirty[pk_name].is_unique:
             if verbose:
-                print(f"警告: 脏数据主键 `{pk_name}` 存在重复，将保留 {dedup_keep} 条记录。")
-            A = A.drop_duplicates(subset=[pk_name], keep=dedup_keep)
-        if not B[pk_name].is_unique:
+                print(f"[WARN] Dirty primary key `{pk_name}` has duplicates; keep={dedup_keep}.")
+            dirty = dirty.drop_duplicates(subset=[pk_name], keep=dedup_keep)
+
+        if not clean[pk_name].is_unique:
             if verbose:
-                print(f"警告: clean.csv 主键 `{pk_name}` 存在重复，将保留 {dedup_keep} 条记录。")
-            B = B.drop_duplicates(subset=[pk_name], keep=dedup_keep)
+                print(f"[WARN] Clean primary key `{pk_name}` has duplicates; keep={dedup_keep}.")
+            clean = clean.drop_duplicates(subset=[pk_name], keep=dedup_keep)
 
-        # set_index 后主键列不再在 columns 中，相当于“去掉主键列”
-        A = A.set_index(pk_name, drop=True)
-        B = B.set_index(pk_name, drop=True)
+        dirty = dirty.set_index(pk_name, drop=True)
+        clean = clean.set_index(pk_name, drop=True)
 
-        # 列交集（以 clean 顺序为准）
-        common_cols = [c for c in B.columns if c in A.columns]
-        extra_in_A = [c for c in A.columns if c not in B.columns]
-        extra_in_B = [c for c in B.columns if c not in A.columns]
-        if verbose and (extra_in_A or extra_in_B):
-            if extra_in_A:
-                print(f"提示: 脏数据额外列被忽略: {extra_in_A}")
-            if extra_in_B:
-                print(f"提示: clean 额外列被忽略: {extra_in_B}")
+        common_cols = [col for col in clean.columns if col in dirty.columns]
+        extra_dirty = [col for col in dirty.columns if col not in clean.columns]
+        extra_clean = [col for col in clean.columns if col not in dirty.columns]
 
-        A = A[common_cols]
-        B = B[common_cols]
+        if verbose and (extra_dirty or extra_clean):
+            if extra_dirty:
+                print(f"[INFO] Ignore dirty-only columns: {extra_dirty}")
+            if extra_clean:
+                print(f"[INFO] Ignore clean-only columns: {extra_clean}")
 
-        # 主键交集（行对齐 & 排序）
-        common_idx = A.index.intersection(B.index)
+        dirty = dirty[common_cols]
+        clean = clean[common_cols]
+
+        common_idx = dirty.index.intersection(clean.index)
         if len(common_idx) > 0:
-            A = A.loc[common_idx].sort_index()
-            B = B.loc[common_idx].sort_index()
+            dirty = dirty.loc[common_idx].sort_index()
+            clean = clean.loc[common_idx].sort_index()
 
-            # 再做一次严格对齐（含索引与列）
-            A, B = A.align(B, join="inner", axis=None, copy=False)
-            # 显式排序，防止某些版本对齐后残留顺序差异
-            A = A.sort_index(axis=0).sort_index(axis=1)
-            B = B.sort_index(axis=0).sort_index(axis=1)
-            return A, B
-        else:
-            if verbose:
-                print("提示: 主键存在，但两侧主键无交集，将尝试位置兜底对齐。")
+            dirty, clean = dirty.align(clean, join="inner", axis=None)
+            dirty = dirty.sort_index(axis=0).sort_index(axis=1)
+            clean = clean.sort_index(axis=0).sort_index(axis=1)
+            return dirty, clean
 
-    # —— 2) 退化：公共列 + 位置对齐（保底不抛异常） ——
-    if allow_positional_fallback:
-        common_cols = A.columns.intersection(B.columns)
         if verbose:
-            if len(common_cols) == 0:
-                print("提示: 无公共列，位置兜底无法进行；将返回空对齐结果。")
-        A2 = A[common_cols].reset_index(drop=True)
-        B2 = B[common_cols].reset_index(drop=True)
-        n = min(len(A2), len(B2))
-        A2 = A2.iloc[:n].copy()
-        B2 = B2.iloc[:n].copy()
+            print("[INFO] Primary keys have no overlap; use positional fallback.")
 
-        # 再做一次严格对齐，确保标签一致（此时两边都是 RangeIndex + 同列）
-        A2, B2 = A2.align(B2, join="inner", axis=None, copy=False)
-        A2 = A2.sort_index(axis=0).sort_index(axis=1)
-        B2 = B2.sort_index(axis=0).sort_index(axis=1)
-        return A2, B2
+    if allow_positional_fallback:
+        common_cols = dirty.columns.intersection(clean.columns)
+        if verbose and len(common_cols) == 0:
+            print("[INFO] No common columns; positional fallback returns empty aligned tables.")
 
-    # —— 3) 不允许退化：报错 ——
-    raise ValueError("无法按主键对齐，且未允许位置对齐（allow_positional_fallback=False）。")
+        dirty_aligned = dirty[common_cols].reset_index(drop=True)
+        clean_aligned = clean[common_cols].reset_index(drop=True)
 
-# ========== 计算函数（使用对齐后的 DataFrame，并用 NumPy 比较） ==========
+        n_rows = min(len(dirty_aligned), len(clean_aligned))
+        dirty_aligned = dirty_aligned.iloc[:n_rows].copy()
+        clean_aligned = clean_aligned.iloc[:n_rows].copy()
 
-def compute_missing_rate(df: pd.DataFrame, df_clean: pd.DataFrame) -> float:
+        dirty_aligned, clean_aligned = dirty_aligned.align(
+            clean_aligned, join="inner", axis=None
+        )
+        dirty_aligned = dirty_aligned.sort_index(axis=0).sort_index(axis=1)
+        clean_aligned = clean_aligned.sort_index(axis=0).sort_index(axis=1)
+        return dirty_aligned, clean_aligned
+
+    raise ValueError("Failed to align by primary key and positional fallback is disabled.")
+
+
+def compute_missing_rate(df_dirty: pd.DataFrame, df_clean: pd.DataFrame) -> float:
     """
-    r_miss = |M| / N_non‑NaN
-    统计『原本非空(以 clean 为准) ➜ 现在 dirty 为 NaN』的比例。
-    """
-    A, B = _align_for_compare(df, df_clean, pk_col=PK_COL)
+    Compute the missing-value rate.
 
-    # 以 clean 的“原本非空”作为分母
-    mask_non_nan_clean = ~B.isna()
-    N_non_nan = int(mask_non_nan_clean.values.sum())
-    if N_non_nan == 0:
+    The denominator is the number of non-missing cells in the clean table.
+    The numerator counts cells that were non-missing in clean but became NaN
+    in the dirty table.
+    """
+    dirty, clean = _align_for_compare(df_dirty, df_clean, pk_col=PK_COL)
+
+    clean_non_missing = ~clean.isna()
+    denominator = int(clean_non_missing.values.sum())
+    if denominator == 0:
         return 0.0
 
-    # 用 NumPy 进行元素级比较，避免 pandas 再次基于标签对齐
-    miss_mask = mask_non_nan_clean.to_numpy() & A.isna().to_numpy()
-    n_miss = int(miss_mask.sum())
-    return n_miss / N_non_nan
+    missing_mask = clean_non_missing.to_numpy() & dirty.isna().to_numpy()
+    numerator = int(missing_mask.sum())
+    return numerator / denominator
 
-def compute_noise_rate(df: pd.DataFrame, df_clean: pd.DataFrame) -> float:
-    """
-    r_anom = |A| / N_non‑NaN
-    统计『原本非空(以 clean 为准) 且现在 dirty 非 NaN 且 ≠ 原值』的比例。
-    """
-    A, B = _align_for_compare(df, df_clean, pk_col=PK_COL)
 
-    mask_non_nan_clean = ~B.isna()
-    N_non_nan = int(mask_non_nan_clean.values.sum())
-    if N_non_nan == 0:
+def compute_noise_rate(df_dirty: pd.DataFrame, df_clean: pd.DataFrame) -> float:
+    """
+    Compute the anomaly/noise rate.
+
+    The denominator is the number of non-missing cells in the clean table.
+    The numerator counts cells that were non-missing in clean, are non-missing
+    in dirty, but have a different value.
+    """
+    dirty, clean = _align_for_compare(df_dirty, df_clean, pk_col=PK_COL)
+
+    clean_non_missing = ~clean.isna()
+    denominator = int(clean_non_missing.values.sum())
+    if denominator == 0:
         return 0.0
 
-    # 三个条件：原本非空 & 脏值非空 & 值不相等（用 NumPy 比较）
-    cond_clean_non_nan = mask_non_nan_clean.to_numpy()
-    cond_dirty_non_nan = ~A.isna().to_numpy()
-    # 注意：值比较也转 NumPy，避免标签对齐
-    cond_value_diff   = (A.to_numpy() != B.to_numpy())
+    clean_non_missing_arr = clean_non_missing.to_numpy()
+    dirty_non_missing_arr = ~dirty.isna().to_numpy()
+    value_diff_arr = dirty.to_numpy() != clean.to_numpy()
 
-    anom_mask = cond_clean_non_nan & cond_dirty_non_nan & cond_value_diff
-    n_anom = int(anom_mask.sum())
-    return n_anom / N_non_nan
+    anomaly_mask = clean_non_missing_arr & dirty_non_missing_arr & value_diff_arr
+    numerator = int(anomaly_mask.sum())
+    return numerator / denominator
 
-# ========== 单文件处理 ==========
 
-def process_single_file(csv_path: str,
-                        dataset_name: str,
-                        dataset_id: int,
-                        df_clean: pd.DataFrame) -> dict:
+def process_single_file(
+    csv_path: Path,
+    dataset_name: str,
+    dataset_id: int,
+    df_clean: pd.DataFrame,
+) -> dict:
     """
-    读取 CSV，计算特征向量并返回字典。
-    - missing_rate, noise_rate ∈ [0,1]
-    - error_rate = (missing_rate + noise_rate) × 100  (百分比，与注入脚本 r_tot 对齐)
+    Read one dirty CSV file and return its feature vector.
+
+    clean.csv is intentionally skipped by the caller and should not appear in
+    eigenvectors.json.
     """
-    file_name = os.path.basename(csv_path)
-    if file_name == "clean.csv":            # clean.csv 不写 JSON
+    file_name = csv_path.name
+    if file_name == "clean.csv":
         return {}
 
-    df = pd.read_csv(csv_path)
+    df_dirty = pd.read_csv(csv_path, encoding="utf-8-sig")
 
-    missing_rate = compute_missing_rate(df, df_clean)
-    noise_rate   = compute_noise_rate(df, df_clean)
-    error_rate   = (missing_rate + noise_rate) * 100  # 百分数
+    missing_rate = compute_missing_rate(df_dirty, df_clean)
+    noise_rate = compute_noise_rate(df_dirty, df_clean)
+    error_rate = (missing_rate + noise_rate) * 100.0
 
-    feature_vector = {
-        "dataset_id":   dataset_id,
+    return {
+        "dataset_id": dataset_id,
         "dataset_name": dataset_name,
-        "csv_file":     file_name,
-        "error_rate":   error_rate,
-        "K":            K_VALUE,
+        "csv_file": file_name,
+        "error_rate": error_rate,
+        "K": K_VALUE,
         "missing_rate": missing_rate,
-        "noise_rate":   noise_rate,
-        "m":            df.shape[1],   # 列数（含主键）
-        "n":            df.shape[0],   # 行数
+        "noise_rate": noise_rate,
+        "m": df_dirty.shape[1],
+        "n": df_dirty.shape[0],
     }
-    return feature_vector
 
-# ========== 主逻辑 ==========
 
-def main():
+def _dirty_id_from_name(dataset_name: str, file_name: str) -> Optional[int]:
     """
-    每次运行:
-      1) 先执行 4 条错误注入命令
-      2) 再扫描 DATA_DIR 下子文件夹, 读取 CSV, 生成 eigenvectors.json
+    Extract the dirty id from a file name such as beers_1.csv.
+
+    Returns None if the file does not follow the expected pattern.
     """
-    print(f"== Running {os.path.basename(__file__)} · {SCRIPT_VERSION} ==")
+    prefix = f"{dataset_name}_"
+    if not file_name.startswith(prefix) or not file_name.endswith(".csv"):
+        return None
 
-    # 1) 执行注入脚本
-    run_inject_scripts()
+    raw_id = file_name[len(prefix) : -len(".csv")]
+    try:
+        return int(raw_id)
+    except ValueError:
+        return None
 
-    # 2) 遍历数据集
-    if not os.path.isdir(DATA_DIR):
-        print(f"错误: DATA_DIR {DATA_DIR} 不存在或不是文件夹。")
-        return
 
-    all_vectors = []
+def _file_allowed_by_dirty_ids(
+    dataset_name: str,
+    file_name: str,
+    dirty_ids: Optional[set[int]],
+) -> bool:
+    if dirty_ids is None:
+        return True
+
+    dirty_id = _dirty_id_from_name(dataset_name, file_name)
+    return dirty_id in dirty_ids
+
+
+def main() -> None:
+    args = parse_args()
+
+    data_dir = args.data_dir.resolve()
+    output_file = args.output_file.resolve()
+
+    selected_datasets = args.datasets if args.datasets else None
+    selected_dirty_ids = set(args.dirty_ids) if args.dirty_ids else None
+
+    print(f"== Running {Path(__file__).name} · {SCRIPT_VERSION} ==")
+    print(f"[TRACE] Project root: {PROJECT_ROOT}")
+    print(f"[TRACE] Data directory: {data_dir}")
+    print(f"[TRACE] Output file: {output_file}")
+
+    if not args.skip_injection:
+        run_inject_scripts(
+            data_dir=data_dir,
+            inject_script=args.inject_script,
+            datasets=selected_datasets,
+            seed=args.seed,
+        )
+    else:
+        print("[TRACE] Skip error injection; use existing dirty CSV files.")
+
+    if not data_dir.is_dir():
+        raise NotADirectoryError(f"Data directory does not exist: {data_dir}")
+
+    all_vectors: list[dict] = []
     dataset_id_counter = 0
 
-    for dataset_name in sorted(os.listdir(DATA_DIR)):
-        sub_folder = os.path.join(DATA_DIR, dataset_name)
-        if not os.path.isdir(sub_folder):
+    dataset_names = sorted(
+        name
+        for name in os.listdir(data_dir)
+        if (data_dir / name).is_dir()
+    )
+
+    if selected_datasets is not None:
+        selected = set(selected_datasets)
+        dataset_names = [name for name in dataset_names if name in selected]
+
+    for dataset_name in dataset_names:
+        dataset_dir = data_dir / dataset_name
+        clean_path = dataset_dir / "clean.csv"
+
+        if not clean_path.is_file():
+            print(f"[WARN] Missing clean.csv for dataset `{dataset_name}`; skip.")
             continue
 
-        csv_files = [f for f in os.listdir(sub_folder) if f.endswith(".csv")]
+        df_clean = pd.read_csv(clean_path, encoding="utf-8-sig")
+
+        # Keep the original lexicographic ordering for compatibility with the
+        # historical dataset_id assignment.
+        csv_files = sorted(
+            file_name
+            for file_name in os.listdir(dataset_dir)
+            if file_name.endswith(".csv")
+        )
+
         if not csv_files:
-            print(f"警告: 数据集 {dataset_name} 无 CSV，跳过。")
+            print(f"[WARN] No CSV files found for dataset `{dataset_name}`; skip.")
             continue
 
-        clean_path = os.path.join(sub_folder, "clean.csv")
-        if not os.path.isfile(clean_path):
-            print(f"警告: {dataset_name} 缺少 clean.csv，跳过。")
-            continue
-
-        df_clean = pd.read_csv(clean_path)
-
-        for csv_file in sorted(csv_files):
-            if csv_file == "clean.csv":     # clean.csv 不写入 JSON
+        for csv_file in csv_files:
+            if csv_file == "clean.csv":
                 continue
 
-            csv_path = os.path.join(sub_folder, csv_file)
-            vector = process_single_file(csv_path, dataset_name,
-                                         dataset_id_counter, df_clean)
-            if not vector:                  # 安全检查
+            if not _file_allowed_by_dirty_ids(dataset_name, csv_file, selected_dirty_ids):
+                continue
+
+            csv_path = dataset_dir / csv_file
+            vector = process_single_file(
+                csv_path=csv_path,
+                dataset_name=dataset_name,
+                dataset_id=dataset_id_counter,
+                df_clean=df_clean,
+            )
+
+            if not vector:
                 continue
 
             all_vectors.append(vector)
-            print(f"[{dataset_id_counter}] 处理完成: {dataset_name}/{csv_file} "
-                  f"=> error_rate={vector['error_rate']:.2f}%")
+            print(
+                f"[{dataset_id_counter}] Processed {dataset_name}/{csv_file} "
+                f"=> error_rate={vector['error_rate']:.2f}%"
+            )
             dataset_id_counter += 1
 
-    # 3) 写入输出文件
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    with output_file.open("w", encoding="utf-8") as f:
         json.dump(all_vectors, f, indent=4, ensure_ascii=False)
 
-    print(f"\n✅  全部处理完成，共 {len(all_vectors)} 条记录写入: {OUTPUT_FILE}")
+    print(f"\n[TRACE] Completed. Wrote {len(all_vectors)} records to: {output_file}")
 
 
 if __name__ == "__main__":
     main()
+

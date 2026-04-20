@@ -105,3 +105,10 @@ configs/runtime/system.local.env
 /src/cleaning/BoostClean/dist/
 /src/cleaning/BoostClean/*.egg-info/
 /src/cleaning/holoclean-master/.vscode/
+
+# IDE and local environments
+.idea/
+.vscode/
+.venv/
+venv/
+env/
