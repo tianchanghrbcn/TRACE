@@ -81,6 +81,7 @@ SOURCE_CHECKS = {
         "src/pipeline/cleaning_runner.py",
         "src/pipeline/clustering_runner.py",
         "src/pipeline/analysis.py",
+        "src/pipeline/groundtruth.py",
         "scripts/90_run_smoke_from_scratch.py",
     ],
 }

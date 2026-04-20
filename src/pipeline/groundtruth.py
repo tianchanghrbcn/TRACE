@@ -13,7 +13,7 @@ from pathlib import Path
 
 import multiprocessing as mp
 
-from src.pipeline.train.cluster_methods import ClusterMethod, run_clustering
+from src.pipeline.clustering_runner import ClusterMethod, run_clustering
 
 
 def copy_groundtruth(force: bool) -> None:
@@ -85,7 +85,7 @@ def process_record(idx, rec, work_dir, runtime_lut):
 
 
 def cluster_all() -> None:
-    work_dir = Path(__file__).resolve().parents[3]
+    work_dir = Path(__file__).resolve().parents[2]
     ev_path = work_dir / "results/eigenvectors.json"
     clu_path = work_dir / "results/clustered_results_groundtruth.json"
     cln_path = work_dir / "results/cleaned_results.json"
