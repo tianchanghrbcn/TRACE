@@ -37,7 +37,8 @@ PROJECT_ROOT = Path(
     )
 ).resolve()
 
-TRAIN_DIR = PROJECT_ROOT / "src" / "pipeline" / "train"
+PIPELINE_DIR = Path(__file__).resolve().parent
+DEFAULT_SUBPROCESS_CWD = PROJECT_ROOT
 
 
 CLEANER_ID_TO_NAME = {
@@ -82,7 +83,7 @@ def _print_process_output(stdout: Optional[str], stderr: Optional[str]) -> None:
 def run_with_time(
     command: list[str],
     *,
-    cwd: Optional[Path | str] = TRAIN_DIR,
+    cwd: Optional[Path | str] = DEFAULT_SUBPROCESS_CWD,
     text: bool = True,
 ) -> tuple[subprocess.CompletedProcess, float]:
     """
@@ -221,7 +222,7 @@ def run_error_correction(
                 "--output_dir",
                 str(mode_output_dir),
             ]
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] Mode completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 2:
@@ -255,7 +256,7 @@ def run_error_correction(
             start_time = time.perf_counter()
             process = subprocess.Popen(
                 command,
-                cwd=str(TRAIN_DIR),
+                cwd=str(DEFAULT_SUBPROCESS_CWD),
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True,
@@ -334,7 +335,7 @@ def run_error_correction(
                     "0",
                 ]
             )
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] HoloClean completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 4:
@@ -356,7 +357,7 @@ def run_error_correction(
                     clean_path,
                 ]
             )
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] BigDansing completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 5:
@@ -378,7 +379,7 @@ def run_error_correction(
                     clean_path,
                 ]
             )
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] BoostClean completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 6:
@@ -400,7 +401,7 @@ def run_error_correction(
                     clean_path,
                 ]
             )
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] Horizon completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 7:
@@ -422,7 +423,7 @@ def run_error_correction(
                     clean_path,
                 ]
             )
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] SCAReD completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 8:
@@ -444,7 +445,7 @@ def run_error_correction(
                     clean_path,
                 ]
             )
-            _, runtime = run_with_time(command, cwd=TRAIN_DIR)
+            _, runtime = run_with_time(command, cwd=DEFAULT_SUBPROCESS_CWD)
             print(f"[INFO] Unified completed for `{dataset_name}` ({runtime:.2f}s).")
 
         elif algorithm_id == 9:
