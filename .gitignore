@@ -77,3 +77,31 @@ configs/runtime/system.local.env
 # Generated cleaning outputs inside source tree
 /src/cleaning/Repaired_res/
 /src/cleaning/Exp_result/
+
+# Compatibility input link/directory for the original pipeline
+/datasets/
+
+# Original pipeline outputs
+/results/eigenvectors.json
+/results/cleaned_results.json
+/results/clustered_results.json
+/results/clustered_results_groundtruth.json
+/results/analyzed_results.json
+/results/cleaned_data/
+/results/clustered_data/
+/results/analysis_results/
+
+# Standard artifact outputs
+/results/raw/*
+/results/processed/*
+/results/figures/*
+/results/logs/*
+!/results/README.md
+
+# Generated cleaning outputs inside source tree
+/src/cleaning/Repaired_res/
+/src/cleaning/Exp_result/
+/src/cleaning/BoostClean/build/
+/src/cleaning/BoostClean/dist/
+/src/cleaning/BoostClean/*.egg-info/
+/src/cleaning/holoclean-master/.vscode/
