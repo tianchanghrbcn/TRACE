@@ -210,7 +210,8 @@ def main() -> None:
     run_command(
         [
             sys.executable,
-            "src/pipeline/train/pre-processing.py",
+            "-m",
+            "src.pipeline.preprocess",
             "--skip-injection",
             "--data-dir",
             "datasets/train",
@@ -226,7 +227,8 @@ def main() -> None:
     run_command(
         [
             sys.executable,
-            "src/pipeline/train/train_pipeline.py",
+            "-m",
+            "src.pipeline.runner",
             "--max-records",
             "1",
             "--workers",
