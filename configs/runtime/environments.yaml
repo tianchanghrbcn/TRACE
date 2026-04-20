@@ -1,0 +1,41 @@
+environments:
+  mode_a_release:
+    purpose: "Validate archived results, build analysis tables, replay TRACE, and generate figures."
+    env_name: "trace-runner"
+    env_file: "envs/mode_a_trace_runner.yml"
+    setup_script: "scripts/setup/setup_mode_a.sh"
+    requires_system_services: false
+    requires_archived_results: true
+
+  mode_b_smoke:
+    purpose: "Run a small from-scratch smoke test."
+    setup_env_name: "trace-runner"
+    setup_env_file: "envs/mode_b_smoke.yml"
+    run_env_name: "trace-runner"
+    run_env_file: "envs/mode_b_smoke.yml"
+    fallback_run_env_name: "torch110"
+    fallback_run_env_file: "envs/mode_c_pipeline_original.yml"
+    setup_script: "scripts/setup/setup_mode_b.sh"
+    requires_system_services: false
+    notes:
+      - "Mode B should first use lightweight cleaners/clusterers."
+      - "If the original pipeline imports packages not available in trace-runner, use the torch110 fallback."
+
+  mode_c_full:
+    purpose: "Run the full original cleaning-clustering experiment from scratch."
+    primary_env_name: "torch110"
+    primary_env_file: "envs/mode_c_pipeline_original.yml"
+    setup_script: "scripts/setup/setup_mode_c_full.sh"
+    requires_system_services: true
+    auxiliary_envs:
+      holoclean:
+        env_name: "hc37"
+        python: "3.7"
+        source_dir: "src/cleaning/holoclean-master"
+      boostclean:
+        env_name: "activedetect"
+        python: "2.7"
+        source_dir: "src/cleaning/BoostClean"
+    notes:
+      - "This is the original full pipeline environment. It is intentionally kept heavy for reproducibility."
+      - "A smaller environment can be derived only after the smoke pipeline is validated."
