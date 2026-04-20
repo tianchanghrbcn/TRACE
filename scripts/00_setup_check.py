@@ -76,15 +76,14 @@ SOURCE_CHECKS = {
         "src/clustering/HC/HC.py",
     ],
     "pipeline": [
-        "src/pipeline/train/train_pipeline.py",
-        "src/pipeline/train/error_correction.py",
-        "src/pipeline/train/cluster_methods.py",
-        "src/pipeline/train/search.py",
-        "src/pipeline/utils/analyze_cleaning.py",
-        "src/pipeline/utils/analyze_cluster.py",
+        "src/pipeline/preprocess.py",
+        "src/pipeline/runner.py",
+        "src/pipeline/cleaning_runner.py",
+        "src/pipeline/clustering_runner.py",
+        "src/pipeline/analysis.py",
+        "scripts/90_run_smoke_from_scratch.py",
     ],
 }
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
