@@ -84,6 +84,7 @@ SOURCE_CHECKS = {
         "src/pipeline/groundtruth.py",
         "src/pipeline/method_registry.py",
         "scripts/90_run_smoke_from_scratch.py",
+        "scripts/91_run_clusterer_coverage.py",
         "configs/methods.yaml",
     ],
 }
