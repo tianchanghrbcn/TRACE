@@ -1,167 +1,277 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-DBSCAN with core / border / noise statistics + param-shift tracking
-保持 4 行固定文本输出字段
+DBSCAN clustering with core / border / noise statistics.
+
+Input environment variables:
+- CSV_FILE_PATH: path to the cleaned CSV file.
+- DATASET_ID: legacy dataset id.
+- ALGO: cleaning algorithm name.
+- OUTPUT_DIR: output directory for clustering results.
+- CLEAN_STATE: optional state label, usually "raw" or "cleaned".
+
+TRACE-compatible environment variables:
+- TRACE_PROJECT_ROOT: repository root.
+- TRACE_N_TRIALS: number of Optuna trials. Default: 150.
+- TRACE_OPTUNA_SEED: optional Optuna sampler seed.
+- TRACE_OPTUNA_VERBOSE: set to 1 to show Optuna trial logs.
+
+Outputs:
+- repaired_<dataset_id>.txt
+- repaired_<dataset_id>_<clean_state>_core_stats.json
+- repaired_<dataset_id>_<clean_state>_optuna_trials.json
+- repaired_<dataset_id>_param_shift.json, if paired raw/cleaned stats exist.
 """
-import os, time, json
+
+from __future__ import annotations
+
+import json
+import os
+import time
+from pathlib import Path
+from typing import Any, Optional
+
 import numpy as np
-import pandas as pd
 import optuna
+import pandas as pd
 from sklearn.cluster import DBSCAN
+from sklearn.metrics import davies_bouldin_score, pairwise_distances, silhouette_score
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import silhouette_score, davies_bouldin_score, pairwise_distances
 
-# ----------------------------- 环境变量 -----------------------------
-csv_file_path  = os.getenv("CSV_FILE_PATH")
-dataset_id     = os.getenv("DATASET_ID")
-algorithm_name = os.getenv("ALGO")
-clean_state    = os.getenv("CLEAN_STATE", "raw")          # raw / cleaned
 
-if not csv_file_path:
-    raise SystemExit("CSV_FILE_PATH not set")
-csv_file_path = os.path.normpath(csv_file_path)
+METHOD_NAME = "DBSCAN"
+ALPHA = 0.47
+BETA = 1.0 - ALPHA
+GAMMA = 0.0
 
-# ------------------------------ 读取数据 -----------------------------
-df = pd.read_csv(csv_file_path)
-excluded = [c for c in df.columns if 'id' in c.lower()]
-X = df[df.columns.difference(excluded)].copy()
-for c in X.columns:
-    if X[c].dtype in ("object", "category"):
-        # 用出现频率映射类别
-        X[c] = X[c].map(X[c].value_counts(normalize=True))
-X = X.dropna()
-X_scaled = StandardScaler().fit_transform(X)
 
-# ------------------------ 指标权重 (α+β=1) ------------------------
-alpha = 0.47
-beta  = 1 - alpha
-gamma = 0.00
-# -------------------------- 预计算 SSE_max --------------------------
-global_centroid = X_scaled.mean(axis=0)
-SSE_max = float(np.sum((X_scaled - global_centroid) ** 2))
+def getenv_required(name: str) -> str:
+    value = os.getenv(name)
+    if not value:
+        raise SystemExit(f"{name} is not provided.")
+    return value
 
-start_time = time.time()
 
-# -------------------------- 评价函数 -------------------------------
-def _sse(labels: np.ndarray) -> float:
-    """计算聚类方案的总 SSE（忽略噪声点 −1）。"""
+CSV_FILE_PATH = str(Path(getenv_required("CSV_FILE_PATH")).resolve())
+DATASET_ID = str(os.getenv("DATASET_ID", "unknown"))
+ALGORITHM_NAME = os.getenv("ALGO", "unknown_cleaner")
+CLEAN_STATE = os.getenv("CLEAN_STATE", "cleaned")
+
+PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
+
+OUTPUT_DIR = Path(
+    os.environ.get(
+        "OUTPUT_DIR",
+        str(PROJECT_ROOT / "results" / "clustered_data" / METHOD_NAME / ALGORITHM_NAME / f"clustered_{DATASET_ID}"),
+    )
+).resolve()
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+N_TRIALS = int(os.getenv("TRACE_N_TRIALS", "150"))
+OPTUNA_SEED_RAW = os.getenv("TRACE_OPTUNA_SEED")
+OPTUNA_SEED = int(OPTUNA_SEED_RAW) if OPTUNA_SEED_RAW not in (None, "") else None
+
+if os.getenv("TRACE_OPTUNA_VERBOSE", "0") != "1":
+    optuna.logging.set_verbosity(optuna.logging.WARNING)
+
+
+def load_features(csv_path: str) -> np.ndarray:
+    df = pd.read_csv(csv_path, encoding="utf-8-sig")
+    excluded_cols = [column for column in df.columns if "id" in column.lower()]
+    feature_columns = df.columns.difference(excluded_cols)
+
+    features = df[feature_columns].copy()
+    for column in features.columns:
+        if features[column].dtype in ("object", "category"):
+            frequencies = features[column].value_counts(normalize=True)
+            features[column] = features[column].map(frequencies)
+
+    features = features.dropna()
+    if features.empty:
+        raise SystemExit("No valid rows remain after preprocessing.")
+
+    if len(features) < 3:
+        raise SystemExit("DBSCAN requires at least 3 valid rows.")
+
+    return StandardScaler().fit_transform(features)
+
+
+X_SCALED = load_features(CSV_FILE_PATH)
+GLOBAL_CENTROID = X_SCALED.mean(axis=0)
+SSE_MAX = float(np.sum((X_SCALED - GLOBAL_CENTROID) ** 2))
+START_TIME = time.time()
+
+
+def compute_sse(labels: np.ndarray) -> float:
+    """Compute SSE and ignore DBSCAN noise labels."""
     sse = 0.0
-    for lbl in np.unique(labels):
-        if lbl == -1:                         # 跳过噪声
+    for label in np.unique(labels):
+        if label == -1:
             continue
-        pts = X_scaled[labels == lbl]
-        if pts.size == 0:
+
+        points = X_SCALED[labels == label]
+        if len(points) == 0:
             continue
-        centroid = pts.mean(axis=0)
-        sse += np.sum((pts - centroid) ** 2)
+
+        centroid = points.mean(axis=0)
+        sse += np.sum((points - centroid) ** 2)
+
     return float(sse)
 
-def evaluate(labels: np.ndarray):
-    """返回 (综合得分, silhouette, DB, noise_ratio, SSE)"""
-    n_clusters = len(np.unique(labels)) - (1 if -1 in labels else 0)
-    noise_ratio = float((labels == -1).mean())
 
-    # 若不足两个簇，silhouette/DB 无法定义，直接给极差分数
-    if n_clusters < 2:
-        return -np.inf, np.nan, np.nan, noise_ratio, np.nan
-
-    sil = silhouette_score(X_scaled, labels)
-    db  = davies_bouldin_score(X_scaled, labels)
-    db  = max(db, 1e-6)                       # 防止除零
-
-    sse = _sse(labels)
-    S = (sil + 1.0) / 2.0  # [-1,1] → [0,1]
-    D = 1.0 / (1.0 + db)  # [0,∞) → (0,1]
+def combined_score(db_score: float, sil_score: float, sse: float) -> float:
+    """Compute the TRACE-compatible clustering score."""
+    normalized_sil = (sil_score + 1.0) / 2.0
+    normalized_db = 1.0 / (1.0 + max(db_score, 1e-12))
     eps = 1e-12
 
-    combined = 1.0 / (alpha / max(S, eps) + beta / max(D, eps))
-    return combined, sil, db, noise_ratio, sse
+    return 1.0 / (
+        ALPHA / max(normalized_sil, eps)
+        + BETA / max(normalized_db, eps)
+    )
 
-# -------------------------- Optuna 搜索 -----------------------------
-def objective(trial):
-    eps         = trial.suggest_float("eps", 0.1, 2.0, step=0.05)
+
+def evaluate(labels: np.ndarray) -> Optional[dict[str, Any]]:
+    """Return clustering metrics, or None if labels are invalid."""
+    unique_labels = np.unique(labels)
+    non_noise_clusters = [label for label in unique_labels if label != -1]
+    noise_ratio = float((labels == -1).mean())
+
+    if len(non_noise_clusters) < 2:
+        return None
+
+    if len(unique_labels) >= len(labels):
+        return None
+
+    try:
+        sil = float(silhouette_score(X_SCALED, labels))
+        db = float(davies_bouldin_score(X_SCALED, labels))
+    except Exception:
+        return None
+
+    sse = compute_sse(labels)
+    score = combined_score(db, sil, sse)
+
+    return {
+        "combined_score": float(score),
+        "silhouette": sil,
+        "davies_bouldin": db,
+        "noise_ratio": noise_ratio,
+        "sse": float(sse),
+    }
+
+
+OPTUNA_TRIALS: list[dict[str, Any]] = []
+
+
+def objective(trial: optuna.Trial) -> float:
+    eps = trial.suggest_float("eps", 0.1, 2.0, step=0.05)
     min_samples = trial.suggest_int("min_samples", 5, 50)
 
-    labels = DBSCAN(eps=eps, min_samples=min_samples).fit_predict(X_scaled)
-    score, sil, db, noise, _ = evaluate(labels)
+    labels = DBSCAN(eps=eps, min_samples=min_samples).fit_predict(X_SCALED)
+    metrics = evaluate(labels)
 
-    # 噪声惩罚
-    return score * (1.0 - noise)
+    if metrics is None:
+        raise optuna.exceptions.TrialPruned()
 
-study = optuna.create_study(direction="maximize")
-study.optimize(objective, n_trials=150)
+    penalized_score = metrics["combined_score"] * (1.0 - metrics["noise_ratio"])
 
-best_params = study.best_params
+    OPTUNA_TRIALS.append(
+        {
+            "trial_number": int(trial.number),
+            "eps": float(eps),
+            "min_samples": int(min_samples),
+            "penalized_score": float(penalized_score),
+            **metrics,
+        }
+    )
 
-# -------------------------- 最终模型 & 统计 --------------------------
-dbscan = DBSCAN(eps=best_params["eps"],
-                min_samples=best_params["min_samples"])
-labels = dbscan.fit_predict(X_scaled)
-combined_score, sil_score, db_score, noise_ratio, sse_score = evaluate(labels)
+    return penalized_score
 
-# —— 统计核心 / 边界 / 噪声 —— #
-dmat = pairwise_distances(X_scaled, metric="euclidean")
-core_mask    = np.sum(dmat <= best_params["eps"], axis=1) >= best_params["min_samples"]
-noise_mask   = labels == -1
-border_mask  = ~core_mask & ~noise_mask
-core_count   = int(core_mask.sum())
-border_count = int(border_mask.sum())
-noise_count  = int(noise_mask.sum())
 
-neighbor_hist = np.bincount(np.clip(np.sum(dmat <= best_params["eps"], axis=1), 0, 49))
+sampler = optuna.samplers.TPESampler(seed=OPTUNA_SEED) if OPTUNA_SEED is not None else None
+study = optuna.create_study(direction="maximize", sampler=sampler)
+study.optimize(objective, n_trials=N_TRIALS, show_progress_bar=False)
 
-core_stats = {
-    "core_count": core_count,
-    "border_count": border_count,
-    "noise_count": noise_count,
-    "noise_ratio": noise_ratio,
-    "neighbor_hist": neighbor_hist.tolist(),      # 0..49+
-    "combined_score": combined_score,            # 方便后续 param-shift
-    "silhouette": sil_score,
-    "davies_bouldin": db_score,
-    "sse": sse_score,
-    "weights": {"alpha": alpha, "beta": beta, "gamma": gamma}
+if not OPTUNA_TRIALS:
+    raise SystemExit("No valid DBSCAN trial completed.")
+
+best_trial = max(OPTUNA_TRIALS, key=lambda item: item["penalized_score"])
+best_params = {
+    "eps": float(best_trial["eps"]),
+    "min_samples": int(best_trial["min_samples"]),
 }
 
-# ------------------------------ 输出 -------------------------------
-base = os.path.splitext(os.path.basename(csv_file_path))[0]
-root = os.path.join(os.getcwd(), "..", "..", "..", "results",
-                    "clustered_data", "DBSCAN", algorithm_name,
-                    f"clustered_{dataset_id}")
-os.makedirs(root, exist_ok=True)
+labels_final = DBSCAN(
+    eps=best_params["eps"],
+    min_samples=best_params["min_samples"],
+).fit_predict(X_SCALED)
 
-# 4 行固定格式文本
-txt_path = os.path.join(root, f"{base}.txt")
-with open(txt_path, "w", encoding="utf-8") as fh:
-    fh.write("\n".join([
-        f"Best parameters: min_samples={best_params['min_samples']}, eps={best_params['eps']}",
-        f"Final Combined Score: {combined_score}",
-        f"Final Silhouette Score: {sil_score}",
-        f"Final Davies-Bouldin Score: {db_score}"
-    ]))
+final_metrics = evaluate(labels_final)
+if final_metrics is None:
+    raise SystemExit("Final DBSCAN model produced invalid labels.")
 
-# 保存核心统计
-core_path = os.path.join(root, f"{base}_{clean_state}_core_stats.json")
-with open(core_path, "w", encoding="utf-8") as fp:
+distance_matrix = pairwise_distances(X_SCALED, metric="euclidean")
+neighbor_counts = np.sum(distance_matrix <= best_params["eps"], axis=1)
+
+core_mask = neighbor_counts >= best_params["min_samples"]
+noise_mask = labels_final == -1
+border_mask = ~core_mask & ~noise_mask
+
+neighbor_hist = np.bincount(np.clip(neighbor_counts.astype(int), 0, 49), minlength=50)
+
+base_name = Path(CSV_FILE_PATH).stem
+total_runtime_sec = time.time() - START_TIME
+
+text_output = "\n".join(
+    [
+        f"Best parameters: {best_params}",
+        f"Final Combined Score: {final_metrics['combined_score']}",
+        f"Final Silhouette Score: {final_metrics['silhouette']}",
+        f"Final Davies-Bouldin Score: {final_metrics['davies_bouldin']}",
+    ]
+)
+(OUTPUT_DIR / f"{base_name}.txt").write_text(text_output, encoding="utf-8")
+
+core_stats = {
+    "clean_state": CLEAN_STATE,
+    "best_params": best_params,
+    "core_count": int(core_mask.sum()),
+    "border_count": int(border_mask.sum()),
+    "noise_count": int(noise_mask.sum()),
+    "neighbor_hist": neighbor_hist.tolist(),
+    "weights": {"alpha": ALPHA, "beta": BETA, "gamma": GAMMA},
+    "sse_max": float(SSE_MAX),
+    "n_trials_requested": int(N_TRIALS),
+    "n_trials_completed": int(len(OPTUNA_TRIALS)),
+    "total_runtime_sec": float(total_runtime_sec),
+    **final_metrics,
+}
+
+core_path = OUTPUT_DIR / f"{base_name}_{CLEAN_STATE}_core_stats.json"
+with core_path.open("w", encoding="utf-8") as fp:
     json.dump(core_stats, fp, indent=4)
 
-# -------------------------- param-shift -----------------------------
-other_state = "cleaned" if clean_state == "raw" else "raw"
-other_path  = os.path.join(root, f"{base}_{other_state}_core_stats.json")
-if os.path.exists(other_path):
-    with open(other_path) as fp:
-        other = json.load(fp)
+trials_path = OUTPUT_DIR / f"{base_name}_{CLEAN_STATE}_optuna_trials.json"
+with trials_path.open("w", encoding="utf-8") as fp:
+    json.dump(OPTUNA_TRIALS, fp, indent=4)
 
+other_state = "cleaned" if CLEAN_STATE == "raw" else "raw"
+other_path = OUTPUT_DIR / f"{base_name}_{other_state}_core_stats.json"
+
+if other_path.exists():
+    other = json.loads(other_path.read_text(encoding="utf-8"))
     shift = {
-        "dataset_id": dataset_id,
-        "delta_eps": best_params["eps"] - float(other.get("covariance type", 0)),
-        "delta_min_samples": best_params["min_samples"] - int(other.get("n_components", 0)),
-        "delta_combined": combined_score - float(other.get("combined_score", 0))
+        "dataset_id": DATASET_ID,
+        "delta_eps": best_params["eps"] - float(other.get("best_params", {}).get("eps", 0.0)),
+        "delta_min_samples": best_params["min_samples"] - int(other.get("best_params", {}).get("min_samples", 0)),
+        "delta_combined": core_stats["combined_score"] - float(other.get("combined_score", 0.0)),
     }
-    shift_path = os.path.join(root, f"{base}_param_shift.json")
-    with open(shift_path, "w", encoding="utf-8") as fp:
+
+    with (OUTPUT_DIR / f"{base_name}_param_shift.json").open("w", encoding="utf-8") as fp:
         json.dump(shift, fp, indent=4)
 
-print(f"All files saved in: {root}")
-print(f"Program completed in {time.time() - start_time:.2f} sec")
+print(f"All files saved in: {OUTPUT_DIR}")
+print(f"Program completed in {total_runtime_sec:.2f} sec")

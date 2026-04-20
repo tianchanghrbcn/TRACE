@@ -1,223 +1,356 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-K-MC² + Vanilla K-means (tracking) — 目标函数升级版
-★ I/O 完全对齐 baseline_kmeans.py ★
+K-MC2 initialization plus vanilla K-Means tracking.
+
+Input environment variables:
+- CSV_FILE_PATH
+- DATASET_ID
+- ALGO
+- OUTPUT_DIR
+- CLEAN_STATE
+
+TRACE-compatible environment variables:
+- TRACE_PROJECT_ROOT
+- TRACE_N_TRIALS: number of Optuna trials. Default: 30.
+- TRACE_OPTUNA_SEED
+- TRACE_OPTUNA_VERBOSE
+
+Outputs:
+- repaired_<dataset_id>.txt
+- repaired_<dataset_id>_<clean_state>_centroid_history.json
+- repaired_<dataset_id>_<clean_state>_summary.json
 """
 
-import os, time, math, json, numpy as np, pandas as pd, optuna
+from __future__ import annotations
+
+import json
+import math
+import os
+import time
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import optuna
+import pandas as pd
+from sklearn.metrics import calinski_harabasz_score, davies_bouldin_score, silhouette_score
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import (silhouette_score,
-                             davies_bouldin_score,
-                             calinski_harabasz_score)
 
-# --------------------------------------------------
-# 0. 环境参数与数据读取
-# --------------------------------------------------
-csv_file_path  = os.getenv("CSV_FILE_PATH")
-dataset_id     = os.getenv("DATASET_ID")
-algorithm_name = os.getenv("ALGO")
-if not csv_file_path:
-    raise SystemExit("Error: CSV_FILE_PATH env not set.")
 
-csv_file_path = os.path.normpath(csv_file_path)
-try:
-    df = pd.read_csv(csv_file_path)
-    print("Data loaded successfully.")
-except FileNotFoundError:
-    raise SystemExit(f"File '{csv_file_path}' not found.")
+METHOD_NAME = "KMEANSPPS"
+ALPHA = 0.47
+BETA = 1.0 - ALPHA
+GAMMA = 0.0
 
-# ---------- 权重设置 (α+β=1) ----------
-alpha = 0.47
-beta  = 1 - alpha
-gamma = 0.00
 
-start_time = time.time()
+def getenv_required(name: str) -> str:
+    value = os.getenv(name)
+    if not value:
+        raise SystemExit(f"{name} is not provided.")
+    return value
 
-# --------------------------------------------------
-# 1. 预处理
-# --------------------------------------------------
-excluded_cols = [c for c in df.columns if 'id' in c.lower()]
-X = df[df.columns.difference(excluded_cols)].copy()
-for col in X.select_dtypes(['object', 'category']).columns:
-    X[col] = X[col].map(X[col].value_counts(normalize=True))
-X = X.dropna()
-X_scaled = StandardScaler().fit_transform(X)     # (n_samples, n_features)
 
-# 预计算全局 SSE_max（所有样本视为一个簇）
-global_centroid = X_scaled.mean(axis=0)
-SSE_max = float(np.sum((X_scaled - global_centroid) ** 2))
+CSV_FILE_PATH = str(Path(getenv_required("CSV_FILE_PATH")).resolve())
+DATASET_ID = str(os.getenv("DATASET_ID", "unknown"))
+ALGORITHM_NAME = os.getenv("ALGO", "unknown_cleaner")
+CLEAN_STATE = os.getenv("CLEAN_STATE", "cleaned")
 
-# --------------------------------------------------
-# 2. K-MC² 初始化
-# --------------------------------------------------
-def k_mc2(X, k, m, rng):
-    n = X.shape[0]
-    centers = [X[rng.integers(n)]]
-    for _ in range(1, k):
-        x = X[rng.integers(n)]
-        dx = np.min(np.sum((x - centers) ** 2, axis=1))
-        for _ in range(m):
-            y = X[rng.integers(n)]
-            dy = np.min(np.sum((y - centers) ** 2, axis=1))
-            if dy / dx > rng.random():
-                x, dx = y, dy
-        centers.append(x)
+PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
+
+OUTPUT_DIR = Path(
+    os.environ.get(
+        "OUTPUT_DIR",
+        str(PROJECT_ROOT / "results" / "clustered_data" / METHOD_NAME / ALGORITHM_NAME / f"clustered_{DATASET_ID}"),
+    )
+).resolve()
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+N_TRIALS = int(os.getenv("TRACE_N_TRIALS", "30"))
+OPTUNA_SEED_RAW = os.getenv("TRACE_OPTUNA_SEED")
+OPTUNA_SEED = int(OPTUNA_SEED_RAW) if OPTUNA_SEED_RAW not in (None, "") else None
+
+if os.getenv("TRACE_OPTUNA_VERBOSE", "0") != "1":
+    optuna.logging.set_verbosity(optuna.logging.WARNING)
+
+
+def load_features(csv_path: str) -> np.ndarray:
+    df = pd.read_csv(csv_path, encoding="utf-8-sig")
+    excluded_cols = [column for column in df.columns if "id" in column.lower()]
+    feature_columns = df.columns.difference(excluded_cols)
+
+    features = df[feature_columns].copy()
+    for column in features.columns:
+        if features[column].dtype in ("object", "category"):
+            frequencies = features[column].value_counts(normalize=True)
+            features[column] = features[column].map(frequencies)
+
+    features = features.dropna()
+    if features.empty:
+        raise SystemExit("No valid rows remain after preprocessing.")
+
+    if len(features) < 3:
+        raise SystemExit("KMEANSPPS requires at least 3 valid rows.")
+
+    return StandardScaler().fit_transform(features)
+
+
+X_SCALED = load_features(CSV_FILE_PATH)
+GLOBAL_CENTROID = X_SCALED.mean(axis=0)
+SSE_MAX = float(np.sum((X_SCALED - GLOBAL_CENTROID) ** 2))
+START_TIME = time.time()
+
+
+def combined_score(db_score: float, sil_score: float, sse: float) -> float:
+    normalized_sil = (sil_score + 1.0) / 2.0
+    normalized_db = 1.0 / (1.0 + max(db_score, 1e-12))
+    eps = 1e-12
+
+    return 1.0 / (
+        ALPHA / max(normalized_sil, eps)
+        + BETA / max(normalized_db, eps)
+    )
+
+
+def validate_labels(labels: np.ndarray) -> bool:
+    unique_labels = np.unique(labels)
+    return 2 <= len(unique_labels) < len(labels)
+
+
+def k_mc2(
+    data: np.ndarray,
+    n_clusters: int,
+    chain_length: int,
+    rng: np.random.Generator,
+) -> np.ndarray:
+    """
+    K-MC2 initialization.
+
+    This preserves the original idea while guarding against zero-distance
+    proposals.
+    """
+    n_samples = data.shape[0]
+    centers = [data[rng.integers(n_samples)]]
+
+    for _ in range(1, n_clusters):
+        candidate = data[rng.integers(n_samples)]
+        candidate_distance = float(np.min(np.sum((candidate - centers) ** 2, axis=1)))
+
+        for _ in range(chain_length):
+            proposal = data[rng.integers(n_samples)]
+            proposal_distance = float(np.min(np.sum((proposal - centers) ** 2, axis=1)))
+
+            if candidate_distance <= 1e-12:
+                accept = proposal_distance > candidate_distance
+            else:
+                accept = (proposal_distance / candidate_distance) > rng.random()
+
+            if accept:
+                candidate = proposal
+                candidate_distance = proposal_distance
+
+        centers.append(candidate)
+
     return np.vstack(centers)
 
-# --------------------------------------------------
-# 3. 手写 K-means（带追踪）
-# --------------------------------------------------
-def kmeans_track(X, init_centers, max_iter=300, tol=1e-4):
+
+def kmeans_track(
+    data: np.ndarray,
+    initial_centers: np.ndarray,
+    max_iter: int = 300,
+    tolerance: float = 1e-4,
+) -> tuple[np.ndarray, np.ndarray, list[dict[str, float]]]:
     rng = np.random.default_rng(0)
-    centers = init_centers.copy()
-    k = centers.shape[0]
-    history = []
+    centers = initial_centers.copy()
+    n_clusters = centers.shape[0]
 
-    for t in range(1, max_iter + 1):
-        dists = np.linalg.norm(X[:, None, :] - centers[None, :, :], axis=2)
-        labels = dists.argmin(axis=1)
+    history: list[dict[str, float]] = []
+    labels = np.zeros(data.shape[0], dtype=int)
 
-        new_centers = np.vstack([
-            X[labels == j].mean(axis=0) if (labels == j).any()
-            else X[rng.integers(X.shape[0])]
-            for j in range(k)
-        ])
+    for iteration in range(1, max_iter + 1):
+        distances = np.linalg.norm(data[:, None, :] - centers[None, :, :], axis=2)
+        labels = distances.argmin(axis=1)
+
+        new_centers = np.vstack(
+            [
+                data[labels == cluster_id].mean(axis=0)
+                if np.any(labels == cluster_id)
+                else data[rng.integers(data.shape[0])]
+                for cluster_id in range(n_clusters)
+            ]
+        )
 
         delta = float(np.linalg.norm(new_centers - centers))
-        rel_delta = delta / (np.linalg.norm(centers) + 1e-12)
-        sse = float(np.sum((X - new_centers[labels]) ** 2))
-        history.append({"iter": t, "delta": delta,
-                        "relative_delta": rel_delta, "sse": sse})
+        relative_delta = delta / (float(np.linalg.norm(centers)) + 1e-12)
+        sse = float(np.sum((data - new_centers[labels]) ** 2))
 
-        if delta < tol:
-            centers = new_centers
-            break
+        history.append(
+            {
+                "iter": float(iteration),
+                "delta": delta,
+                "relative_delta": relative_delta,
+                "sse": sse,
+            }
+        )
+
         centers = new_centers
+        if delta < tolerance:
+            break
 
     return labels, centers, history
 
-# --------------------------------------------------
-# 4. Optuna 搜索
-# --------------------------------------------------
-optuna_trials = []
 
-def _add_extra_stats(rec):
-    deltas = [h["delta"] for h in rec["history"] if h["delta"] > 1e-12]
+def add_convergence_stats(record: dict[str, Any]) -> None:
+    deltas = [item["delta"] for item in record["history"] if item["delta"] > 1e-12]
+
     if len(deltas) > 1:
-        rec["auc_delta"] = float(sum(deltas))
-        rec["geo_decay"] = float((deltas[-1] / deltas[0]) ** (1 / (len(deltas) - 1)))
+        record["auc_delta"] = float(np.sum(deltas))
+        record["geo_decay"] = float((deltas[-1] / deltas[0]) ** (1 / (len(deltas) - 1)))
     else:
-        rec["auc_delta"] = rec["geo_decay"] = 0.0
+        record["auc_delta"] = 0.0
+        record["geo_decay"] = 0.0
 
-def combined_score(db, sil, sse):
-    S = (sil + 1.0) / 2.0  # [-1,1] → [0,1]
-    D = 1.0 / (1.0 + db)  # [0,∞) → (0,1]
-    eps = 1e-12
 
-    return 1.0 / (alpha / max(S, eps) + beta / max(D, eps))
+def make_record(
+    trial_number: int,
+    n_clusters: int,
+    chain_length: int,
+    labels: np.ndarray,
+    history: list[dict[str, float]],
+) -> dict[str, Any]:
+    if not validate_labels(labels):
+        raise optuna.exceptions.TrialPruned()
 
-def objective(trial):
-    k = trial.suggest_int("n_clusters", 5, max(2, int(math.isqrt(X_scaled.shape[0]))))
-    m = trial.suggest_int("m", 100, 500)
+    sse = float(history[-1]["sse"])
+    db_score = float(davies_bouldin_score(X_SCALED, labels))
+    sil_score = float(silhouette_score(X_SCALED, labels))
+    ch_score = float(calinski_harabasz_score(X_SCALED, labels))
+    score = combined_score(db_score, sil_score, sse)
 
-    init_centers = k_mc2(X_scaled, k, m, np.random.default_rng(trial.number))
-    labels, _, hist = kmeans_track(X_scaled, init_centers)
+    record = {
+        "trial_number": int(trial_number),
+        "n_clusters": int(n_clusters),
+        "m": int(chain_length),
+        "iterations": int(len(history)),
+        "combined_score": float(score),
+        "silhouette": sil_score,
+        "davies_bouldin": db_score,
+        "calinski_harabasz": ch_score,
+        "sse": sse,
+        "history": history,
+    }
+    add_convergence_stats(record)
+    return record
 
-    db  = davies_bouldin_score(X_scaled, labels)
-    sil = silhouette_score(X_scaled, labels)
-    ch  = calinski_harabasz_score(X_scaled, labels)
-    sse = hist[-1]["sse"]
-    combo = combined_score(db, sil, sse)
 
-    rec = {"trial_number": trial.number,
-           "n_clusters": k, "m": m,
-           "iterations": len(hist),
-           "combined_score": combo,
-           "silhouette": sil,
-           "davies_bouldin": db,
-           "calinski_harabasz": ch,
-           "sse": sse,
-           "history": hist}
-    _add_extra_stats(rec)
-    optuna_trials.append(rec)
-    return combo                               # 最大化综合得分
+OPTUNA_TRIALS: list[dict[str, Any]] = []
 
-optuna.create_study(direction="maximize").optimize(objective, n_trials=30)
 
-best_trial = max(optuna_trials, key=lambda d: d["combined_score"])
-k_opt, m_opt = best_trial["n_clusters"], best_trial["m"]
-print(f"Optimal k (Optuna): {k_opt}  (m={m_opt})")
+def objective(trial: optuna.Trial) -> float:
+    n_rows = X_SCALED.shape[0]
+    max_k = min(max(5, math.isqrt(n_rows)), n_rows - 1)
+    min_k = min(5, max_k)
 
-# --------------------------------------------------
-# 5. 最终模型
-# --------------------------------------------------
-final_init = k_mc2(X_scaled, k_opt, m_opt, np.random.default_rng(42))
-labels_final, centers_final, hist_final = kmeans_track(X_scaled, final_init)
+    if max_k < 2:
+        raise optuna.exceptions.TrialPruned()
 
-final_sse = hist_final[-1]["sse"]
-final_db  = davies_bouldin_score(X_scaled, labels_final)
-final_sil = silhouette_score(X_scaled, labels_final)
-final_ch  = calinski_harabasz_score(X_scaled, labels_final)
-final_combo = combined_score(final_db, final_sil, final_sse)
-final_iters = len(hist_final)
+    n_clusters = trial.suggest_int("n_clusters", min_k, max_k)
+    chain_length = trial.suggest_int("m", 100, 500)
 
-# 将最终运行结果附加到历史
-best_trial_final = best_trial.copy()
-best_trial_final.update({"history": hist_final,
-                         "iterations": final_iters,
-                         "sse": final_sse,
-                         "silhouette": final_sil,
-                         "davies_bouldin": final_db,
-                         "calinski_harabasz": final_ch,
-                         "combined_score": final_combo})
-optuna_trials.append(best_trial_final)
+    initial_centers = k_mc2(
+        X_SCALED,
+        n_clusters=n_clusters,
+        chain_length=chain_length,
+        rng=np.random.default_rng(trial.number),
+    )
+    labels, _, history = kmeans_track(X_SCALED, initial_centers)
 
-# --------------------------------------------------
-# 6. 输出文件（与基准脚本一致）
-# --------------------------------------------------
-root_out = os.path.join(os.getcwd(), "..", "..", "..", "results",
-                        "clustered_data", "KMEANSPPS",
-                        algorithm_name,
-                        f"clustered_{dataset_id}")
-os.makedirs(root_out, exist_ok=True)
+    record = make_record(
+        trial_number=trial.number,
+        n_clusters=n_clusters,
+        chain_length=chain_length,
+        labels=labels,
+        history=history,
+    )
 
-base = os.path.splitext(os.path.basename(csv_file_path))[0]
+    OPTUNA_TRIALS.append(record)
+    return record["combined_score"]
 
-# ---- TXT ----
-with open(os.path.join(root_out, f"{base}.txt"), "w", encoding="utf-8") as f:
-    f.write("\n".join([
-        f"Best parameters: k={k_opt}",
-        f"Number of clusters: {k_opt}",
-        f"Final Combined Score: {final_combo}",
-        f"Final Silhouette Score: {final_sil}",
-        f"Final Davies-Bouldin Score: {final_db}",
-        f"Calinski-Harabasz: {final_ch}",
-        f"Iterations to converge: {final_iters}",
-        f"Final SSE: {final_sse}"
-    ]))
 
-# ---- JSON 历史 ----
-with open(os.path.join(root_out, f"{base}_centroid_history.json"),
-          "w", encoding="utf-8") as fp:
-    json.dump(optuna_trials, fp, indent=4)
+sampler = optuna.samplers.TPESampler(seed=OPTUNA_SEED) if OPTUNA_SEED is not None else None
+study = optuna.create_study(direction="maximize", sampler=sampler)
+study.optimize(objective, n_trials=N_TRIALS, show_progress_bar=False)
 
-# ---- JSON summary ----
+if not OPTUNA_TRIALS:
+    raise SystemExit("No valid KMEANSPPS trial completed.")
+
+best_record = max(OPTUNA_TRIALS, key=lambda item: item["combined_score"])
+final_k = int(best_record["n_clusters"])
+final_m = int(best_record["m"])
+
+final_initial_centers = k_mc2(
+    X_SCALED,
+    n_clusters=final_k,
+    chain_length=final_m,
+    rng=np.random.default_rng(42),
+)
+labels_final, _, history_final = kmeans_track(X_SCALED, final_initial_centers)
+
+final_record = make_record(
+    trial_number=-1,
+    n_clusters=final_k,
+    chain_length=final_m,
+    labels=labels_final,
+    history=history_final,
+)
+
+total_runtime_sec = time.time() - START_TIME
+base_name = Path(CSV_FILE_PATH).stem
+best_params = {"n_clusters": final_k, "m": final_m}
+
+text_output = "\n".join(
+    [
+        f"Best parameters: {best_params}",
+        f"Final Combined Score: {final_record['combined_score']}",
+        f"Final Silhouette Score: {final_record['silhouette']}",
+        f"Final Davies-Bouldin Score: {final_record['davies_bouldin']}",
+        f"Calinski-Harabasz: {final_record['calinski_harabasz']}",
+        f"Iterations to converge: {final_record['iterations']}",
+        f"Final SSE: {final_record['sse']}",
+    ]
+)
+(OUTPUT_DIR / f"{base_name}.txt").write_text(text_output, encoding="utf-8")
+
+history_path = OUTPUT_DIR / f"{base_name}_{CLEAN_STATE}_centroid_history.json"
+with history_path.open("w", encoding="utf-8") as fp:
+    json.dump(OPTUNA_TRIALS + [final_record], fp, indent=4)
+
 summary = {
-    "n_trials":          len(optuna_trials),
-    "avg_iterations":    float(np.mean([t["iterations"] for t in optuna_trials])),
-    "median_iterations": float(np.median([t["iterations"] for t in optuna_trials])),
-    "avg_auc_delta":     float(np.mean([t["auc_delta"] for t in optuna_trials])),
-    "avg_geo_decay":     float(np.mean([t["geo_decay"] for t in optuna_trials])),
-    "best_k":            k_opt,
-    "best_combined_score": final_combo,
-    "best_sse":          final_sse,
-    "weights": {"alpha": alpha, "beta": beta, "gamma": gamma},
-    "total_runtime_sec": time.time() - start_time
+    "clean_state": CLEAN_STATE,
+    "best_params": best_params,
+    "best_k": final_k,
+    "best_m": final_m,
+    "combined_score": float(final_record["combined_score"]),
+    "silhouette": float(final_record["silhouette"]),
+    "davies_bouldin": float(final_record["davies_bouldin"]),
+    "calinski_harabasz": float(final_record["calinski_harabasz"]),
+    "sse": float(final_record["sse"]),
+    "sse_max": float(SSE_MAX),
+    "weights": {"alpha": ALPHA, "beta": BETA, "gamma": GAMMA},
+    "n_trials_requested": int(N_TRIALS),
+    "n_trials_completed": int(len(OPTUNA_TRIALS)),
+    "avg_iterations": float(np.mean([item["iterations"] for item in OPTUNA_TRIALS])),
+    "median_iterations": float(np.median([item["iterations"] for item in OPTUNA_TRIALS])),
+    "avg_auc_delta": float(np.mean([item["auc_delta"] for item in OPTUNA_TRIALS])),
+    "avg_geo_decay": float(np.mean([item["geo_decay"] for item in OPTUNA_TRIALS])),
+    "total_runtime_sec": float(total_runtime_sec),
 }
-with open(os.path.join(root_out, f"{base}_summary.json"),
-          "w", encoding="utf-8") as fp:
+
+summary_path = OUTPUT_DIR / f"{base_name}_{CLEAN_STATE}_summary.json"
+with summary_path.open("w", encoding="utf-8") as fp:
     json.dump(summary, fp, indent=4)
 
-print("History and summary files saved.")
-print(f"Total runtime: {summary['total_runtime_sec']:.2f} s")
+print(f"All files saved in: {OUTPUT_DIR}")
+print(f"Program completed in {total_runtime_sec:.2f} sec")

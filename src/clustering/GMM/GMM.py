@@ -1,258 +1,330 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-GMM clustering with full EM-iteration tracking
-* 保持原有输入/输出格式
-* 目标函数改为: α·Sil + β·DB^{-1} + γ·(1-SSE/SSE_max) ，α+β+γ=1
-* 额外记录: n_iter, lower_bound 曲线, log-likelihood AUC, 迭代衰减率、参数偏移
+Gaussian Mixture Model clustering with EM-iteration tracking.
+
+Input environment variables:
+- CSV_FILE_PATH
+- DATASET_ID
+- ALGO
+- OUTPUT_DIR
+- CLEAN_STATE
+
+TRACE-compatible environment variables:
+- TRACE_PROJECT_ROOT
+- TRACE_N_TRIALS: number of Optuna trials. Default: 30.
+- TRACE_OPTUNA_SEED
+- TRACE_OPTUNA_VERBOSE
+
+Outputs:
+- repaired_<dataset_id>.txt
+- repaired_<dataset_id>_<clean_state>_gmm_history.json
+- repaired_<dataset_id>_<clean_state>_summary.json
+- repaired_<dataset_id>_param_shift.json, if paired raw/cleaned summary exists.
 """
 
-import numpy as np
-import pandas as pd
-import optuna
+from __future__ import annotations
+
+import json
+import math
 import os
 import time
-import math
-import json
-from kneed import KneeLocator
+import warnings
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import optuna
+import pandas as pd
+from sklearn.exceptions import ConvergenceWarning
+from sklearn.metrics import davies_bouldin_score, silhouette_score
 from sklearn.mixture import GaussianMixture
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import silhouette_score, davies_bouldin_score
 
-# --------------------------------------------------
-# 0. 环境读取
-# --------------------------------------------------
-csv_file_path  = os.getenv("CSV_FILE_PATH")
-dataset_id     = os.getenv("DATASET_ID")
-algorithm_name = os.getenv("ALGO")
-clean_state    = os.getenv("CLEAN_STATE", "raw")    # raw / cleaned (用于后续Δk 计算)
 
-if not csv_file_path:
-    raise SystemExit("Error: CSV_FILE_PATH env not set.")
-csv_file_path = os.path.normpath(csv_file_path)
+METHOD_NAME = "GMM"
+ALPHA = 0.47
+BETA = 1.0 - ALPHA
+GAMMA = 0.0
 
-try:
-    df = pd.read_csv(csv_file_path)
-except FileNotFoundError:
-    raise SystemExit(f"File '{csv_file_path}' not found.")
 
-start_time = time.time()
+def getenv_required(name: str) -> str:
+    value = os.getenv(name)
+    if not value:
+        raise SystemExit(f"{name} is not provided.")
+    return value
 
-# --------------------------------------------------
-# 1. 预处理
-# --------------------------------------------------
-excluded_cols = [c for c in df.columns if 'id' in c.lower()]
-X = df[df.columns.difference(excluded_cols)].copy()
 
-for col in X.columns:
-    if X[col].dtype in ("object", "category"):
-        X.loc[:, col] = X[col].map(X[col].value_counts(normalize=True))
-X = X.dropna()
-X_scaled = StandardScaler().fit_transform(X)
+CSV_FILE_PATH = str(Path(getenv_required("CSV_FILE_PATH")).resolve())
+DATASET_ID = str(os.getenv("DATASET_ID", "unknown"))
+ALGORITHM_NAME = os.getenv("ALGO", "unknown_cleaner")
+CLEAN_STATE = os.getenv("CLEAN_STATE", "cleaned")
 
-# --------------------------------------------------
-# 2. 目标函数权重 (α+β+γ=1)
-# --------------------------------------------------
-alpha = 0.47
-beta  = 1 - alpha
-gamma = 0.00
+PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
 
-# 预计算全局 SSE_max（所有样本当作一个簇时的 SSE）
-global_centroid = X_scaled.mean(axis=0)
-SSE_max = float(np.sum((X_scaled - global_centroid) ** 2))
+OUTPUT_DIR = Path(
+    os.environ.get(
+        "OUTPUT_DIR",
+        str(PROJECT_ROOT / "results" / "clustered_data" / METHOD_NAME / ALGORITHM_NAME / f"clustered_{DATASET_ID}"),
+    )
+).resolve()
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# --------------------------------------------------
-# 3. 辅助函数
-# --------------------------------------------------
-def _sse(labels: np.ndarray) -> float:
-    """计算聚类方案的总 SSE（忽略噪声标签 -1, 虽然 GMM 不会产生 -1）。"""
+N_TRIALS = int(os.getenv("TRACE_N_TRIALS", "30"))
+OPTUNA_SEED_RAW = os.getenv("TRACE_OPTUNA_SEED")
+OPTUNA_SEED = int(OPTUNA_SEED_RAW) if OPTUNA_SEED_RAW not in (None, "") else None
+
+if os.getenv("TRACE_OPTUNA_VERBOSE", "0") != "1":
+    optuna.logging.set_verbosity(optuna.logging.WARNING)
+
+warnings.filterwarnings("ignore", category=ConvergenceWarning)
+
+
+def load_features(csv_path: str) -> np.ndarray:
+    df = pd.read_csv(csv_path, encoding="utf-8-sig")
+    excluded_cols = [column for column in df.columns if "id" in column.lower()]
+    feature_columns = df.columns.difference(excluded_cols)
+
+    features = df[feature_columns].copy()
+    for column in features.columns:
+        if features[column].dtype in ("object", "category"):
+            frequencies = features[column].value_counts(normalize=True)
+            features[column] = features[column].map(frequencies)
+
+    features = features.dropna()
+    if features.empty:
+        raise SystemExit("No valid rows remain after preprocessing.")
+
+    if len(features) < 3:
+        raise SystemExit("GMM requires at least 3 valid rows.")
+
+    return StandardScaler().fit_transform(features)
+
+
+X_SCALED = load_features(CSV_FILE_PATH)
+GLOBAL_CENTROID = X_SCALED.mean(axis=0)
+SSE_MAX = float(np.sum((X_SCALED - GLOBAL_CENTROID) ** 2))
+START_TIME = time.time()
+
+
+def compute_sse(labels: np.ndarray) -> float:
     sse = 0.0
-    for lbl in np.unique(labels):
-        pts = X_scaled[labels == lbl]
-        if pts.size == 0:
+    for label in np.unique(labels):
+        points = X_SCALED[labels == label]
+        if len(points) == 0:
             continue
-        centroid = pts.mean(axis=0)
-        sse += np.sum((pts - centroid) ** 2)
+        centroid = points.mean(axis=0)
+        sse += np.sum((points - centroid) ** 2)
     return float(sse)
 
-def combined_score(db, sil, sse):
 
-    S = (sil + 1.0) / 2.0  # [-1,1] → [0,1]
-    D = 1.0 / (1.0 + db)  # [0,∞) → (0,1]
+def combined_score(db_score: float, sil_score: float, sse: float) -> float:
+    normalized_sil = (sil_score + 1.0) / 2.0
+    normalized_db = 1.0 / (1.0 + max(db_score, 1e-12))
     eps = 1e-12
 
-    return 1.0 / (alpha / max(S, eps) + beta / max(D, eps))
-
-def gmm_with_tracking(n_components, cov_type):
-    """返回 (labels, n_iter, lower_bounds list, gmm_model)"""
-    gmm = GaussianMixture(
-        n_components=n_components,
-        covariance_type=cov_type,
-        max_iter=1,            # 每次只跑 1 iter
-        warm_start=True,
-        random_state=0
+    return 1.0 / (
+        ALPHA / max(normalized_sil, eps)
+        + BETA / max(normalized_db, eps)
     )
-    lower_bounds = []
-    for _ in range(300):      # 与默认 max_iter 保持一致
-        gmm.fit(X_scaled)
-        lower_bounds.append(gmm.lower_bound_)
-        if gmm.converged_:
-            break
-    labels = gmm.predict(X_scaled)
-    return labels, gmm.n_iter_, lower_bounds, gmm
 
-def make_trial_record(trial_no, k, cov_type, labels, n_iter, lb_curve):
-    db  = davies_bouldin_score(X_scaled, labels)
-    sil = silhouette_score(X_scaled, labels)
-    sse = _sse(labels)
-    combo = combined_score(db, sil, sse)
-    # 计算 EM 收敛 “面积”(AUC) 与衰减率
-    if len(lb_curve) > 1:
-        auc_ll = float(np.trapz(lb_curve))
-        geo_decay = float(abs(lb_curve[-1] - lb_curve[0]) /
-                          max(abs(lb_curve[0]), 1e-12))
+
+def validate_labels(labels: np.ndarray) -> bool:
+    unique_labels = np.unique(labels)
+    return 2 <= len(unique_labels) < len(labels)
+
+
+def gmm_with_tracking(
+    n_components: int,
+    covariance_type: str,
+) -> tuple[np.ndarray, int, list[float], GaussianMixture]:
+    """
+    Fit GMM and track lower-bound values.
+
+    The repeated one-iteration warm-start loop preserves the original idea of
+    recording the EM trajectory.
+    """
+    model = GaussianMixture(
+        n_components=n_components,
+        covariance_type=covariance_type,
+        max_iter=1,
+        warm_start=True,
+        random_state=0,
+    )
+
+    lower_bounds: list[float] = []
+
+    for _ in range(300):
+        model.fit(X_SCALED)
+        lower_bounds.append(float(model.lower_bound_))
+        if model.converged_:
+            break
+
+    labels = model.predict(X_SCALED)
+    return labels, len(lower_bounds), lower_bounds, model
+
+
+def make_trial_record(
+    trial_number: int,
+    n_components: int,
+    covariance_type: str,
+    labels: np.ndarray,
+    n_iter: int,
+    lower_bounds: list[float],
+) -> dict[str, Any]:
+    if not validate_labels(labels):
+        raise optuna.exceptions.TrialPruned()
+
+    db_score = float(davies_bouldin_score(X_SCALED, labels))
+    sil_score = float(silhouette_score(X_SCALED, labels))
+    sse = compute_sse(labels)
+    score = combined_score(db_score, sil_score, sse)
+
+    if len(lower_bounds) > 1:
+        auc_ll = float(np.trapz(lower_bounds))
+        ll_geo_decay = float(
+            abs(lower_bounds[-1] - lower_bounds[0]) / max(abs(lower_bounds[0]), 1e-12)
+        )
     else:
-        auc_ll, geo_decay = 0.0, 0.0
+        auc_ll = 0.0
+        ll_geo_decay = 0.0
+
     return {
-        "trial_number": trial_no,
-        "n_components": k,
-        "covariance_type": cov_type,
-        "combined_score": combo,
-        "silhouette": sil,
-        "davies_bouldin": db,
-        "sse": sse,
-        "n_iter": n_iter,
-        "ll_start": lb_curve[0],
-        "ll_end": lb_curve[-1],
+        "trial_number": int(trial_number),
+        "n_components": int(n_components),
+        "covariance_type": str(covariance_type),
+        "combined_score": float(score),
+        "silhouette": sil_score,
+        "davies_bouldin": db_score,
+        "sse": float(sse),
+        "n_iter": int(n_iter),
+        "ll_start": float(lower_bounds[0]) if lower_bounds else 0.0,
+        "ll_end": float(lower_bounds[-1]) if lower_bounds else 0.0,
         "auc_ll": auc_ll,
-        "ll_geo_decay": geo_decay,
-        "ll_curve": lb_curve
+        "ll_geo_decay": ll_geo_decay,
+        "ll_curve": lower_bounds,
     }
 
-# --------------------------------------------------
-# 4. 第一轮 Optuna 搜索
-# --------------------------------------------------
-optuna_trials = []
 
-def objective(trial):
-    max_k = max(5, math.isqrt(X.shape[0]))
-    k = trial.suggest_int("n_components", 5, max_k)
-    cov_type = trial.suggest_categorical("covariance_type",
-                                         ['full', 'tied', 'diag', 'spherical'])
-    labels, n_iter, lb_curve, _ = gmm_with_tracking(k, cov_type)
-    rec = make_trial_record(trial.number, k, cov_type, labels, n_iter, lb_curve)
-    optuna_trials.append(rec)
-    return rec["combined_score"]
+OPTUNA_TRIALS: list[dict[str, Any]] = []
 
-study = optuna.create_study(direction="maximize")
-study.optimize(objective, n_trials=20)
 
-best_rec = max(optuna_trials, key=lambda d: d["combined_score"])
-k_optuna, best_cov_type = best_rec["n_components"], best_rec["covariance_type"]
+def objective(trial: optuna.Trial) -> float:
+    n_rows = X_SCALED.shape[0]
+    max_k = min(max(5, math.isqrt(n_rows)), n_rows - 1)
+    min_k = min(5, max_k)
 
-# --------------------------------------------------
-# 5. Kneedle (基于负对数似然 ≈ SSE)
-# --------------------------------------------------
-cluster_range = range(2, max(3, math.isqrt(X.shape[0])) + 1)
-sse_curve = []
-for k in cluster_range:
-    labels, _, _, gmm_tmp = gmm_with_tracking(k, best_cov_type)
-    nll = -gmm_tmp.score(X_scaled) * len(X_scaled)
-    sse_curve.append(nll)
+    if max_k < 2:
+        raise optuna.exceptions.TrialPruned()
 
-def moving_average(x, w=3):
-    return np.convolve(x, np.ones(w) / w, mode="valid")
-sse_smoothed = moving_average(sse_curve, 3)
+    n_components = trial.suggest_int("n_components", min_k, max_k)
+    covariance_type = trial.suggest_categorical(
+        "covariance_type",
+        ["full", "tied", "diag", "spherical"],
+    )
 
-try:
-    kneedle = KneeLocator(cluster_range[:len(sse_smoothed)],
-                          sse_smoothed,
-                          curve="convex",
-                          direction="decreasing")
-    k_kneedle = kneedle.elbow
-except ValueError:
-    k_kneedle = None
+    try:
+        labels, n_iter, lower_bounds, _ = gmm_with_tracking(n_components, covariance_type)
+        record = make_trial_record(
+            trial_number=trial.number,
+            n_components=n_components,
+            covariance_type=covariance_type,
+            labels=labels,
+            n_iter=n_iter,
+            lower_bounds=lower_bounds,
+        )
+    except optuna.exceptions.TrialPruned:
+        raise
+    except Exception:
+        raise optuna.exceptions.TrialPruned()
 
-# 第二轮局部搜索
-if k_kneedle and k_kneedle != k_optuna:
-    k_low, k_high = sorted([k_optuna, k_kneedle])
-else:
-    k_low, k_high = k_optuna, k_optuna + 2
+    OPTUNA_TRIALS.append(record)
+    return record["combined_score"]
 
-def refined_objective(trial):
-    k = trial.suggest_int("n_components", k_low, k_high)
-    labels, n_iter, lb_curve, _ = gmm_with_tracking(k, best_cov_type)
-    rec = make_trial_record(trial.number, k, best_cov_type, labels, n_iter, lb_curve)
-    optuna_trials.append(rec)
-    return rec["combined_score"]
 
-optuna.create_study(direction="maximize").optimize(refined_objective, n_trials=10)
-best_rec = max(optuna_trials, key=lambda d: d["combined_score"])
-final_best_k = best_rec["n_components"]
+sampler = optuna.samplers.TPESampler(seed=OPTUNA_SEED) if OPTUNA_SEED is not None else None
+study = optuna.create_study(direction="maximize", sampler=sampler)
+study.optimize(objective, n_trials=N_TRIALS, show_progress_bar=False)
 
-# --------------------------------------------------
-# 6. 最终模型 + 输出
-# --------------------------------------------------
-labels_final, n_iter_final, lb_curve_final, gmm_final = gmm_with_tracking(
-    final_best_k, best_cov_type)
+if not OPTUNA_TRIALS:
+    raise SystemExit("No valid GMM trial completed.")
 
-final_db   = davies_bouldin_score(X_scaled, labels_final)
-final_sil  = silhouette_score(X_scaled, labels_final)
-final_sse  = _sse(labels_final)
-final_comb = combined_score(final_db, final_sil, final_sse)
+best_record = max(OPTUNA_TRIALS, key=lambda item: item["combined_score"])
+final_best_k = int(best_record["n_components"])
+best_covariance_type = str(best_record["covariance_type"])
 
-# 文本输出（保持原有 4 行）
-base   = os.path.splitext(os.path.basename(csv_file_path))[0]
-root   = os.path.join(os.getcwd(), "..", "..", "..", "results",
-                      "clustered_data", "GMM", algorithm_name,
-                      f"clustered_{dataset_id}")
-os.makedirs(root, exist_ok=True)
-txt_fp = os.path.join(root, f"{base}.txt")
-with open(txt_fp, "w", encoding="utf-8") as fh:
-    fh.write("\n".join([
-        f"Best parameters: n_components={final_best_k}, covariance type={best_cov_type}",
-        f"Final Combined Score: {final_comb}",
+labels_final, n_iter_final, lower_bounds_final, _ = gmm_with_tracking(
+    final_best_k,
+    best_covariance_type,
+)
+
+if not validate_labels(labels_final):
+    raise SystemExit("Final GMM model produced invalid labels.")
+
+final_db = float(davies_bouldin_score(X_SCALED, labels_final))
+final_sil = float(silhouette_score(X_SCALED, labels_final))
+final_sse = compute_sse(labels_final)
+final_combined = combined_score(final_db, final_sil, final_sse)
+total_runtime_sec = time.time() - START_TIME
+
+base_name = Path(CSV_FILE_PATH).stem
+best_params = {
+    "n_components": final_best_k,
+    "covariance_type": best_covariance_type,
+}
+
+text_output = "\n".join(
+    [
+        f"Best parameters: {best_params}",
+        f"Final Combined Score: {final_combined}",
         f"Final Silhouette Score: {final_sil}",
-        f"Final Davies-Bouldin Score: {final_db}"
-    ]))
+        f"Final Davies-Bouldin Score: {final_db}",
+    ]
+)
+(OUTPUT_DIR / f"{base_name}.txt").write_text(text_output, encoding="utf-8")
 
-# JSON:  trial 级历史 + 版本 summary
-hist_path   = os.path.join(root, f"{base}_{clean_state}_gmm_history.json")
-summary_path = os.path.join(root, f"{base}_{clean_state}_summary.json")
-with open(hist_path, "w", encoding="utf-8") as fp:
-    json.dump(optuna_trials, fp, indent=4)
+history_path = OUTPUT_DIR / f"{base_name}_{CLEAN_STATE}_gmm_history.json"
+with history_path.open("w", encoding="utf-8") as fp:
+    json.dump(OPTUNA_TRIALS, fp, indent=4)
 
 summary = {
-    "clean_state": clean_state,
+    "clean_state": CLEAN_STATE,
+    "best_params": best_params,
     "best_k": final_best_k,
-    "best_cov_type": best_cov_type,
-    "best_combined": final_comb,
-    "best_silhouette": final_sil,
-    "best_db": final_db,
-    "best_sse": final_sse,
-    "weights": {"alpha": alpha, "beta": beta, "gamma": gamma},
-    "n_iter_final": n_iter_final,
-    "ll_curve_final": lb_curve_final,
-    "total_runtime_sec": time.time() - start_time
+    "best_covariance_type": best_covariance_type,
+    "combined_score": float(final_combined),
+    "silhouette": final_sil,
+    "davies_bouldin": final_db,
+    "sse": float(final_sse),
+    "sse_max": float(SSE_MAX),
+    "weights": {"alpha": ALPHA, "beta": BETA, "gamma": GAMMA},
+    "n_iter_final": int(n_iter_final),
+    "ll_curve_final": lower_bounds_final,
+    "n_trials_requested": int(N_TRIALS),
+    "n_trials_completed": int(len(OPTUNA_TRIALS)),
+    "total_runtime_sec": float(total_runtime_sec),
 }
-with open(summary_path, "w", encoding="utf-8") as fp:
+
+summary_path = OUTPUT_DIR / f"{base_name}_{CLEAN_STATE}_summary.json"
+with summary_path.open("w", encoding="utf-8") as fp:
     json.dump(summary, fp, indent=4)
 
-# 若存在另一版本 summary，则写出参数偏移
-other_state = "cleaned" if clean_state == "raw" else "raw"
-other_path  = os.path.join(root, f"{base}_{other_state}_summary.json")
-if os.path.exists(other_path):
-    with open(other_path) as fp:
-        other = json.load(fp)
+other_state = "cleaned" if CLEAN_STATE == "raw" else "raw"
+other_path = OUTPUT_DIR / f"{base_name}_{other_state}_summary.json"
+
+if other_path.exists():
+    other = json.loads(other_path.read_text(encoding="utf-8"))
     shift = {
-        "dataset_id": dataset_id,
-        "delta_k": summary["best_k"] - other["best_k"],
-        "delta_combined": summary["best_combined"] - other["best_combined"],
-        "rel_shift": abs(summary["best_k"] - other["best_k"]) / max(other["best_k"], 1)
+        "dataset_id": DATASET_ID,
+        "delta_k": summary["best_k"] - int(other.get("best_k", 0)),
+        "delta_combined": summary["combined_score"] - float(other.get("combined_score", 0.0)),
+        "rel_shift": abs(summary["best_k"] - int(other.get("best_k", 1))) / max(int(other.get("best_k", 1)), 1),
     }
-    shift_path = os.path.join(root, f"{base}_param_shift.json")
-    with open(shift_path, "w", encoding="utf-8") as fp:
+
+    with (OUTPUT_DIR / f"{base_name}_param_shift.json").open("w", encoding="utf-8") as fp:
         json.dump(shift, fp, indent=4)
 
-print(f"History, summary and (if applicable) shift files saved in {root}")
-print(f"Program completed in: {summary['total_runtime_sec']:.2f} seconds")
+print(f"All files saved in: {OUTPUT_DIR}")
+print(f"Program completed in {total_runtime_sec:.2f} sec")
