@@ -82,7 +82,9 @@ SOURCE_CHECKS = {
         "src/pipeline/clustering_runner.py",
         "src/pipeline/analysis.py",
         "src/pipeline/groundtruth.py",
+        "src/pipeline/method_registry.py",
         "scripts/90_run_smoke_from_scratch.py",
+        "configs/methods.yaml",
     ],
 }
 
