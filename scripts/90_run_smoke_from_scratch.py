@@ -9,13 +9,10 @@ reproduce the full paper results.
 Default smoke configuration:
 - dataset: beers
 - dirty_id: 1
-- cleaner: mode
-- clusterer: HC
+- cleaners: group:smoke from configs/methods.yaml
+- clusterers: group:smoke from configs/methods.yaml
 - cluster_trials: 5
 - workers: 1
-
-Mode C-full is represented by running the same pipeline without smoke limits:
-all records, all cleaners, all clusterers, and full clustering trial budgets.
 """
 
 from __future__ import annotations
@@ -32,6 +29,11 @@ from typing import Any
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.pipeline.method_registry import load_default_registry
 
 
 def parse_args() -> argparse.Namespace:
@@ -53,14 +55,16 @@ def parse_args() -> argparse.Namespace:
         help="Dirty dataset id for smoke test.",
     )
     parser.add_argument(
-        "--cleaner",
-        default="mode",
-        help="Cleaner used in smoke test.",
+        "--cleaners",
+        nargs="*",
+        default=["group:smoke"],
+        help="Cleaner tokens resolved by configs/methods.yaml. Default: group:smoke.",
     )
     parser.add_argument(
-        "--clusterer",
-        default="HC",
-        help="Clusterer used in smoke test.",
+        "--clusterers",
+        nargs="*",
+        default=["group:smoke"],
+        help="Clusterer tokens resolved by configs/methods.yaml. Default: group:smoke.",
     )
     parser.add_argument(
         "--cluster-trials",
@@ -112,19 +116,23 @@ def ensure_dataset_link() -> None:
         link_path.symlink_to(target_path, target_is_directory=True)
 
 
-def clean_outputs(dataset: str, cleaner: str, clusterer: str) -> None:
+def clean_outputs(dataset: str, cleaner_names: list[str], clusterer_names: list[str]) -> None:
     paths = [
         PROJECT_ROOT / "results" / "eigenvectors.json",
         PROJECT_ROOT / "results" / "cleaned_results.json",
         PROJECT_ROOT / "results" / "clustered_results.json",
         PROJECT_ROOT / "results" / "analyzed_results.json",
-        PROJECT_ROOT / "results" / "cleaned_data" / cleaner,
-        PROJECT_ROOT / "results" / "clustered_data" / clusterer,
         PROJECT_ROOT / "results" / "logs" / "pipeline_run_manifest.json",
         PROJECT_ROOT / "results" / "logs" / "pipeline_failures.json",
         PROJECT_ROOT / "results" / "logs" / "mode_b_smoke_summary.json",
-        PROJECT_ROOT / "src" / "cleaning" / "Repaired_res" / cleaner / dataset,
     ]
+
+    for cleaner_name in cleaner_names:
+        paths.append(PROJECT_ROOT / "results" / "cleaned_data" / cleaner_name)
+        paths.append(PROJECT_ROOT / "src" / "cleaning" / "Repaired_res" / cleaner_name / dataset)
+
+    for clusterer_name in clusterer_names:
+        paths.append(PROJECT_ROOT / "results" / "clustered_data" / clusterer_name)
 
     for path in paths:
         if path.is_dir():
@@ -172,15 +180,21 @@ def summarize_outputs() -> dict[str, Any]:
     return summary
 
 
-def write_smoke_summary(args: argparse.Namespace) -> None:
+def write_smoke_summary(
+    args: argparse.Namespace,
+    cleaner_names: list[str],
+    clusterer_names: list[str],
+) -> None:
     summary = {
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "mode": "B_SMOKE_FROM_SCRATCH",
         "config": args.config,
         "dataset": args.dataset,
         "dirty_id": args.dirty_id,
-        "cleaner": args.cleaner,
-        "clusterer": args.clusterer,
+        "cleaner_tokens": args.cleaners,
+        "clusterer_tokens": args.clusterers,
+        "cleaners": cleaner_names,
+        "clusterers": clusterer_names,
         "cluster_trials": args.cluster_trials,
         "workers": args.workers,
         "outputs": summarize_outputs(),
@@ -198,13 +212,20 @@ def write_smoke_summary(args: argparse.Namespace) -> None:
 def main() -> None:
     args = parse_args()
 
+    registry = load_default_registry(PROJECT_ROOT)
+    cleaner_names = registry.names("cleaners", args.cleaners)
+    clusterer_names = registry.names("clusterers", args.clusterers)
+
+    print(f"[TRACE] Smoke cleaners: {cleaner_names}")
+    print(f"[TRACE] Smoke clusterers: {clusterer_names}")
+
     ensure_dataset_link()
 
     if args.clean:
         clean_outputs(
             dataset=args.dataset,
-            cleaner=args.cleaner,
-            clusterer=args.clusterer,
+            cleaner_names=cleaner_names,
+            clusterer_names=clusterer_names,
         )
 
     run_command(
@@ -234,15 +255,15 @@ def main() -> None:
             "--workers",
             str(args.workers),
             "--cleaners",
-            args.cleaner,
+            *args.cleaners,
             "--clusterers",
-            args.clusterer,
+            *args.clusterers,
             "--cluster-trials",
             str(args.cluster_trials),
         ]
     )
 
-    write_smoke_summary(args)
+    write_smoke_summary(args, cleaner_names, clusterer_names)
     print("[TRACE] Mode B smoke test completed.")
 
 
