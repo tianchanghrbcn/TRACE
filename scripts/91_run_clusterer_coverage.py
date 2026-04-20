@@ -8,7 +8,7 @@ This script validates the clustering side of the pipeline with a fixed cleaner.
 Default coverage configuration:
 - dataset: beers
 - dirty_id: 1
-- cleaner: mode
+- cleaners: group:smoke from configs/methods.yaml
 - clusterers: group:full from configs/methods.yaml
 - cluster_trials: 5
 - workers: 1
@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--config",
         default="configs/mode_b_smoke.yaml",
-        help="Config path recorded in the summary. The method list comes from configs/methods.yaml.",
+        help="Config path recorded in the summary. Method lists come from configs/methods.yaml.",
     )
     parser.add_argument(
         "--dataset",
@@ -59,16 +59,17 @@ def parse_args() -> argparse.Namespace:
         help="Dirty dataset id for coverage smoke.",
     )
     parser.add_argument(
-        "--cleaner",
-        default="mode",
-        help="Cleaner used before running all clusterers.",
+        "--cleaners",
+        nargs="*",
+        default=["group:smoke"],
+        help="Cleaner tokens resolved by configs/methods.yaml. Default: group:smoke.",
     )
     parser.add_argument(
         "--clusterers",
         nargs="*",
         default=["group:full"],
         help=(
-            "Clusterers to run. Accepts names, ids, legacy ids with legacy:<id>, "
+            "Clusterers to run. Accepts names, TRACE ids, legacy ids with legacy:<id>, "
             "or groups such as group:full. Default: group:full."
         ),
     )
@@ -128,18 +129,20 @@ def ensure_dataset_link() -> None:
         link_path.symlink_to(target_path, target_is_directory=True)
 
 
-def clean_outputs(dataset: str, cleaner: str, clusterer_names: list[str]) -> None:
+def clean_outputs(dataset: str, cleaner_names: list[str], clusterer_names: list[str]) -> None:
     paths = [
         PROJECT_ROOT / "results" / "eigenvectors.json",
         PROJECT_ROOT / "results" / "cleaned_results.json",
         PROJECT_ROOT / "results" / "clustered_results.json",
         PROJECT_ROOT / "results" / "analyzed_results.json",
-        PROJECT_ROOT / "results" / "cleaned_data" / cleaner,
         PROJECT_ROOT / "results" / "logs" / "pipeline_run_manifest.json",
         PROJECT_ROOT / "results" / "logs" / "pipeline_failures.json",
         PROJECT_ROOT / "results" / "logs" / "clusterer_coverage_summary.json",
-        PROJECT_ROOT / "src" / "cleaning" / "Repaired_res" / cleaner / dataset,
     ]
+
+    for cleaner_name in cleaner_names:
+        paths.append(PROJECT_ROOT / "results" / "cleaned_data" / cleaner_name)
+        paths.append(PROJECT_ROOT / "src" / "cleaning" / "Repaired_res" / cleaner_name / dataset)
 
     for clusterer_name in clusterer_names:
         paths.append(PROJECT_ROOT / "results" / "clustered_data" / clusterer_name)
@@ -217,6 +220,7 @@ def summarize_outputs(clusterer_names: list[str]) -> dict[str, Any]:
 
 def write_coverage_summary(
     args: argparse.Namespace,
+    cleaner_names: list[str],
     clusterer_names: list[str],
     output_summary: dict[str, Any],
 ) -> Path:
@@ -226,8 +230,9 @@ def write_coverage_summary(
         "config": args.config,
         "dataset": args.dataset,
         "dirty_id": args.dirty_id,
-        "cleaner": args.cleaner,
+        "cleaner_tokens": args.cleaners,
         "clusterer_tokens": args.clusterers,
+        "cleaners": cleaner_names,
         "clusterers": clusterer_names,
         "cluster_trials": args.cluster_trials,
         "workers": args.workers,
@@ -248,16 +253,18 @@ def main() -> None:
     args = parse_args()
 
     registry = load_default_registry(PROJECT_ROOT)
+    cleaner_names = registry.names("cleaners", args.cleaners)
     clusterer_names = registry.names("clusterers", args.clusterers)
 
-    print(f"[TRACE] Clusterers selected for coverage: {clusterer_names}")
+    print(f"[TRACE] Coverage cleaners: {cleaner_names}")
+    print(f"[TRACE] Coverage clusterers: {clusterer_names}")
 
     ensure_dataset_link()
 
     if args.clean:
         clean_outputs(
             dataset=args.dataset,
-            cleaner=args.cleaner,
+            cleaner_names=cleaner_names,
             clusterer_names=clusterer_names,
         )
 
@@ -288,16 +295,16 @@ def main() -> None:
             "--workers",
             str(args.workers),
             "--cleaners",
-            args.cleaner,
+            *args.cleaners,
             "--clusterers",
-            *clusterer_names,
+            *args.clusterers,
             "--cluster-trials",
             str(args.cluster_trials),
         ]
     )
 
     output_summary = summarize_outputs(clusterer_names)
-    write_coverage_summary(args, clusterer_names, output_summary)
+    write_coverage_summary(args, cleaner_names, clusterer_names, output_summary)
 
     failures = output_summary.get("pipeline_run_manifest.json", {}).get("failure_count")
     clustered = output_summary.get("pipeline_run_manifest.json", {}).get("clustered_result_count")
@@ -310,7 +317,7 @@ def main() -> None:
     if failures and not args.allow_failures:
         raise SystemExit(
             "[TRACE] Clusterer coverage detected failures. "
-            "Use --allow-failures while developing individual clusterer wrappers."
+            "Use --allow-failures while developing individual method wrappers."
         )
 
 
