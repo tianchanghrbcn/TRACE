@@ -1,0 +1,200 @@
+﻿cleaners:
+  mode:
+    id: 0
+    legacy_id: 1
+    display_name: "Mode Impute"
+    enabled: true
+    group: "baseline"
+    runner: "builtin"
+    implementation: "src/cleaning/mode/mode.py"
+    output_contract: "repaired_csv"
+    default_env: "trace-runner"
+    notes: "Baseline cleaner used by Mode B-smoke."
+
+  baran:
+    id: 1
+    legacy_id: 2
+    display_name: "Baran"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/baran/correction_with_baran.py"
+    output_contract: "repaired_csv"
+    default_env: "trace-runner"
+
+  holoclean:
+    id: 2
+    legacy_id: 3
+    display_name: "HoloClean"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/holoclean-master/holoclean_run.py"
+    output_contract: "repaired_csv"
+    default_env: "hc37"
+    requires_services: ["postgres"]
+
+  bigdansing:
+    id: 3
+    legacy_id: 4
+    display_name: "BigDansing"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/BigDansing_Holistic/bigdansing.py"
+    output_contract: "repaired_csv"
+    default_env: "torch110"
+
+  boostclean:
+    id: 4
+    legacy_id: 5
+    display_name: "BoostClean"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/BoostClean/activedetect/experiments/Experiment.py"
+    output_contract: "repaired_csv"
+    default_env: "activedetect"
+
+  horizon:
+    id: 5
+    legacy_id: 6
+    display_name: "Horizon"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/horizon/horizon.py"
+    output_contract: "repaired_csv"
+    default_env: "torch110"
+
+  scared:
+    id: 6
+    legacy_id: 7
+    display_name: "SCAReD"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/SCAREd/scared.py"
+    output_contract: "repaired_csv"
+    default_env: "torch110"
+
+  unified:
+    id: 7
+    legacy_id: 8
+    display_name: "Unified"
+    enabled: true
+    group: "candidate"
+    runner: "builtin"
+    implementation: "src/cleaning/Unified/Unified.py"
+    output_contract: "repaired_csv"
+    default_env: "torch110"
+
+  groundtruth:
+    id: 8
+    legacy_id: 9
+    display_name: "GroundTruth"
+    enabled: false
+    group: "oracle"
+    runner: "groundtruth"
+    implementation: "src/pipeline/groundtruth.py"
+    output_contract: "clean_csv_reference"
+    default_env: "trace-runner"
+    notes: "Oracle reference; not part of ordinary cleaner comparison."
+
+clusterers:
+  HC:
+    id: 0
+    legacy_id: 0
+    display_name: "Agglomerative Clustering"
+    enabled: true
+    group: "hierarchical"
+    implementation: "src/clustering/HC/HC.py"
+    output_contract: "cluster_output_dir"
+    default_env: "trace-runner"
+    supports_trace_n_trials: true
+
+  DBSCAN:
+    id: 1
+    legacy_id: 1
+    display_name: "DBSCAN"
+    enabled: true
+    group: "density"
+    implementation: "src/clustering/DBSCAN/DBSCAN.py"
+    output_contract: "cluster_output_dir"
+    default_env: "trace-runner"
+    supports_trace_n_trials: true
+
+  GMM:
+    id: 2
+    legacy_id: 2
+    display_name: "Gaussian Mixture Model"
+    enabled: true
+    group: "model"
+    implementation: "src/clustering/GMM/GMM.py"
+    output_contract: "cluster_output_dir"
+    default_env: "trace-runner"
+    supports_trace_n_trials: true
+
+  KMEANS:
+    id: 3
+    legacy_id: 3
+    display_name: "K-Means"
+    enabled: true
+    group: "centroid"
+    implementation: "src/clustering/KMEANS/KMEANS.py"
+    output_contract: "cluster_output_dir"
+    default_env: "trace-runner"
+    supports_trace_n_trials: true
+
+  KMEANSNF:
+    id: 4
+    legacy_id: 4
+    display_name: "K-Means NF"
+    enabled: true
+    group: "centroid"
+    implementation: "src/clustering/KMEANSNF/KMEANSNF.py"
+    output_contract: "cluster_output_dir"
+    default_env: "trace-runner"
+    supports_trace_n_trials: true
+
+  KMEANSPPS:
+    id: 5
+    legacy_id: 5
+    display_name: "K-Means PPS"
+    enabled: true
+    group: "centroid"
+    implementation: "src/clustering/KMEANSPPS/KMEANSPPS.py"
+    output_contract: "cluster_output_dir"
+    default_env: "trace-runner"
+    supports_trace_n_trials: true
+
+groups:
+  cleaners:
+    smoke: ["mode"]
+    lightweight: ["mode", "baran", "horizon", "scared", "unified"]
+    full: ["mode", "baran", "holoclean", "bigdansing", "boostclean", "horizon", "scared", "unified"]
+
+  clusterers:
+    smoke: ["HC"]
+    full: ["HC", "DBSCAN", "GMM", "KMEANS", "KMEANSNF", "KMEANSPPS"]
+
+aliases:
+  cleaners:
+    modeimpute: "mode"
+    mode_impute: "mode"
+    bigdansing_holistic: "bigdansing"
+    bigdansingholistic: "bigdansing"
+    scaredclean: "scared"
+    scared_clean: "scared"
+    unifiedclean: "unified"
+
+  clusterers:
+    hierarchical: "HC"
+    agglomerative: "HC"
+    agglomerativeclustering: "HC"
+    kmeansbase: "KMEANS"
+    kmeans_base: "KMEANS"
+    kmeanspp: "KMEANSPPS"
+    kmeanspps: "KMEANSPPS"
+    gaussianmixture: "GMM"
+    gaussian_mixture: "GMM"
