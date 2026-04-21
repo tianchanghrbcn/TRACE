@@ -1,0 +1,73 @@
+version: "stage3-results-schema-v0.1"
+
+description: >
+  Canonical result schema for replaying TRACE paper tables and figures from
+  archived raw experiment outputs.
+
+tables:
+  trials:
+    description: Dirty dataset instances and error-level descriptors.
+    columns:
+      - dataset_id
+      - dataset_name
+      - csv_file
+      - error_rate
+      - missing_rate
+      - noise_rate
+      - source
+
+  cleaning_metrics:
+    description: Cleaner-level outputs and runtimes.
+    columns:
+      - dataset_id
+      - cleaner
+      - cleaner_id
+      - cleaning_runtime_sec
+      - cleaned_file_path
+
+  result_metrics:
+    description: Final clustering metrics after each cleaning-clustering run.
+    columns:
+      - dataset_id
+      - cleaner
+      - clusterer
+      - clusterer_id
+      - cleaning_runtime_sec
+      - clustering_runtime_sec
+      - final_combined_score
+      - final_silhouette_score
+      - final_davies_bouldin_score
+      - clustered_file_path
+      - source_file
+
+  best_configs:
+    description: Top-ranked configurations extracted from analyzed results.
+    columns:
+      - dataset_id
+      - rank
+      - cleaner
+      - clusterer
+      - final_score
+      - params_json
+      - source_file
+
+  process_metrics:
+    description: Process-level signals extracted from clustering logs or JSON traces.
+    columns:
+      - dataset_id
+      - cleaner
+      - clusterer
+      - metric_name
+      - metric_value
+      - source_file
+
+  parameter_shifts:
+    description: Hyperparameter-level changes between baseline and cleaned runs.
+    columns:
+      - dataset_id
+      - cleaner
+      - clusterer
+      - parameter_name
+      - delta_value
+      - source_file
+
