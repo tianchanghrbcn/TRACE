@@ -114,3 +114,8 @@ venv/
 env/
 
 /results/beers/
+
+# Cleaner runtime artifacts
+/data/raw/train/**/raha-baran-results-*/
+src/cleaning/Exp_result/
+src/cleaning/Repaired_res/
