@@ -112,3 +112,5 @@ configs/runtime/system.local.env
 .venv/
 venv/
 env/
+
+/results/beers/
