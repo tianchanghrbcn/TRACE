@@ -1,0 +1,35 @@
+version: "runtime-reference-v0.1"
+
+description: >
+  Maintainer-observed runtime references for estimated reproducibility progress.
+  These values are approximate and hardware dependent.
+
+stage2_strict:
+  observed_total_runtime_sec: 21600
+  notes:
+    - Maintainer-side Stage 2 strict validation passed on Linux.
+    - Observed runtime was about six hours.
+    - Reviewer hardware may differ.
+  steps:
+    setup_mode_b: 10
+    setup_mode_c: 20
+    method_registry: 10
+    static_checks: 10
+    mode_b_smoke: 90
+    mode_b_smoke_manifest: 5
+    clusterer_coverage: 600
+    clusterer_coverage_check: 5
+    torch110_dependency_probe: 60
+    torch110_dependency_probe_check: 5
+    boostclean_import_probe: 30
+    holoclean_import_probe: 30
+    holoclean_db_check: 10
+    cleaner_mode: 60
+    cleaner_baran: 16200
+    cleaner_holoclean: 420
+    cleaner_bigdansing: 180
+    cleaner_boostclean: 180
+    cleaner_horizon: 180
+    cleaner_scared: 900
+    cleaner_unified: 3900
+
