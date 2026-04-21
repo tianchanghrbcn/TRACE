@@ -129,3 +129,10 @@ src/cleaning/Repaired_res/
 !/results/pre_experiment/.gitkeep
 /results/visual_demo/*
 !/results/visual_demo/.gitkeep
+
+# Stage 3 generated figures
+/figures/png/*
+!/figures/png/.gitkeep
+/figures/pdf/*
+!/figures/pdf/.gitkeep
+/figures/*manifest.json
