@@ -37,6 +37,7 @@ from src.pipeline.method_registry import load_default_registry
 
 
 IMPORT_TO_PACKAGE = {
+    "jaro": "jaro-winkler",
     "bs4": "beautifulsoup4",
     "cv2": "opencv-python",
     "PIL": "Pillow",
