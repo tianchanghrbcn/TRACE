@@ -119,3 +119,13 @@ env/
 /data/raw/train/**/raha-baran-results-*/
 src/cleaning/Exp_result/
 src/cleaning/Repaired_res/
+
+# Stage 3 generated outputs
+/results/processed/*
+!/results/processed/.gitkeep
+/results/tables/*
+!/results/tables/.gitkeep
+/results/pre_experiment/*
+!/results/pre_experiment/.gitkeep
+/results/visual_demo/*
+!/results/visual_demo/.gitkeep
