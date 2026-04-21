@@ -26,6 +26,77 @@ import tempfile
 import itertools
 import multiprocessing
 
+# ---------------------------------------------------------------------------
+# TRACE compatibility helpers
+# ---------------------------------------------------------------------------
+
+_TRACE_ORIGINAL_POOL = multiprocessing.Pool
+
+
+def _trace_baran_worker_count() -> int:
+    """
+    Return Baran worker count.
+
+    By default, Baran keeps its historical behavior and uses all logical CPUs.
+    Set TRACE_BARAN_WORKERS to override it, for example:
+      TRACE_BARAN_WORKERS=16
+    """
+    raw = os.environ.get("TRACE_BARAN_WORKERS")
+    if raw:
+        try:
+            return max(1, int(raw))
+        except ValueError:
+            pass
+
+    return max(1, os.cpu_count() or 1)
+
+
+def _trace_pool(*args, **kwargs):
+    """
+    Inject a configurable worker count into multiprocessing.Pool() calls that
+    do not explicitly specify the process count.
+    """
+    if not args and "processes" not in kwargs:
+        kwargs["processes"] = _trace_baran_worker_count()
+    return _TRACE_ORIGINAL_POOL(*args, **kwargs)
+
+
+multiprocessing.Pool = _trace_pool
+
+
+def _trace_safe_remove(path: str) -> bool:
+    """
+    Remove a temporary file without failing the whole Baran run.
+
+    On Windows, a temporary CSV can still be locked by another process for a
+    short time. The original os.remove(path) raises PermissionError and aborts
+    the worker. Here we retry and, if the file is still locked, leave it for the
+    operating system or a later cleanup step. This does not change Baran's
+    repair logic.
+    """
+    retries = int(os.environ.get("TRACE_FILE_REMOVE_RETRIES", "30"))
+    delay_sec = float(os.environ.get("TRACE_FILE_REMOVE_DELAY", "0.10"))
+
+    for _ in range(max(1, retries)):
+        try:
+            os.remove(path)
+            return True
+        except FileNotFoundError:
+            return True
+        except PermissionError:
+            import gc
+            import time
+
+            gc.collect()
+            time.sleep(delay_sec)
+        except OSError:
+            import time
+
+            time.sleep(delay_sec)
+
+    return False
+
+
 import numpy
 import pandas
 import scipy.stats
@@ -88,7 +159,7 @@ class Detection:
                     if int(i) > 0:
                         outputted_cells[(int(i) - 1, int(j))] = ""
                 os.remove(algorithm_results_path)
-            os.remove(dataset_path)
+            _trace_safe_remove(dataset_path)
         elif algorithm == "PVD":
             attribute, ch = configuration
             j = d.dataframe.columns.get_loc(attribute)
