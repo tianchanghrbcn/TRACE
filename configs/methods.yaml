@@ -1,4 +1,4 @@
-﻿cleaners:
+cleaners:
   mode:
     id: 0
     legacy_id: 1
@@ -171,7 +171,10 @@ clusterers:
 groups:
   cleaners:
     smoke: ["mode"]
-    lightweight: ["mode", "baran", "horizon", "scared", "unified"]
+    lightweight: ["mode", "baran"]
+    torch110: ["bigdansing", "horizon", "scared", "unified"]
+    service: ["holoclean"]
+    activedetect: ["boostclean"]
     full: ["mode", "baran", "holoclean", "bigdansing", "boostclean", "horizon", "scared", "unified"]
 
   clusterers:
