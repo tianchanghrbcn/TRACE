@@ -48,7 +48,12 @@ def _trace_baran_worker_count() -> int:
         except ValueError:
             pass
 
-    return max(1, os.cpu_count() or 1)
+    cpu_count = max(1, os.cpu_count() or 1)
+
+    if os.name == "nt":
+        return min(cpu_count, 16)
+
+    return cpu_count
 
 
 def _trace_pool(*args, **kwargs):
