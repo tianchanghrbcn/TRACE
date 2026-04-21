@@ -85,6 +85,8 @@ SOURCE_CHECKS = {
         "src/pipeline/method_registry.py",
         "scripts/90_run_smoke_from_scratch.py",
         "scripts/91_run_clusterer_coverage.py",
+        "scripts/92_run_cleaner_coverage.py",
+        "scripts/93_probe_cleaner_dependencies.py",
         "configs/methods.yaml",
     ],
 }

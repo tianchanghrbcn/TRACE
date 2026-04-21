@@ -1,3 +1,31 @@
+# TRACE BoostClean bootstrap start
+import os
+import sys
+from pathlib import Path
+
+BOOSTCLEAN_ROOT = Path(__file__).resolve().parents[2]
+TRACE_PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", BOOSTCLEAN_ROOT.parents[2])
+).resolve()
+
+if str(BOOSTCLEAN_ROOT) not in sys.path:
+    sys.path.insert(0, str(BOOSTCLEAN_ROOT))
+# TRACE BoostClean bootstrap end
+import os
+from pathlib import Path
+
+BOOSTCLEAN_ROOT = Path(__file__).resolve().parents[2]
+TRACE_PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", BOOSTCLEAN_ROOT.parents[2])
+).resolve()
+
+if str(BOOSTCLEAN_ROOT) not in sys.path:
+    sys.path.insert(0, str(BOOSTCLEAN_ROOT))
+
+
+TRACE_PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[5])
+).resolve()
 # -*- coding: utf-8 -*-
 
 """
@@ -10,7 +38,7 @@ import time
 import pandas as pd
 import numpy as np
 import argparse
-sys.path.append('./BoostClean/')
+
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
@@ -138,7 +166,8 @@ if __name__ == "__main__":
 
     if True:
         if not PERFECTED:
-            out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/boostclean/" + task_name + "/onlyED_" + task_name + ".txt"
+            out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/boostclean/" + task_name + "/onlyED_" + task_name + ".txt"
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
             f = open(out_path, 'w')
             sys.stdout = f
             end_time = time.time()
@@ -151,11 +180,13 @@ if __name__ == "__main__":
             print("{pre}\n{rec}\n{f1}\n{time}".format(pre=pre, rec=rec, f1=f1, time=(end_time-start_time)))
             f.close()
 
-            out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/boostclean/" + task_name + "/oriED+EC_" + task_name + ".txt"
-            res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/boostclean/" + task_name + "/repaired_" + task_name + ".csv"
+            out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/boostclean/" + task_name + "/oriED+EC_" + task_name + ".txt"
+            res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/boostclean/" + task_name + "/repaired_" + task_name + ".csv"
 
             rep_csv = pd.DataFrame(np.array(rep_result).reshape(-1, len(columns)), columns=columns)
+            os.makedirs(os.path.dirname(res_path), exist_ok=True)
             rep_csv.to_csv(res_path, index=False, columns=list(rep_csv.columns)[0:])
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
             f = open(out_path, 'w')
             sys.stdout = f
             end_time = time.time()
@@ -177,13 +208,15 @@ if __name__ == "__main__":
             print("{pre}\n{rec}\n{f1}\n{time}".format(pre=pre, rec=rec, f1=f1, time=(end_time-start_time)))
             f.close()
         else:
-            out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/boostclean/" + task_name + "/prefectED+EC_" + task_name + ".txt"
-            res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/boostclean/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+            out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/boostclean/" + task_name + "/prefectED+EC_" + task_name + ".txt"
+            res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/boostclean/" + task_name + "/perfect_repaired_" + task_name + ".csv"
             for res in rep_result:
                 if len(res) == 11:
                     res.remove(res[-3])
             rep_csv = pd.DataFrame(np.array(rep_result), columns=columns)
+            os.makedirs(os.path.dirname(res_path), exist_ok=True)
             rep_csv.to_csv(res_path, index=False, columns=list(rep_csv.columns)[0:])
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
             f = open(out_path, 'w')
             sys.stdout = f
             end_time = time.time()

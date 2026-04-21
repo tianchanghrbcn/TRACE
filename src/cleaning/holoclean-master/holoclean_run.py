@@ -1,6 +1,13 @@
 import sys
 import os
-path = '../../cleaning/holoclean-master'
+from pathlib import Path
+
+HOLOCLEAN_ROOT = Path(__file__).resolve().parent
+TRACE_PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", HOLOCLEAN_ROOT.parents[2])
+).resolve()
+
+path = str(HOLOCLEAN_ROOT)
 os.chdir(path)
 sys.path.append(path)
 import holoclean
@@ -174,14 +181,16 @@ if __name__ == "__main__":
     rep_f1 = 2*rep_pre*rep_rec/(rep_pre+rep_rec+1e-10)
 
     if not PERFECTED:
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/holoclean/" + task_name + "/onlyED_" + task_name + ".txt"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/holoclean/" + task_name + "/onlyED_" + task_name + ".txt"
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
         end_time = time.time()
         print("{pre}\n{rec}\n{f1}\n{time}".format(pre=det_pre, rec=det_rec, f1=det_f1, time=(end_time-start_time)))
         f.close()
 
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/holoclean/" + task_name + "/all_compute_" + task_name + ".txt"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/holoclean/" + task_name + "/all_compute_" + task_name + ".txt"
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
         right2wrong = 0
@@ -252,9 +261,11 @@ if __name__ == "__main__":
         print("proportion of clean value in candidates and selected correctly:"+str(len(clean_in_cands_repair_right)/(len(clean_in_cands)+1e-8)))
         f.close()
 
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/holoclean/" + task_name + "/oriED+EC_" + task_name + ".txt"
-        res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/holoclean/" + task_name + "/repaired_" + task_name + ".csv"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/holoclean/" + task_name + "/oriED+EC_" + task_name + ".txt"
+        res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/holoclean/" + task_name + "/repaired_" + task_name + ".csv"
+        os.makedirs(os.path.dirname(res_path), exist_ok=True)
         repaired_df.to_csv(res_path, index=False, columns=list(repaired_df.columns))
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
         rep_pre = len(repair_right_cells)/len(rep_cells)
@@ -265,9 +276,11 @@ if __name__ == "__main__":
         f.close()
 
     else:
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/holoclean/" + task_name + "/perfectED+EC_" + task_name + ".txt"
-        res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/holoclean/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/holoclean/" + task_name + "/perfectED+EC_" + task_name + ".txt"
+        res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/holoclean/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+        os.makedirs(os.path.dirname(res_path), exist_ok=True)
         repaired_df.to_csv(res_path, index=False, columns=list(repaired_df.columns))
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
         end_time = time.time()

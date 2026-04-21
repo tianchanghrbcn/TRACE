@@ -5,6 +5,11 @@ import copy
 import time
 import sys
 import os
+from pathlib import Path
+
+TRACE_PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
 import raha
 import argparse
 import shutil
@@ -135,7 +140,8 @@ class SCAREd:
         if True:
             if not PERFECTED:
                 det_right = 0
-                out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/scared/" + task_name + "/onlyED_" + task_name + ".txt"
+                out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/scared/" + task_name + "/onlyED_" + task_name + ".txt"
+                os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
                 sys.stdout = f
                 end_time = time.time()
@@ -148,10 +154,12 @@ class SCAREd:
                 print("{pre}\n{rec}\n{f1}\n{time}".format(pre=pre, rec=rec, f1=f1, time=(end_time-start_time)))
                 f.close()
 
-                out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/scared/" + task_name + "/oriED+EC_" + task_name + ".txt"
-                res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/scared/" + task_name + "/repaired_" + task_name + ".csv"
+                out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/scared/" + task_name + "/oriED+EC_" + task_name + ".txt"
+                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/scared/" + task_name + "/repaired_" + task_name + ".csv"
                 self.rep_csv.drop('Index', axis=1, inplace=True)
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 self.rep_csv.to_csv(res_path, index=False, columns=list(self.rep_csv.columns))
+                os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
                 sys.stdout = f
                 end_time = time.time()
@@ -171,9 +179,11 @@ class SCAREd:
                 print("{pre}\n{rec}\n{f1}\n{time}".format(pre=pre, rec=rec, f1=f1, time=(end_time-start_time)))
                 f.close()
             else:
-                out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/scared/" + task_name + "/perfectED+EC_" + task_name + ".txt"
-                res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/scared/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+                out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/scared/" + task_name + "/perfectED+EC_" + task_name + ".txt"
+                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/scared/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 self.rep_csv.to_csv(res_path, index=False, columns=list(self.rep_csv.columns))
+                os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
                 sys.stdout = f
                 end_time = time.time()
