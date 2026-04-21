@@ -8,7 +8,7 @@ import numpy as np
 def calculate_all_metrics (clean ,dirty ,cleaned ,attributes ,output_path ,task_name ,index_attribute ='index',calculate_precision_recall =True ,
 calculate_edr =True ,calculate_hybrid =True ,calculate_r_edr =True ,mse_attributes =[]):
     """
-    text，text、EDR、text R-EDR。
+    textEDRtexttext R-EDRtext
 
     :param clean: text DataFrame
     :param dirty: text DataFrame
@@ -17,9 +17,9 @@ calculate_edr =True ,calculate_hybrid =True ,calculate_r_edr =True ,mse_attribut
     :param output_path: text
     :param task_name: text
     :param calculate_precision_recall: text
-    :param calculate_edr: text（EDR）
+    :param calculate_edr: texttextEDRtext
     :param calculate_hybrid: text
-    :param calculate_r_edr: text（R-EDR）
+    :param calculate_r_edr: texttextR-EDRtext
     :return: text
     """
 
@@ -59,7 +59,7 @@ calculate_edr =True ,calculate_hybrid =True ,calculate_r_edr =True ,mse_attribut
     return results 
 def normalize_value (value ):
     """
-    text，text
+    texttexttext
     :param value: text
     :return: text
     """
@@ -77,17 +77,13 @@ def normalize_value (value ):
 
 def default_distance_func (value1 ,value2 ):
     """
-    text：
-    text，text1；
-    text，text0。
+    text1text0text
     """
     return (value1 !=value2 ).sum ()
 
 def record_based_distance_func (row1 ,row2 ):
     """
-    text：
-    text，text，text1；
-    text，text0。
+    text1text0text
     """
     for val1 ,val2 in zip (row1 ,row2 ):
         if val1 !=val2 :
@@ -106,14 +102,14 @@ def calF1 (precision ,recall ):
 
 def calculate_accuracy_and_recall (clean ,dirty ,cleaned ,attributes ,output_path ,task_name ,index_attribute ='index'):
     """
-    text，text，text CSV text。
+    textCSV texttext
 
     :param clean: text DataFrame
     :param dirty: text DataFrame
     :param cleaned: text DataFrame
     :param attributes: text
     :param output_path: text
-    :param task_name: text，text
+    :param task_name: texttexttext
     :param index_attribute: text
     :return: text
     """
@@ -226,16 +222,16 @@ def calculate_accuracy_and_recall (clean ,dirty ,cleaned ,attributes ,output_pat
 
 def get_edr (clean ,dirty ,cleaned ,attributes ,output_path ,task_name ,index_attribute ='index',distance_func =default_distance_func ):
     """
-    text (EDR)，text。
+    text (EDR)texttexttext
 
     :param clean: text DataFrame
     :param dirty: text DataFrame
     :param cleaned: text DataFrame
     :param attributes: text
     :param output_path: text
-    :param task_name: text，text
+    :param task_name: texttexttext
     :param index_attribute: text
-    :param distance_func: text，text，text1，text0
+    :param distance_func: text1texttext0
     :return: text (EDR)
     """
 
@@ -306,13 +302,11 @@ def get_edr (clean ,dirty ,cleaned ,attributes ,output_path ,task_name ,index_at
 
 def get_hybrid_distance (clean ,cleaned ,attributes ,output_path ,task_name ,index_attribute ='index',mse_attributes =[],w1 =0.5 ,w2 =0.5 ):
     """
-    text，textMSEtextJaccardtext，text。
-
-    :param clean: text DataFrame
+    texttexttextMSEtextJaccardtext:param clean: text DataFrame
     :param cleaned: text DataFrame
     :param attributes: text
     :param output_path: text
-    :param task_name: text，text
+    :param task_name: texttexttext
     :param index_attribute: text
     :param w1: MSEtext
     :param w2: Jaccardtext
@@ -356,7 +350,7 @@ def get_hybrid_distance (clean ,cleaned ,attributes ,output_path ,task_name ,ind
                 try :
                     mse =mean_squared_error (clean_values .dropna ().astype (float ),cleaned_values .dropna ().astype (float ))
                 except ValueError :
-                    print (f"text {attribute} text！")
+                    print (f"text {attribute} texttext")
                     mse =np .nan # Legacy implementation note.
             else :
                 mse =np .nan 
@@ -367,7 +361,7 @@ def get_hybrid_distance (clean ,cleaned ,attributes ,output_path ,task_name ,ind
                 common_indices =clean_values .dropna ().index .intersection (cleaned_values .dropna ().index )
                 jaccard =1 -jaccard_score (clean_values .loc [common_indices ],cleaned_values .loc [common_indices ],average ='macro')
             except ValueError :
-                print (f"textJaccardtext，text {attribute} text")
+                print (f"textJaccardtexttexttext {attribute} text")
                 jaccard =np .nan # Legacy implementation note.
 
                 # Legacy implementation note.
@@ -382,7 +376,7 @@ def get_hybrid_distance (clean ,cleaned ,attributes ,output_path ,task_name ,ind
                 total_jaccard +=jaccard 
                 attribute_count +=1 
             else :
-                print (f"text，text {attribute} text")
+                print (f"texttexttext {attribute} text")
 
             print (f"Attribute: {attribute}, MSE: {mse}, Jaccard: {jaccard}")
 
@@ -406,13 +400,13 @@ def get_hybrid_distance (clean ,cleaned ,attributes ,output_path ,task_name ,ind
 
 def get_record_based_edr (clean ,dirty ,cleaned ,output_path ,task_name ,index_attribute ='index'):
     """
-    text (R-EDR)，text R-EDR text。
+    text (R-EDR)texttext R-EDR texttext
 
     :param clean: text DataFrame
     :param dirty: text DataFrame
     :param cleaned: text DataFrame
     :param output_path: text
-    :param task_name: text，text
+    :param task_name: texttexttext
     :param index_attribute: text
     :return: text (R-EDR)
     """
@@ -532,7 +526,7 @@ def test_calculate_all_metrics ():
     # assert results['edr'] > 0, "EDR should be greater than 0"
     # assert results['r_edr'] > 0, "R-EDR should be greater than 0"
 
-    print ("text！")
+    print ("texttext")
 
 if __name__ =="__main__":
 # Legacy implementation note.

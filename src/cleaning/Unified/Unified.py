@@ -18,8 +18,7 @@ import re
 
 def check_string (string :str ):
     """
-    text string text -inner_error-, -outer_error-, -inner_outer_error-, -dirty-original_error-，
-    text；text string。
+    text string text -inner_error-, -outer_error-, -inner_outer_error-, -dirty-original_error-textstringtext
     """
     if re .search (r"-inner_error-",string ):
         return "-inner_error-"+string [-6 :-4 ]

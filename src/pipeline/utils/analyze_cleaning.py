@@ -3,9 +3,9 @@
 """
 cleaning_metrics.py
 -------------------
-text comparison.json，text Precision / Recall / F1 / EDR
-（text LaTeX text ~\ref{tab:q1-metrics-definition} text），
-text task_name text <task_name>_cleaning.csv。
+text comparison.jsontexttext Precision / Recall / F1 / EDR
+texttext LaTeX text ~\ref{tab:q1-metrics-definition} texttext
+text task_name text <task_name>_cleaning.csvtext
 """
 import csv 
 import json 
@@ -64,7 +64,7 @@ def main ()->None :
 
         if df_clean .shape !=df_dirty .shape :
             print (
-            f"[WARNING] {task_name}-{num_}: clean.csv text dirty.csv text，text。"
+            f"[WARNING] {task_name}-{num_}: clean.csv text dirty.csv text"
             )
             continue 
 
@@ -78,13 +78,13 @@ def main ()->None :
         for cleaning_method ,rep_rel_path in item ["paths"]["repaired_paths"].items ():
             repaired_csv_path =(comparison_path .parent /rep_rel_path ).resolve ()
             if not repaired_csv_path .exists ():
-                print (f"[WARNING] text: {repaired_csv_path}，text {cleaning_method}")
+                print (f"[WARNING] text: {repaired_csv_path}texttext {cleaning_method}")
                 continue 
 
             df_rep =pd .read_csv (repaired_csv_path ,keep_default_na =False )
             if df_rep .shape !=df_clean .shape :
                 print (
-                f"[WARNING] {task_name}-{num_}: repaired text clean text，text {cleaning_method}"
+                f"[WARNING] {task_name}-{num_}: repaired text clean texttexttext {cleaning_method}"
                 )
                 continue 
 

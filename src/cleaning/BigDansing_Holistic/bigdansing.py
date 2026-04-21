@@ -23,8 +23,7 @@ import re
 
 def check_string (string :str ):
     """
-    text string text -inner_error-, -outer_error-, -inner_outer_error-, -dirty-original_error-，
-    text；text string。
+    text string text -inner_error-, -outer_error-, -inner_outer_error-, -dirty-original_error-textstringtext
     """
     if re .search (r"-inner_error-",string ):
         return "-inner_error-"+string [-6 :-4 ]
@@ -73,11 +72,11 @@ class BigDansing ():
         self .contantdic ={}
 
     '''
-        scopetext：text
+        scopetexttexttext
         Parameters
         ----------
         sco :
-            text，textlist
+            texttexttextlist
         Returns
         -------
         data :
@@ -100,7 +99,7 @@ class BigDansing ():
         return data 
 
     '''
-        blocktext：textblocking keytext
+        blocktexttexttextblocking keytext
         Parameters
         ----------
         data :
@@ -110,9 +109,9 @@ class BigDansing ():
         Returns
         -------
         blocked_list :
-            textblotextdata,textlist，list[i]textitextblotexttuple
+            textblotextdata,textlisttextlist[i]textitextblotexttuple
             example:
-                [[0, 1],[2, 3]]text2text，text0，1textblotext2，3textblotext
+                [[0, 1],[2, 3]]text2texttexttext0text1textblotext2text3textblotext
     '''
 
     def block (self ,data ,blo ):
@@ -152,7 +151,7 @@ class BigDansing ():
         return self .blocked_list 
 
     '''
-        iteratetext：textblocktext,textpair，text
+        iteratetexttexttextblocktext,textpairtexttext
         Parameters
         ----------
         data :
@@ -162,9 +161,9 @@ class BigDansing ():
         Returns
         -------
         pair :
-            textblocked_listtext,text，pair[i]textblotext，pair[i][j]text
+            textblocked_listtext,texttextpair[i]textblotexttextpair[i][j]text
             example :
-                [1, 2]text1，2text
+                [1, 2]text1text2text
     '''
 
     def iterate (self ,blocked_list ):
@@ -178,13 +177,13 @@ class BigDansing ():
         return pair 
 
     '''
-        generate：text
+        generatetexttext
         Parameters
         ----------
         newtemdic :
-            text，text
+            texttexttext
         temdic :
-            text，text
+            texttexttext
         Returns
         -------
         bds :
@@ -338,7 +337,7 @@ class BigDansing ():
                 self .cnt +=1 
 
     '''
-            detect：textmaypairtextmaypairtextlist：vio
+            detecttexttextmaypairtextmaypairtextlisttextvio
             Parameters
             ----------
             maypair :
@@ -352,8 +351,8 @@ class BigDansing ():
                 example :
                     <class 'list'>: [0, 1, (0, 1), (50, 1)]
                         textvio[i]textitext
-                        text1text，0text0text，text1text2text
-                        3text，text1text"!=",text，text2textcell
+                        text1texttext0text0texttexttext1text2text
+                        3texttexttext1text"!=",texttexttext2textcell
                         text(0, 1)text0text1textcell
         '''
 
@@ -399,9 +398,8 @@ class BigDansing ():
         return self .vio 
 
     '''
-        repair：textdatatextdetecttextviotext，textholistictextalgorithm1
-                text，textmvctext，mvctextcell，textlookuptextfrontiertext，text
-                textdeterminationtext，textpostprocesstext
+        repairtexttextdatatextdetecttextviotexttexttextholistictextalgorithm1
+                texttexttextmvctexttextmvctextcelltexttextlookuptextfrontiertextdeterminationtexttexttextpostprocesstext
         Parameters
         ----------
         vio :
@@ -464,10 +462,10 @@ class BigDansing ():
                     index1 =vio [edge ].index (cell )
                     '''
                         examples: 
-                        text[0, 1, (0, 1), (50, 1)]text，textcelltext（0，1），
-                        textindex1 % 3 == 2，index2textcell，text（50，1），indextext index2 = 2 + 1
-                        index0text，index0 = 2 - 1。
-                        text（50，1）textindex1 % 3 ==0 
+                        text[0, 1, (0, 1), (50, 1)]texttexttextcelltexttext0text1text
+                        textindex1 % 3 == 2textindex2textcelltexttexttext50text1textindextext index2 = 2 + 1
+                        index0texttextindex0 = 2 - 1text
+                        texttext50text1texttextindex1 % 3 ==0 
                     '''
                     if (index1 %3 ==2 ):
                         index2 =index1 +1 
@@ -522,15 +520,15 @@ class BigDansing ():
         return data ,self .all_clean ,self .clean_right ,self .clean_right_pre 
 
     '''
-        postprocess：textrepairtextmvctext
+        postprocesstexttextrepairtextmvctext
         Parameters
         ----------
         mvc :
             mvctextcell
         dicc :
-            text，text
+            texttexttext
             example:
-                {(1, 1): [2, 3, 4]}text1text1textcelltext2，3，4text
+                {(1, 1): [2, 3, 4]}text1text1textcelltext2text3text4text
         data :
             text
         all_clean :
@@ -589,8 +587,8 @@ class BigDansing ():
         # Legacy implementation note.
         # Legacy implementation note.
     '''
-        lookup ：textcelltext，text
-        Parameters ：
+        lookup texttextcelltexttexttext
+        Parameters text
         ----------
         cell :
             text
@@ -599,11 +597,11 @@ class BigDansing ():
         oper ;
             celltextedgetext
         rc :
-            repaircontext,text，text
+            repaircontext,texttexttext
         diccop :
-            text，text
+            texttexttext
             example:
-                {(1, 1): [2, 3, 4]}text1text1textcelltext2，3，4text
+                {(1, 1): [2, 3, 4]}text1text1textcelltext2text3text4text
         mvcdic :
             textmvctext
         vio :
@@ -611,7 +609,7 @@ class BigDansing ():
         Returns
         -------
         rc :
-            text，text
+            texttexttext
     '''
 
     def lookup (self ,cell ,edge ,oper ,diccop ,mvcdic ,vio ,firstcell ):
@@ -672,7 +670,7 @@ class BigDansing ():
         # determination
         # Legacy implementation note.
     '''
-        determination ：textrctext，textcelltext
+        determination texttextrctexttexttextcelltext
         Parameters
         ----------
         cell :

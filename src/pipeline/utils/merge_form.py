@@ -1,15 +1,15 @@
 """
 merge_to_summary.py
 -------------------
-text <dataset>_cleaning.csv text <dataset>_cluster.csv text <dataset>_summary.xlsx。
+text <dataset>_cleaning.csv text <dataset>_cluster.csv text <dataset>_summary.xlsxtext
 
 text:
     pandas>=1.3
-    openpyxl   # text pandas.to_excel text
+    openpyxl   # Legacy implementation note. pandas.to_excel text
 
 text:
-    python merge_to_summary.py      # text
-    python merge_to_summary.py beers  # text
+    python merge_to_summary.py      # Legacy implementation note.
+    python merge_to_summary.py beers  # Legacy implementation note.
 """
 from pathlib import Path 
 import sys 
@@ -35,7 +35,7 @@ FINAL_COL_ORDER =[
 ]
 
 def build_summary (ds :str )->pd .DataFrame :
-    """text summary DataFrame text xlsx。"""
+    """text summary DataFrame text xlsxtext"""
     cleaning_path =BASE_DIR /f"{ds}_cleaning.csv"
     cluster_path =BASE_DIR /f"{ds}_cluster.csv"
     out_path =BASE_DIR /f"{ds}_summary.xlsx"

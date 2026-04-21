@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 inject_errors_v2.py  · text“text + text”text
-CLI、text。
+CLItexttexttext
 """
 import argparse ,os ,random ,string 
 import numpy as np 
@@ -25,9 +25,9 @@ def inject_anomaly_and_missing (df ,cols ,a_rate ,m_rate ,rng ):
     """
     text   n_anom = round(N_valid * a_rate)
             n_miss = round(N_valid * m_rate)
-    text：
+    texttext
         - text
-        - A、M text
+        - AtextM text
     text (n_anom, n_miss)
     """
     # Legacy implementation note.
@@ -59,7 +59,7 @@ def inject_anomaly_and_missing (df ,cols ,a_rate ,m_rate ,rng ):
     return n_anom ,n_miss 
 
 def generate_anomaly_value (val ,rng ):
-    """text 3–6 text；text"""
+    """text 3–6 texttexttext"""
     if pd .isnull (val ):
         return val 
     try :
@@ -83,7 +83,7 @@ def main ():
 
     df_clean =pd .read_csv (args .input ).reset_index (drop =True )
     if df_clean .shape [1 ]<2 :
-        raise SystemExit ("Dataset text ≥2 text。")
+        raise SystemExit ("Dataset text ≥2 texttext")
 
     pk ,other_cols =df_clean .columns [0 ],df_clean .columns [1 :]
     # Legacy implementation note.
