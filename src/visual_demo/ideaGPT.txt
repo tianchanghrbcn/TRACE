@@ -1,24 +1,24 @@
-下面给出一套 **“从数据→过程→结果” 三层递进的可视化模板**，专门回答审稿人常问的那一句——**“清洗到底做了什么？”**。
-全部图都基于 **同一张坐标系**（`age` × `income`），便于读者瞬间对比。你可以按需选 2-3 张放正文，其余附录。
+text **“text→text→text” text**text——**“text”**text
+text **text**text`age` × `income`text 2-3 text
 
-| 层级           | 核心问题                             | 推荐图型                                                                        | 要在图上强调的要素                              | 解释口径（可直接写在 Caption/正文）                                  |
+| text           | text                             | text                                                                        | text                              | text Caption/text                                  |
 | ------------ | -------------------------------- | --------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------- |
-| **1. 数据分布层** | <br>➊ 清洗让哪些点被改动？<br>➋ 点的局部密度怎么变？ | **① 对照散点**<br>• 左：Dirty; 右：Cleaned<br>• 同色 = 原 “参考分区”<br>• **移动点用箭头/半透明残影** | - 箭头长度 = 观测值改动量  <br>- 用红圈标出新增/被删除的异常点 | “平均移位 3.7 单位；97 % 缺失被补齐；15 个异常值被裁剪。”                    |
-| **2. 过程层**   | <br>➌ 清洗如何改变聚类算法的内部行为？           | **② 过程曲线**<br>(a) K-Means SSE vs. 迭代步<br>(b) DBSCAN 核心点数 vs. ε              | - 曲线颜色：前/后对照<br>- 在拐点处标注‘收敛步减少 43 %’   | “K-Means 在 9 步内收敛（原为 16 步）；DBSCAN 最优 ε 左移 0.06。”        |
-| **3. 结果层**   | <br>➍ 聚类输出如何改善？<br>➎ 错分点流向哪儿？    | **③ 簇成分条形 + ARI/NMI 热图**<br>**④ Sankey / Alluvial** (可选)                    | - 条形：每个预测簇内三色所占比例<br>- 热图单元格上直接写 ARI   | “清洗后 ARI ↑ 0.52；簇 C2 纯度由 0.54 升至 0.83，原本混入的 B 区样本大幅回流。” |
+| **1. text** | <br>➊ text<br>➋ text | **① text**<br>• textDirty; textCleaned<br>• text = text “text”<br>• **text/text** | - text = text  <br>- text/text | “text 3.7 text97 % text15 text”                    |
+| **2. text**   | <br>➌ text           | **② text**<br>(a) K-Means SSE vs. text<br>(b) DBSCAN text vs. ε              | - text/text<br>- text‘text 43 %’   | “K-Means text 9 text 16 textDBSCAN text ε text 0.06text”        |
+| **3. text**   | <br>➍ text<br>➎ text    | **③ text + ARI/NMI text**<br>**④ Sankey / Alluvial** (text)                    | - text<br>- text ARI   | “text ARI ↑ 0.52text C2 text 0.54 text 0.83text B text” |
 
 ---
 
-## 具体绘制步骤
+## text
 
-1. **共用准备**
+1. **text**
 
    ```python
    import pandas as pd, matplotlib.pyplot as plt, seaborn as sns
-   COLOR = {'A':'#1f77b4','B':'#ff7f0e','C':'#2ca02c'}   # 固定色盘
+   COLOR = {'A':'#1f77b4','B':'#ff7f0e','C':'#2ca02c'}   # text
    ```
 
-2. **① 对照散点 + 箭头**
+2. **① text + text**
 
    ```python
    fig, ax = plt.subplots(1,2,figsize=(8,3.5), sharex=True, sharey=True)
@@ -27,7 +27,7 @@
            sub = df[df.segment==seg]
            ax[i].scatter(sub.age, sub.income, c=c, s=20, alpha=.6, label=seg if i==0 else "")
        ax[i].set_title(title); ax[i].grid(ls=':')
-   # 只在左图加箭头
+   # text
    for idx in moved_idx:          # moved_idx = df.diff_row_index
        x0,y0 = dirty.loc[idx,['age','income']]
        x1,y1 = clean.loc[idx,['age','income']]
@@ -35,7 +35,7 @@
    plt.legend(); plt.tight_layout(); plt.savefig('scatter_compare.pdf')
    ```
 
-3. **② 过程曲线（SSE vs. 迭代步）**
+3. **② textSSE vs. text**
 
    ```python
    plt.plot(range(len(sse_dirty)), sse_dirty, 'o-', label='Dirty')
@@ -46,7 +46,7 @@
    plt.ylabel('SSE'); plt.xlabel('Iteration'); plt.legend(); plt.tight_layout()
    ```
 
-4. **③ 簇成分条形 + ARI**
+4. **③ text + ARI**
 
    ```python
    from sklearn.metrics import adjusted_rand_score as ARI
@@ -55,22 +55,22 @@
    plt.title(f'Cluster Composition  (ARI={ARI(ref_seg, pred_cluster):.2f})')
    ```
 
-5. **④ Sankey**（选做，代码略，可用 `plotly.graph_objects.Sankey`）
+5. **④ Sankey**text `plotly.graph_objects.Sankey`text
 
 ---
 
-## 文字解释模板（放在结果讨论段）
+## text
 
-> “图 3-① 显示，清洗后 97 % 的缺失值被填补，15 个极端异常被裁剪；受此影响，样本在 $(\textit{age},\textit{income})$ 平面上的平均位移仅 3.7 单位，簇边界重新紧凑。
-> 图 3-② 进一步表明，K-Means 的 SSE 收敛步数由 16 步降至 9 步，说明数据噪声的存在显著拖慢了聚类搜索；DBSCAN 的最优 ε 左移 0.06，印证了“清洗后密度升高”的假设。
-> 在结果层面（图 3-③），清洗将 ARI 由 0.18 提升至 0.70，簇 C2 的纯度从 0.54 回升至 0.83，错分样本主要来自原 B 区，清洗后 78 % 成功回流至正确簇（见附录 Fig A-4 Sankey 流向图）。因此，我们可以定量回答——**清洗通过降低噪声半径与补全缺失，缩短了聚类收敛路径，并显著提高外部一致性。**”
+> “text 3-① text 97 % text15 text $(\textit{age},\textit{income})$ text 3.7 text
+> text 3-② textK-Means text SSE text 16 text 9 textDBSCAN text ε text 0.06text“text”text
+> text 3-③text ARI text 0.18 text 0.70text C2 text 0.54 text 0.83text B text 78 % text Fig A-4 Sankey text——**text**”
 
 ---
 
-### 总结
+### text
 
-* **三个层级**（分布-过程-结果）缺一不可，给出“清洗介入点 → 机制改变 → 指标收益”完整链条。
-* **同坐标系、同配色** 保证读者“一眼认簇”。
-* 只要把这 2-3 张关键图 + 1-2 句定量对比放进正文，审稿人就能直观理解“清洗到底做了什么”。
+* **text**text-text-text“text → text → text”text
+* **text** text“text”text
+* text 2-3 text + 1-2 text“text”text
 
-需要代码示例文件或具体排版细节，随时告诉我！
+text
