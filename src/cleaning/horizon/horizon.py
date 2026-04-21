@@ -1,3 +1,9 @@
+import os
+from pathlib import Path
+
+TRACE_PROJECT_ROOT = Path(
+    os.environ.get("TRACE_PROJECT_ROOT", Path(__file__).resolve().parents[3])
+).resolve()
 # -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
@@ -514,12 +520,14 @@ rep_f1 = calF1(rep_precision, rep_recall)
 
 if True:
     if PERFECTED:
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/horizon/" + task_name +"/perfectED+EC_" + task_name + ".txt"
-        res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/horizon/" + task_name +"/perfect_repaired_" + task_name + ".csv"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/horizon/" + task_name +"/perfectED+EC_" + task_name + ".txt"
+        res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/horizon/" + task_name +"/perfect_repaired_" + task_name + ".csv"
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
     else:
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/horizon/" + task_name +"/onlyED_" + task_name + ".txt"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/horizon/" + task_name +"/onlyED_" + task_name + ".txt"
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
         print(det_prec)
@@ -528,10 +536,11 @@ if True:
         print(end_time-start_time)
         f.close()
 
-        out_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Exp_result/horizon/" + task_name +"/oriED+EC_" + task_name + ".txt"
+        out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/horizon/" + task_name +"/oriED+EC_" + task_name + ".txt"
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
         f = open(out_path, 'w')
         sys.stdout = f
-        res_path = "/home/changtian/Cleaning-Clustering/src/cleaning/Repaired_res/horizon/" + task_name +"/repaired_" + task_name + ".csv"
+        res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/horizon/" + task_name +"/repaired_" + task_name + ".csv"
     print(rep_precision)
     print(rep_recall)
     print(rep_f1)
