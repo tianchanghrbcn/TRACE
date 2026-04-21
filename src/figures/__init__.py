@@ -1,0 +1,2 @@
+"""TRACE figure-generation package."""
+
