@@ -49,7 +49,7 @@ CLEANER_ID_TO_NAME = {
     5: "boostclean",
     6: "horizon",
     7: "scared",
-    8: "Unified",
+    8: "unified",
     9: "google_gemini",
 }
 
