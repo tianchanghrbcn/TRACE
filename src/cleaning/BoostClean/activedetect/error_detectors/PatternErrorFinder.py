@@ -4,50 +4,50 @@
 Detects Semantic Errors in A Dataset Using 
 Word2Vec
 """
-from gensim.models.word2vec import Word2Vec
-import numpy as np
-import os.path
+from gensim .models .word2vec import Word2Vec 
+import numpy as np 
+import os .path 
 
-class PatternErrorFinder(object):
+class PatternErrorFinder (object ):
 
-    def __init__(self, thresh=3.5, model_savef='/tmp/model.bin'):
-        self.thresh = thresh
-        self.model_savef = model_savef
+    def __init__ (self ,thresh =3.5 ,model_savef ='/tmp/model.bin'):
+        self .thresh =thresh 
+        self .model_savef =model_savef 
 
     """
     Turns an error set into a set of records
     """
-    def getRecordSet(self, dataset):
+    def getRecordSet (self ,dataset ):
 
-        p = len(dataset[0])
-        # 将 vector_size=100 改为 size=100
-        self.model = Word2Vec(dataset, size=100, window=p, min_count=1, workers=4, hs=1, negative=0)
+        p =len (dataset [0 ])
+        # Legacy implementation note.
+        self .model =Word2Vec (dataset ,size =100 ,window =p ,min_count =1 ,workers =4 ,hs =1 ,negative =0 )
 
-        vals = self.model.score(dataset)
-        self.model.save(self.model_savef)
+        vals =self .model .score (dataset )
+        self .model .save (self .model_savef )
 
-        mean = np.mean(vals)
-        std = np.std(vals)
+        mean =np .mean (vals )
+        std =np .std (vals )
 
-        erecords = []
-        indices = []
+        erecords =[]
+        indices =[]
 
-        for i, v in enumerate(vals):
-            # 如果 score 低于 (mean - thresh * std) 则视为异常记录
-            if mean - v > self.thresh * std:
-                erecords.append(dataset[i])
-                indices.append(i)
+        for i ,v in enumerate (vals ):
+        # Legacy implementation note.
+            if mean -v >self .thresh *std :
+                erecords .append (dataset [i ])
+                indices .append (i )
 
-        return erecords, indices, [
-            {
-                'type': 'word2vec',
-                'mean': mean,
-                'width': self.thresh * std,
-                'model': self.model_savef
-            }
+        return erecords ,indices ,[
+        {
+        'type':'word2vec',
+        'mean':mean ,
+        'width':self .thresh *std ,
+        'model':self .model_savef 
+        }
         ]
 
     """
     """
-    def desc(self):
-        return "A value was found with an abnormal word2vec similarity score thresh= " + str(self.thresh)
+    def desc (self ):
+        return "A value was found with an abnormal word2vec similarity score thresh= "+str (self .thresh )
