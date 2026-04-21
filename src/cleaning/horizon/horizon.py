@@ -427,7 +427,8 @@ def export_res(pattern_expressions, dirty_path):
     for i in range(len(res_df)):
         for v in pattern_expressions[i]:
             res_df.iloc[i, list(res_df.columns).index(v)] = pattern_expressions[i][v]
-    res_path = "./Repaired_res/horizon/" + task_name[:-1] +"/repaired_" + task_name + dirty_path[-25:-4] + ".csv"
+    res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/horizon/" + task_name[:-1] +"/repaired_" + task_name + dirty_path[-25:-4] + ".csv"
+    os.makedirs(os.path.dirname(res_path), exist_ok=True)
     res_df.to_csv(res_path, index=False)
 
 def calF1(precision, recall):
@@ -551,4 +552,5 @@ if True:
     for i in range(len(res_df)):
         for v in pattern_expressions[i]:
             res_df.loc[i, v] = pattern_expressions[i][v]
+    os.makedirs(os.path.dirname(res_path), exist_ok=True)
     res_df.to_csv(res_path, index=False)

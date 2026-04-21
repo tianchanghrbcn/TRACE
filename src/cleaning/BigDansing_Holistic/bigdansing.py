@@ -943,6 +943,7 @@ class BigDansing():
                 dirty_df = pd.read_csv(dirty_path).astype(str).fillna("nan")
                 for cell, value in self.repaired_cells_value.items():
                     dirty_df.iloc[cell[0], cell[1]] = value
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 dirty_df.to_csv(res_path, index=False)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
@@ -1007,6 +1008,7 @@ class BigDansing():
                 dirty_df = pd.read_csv(dirty_path).astype(str).fillna("nan")
                 for cell, value in self.repaired_cells_value.items():
                     dirty_df.iloc[cell[0], cell[1]] = value
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 dirty_df.to_csv(res_path, index=False)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')

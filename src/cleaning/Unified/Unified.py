@@ -60,7 +60,7 @@ class Unified():
         self.wrong_cells = []
         self.clean_in_cands = []
         self.clean_in_cands_repair_right = []
-        self.out_csv = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/Unified/" + task_name + "/repaired_" + task_name + ".csv"
+        self.out_csv = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/unified/" + task_name + "/repaired_" + task_name + ".csv"
 
         # === 原有：找出所有错单元格 ===
         for i in range(len(self.dirty_csv)):
@@ -439,7 +439,8 @@ class Unified():
                 f.close()
 
                 out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/Unified/" + task_name +"/oriED+EC_" + task_name + ".txt"
-                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/Unified/" + task_name + "/repaired_" + task_name + ".csv"
+                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/unified/" + task_name + "/repaired_" + task_name + ".csv"
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 self.dirty_csv.to_csv(res_path, index=False)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
@@ -502,7 +503,8 @@ class Unified():
                 f.close()
             else:
                 out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/Unified/" + task_name +"/prefectED+EC_" + task_name + ".txt"
-                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/Unified/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/unified/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 self.dirty_csv.to_csv(res_path, index=False)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')

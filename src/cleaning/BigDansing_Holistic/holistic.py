@@ -802,10 +802,11 @@ class Holistic():
                 f.close()
 
                 out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/holistic/" + task_name[:-1] +"/oriED+EC_" + task_name + check_string(dirty_path.split("/")[-1]) + ".txt"
-                res_path = "./Repaired_res/holistic/" + task_name[:-1] +"/repaired_" + task_name + check_string(dirty_path.split("/")[-1]) + ".csv"
+                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/holistic/" + task_name[:-1] +"/repaired_" + task_name + check_string(dirty_path.split("/")[-1]) + ".csv"
                 dirty_df = pd.read_csv(dirty_path)
                 for cell, value in self.repaired_cells_value.items():
                     dirty_df.iloc[cell[0], cell[1]] = value
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 dirty_df.to_csv(res_path, index=False)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
@@ -877,10 +878,11 @@ class Holistic():
                 rec = rec_right / (wrong_cells+1e-10)
                 f1 = 2*pre*rec / (rec+pre+1e-10)
                 out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/holistic/" + task_name[:-1] +"/perfectED+EC_" + task_name + check_string(dirty_path.split("/")[-1]) + ".txt"
-                res_path = "./Repaired_res/holistic/" + task_name[:-1] +"/perfect_repaired_" + task_name + check_string(dirty_path.split("/")[-1]) + ".csv"
+                res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/holistic/" + task_name[:-1] +"/perfect_repaired_" + task_name + check_string(dirty_path.split("/")[-1]) + ".csv"
                 dirty_df = pd.read_csv(dirty_path)
                 for cell, value in self.repaired_cells_value.items():
                     dirty_df.iloc[cell[0], cell[1]] = value
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 dirty_df.to_csv(res_path, index=False)
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')

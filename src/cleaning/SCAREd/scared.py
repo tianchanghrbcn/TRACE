@@ -157,6 +157,7 @@ class SCAREd:
                 out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/scared/" + task_name + "/oriED+EC_" + task_name + ".txt"
                 res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/scared/" + task_name + "/repaired_" + task_name + ".csv"
                 self.rep_csv.drop('Index', axis=1, inplace=True)
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 self.rep_csv.to_csv(res_path, index=False, columns=list(self.rep_csv.columns))
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
@@ -180,6 +181,7 @@ class SCAREd:
             else:
                 out_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Exp_result/scared/" + task_name + "/perfectED+EC_" + task_name + ".txt"
                 res_path = str(TRACE_PROJECT_ROOT) + "/src/cleaning/Repaired_res/scared/" + task_name + "/perfect_repaired_" + task_name + ".csv"
+                os.makedirs(os.path.dirname(res_path), exist_ok=True)
                 self.rep_csv.to_csv(res_path, index=False, columns=list(self.rep_csv.columns))
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 f = open(out_path, 'w')
