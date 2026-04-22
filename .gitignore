@@ -148,3 +148,10 @@ src/cleaning/Repaired_res/
 !/results/pre_experiment/.gitkeep
 /figures/pre_experiment/*
 !/figures/pre_experiment/.gitkeep
+
+# Local release assets
+/release/
+
+# Local inventory reports
+/results/logs/inventory/
+/results/logs/stage3_replay_full_check/
