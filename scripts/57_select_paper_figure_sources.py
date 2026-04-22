@@ -1,0 +1,202 @@
+#!/usr/bin/env python3
+"""Select paper figure sources for Stage 3R.5 figure replay."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+PREFERRED_ROOT_MARKER = "AutoMLClustering_full"
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Select paper figure sources from paper replay audit.")
+    parser.add_argument(
+        "--audit-csv",
+        type=Path,
+        default=Path("analysis/paper_replay_audit/paper_replay_source_candidates.csv"),
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path("analysis/paper_figure_audit"),
+    )
+    return parser.parse_args()
+
+
+def read_rows(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        raise FileNotFoundError(f"Audit CSV not found: {path}")
+    with path.open("r", encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def rel(row: dict[str, str]) -> str:
+    return row.get("relative_path", "").replace("\\", "/")
+
+
+def root_is_preferred(row: dict[str, str]) -> bool:
+    return PREFERRED_ROOT_MARKER.lower() in row.get("root", "").lower()
+
+
+def is_noise(row: dict[str, str]) -> bool:
+    text = (row.get("root", "") + "/" + rel(row)).lower()
+
+    noise = [
+        ".venv/",
+        "/site-packages/",
+        "__pycache__",
+        "analysis/paper_generated/",
+        "analysis/paper_replay_audit/",
+        "artifacts/paper_exact/",
+        "results/logs/",
+        "release/",
+    ]
+
+    return any(token in text for token in noise)
+
+
+def select_group(row: dict[str, str]) -> str | None:
+    if is_noise(row):
+        return None
+
+    category = row.get("category", "")
+    r = rel(row).lower()
+
+    if not root_is_preferred(row):
+        return None
+
+    if category == "paper_tex":
+        if "task_progress/latex" in r:
+            return "paper_tex"
+
+    if category == "paper_figure_output":
+        if "task_progress/latex/figures" in r:
+            return "paper_figures_latex"
+        if "task_progress/figures" in r:
+            return "paper_figures_reference"
+        if "word_screenshot" in r:
+            return "paper_figures_word_screenshot"
+
+    if category == "paper_figure_script":
+        if "src/pipeline/utils" in r:
+            return "figure_scripts_utils"
+        if "src/graph" in r:
+            return "figure_scripts_graph"
+        if "visual_demo" in r:
+            return "figure_scripts_visual_demo"
+        if "pre-experiment" in r or "pre_experiment" in r:
+            return "figure_scripts_pre_experiment"
+
+    return None
+
+
+def target_subdir(group: str) -> str:
+    mapping = {
+        "paper_tex": "paper_tex",
+        "paper_figures_latex": "paper_figures/latex",
+        "paper_figures_reference": "paper_figures/reference",
+        "paper_figures_word_screenshot": "paper_figures/word_screenshot",
+        "figure_scripts_utils": "scripts/utils",
+        "figure_scripts_graph": "scripts/graph",
+        "figure_scripts_visual_demo": "scripts/visual_demo",
+        "figure_scripts_pre_experiment": "scripts/pre_experiment",
+    }
+    return mapping[group]
+
+
+def main() -> None:
+    args = parse_args()
+    rows = read_rows(args.audit_csv)
+
+    selected = []
+    for row in rows:
+        group = select_group(row)
+        if group is None:
+            continue
+        out = dict(row)
+        out["selection_group"] = group
+        out["target_subdir"] = target_subdir(group)
+        selected.append(out)
+
+    selected = sorted(selected, key=lambda r: (r["selection_group"], r["relative_path"]))
+
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+
+    out_csv = args.output_dir / "paper_figure_source_selection.csv"
+    columns = [
+        "root",
+        "relative_path",
+        "file_name",
+        "extension",
+        "category",
+        "selection_group",
+        "target_subdir",
+        "size_bytes",
+        "sha256",
+        "latex_references",
+        "python_inputs",
+        "python_outputs",
+    ]
+
+    with out_csv.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=columns, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(selected)
+
+    summary = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "input_csv": str(args.audit_csv),
+        "selected_count": len(selected),
+        "selection_group_counts": dict(Counter(row["selection_group"] for row in selected)),
+        "category_counts": dict(Counter(row["category"] for row in selected)),
+    }
+
+    out_json = args.output_dir / "paper_figure_source_selection_summary.json"
+    out_json.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    out_md = args.output_dir / "paper_figure_source_selection.md"
+    lines = [
+        "# Paper Figure Source Selection",
+        "",
+        "This file is generated by `scripts/57_select_paper_figure_sources.py`.",
+        "",
+        f"- Generated at UTC: {summary['generated_at_utc']}",
+        f"- Selected files: {summary['selected_count']}",
+        "",
+        "## Selection group counts",
+        "",
+        "| Group | Count |",
+        "|---|---:|",
+    ]
+
+    for key, value in sorted(summary["selection_group_counts"].items()):
+        lines.append(f"| {key} | {value} |")
+
+    lines += [
+        "",
+        "## Selected files",
+        "",
+        "| Group | Category | File |",
+        "|---|---|---|",
+    ]
+
+    for row in selected:
+        lines.append(f"| {row['selection_group']} | {row['category']} | {row['relative_path']} |")
+
+    out_md.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    print(json.dumps(summary, indent=2, ensure_ascii=False))
+    print(f"[TRACE] Wrote: {out_csv}")
+    print(f"[TRACE] Wrote: {out_json}")
+    print(f"[TRACE] Wrote: {out_md}")
+
+
+if __name__ == "__main__":
+    main()
+

@@ -155,3 +155,31 @@ src/cleaning/Repaired_res/
 # Local inventory reports
 /results/logs/inventory/
 /results/logs/stage3_replay_full_check/
+
+# Stage 3R generated paper-exact replay artifacts
+/artifacts/paper_exact/
+/analysis/paper_exact/
+/results/paper_exact/
+/figures/paper_exact/
+/analysis/paper_replay_audit/*.csv
+/analysis/paper_replay_audit/*.json
+/analysis/paper_replay_audit/*.md
+!/analysis/.gitkeep
+
+# Stage 3R generated summary replay outputs
+/analysis/paper_generated/
+
+# Stage 3R generated paper table outputs
+/analysis/paper_generated/paper_tables/
+/analysis/paper_generated/paper_table_workspace/
+
+# Stage 3R generated paper figure outputs
+/analysis/paper_generated/paper_figures/
+/analysis/paper_generated/paper_figure_workspace/
+/figures/paper_generated/
+
+# Stage 3R generated paper figure audit and harness outputs
+/analysis/paper_figure_audit/
+/analysis/paper_generated/paper_figures/
+/analysis/paper_generated/paper_figure_workspace/
+/figures/paper_generated/
