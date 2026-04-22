@@ -168,3 +168,7 @@ src/cleaning/Repaired_res/
 
 # Stage 3R generated summary replay outputs
 /analysis/paper_generated/
+
+# Stage 3R generated paper table outputs
+/analysis/paper_generated/paper_tables/
+/analysis/paper_generated/paper_table_workspace/
