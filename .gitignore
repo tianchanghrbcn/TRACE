@@ -155,3 +155,13 @@ src/cleaning/Repaired_res/
 # Local inventory reports
 /results/logs/inventory/
 /results/logs/stage3_replay_full_check/
+
+# Stage 3R generated paper-exact replay artifacts
+/artifacts/paper_exact/
+/analysis/paper_exact/
+/results/paper_exact/
+/figures/paper_exact/
+/analysis/paper_replay_audit/*.csv
+/analysis/paper_replay_audit/*.json
+/analysis/paper_replay_audit/*.md
+!/analysis/.gitkeep
