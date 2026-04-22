@@ -55,3 +55,38 @@ The maintainer-side Stage 2 strict validation passed on Linux. It exercises setu
 
 The observed runtime was about six hours on the maintainer machine. Runtime on reviewer hardware may differ.
 
+## Stage map
+
+TRACE is organized into four stages:
+
+- Stage 1: repository and baseline preparation.
+- Stage 2: execution-layer validation for cleaners and clusterers.
+- Stage 3: result replay, figures, pre-experiment, visual demo, and advisor-review package.
+- Stage 4: planned TRACE validation, new algorithm extension, and new dataset onboarding.
+
+Stage 1--3 are complete for advisor review. Stage 4 is planned.
+
+See `docs/stage1_to_stage4_plan.md` for details.
+
+## Terminal home
+
+For orientation inside the artifact, run:
+
+    python scripts/00_trace_home.py
+
+For a numbered terminal menu:
+
+    python scripts/00_trace_home.py --interactive
+
+## Data availability
+
+Reviewer-facing data are stored under:
+
+- `data/raw/train/`
+- `data/pre_experiment/`
+
+Generated outputs are reproducible and ignored by default. See `docs/data_policy.md`.
+
+## License
+
+TRACE wrapper/orchestration code is released under the MIT License. Third-party method implementations retain their respective upstream licenses and notices. See `LICENSE` and `THIRD_PARTY_NOTICES.md`.

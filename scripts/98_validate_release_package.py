@@ -15,6 +15,16 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 REQUIRED_STATIC_PATHS = [
+    "scripts/45_validate_data_availability.py",
+    "scripts/00_trace_home.py",
+    "docs/release_packaging.md",
+    "docs/terminal_interface.md",
+    "docs/stage1_to_stage4_plan.md",
+    "docs/hardware_runtime.md",
+    "docs/data_policy.md",
+    "data/README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE",
     "README.md",
     "configs/methods.yaml",
     "configs/results_schema.yaml",
@@ -145,6 +155,10 @@ def main() -> None:
     py = sys.executable
 
     commands = [
+        (
+            "data_availability",
+            [py, "scripts/45_validate_data_availability.py"],
+        ),
         (
             "setup_mode_b",
             [py, "scripts/00_setup_check.py", "--config", "configs/mode_b_smoke.yaml", "--strict"],
