@@ -32,6 +32,7 @@ def parse_args() -> argparse.Namespace:
     mode_a.add_argument("--table-equivalence", action="store_true", help="Also validate generated paper-table equivalence against archived references.")
     mode_a.add_argument("--paper-figures", action="store_true", help="Also run selected paper figure scripts and validate captured outputs.")
     mode_a.add_argument("--figure-traceability", action="store_true", help="Also validate paper figure traceability against LaTeX references and archived outputs.")
+    mode_a.add_argument("--paper-output-traceability", action="store_true", help="Build a combined paper table/figure traceability report.")
 
     sub.add_parser("mode-b", help="Mode B: smoke run from scratch.")
     sub.add_parser("mode-c", help="Mode C: strict execution-layer validation.")
@@ -128,6 +129,12 @@ def main() -> None:
 
         if args.figure_traceability:
             code = run(["scripts/60_validate_paper_figure_traceability.py"])
+            if code:
+                raise SystemExit(code)
+
+
+        if args.paper_output_traceability:
+            code = run(["scripts/61_build_paper_output_traceability_report.py"])
             if code:
                 raise SystemExit(code)
 
