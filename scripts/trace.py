@@ -33,6 +33,7 @@ def parse_args() -> argparse.Namespace:
     mode_a.add_argument("--paper-figures", action="store_true", help="Also run selected paper figure scripts and validate captured outputs.")
     mode_a.add_argument("--figure-traceability", action="store_true", help="Also validate paper figure traceability against LaTeX references and archived outputs.")
     mode_a.add_argument("--paper-output-traceability", action="store_true", help="Build a combined paper table/figure traceability report.")
+    mode_a.add_argument("--validate-paper-replay", action="store_true", help="Validate Mode A paper-output replay reports.")
 
     sub.add_parser("mode-b", help="Mode B: smoke run from scratch.")
     sub.add_parser("mode-c", help="Mode C: strict execution-layer validation.")
@@ -135,6 +136,10 @@ def main() -> None:
 
         if args.paper_output_traceability:
             code = run(["scripts/61_build_paper_output_traceability_report.py"])
+            if code:
+                raise SystemExit(code)
+        if args.validate_paper_replay:
+            code = run(["scripts/62_validate_mode_a_paper_replay.py"])
             if code:
                 raise SystemExit(code)
 
