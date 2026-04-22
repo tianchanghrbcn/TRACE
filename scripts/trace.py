@@ -27,6 +27,7 @@ def parse_args() -> argparse.Namespace:
     mode_a = sub.add_parser("mode-a", help="Mode A: paper-exact replay from archived results.")
     mode_a.add_argument("--audit", action="store_true", help="Run paper replay source audit first.")
     mode_a.add_argument("--clean", action="store_true", help="Clean previous Mode A paper-exact outputs.")
+    mode_a.add_argument("--generated-summaries", action="store_true", help="Also generate and validate summary workbooks.")
 
     sub.add_parser("mode-b", help="Mode B: smoke run from scratch.")
     sub.add_parser("mode-c", help="Mode C: strict execution-layer validation.")
@@ -65,7 +66,21 @@ def main() -> None:
         if code:
             raise SystemExit(code)
 
-        raise SystemExit(run(["scripts/49_validate_mode_a_paper_exact.py"]))
+        code = run(["scripts/49_validate_mode_a_paper_exact.py"])
+        if code:
+            raise SystemExit(code)
+
+        if args.generated_summaries:
+            for cmd in [
+                ["scripts/50_audit_paper_table_scripts.py"],
+                ["scripts/51_build_paper_summary_workbooks.py"],
+                ["scripts/52_validate_paper_summary_workbooks.py"],
+            ]:
+                code = run(cmd)
+                if code:
+                    raise SystemExit(code)
+
+        raise SystemExit(0)
 
     if args.command == "mode-b":
         raise SystemExit(run([

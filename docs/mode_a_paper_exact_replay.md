@@ -44,3 +44,8 @@ The next Stage 3R step is generated paper-exact replay:
 
 That step will migrate the selected table scripts and figure scripts into executable TRACE Mode A modules.
 
+## Unified entry
+
+Run archive replay and generated summary workbook replay together:
+
+    python scripts/trace.py mode-a --audit --clean --generated-summaries

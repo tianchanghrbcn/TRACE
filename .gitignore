@@ -165,3 +165,6 @@ src/cleaning/Repaired_res/
 /analysis/paper_replay_audit/*.json
 /analysis/paper_replay_audit/*.md
 !/analysis/.gitkeep
+
+# Stage 3R generated summary replay outputs
+/analysis/paper_generated/
