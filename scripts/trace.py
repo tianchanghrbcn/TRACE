@@ -30,6 +30,7 @@ def parse_args() -> argparse.Namespace:
     mode_a.add_argument("--generated-summaries", action="store_true", help="Also generate and validate summary workbooks.")
     mode_a.add_argument("--paper-tables", action="store_true", help="Also run and validate selected paper table scripts.")
     mode_a.add_argument("--table-equivalence", action="store_true", help="Also validate generated paper-table equivalence against archived references.")
+    mode_a.add_argument("--paper-figures", action="store_true", help="Also run selected paper figure scripts and validate captured outputs.")
 
     sub.add_parser("mode-b", help="Mode B: smoke run from scratch.")
     sub.add_parser("mode-c", help="Mode C: strict execution-layer validation.")
@@ -111,6 +112,17 @@ def main() -> None:
             code = run(["scripts/56_classify_table_equivalence_layers.py"])
             if code:
                 raise SystemExit(code)
+
+
+        if args.paper_figures:
+            for cmd in [
+                ["scripts/57_select_paper_figure_sources.py"],
+                ["scripts/58_run_paper_figure_scripts.py", "--clean", "--timeout", "1200"],
+                ["scripts/59_validate_paper_figure_outputs.py"],
+            ]:
+                code = run(cmd)
+                if code:
+                    raise SystemExit(code)
 
         raise SystemExit(0)
 

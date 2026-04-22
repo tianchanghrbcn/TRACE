@@ -172,3 +172,14 @@ src/cleaning/Repaired_res/
 # Stage 3R generated paper table outputs
 /analysis/paper_generated/paper_tables/
 /analysis/paper_generated/paper_table_workspace/
+
+# Stage 3R generated paper figure outputs
+/analysis/paper_generated/paper_figures/
+/analysis/paper_generated/paper_figure_workspace/
+/figures/paper_generated/
+
+# Stage 3R generated paper figure audit and harness outputs
+/analysis/paper_figure_audit/
+/analysis/paper_generated/paper_figures/
+/analysis/paper_generated/paper_figure_workspace/
+/figures/paper_generated/
