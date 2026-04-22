@@ -29,6 +29,7 @@ def parse_args() -> argparse.Namespace:
     mode_a.add_argument("--clean", action="store_true", help="Clean previous Mode A paper-exact outputs.")
     mode_a.add_argument("--generated-summaries", action="store_true", help="Also generate and validate summary workbooks.")
     mode_a.add_argument("--paper-tables", action="store_true", help="Also run and validate selected paper table scripts.")
+    mode_a.add_argument("--table-equivalence", action="store_true", help="Also validate generated paper-table equivalence against archived references.")
 
     sub.add_parser("mode-b", help="Mode B: smoke run from scratch.")
     sub.add_parser("mode-c", help="Mode C: strict execution-layer validation.")
@@ -101,6 +102,15 @@ def main() -> None:
                 code = run(cmd)
                 if code:
                     raise SystemExit(code)
+
+
+        if args.table_equivalence:
+            raw_code = run(["scripts/55_validate_paper_table_equivalence.py"])
+            if raw_code:
+                print("[TRACE] Raw table equivalence reported hard mismatches; running layered diagnostics.")
+            code = run(["scripts/56_classify_table_equivalence_layers.py"])
+            if code:
+                raise SystemExit(code)
 
         raise SystemExit(0)
 

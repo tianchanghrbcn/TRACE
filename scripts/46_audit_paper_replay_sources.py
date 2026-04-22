@@ -159,11 +159,47 @@ def inspect_python_io(path: Path) -> dict[str, str]:
     }
 
 
+def should_skip_candidate_path(path: Path, root: Path) -> bool:
+    """Skip generated artifacts and local environments during paper-source audit."""
+    rel = path.relative_to(root).as_posix().lower()
+
+    skip_parts = {
+        ".git",
+        ".venv",
+        "__pycache__",
+        ".pytest_cache",
+        "release",
+    }
+
+    if any(part.lower() in skip_parts for part in path.parts):
+        return True
+
+    generated_prefixes = [
+        "analysis/paper_generated/",
+        "analysis/paper_replay_audit/",
+        "artifacts/paper_exact/",
+        "figures/paper_exact/",
+        "figures/png/",
+        "figures/pdf/",
+        "results/paper_exact/",
+        "results/processed/",
+        "results/tables/",
+        "results/logs/",
+        "results/pre_experiment/",
+        "results/visual_demo/",
+    ]
+
+    return any(rel.startswith(prefix) for prefix in generated_prefixes)
+
+
 def iter_candidate_files(root: Path, max_files: int):
     count = 0
 
     for path in root.rglob("*"):
         if not path.is_file():
+            continue
+
+        if should_skip_candidate_path(path, root):
             continue
 
         if ".git" in path.parts:
