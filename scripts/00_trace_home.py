@@ -57,12 +57,7 @@ COMMANDS = {
 }
 
 
-PLANNED = {
-    "11": "Stage 4 TRACE validation placeholder",
-    "12": "Stage 4 new algorithm extension placeholder",
-    "13": "Stage 4 new dataset onboarding placeholder",
-    "14": "Claim-level narrative traceability placeholder",
-}
+PLANNED = {}
 
 
 def git_value(args: list[str], default: str = "unknown") -> str:
@@ -146,8 +141,6 @@ def print_menu() -> None:
     print("   0. Show this home page")
     for key in sorted(COMMANDS, key=lambda value: int(value)):
         print(f"  {int(key):2d}. {COMMANDS[key]['title']}")
-    for key in sorted(PLANNED, key=lambda value: int(value)):
-        print(f"  {int(key):2d}. {PLANNED[key]} [planned/info]")
 
 
 def run_command(cmd: list[str]) -> int:
