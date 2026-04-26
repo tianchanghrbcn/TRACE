@@ -6,12 +6,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def ecdf(values):
-    values = np.asarray(values, dtype=float)
-    values = values[np.isfinite(values)]
-    values = np.sort(values)
-    y = np.arange(1, len(values) + 1) / len(values)
-    return values, y
+TRACE_COLOR = "C0"
+BLIND_COLOR = "C1"
 
 
 def pct(x):
@@ -30,6 +26,71 @@ def get_col(df, candidates):
         if c in df.columns:
             return c
     raise KeyError(f"None of these columns exist: {candidates}")
+
+
+def numeric_values(series, fill_missing=None, clip_to_unit=True):
+    values = pd.to_numeric(series, errors="coerce")
+    if fill_missing is not None:
+        values = values.fillna(fill_missing)
+    values = values.dropna().astype(float)
+    if clip_to_unit:
+        values = values.clip(lower=0.0, upper=1.0)
+    return values.to_numpy(dtype=float)
+
+
+def style_axis(ax, legend=True):
+    # Paper style: no grid, inward ticks, no legend frame.
+    ax.grid(False)
+    ax.tick_params(axis="both", which="both", direction="in", top=True, right=True)
+    if legend:
+        ax.legend(frameon=False)
+
+
+def plot_ecdf(ax, values, *, color, label, x_right=1.0, linewidth=2.0):
+    """Plot a right-continuous empirical CDF and keep the final jump visible.
+
+    Matplotlib's step plot can hide a jump at x=1.0 behind the right spine.  This
+    helper draws the ECDF manually and redraws the terminal vertical jump on top.
+    """
+    values = np.asarray(values, dtype=float)
+    values = values[np.isfinite(values)]
+    if values.size == 0:
+        raise ValueError("Cannot plot an ECDF with no finite values.")
+    values = np.sort(values)
+    unique, counts = np.unique(values, return_counts=True)
+    n = float(values.size)
+
+    x0 = 0.0 if unique[0] >= 0.0 else float(unique[0])
+    xs = [x0]
+    ys = [0.0]
+    cumulative = 0
+    y_prev = 0.0
+    for x, count in zip(unique, counts):
+        x = float(x)
+        y_next = (cumulative + int(count)) / n
+        xs.extend([x, x])
+        ys.extend([y_prev, y_next])
+        cumulative += int(count)
+        y_prev = y_next
+    xs.append(float(x_right))
+    ys.append(y_prev)
+
+    ax.plot(xs, ys, color=color, linewidth=linewidth, label=label, zorder=3)
+
+    # If the final mass occurs exactly at x_right, draw that vertical jump again
+    # above the axis spine so missing-hit cases assigned to 1.0 are visible.
+    if np.isclose(unique[-1], x_right):
+        y_before = (values.size - counts[-1]) / n
+        if y_before < 1.0:
+            ax.plot(
+                [x_right, x_right],
+                [y_before, 1.0],
+                color=color,
+                linewidth=linewidth,
+                zorder=5,
+                solid_capstyle="butt",
+                clip_on=False,
+            )
 
 
 def main():
@@ -73,22 +134,22 @@ def main():
     gap_reduction = (blind_gap - trace_gap) / blind_gap if blind_gap > 0 else float("nan")
 
     # Figure 1: ECDF of hit-to-95% progress.
-    x_trace, y_trace = ecdf(ds[trace_hit_col].astype(float))
-    x_blind, y_blind = ecdf(ds[blind_hit_col].astype(float))
+    # Missing TRACE hit-to-95 values are conservatively assigned to 1.0 for plotting.
+    trace_hit_values = numeric_values(ds[trace_hit_col], fill_missing=1.0)
+    blind_hit_values = numeric_values(ds[blind_hit_col], fill_missing=1.0)
 
     fig, ax = plt.subplots(figsize=(6.7, 4.6))
-    ax.step(x_trace, y_trace, where="post", label=f"TRACE, median={pct(median_trace_hit)}")
-    ax.step(x_blind, y_blind, where="post", label=f"Blind random, median={pct(median_blind_hit)}")
-    ax.axvline(median_trace_hit, linestyle="--", linewidth=1)
-    ax.axvline(median_blind_hit, linestyle="--", linewidth=1)
+    plot_ecdf(ax, trace_hit_values, color=TRACE_COLOR, label=f"TRACE, median={pct(median_trace_hit)}")
+    plot_ecdf(ax, blind_hit_values, color=BLIND_COLOR, label=f"Blind random, median={pct(median_blind_hit)}")
+    ax.axvline(median_trace_hit, linestyle="--", linewidth=1.2, color=TRACE_COLOR, zorder=2)
+    ax.axvline(median_blind_hit, linestyle="--", linewidth=1.2, color=BLIND_COLOR, zorder=2)
     ax.set_xlabel("Budget progress to reach 95% of exhaustive-search optimum")
     ax.set_ylabel("Cumulative fraction of datasets")
     ax.set_title("Hit-to-95% budget progress")
-    ax.legend()
-    ax.grid(True, alpha=0.3)
     ax.set_xlim(0.0, 1.0)
     ax.set_ylim(0.0, 1.0)
     ax.margins(x=0.0, y=0.0)
+    style_axis(ax)
     savefig(out_dir / "fig1_hit95_progress_ecdf")
 
     # Figure 2a: median retention versus budget, full y-scale.
@@ -100,50 +161,47 @@ def main():
     )
 
     fig, ax = plt.subplots(figsize=(6.7, 4.6))
-    ax.plot(ret[budget_col], ret[trace_ret_col], marker="o", label=f"TRACE, AUC={median_trace_auc:.3f}")
-    ax.plot(ret[budget_col], ret[blind_ret_col], marker="o", label=f"Blind random, AUC={median_blind_auc:.3f}")
+    ax.plot(ret[budget_col], ret[trace_ret_col], marker="o", color=TRACE_COLOR, label=f"TRACE, AUC={median_trace_auc:.3f}")
+    ax.plot(ret[budget_col], ret[blind_ret_col], marker="o", color=BLIND_COLOR, label=f"Blind random, AUC={median_blind_auc:.3f}")
     ax.set_xlabel("Budget fraction of full trial budget")
     ax.set_ylabel("Median score retention")
     ax.set_title("Median retention versus budget")
-    ax.legend()
-    ax.grid(True, alpha=0.3)
     ax.set_xlim(float(ret[budget_col].min()), float(ret[budget_col].max()))
     ax.set_ylim(0.0, 1.02)
+    style_axis(ax)
     savefig(out_dir / "fig2a_median_retention_vs_budget_fullscale")
 
     # Figure 2b: median retention versus budget, zoomed y-scale.
     ymin = float(min(ret[trace_ret_col].min(), ret[blind_ret_col].min()))
     ymin = max(0.0, ymin - 0.03)
     fig, ax = plt.subplots(figsize=(6.7, 4.6))
-    ax.plot(ret[budget_col], ret[trace_ret_col], marker="o", label=f"TRACE, AUC={median_trace_auc:.3f}")
-    ax.plot(ret[budget_col], ret[blind_ret_col], marker="o", label=f"Blind random, AUC={median_blind_auc:.3f}")
+    ax.plot(ret[budget_col], ret[trace_ret_col], marker="o", color=TRACE_COLOR, label=f"TRACE, AUC={median_trace_auc:.3f}")
+    ax.plot(ret[budget_col], ret[blind_ret_col], marker="o", color=BLIND_COLOR, label=f"Blind random, AUC={median_blind_auc:.3f}")
     ax.set_xlabel("Budget fraction of full trial budget")
     ax.set_ylabel("Median score retention")
     ax.set_title("Median retention versus budget")
-    ax.legend()
-    ax.grid(True, alpha=0.3)
     ax.set_xlim(float(ret[budget_col].min()), float(ret[budget_col].max()))
     ax.set_ylim(ymin, 1.005)
+    style_axis(ax)
     savefig(out_dir / "fig2b_median_retention_vs_budget_zoomed")
 
     # Figure 3: ECDF of AUC retention, useful for appendix.
-    x_trace_auc, y_trace_auc = ecdf(ds[trace_auc_col].astype(float))
-    x_blind_auc, y_blind_auc = ecdf(ds[blind_auc_col].astype(float))
+    trace_auc_values = numeric_values(ds[trace_auc_col], fill_missing=None)
+    blind_auc_values = numeric_values(ds[blind_auc_col], fill_missing=None)
 
     fig, ax = plt.subplots(figsize=(6.7, 4.6))
-    ax.step(x_trace_auc, y_trace_auc, where="post", label=f"TRACE, median={median_trace_auc:.3f}")
-    ax.step(x_blind_auc, y_blind_auc, where="post", label=f"Blind random, median={median_blind_auc:.3f}")
-    ax.axvline(median_trace_auc, linestyle="--", linewidth=1)
-    ax.axvline(median_blind_auc, linestyle="--", linewidth=1)
+    plot_ecdf(ax, trace_auc_values, color=TRACE_COLOR, label=f"TRACE, median={median_trace_auc:.3f}")
+    plot_ecdf(ax, blind_auc_values, color=BLIND_COLOR, label=f"Blind random, median={median_blind_auc:.3f}")
+    ax.axvline(median_trace_auc, linestyle="--", linewidth=1.2, color=TRACE_COLOR, zorder=2)
+    ax.axvline(median_blind_auc, linestyle="--", linewidth=1.2, color=BLIND_COLOR, zorder=2)
     ax.set_xlabel("AUC retention")
     ax.set_ylabel("Cumulative fraction of datasets")
     ax.set_title("AUC retention distribution")
-    ax.legend()
-    ax.grid(True, alpha=0.3)
-    xmin = max(0.0, min(x_trace_auc.min(), x_blind_auc.min()) - 0.02)
+    xmin = max(0.0, min(trace_auc_values.min(), blind_auc_values.min()) - 0.02)
     ax.set_xlim(xmin, 1.0)
     ax.set_ylim(0.0, 1.0)
     ax.margins(x=0.0, y=0.0)
+    style_axis(ax)
     savefig(out_dir / "fig3_auc_retention_ecdf")
 
     summary_lines = [
