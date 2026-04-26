@@ -1,18 +1,92 @@
 trace:
   name: TRACE
+
+  # c0 in the paper. All Delta H / Delta lambda comparisons are anchored to this cleaner.
+  baseline_cleaner: mode
+
+  # GroundTruth is excluded from H_full and from candidate replay.
+  skip_cleaners:
+    - groundtruth
+
+  # Must match the paper's H definition.
+  alpha: 0.47
+
+  # Entry thresholds from the paper.
   tau_turn: 0.10
   tau_hi: 0.20
 
+  # Whether the initial mode/c0 reference trials count toward TRACE's consumed budget.
+  # Default True because mode is required to instantiate the paper's Delta definitions.
+  count_mode_reference_trials: true
+
+  # If a dataset never reaches 0.95 * H_full under TRACE, record X = 1.0.
+  miss_hit95_as_full_progress: true
+
+  # Count pruned/missing Optuna trials as consumed budget by inflating saved
+  # successful-trial logs up to n_trials_requested when a path summary records it.
+  budget_count_uses_requested_trials: true
+  missing_trial_status: pruned_or_missing
+
   cleaner_groups:
-    norm: [unified, horizon, bigdansing]
-    sem: [baran, holoclean]
-    strong: [boostclean, scared]
+    norm:
+      - unified
+      - horizon
+      - bigdansing
+    sem:
+      - baran
+      - holoclean
+    strong:
+      - boostclean
+      - scared
 
-  target_metrics:
-    hit_95_percent_best_progress: true
-    score_retention_under_same_budget: true
+  # Optional within-band bias. These do not change the paper's bands; they only order cleaners inside a band.
+  entry_bias:
+    missing_norm_first: true
+    anomaly_sem_first_in_mid: true
+    anomaly_strong_early_in_high: true
 
-  replay:
-    input_trials: results/raw/trials.csv
-    output_summary: results/processed/trace_summary.csv
-    output_replay_log: results/processed/trace_replay.csv
+  eval:
+    # Number of saved trials consumed before each runtime gate evaluation.
+    chunk_size: 5
+
+  process_reference:
+    # Prefer the c0 trial with the same lambda / hyper-parameter vector when available.
+    use_same_lambda_reference_when_available: true
+    # Fallback when the exact lambda is absent in c0 history: nearest | mode_best
+    fallback: nearest
+
+  param_shift:
+    dbscan_eps_zero_tol: 0.025
+    compare_gmm_covariance_type: true
+    compare_hc_linkage_metric: true
+
+  retune:
+    centroid_k_radius: 1
+    gmm_n_components_radius: 1
+    dbscan_eps_window: 0.10
+    dbscan_min_samples_window: 5
+    hc_k_radius: 1
+    hc_fix_linkage: true
+    hc_fix_metric: true
+
+  edr:
+    # Optional per-dataset override, e.g.
+    # key_columns_override:
+    #   beijing:
+    #     - row_id
+    key_columns_override: {}
+    key_column_name_contains:
+      - id
+    numeric_tol: 1.0e-9
+
+  paths:
+    dataset_manifest: data/manifest.json
+    methods_config: configs/methods.yaml
+    output_dir: results/processed/trace
+
+    trial_log_csv: trace_replay_trials.csv
+    path_decisions_csv: trace_path_decisions.csv
+    dataset_summary_csv: trace_dataset_summary.csv
+    baseline_csv: trace_baseline_sequence.csv
+    aggregate_json: trace_aggregate_summary.json
+    warnings_json: trace_warnings.json
