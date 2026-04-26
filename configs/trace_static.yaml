@@ -1,0 +1,49 @@
+reference_cleaner: mode
+exclude_cleaners:
+  - GroundTruth
+
+score_column: final_combined_score
+
+thresholds:
+  tau_turn: 0.10
+  tau_hi: 0.20
+
+group_map:
+  norm:
+    - Unified
+    - Horizon
+    - BigDansing
+  sem:
+    - Baran
+    - HoloClean
+  strong:
+    - BoostClean
+    - SCAReD
+
+start_rules:
+  low:
+    - norm
+  mid:
+    - norm
+    - sem
+  high:
+    - sem
+    - strong
+
+aliases:
+  unified: Unified
+  horizon: Horizon
+  bigdansing: BigDansing
+  baran: Baran
+  holoclean: HoloClean
+  boostclean: BoostClean
+  scared: SCAReD
+  mode: mode
+  groundtruth: GroundTruth
+
+score_tolerance: 1.0e-12
+
+paper_snippet:
+  coverage_percent_decimals: 1
+  retention_percent_decimals: 1
+  reduction_percent_decimals: 1
