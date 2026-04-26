@@ -168,12 +168,18 @@ def selected_rows(selection_csv: Path) -> list[dict[str, str]]:
     rows = read_csv_rows(selection_csv)
     selected = []
 
+    repo_root = Path(__file__).resolve().parents[1]
+
     for row in rows:
         if row.get("selection_group") in SCRIPT_GROUPS:
-            src = Path(row["root"]) / row["relative_path"]
+            rel_path = Path(row["relative_path"].replace("\\", "/"))
+            local_src = repo_root / rel_path
+            legacy_src = Path(row["root"]) / row["relative_path"]
+            src = local_src if local_src.exists() else legacy_src
             if src.exists():
                 out = dict(row)
                 out["source_path"] = str(src)
+                out["source_origin"] = "trace_local" if local_src.exists() else "legacy_external"
                 selected.append(out)
 
     order = {name: i for i, name in enumerate(RUN_ORDER)}
