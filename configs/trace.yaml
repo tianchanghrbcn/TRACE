@@ -49,6 +49,16 @@ trace:
     # Number of saved trials consumed before each runtime gate evaluation.
     chunk_size: 5
 
+    # Print progress while building the full path/trial ledger. This is useful
+    # for full cached-cleaning replay because Stage 4 is CPU-bound before the
+    # final JSON summary appears.
+    ledger_progress_every: 25
+
+    # Recompute DBSCAN average-neighbor/core-count process signals. The replay
+    # no longer reruns DBSCAN.fit_predict per trial; it uses the logged noise
+    # ratio and only recomputes lightweight neighbor counts.
+    recompute_dbscan_process_features: true
+
   process_reference:
     # Prefer the c0 trial with the same lambda / hyper-parameter vector when available.
     use_same_lambda_reference_when_available: true

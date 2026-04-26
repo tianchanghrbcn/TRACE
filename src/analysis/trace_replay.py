@@ -233,6 +233,8 @@ DEFAULT_CONFIG: dict[str, Any] = {
         },
         "eval": {
             "chunk_size": 5,
+            "ledger_progress_every": 25,
+            "recompute_dbscan_process_features": True,
         },
         "process_reference": {
             "use_same_lambda_reference_when_available": True,
@@ -928,27 +930,28 @@ def _dbscan_trial_process_features(
     min_samples: int,
     cache: MutableMapping[str, Any],
 ) -> dict[str, Any]:
+    """Recompute lightweight DBSCAN process signals for one trial.
+
+    DBSCAN trial logs already contain the trial-level noise ratio. Re-running
+    sklearn.DBSCAN.fit_predict for every trial is prohibitively slow during
+    full TRACE replay, so we only recompute average-neighbor and core-count
+    signals from a cached distance matrix.
+    """
     cache_key = str(cleaned_file_path)
     if cache_key not in cache:
         features = load_clustering_features(cleaned_file_path)
         distances = pairwise_distances(features, metric="euclidean")
         cache[cache_key] = {
-            "features": features,
             "distances": distances,
         }
-    features = cache[cache_key]["features"]
     distances = cache[cache_key]["distances"]
     neighbor_counts = np.sum(distances <= float(eps_value), axis=1)
     avg_neighbor = float(np.mean(neighbor_counts))
-    labels = SKDBSCAN(eps=float(eps_value), min_samples=int(min_samples)).fit_predict(features)
-    noise_ratio = float(np.mean(labels == -1))
     core_count = int(np.sum(neighbor_counts >= int(min_samples)))
     return {
         "avg_neighbor_count": avg_neighbor,
-        "noise_ratio_recomputed": noise_ratio,
         "core_count_recomputed": core_count,
     }
-
 
 def _build_dbscan_trials(
     *,
@@ -961,11 +964,14 @@ def _build_dbscan_trials(
     cleaned_file_path: Optional[Path],
     trials_file: Path,
     dbscan_cache: MutableMapping[str, Any],
+    config: Optional[dict[str, Any]] = None,
 ) -> list[TrialRecord]:
     history = read_json(trials_file, default=[])
     if not isinstance(history, list):
         return []
     trials: list[TrialRecord] = []
+    eval_cfg = (config or {}).get("trace", {}).get("eval", {})
+    recompute_process = bool(eval_cfg.get("recompute_dbscan_process_features", True))
     order = 0
     for item in history:
         if not isinstance(item, dict):
@@ -983,7 +989,7 @@ def _build_dbscan_trials(
             "noise_ratio": float(item.get("noise_ratio", np.nan)),
             "sse": float(item.get("sse", np.nan)),
         }
-        if cleaned_file_path is not None and cleaned_file_path.exists():
+        if recompute_process and cleaned_file_path is not None and cleaned_file_path.exists():
             process.update(_dbscan_trial_process_features(cleaned_file_path, params["eps"], params["min_samples"], dbscan_cache))
         trials.append(
             TrialRecord(
@@ -1008,6 +1014,9 @@ def _build_dbscan_trials(
         )
         order += 1
     trials.sort(key=lambda x: (x.order_in_path, x.trial_number))
+    # Keep DBSCAN replay memory bounded. The distance matrix is useful only
+    # within this one path.
+    dbscan_cache.clear()
     return _inflate_missing_budget_trials(
         path_dir=path_dir,
         valid_trials=trials,
@@ -1098,6 +1107,7 @@ def load_trials_for_path(
     path_dir: Path,
     cleaned_file_path: Optional[Path],
     dbscan_cache: MutableMapping[str, Any],
+    config: Optional[dict[str, Any]] = None,
 ) -> tuple[list[TrialRecord], Optional[str]]:
     clusterer_norm = normalize_clusterer_name(clusterer)
     if clusterer_norm in {"KMEANS", "KMEANSNF", "KMEANSPPS"}:
@@ -1142,6 +1152,7 @@ def load_trials_for_path(
             cleaned_file_path=cleaned_file_path,
             trials_file=trials_file,
             dbscan_cache=dbscan_cache,
+            config=config,
         ), None
     if clusterer_norm == "HC":
         trials_file = _search_file(path_dir, ["*_optuna_trials.json"])
@@ -1229,8 +1240,13 @@ def build_path_ledgers(
     dbscan_cache: dict[str, Any] = {}
 
     skip_cleaners = {normalize_cleaner_name(x) for x in config["trace"].get("skip_cleaners", [])}
+    eval_cfg = config["trace"].get("eval", {})
+    progress_every = int(eval_cfg.get("ledger_progress_every", 25) or 0)
+    total_clustered = len(clustered_results)
 
     for original_order, item in enumerate(clustered_results):
+        if progress_every > 0 and (original_order == 0 or (original_order + 1) % progress_every == 0):
+            print(f"[TRACE] Loading trial ledgers: {original_order + 1}/{total_clustered}", flush=True)
         if not isinstance(item, dict):
             continue
         dataset_id = int(item.get("dataset_id", -1))
@@ -1264,6 +1280,7 @@ def build_path_ledgers(
             path_dir=path_dir,
             cleaned_file_path=cleaned_path,
             dbscan_cache=dbscan_cache,
+            config=config,
         )
         if error_message:
             warnings.append(
