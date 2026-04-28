@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-04-28T08:14:03.428893+00:00",
+  "status": "PASS",
+  "output_dir": "analysis\\validity_sensitivity\\inputs\\analysis_results",
+  "source_roots": [
+    "analysis\\paper_exact\\analysis_summaries\\results\\analysis_results",
+    "analysis\\paper_generated\\paper_table_workspace\\results\\analysis_results",
+    "results\\analysis_results",
+    "E:\\algorithm paper\\AutoMLClustering_full\\results\\analysis_results",
+    "E:\\algorithm paper\\AutoMLClustering\\results\\analysis_results"
+  ],
+  "copied_count": 4,
+  "missing": [],
+  "rows": [
+    {
+      "task": "beers",
+      "status": "COPIED",
+      "source": "analysis\\paper_exact\\analysis_summaries\\results\\analysis_results\\beers_summary.xlsx",
+      "destination": "analysis\\validity_sensitivity\\inputs\\analysis_results\\beers_summary.xlsx",
+      "sha256": "0ffed5a51f63853cc1adc438f35ccbef40299cec7ad2edb2df358a40923116f5",
+      "size_bytes": 145622
+    },
+    {
+      "task": "flights",
+      "status": "COPIED",
+      "source": "analysis\\paper_exact\\analysis_summaries\\results\\analysis_results\\flights_summary.xlsx",
+      "destination": "analysis\\validity_sensitivity\\inputs\\analysis_results\\flights_summary.xlsx",
+      "sha256": "3b6d106139aa37ec3c311f608151da8cd51cc39337a9104bbb23b15a80f7298c",
+      "size_bytes": 148247
+    },
+    {
+      "task": "hospital",
+      "status": "COPIED",
+      "source": "analysis\\paper_exact\\analysis_summaries\\results\\analysis_results\\hospital_summary.xlsx",
+      "destination": "analysis\\validity_sensitivity\\inputs\\analysis_results\\hospital_summary.xlsx",
+      "sha256": "4597f45dbea5d56dfa0bc0ae910c0bcb4ede175921c9bb97528538e7c53491fb",
+      "size_bytes": 135112
+    },
+    {
+      "task": "rayyan",
+      "status": "COPIED",
+      "source": "analysis\\paper_exact\\analysis_summaries\\results\\analysis_results\\rayyan_summary.xlsx",
+      "destination": "analysis\\validity_sensitivity\\inputs\\analysis_results\\rayyan_summary.xlsx",
+      "sha256": "ecbcbec19b5689ad2643f9b5632f80c4c4029ad1d98a675d76de9b64ed7607b9",
+      "size_bytes": 132236
+    }
+  ]
+}
