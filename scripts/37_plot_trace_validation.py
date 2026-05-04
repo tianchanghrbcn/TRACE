@@ -1,4 +1,14 @@
-﻿from pathlib import Path
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Plot TRACE validation figures.
+
+Supports either:
+  --blind-dir <dir containing trace_blind_random_* outputs>
+  --lodo-dir  <dir containing lodo_* outputs>
+
+The maintained paper path uses --lodo-dir.
+"""
+from pathlib import Path
 import argparse
 import json
 import numpy as np
@@ -9,26 +19,22 @@ from matplotlib.ticker import FormatStrFormatter, MultipleLocator
 
 plt.rcParams.update({
     "font.size": 16,
-    "axes.labelsize": 16,
-    "axes.titlesize": 16,
-    "xtick.labelsize": 16,
-    "ytick.labelsize": 16,
-    "legend.fontsize": 14,
+    "axes.labelsize": 17,
+    "axes.titlesize": 17,
+    "xtick.labelsize": 15,
+    "ytick.labelsize": 15,
+    "legend.fontsize": 15,
     "pdf.fonttype": 42,
     "ps.fonttype": 42,
 })
 
 
-# Keep the two exported panels physically identical.
-# Slightly wider than before; height unchanged.
-FIG_W = 5.25
+# Keep exported panels physically identical.
+FIG_W = 5.35
 FIG_H = 3.70
-
-# Fixed margins. Do not use bbox_inches="tight", otherwise the two panels
-# may be cropped differently after export.
 LEFT = 0.16
 RIGHT = 0.94
-BOTTOM = 0.18
+BOTTOM = 0.20
 TOP = 0.96
 
 
@@ -68,7 +74,7 @@ def savefig(path_base: Path, aliases=None):
     aliases = aliases or []
     all_paths = [path_base] + [Path(p) for p in aliases]
     for base in all_paths:
-        # Do not use bbox_inches="tight"; it may crop panels differently.
+        # Do not use bbox_inches="tight"; it may crop paired panels differently.
         plt.savefig(base.with_suffix(".pdf"))
         plt.savefig(base.with_suffix(".png"), dpi=300)
     plt.close()
@@ -81,31 +87,39 @@ def get_col(df, candidates):
     raise KeyError(f"None of these columns exist: {candidates}")
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--blind-dir",
-        required=True,
-        help="Directory containing trace_blind_random_* outputs."
-    )
-    parser.add_argument(
-        "--out-dir",
-        default=None,
-        help="Output directory for figures. Default: <blind-dir>/figures"
-    )
-    args = parser.parse_args()
-
-    blind_dir = Path(args.blind_dir)
-    out_dir = Path(args.out_dir) if args.out_dir else blind_dir / "figures"
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    aggregate_path = blind_dir / "trace_blind_random_aggregate_summary.json"
-    dataset_path = blind_dir / "trace_blind_random_dataset_summary.csv"
+def resolve_inputs(args):
+    if args.lodo_dir:
+        root = Path(args.lodo_dir)
+        aggregate_path = root / "lodo_aggregate_summary.json"
+        dataset_path = root / "lodo_blind_random_dataset_summary.csv"
+        prefix = "lodo_"
+    else:
+        root = Path(args.blind_dir)
+        aggregate_path = root / "trace_blind_random_aggregate_summary.json"
+        dataset_path = root / "trace_blind_random_dataset_summary.csv"
+        prefix = ""
 
     if not aggregate_path.exists():
         raise FileNotFoundError(f"Missing aggregate file: {aggregate_path}")
     if not dataset_path.exists():
         raise FileNotFoundError(f"Missing dataset summary file: {dataset_path}")
+
+    out_dir = Path(args.out_dir) if args.out_dir else root / "figures"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    return root, out_dir, aggregate_path, dataset_path, prefix
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Plot TRACE validation figures from blind-random or LODO outputs.")
+    parser.add_argument("--blind-dir", default=None, help="Directory containing trace_blind_random_* outputs.")
+    parser.add_argument("--lodo-dir", default=None, help="Directory containing lodo_* outputs.")
+    parser.add_argument("--out-dir", default=None, help="Output directory for figures. Default: <input-dir>/figures")
+    args = parser.parse_args()
+
+    if bool(args.blind_dir) == bool(args.lodo_dir):
+        raise SystemExit("Provide exactly one of --blind-dir or --lodo-dir.")
+
+    root, out_dir, aggregate_path, dataset_path, prefix = resolve_inputs(args)
 
     aggregate = json.loads(aggregate_path.read_text(encoding="utf-8"))
     ds = pd.read_csv(dataset_path)
@@ -161,19 +175,16 @@ def main():
 
     ax.set_xlabel("Budget fraction to 95% optimum")
     ax.set_ylabel("Cumulative fraction")
-
-    # Keep the 1.0 tick inside the plotting region so it is not clipped in LaTeX.
     ax.set_xlim(0.0, 1.02)
     ax.set_ylim(0.0, 1.0)
     ax.set_xticks(np.linspace(0.0, 1.0, 6))
     ax.set_yticks(np.linspace(0.0, 1.0, 6))
-
     ax.legend(frameon=False, loc="lower right")
     style_axes(ax)
 
     savefig(
-        out_dir / "fig1_hit95_progress_ecdf",
-        aliases=[out_dir / "hit95_progress_ecdf"]
+        out_dir / f"{prefix}fig1_hit95_progress_ecdf",
+        aliases=[out_dir / f"{prefix}hit95_progress_ecdf", out_dir / "hit95_progress_ecdf"]
     )
 
     # -----------------------------
@@ -214,20 +225,17 @@ def main():
     xmin = max(0.0, min(float(trace_auc.min()), float(blind_auc.min())) - 0.015)
     ax.set_xlabel("AUC retention")
     ax.set_ylabel("Cumulative fraction")
-
-    # Keep 1.00 safely inside the axis. Format AUC ticks with two decimals.
     ax.set_xlim(xmin, 1.005)
     ax.set_ylim(0.0, 1.0)
     ax.xaxis.set_major_locator(MultipleLocator(0.05))
     ax.xaxis.set_major_formatter(FormatStrFormatter("%.2f"))
     ax.set_yticks(np.linspace(0.0, 1.0, 6))
-
     ax.legend(frameon=False, loc="upper left")
     style_axes(ax)
 
     savefig(
-        out_dir / "fig3_auc_retention_ecdf",
-        aliases=[out_dir / "auc_retention_ecdf"]
+        out_dir / f"{prefix}fig3_auc_retention_ecdf",
+        aliases=[out_dir / f"{prefix}auc_retention_ecdf", out_dir / "auc_retention_ecdf"]
     )
 
     # -----------------------------
@@ -237,9 +245,10 @@ def main():
     blind_gap = 1.0 - median_blind_auc
     trace_gap = 1.0 - median_trace_auc
     gap_reduction = (blind_gap - trace_gap) / blind_gap if blind_gap > 0 else float("nan")
-    hit_reduction = (median_blind_hit - median_trace_hit) / median_blind_hit
+    hit_reduction = (median_blind_hit - median_trace_hit) / median_blind_hit if median_blind_hit > 0 else float("nan")
 
     summary_lines = [
+        f"input_dir: {root}",
         f"n_datasets: {aggregate.get('n_datasets')}",
         f"random_seeds: {aggregate.get('random_seeds')}",
         f"median_trace_hit95_progress: {median_trace_hit}",
@@ -252,7 +261,7 @@ def main():
         f"auc_gap_to_ideal_blind_random: {blind_gap}",
         f"auc_gap_reduction_ratio: {gap_reduction}",
     ]
-    (out_dir / "figure_summary.txt").write_text("\n".join(summary_lines), encoding="utf-8")
+    (out_dir / f"{prefix}figure_summary.txt").write_text("\n".join(summary_lines), encoding="utf-8")
 
     print(f"Figures written to: {out_dir}")
     for p in sorted(out_dir.glob("*")):
