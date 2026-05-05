@@ -1434,7 +1434,32 @@ def cleaner_order_for_dataset(
 
     tau_turn = float(config["trace"]["tau_turn"])
     tau_hi = float(config["trace"]["tau_hi"])
-    bias_cfg = config["trace"]["entry_bias"]
+
+    # Optional held-out validation hook.  When trace.entry_orders is present,
+    # TRACE uses explicit cleaner orders learned from training datasets for the
+    # corresponding q_tot regime.  This keeps the runtime gates unchanged while
+    # allowing leave-one-dataset-out calibration of the entry priority order.
+    entry_orders = config.get("trace", {}).get("entry_orders", {})
+    if isinstance(entry_orders, dict) and entry_orders:
+        if meta.q_tot < tau_turn:
+            regime_keys = [f"low_{meta.error_dominance}", "low"]
+        elif meta.q_tot < tau_hi:
+            regime_keys = [f"mid_{meta.error_dominance}", "mid"]
+        else:
+            regime_keys = [f"high_{meta.error_dominance}", "high"]
+
+        for regime_key in regime_keys:
+            raw_order = entry_orders.get(regime_key)
+            if isinstance(raw_order, list) and raw_order:
+                primary_cleaners = []
+                for cleaner in [normalize_cleaner_name(x) for x in raw_order]:
+                    if cleaner in available_cleaners and cleaner not in primary_cleaners:
+                        primary_cleaners.append(cleaner)
+                if primary_cleaners:
+                    secondary_cleaners = [cleaner for cleaner in available_cleaners if cleaner not in primary_cleaners]
+                    return primary_cleaners, secondary_cleaners, [regime_key], ["remaining"]
+
+    bias_cfg = config["trace"].get("entry_bias", {})
 
     if meta.q_tot < tau_turn:
         primary_group_order = ["norm"]
