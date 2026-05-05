@@ -72,6 +72,7 @@ def main() -> int:
     parser.add_argument("--strict", action="store_true", help="Fail if any builder fails or if no builders are registered.")
     parser.add_argument("--dry-run", action="store_true", help="List selected builders without running them.")
     parser.add_argument("--clean-output", action="store_true", help="Remove old manifest only; builder outputs are not deleted.")
+    parser.add_argument("--no-manifest", action="store_true", help="Do not write figures_manifest.json; useful for paper-exact output folders.")
     args = parser.parse_args()
 
     project_root = find_project_root(args.project_root or PROJECT_ROOT)
@@ -86,6 +87,10 @@ def main() -> int:
         paper_dir = project_root / paper_dir
 
     ensure_dir(output_dir)
+    if args.no_manifest:
+        old_manifest = output_dir / "figures_manifest.json"
+        if old_manifest.exists():
+            old_manifest.unlink()
     if paper_dir:
         ensure_dir(paper_dir)
 
@@ -131,7 +136,8 @@ def main() -> int:
         for s in specs:
             print(f"[FIGURES] DRY-RUN {s.artifact_id}: {s.label}")
         manifest = build_manifest(ctx, specs, [], [], [])
-        write_json(output_dir / "figures_manifest.json", manifest)
+        if not args.no_manifest:
+            write_json(output_dir / "figures_manifest.json", manifest)
         return 0
 
     if not specs:
@@ -139,7 +145,8 @@ def main() -> int:
         print(f"[FIGURES] {msg}")
         manifest = build_manifest(ctx, specs, [], [], [])
         manifest["message"] = msg
-        write_json(output_dir / "figures_manifest.json", manifest)
+        if not args.no_manifest:
+            write_json(output_dir / "figures_manifest.json", manifest)
         return 1 if args.strict else 0
 
     results: List[ArtifactResult] = []
@@ -169,8 +176,11 @@ def main() -> int:
                 break
 
     manifest = build_manifest(ctx, specs, results, copied_outputs, errors)
-    manifest_path = write_json(output_dir / "figures_manifest.json", manifest)
-    print(f"[FIGURES] Manifest written to: {manifest_path}")
+    if not args.no_manifest:
+        manifest_path = write_json(output_dir / "figures_manifest.json", manifest)
+        print(f"[FIGURES] Manifest written to: {manifest_path}")
+    else:
+        print("[FIGURES] Manifest writing skipped (--no-manifest).")
 
     if errors and args.strict:
         return 2

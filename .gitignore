@@ -183,3 +183,19 @@ src/cleaning/Repaired_res/
 /analysis/paper_generated/paper_figures/
 /analysis/paper_generated/paper_figure_workspace/
 /figures/paper_generated/
+
+# Generated paper artifacts and large release snapshots
+/artifacts/
+/results/trace_cluster_replay_all/
+/results/paper_latest_process_snapshot/
+/results/paper_artifact/
+/results/*.tar.gz
+/*.tgz
+/trace_lodo_export/
+/trace_validation_export/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
