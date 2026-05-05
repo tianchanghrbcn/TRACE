@@ -1,0 +1,364 @@
+{
+  "generated_at_utc": "2026-05-05T16:46:01.021574+00:00",
+  "status": "PASS",
+  "project_root": "E:\\TRACE",
+  "commands": [
+    {
+      "name": "pre_experiment_replay",
+      "command": "C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/38_build_pre_experiment_outputs.py --source-csv data/pre_experiment/alpha_metrics.csv --output-dir results/pre_experiment --figure-dir figures/pre_experiment",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "{\n  \"copy_report\": {\n    \"source_csv\": \"data\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"output_csv\": \"results\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"row_count\": 20,\n    \"columns\": [\n      \"alpha\",\n      \"max_variance\",\n      \"median_avg\"\n    ]\n  },\n  \"alpha_metric_summary\": {\n    \"path\": \"results\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"row_count\": 20,\n    \"alpha_column\": \"alpha\",\n    \"metric_columns\": [\n      \"max_variance\",\n      \"median_avg\"\n    ],\n    \"alpha_min\": 0.0,\n    \"alpha_max\": 1.0\n  },\n  \"figure_manifest\": {\n    \"metrics_csv\": \"results\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"row_count\": 20,\n    \"generated_figures\": {\n      \"alpha_vs_variance\": {\n        \"metric_column\": \"max_variance\",\n        \"files\": {\n          \"png\": \"figures\\\\pre_experiment\\\\alpha_vs_variance.png\",\n          \"pdf\": \"figures\\\\pre_experiment\\\\alpha_vs_variance.pdf\"\n        }\n      },\n      \"alpha_vs_median\": {\n        \"metric_column\": \"median_avg\",\n        \"files\": {\n          \"png\": \"figures\\\\pre_experiment\\\\alpha_vs_median.png\",\n          \"pdf\": \"figures\\\\pre_experiment\\\\alpha_vs_median.pdf\"\n        }\n      }\n    }\n  }\n}\n[TRACE] Pre-experiment outputs were built.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "alpha_sensitivity_replay",
+      "command": "C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/80_build_alpha_sensitivity.py --summary-dir analysis/validity_sensitivity/inputs/analysis_results --output-dir analysis/validity_sensitivity --alphas 0.25 0.47 0.5 0.75 --base-alpha 0.47",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"input_row_count\": 3059,\n  \"row_score_count\": 12192,\n  \"min_combo_spearman\": 0.9012769201448446,\n  \"min_cleaner_spearman\": 0.8833333333333333,\n  \"min_clusterer_spearman\": 0.942857142857143,\n  \"top_combo_stability_rate\": 0.8333333333333334,\n  \"output\": \"analysis\\\\validity_sensitivity\\\\alpha_sensitivity_summary.json\"\n}\n[TRACE] Alpha sensitivity report written to: analysis\\validity_sensitivity\\alpha_sensitivity_report.md\n",
+      "stderr_tail": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "project_root_exists",
+      "status": "PASS",
+      "ok": true,
+      "detail": "E:\\TRACE"
+    },
+    {
+      "name": "pre_source_csv_exists",
+      "status": "PASS",
+      "ok": true,
+      "detail": "data/pre_experiment/alpha_metrics.csv"
+    },
+    {
+      "name": "pre_source_csv_has_rows",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=20",
+      "rows": 20
+    },
+    {
+      "name": "summary_workbook_dir_exists",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/inputs/analysis_results"
+    },
+    {
+      "name": "summary_workbook_exists:beers",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/inputs/analysis_results/beers_summary.xlsx",
+      "size_bytes": 145622
+    },
+    {
+      "name": "summary_workbook_exists:flights",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/inputs/analysis_results/flights_summary.xlsx",
+      "size_bytes": 148247
+    },
+    {
+      "name": "summary_workbook_exists:hospital",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/inputs/analysis_results/hospital_summary.xlsx",
+      "size_bytes": 135112
+    },
+    {
+      "name": "summary_workbook_exists:rayyan",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/inputs/analysis_results/rayyan_summary.xlsx",
+      "size_bytes": 132236
+    },
+    {
+      "name": "pre_experiment_alpha_metrics_exists",
+      "status": "PASS",
+      "ok": true,
+      "detail": "results/pre_experiment/alpha_metrics.csv"
+    },
+    {
+      "name": "pre_experiment_alpha_metrics_has_rows",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=20",
+      "rows": 20
+    },
+    {
+      "name": "pre_experiment_manifest_exists",
+      "status": "PASS",
+      "ok": true,
+      "detail": "results/pre_experiment/pre_experiment_manifest.json"
+    },
+    {
+      "name": "pre_experiment_figure_dir_exists",
+      "status": "PASS",
+      "ok": true,
+      "detail": "figures/pre_experiment"
+    },
+    {
+      "name": "pre_experiment_figures_exist",
+      "status": "PASS",
+      "ok": true,
+      "detail": "figure_count=4",
+      "figure_count": 4
+    },
+    {
+      "name": "alpha_file_exists:alpha_row_scores.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_row_scores.csv",
+      "size_bytes": 1297377
+    },
+    {
+      "name": "alpha_csv_has_rows:alpha_row_scores.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=12192",
+      "rows": 12192
+    },
+    {
+      "name": "alpha_file_exists:alpha_cleaner_medians.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_cleaner_medians.csv",
+      "size_bytes": 8856
+    },
+    {
+      "name": "alpha_csv_has_rows:alpha_cleaner_medians.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=140",
+      "rows": 140
+    },
+    {
+      "name": "alpha_file_exists:alpha_clusterer_medians.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_clusterer_medians.csv",
+      "size_bytes": 5996
+    },
+    {
+      "name": "alpha_csv_has_rows:alpha_clusterer_medians.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=96",
+      "rows": 96
+    },
+    {
+      "name": "alpha_file_exists:alpha_combo_medians.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_combo_medians.csv",
+      "size_bytes": 58415
+    },
+    {
+      "name": "alpha_csv_has_rows:alpha_combo_medians.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=840",
+      "rows": 840
+    },
+    {
+      "name": "alpha_file_exists:alpha_rank_correlation.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_rank_correlation.csv",
+      "size_bytes": 2356
+    },
+    {
+      "name": "alpha_csv_has_rows:alpha_rank_correlation.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=48",
+      "rows": 48
+    },
+    {
+      "name": "alpha_file_exists:alpha_top_combo_stability.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_top_combo_stability.csv",
+      "size_bytes": 1456
+    },
+    {
+      "name": "alpha_csv_has_rows:alpha_top_combo_stability.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=16",
+      "rows": 16
+    },
+    {
+      "name": "alpha_file_exists:alpha_sensitivity_summary.json",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_sensitivity_summary.json",
+      "size_bytes": 1647
+    },
+    {
+      "name": "alpha_file_exists:alpha_sensitivity_report.md",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/alpha_sensitivity_report.md",
+      "size_bytes": 1314
+    },
+    {
+      "name": "alpha_summary_status_PASS",
+      "status": "PASS",
+      "ok": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "alpha_base_value_matches_paper",
+      "status": "PASS",
+      "ok": true,
+      "detail": "base_alpha=0.47, expected=0.47",
+      "value": 0.47
+    },
+    {
+      "name": "alpha_tested_values_match_paper",
+      "status": "PASS",
+      "ok": true,
+      "detail": "observed=[0.25, 0.47, 0.5, 0.75], missing=[]",
+      "observed": [
+        0.25,
+        0.47,
+        0.5,
+        0.75
+      ],
+      "missing": []
+    },
+    {
+      "name": "alpha_min_combo_spearman_ge_0.88",
+      "status": "PASS",
+      "ok": true,
+      "detail": "min_combo_spearman=0.9012769201448446",
+      "value": 0.9012769201448446
+    },
+    {
+      "name": "alpha_min_cleaner_spearman_ge_0.88",
+      "status": "PASS",
+      "ok": true,
+      "detail": "min_cleaner_spearman=0.8833333333333333",
+      "value": 0.8833333333333333
+    },
+    {
+      "name": "alpha_min_clusterer_spearman_ge_0.88",
+      "status": "PASS",
+      "ok": true,
+      "detail": "min_clusterer_spearman=0.942857142857143",
+      "value": 0.942857142857143
+    },
+    {
+      "name": "alpha_top_combo_stability_ge_0.833",
+      "status": "PASS",
+      "ok": true,
+      "detail": "top_combo_stability_rate=0.8333333333333334",
+      "value": 0.8333333333333334
+    },
+    {
+      "name": "alpha_score_sanity_spearman_existing_vs_recomputed_ge_0.999",
+      "status": "PASS",
+      "ok": true,
+      "detail": "spearman_existing_vs_recomputed=0.9999999999999999",
+      "value": 0.9999999999999999
+    },
+    {
+      "name": "alpha_score_sanity_pearson_existing_vs_recomputed_ge_0.999",
+      "status": "PASS",
+      "ok": true,
+      "detail": "pearson_existing_vs_recomputed=0.9999999999999999",
+      "value": 0.9999999999999999
+    },
+    {
+      "name": "seed_file_exists:seed_sensitivity_runs.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/seed_sensitivity_runs.csv",
+      "size_bytes": 43624
+    },
+    {
+      "name": "seed_csv_has_rows:seed_sensitivity_runs.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=108",
+      "rows": 108
+    },
+    {
+      "name": "seed_file_exists:seed_sensitivity_group_summary.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/seed_sensitivity_group_summary.csv",
+      "size_bytes": 3006
+    },
+    {
+      "name": "seed_csv_has_rows:seed_sensitivity_group_summary.csv",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rows=24",
+      "rows": 24
+    },
+    {
+      "name": "seed_file_exists:seed_sensitivity_summary.json",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/seed_sensitivity_summary.json",
+      "size_bytes": 815
+    },
+    {
+      "name": "seed_file_exists:seed_sensitivity_report.md",
+      "status": "PASS",
+      "ok": true,
+      "detail": "analysis/validity_sensitivity/seed_sensitivity_report.md",
+      "size_bytes": 1098
+    },
+    {
+      "name": "seed_summary_status_PASS_or_unspecified",
+      "status": "PASS",
+      "ok": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "seed_trend_preserved_rate_ge_0.708",
+      "status": "PASS",
+      "ok": true,
+      "detail": "rate=0.7083333333333334, source=csv:seed_sensitivity_group_summary.csv:all_seeds_same_direction",
+      "value": 0.7083333333333334,
+      "source": "csv:seed_sensitivity_group_summary.csv:all_seeds_same_direction"
+    },
+    {
+      "name": "error_model_sensitivity_files_not_present",
+      "status": "PASS",
+      "ok": true,
+      "detail": "none found"
+    },
+    {
+      "name": "generated_sensitivity_data_dirs_not_present",
+      "status": "PASS",
+      "ok": true,
+      "detail": "none found"
+    },
+    {
+      "name": "command_passed:pre_experiment_replay",
+      "status": "PASS",
+      "ok": true,
+      "detail": "C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/38_build_pre_experiment_outputs.py --source-csv data/pre_experiment/alpha_metrics.csv --output-dir results/pre_experiment --figure-dir figures/pre_experiment"
+    },
+    {
+      "name": "command_passed:alpha_sensitivity_replay",
+      "status": "PASS",
+      "ok": true,
+      "detail": "C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/80_build_alpha_sensitivity.py --summary-dir analysis/validity_sensitivity/inputs/analysis_results --output-dir analysis/validity_sensitivity --alphas 0.25 0.47 0.5 0.75 --base-alpha 0.47"
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "outputs": {
+    "combined_json": "results/pre_experiment/pre_experiment_validity_report.json",
+    "combined_markdown": "results/pre_experiment/pre_experiment_validity_report.md",
+    "validity_summary_json": "analysis/validity_sensitivity/validity_sensitivity_summary.json",
+    "validity_summary_md": "analysis/validity_sensitivity/validity_sensitivity_summary.md"
+  }
+}

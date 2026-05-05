@@ -1,0 +1,20 @@
+{
+  "metrics_csv": "results\\pre_experiment\\alpha_metrics.csv",
+  "row_count": 20,
+  "generated_figures": {
+    "alpha_vs_variance": {
+      "metric_column": "max_variance",
+      "files": {
+        "png": "figures\\pre_experiment\\alpha_vs_variance.png",
+        "pdf": "figures\\pre_experiment\\alpha_vs_variance.pdf"
+      }
+    },
+    "alpha_vs_median": {
+      "metric_column": "median_avg",
+      "files": {
+        "png": "figures\\pre_experiment\\alpha_vs_median.png",
+        "pdf": "figures\\pre_experiment\\alpha_vs_median.pdf"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-05-05T16:46:01.019574+00:00",
+  "status": "PASS",
+  "scope": "pre-experiment calibration plus alpha/seed validity-sensitivity checks",
+  "paper_alignment": {
+    "pre_experimental_calibration": "alpha=0.47 replayed from data/pre_experiment/alpha_metrics.csv",
+    "alpha_sensitivity": {
+      "base_alpha": 0.47,
+      "tested_alphas": [
+        0.25,
+        0.47,
+        0.5,
+        0.75
+      ],
+      "min_combo_spearman": 0.9012769201448446,
+      "min_cleaner_spearman": 0.8833333333333333,
+      "min_clusterer_spearman": 0.942857142857143,
+      "top_combo_stability_rate": 0.8333333333333334
+    },
+    "seed_sensitivity": {
+      "trend_direction_preserved_rate": 0.7083333333333334,
+      "source": "csv:seed_sensitivity_group_summary.csv:all_seeds_same_direction"
+    },
+    "excluded_from_reviewer_summary": "error-model/type sensitivity is intentionally not included because it is not needed for the paper-level validity statement."
+  },
+  "outputs": {
+    "alpha_sensitivity_summary": "analysis/validity_sensitivity/alpha_sensitivity_summary.json",
+    "seed_sensitivity_summary": "analysis/validity_sensitivity/seed_sensitivity_summary.json",
+    "validity_sensitivity_summary_json": "analysis/validity_sensitivity/validity_sensitivity_summary.json",
+    "validity_sensitivity_summary_md": "analysis/validity_sensitivity/validity_sensitivity_summary.md"
+  },
+  "warnings": [],
+  "failures": []
+}

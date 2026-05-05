@@ -1,0 +1,27 @@
+# Seed Stability Sensitivity Report
+
+- Generated at UTC: 2026-04-28T10:39:03.101591+00:00
+- Status: PASS
+
+## Interpretation
+
+Seed sensitivity preserves most direction labels across injected positions.
+
+## Key numbers
+
+- status: PASS
+- group_count: 24
+- direction_consistency_rate: 0.7083333333333334
+- median_positive_rate: 0.5
+- datasets: ['beers', 'hospital']
+- seeds: [42, 43, 44]
+- error_rates: [0.1, 0.2, 0.3]
+- alpha: 0.47
+- outputs: {'runs': 'analysis\\validity_sensitivity\\seed_sensitivity_runs.csv', 'group_summary': 'analysis\\validity_sensitivity\\seed_sensitivity_group_summary.csv', 'summary_json': 'analysis\\validity_sensitivity\\seed_sensitivity_summary.json', 'report_md': 'analysis\\validity_sensitivity\\seed_sensitivity_report.md'}
+
+## Output files
+
+- runs: `analysis\validity_sensitivity\seed_sensitivity_runs.csv`
+- group_summary: `analysis\validity_sensitivity\seed_sensitivity_group_summary.csv`
+- summary_json: `analysis\validity_sensitivity\seed_sensitivity_summary.json`
+- report_md: `analysis\validity_sensitivity\seed_sensitivity_report.md`
