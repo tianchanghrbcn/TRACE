@@ -41,6 +41,7 @@ regeneration is desired; figure drawing is maintained in
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import shutil
 import subprocess
@@ -164,7 +165,18 @@ def git_commit(root: Path) -> str | None:
 
 
 
-def has_full_trace_outputs(base_trace_output_dir: Path) -> bool:
+def validate_base_trace_outputs(
+    base_trace_output_dir: Path,
+    *,
+    expected_datasets: int = 60,
+    expected_dataset_names: int = 4,
+) -> tuple[bool, list[str]]:
+    """Validate the base TRACE replay ledger, not just file existence.
+
+    The paper-level LODO validation requires the full 60-instance base ledger
+    and four non-empty dataset names. This prevents stale or partial base
+    outputs from being silently reused.
+    """
     required = [
         "trace_dataset_summary.csv",
         "trace_replay_trials.csv",
@@ -172,8 +184,49 @@ def has_full_trace_outputs(base_trace_output_dir: Path) -> bool:
         "trace_baseline_sequence.csv",
         "trace_aggregate_summary.json",
     ]
-    return all((base_trace_output_dir / name).exists() for name in required)
 
+    problems: list[str] = []
+
+    for name in required:
+        path = base_trace_output_dir / name
+        if not path.exists():
+            problems.append(f"missing {path}")
+        elif path.is_file() and path.stat().st_size == 0:
+            problems.append(f"empty {path}")
+
+    summary_path = base_trace_output_dir / "trace_dataset_summary.csv"
+    if summary_path.exists() and summary_path.stat().st_size > 0:
+        try:
+            with summary_path.open("r", encoding="utf-8-sig", newline="") as f:
+                rows = list(csv.DictReader(f))
+        except Exception as exc:
+            problems.append(f"cannot read {summary_path}: {exc}")
+            rows = []
+
+        if len(rows) < expected_datasets:
+            problems.append(
+                f"{summary_path} has {len(rows)} rows; expected at least {expected_datasets}"
+            )
+
+        dataset_names = sorted(
+            {
+                str(row.get("dataset_name", "")).strip()
+                for row in rows
+                if str(row.get("dataset_name", "")).strip()
+            }
+        )
+        if len(dataset_names) < expected_dataset_names:
+            problems.append(
+                f"{summary_path} has only {len(dataset_names)} non-empty dataset_name values "
+                f"{dataset_names}; expected at least {expected_dataset_names}"
+            )
+
+    return (len(problems) == 0), problems
+
+
+def has_full_trace_outputs(base_trace_output_dir: Path) -> bool:
+    ok, _ = validate_base_trace_outputs(base_trace_output_dir)
+    return ok
 
 
 def has_lodo_outputs(output_dir: Path) -> bool:
@@ -361,7 +414,16 @@ def main() -> int:
 
         py = sys.executable
 
-        if args.rebuild_base or not has_full_trace_outputs(base_trace_output_dir):
+        base_ok, base_problems = validate_base_trace_outputs(base_trace_output_dir)
+
+        if args.rebuild_base or not base_ok:
+            if args.rebuild_base:
+                logger.write("[TRACE-STAGE4] Step 1/4: --rebuild-base requested; rebuilding base TRACE replay ledger.")
+            else:
+                logger.write("[TRACE-STAGE4] Step 1/4: existing base TRACE replay ledger is incomplete; rebuilding.")
+                for problem in base_problems:
+                    logger.write(f"[TRACE-STAGE4]   - {problem}")
+
             run_step([
                 py, str(project_root / "scripts" / "30_replay_trace.py"),
                 "--project-root", str(project_root),
@@ -369,8 +431,16 @@ def main() -> int:
                 "--config", str(config_path),
                 "--output-dir", str(base_trace_output_dir),
             ], cwd=project_root, logger=logger, label="Step 1/4: build base TRACE replay ledger", quiet=args.quiet)
+
+            base_ok, base_problems = validate_base_trace_outputs(base_trace_output_dir)
+            if not base_ok:
+                raise FileNotFoundError(
+                    "Base TRACE replay ledger is still incomplete after rebuild:\n"
+                    + "\n".join(f"  - {p}" for p in base_problems)
+                )
         else:
-            logger.write("[TRACE-STAGE4] Step 1/4: base TRACE replay ledger found; skipping rebuild.")
+            logger.write("[TRACE-STAGE4] Step 1/4: valid base TRACE replay ledger found; skipping rebuild.")
+
 
         if not args.skip_lodo:
             cmd = [
