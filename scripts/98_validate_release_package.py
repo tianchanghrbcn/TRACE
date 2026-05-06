@@ -59,6 +59,8 @@ REQUIRED_STATIC_PATHS = [
     "scripts/36_eval_trace_blind_random.py",
     "scripts/38_lodo_trace_validation.py",
     "scripts/39_run_trace_stage4_paper_repro.py",
+    "scripts/50_build_all_paper_figures.py",
+    "scripts/51_build_all_paper_tables.py",
     "scripts/45_validate_data_availability.py",
     "scripts/49_validate_trace_stage4_inputs.py",
     "scripts/62_validate_mode_a_paper_replay.py",
@@ -279,9 +281,7 @@ def main() -> None:
     if args.skip_paper_replay:
         warnings.append("paper-replay was skipped by user request.")
     else:
-        paper_cmd = ["scripts/62_validate_mode_a_paper_replay.py"]
-        if args.rebuild_paper_replay:
-            paper_cmd.append("--rebuild")
+        paper_cmd = ["scripts/62_validate_mode_a_paper_replay.py", "--rebuild"]
         commands.append(run_command("paper_replay", paper_cmd))
 
     if args.skip_benchmark_smoke:

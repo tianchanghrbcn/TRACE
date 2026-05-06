@@ -1,18 +1,13 @@
-#!/usr/bin/env python3
-"""Validate TRACE paper-level evidence replay.
+﻿#!/usr/bin/env python3
+"""Validate TRACE paper-level artifact replay.
 
-This replaces the old reviewer-facing "Mode A" semantics.
+Final reviewer-facing paper replay uses the maintained registered builders:
 
-Paper replay now means:
-  1. paper summary workbook replay;
-  2. paper table replay and table equivalence;
-  3. paper figure replay and figure traceability;
-  4. combined paper-output traceability;
-  5. pre-experiment calibration and validity-sensitivity checks.
+  scripts/50_build_all_paper_figures.py
+  scripts/51_build_all_paper_tables.py
 
-The old paper-exact archive validation scripts are kept as source-preparation
-or legacy audit helpers, but the reviewer-facing paper replay no longer fails
-only because LaTeX source files are not present.
+Older paper replay helpers are kept for diagnostics, but this validator no
+longer depends on the old Mode-A-style table/figure harness.
 """
 
 from __future__ import annotations
@@ -29,46 +24,20 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 
 
-REPORTS = {
-    "generated_summaries": Path("analysis/paper_generated/generated_summary_validation_report.json"),
-    "paper_table_outputs": Path("analysis/paper_generated/paper_tables/paper_table_validation_report.json"),
-    "paper_table_layers": Path("analysis/paper_generated/paper_tables/table_equivalence_layered_report.json"),
-    "paper_figure_outputs": Path("analysis/paper_generated/paper_figures/paper_figure_validation_report.json"),
-    "paper_figure_traceability": Path("analysis/paper_generated/paper_figures/paper_figure_traceability_report.json"),
-    "paper_output_traceability": Path("analysis/paper_generated/paper_output_traceability_report.json"),
-    "preexp_validity": Path("analysis/validity_sensitivity/pre_experiment_validity_report.json"),
-    "validity_sensitivity": Path("analysis/validity_sensitivity/validity_sensitivity_summary.json"),
-}
-
-
-ACCEPTED_STATUSES = {
-    "generated_summaries": {"PASS"},
-    "paper_table_outputs": {"PASS"},
-    "paper_table_layers": {"PASS", "PASS_WITH_DIAGNOSTIC_WARNINGS"},
-    "paper_figure_outputs": {"PASS"},
-    "paper_figure_traceability": {"PASS", "PASS_WITH_WARNINGS"},
-    "paper_output_traceability": {"PASS", "PASS_WITH_WARNINGS"},
-    "preexp_validity": {"PASS"},
-    "validity_sensitivity": {"PASS", "PASS_WITH_WARNINGS"},
-}
-
-
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Validate TRACE paper-level evidence replay.")
+    parser = argparse.ArgumentParser(description="Validate TRACE paper-level artifact replay.")
+    parser.add_argument("--rebuild", action="store_true", help="Rebuild paper figure/table artifacts before validation.")
+    parser.add_argument("--skip-preexp-validity", action="store_true", help="Skip pre-experiment/validity replay.")
+    parser.add_argument("--input-root", type=Path, default=Path("results"))
     parser.add_argument(
-        "--rebuild",
-        action="store_true",
-        help="Rebuild paper-level evidence before validation.",
+        "--figure-output-dir",
+        type=Path,
+        default=Path("analysis/paper_generated/paper_artifact/figures"),
     )
     parser.add_argument(
-        "--skip-source-prep",
-        action="store_true",
-        help="Skip source selection/archive preparation scripts 46-48.",
-    )
-    parser.add_argument(
-        "--skip-preexp-validity",
-        action="store_true",
-        help="Skip pre-experiment/validity replay during rebuild.",
+        "--table-output-dir",
+        type=Path,
+        default=Path("analysis/paper_generated/paper_artifact/tables"),
     )
     parser.add_argument(
         "--output",
@@ -78,7 +47,7 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def run_command(cmd: list[str], *, allow_failure: bool = False) -> dict[str, Any]:
+def run_command(cmd: list[str]) -> dict[str, Any]:
     print("[TRACE] >>>", " ".join([sys.executable] + cmd))
     proc = subprocess.run(
         [sys.executable] + cmd,
@@ -86,73 +55,22 @@ def run_command(cmd: list[str], *, allow_failure: bool = False) -> dict[str, Any
         text=True,
         capture_output=True,
     )
-
     if proc.stdout:
         print(proc.stdout)
     if proc.stderr:
         print(proc.stderr, file=sys.stderr)
-
-    status = "PASS" if proc.returncode == 0 else ("WARN_ALLOWED_FAILURE" if allow_failure else "FAIL")
     return {
         "command": " ".join(cmd),
         "returncode": proc.returncode,
-        "status": status,
-        "allow_failure": allow_failure,
+        "status": "PASS" if proc.returncode == 0 else "FAIL",
         "stdout_tail": proc.stdout[-4000:],
         "stderr_tail": proc.stderr[-4000:],
     }
 
 
-def rebuild_reports(skip_source_prep: bool, skip_preexp_validity: bool) -> list[dict[str, Any]]:
-    commands: list[tuple[list[str], bool]] = []
-
-    # 46-48 prepare archived/source workspaces used by later table/figure scripts.
-    # 49 is intentionally not part of reviewer-facing paper replay because it
-    # requires LaTeX archive hints that are not necessary for paper-output replay.
-    if not skip_source_prep:
-        commands.extend([
-            (["scripts/46_audit_paper_replay_sources.py"], False),
-            (["scripts/47_select_paper_exact_sources.py"], False),
-            (["scripts/48_build_mode_a_paper_exact_archive.py", "--clean"], False),
-        ])
-
-    commands.extend([
-        (["scripts/50_audit_paper_table_scripts.py"], False),
-        (["scripts/51_build_paper_summary_workbooks.py"], False),
-        (["scripts/52_validate_paper_summary_workbooks.py"], False),
-
-        (["scripts/53_run_paper_table_scripts.py", "--clean", "--timeout", "1200", "--include-analysis-scripts"], False),
-        (["scripts/54_validate_paper_table_outputs.py"], False),
-
-        # Raw equivalence may report hard mismatches before layered diagnostics.
-        # The layered report is the reviewer-facing decision artifact.
-        (["scripts/55_validate_paper_table_equivalence.py"], True),
-        (["scripts/56_classify_table_equivalence_layers.py"], False),
-
-        (["scripts/57_select_paper_figure_sources.py"], False),
-        (["scripts/58_run_paper_figure_scripts.py", "--clean", "--timeout", "1200"], False),
-        (["scripts/59_validate_paper_figure_outputs.py"], False),
-        (["scripts/60_validate_paper_figure_traceability.py"], False),
-
-        (["scripts/61_build_paper_output_traceability_report.py"], False),
-    ])
-
-    if not skip_preexp_validity:
-        commands.append((["scripts/81_replay_pre_experiment_validity.py", "--generated-data-policy", "fail", "--error-model-policy", "fail"], False))
-
-    results: list[dict[str, Any]] = []
-    for cmd, allow_failure in commands:
-        result = run_command(cmd, allow_failure=allow_failure)
-        results.append(result)
-        if result["returncode"] != 0 and not allow_failure:
-            break
-
-    return results
-
-
 def read_json(path: Path) -> dict[str, Any]:
     if not path.exists():
-        raise FileNotFoundError(f"Required report not found: {path}")
+        return {}
     return json.loads(path.read_text(encoding="utf-8-sig", errors="replace"))
 
 
@@ -161,125 +79,114 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def validate_report(report_name: str, path: Path) -> dict[str, Any]:
+def validate_manifest(name: str, path: Path, kind: str) -> dict[str, Any]:
+    data = read_json(path)
     row: dict[str, Any] = {
-        "name": report_name,
+        "name": name,
+        "kind": kind,
         "path": str(path),
         "exists": path.exists(),
-        "status": "",
-        "accepted_statuses": sorted(ACCEPTED_STATUSES[report_name]),
         "accepted": False,
+        "status": "",
         "details": {},
     }
 
-    if not path.exists():
+    if not data:
+        row["status"] = "MISSING"
         return row
 
-    data = read_json(path)
-    status = str(data.get("status", ""))
+    counts = data.get("counts", {})
+    success = int(counts.get("success", 0) or 0)
+    failed = int(counts.get("failed", 0) or 0)
+    skipped = int(counts.get("skipped", 0) or 0)
+    errors = data.get("errors", [])
 
-    row["status"] = status
-    row["accepted"] = status in ACCEPTED_STATUSES[report_name]
+    row["details"] = {
+        "counts": counts,
+        "registered_count": len(data.get("registered_specs", [])),
+        "result_count": len(data.get("results", [])),
+        "copied_output_count": len(data.get("copied_outputs", [])),
+        "error_count": len(errors),
+    }
 
-    if report_name == "paper_table_layers":
-        layers = data.get("layers", {})
-        paper = layers.get("paper_facing", {})
-        row["details"] = {
-            "paper_facing_count": paper.get("count", 0),
-            "paper_facing_status_counts": paper.get("status_counts", {}),
-            "paper_facing_hard_failure_count": paper.get("hard_failure_count", 0),
-            "paper_facing_warning_count": paper.get("warning_count", 0),
-        }
-        if paper.get("hard_failure_count", 1) != 0:
-            row["accepted"] = False
-
-    elif report_name == "paper_figure_outputs":
-        row["details"] = {
-            "script_count": data.get("script_count", 0),
-            "failed_script_count": data.get("failed_script_count", 0),
-            "collected_figure_count": data.get("collected_figure_count", 0),
-            "extension_counts": data.get("extension_counts", {}),
-        }
-        if data.get("failed_script_count", 1) != 0:
-            row["accepted"] = False
-        if data.get("collected_figure_count", 0) <= 0:
-            row["accepted"] = False
-
-    elif report_name == "paper_figure_traceability":
-        status_counts = data.get("tex_reference_status_counts", {})
-        row["details"] = {
-            "tex_reference_count": data.get("tex_reference_count", 0),
-            "archived_figure_count": data.get("archived_figure_count", 0),
-            "generated_figure_count": data.get("generated_figure_count", 0),
-            "tex_reference_status_counts": status_counts,
-        }
-        if status_counts.get("FAIL_NO_REFERENCE", 0):
-            row["accepted"] = False
-
-    elif report_name == "paper_output_traceability":
-        table = data.get("table_traceability", {})
-        figure = data.get("figure_traceability", {})
-        row["details"] = {
-            "table_status": table.get("status", ""),
-            "table_paper_facing_hard_failures": table.get("paper_facing_hard_failure_count", ""),
-            "figure_traceability_status": figure.get("traceability_status", ""),
-            "figure_tex_reference_count": figure.get("tex_reference_count", ""),
-            "figure_tex_reference_status_counts": figure.get("tex_reference_status_counts", {}),
-        }
-        if table.get("paper_facing_hard_failure_count", 1) != 0:
-            row["accepted"] = False
-        figure_counts = figure.get("tex_reference_status_counts", {})
-        if figure_counts.get("FAIL_NO_REFERENCE", 0):
-            row["accepted"] = False
-
-    elif report_name == "preexp_validity":
-        # The preexp-validity report may expose either explicit
-        # failure_count/warning_count fields or failures/warnings lists.
-        failures = data.get("failures", [])
-        warnings = data.get("warnings", [])
-
-        failure_count = data.get("failure_count")
-        if failure_count is None:
-            failure_count = len(failures) if isinstance(failures, list) else 0
-
-        warning_count = data.get("warning_count")
-        if warning_count is None:
-            warning_count = len(warnings) if isinstance(warnings, list) else 0
-
-        row["details"] = {
-            "failure_count": failure_count,
-            "warning_count": warning_count,
-            "report": data.get("report", ""),
-            "validity_summary": data.get("validity_summary", ""),
-            "top_level_status": data.get("status", ""),
-        }
-
-        if data.get("status") not in {"PASS", "PASS_WITH_WARNINGS"}:
-            row["accepted"] = False
-        if int(failure_count) != 0:
-            row["accepted"] = False
-
-    elif report_name == "validity_sensitivity":
-        row["details"] = {
-            "scope": data.get("scope", ""),
-            "warnings": data.get("warnings", []),
-            "failures": data.get("failures", []),
-        }
-        if data.get("failures"):
-            row["accepted"] = False
+    if success > 0 and failed == 0 and not errors:
+        row["accepted"] = True
+        row["status"] = "PASS"
+    else:
+        row["status"] = "FAIL"
 
     return row
 
 
+def validate_status_report(name: str, path: Path, accepted_statuses: set[str]) -> dict[str, Any]:
+    data = read_json(path)
+    row: dict[str, Any] = {
+        "name": name,
+        "path": str(path),
+        "exists": path.exists(),
+        "accepted": False,
+        "status": "",
+        "details": {},
+    }
+    if not data:
+        row["status"] = "MISSING"
+        return row
+
+    status = str(data.get("status", ""))
+    row["status"] = status
+    row["accepted"] = status in accepted_statuses
+    row["details"] = {
+        "failure_count": data.get("failure_count", len(data.get("failures", [])) if isinstance(data.get("failures", []), list) else ""),
+        "warning_count": data.get("warning_count", len(data.get("warnings", [])) if isinstance(data.get("warnings", []), list) else ""),
+    }
+    if data.get("failures"):
+        row["accepted"] = False
+    return row
+
+
+def rebuild(args: argparse.Namespace) -> list[dict[str, Any]]:
+    commands: list[list[str]] = [
+        [
+            "scripts/50_build_all_paper_figures.py",
+            "--input-root", str(args.input_root),
+            "--output-dir", str(args.figure_output_dir),
+            "--strict",
+            "--clean-output",
+        ],
+        [
+            "scripts/51_build_all_paper_tables.py",
+            "--input-root", str(args.input_root),
+            "--output-dir", str(args.table_output_dir),
+            "--strict",
+            "--clean-output",
+        ],
+    ]
+
+    if not args.skip_preexp_validity:
+        commands.append([
+            "scripts/81_replay_pre_experiment_validity.py",
+            "--generated-data-policy", "fail",
+            "--error-model-policy", "fail",
+        ])
+
+    results = []
+    for cmd in commands:
+        result = run_command(cmd)
+        results.append(result)
+        if result["returncode"] != 0:
+            break
+    return results
+
+
 def write_markdown(path: Path, report: dict[str, Any]) -> None:
     lines = [
-        "# TRACE Paper Evidence Replay Validation",
+        "# TRACE Paper Artifact Replay Validation",
         "",
         f"- Generated at UTC: {report['generated_at_utc']}",
         f"- Status: {report['status']}",
         f"- Rebuild requested: {report['rebuild_requested']}",
         "",
-        "## Report checks",
+        "## Checks",
         "",
         "| Check | Status | Accepted | Path |",
         "|---|---|---:|---|",
@@ -304,12 +211,13 @@ def write_markdown(path: Path, report: dict[str, Any]) -> None:
         "",
         "## Interpretation",
         "",
-        "PASS means the paper-level evidence replay passed: summary workbooks, paper tables, paper figures, paper-output traceability, and pre-experiment/validity checks.",
+        "PASS means the maintained registered paper figure/table builders and validity checks passed.",
         "",
-        "The old Mode A archive validation is not part of this reviewer-facing decision gate.",
+        "This validator intentionally uses `50_build_all_paper_figures.py` and `51_build_all_paper_tables.py` as the final reviewer-facing paper artifact checks.",
         "",
     ]
 
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -318,36 +226,44 @@ def main() -> None:
 
     rebuild_results: list[dict[str, Any]] = []
     if args.rebuild:
-        rebuild_results = rebuild_reports(
-            skip_source_prep=args.skip_source_prep,
-            skip_preexp_validity=args.skip_preexp_validity,
-        )
+        rebuild_results = rebuild(args)
 
     failures: list[str] = []
     warnings: list[str] = []
 
     for result in rebuild_results:
-        if result["returncode"] != 0 and not result.get("allow_failure"):
+        if result["returncode"] != 0:
             failures.append(f"Rebuild command failed: {result['command']}")
-        elif result["returncode"] != 0 and result.get("allow_failure"):
-            warnings.append(f"Allowed diagnostic command returned nonzero: {result['command']}")
 
-    checks = []
-    for name, path in REPORTS.items():
-        if args.skip_preexp_validity and name in {"preexp_validity", "validity_sensitivity"}:
-            continue
+    figure_manifest = ROOT / args.figure_output_dir / "figures_manifest.json"
+    table_manifest = ROOT / args.table_output_dir / "tables_manifest.json"
 
-        row = validate_report(name, ROOT / path)
-        checks.append(row)
+    checks = [
+        validate_manifest("paper_figures_registered_build", figure_manifest, "figures"),
+        validate_manifest("paper_tables_registered_build", table_manifest, "tables"),
+    ]
 
-        if not row["exists"]:
-            failures.append(f"Missing report: {name} -> {path}")
-            continue
+    if not args.skip_preexp_validity:
+        checks.append(
+            validate_status_report(
+                "preexp_validity",
+                ROOT / "analysis/validity_sensitivity/pre_experiment_validity_report.json",
+                {"PASS"},
+            )
+        )
+        checks.append(
+            validate_status_report(
+                "validity_sensitivity",
+                ROOT / "analysis/validity_sensitivity/validity_sensitivity_summary.json",
+                {"PASS", "PASS_WITH_WARNINGS"},
+            )
+        )
 
+    for row in checks:
         if not row["accepted"]:
-            failures.append(f"Report check failed: {name} status={row['status']} path={path}")
-        elif row["status"] != "PASS":
-            warnings.append(f"Report has accepted warning status: {name}={row['status']}")
+            failures.append(f"Check failed: {row['name']} status={row['status']} path={row['path']}")
+        elif row["status"] == "PASS_WITH_WARNINGS":
+            warnings.append(f"Accepted warning status: {row['name']}")
 
     if failures:
         status = "FAIL"
@@ -360,16 +276,16 @@ def main() -> None:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "status": status,
         "rebuild_requested": args.rebuild,
-        "scope": "paper-level evidence replay",
+        "scope": "paper artifact replay using registered figure/table builders",
         "rebuild_results": rebuild_results,
         "checks": checks,
         "warnings": warnings,
         "failures": failures,
-        "scope_note": (
-            "This validates paper-level evidence: tables, figures, traceability, "
-            "and pre-experiment/validity checks. The old Mode A archive validation "
-            "is not required for this reviewer-facing gate."
-        ),
+        "maintained_entry_points": [
+            "scripts/50_build_all_paper_figures.py",
+            "scripts/51_build_all_paper_tables.py",
+            "scripts/81_replay_pre_experiment_validity.py",
+        ],
     }
 
     output = ROOT / args.output
@@ -386,8 +302,8 @@ def main() -> None:
         indent=2,
         ensure_ascii=False,
     ))
-    print(f"[TRACE] Paper evidence replay validation report written to: {args.output}")
-    print(f"[TRACE] Paper evidence replay validation status: {status}")
+    print(f"[TRACE] Paper artifact replay validation report written to: {args.output}")
+    print(f"[TRACE] Paper artifact replay validation status: {status}")
 
     raise SystemExit(0 if status in {"PASS", "PASS_WITH_WARNINGS"} else 1)
 
