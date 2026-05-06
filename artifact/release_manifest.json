@@ -1,6 +1,6 @@
 {
-  "generated_at_local": "2026-05-07T00:48:46",
-  "git_commit": "5d2045f1a11fab56b15eb814775936a5b38555f9",
+  "generated_at_local": "2026-05-07T01:01:23",
+  "git_commit": "a7f858f6adfd1c04529ad7336e5728d6442d13cc",
   "purpose": "TRACE PVLDB EA&B reviewer release assets",
   "files": [
     {
@@ -24,8 +24,8 @@
     {
       "name": "trace_paper_replay_inputs.zip",
       "path": "release_assets/trace_paper_replay_inputs.zip",
-      "size_bytes": 55682961,
-      "sha256": "298c35d36e165dcbd9347dbba4c16b7a8f5fa5613c397f2d4400da35fee9f9f3"
+      "size_bytes": 67805764,
+      "sha256": "d1985de4d7bd26e7e8784e7d09c914d7ac28c3ba6089b1691a09528810217cc7"
     },
     {
       "name": "trace_stage4_paper_exact.tgz",

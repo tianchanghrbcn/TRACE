@@ -36,11 +36,13 @@ The TRACE input snapshot should contain:
     results/trace_cluster_replay_all/analyzed_results.json
     results/trace_cluster_replay_all/clustered_data/
 
-The visual-demo input snapshot should contain:
+The paper replay input snapshot should contain:
 
     results/visual_demo/customer_segments/clean_withseg.csv
     results/visual_demo/customer_segments/demo_dirty/
     results/visual_demo/customer_segments/demo_results/eigenvectors.json
+    results/analysis_results/
+    results/processed/trace/cluster_replay_all/trace_dataset_summary.csv
 
 The strict benchmark proof should contain:
 
@@ -71,3 +73,13 @@ Expected final status:
 or:
 
     PASS_WITH_WARNINGS with failure_count = 0
+
+## 4. Maintainer-only TRACE base rebuild
+
+The reviewer path uses the packaged base TRACE ledger.
+
+Maintainers may explicitly rebuild the base ledger with:
+
+    python scripts/trace.py trace-validation --paper-exact --rebuild-base
+
+This is not the default reviewer path.

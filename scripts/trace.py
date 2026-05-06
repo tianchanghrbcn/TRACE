@@ -456,7 +456,7 @@ def run_trace_validation(args: argparse.Namespace) -> int:
     if args.paper_exact:
         args.random_seeds = 1000
         args.seed = 20260424
-        args.rebuild_base = True
+        args.rebuild_base = False  # reviewer path uses packaged base ledger; maintainers may pass --rebuild-base explicitly
         args.pack = True
         args.log = True
         args.quiet = True
