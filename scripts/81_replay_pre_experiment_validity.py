@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Replay and validate TRACE pre-experiment + validity-sensitivity evidence.
 
 Reviewer-facing purpose
@@ -26,8 +26,8 @@ Outputs
 - analysis/validity_sensitivity/alpha_*.csv/json/md
 - analysis/validity_sensitivity/validity_sensitivity_summary.json
 - analysis/validity_sensitivity/validity_sensitivity_summary.md
-- results/pre_experiment/pre_experiment_validity_report.json
-- results/pre_experiment/pre_experiment_validity_report.md
+- analysis/validity_sensitivity/pre_experiment_validity_report.json
+- analysis/validity_sensitivity/pre_experiment_validity_report.md
 """
 
 from __future__ import annotations
@@ -195,7 +195,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-report",
         type=Path,
-        default=Path("results/pre_experiment/pre_experiment_validity_report.json"),
+        default=Path("analysis/validity_sensitivity/pre_experiment_validity_report.json"),
         help="Combined validation report JSON.",
     )
     return parser.parse_args()
@@ -839,3 +839,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

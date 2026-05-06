@@ -1,4 +1,4 @@
-# TRACE
+﻿# TRACE
 
 TRACE is an empirical artifact for studying how data cleaning changes unsupervised clustering.
 
@@ -90,3 +90,4 @@ Generated outputs are reproducible and ignored by default. See `docs/data_policy
 ## License
 
 TRACE wrapper/orchestration code is released under the MIT License. Third-party method implementations retain their respective upstream licenses and notices. See `LICENSE` and `THIRD_PARTY_NOTICES.md`.
+

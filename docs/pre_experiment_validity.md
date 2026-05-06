@@ -1,4 +1,4 @@
-# TRACE Pre-experiment and Validity/Sensitivity Replay
+﻿# TRACE Pre-experiment and Validity/Sensitivity Replay
 
 This page is the reviewer-facing entry point for the pre-experimental calibration and validity checks reported in the paper.
 
@@ -61,3 +61,4 @@ analysis/validity_sensitivity/error_model_sensitivity_*
 ```
 
 Seed sensitivity is represented by the compact archived CSV/JSON/MD summary files listed above.
+

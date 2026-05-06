@@ -26,3 +26,4 @@ The following names are retained only for compatibility:
 | mode-c | benchmark-full-audit |
 
 Reviewer-facing documentation should not use Mode A/B/C.
+

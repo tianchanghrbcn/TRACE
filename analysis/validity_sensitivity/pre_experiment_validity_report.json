@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-05T16:46:01.021574+00:00",
+  "generated_at_utc": "2026-05-06T07:47:36.806454+00:00",
   "status": "PASS",
   "project_root": "E:\\TRACE",
   "commands": [
@@ -356,8 +356,8 @@
   "warnings": [],
   "failures": [],
   "outputs": {
-    "combined_json": "results/pre_experiment/pre_experiment_validity_report.json",
-    "combined_markdown": "results/pre_experiment/pre_experiment_validity_report.md",
+    "combined_json": "analysis/validity_sensitivity/pre_experiment_validity_report.json",
+    "combined_markdown": "analysis/validity_sensitivity/pre_experiment_validity_report.md",
     "validity_summary_json": "analysis/validity_sensitivity/validity_sensitivity_summary.json",
     "validity_summary_md": "analysis/validity_sensitivity/validity_sensitivity_summary.md"
   }
