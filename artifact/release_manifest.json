@@ -1,6 +1,6 @@
 {
-  "generated_at_local": "2026-05-07T02:08:34",
-  "git_commit": "367c8ca05ea7b8b064a910d3da55f79b0edaee8c",
+  "generated_at_local": "2026-05-07T03:05:47",
+  "git_commit": "f782841ed22b55d33670605da91a1a4de4eea2ae",
   "purpose": "TRACE PVLDB EA&B reviewer release assets",
   "fresh_clone_result": {
     "status": "PASS",
@@ -34,6 +34,12 @@
       "sha256": "d1985de4d7bd26e7e8784e7d09c914d7ac28c3ba6089b1691a09528810217cc7"
     },
     {
+      "name": "trace_runner_environment.yml",
+      "path": "release_assets/trace_runner_environment.yml",
+      "size_bytes": 5416,
+      "sha256": "16d49caa1dc32fa9f4c1f2bf13fa3c8ba6e7633893f118a0ba9f9ba4d003f356"
+    },
+    {
       "name": "trace_stage4_paper_exact.tgz",
       "path": "release_assets/trace_stage4_paper_exact.tgz",
       "size_bytes": 14519,
@@ -41,6 +47,7 @@
     }
   ],
   "unpack": {
+    "trace_runner_environment.yml": "conda env create -f release_assets/trace_runner_environment.yml",
     "trace_cluster_replay_all.zip": "unzip into results/",
     "trace_paper_replay_inputs.zip": "unzip into repository root",
     "trace_benchmark_full_audit_proof*.tgz": "tar -xzf into results/logs/",

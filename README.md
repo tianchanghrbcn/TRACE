@@ -113,3 +113,17 @@ Then follow:
 The main validation command after unpacking release assets is:
 
     python scripts/trace.py release-check --run-trace-validation
+
+## Environment setup
+
+If the `trace-runner` conda environment is not already available, create it from the release asset:
+
+    conda env create -f release_assets/trace_runner_environment.yml
+
+Then activate it:
+
+    conda activate trace-runner
+
+Reviewer instructions are in:
+
+    docs/reviewer_quickstart.md
