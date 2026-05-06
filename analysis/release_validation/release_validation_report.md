@@ -1,6 +1,6 @@
 # TRACE Release Validation Report
 
-- Generated at UTC: 2026-05-06T13:09:48.598251+00:00
+- Generated at UTC: 2026-05-06T13:35:35.038378+00:00
 - Status: PASS_WITH_WARNINGS
 
 ## Static path checks
@@ -35,6 +35,7 @@
 | docs/workflows.md | True | 2379 |
 | docs/pre_experiment_validity.md | True | 2390 |
 | docs/trace_stage4_repro.md | True | 2906 |
+| docs/uniclean_external.md | True | 1550 |
 | docs/stage3_strict_validation.md | True | 1191 |
 | docs/paper_output_traceability.md | True | 1004 |
 | scripts/trace.py | True | 18366 |
