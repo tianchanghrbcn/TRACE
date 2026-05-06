@@ -1,0 +1,120 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+brewery_name,68,nan,Against The Grain Brewery$,Against The Grain Brewery
+brewery_name,83,nan,Airways Br??ewing Compan#y,Airways Brewing Company
+brewery_name,84,Airways Brewing Company,Airways Br??ewing Compan#y,Airways Brewing Company
+brewery_name,149,Astoria Brewing Company,Astoria Brewing Comp??any,Astoria Brewing Company
+brewery_name,150,nan,Astoria Brewing Comp??any,Astoria Brewing Company
+brewery_name,224,Bent Brewstillery,Bent %Brews%tillery,Bent Brewstillery
+brewery_name,233,nan,Berkshire Brewin??g Company,Berkshire Brewing Company
+brewery_name,324,nan,Bohemian?? $Brewery,Bohemian Brewery
+brewery_name,325,nan,Bohemian?? $Brewery,Bohemian Brewery
+brewery_name,328,nan,Bohemian?? $Brewery,Bohemian Brewery
+brewery_name,526,nan,Cape Ann Br@@e%wing Company,Cape Ann Brewing Company
+brewery_name,528,Cape Ann Brewing Company,Cape Ann Br@@e%wing Company,Cape Ann Brewing Company
+brewery_name,529,nan,Cape Ann Br@@e%wing Company,Cape Ann Brewing Company
+brewery_name,709,nan,Denali Brewi$ng Company,Denali Brewing Company
+brewery_name,710,Denali Brewing Company,Denali Brewi$ng Company,Denali Brewing Company
+brewery_name,711,Denver Beer Company,Denver Beer Company@@,Denver Beer Company
+brewery_name,981,Greenbrier Valley Brewing Company,Gr#eenbrier Valley Brewing Company,Greenbrier Valley Brewing Company
+brewery_name,1157,KelSo Beer Company,KelSo Beer Compan$y,KelSo Beer Company
+brewery_name,1189,La Cumbre Brewing Company,%La Cumbre Brewing Company,La Cumbre Brewing Company
+brewery_name,1191,nan,Lancaster Brewing C@@ompany,Lancaster Brewing Company
+brewery_name,1195,nan,??Latitu??de 42 Brewing Company,Latitude 42 Brewing Company
+brewery_name,1275,nan,@@Mar%ble Brewery,Marble Brewery
+brewery_name,1337,Mike Hess $Bre??wing Company,Mike He$ss Brewing Company%,Mike Hess Brewing Company
+brewery_name,1338,Mike Hes%s Brewing% Company,Mike He$ss Brewing Company%,Mike Hess Brewing Company
+brewery_name,1341,nan,Mike He$ss Brewing Company%,Mike Hess Brewing Company
+brewery_name,1490,North ??Country Brewing Company,North Country Brewing Company$,North Country Brewing Company
+brewery_name,1493,nan,North Country Brewing Company$,North Country Brewing Company
+brewery_name,1649,Pine Street Brewery,Pine Str@@eet Br$ewery,Pine Street Brewery
+brewery_name,1806,Sanitas Brewing Company,Sanitas Brewi??ng Co%mpany,Sanitas Brewing Company
+brewery_name,1820,Schilling & Company,Schilling & Co??mpany,Schilling & Company
+brewery_name,2166,nan,The Right Brain Brewer$y#,The Right Brain Brewery
+brewery_name,2168,The Right Brain Brewery,The Right Brain Brewer$y#,The Right Brain Brewery
+brewery_name,2205,Tomm#yknocker Brewery,Tommyknocker Br%ewer#y,Tommyknocker Brewery
+brewery_name,2210,Tractor Brew@@ing Company,Tractor Brewing Comp#a%ny,Tractor Brewing Company
+city,40,St Petersburg,S#t Peters#burg,St Petersburg
+city,151,nan,De$@@troit,Detroit
+city,154,Detroit,De$@@troit,Detroit
+city,155,nan,De$@@troit,Detroit
+city,273,nan,Hamil$ton,Hamilton
+city,275,Hamilton,Hamil$ton,Hamilton
+city,555,nan,Morgan%ton,Morganton
+city,556,nan,Morgan%ton,Morganton
+city,557,Morganton,Morgan%ton,Morganton
+city,565,Morganton,Morgan??to@@n,Morganton
+city,761,nan,Mi??shawak%a,Mishawaka
+city,764,Mishawaka,Mi??shawak%a,Mishawaka
+city,916,nan,Chica$go%,Chicago
+city,918,Chicago,Chica$go%,Chicago
+city,1002,Seattle,Se%attl@@e,Seattle
+city,1099,nan,Milw??aukee,Milwaukee
+city,1157,nan,Broo$klyn,Brooklyn
+city,1196,Ponderay,Pon#deray@@,Ponderay
+city,1253,South Burlington,Sou#th$ Burlington,South Burlington
+city,1254,nan,Sou#th$ Burlington,South Burlington
+city,1376,San Diego,San Di$e%go,San Diego
+city,1378,nan,San Di$e%go,San Diego
+city,1662,Carlsbad,Carlsb%a#d,Carlsbad
+city,2092,nan,Atlant$a,Atlanta
+city,2095,Atlanta,Atlant$a,Atlanta
+city,2147,Sheridan,She#$ridan,Sheridan
+city,2150,nan,She#$ridan,Sheridan
+city,2151,nan,B??a@@ltimore,Baltimore
+city,2152,nan,B??a@@ltimore,Baltimore
+city,2154,Bronx,#Bron$x,Bronx
+city,2178,nan,Ch#arlottesville,Charlottesville
+city,2222,Dripping Springs,Dripping Spring$s,Dripping Springs
+city,2263,Austin,#Austin,Austin
+city,2298,Elmira,Elmi$ra,Elmira
+city,2378,nan,@@Pinedal#e,Pinedale
+city,2380,Tacoma,Tacoma$,Tacoma
+state,69,nan,??KY,KY
+state,96,WA,W??A,WA
+state,122,nan,#WI#,WI
+state,190,MA,M#A%,MA
+state,191,M#%A,M#A%,MA
+state,233,nan,M$A,MA
+state,252,TN,T$??N,TN
+state,320,NY,N@@Y,NY
+state,369,PA,P@@??A,PA
+state,549,N??J,N$#J,NJ
+state,551,$N#J,N$#J,NJ
+state,578,CA,@@CA,CA
+state,580,#C@@A,@@CA,CA
+state,597,WI,WI$#,WI
+state,664,ID,??ID,ID
+state,737,nan,%#MA,MA
+state,756,CO,%CO$,CO
+state,773,ND,ND$#,ND
+state,810,nan,??IN@@,IN
+state,811,IN%,??IN@@,IN
+state,983,RI,R#I,RI
+state,1003,WA,@@WA,WA
+state,1054,nan,??#WA,WA
+state,1056,W%A$,??#WA,WA
+state,1113,TX,TX?@@?,TX
+state,1192,MI,M??$I,MI
+state,1234,MS,M??S@@,MS
+state,1669,AZ,@@AZ,AZ
+state,1678,WA,??@@WA,WA
+state,1832,OR,OR@@,OR
+state,1914,nan,#VA,VA
+state,1939,nan,??TX,TX
+state,1940,TX,??TX,TX
+state,1941,T??X%,??TX,TX
+state,2022,A#??L,A$L,AL
+state,2024,AL,A$L,AL
+state,2025,nan,P$A#,PA
+state,2128,nan,MI#$,MI
+state,2151,MD,%MD%,MD
+state,2153,nan,%MD%,MD
+state,2178,nan,V#A,VA
+state,2181,nan,#IN,IN
+state,2183,??#IN,#IN,IN
+state,2263,TX,%TX,TX
+state,2273,nan,#$MD,MD
+state,2274,nan,#$MD,MD
+state,2382,WI,WI#,WI
+state,2383,nan,WI#,WI
+state,2384,nan,WI#,WI

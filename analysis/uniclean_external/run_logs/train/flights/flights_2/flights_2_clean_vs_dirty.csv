@@ -1,0 +1,1427 @@
+Attribute,Index,Clean Value,Dirty Value
+src,3,allegiantair,empty
+src,8,flights,empty
+src,15,helloflight,empty
+src,17,mytripandmore,empty
+src,20,quicktrip,empty
+src,28,flightexplorer,empty
+src,35,gofox,empty
+src,40,orbitz,empty
+src,41,panynj,empty
+src,43,travelocity,empty
+src,46,wunderground,empty
+src,64,myrateplan,empty
+src,73,world-flight-tracker,empty
+src,98,world-flight-tracker,empty
+src,125,wunderground,empty
+src,134,flightview,empty
+src,140,myrateplan,empty
+src,144,quicktrip,empty
+src,146,usatoday,empty
+src,156,flights,empty
+src,167,panynj,empty
+src,175,businesstravellogue,empty
+src,179,flights,empty
+src,216,mytripandmore,empty
+src,220,travelocity,empty
+src,230,flightaware,empty
+src,242,mytripandmore,empty
+src,246,quicktrip,empty
+src,255,boston,empty
+src,274,boston,empty
+src,288,mytripandmore,empty
+src,299,boston,empty
+src,329,flights,empty
+src,330,flightstats,empty
+src,331,flightview,empty
+src,332,flylouisville,empty
+src,335,gofox,empty
+src,336,helloflight,empty
+src,355,flightaware,empty
+src,382,flightstats,empty
+src,395,usatoday,empty
+src,398,wunderground,empty
+src,407,flightexplorer,empty
+src,411,flightwise,empty
+src,438,flytecomm,empty
+src,439,foxbusiness,empty
+src,443,myrateplan,empty
+src,450,world-flight-tracker,empty
+src,459,flightexplorer,empty
+src,467,helloflight,empty
+src,468,myrateplan,empty
+src,472,quicktrip,empty
+src,477,aa,empty
+src,493,myrateplan,empty
+src,499,weather,empty
+src,504,allegiantair,empty
+src,521,panynj,empty
+src,523,travelocity,empty
+src,550,wunderground,empty
+src,555,businesstravellogue,empty
+src,589,flytecomm,empty
+src,598,quicktrip,empty
+src,601,weather,empty
+src,609,flightarrival,empty
+src,630,world-flight-tracker,empty
+src,648,myrateplan,empty
+src,656,weather,empty
+src,663,businesstravellogue,empty
+src,665,flightaware,empty
+src,672,flytecomm,empty
+src,676,ifly,empty
+src,697,flylouisville,empty
+src,754,gofox,empty
+src,759,panynj,empty
+src,775,flightview,empty
+src,781,ifly,empty
+src,782,myrateplan,empty
+src,784,orbitz,empty
+src,790,world-flight-tracker,empty
+src,791,wunderground,empty
+src,792,aa,empty
+src,793,airtravelcenter,empty
+src,799,flightaware,empty
+src,803,flylouisville,empty
+src,805,foxbusiness,empty
+src,816,aa,empty
+src,817,airtravelcenter,empty
+src,822,flightaware,empty
+src,837,quicktrip,empty
+src,846,boston,empty
+src,852,flytecomm,empty
+src,857,myrateplan,empty
+src,858,mytripandmore,empty
+src,862,quicktrip,empty
+src,866,airtravelcenter,empty
+src,880,helloflight,empty
+src,891,airtravelcenter,empty
+src,894,businesstravellogue,empty
+src,898,flights,empty
+src,919,boston,empty
+src,925,flightstats,empty
+src,930,foxbusiness,empty
+src,936,ord,empty
+src,937,panynj,empty
+src,943,wunderground,empty
+src,945,airtravelcenter,empty
+src,946,allegiantair,empty
+src,950,flightaware,empty
+src,983,flytecomm,empty
+src,988,orbitz,empty
+src,1000,flightexplorer,empty
+src,1002,flightstats,empty
+src,1004,flylouisville,empty
+src,1016,weather,empty
+src,1036,panynj,empty
+src,1045,allegiantair,empty
+src,1048,flightarrival,empty
+src,1059,mia,empty
+src,1061,mytripandmore,empty
+src,1069,wunderground,empty
+src,1079,flightstats,empty
+src,1083,foxbusiness,empty
+src,1098,allegiantair,empty
+src,1112,panynj,empty
+src,1121,allegiantair,empty
+src,1133,foxbusiness,empty
+src,1143,travelocity,empty
+src,1145,weather,empty
+src,1151,boston,empty
+src,1172,world-flight-tracker,empty
+src,1174,aa,empty
+src,1185,flylouisville,empty
+src,1186,flytecomm,empty
+src,1192,orbitz,empty
+src,1198,world-flight-tracker,empty
+src,1204,businesstravellogue,empty
+src,1205,flightaware,empty
+src,1226,businesstravellogue,empty
+src,1227,den,empty
+src,1235,flytecomm,empty
+src,1243,panynj,empty
+src,1249,wunderground,empty
+src,1252,allegiantair,empty
+src,1297,wunderground,empty
+src,1316,travelocity,empty
+src,1336,panynj,empty
+src,1353,gofox,empty
+src,1395,flightstats,empty
+src,1401,helloflight,empty
+src,1404,panynj,empty
+src,1407,weather,empty
+src,1411,boston,empty
+src,1426,orbitz,empty
+src,1433,allegiantair,empty
+src,1438,flightstats,empty
+src,1440,flylouisville,empty
+src,1443,gofox,empty
+src,1444,helloflight,empty
+src,1456,businesstravellogue,empty
+src,1464,foxbusiness,empty
+src,1474,CO,empty
+src,1493,panynj,empty
+src,1526,businesstravellogue,empty
+src,1536,helloflight,empty
+src,1538,mytripandmore,empty
+src,1539,orbitz,empty
+src,1552,flightstats,empty
+src,1566,airtravelcenter,empty
+src,1580,mytripandmore,empty
+src,1582,panynj,empty
+src,1585,weather,empty
+src,1604,quicktrip,empty
+src,1613,flightstats,empty
+src,1625,weather,empty
+src,1635,flylouisville,empty
+src,1643,panynj,empty
+src,1650,boston,empty
+src,1660,gofox,empty
+src,1669,airtravelcenter,empty
+src,1680,helloflight,empty
+src,1682,myrateplan,empty
+src,1683,orbitz,empty
+src,1697,foxbusiness,empty
+src,1701,orbitz,empty
+src,1705,airtravelcenter,empty
+src,1722,quicktrip,empty
+src,1732,flightexplorer,empty
+src,1770,quicktrip,empty
+src,1771,ua,empty
+src,1793,weather,empty
+src,1794,airtravelcenter,empty
+src,1798,flightarrival,empty
+src,1809,myrateplan,empty
+src,1815,travelocity,empty
+src,1816,ua,empty
+src,1819,world-flight-tracker,empty
+src,1827,flightstats,empty
+src,1855,orbitz,empty
+src,1856,panynj,empty
+src,1865,businesstravellogue,empty
+src,1869,flightview,empty
+src,1870,flylouisville,empty
+src,1886,allegiantair,empty
+src,1894,foxbusiness,empty
+src,1909,businesstravellogue,empty
+src,1910,flightarrival,empty
+src,1930,airtravelcenter,empty
+src,1953,wunderground,empty
+src,1957,businesstravellogue,empty
+src,1982,businesstravellogue,empty
+src,1986,flightview,empty
+src,1991,helloflight,empty
+src,1995,panynj,empty
+src,1998,ua,empty
+src,2005,businesstravellogue,empty
+src,2018,panynj,empty
+src,2025,airtravelcenter,empty
+src,2028,businesstravellogue,empty
+src,2038,orbitz,empty
+src,2043,usatoday,empty
+src,2044,weather,empty
+src,2052,flylouisville,empty
+src,2054,foxbusiness,empty
+src,2062,ua,empty
+src,2090,flightarrival,empty
+src,2091,flightaware,empty
+src,2125,helloflight,empty
+src,2132,travelocity,empty
+src,2146,flytecomm,empty
+src,2160,allegiantair,empty
+src,2167,flightview,empty
+src,2170,foxbusiness,empty
+src,2175,panynj,empty
+src,2178,travelocity,empty
+src,2181,weather,empty
+src,2201,allegiantair,empty
+src,2214,orbitz,empty
+src,2224,flightarrival,empty
+src,2236,panynj,empty
+src,2246,flightaware,empty
+src,2249,flightstats,empty
+src,2259,orbitz,empty
+src,2268,world-flight-tracker,empty
+src,2271,allegiantair,empty
+src,2279,flightview,empty
+src,2297,businesstravellogue,empty
+src,2309,panynj,empty
+src,2316,allegiantair,empty
+src,2324,flytecomm,empty
+src,2327,helloflight,empty
+src,2328,myrateplan,empty
+src,2330,panynj,empty
+src,2342,flightview,empty
+src,2346,gofox,empty
+src,2364,flylouisville,empty
+flight,10,AA-1007-MIA-PHX,empty
+flight,19,AA-1007-MIA-PHX,empty
+flight,37,AA-1165-JFK-MIA,empty
+flight,50,AA-1221-MCO-ORD,empty
+flight,52,AA-1221-MCO-ORD,empty
+flight,84,AA-1279-DFW-PHX,empty
+flight,113,AA-1434-DFW-MCO,empty
+flight,123,AA-1434-DFW-MCO,empty
+flight,151,AA-1544-SAN-ORD,empty
+flight,157,AA-1544-SAN-ORD,empty
+flight,163,AA-1544-SAN-ORD,empty
+flight,164,AA-1544-SAN-ORD,empty
+flight,168,AA-1544-SAN-ORD,empty
+flight,200,AA-1664-MIA-ATL,empty
+flight,206,AA-1664-MIA-ATL,empty
+flight,213,AA-1664-MIA-ATL,empty
+flight,215,AA-1664-MIA-ATL,empty
+flight,218,AA-1664-MIA-ATL,empty
+flight,228,AA-1733-ORD-PHX,empty
+flight,231,AA-1733-ORD-PHX,empty
+flight,241,AA-1733-ORD-PHX,empty
+flight,254,AA-1886-BOS-MIA,empty
+flight,256,AA-1886-BOS-MIA,empty
+flight,258,AA-1886-BOS-MIA,empty
+flight,273,AA-1917-JFK-MCO,empty
+flight,274,AA-1917-JFK-MCO,empty
+flight,279,AA-1917-JFK-MCO,empty
+flight,283,AA-1917-JFK-MCO,empty
+flight,288,AA-1917-JFK-MCO,empty
+flight,296,AA-204-LAX-MCO,empty
+flight,306,AA-204-LAX-MCO,empty
+flight,319,AA-204-LAX-MCO,empty
+flight,323,AA-2050-ORD-MIA,empty
+flight,338,AA-2050-ORD-MIA,empty
+flight,350,AA-222-LAX-BOS,empty
+flight,357,AA-222-LAX-BOS,empty
+flight,378,AA-2268-PHX-ORD,empty
+flight,379,AA-2268-PHX-ORD,empty
+flight,391,AA-2268-PHX-ORD,empty
+flight,392,AA-2268-PHX-ORD,empty
+flight,406,AA-2312-DFW-DTW,empty
+flight,409,AA-2312-DFW-DTW,empty
+flight,420,AA-2312-DFW-DTW,empty
+flight,421,AA-2312-DFW-DTW,empty
+flight,427,AA-2525-DFW-MIA,empty
+flight,429,AA-2525-DFW-MIA,empty
+flight,433,AA-2525-DFW-MIA,empty
+flight,434,AA-2525-DFW-MIA,empty
+flight,447,AA-2525-DFW-MIA,empty
+flight,452,AA-271-MIA-LAX,empty
+flight,455,AA-271-MIA-LAX,empty
+flight,461,AA-271-MIA-LAX,empty
+flight,475,AA-271-MIA-LAX,empty
+flight,485,AA-2957-DFW-CVG,empty
+flight,516,AA-3-JFK-LAX,empty
+flight,517,AA-3-JFK-LAX,empty
+flight,522,AA-3-JFK-LAX,empty
+flight,535,AA-3063-SLC-LAX,empty
+flight,536,AA-3063-SLC-LAX,empty
+flight,554,AA-3468-CVG-MIA,empty
+flight,558,AA-3468-CVG-MIA,empty
+flight,560,AA-3468-CVG-MIA,empty
+flight,561,AA-3468-CVG-MIA,empty
+flight,569,AA-3468-CVG-MIA,empty
+flight,570,AA-3468-CVG-MIA,empty
+flight,572,AA-3468-CVG-MIA,empty
+flight,583,AA-3756-ORD-SLC,empty
+flight,592,AA-3756-ORD-SLC,empty
+flight,618,AA-3786-IAH-ORD,empty
+flight,654,AA-3804-PHL-ORD,empty
+flight,669,AA-3809-PHX-LAX,empty
+flight,684,AA-3809-PHX-LAX,empty
+flight,690,AA-3823-LAX-DEN,empty
+flight,691,AA-3823-LAX-DEN,empty
+flight,716,AA-3842-MSP-ORD,empty
+flight,760,AA-3859-IAH-ORD,empty
+flight,762,AA-3859-IAH-ORD,empty
+flight,765,AA-3859-IAH-ORD,empty
+flight,768,AA-3979-CVG-ORD,empty
+flight,776,AA-3979-CVG-ORD,empty
+flight,792,AA-400-DFW-JFK,empty
+flight,799,AA-400-DFW-JFK,empty
+flight,804,AA-400-DFW-JFK,empty
+flight,807,AA-400-DFW-JFK,empty
+flight,808,AA-400-DFW-JFK,empty
+flight,819,AA-404-MIA-MCO,empty
+flight,828,AA-404-MIA-MCO,empty
+flight,833,AA-404-MIA-MCO,empty
+flight,840,AA-404-MIA-MCO,empty
+flight,841,AA-404-MIA-MCO,empty
+flight,842,AA-404-MIA-MCO,empty
+flight,845,AA-415-BOS-ORD,empty
+flight,851,AA-415-BOS-ORD,empty
+flight,854,AA-415-BOS-ORD,empty
+flight,917,AA-4307-ORD-DTW,empty
+flight,926,AA-4307-ORD-DTW,empty
+flight,935,AA-4307-ORD-DTW,empty
+flight,937,AA-4307-ORD-DTW,empty
+flight,940,AA-4307-ORD-DTW,empty
+flight,945,AA-431-MIA-SFO,empty
+flight,952,AA-431-MIA-SFO,empty
+flight,964,AA-431-MIA-SFO,empty
+flight,967,AA-431-MIA-SFO,empty
+flight,981,AA-4330-CVG-ORD,empty
+flight,982,AA-4330-CVG-ORD,empty
+flight,985,AA-4330-CVG-ORD,empty
+flight,994,AA-4344-ORD-DTW,empty
+flight,1028,AA-446-DFW-PHL,empty
+flight,1050,AA-466-IAH-MIA,empty
+flight,1062,AA-466-IAH-MIA,empty
+flight,1063,AA-466-IAH-MIA,empty
+flight,1069,AA-466-IAH-MIA,empty
+flight,1090,AA-484-DFW-MIA,empty
+flight,1091,AA-484-DFW-MIA,empty
+flight,1092,AA-484-DFW-MIA,empty
+flight,1119,AA-59-JFK-SFO,empty
+flight,1131,AA-59-JFK-SFO,empty
+flight,1156,AA-616-DFW-DTW,empty
+flight,1165,AA-616-DFW-DTW,empty
+flight,1168,AA-616-DFW-DTW,empty
+flight,1175,AA-643-MIA-ORD,empty
+flight,1182,AA-643-MIA-ORD,empty
+flight,1189,AA-643-MIA-ORD,empty
+flight,1203,AA-649-ORD-SNA,empty
+flight,1223,AA-789-ORD-DEN,empty
+flight,1231,AA-789-ORD-DEN,empty
+flight,1236,AA-789-ORD-DEN,empty
+flight,1249,AA-789-ORD-DEN,empty
+flight,1252,AA-85-JFK-SFO,empty
+flight,1253,AA-85-JFK-SFO,empty
+flight,1262,AA-85-JFK-SFO,empty
+flight,1269,AA-85-JFK-SFO,empty
+flight,1305,CO-1088-CLE-IAH,empty
+flight,1313,CO-1088-CLE-IAH,empty
+flight,1326,CO-1090-BOS-IAH,empty
+flight,1329,CO-1090-BOS-IAH,empty
+flight,1342,CO-1193-EWR-MCO,empty
+flight,1360,CO-1193-EWR-MCO,empty
+flight,1366,CO-1250-MIA-IAH,empty
+flight,1375,CO-1250-MIA-IAH,empty
+flight,1384,CO-1250-MIA-IAH,empty
+flight,1392,CO-1561-PHX-IAH,empty
+flight,1404,CO-1561-PHX-IAH,empty
+flight,1440,CO-16-LAX-EWR,empty
+flight,1463,CO-1614-LAX-IAH,empty
+flight,1471,CO-1614-LAX-IAH,empty
+flight,1472,CO-1614-LAX-IAH,empty
+flight,1494,CO-1694-LAX-IAH,empty
+flight,1516,CO-45-EWR-MIA,empty
+flight,1548,CO-4888-IAH-DAL,empty
+flight,1549,CO-4888-IAH-DAL,empty
+flight,1551,CO-4888-IAH-DAL,empty
+flight,1573,CO-50-CLE-EWR,empty
+flight,1581,CO-50-CLE-EWR,empty
+flight,1582,CO-50-CLE-EWR,empty
+flight,1585,CO-50-CLE-EWR,empty
+flight,1594,CO-52-IAH-LAX,empty
+flight,1602,CO-52-IAH-LAX,empty
+flight,1604,CO-52-IAH-LAX,empty
+flight,1606,CO-58-DEN-IAH,empty
+flight,1609,CO-58-DEN-IAH,empty
+flight,1612,CO-58-DEN-IAH,empty
+flight,1619,CO-58-DEN-IAH,empty
+flight,1626,CO-62-IAH-EWR,empty
+flight,1628,CO-62-IAH-EWR,empty
+flight,1631,CO-62-IAH-EWR,empty
+flight,1633,CO-62-IAH-EWR,empty
+flight,1636,CO-62-IAH-EWR,empty
+flight,1655,CO-63-EWR-IAH,empty
+flight,1678,CO-89-IAH-EWR,empty
+flight,1683,CO-89-IAH-EWR,empty
+flight,1688,UA-1500-IAH-GUA,empty
+flight,1694,UA-1500-IAH-GUA,empty
+flight,1704,UA-1500-IAH-GUA,empty
+flight,1705,UA-2314-ATL-PHL,empty
+flight,1709,UA-2314-ATL-PHL,empty
+flight,1715,UA-2314-ATL-PHL,empty
+flight,1734,UA-233-LAX-JFK,empty
+flight,1751,UA-233-LAX-JFK,empty
+flight,1753,UA-248-PHX-ORD,empty
+flight,1754,UA-248-PHX-ORD,empty
+flight,1757,UA-248-PHX-ORD,empty
+flight,1796,UA-257-JFK-SFO,empty
+flight,1814,UA-257-JFK-SFO,empty
+flight,1825,UA-2704-DTW-PHX,empty
+flight,1842,UA-2708-EWR-CLT,empty
+flight,1851,UA-2708-EWR-CLT,empty
+flight,1861,UA-2708-EWR-CLT,empty
+flight,1886,UA-2830-MCO-CLT,empty
+flight,1894,UA-2830-MCO-CLT,empty
+flight,1901,UA-2830-MCO-CLT,empty
+flight,1910,UA-2906-PHL-MCO,empty
+flight,1912,UA-2906-PHL-MCO,empty
+flight,1918,UA-2906-PHL-MCO,empty
+flight,1921,UA-2906-PHL-MCO,empty
+flight,1930,UA-2945-PHL-CLT,empty
+flight,1943,UA-2945-PHL-CLT,empty
+flight,1958,UA-3050-PHX-CLT,empty
+flight,1964,UA-3050-PHX-CLT,empty
+flight,1966,UA-3050-PHX-CLT,empty
+flight,1971,UA-3050-PHX-CLT,empty
+flight,1976,UA-3050-PHX-CLT,empty
+flight,1987,UA-3099-PHX-PHL,empty
+flight,1995,UA-3099-PHX-PHL,empty
+flight,2015,UA-3373-IAD-PHL,empty
+flight,2028,UA-3515-IAD-MSP,empty
+flight,2032,UA-3515-IAD-MSP,empty
+flight,2033,UA-3515-IAD-MSP,empty
+flight,2038,UA-3515-IAD-MSP,empty
+flight,2039,UA-3515-IAD-MSP,empty
+flight,2061,UA-37-EDI-EWR,empty
+flight,2068,UA-37-EWR-MCO,empty
+flight,2070,UA-37-EWR-MCO,empty
+flight,2096,UA-382-IAD-LAX,empty
+flight,2102,UA-382-IAD-LAX,empty
+flight,2108,UA-382-IAD-LAX,empty
+flight,2112,UA-3925-IAD-ORF,empty
+flight,2113,UA-3925-IAD-ORF,empty
+flight,2115,UA-3925-IAD-ORF,empty
+flight,2135,UA-3925-IAD-ORF,empty
+flight,2137,UA-397-JFK-SFO,empty
+flight,2158,UA-397-JFK-SFO,empty
+flight,2168,UA-414-LAX-SFO,empty
+flight,2169,UA-414-LAX-SFO,empty
+flight,2170,UA-414-LAX-SFO,empty
+flight,2177,UA-414-LAX-SFO,empty
+flight,2180,UA-414-LAX-SFO,empty
+flight,2191,UA-5487-SFO-MRY,empty
+flight,2220,UA-6273-YYC-SFO,empty
+flight,2227,UA-6273-YYC-SFO,empty
+flight,2234,UA-6273-YYC-SFO,empty
+flight,2240,UA-6273-YYC-SFO,empty
+flight,2244,UA-664-ORD-PHL,empty
+flight,2251,UA-664-ORD-PHL,empty
+flight,2253,UA-664-ORD-PHL,empty
+flight,2256,UA-664-ORD-PHL,empty
+flight,2259,UA-664-ORD-PHL,empty
+flight,2268,UA-664-ORD-PHL,empty
+flight,2272,UA-828-SFO-ORD,empty
+flight,2295,UA-843-LAX-ORD,empty
+flight,2296,UA-843-LAX-ORD,empty
+flight,2302,UA-843-LAX-ORD,empty
+flight,2312,UA-843-LAX-ORD,empty
+flight,2331,UA-854-SFO-IAH,empty
+flight,2339,UA-858-PVG-SFO,empty
+flight,2342,UA-858-PVG-SFO,empty
+flight,2353,UA-858-PVG-SFO,empty
+flight,2362,UA-938-DEN-ORD,empty
+flight,2363,UA-938-DEN-ORD,empty
+flight,2365,UA-938-DEN-ORD,empty
+sched_dep_time,16,4:55 p.m.,empty
+sched_dep_time,17,4:55 p.m.,empty
+sched_dep_time,57,8:00 p.m.,empty
+sched_dep_time,64,8:00 p.m.,empty
+sched_dep_time,68,8:00 p.m.,empty
+sched_dep_time,74,8:00 p.m.,empty
+sched_dep_time,79,1:00 p.m.,empty
+sched_dep_time,82,1:00 p.m.,empty
+sched_dep_time,106,7:15 a.m.,empty
+sched_dep_time,139,11:55 p.m.,empty
+sched_dep_time,156,11:25 a.m.,empty
+sched_dep_time,159,11:25 a.m.,empty
+sched_dep_time,171,6:30 p.m.,empty
+sched_dep_time,175,6:30 p.m.,empty
+sched_dep_time,180,6:30 p.m.,empty
+sched_dep_time,189,6:30 p.m.,empty
+sched_dep_time,193,6:30 p.m.,empty
+sched_dep_time,209,10:15 a.m.,empty
+sched_dep_time,211,10:15 a.m.,empty
+sched_dep_time,235,7:45 p.m.,empty
+sched_dep_time,244,7:45 p.m.,empty
+sched_dep_time,254,10:45 a.m.,empty
+sched_dep_time,257,10:45 a.m.,empty
+sched_dep_time,277,2:55 p.m.,empty
+sched_dep_time,289,2:55 p.m.,empty
+sched_dep_time,304,11:25 p.m.,empty
+sched_dep_time,305,11:25 p.m.,empty
+sched_dep_time,309,11:25 p.m.,empty
+sched_dep_time,323,10:40 a.m.,empty
+sched_dep_time,334,10:40 a.m.,empty
+sched_dep_time,342,10:40 a.m.,empty
+sched_dep_time,352,7:10 a.m.,empty
+sched_dep_time,380,7:15 a.m.,empty
+sched_dep_time,381,7:15 a.m.,empty
+sched_dep_time,391,7:15 a.m.,empty
+sched_dep_time,400,8:25 p.m.,empty
+sched_dep_time,406,8:25 p.m.,empty
+sched_dep_time,413,8:25 p.m.,empty
+sched_dep_time,414,8:25 p.m.,empty
+sched_dep_time,415,8:25 p.m.,empty
+sched_dep_time,416,8:25 p.m.,empty
+sched_dep_time,433,7:25 a.m.,empty
+sched_dep_time,446,7:25 a.m.,empty
+sched_dep_time,461,11:35 a.m.,empty
+sched_dep_time,480,7:55 a.m.,empty
+sched_dep_time,482,7:55 a.m.,empty
+sched_dep_time,484,7:55 a.m.,empty
+sched_dep_time,488,7:55 a.m.,empty
+sched_dep_time,514,12:00 p.m.,empty
+sched_dep_time,545,8:20 p.m.,empty
+sched_dep_time,560,7:00 a.m.,empty
+sched_dep_time,565,7:00 a.m.,empty
+sched_dep_time,579,12:15 p.m.,empty
+sched_dep_time,583,12:15 p.m.,empty
+sched_dep_time,596,12:15 p.m.,empty
+sched_dep_time,605,4:00 p.m.,empty
+sched_dep_time,608,4:00 p.m.,empty
+sched_dep_time,620,4:00 p.m.,empty
+sched_dep_time,621,4:00 p.m.,empty
+sched_dep_time,628,4:00 p.m.,empty
+sched_dep_time,655,2:35 p.m.,empty
+sched_dep_time,662,6:00 a.m.,empty
+sched_dep_time,667,6:00 a.m.,empty
+sched_dep_time,669,6:00 a.m.,empty
+sched_dep_time,675,6:00 a.m.,empty
+sched_dep_time,685,6:00 a.m.,empty
+sched_dep_time,693,9:00 p.m.,empty
+sched_dep_time,707,9:00 p.m.,empty
+sched_dep_time,716,6:00 a.m.,empty
+sched_dep_time,762,7:10 a.m.,empty
+sched_dep_time,763,7:10 a.m.,empty
+sched_dep_time,773,7:30 a.m.,empty
+sched_dep_time,774,7:30 a.m.,empty
+sched_dep_time,796,10:40 a.m.,empty
+sched_dep_time,804,10:40 a.m.,empty
+sched_dep_time,815,10:40 a.m.,empty
+sched_dep_time,825,6:45 a.m.,empty
+sched_dep_time,828,6:45 a.m.,empty
+sched_dep_time,830,6:45 a.m.,empty
+sched_dep_time,837,6:45 a.m.,empty
+sched_dep_time,844,8:35 a.m.,empty
+sched_dep_time,856,8:35 a.m.,empty
+sched_dep_time,867,10:40 a.m.,empty
+sched_dep_time,883,10:40 a.m.,empty
+sched_dep_time,890,12:10 p.m.,empty
+sched_dep_time,892,12:10 p.m.,empty
+sched_dep_time,897,12:10 p.m.,empty
+sched_dep_time,904,12:10 p.m.,empty
+sched_dep_time,905,12:10 p.m.,empty
+sched_dep_time,921,6:45 p.m.,empty
+sched_dep_time,934,6:45 p.m.,empty
+sched_dep_time,952,8:35 a.m.,empty
+sched_dep_time,959,8:35 a.m.,empty
+sched_dep_time,968,8:35 a.m.,empty
+sched_dep_time,992,3:35 p.m.,empty
+sched_dep_time,997,11:45 a.m.,empty
+sched_dep_time,1014,11:45 a.m.,empty
+sched_dep_time,1023,11:50 a.m.,empty
+sched_dep_time,1025,11:50 a.m.,empty
+sched_dep_time,1026,11:50 a.m.,empty
+sched_dep_time,1041,11:50 a.m.,empty
+sched_dep_time,1048,6:00 a.m.,empty
+sched_dep_time,1057,6:00 a.m.,empty
+sched_dep_time,1061,6:00 a.m.,empty
+sched_dep_time,1062,6:00 a.m.,empty
+sched_dep_time,1066,6:00 a.m.,empty
+sched_dep_time,1099,6:40 a.m.,empty
+sched_dep_time,1107,6:40 a.m.,empty
+sched_dep_time,1111,6:40 a.m.,empty
+sched_dep_time,1137,7:10 a.m.,empty
+sched_dep_time,1147,7:10 a.m.,empty
+sched_dep_time,1158,9:05 a.m.,empty
+sched_dep_time,1161,9:05 a.m.,empty
+sched_dep_time,1181,7:10 a.m.,empty
+sched_dep_time,1184,7:10 a.m.,empty
+sched_dep_time,1192,7:10 a.m.,empty
+sched_dep_time,1207,1:30 p.m.,empty
+sched_dep_time,1232,1:05 p.m.,empty
+sched_dep_time,1244,1:05 p.m.,empty
+sched_dep_time,1326,9:45 a.m.,empty
+sched_dep_time,1331,9:45 a.m.,empty
+sched_dep_time,1341,9:15 a.m.,empty
+sched_dep_time,1360,9:15 a.m.,empty
+sched_dep_time,1369,2:53 p.m.,empty
+sched_dep_time,1393,8:05 a.m.,empty
+sched_dep_time,1396,8:05 a.m.,empty
+sched_dep_time,1402,8:05 a.m.,empty
+sched_dep_time,1408,7:00 p.m.,empty
+sched_dep_time,1410,7:00 p.m.,empty
+sched_dep_time,1419,7:00 p.m.,empty
+sched_dep_time,1424,7:00 p.m.,empty
+sched_dep_time,1432,10:25 a.m.,empty
+sched_dep_time,1449,10:25 a.m.,empty
+sched_dep_time,1459,12:30 a.m.,empty
+sched_dep_time,1465,12:30 a.m.,empty
+sched_dep_time,1482,7:15 p.m.,empty
+sched_dep_time,1497,7:15 p.m.,empty
+sched_dep_time,1500,4:00 p.m.,empty
+sched_dep_time,1503,4:00 p.m.,empty
+sched_dep_time,1531,7:10 p.m.,empty
+sched_dep_time,1533,7:10 p.m.,empty
+sched_dep_time,1564,5:30 p.m.,empty
+sched_dep_time,1583,2:55 p.m.,empty
+sched_dep_time,1585,2:55 p.m.,empty
+sched_dep_time,1600,7:35 a.m.,empty
+sched_dep_time,1605,7:35 a.m.,empty
+sched_dep_time,1608,11:25 a.m.,empty
+sched_dep_time,1609,11:25 a.m.,empty
+sched_dep_time,1615,11:25 a.m.,empty
+sched_dep_time,1626,2:30 p.m.,empty
+sched_dep_time,1632,2:30 p.m.,empty
+sched_dep_time,1635,2:30 p.m.,empty
+sched_dep_time,1671,6:00 a.m.,empty
+sched_dep_time,1693,8:55 a.m.,empty
+sched_dep_time,1694,8:55 a.m.,empty
+sched_dep_time,1712,2:55 p.m.,empty
+sched_dep_time,1724,2:55 p.m.,empty
+sched_dep_time,1745,4:25 p.m.,empty
+sched_dep_time,1746,4:25 p.m.,empty
+sched_dep_time,1760,12:57 p.m.,empty
+sched_dep_time,1761,12:57 p.m.,empty
+sched_dep_time,1765,12:57 p.m.,empty
+sched_dep_time,1785,7:05 a.m.,empty
+sched_dep_time,1807,2:30 p.m.,empty
+sched_dep_time,1821,11:15 a.m.,empty
+sched_dep_time,1824,11:15 a.m.,empty
+sched_dep_time,1831,11:15 a.m.,empty
+sched_dep_time,1842,2:55 p.m.,empty
+sched_dep_time,1850,2:55 p.m.,empty
+sched_dep_time,1881,4:00 p.m.,empty
+sched_dep_time,1888,3:27 p.m.,empty
+sched_dep_time,1901,3:27 p.m.,empty
+sched_dep_time,1912,3:50 p.m.,empty
+sched_dep_time,1920,3:50 p.m.,empty
+sched_dep_time,1922,3:50 p.m.,empty
+sched_dep_time,1926,3:50 p.m.,empty
+sched_dep_time,1943,12:00 a.m.,empty
+sched_dep_time,1948,12:00 a.m.,empty
+sched_dep_time,1954,11:05 a.m.,empty
+sched_dep_time,1955,11:05 a.m.,empty
+sched_dep_time,1969,11:05 a.m.,empty
+sched_dep_time,1970,11:05 a.m.,empty
+sched_dep_time,1988,11:55 a.m.,empty
+sched_dep_time,2021,8:29 a.m.,empty
+sched_dep_time,2040,8:15 a.m.,empty
+sched_dep_time,2047,9:05 a.m.,empty
+sched_dep_time,2049,9:05 a.m.,empty
+sched_dep_time,2051,9:05 a.m.,empty
+sched_dep_time,2069,1:29 p.m.,empty
+sched_dep_time,2072,1:29 p.m.,empty
+sched_dep_time,2073,1:29 p.m.,empty
+sched_dep_time,2077,1:29 p.m.,empty
+sched_dep_time,2084,1:29 p.m.,empty
+sched_dep_time,2099,12:30 p.m.,empty
+sched_dep_time,2101,12:30 p.m.,empty
+sched_dep_time,2103,12:30 p.m.,empty
+sched_dep_time,2113,8:41 a.m.,empty
+sched_dep_time,2114,8:41 a.m.,empty
+sched_dep_time,2117,8:41 a.m.,empty
+sched_dep_time,2121,8:41 a.m.,empty
+sched_dep_time,2122,8:41 a.m.,empty
+sched_dep_time,2130,8:41 a.m.,empty
+sched_dep_time,2154,8:00 a.m.,empty
+sched_dep_time,2155,8:00 a.m.,empty
+sched_dep_time,2156,8:00 a.m.,empty
+sched_dep_time,2173,6:00 a.m.,empty
+sched_dep_time,2179,6:00 a.m.,empty
+sched_dep_time,2187,10:39 a.m.,empty
+sched_dep_time,2193,10:39 a.m.,empty
+sched_dep_time,2211,2:30 p.m.,empty
+sched_dep_time,2223,7:35 a.m.,empty
+sched_dep_time,2233,7:35 a.m.,empty
+sched_dep_time,2238,7:35 a.m.,empty
+sched_dep_time,2240,7:35 a.m.,empty
+sched_dep_time,2270,11:08 p.m.,empty
+sched_dep_time,2271,11:08 p.m.,empty
+sched_dep_time,2274,11:08 p.m.,empty
+sched_dep_time,2282,11:08 p.m.,empty
+sched_dep_time,2284,11:08 p.m.,empty
+sched_dep_time,2285,11:08 p.m.,empty
+sched_dep_time,2294,1:55 p.m.,empty
+sched_dep_time,2324,7:53 a.m.,empty
+sched_dep_time,2330,7:53 a.m.,empty
+sched_dep_time,2331,7:53 a.m.,empty
+sched_dep_time,2332,7:53 a.m.,empty
+sched_dep_time,2362,4:16 p.m.,empty
+sched_dep_time,2372,4:16 p.m.,empty
+act_dep_time,16,5:08 p.m.,empty
+act_dep_time,21,5:08 p.m.,empty
+act_dep_time,22,7:22 a.m.,empty
+act_dep_time,26,7:22 a.m.,empty
+act_dep_time,35,7:22 a.m.,empty
+act_dep_time,37,7:22 a.m.,empty
+act_dep_time,51,8:23 p.m.,empty
+act_dep_time,52,8:23 p.m.,empty
+act_dep_time,59,8:23 p.m.,empty
+act_dep_time,63,8:23 p.m.,empty
+act_dep_time,74,8:23 p.m.,empty
+act_dep_time,81,2:04 p.m.,empty
+act_dep_time,84,2:04 p.m.,empty
+act_dep_time,87,2:04 p.m.,empty
+act_dep_time,92,2:04 p.m.,empty
+act_dep_time,95,2:04 p.m.,empty
+act_dep_time,104,7:21 a.m.,empty
+act_dep_time,124,7:21 a.m.,empty
+act_dep_time,151,11:40 a.m.,empty
+act_dep_time,153,11:40 a.m.,empty
+act_dep_time,160,11:40 a.m.,empty
+act_dep_time,166,11:40 a.m.,empty
+act_dep_time,171,6:30 p.m.,empty
+act_dep_time,199,10:18 a.m.,empty
+act_dep_time,208,10:18 a.m.,empty
+act_dep_time,211,10:18 a.m.,empty
+act_dep_time,236,7:58 p.m.,empty
+act_dep_time,244,7:58 p.m.,empty
+act_dep_time,260,10:55 a.m.,empty
+act_dep_time,261,10:55 a.m.,empty
+act_dep_time,282,3:27 p.m.,empty
+act_dep_time,306,11:25 p.m.,empty
+act_dep_time,315,11:25 p.m.,empty
+act_dep_time,317,11:25 p.m.,empty
+act_dep_time,331,11:05 a.m.,empty
+act_dep_time,334,11:05 a.m.,empty
+act_dep_time,349,7:31 a.m.,empty
+act_dep_time,380,7:22 a.m.,empty
+act_dep_time,385,7:22 a.m.,empty
+act_dep_time,386,7:22 a.m.,empty
+act_dep_time,402,8:25 p.m.,empty
+act_dep_time,408,8:25 p.m.,empty
+act_dep_time,411,8:25 p.m.,empty
+act_dep_time,431,7:39 a.m.,empty
+act_dep_time,442,7:39 a.m.,empty
+act_dep_time,445,7:39 a.m.,empty
+act_dep_time,453,11:52 a.m.,empty
+act_dep_time,456,11:52 a.m.,empty
+act_dep_time,459,11:52 a.m.,empty
+act_dep_time,462,11:52 a.m.,empty
+act_dep_time,463,11:52 a.m.,empty
+act_dep_time,464,11:52 a.m.,empty
+act_dep_time,471,11:52 a.m.,empty
+act_dep_time,481,8:04 a.m.,empty
+act_dep_time,486,8:04 a.m.,empty
+act_dep_time,518,12:11 p.m.,empty
+act_dep_time,528,8:39 p.m.,empty
+act_dep_time,536,8:39 p.m.,empty
+act_dep_time,552,7:25 a.m.,empty
+act_dep_time,555,7:25 a.m.,empty
+act_dep_time,556,7:25 a.m.,empty
+act_dep_time,558,7:25 a.m.,empty
+act_dep_time,559,7:25 a.m.,empty
+act_dep_time,579,12:41 p.m.,empty
+act_dep_time,588,12:41 p.m.,empty
+act_dep_time,596,12:41 p.m.,empty
+act_dep_time,600,12:41 p.m.,empty
+act_dep_time,601,12:41 p.m.,empty
+act_dep_time,609,4:12 p.m.,empty
+act_dep_time,620,4:12 p.m.,empty
+act_dep_time,631,4:12 p.m.,empty
+act_dep_time,637,2:44 p.m.,empty
+act_dep_time,638,2:44 p.m.,empty
+act_dep_time,640,2:44 p.m.,empty
+act_dep_time,643,2:44 p.m.,empty
+act_dep_time,648,2:44 p.m.,empty
+act_dep_time,668,6:10 a.m.,empty
+act_dep_time,693,9:00 p.m.,empty
+act_dep_time,704,9:00 p.m.,empty
+act_dep_time,707,9:00 p.m.,empty
+act_dep_time,714,6:56 a.m.,empty
+act_dep_time,729,6:56 a.m.,empty
+act_dep_time,734,6:56 a.m.,empty
+act_dep_time,745,7:16 a.m.,empty
+act_dep_time,747,7:16 a.m.,empty
+act_dep_time,748,7:16 a.m.,empty
+act_dep_time,752,7:16 a.m.,empty
+act_dep_time,761,7:16 a.m.,empty
+act_dep_time,769,8:04 a.m.,empty
+act_dep_time,800,11:01 a.m.,empty
+act_dep_time,807,11:01 a.m.,empty
+act_dep_time,814,11:01 a.m.,empty
+act_dep_time,815,11:01 a.m.,empty
+act_dep_time,821,6:57 a.m.,empty
+act_dep_time,827,6:57 a.m.,empty
+act_dep_time,832,6:57 a.m.,empty
+act_dep_time,840,6:57 a.m.,empty
+act_dep_time,842,6:57 a.m.,empty
+act_dep_time,845,8:56 a.m.,empty
+act_dep_time,859,8:56 a.m.,empty
+act_dep_time,864,8:56 a.m.,empty
+act_dep_time,883,10:54 a.m.,empty
+act_dep_time,893,12:10 p.m.,empty
+act_dep_time,899,12:10 p.m.,empty
+act_dep_time,906,12:10 p.m.,empty
+act_dep_time,908,12:10 p.m.,empty
+act_dep_time,937,6:55 p.m.,empty
+act_dep_time,940,6:55 p.m.,empty
+act_dep_time,945,8:51 a.m.,empty
+act_dep_time,957,8:51 a.m.,empty
+act_dep_time,965,8:51 a.m.,empty
+act_dep_time,966,8:51 a.m.,empty
+act_dep_time,973,3:36 p.m.,empty
+act_dep_time,996,12:13 p.m.,empty
+act_dep_time,1013,12:13 p.m.,empty
+act_dep_time,1017,12:12 p.m.,empty
+act_dep_time,1037,12:12 p.m.,empty
+act_dep_time,1049,6:08 a.m.,empty
+act_dep_time,1055,6:08 a.m.,empty
+act_dep_time,1074,4:29 p.m.,empty
+act_dep_time,1085,4:29 p.m.,empty
+act_dep_time,1119,7:39 a.m.,empty
+act_dep_time,1125,7:39 a.m.,empty
+act_dep_time,1169,10:10 a.m.,empty
+act_dep_time,1179,7:30 a.m.,empty
+act_dep_time,1197,7:30 a.m.,empty
+act_dep_time,1228,1:19 p.m.,empty
+act_dep_time,1251,3:36 p.m.,empty
+act_dep_time,1255,3:36 p.m.,empty
+act_dep_time,1256,3:36 p.m.,empty
+act_dep_time,1264,3:36 p.m.,empty
+act_dep_time,1266,3:36 p.m.,empty
+act_dep_time,1281,11:56 a.m.,empty
+act_dep_time,1286,11:56 a.m.,empty
+act_dep_time,1287,11:56 a.m.,empty
+act_dep_time,1289,11:56 a.m.,empty
+act_dep_time,1302,8:40 a.m.,empty
+act_dep_time,1303,8:40 a.m.,empty
+act_dep_time,1305,8:40 a.m.,empty
+act_dep_time,1308,8:40 a.m.,empty
+act_dep_time,1314,8:40 a.m.,empty
+act_dep_time,1318,10:19 a.m.,empty
+act_dep_time,1320,10:19 a.m.,empty
+act_dep_time,1322,10:19 a.m.,empty
+act_dep_time,1355,9:14 a.m.,empty
+act_dep_time,1358,9:14 a.m.,empty
+act_dep_time,1371,3:01 p.m.,empty
+act_dep_time,1379,3:01 p.m.,empty
+act_dep_time,1389,8:00 a.m.,empty
+act_dep_time,1406,8:00 a.m.,empty
+act_dep_time,1427,7:14 p.m.,empty
+act_dep_time,1433,10:20 a.m.,empty
+act_dep_time,1451,10:20 a.m.,empty
+act_dep_time,1458,12:41 a.m.,empty
+act_dep_time,1459,12:41 a.m.,empty
+act_dep_time,1461,12:41 a.m.,empty
+act_dep_time,1465,12:41 a.m.,empty
+act_dep_time,1479,7:15 p.m.,empty
+act_dep_time,1516,3:58 p.m.,empty
+act_dep_time,1526,8:25 p.m.,empty
+act_dep_time,1530,8:25 p.m.,empty
+act_dep_time,1543,5:30 p.m.,empty
+act_dep_time,1572,3:31 p.m.,empty
+act_dep_time,1582,3:31 p.m.,empty
+act_dep_time,1610,11:32 a.m.,empty
+act_dep_time,1613,11:32 a.m.,empty
+act_dep_time,1633,2:48 p.m.,empty
+act_dep_time,1642,2:48 p.m.,empty
+act_dep_time,1650,5:22 p.m.,empty
+act_dep_time,1652,5:22 p.m.,empty
+act_dep_time,1664,5:22 p.m.,empty
+act_dep_time,1670,6:02 a.m.,empty
+act_dep_time,1676,6:02 a.m.,empty
+act_dep_time,1677,6:02 a.m.,empty
+act_dep_time,1693,9:16 a.m.,empty
+act_dep_time,1706,2:55 p.m.,empty
+act_dep_time,1709,2:55 p.m.,empty
+act_dep_time,1719,2:55 p.m.,empty
+act_dep_time,1723,2:55 p.m.,empty
+act_dep_time,1732,4:25 p.m.,empty
+act_dep_time,1738,4:25 p.m.,empty
+act_dep_time,1740,4:25 p.m.,empty
+act_dep_time,1747,4:25 p.m.,empty
+act_dep_time,1767,1:32 p.m.,empty
+act_dep_time,1768,1:32 p.m.,empty
+act_dep_time,1774,7:05 a.m.,empty
+act_dep_time,1781,7:05 a.m.,empty
+act_dep_time,1811,2:26 p.m.,empty
+act_dep_time,1817,2:26 p.m.,empty
+act_dep_time,1821,11:15 a.m.,empty
+act_dep_time,1836,11:15 a.m.,empty
+act_dep_time,1840,11:15 a.m.,empty
+act_dep_time,1842,2:55 p.m.,empty
+act_dep_time,1853,2:55 p.m.,empty
+act_dep_time,1854,2:55 p.m.,empty
+act_dep_time,1855,2:55 p.m.,empty
+act_dep_time,1874,4:00 p.m.,empty
+act_dep_time,1876,4:00 p.m.,empty
+act_dep_time,1882,4:00 p.m.,empty
+act_dep_time,1887,3:27 p.m.,empty
+act_dep_time,1893,3:27 p.m.,empty
+act_dep_time,1918,4:28 p.m.,empty
+act_dep_time,1934,3:11 a.m.,empty
+act_dep_time,1943,3:11 a.m.,empty
+act_dep_time,1957,11:30 a.m.,empty
+act_dep_time,1958,11:30 a.m.,empty
+act_dep_time,1975,11:30 a.m.,empty
+act_dep_time,1976,11:30 a.m.,empty
+act_dep_time,1998,11:55 a.m.,empty
+act_dep_time,2012,8:26 a.m.,empty
+act_dep_time,2034,8:12 a.m.,empty
+act_dep_time,2049,8:52 a.m.,empty
+act_dep_time,2050,8:52 a.m.,empty
+act_dep_time,2052,8:52 a.m.,empty
+act_dep_time,2055,8:52 a.m.,empty
+act_dep_time,2060,8:52 a.m.,empty
+act_dep_time,2076,1:48 p.m.,empty
+act_dep_time,2083,1:48 p.m.,empty
+act_dep_time,2084,1:48 p.m.,empty
+act_dep_time,2099,12:35 p.m.,empty
+act_dep_time,2101,12:35 p.m.,empty
+act_dep_time,2103,12:35 p.m.,empty
+act_dep_time,2149,8:29 a.m.,empty
+act_dep_time,2151,8:29 a.m.,empty
+act_dep_time,2176,5:56 a.m.,empty
+act_dep_time,2182,10:33 a.m.,empty
+act_dep_time,2183,10:33 a.m.,empty
+act_dep_time,2198,10:33 a.m.,empty
+act_dep_time,2207,2:48 p.m.,empty
+act_dep_time,2217,2:48 p.m.,empty
+act_dep_time,2235,7:27 a.m.,empty
+act_dep_time,2238,7:27 a.m.,empty
+act_dep_time,2248,1:31 p.m.,empty
+act_dep_time,2257,1:31 p.m.,empty
+act_dep_time,2258,1:31 p.m.,empty
+act_dep_time,2261,1:31 p.m.,empty
+act_dep_time,2263,1:31 p.m.,empty
+act_dep_time,2264,1:31 p.m.,empty
+act_dep_time,2269,1:31 p.m.,empty
+act_dep_time,2288,11:08 p.m.,empty
+act_dep_time,2297,2:10 p.m.,empty
+act_dep_time,2299,2:10 p.m.,empty
+act_dep_time,2302,2:10 p.m.,empty
+act_dep_time,2306,2:10 p.m.,empty
+act_dep_time,2319,7:49 a.m.,empty
+act_dep_time,2329,7:49 a.m.,empty
+act_dep_time,2335,7:49 a.m.,empty
+act_dep_time,2348,1:32 p.m.,empty
+act_dep_time,2349,1:32 p.m.,empty
+act_dep_time,2355,4:15 p.m.,empty
+act_dep_time,2365,4:15 p.m.,empty
+sched_arr_time,7,8:05 p.m.,empty
+sched_arr_time,15,8:05 p.m.,empty
+sched_arr_time,29,10:34 a.m.,empty
+sched_arr_time,34,10:34 a.m.,empty
+sched_arr_time,42,10:34 a.m.,empty
+sched_arr_time,46,10:34 a.m.,empty
+sched_arr_time,72,9:45 p.m.,empty
+sched_arr_time,98,2:35 p.m.,empty
+sched_arr_time,99,2:35 p.m.,empty
+sched_arr_time,106,10:35 a.m.,empty
+sched_arr_time,131,5:50 a.m.,empty
+sched_arr_time,145,5:50 a.m.,empty
+sched_arr_time,154,5:25 p.m.,empty
+sched_arr_time,159,5:25 p.m.,empty
+sched_arr_time,177,7:25 p.m.,empty
+sched_arr_time,180,7:25 p.m.,empty
+sched_arr_time,189,7:25 p.m.,empty
+sched_arr_time,190,7:25 p.m.,empty
+sched_arr_time,194,7:25 p.m.,empty
+sched_arr_time,198,7:25 p.m.,empty
+sched_arr_time,201,12:10 p.m.,empty
+sched_arr_time,214,12:10 p.m.,empty
+sched_arr_time,225,10:30 p.m.,empty
+sched_arr_time,228,10:30 p.m.,empty
+sched_arr_time,239,10:30 p.m.,empty
+sched_arr_time,257,2:20 p.m.,empty
+sched_arr_time,265,2:20 p.m.,empty
+sched_arr_time,285,5:55 p.m.,empty
+sched_arr_time,289,5:55 p.m.,empty
+sched_arr_time,318,6:55 a.m.,empty
+sched_arr_time,359,3:30 p.m.,empty
+sched_arr_time,360,3:30 p.m.,empty
+sched_arr_time,363,3:30 p.m.,empty
+sched_arr_time,366,3:30 p.m.,empty
+sched_arr_time,394,11:35 a.m.,empty
+sched_arr_time,396,11:35 a.m.,empty
+sched_arr_time,400,11:50 p.m.,empty
+sched_arr_time,415,11:50 p.m.,empty
+sched_arr_time,437,11:10 a.m.,empty
+sched_arr_time,446,11:10 a.m.,empty
+sched_arr_time,451,11:10 a.m.,empty
+sched_arr_time,457,2:25 p.m.,empty
+sched_arr_time,468,2:25 p.m.,empty
+sched_arr_time,497,11:05 a.m.,empty
+sched_arr_time,511,3:15 p.m.,empty
+sched_arr_time,512,3:15 p.m.,empty
+sched_arr_time,519,3:15 p.m.,empty
+sched_arr_time,526,3:15 p.m.,empty
+sched_arr_time,532,9:20 p.m.,empty
+sched_arr_time,539,9:20 p.m.,empty
+sched_arr_time,540,9:20 p.m.,empty
+sched_arr_time,545,9:20 p.m.,empty
+sched_arr_time,559,9:55 a.m.,empty
+sched_arr_time,560,9:55 a.m.,empty
+sched_arr_time,564,9:55 a.m.,empty
+sched_arr_time,580,2:45 p.m.,empty
+sched_arr_time,603,2:45 p.m.,empty
+sched_arr_time,606,6:40 p.m.,empty
+sched_arr_time,622,6:40 p.m.,empty
+sched_arr_time,642,4:05 p.m.,empty
+sched_arr_time,658,4:05 p.m.,empty
+sched_arr_time,663,6:40 a.m.,empty
+sched_arr_time,668,6:40 a.m.,empty
+sched_arr_time,673,6:40 a.m.,empty
+sched_arr_time,675,6:40 a.m.,empty
+sched_arr_time,679,6:40 a.m.,empty
+sched_arr_time,684,6:40 a.m.,empty
+sched_arr_time,703,12:15 a.m.,empty
+sched_arr_time,710,12:15 a.m.,empty
+sched_arr_time,723,7:30 a.m.,empty
+sched_arr_time,737,7:30 a.m.,empty
+sched_arr_time,738,7:30 a.m.,empty
+sched_arr_time,739,9:40 a.m.,empty
+sched_arr_time,757,9:40 a.m.,empty
+sched_arr_time,788,8:00 a.m.,empty
+sched_arr_time,800,2:59 p.m.,empty
+sched_arr_time,815,2:59 p.m.,empty
+sched_arr_time,819,7:45 a.m.,empty
+sched_arr_time,820,7:45 a.m.,empty
+sched_arr_time,831,7:45 a.m.,empty
+sched_arr_time,842,7:45 a.m.,empty
+sched_arr_time,865,12:55 p.m.,empty
+sched_arr_time,897,2:15 p.m.,empty
+sched_arr_time,899,2:15 p.m.,empty
+sched_arr_time,902,2:15 p.m.,empty
+sched_arr_time,905,2:15 p.m.,empty
+sched_arr_time,917,9:10 p.m.,empty
+sched_arr_time,948,11:50 a.m.,empty
+sched_arr_time,962,11:50 a.m.,empty
+sched_arr_time,969,11:50 a.m.,empty
+sched_arr_time,974,4:00 p.m.,empty
+sched_arr_time,981,4:00 p.m.,empty
+sched_arr_time,994,2:00 p.m.,empty
+sched_arr_time,1022,3:50 p.m.,empty
+sched_arr_time,1089,7:55 p.m.,empty
+sched_arr_time,1100,9:25 a.m.,empty
+sched_arr_time,1103,9:25 a.m.,empty
+sched_arr_time,1104,9:25 a.m.,empty
+sched_arr_time,1113,9:25 a.m.,empty
+sched_arr_time,1120,10:45 a.m.,empty
+sched_arr_time,1125,10:45 a.m.,empty
+sched_arr_time,1136,10:45 a.m.,empty
+sched_arr_time,1146,10:45 a.m.,empty
+sched_arr_time,1151,12:35 p.m.,empty
+sched_arr_time,1159,12:35 p.m.,empty
+sched_arr_time,1171,12:35 p.m.,empty
+sched_arr_time,1231,2:35 p.m.,empty
+sched_arr_time,1232,2:35 p.m.,empty
+sched_arr_time,1237,2:35 p.m.,empty
+sched_arr_time,1254,6:30 p.m.,empty
+sched_arr_time,1264,6:30 p.m.,empty
+sched_arr_time,1269,6:30 p.m.,empty
+sched_arr_time,1278,1:17 p.m.,empty
+sched_arr_time,1290,1:17 p.m.,empty
+sched_arr_time,1316,10:54 a.m.,empty
+sched_arr_time,1326,1:16 p.m.,empty
+sched_arr_time,1328,1:16 p.m.,empty
+sched_arr_time,1340,12:18 p.m.,empty
+sched_arr_time,1341,12:18 p.m.,empty
+sched_arr_time,1348,12:18 p.m.,empty
+sched_arr_time,1363,12:18 p.m.,empty
+sched_arr_time,1371,4:48 p.m.,empty
+sched_arr_time,1388,11:35 a.m.,empty
+sched_arr_time,1396,11:35 a.m.,empty
+sched_arr_time,1398,11:35 a.m.,empty
+sched_arr_time,1401,11:35 a.m.,empty
+sched_arr_time,1402,11:35 a.m.,empty
+sched_arr_time,1414,10:15 p.m.,empty
+sched_arr_time,1425,10:15 p.m.,empty
+sched_arr_time,1442,6:44 p.m.,empty
+sched_arr_time,1449,6:44 p.m.,empty
+sched_arr_time,1455,5:35 a.m.,empty
+sched_arr_time,1459,5:35 a.m.,empty
+sched_arr_time,1486,12:21 a.m.,empty
+sched_arr_time,1489,12:21 a.m.,empty
+sched_arr_time,1519,7:05 p.m.,empty
+sched_arr_time,1523,8:56 p.m.,empty
+sched_arr_time,1543,6:40 p.m.,empty
+sched_arr_time,1555,6:40 p.m.,empty
+sched_arr_time,1566,4:49 p.m.,empty
+sched_arr_time,1569,4:49 p.m.,empty
+sched_arr_time,1581,4:49 p.m.,empty
+sched_arr_time,1587,9:21 a.m.,empty
+sched_arr_time,1593,9:21 a.m.,empty
+sched_arr_time,1625,2:50 p.m.,empty
+sched_arr_time,1656,8:22 p.m.,empty
+sched_arr_time,1659,8:22 p.m.,empty
+sched_arr_time,1689,11:45 a.m.,empty
+sched_arr_time,1695,11:45 a.m.,empty
+sched_arr_time,1700,11:45 a.m.,empty
+sched_arr_time,1732,12:29 a.m.,empty
+sched_arr_time,1747,12:29 a.m.,empty
+sched_arr_time,1754,5:15 p.m.,empty
+sched_arr_time,1758,5:15 p.m.,empty
+sched_arr_time,1774,10:31 a.m.,empty
+sched_arr_time,1788,10:31 a.m.,empty
+sched_arr_time,1795,6:15 p.m.,empty
+sched_arr_time,1805,6:15 p.m.,empty
+sched_arr_time,1825,1:40 p.m.,empty
+sched_arr_time,1851,4:53 p.m.,empty
+sched_arr_time,1853,4:53 p.m.,empty
+sched_arr_time,1873,6:46 p.m.,empty
+sched_arr_time,1917,6:23 p.m.,empty
+sched_arr_time,1920,6:23 p.m.,empty
+sched_arr_time,1922,6:23 p.m.,empty
+sched_arr_time,1926,6:23 p.m.,empty
+sched_arr_time,1932,1:45 p.m.,empty
+sched_arr_time,1938,1:45 p.m.,empty
+sched_arr_time,1941,1:45 p.m.,empty
+sched_arr_time,1942,1:45 p.m.,empty
+sched_arr_time,1955,4:57 p.m.,empty
+sched_arr_time,1967,4:57 p.m.,empty
+sched_arr_time,1975,4:57 p.m.,empty
+sched_arr_time,1976,4:57 p.m.,empty
+sched_arr_time,1982,6:17 p.m.,empty
+sched_arr_time,1983,6:17 p.m.,empty
+sched_arr_time,1984,6:17 p.m.,empty
+sched_arr_time,1998,6:17 p.m.,empty
+sched_arr_time,2014,9:24 a.m.,empty
+sched_arr_time,2031,10:06 a.m.,empty
+sched_arr_time,2036,10:06 a.m.,empty
+sched_arr_time,2039,10:06 a.m.,empty
+sched_arr_time,2047,11:53 a.m.,empty
+sched_arr_time,2049,11:53 a.m.,empty
+sched_arr_time,2055,11:53 a.m.,empty
+sched_arr_time,2058,11:53 a.m.,empty
+sched_arr_time,2076,4:17 p.m.,empty
+sched_arr_time,2097,3:19 p.m.,empty
+sched_arr_time,2115,9:54 a.m.,empty
+sched_arr_time,2117,9:54 a.m.,empty
+sched_arr_time,2154,11:55 a.m.,empty
+sched_arr_time,2167,7:23 a.m.,empty
+sched_arr_time,2168,7:23 a.m.,empty
+sched_arr_time,2169,7:23 a.m.,empty
+sched_arr_time,2189,11:19 a.m.,empty
+sched_arr_time,2195,11:19 a.m.,empty
+sched_arr_time,2198,11:19 a.m.,empty
+sched_arr_time,2220,9:43 a.m.,empty
+sched_arr_time,2226,9:43 a.m.,empty
+sched_arr_time,2230,9:43 a.m.,empty
+sched_arr_time,2237,9:43 a.m.,empty
+sched_arr_time,2251,4:31 p.m.,empty
+sched_arr_time,2252,4:31 p.m.,empty
+sched_arr_time,2258,4:31 p.m.,empty
+sched_arr_time,2264,4:31 p.m.,empty
+sched_arr_time,2271,5:11 a.m.,empty
+sched_arr_time,2290,5:11 a.m.,empty
+sched_arr_time,2292,5:11 a.m.,empty
+sched_arr_time,2298,7:53 p.m.,empty
+sched_arr_time,2315,1:39 p.m.,empty
+sched_arr_time,2318,1:39 p.m.,empty
+sched_arr_time,2320,1:39 p.m.,empty
+sched_arr_time,2332,1:39 p.m.,empty
+sched_arr_time,2353,8:27 a.m.,empty
+sched_arr_time,2360,7:35 p.m.,empty
+sched_arr_time,2372,7:35 p.m.,empty
+act_arr_time,3,7:55 p.m.,empty
+act_arr_time,25,10:04 a.m.,empty
+act_arr_time,34,10:04 a.m.,empty
+act_arr_time,38,10:04 a.m.,empty
+act_arr_time,39,10:04 a.m.,empty
+act_arr_time,45,10:04 a.m.,empty
+act_arr_time,62,9:53 p.m.,empty
+act_arr_time,66,9:53 p.m.,empty
+act_arr_time,68,9:53 p.m.,empty
+act_arr_time,84,3:30 p.m.,empty
+act_arr_time,88,3:30 p.m.,empty
+act_arr_time,91,3:30 p.m.,empty
+act_arr_time,100,10:36 a.m.,empty
+act_arr_time,106,10:36 a.m.,empty
+act_arr_time,109,10:36 a.m.,empty
+act_arr_time,113,10:36 a.m.,empty
+act_arr_time,115,10:36 a.m.,empty
+act_arr_time,137,5:50 a.m.,empty
+act_arr_time,139,5:50 a.m.,empty
+act_arr_time,146,5:50 a.m.,empty
+act_arr_time,161,4:56 p.m.,empty
+act_arr_time,164,4:56 p.m.,empty
+act_arr_time,166,4:56 p.m.,empty
+act_arr_time,178,7:25 p.m.,empty
+act_arr_time,219,11:56 a.m.,empty
+act_arr_time,221,11:56 a.m.,empty
+act_arr_time,244,10:30 p.m.,empty
+act_arr_time,247,10:30 p.m.,empty
+act_arr_time,248,10:30 p.m.,empty
+act_arr_time,279,5:43 p.m.,empty
+act_arr_time,284,5:43 p.m.,empty
+act_arr_time,305,6:55 a.m.,empty
+act_arr_time,314,6:55 a.m.,empty
+act_arr_time,327,2:46 p.m.,empty
+act_arr_time,338,2:46 p.m.,empty
+act_arr_time,344,2:46 p.m.,empty
+act_arr_time,353,3:14 p.m.,empty
+act_arr_time,366,3:14 p.m.,empty
+act_arr_time,403,11:50 p.m.,empty
+act_arr_time,405,11:50 p.m.,empty
+act_arr_time,419,11:50 p.m.,empty
+act_arr_time,427,11:06 a.m.,empty
+act_arr_time,433,11:06 a.m.,empty
+act_arr_time,445,11:06 a.m.,empty
+act_arr_time,453,2:27 p.m.,empty
+act_arr_time,456,2:27 p.m.,empty
+act_arr_time,463,2:27 p.m.,empty
+act_arr_time,464,2:27 p.m.,empty
+act_arr_time,475,2:27 p.m.,empty
+act_arr_time,486,11:01 a.m.,empty
+act_arr_time,495,11:01 a.m.,empty
+act_arr_time,499,11:01 a.m.,empty
+act_arr_time,500,11:01 a.m.,empty
+act_arr_time,508,3:16 p.m.,empty
+act_arr_time,509,3:16 p.m.,empty
+act_arr_time,528,9:20 p.m.,empty
+act_arr_time,540,9:20 p.m.,empty
+act_arr_time,545,9:20 p.m.,empty
+act_arr_time,551,9:45 a.m.,empty
+act_arr_time,564,9:45 a.m.,empty
+act_arr_time,578,2:50 p.m.,empty
+act_arr_time,583,2:50 p.m.,empty
+act_arr_time,584,2:50 p.m.,empty
+act_arr_time,596,2:50 p.m.,empty
+act_arr_time,597,2:50 p.m.,empty
+act_arr_time,601,2:50 p.m.,empty
+act_arr_time,603,2:50 p.m.,empty
+act_arr_time,609,6:15 p.m.,empty
+act_arr_time,613,6:15 p.m.,empty
+act_arr_time,626,6:15 p.m.,empty
+act_arr_time,641,3:43 p.m.,empty
+act_arr_time,652,3:43 p.m.,empty
+act_arr_time,656,3:43 p.m.,empty
+act_arr_time,668,6:19 a.m.,empty
+act_arr_time,670,6:19 a.m.,empty
+act_arr_time,688,12:15 a.m.,empty
+act_arr_time,689,12:15 a.m.,empty
+act_arr_time,694,12:15 a.m.,empty
+act_arr_time,700,12:15 a.m.,empty
+act_arr_time,711,12:15 a.m.,empty
+act_arr_time,716,7:51 a.m.,empty
+act_arr_time,720,7:51 a.m.,empty
+act_arr_time,722,7:51 a.m.,empty
+act_arr_time,754,9:32 a.m.,empty
+act_arr_time,759,9:32 a.m.,empty
+act_arr_time,760,9:32 a.m.,empty
+act_arr_time,763,9:32 a.m.,empty
+act_arr_time,767,8:06 a.m.,empty
+act_arr_time,778,8:06 a.m.,empty
+act_arr_time,791,8:06 a.m.,empty
+act_arr_time,792,3:04 p.m.,empty
+act_arr_time,797,3:04 p.m.,empty
+act_arr_time,824,7:40 a.m.,empty
+act_arr_time,874,12:50 p.m.,empty
+act_arr_time,892,1:43 p.m.,empty
+act_arr_time,914,1:43 p.m.,empty
+act_arr_time,916,8:53 p.m.,empty
+act_arr_time,926,8:53 p.m.,empty
+act_arr_time,929,8:53 p.m.,empty
+act_arr_time,937,8:53 p.m.,empty
+act_arr_time,969,11:44 a.m.,empty
+act_arr_time,991,3:33 p.m.,empty
+act_arr_time,1025,4:09 p.m.,empty
+act_arr_time,1038,4:09 p.m.,empty
+act_arr_time,1051,9:05 a.m.,empty
+act_arr_time,1068,9:05 a.m.,empty
+act_arr_time,1069,9:05 a.m.,empty
+act_arr_time,1074,7:39 p.m.,empty
+act_arr_time,1075,7:39 p.m.,empty
+act_arr_time,1079,7:39 p.m.,empty
+act_arr_time,1096,9:28 a.m.,empty
+act_arr_time,1103,9:28 a.m.,empty
+act_arr_time,1104,9:28 a.m.,empty
+act_arr_time,1106,9:28 a.m.,empty
+act_arr_time,1107,9:28 a.m.,empty
+act_arr_time,1134,11:12 a.m.,empty
+act_arr_time,1169,1:27 p.m.,empty
+act_arr_time,1186,9:31 a.m.,empty
+act_arr_time,1190,9:31 a.m.,empty
+act_arr_time,1191,9:31 a.m.,empty
+act_arr_time,1196,9:31 a.m.,empty
+act_arr_time,1208,3:50 p.m.,empty
+act_arr_time,1210,3:50 p.m.,empty
+act_arr_time,1236,3:13 p.m.,empty
+act_arr_time,1238,3:13 p.m.,empty
+act_arr_time,1246,3:13 p.m.,empty
+act_arr_time,1251,6:43 p.m.,empty
+act_arr_time,1290,1:14 p.m.,empty
+act_arr_time,1297,1:14 p.m.,empty
+act_arr_time,1307,10:56 a.m.,empty
+act_arr_time,1314,10:56 a.m.,empty
+act_arr_time,1318,1:19 p.m.,empty
+act_arr_time,1339,12:09 p.m.,empty
+act_arr_time,1355,12:09 p.m.,empty
+act_arr_time,1382,4:59 p.m.,empty
+act_arr_time,1387,11:32 a.m.,empty
+act_arr_time,1398,11:32 a.m.,empty
+act_arr_time,1449,6:34 p.m.,empty
+act_arr_time,1451,6:34 p.m.,empty
+act_arr_time,1455,5:26 a.m.,empty
+act_arr_time,1464,5:26 a.m.,empty
+act_arr_time,1471,5:26 a.m.,empty
+act_arr_time,1475,12:21 a.m.,empty
+act_arr_time,1498,12:21 a.m.,empty
+act_arr_time,1499,12:21 a.m.,empty
+act_arr_time,1500,6:36 p.m.,empty
+act_arr_time,1502,6:36 p.m.,empty
+act_arr_time,1515,6:36 p.m.,empty
+act_arr_time,1521,6:36 p.m.,empty
+act_arr_time,1536,9:52 p.m.,empty
+act_arr_time,1552,6:40 p.m.,empty
+act_arr_time,1554,6:40 p.m.,empty
+act_arr_time,1570,5:26 p.m.,empty
+act_arr_time,1572,5:26 p.m.,empty
+act_arr_time,1578,5:26 p.m.,empty
+act_arr_time,1580,5:26 p.m.,empty
+act_arr_time,1583,5:26 p.m.,empty
+act_arr_time,1597,9:14 a.m.,empty
+act_arr_time,1600,9:14 a.m.,empty
+act_arr_time,1605,9:14 a.m.,empty
+act_arr_time,1606,3:31 p.m.,empty
+act_arr_time,1617,3:31 p.m.,empty
+act_arr_time,1623,3:31 p.m.,empty
+act_arr_time,1632,7:10 p.m.,empty
+act_arr_time,1635,7:10 p.m.,empty
+act_arr_time,1636,7:10 p.m.,empty
+act_arr_time,1664,8:03 p.m.,empty
+act_arr_time,1703,11:56 a.m.,empty
+act_arr_time,1704,11:56 a.m.,empty
+act_arr_time,1708,4:47 p.m.,empty
+act_arr_time,1709,4:47 p.m.,empty
+act_arr_time,1710,4:47 p.m.,empty
+act_arr_time,1718,4:47 p.m.,empty
+act_arr_time,1729,12:29 a.m.,empty
+act_arr_time,1737,12:29 a.m.,empty
+act_arr_time,1746,12:29 a.m.,empty
+act_arr_time,1749,12:29 a.m.,empty
+act_arr_time,1773,10:47 a.m.,empty
+act_arr_time,1775,10:47 a.m.,empty
+act_arr_time,1787,10:47 a.m.,empty
+act_arr_time,1793,10:47 a.m.,empty
+act_arr_time,1811,5:42 p.m.,empty
+act_arr_time,1824,2:00 p.m.,empty
+act_arr_time,1851,4:44 p.m.,empty
+act_arr_time,1881,6:28 p.m.,empty
+act_arr_time,1894,5:17 p.m.,empty
+act_arr_time,1910,6:38 p.m.,empty
+act_arr_time,1925,6:38 p.m.,empty
+act_arr_time,1936,1:15 p.m.,empty
+act_arr_time,1941,1:15 p.m.,empty
+act_arr_time,1952,1:15 p.m.,empty
+act_arr_time,1964,5:05 p.m.,empty
+act_arr_time,1981,5:38 p.m.,empty
+act_arr_time,1997,5:38 p.m.,empty
+act_arr_time,2000,5:38 p.m.,empty
+act_arr_time,2039,9:56 a.m.,empty
+act_arr_time,2041,9:56 a.m.,empty
+act_arr_time,2043,9:56 a.m.,empty
+act_arr_time,2048,12:09 p.m.,empty
+act_arr_time,2058,12:09 p.m.,empty
+act_arr_time,2069,4:17 p.m.,empty
+act_arr_time,2070,4:17 p.m.,empty
+act_arr_time,2105,3:21 p.m.,empty
+act_arr_time,2116,9:43 a.m.,empty
+act_arr_time,2140,11:58 a.m.,empty
+act_arr_time,2148,11:58 a.m.,empty
+act_arr_time,2173,7:17 a.m.,empty
+act_arr_time,2178,7:17 a.m.,empty
+act_arr_time,2180,7:17 a.m.,empty
+act_arr_time,2183,11:21 a.m.,empty
+act_arr_time,2189,11:21 a.m.,empty
+act_arr_time,2195,11:21 a.m.,empty
+act_arr_time,2211,7:10 p.m.,empty
+act_arr_time,2214,7:10 p.m.,empty
+act_arr_time,2215,7:10 p.m.,empty
+act_arr_time,2222,8:45 a.m.,empty
+act_arr_time,2225,8:45 a.m.,empty
+act_arr_time,2228,8:45 a.m.,empty
+act_arr_time,2238,8:45 a.m.,empty
+act_arr_time,2244,4:23 p.m.,empty
+act_arr_time,2279,5:11 a.m.,empty
+act_arr_time,2288,5:11 a.m.,empty
+act_arr_time,2292,5:11 a.m.,empty
+act_arr_time,2299,7:58 p.m.,empty
+act_arr_time,2300,7:58 p.m.,empty
+act_arr_time,2309,7:58 p.m.,empty
+act_arr_time,2365,7:36 p.m.,empty

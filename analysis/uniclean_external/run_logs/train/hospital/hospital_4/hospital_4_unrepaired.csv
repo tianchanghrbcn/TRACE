@@ -1,0 +1,310 @@
+Attribute,Index,Dirty Value,Clean Value
+ProviderNumber,22,53571.67132119802,10001
+ProviderNumber,28,37964.41641523799,10001
+ProviderNumber,59,53020.87792762198,10005
+ProviderNumber,67,57056.4985092297,10005
+ProviderNumber,92,43358.72005194033,10006
+ProviderNumber,93,40884.697241574664,10006
+ProviderNumber,106,30615.266365901527,10007
+ProviderNumber,147,53670.48973003026,10009
+ProviderNumber,150,36681.5470216585,10009
+ProviderNumber,192,54329.81593275928,10010
+ProviderNumber,220,55326.896068023634,10012
+ProviderNumber,221,36167.278680172894,10012
+ProviderNumber,223,56246.12465820408,10012
+ProviderNumber,245,58281.78179424866,10015
+ProviderNumber,289,47052.14094997147,10016
+ProviderNumber,300,32000.950882633653,10018
+ProviderNumber,425,43834.15561437676,10164
+ProviderNumber,471,45174.94331912446,10021
+ProviderNumber,498,42034.93484948085,10022
+ProviderNumber,519,49674.86683211802,10023
+ProviderNumber,550,34733.18452746549,10024
+ProviderNumber,551,57953.32652934352,10024
+ProviderNumber,592,54505.67370519734,10027
+ProviderNumber,613,56156.07953370041,10027
+ProviderNumber,614,46284.81321739661,10027
+ProviderNumber,621,48723.61607930627,10029
+ProviderNumber,629,54510.21192384863,10029
+ProviderNumber,648,42876.98696040574,10032
+ProviderNumber,700,43048.10103985591,10034
+ProviderNumber,713,44825.29598079252,10034
+ProviderNumber,731,40951.62927369381,10035
+ProviderNumber,738,36815.125915336386,10035
+ProviderNumber,785,41912.35447835271,10039
+ProviderNumber,803,40199.915245374264,10040
+ProviderNumber,834,45875.95453558054,10043
+ProviderNumber,839,56163.07611592709,10043
+ProviderNumber,845,36147.21232815979,10043
+ProviderNumber,849,50705.08352591305,10043
+ProviderNumber,852,41531.88056112698,10043
+ProviderNumber,900,36099.1827865853,10045
+ProviderNumber,919,54078.77168139628,10046
+ProviderNumber,925,37217.13106881272,10046
+ProviderNumber,936,47052.15743635287,10047
+ProviderNumber,950,48961.81846176087,10047
+ProviderNumber,970,38302.46272184379,10049
+ProviderNumber,977,34462.5557560651,10049
+HospitalName,245,southwest?? alabama medical cen#ter,southwest alabama medical center
+HospitalName,785,huntsville ho$sp$ital,huntsville hospital
+Address2,20,empty??,empty
+Address2,56,em@$@pty,empty
+Address2,59,em%pty,empty
+Address2,70,em#pty,empty
+Address2,72,##empty,empty
+Address2,76,@@empty,empty
+Address2,106,e%mp@@ty,empty
+Address2,122,empt#y,empty
+Address2,204,em$pty,empty
+Address2,209,empty%$,empty
+Address2,213,em??pt%y,empty
+Address2,220,emp??ty,empty
+Address2,235,em#pty,empty
+Address2,243,emp%t$y,empty
+Address2,269,e#mp#ty,empty
+Address2,349,e@@mpty,empty
+Address2,395,empty%??,empty
+Address2,405,e%mp$ty,empty
+Address2,419,em#pty,empty
+Address2,452,@@e??mpty,empty
+Address2,455,%em??pty,empty
+Address2,486,em$pty,empty
+Address2,493,empty%,empty
+Address2,506,empt@@y,empty
+Address2,528,em#pty,empty
+Address2,553,empt%y,empty
+Address2,570,e??mpty,empty
+Address2,574,#empty,empty
+Address2,584,empty@??@,empty
+Address2,607,empt%y#,empty
+Address2,625,emp@@ty??,empty
+Address2,630,em%pty@@,empty
+Address2,644,e??mpty,empty
+Address2,670,empt??y$,empty
+Address2,695,empt$y,empty
+Address2,697,@@empty,empty
+Address2,715,empt%y,empty
+Address2,777,emp$ty,empty
+Address2,800,em$pty@@,empty
+Address2,833,e@@m$pty,empty
+Address2,845,??emp??ty,empty
+Address2,857,empty#,empty
+Address2,865,#empt$y,empty
+Address2,868,e??mpt#y,empty
+Address2,917,empt??y,empty
+Address2,924,@@e$mpty,empty
+Address2,926,??e#mpty,empty
+Address2,927,??empty$,empty
+Address2,933,empty#%,empty
+Address2,944,em#pty,empty
+Address2,996,e%mpty,empty
+Address3,16,??empt%y,empty
+Address3,23,empt%#y,empty
+Address3,35,$emp$ty,empty
+Address3,60,e??mpty,empty
+Address3,73,empt@@y$,empty
+Address3,75,emp#@@ty,empty
+Address3,85,em@@pty,empty
+Address3,90,emp#ty,empty
+Address3,94,e#mpty,empty
+Address3,124,$empty,empty
+Address3,128,e$m#pty,empty
+Address3,134,em$p%ty,empty
+Address3,150,emp#ty,empty
+Address3,190,%empty,empty
+Address3,205,emp#ty,empty
+Address3,234,emp%ty,empty
+Address3,238,empt$y,empty
+Address3,257,e#%mpty,empty
+Address3,295,empt%y#,empty
+Address3,300,empty@@,empty
+Address3,326,emp??ty,empty
+Address3,358,%e#mpty,empty
+Address3,382,e??mpty,empty
+Address3,389,emp??ty,empty
+Address3,391,empty@@,empty
+Address3,428,emp@@t@@y,empty
+Address3,464,empt#y,empty
+Address3,465,e??mpty,empty
+Address3,474,emp#t#y,empty
+Address3,488,em#pty@@,empty
+Address3,532,e@@mpty,empty
+Address3,570,e$mp$ty,empty
+Address3,588,em????pty,empty
+Address3,603,empty%,empty
+Address3,624,empt??y,empty
+Address3,627,e%m??pty,empty
+Address3,631,empty$,empty
+Address3,657,empt%y,empty
+Address3,677,emp%ty,empty
+Address3,709,#emp??ty,empty
+Address3,719,%empty,empty
+Address3,722,@@empty,empty
+Address3,776,empty@$@,empty
+Address3,795,e$mpty,empty
+Address3,796,e%mpty,empty
+Address3,820,em#p$ty,empty
+Address3,854,emp@@??ty,empty
+Address3,863,empty??,empty
+Address3,895,empty??@@,empty
+Address3,901,??empty,empty
+Address3,911,em%pty#,empty
+Address3,957,em%pty,empty
+Address3,979,@@empty??,empty
+Condition,177,heart$ fail$ure,heart failure
+Condition,268,surgical infecti#on prevent$ion,surgical infection prevention
+Condition,384,hear$t attack,heart attack
+Condition,648,heart atta$ck,heart attack
+Condition,938,heart failur$e,heart failure
+MeasureCode,4,s%cip$-inf-3,scip-inf-3
+MeasureCode,15,ami??-8a,ami-8a
+MeasureCode,50,$am??i-7a,ami-7a
+MeasureCode,52,#$hf-1,hf-1
+MeasureCode,58,pn%-4,pn-4
+MeasureCode,65,@@scip-inf@@-3,scip-inf-3
+MeasureCode,101,am$i-8a,ami-8a
+MeasureCode,121,ami-??2,ami-2
+MeasureCode,177,hf%-1,hf-1
+MeasureCode,183,p$n-4??,pn-4
+MeasureCode,201,a%m#i-8a,ami-8a
+MeasureCode,259,pn%-5$c,pn-5c
+MeasureCode,268,sc%ip$-vte-1,scip-vte-1
+MeasureCode,300,a%mi-7a,ami-7a
+MeasureCode,302,h#$f-1,hf-1
+MeasureCode,325,pn@@-2,pn-2
+MeasureCode,335,??pn??-2,pn-2
+MeasureCode,367,@@pn-3#b,pn-3b
+MeasureCode,384,a$mi-5@@,ami-5
+MeasureCode,387,$hf-1,hf-1
+MeasureCode,395,??%ami-4,ami-4
+MeasureCode,413,@@sc??ip-vte-1,scip-vte-1
+MeasureCode,430,??pn-6,pn-6
+MeasureCode,456,pn$-5c,pn-5c
+MeasureCode,463,scip-inf-?%?4,scip-inf-4
+MeasureCode,483,p%n-7,pn-7
+MeasureCode,502,??hf-4,hf-4
+MeasureCode,532,pn-$$6,pn-6
+MeasureCode,534,scip-card@@-2#,scip-card-2
+MeasureCode,559,scip-ca%r#d-2,scip-card-2
+MeasureCode,576,hf%-3,hf-3
+MeasureCode,648,ami-$8a,ami-8a
+MeasureCode,692,am#@@i-1,ami-1
+MeasureCode,710,scip-inf-1$??,scip-inf-1
+MeasureCode,737,scip-i#nf-3%,scip-inf-3
+MeasureCode,756,pn-#5c$,pn-5c
+MeasureCode,771,sci@@p-inf-#4,scip-inf-4
+MeasureCode,773,scip-vt??e-1,scip-vte-1
+MeasureCode,788,h@@f-4%,hf-4
+MeasureCode,794,pn-??7,pn-7
+MeasureCode,800,scip-$inf-%6,scip-inf-6
+MeasureCode,820,sc??ip-card-2,scip-card-2
+MeasureCode,824,scip-in@@f%-4,scip-inf-4
+MeasureCode,864,pn-2%%,pn-2
+MeasureCode,885,hf$-1,hf-1
+MeasureCode,938,@@hf-@@1,hf-1
+MeasureCode,950,s$$cip-inf-2,scip-inf-2
+MeasureCode,953,s%@@cip-inf-6,scip-inf-6
+MeasureCode,955,??scip-vte@@-2,scip-vte-2
+MeasureName,121,heart attack patients given aspirin a#t discharge,heart attack patients given aspirin at discharge
+MeasureName,559,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before a@@nd after their surgery,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery
+MeasureName,950,surgery pat#ients who were given the  ri#ght kind  of antibiotic to help prevent infection,surgery patients who were given the  right kind  of antibiotic to help prevent infection
+MeasureName,953,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razo$r),surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor)
+Score,18,92@@%??,92%
+Score,25,empty%??,empty
+Score,28,$99%@@,99%
+Score,37,#72%%,72%
+Score,54,9%0%,90%
+Score,71,96%%,96%
+Score,77,#7@@9%,79%
+Score,143,1??00%,100%
+Score,147,1#00%??,100%
+Score,160,1$00??%,100%
+Score,174,83%??,83%
+Score,203,98%#%,98%
+Score,241,empt@@%y,empty
+Score,242,1@@00%,100%
+Score,280,1%00%??,100%
+Score,282,#100%#,100%
+Score,327,@@100%#,100%
+Score,331,83#??%,83%
+Score,350,98%%,98%
+Score,351,#85%,85%
+Score,448,100%%,100%
+Score,449,9$4%$,94%
+Score,452,$empty,empty
+Score,505,@@1%00%,100%
+Score,518,1#00%,100%
+Score,552,@@99$%,99%
+Score,586,9#3%,93%
+Score,593,emp??ty,empty
+Score,604,1?@@?00%,100%
+Score,608,100#%,100%
+Score,611,%empty,empty
+Score,622,e@@m@@pty,empty
+Score,629,91%%,91%
+Score,653,25%%,25%
+Score,666,e#mpty,empty
+Score,675,96%$%,96%
+Score,726,????97%,97%
+Score,740,9@@#5%,95%
+Score,756,9%7??%,97%
+Score,810,??4#7%,47%
+Score,841,9?@@?4%,94%
+Score,876,%100%,100%
+Score,905,100%#,100%
+Score,936,??empty,empty
+Score,940,6@@7%#,67%
+Score,949,empty$%,empty
+Score,967,100??%,100%
+Score,972,1$00%%,100%
+Score,984,emp%ty,empty
+Sample,11,4 patie@@nts,4 patients
+Sample,37,79 pat$ient@@s,79 patients
+Sample,54,69?? patients,69 patients
+Sample,82,1#37 patients,137 patients
+Sample,125,#0 patients,0 patients
+Sample,197,70 pati$ents$,70 patients
+Sample,202,??316 @@patients,316 patients
+Sample,211,89 pa$tients,89 patients
+Sample,222,$11 patients,11 patients
+Sample,246,0 pa$tient$s,0 patients
+Sample,260,26 @@patients,26 patients
+Sample,324,41@@ patien$ts,41 patients
+Sample,327,83 pat??ients,83 patients
+Sample,344,882 pati#ents,882 patients
+Sample,365,1%4 pati%ents,14 patients
+Sample,388,150 @@pat@@ients,150 patients
+Sample,416,3 pat#ients,3 patients
+Sample,427,9$5 patien@@ts,95 patients
+Sample,442,29 pati#ents#,29 patients
+Sample,461,255 patien#ts,255 patients
+Sample,467,11 pa#tien$ts,11 patients
+Sample,499,35 p@@%atients,35 patients
+Sample,506,56 patie??nt%s,56 patients
+Sample,527,77 p@@#atients,77 patients
+Sample,531,101 patients$,101 patients
+Sample,533,87 pa??$tients,87 patients
+Sample,587,11@@6 patients,116 patients
+Sample,601,0 patients%,0 patients
+Sample,636,1016 $patients,1016 patients
+Sample,650,39 pat%ients,39 patients
+Sample,667,22%9 patients,229 patients
+Sample,701,30 #patients,30 patients
+Sample,707,#52 patients,52 patients
+Sample,733,%125 p??atients,125 patients
+Sample,751,2??1 p@@atients,21 patients
+Sample,758,52 #patients,52 patients
+Sample,782,301 pat??ie#nts,301 patients
+Sample,820,109 patient??s,109 patients
+Sample,895,0 pat@@ients,0 patients
+Sample,915,90 pati%ents,90 patients
+Sample,917,239 ??patients,239 patients
+Sample,932,16 pati@@ents,16 patients
+Sample,946,30% pa$tients,30 patients
+Sample,997,55 p%atients,55 patients
+Stateavg,101,al_ami-8a@@,al_ami-8a
+Stateavg,302,al%_hf-1,al_hf-1
+Stateavg,335,al_pn-2??,al_pn-2
+Stateavg,387,al#_hf-1,al_hf-1
+Stateavg,534,a%l_s#cip-card-2,al_scip-card-2
+Stateavg,885,@@al_$hf-1,al_hf-1

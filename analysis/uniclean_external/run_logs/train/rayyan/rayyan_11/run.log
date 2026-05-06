@@ -1,0 +1,744 @@
+26/04/29 16:37:21 WARN Utils: Your hostname, qianzekaideMacBook-Air.local resolves to a loopback address: 127.0.0.1; using 192.168.3.1 instead (on interface bridge0)
+26/04/29 16:37:21 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/04/29 16:37:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[Stage 3:==================================>                    (124 + 8) / 200]                                                                                WARNING:root:No partitioning rule specified, processing might be slow
+WARNING:root:No partitioning rule specified, processing might be slow
+WARNING:root:No partitioning rule specified, processing might be slow
+WARNING:root:No partitioning rule specified, processing might be slow
+WARNING:root:No partitioning rule specified, processing might be slow
+初始化清洗器和分析依赖关系...
+处理单属性清洗算子：
+处理单属性清洗算子：[Outlier:(domain=article_title, outliers= set())]
+开始清洗属性 article_title 的数据
+属性 article_title 的数据大小: 856
+属性 article_title 没有可应用的清洗规则。
+处理单属性清洗算子：[Outlier:(domain=journal_title, outliers= set())]
+开始清洗属性 journal_title 的数据
+属性 journal_title 的数据大小: 632
+属性 journal_title 没有可应用的清洗规则。
+处理单属性清洗算子：[Outlier:(domain=author_list, outliers= set())]
+开始清洗属性 author_list 的数据
+属性 author_list 的数据大小: 804
+属性 author_list 没有可应用的清洗规则。
+处理单属性清洗算子：[Date:(domain=article_pagination，format = %b-%y)]
+开始清洗属性 article_pagination 的数据
+属性 article_pagination 的数据大小: 755
+属性 article_pagination 没有可应用的清洗规则。
+执行层级和目标模型分类...
+执行层级 (并行组): [[{'journal_abbreviation'}], [{'journal_title'}], [{'journal_issn'}]]
+目标模型分类: {'journal_title': [<SampleScrubber.cleaner.multiple.AttrRelation object at 0x13ed68ee0>], 'journal_issn': [<SampleScrubber.cleaner.multiple.AttrRelation object at 0x13ed68e20>, <SampleScrubber.cleaner.multiple.AttrRelation object at 0x13ed68dc0>]}
+
+处理第 1 层级, 包含节点: ['journal_abbreviation']
+  当前节点: journal_abbreviation 无可用清洗信号
+  当前节点: journal_abbreviation 无清洗操作
+['journal_abbreviation']的清洗完成
+
+本层累积的编辑规则数: 0
+本层没有可以进行的清洗操作，进行下一层
+
+处理第 2 层级, 包含节点: ['journal_title']
+  当前节点: journal_title 存在可用清洗信号
+数据块大小: 1000
+分块属性:
+[['journal_abbreviation']]
+Starting initial block mapping...
+Initial number of blocks: 377
+Final number of blocks after further splitting: 377
+Computing Block 15 out of 377
+Processing Block size=2
+begin cleaner[FunctionalDependency:(s: {'journal_abbreviation'}, t: {'journal_title'})]*1.0
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002401 seconds
+Computing Block 41 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002229 seconds
+Computing Block 46 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002155 seconds
+Computing Block 74 out of 377
+Processing Block size=5
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','PLoS One',(['journal_abbreviation'], {('PloS one',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.011898 seconds
+Computing Block 76 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','European Journal Of Anaesthesiology',(['journal_abbreviation'], {('Eur J Anaesthesiol',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.009042 seconds
+Computing Block 88 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_title','J Hand Surg $Am$',(['journal_abbreviation'], {('The Journal of hand surgery',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.008094 seconds
+Computing Block 140 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.00221 seconds
+Computing Block 165 out of 377
+Processing Block size=3
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.003075 seconds
+Computing Block 182 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002095 seconds
+Computing Block 192 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','Public health nursing (Boston Mass.)',(['journal_abbreviation'], {('Public Health Nurs',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.004754 seconds
+Computing Block 210 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_title','??Cardiol#ogy in the young',(['journal_abbreviation'], {('Cardiol Young',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.007398 seconds
+Computing Block 212 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002078 seconds
+Computing Block 218 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002063 seconds
+Computing Block 222 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_title','Obesity (Silver Spring Md.)',(['journal_abbreviation'], {('Obesity (Silver Spring)',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: WARNING:root:No partitioning rule specified, processing might be slow
+0.0
+Block processing time: 0.00752 seconds
+Computing Block 237 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002081 seconds
+Computing Block 257 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_title','Cancer',(['journal_abbreviation'], {('Cancer',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.006947 seconds
+Computing Block 264 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','Endocrinology',(['journal_abbreviation'], {('Endocrinology',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.004781 seconds
+Computing Block 285 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_title','The Journal of clinical psychiatry',(['journal_abbreviation'], {('J Clin Psychiatry',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.007808 seconds
+Computing Block 297 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','Rheumatology (Oxford)',(['journal_abbreviation'], {('Rheumatology (Oxford England)',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.004718 seconds
+Computing Block 327 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland',(['journal_abbreviation'], {('Colorectal Dis',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.004686 seconds
+Computing Block 347 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002146 seconds
+Computing Block 353 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_title','Knee surgery sports traumatology arthroscopy : official journa@@l of the ESSKA',(['journal_abbreviation'], {('Knee Surg Sports Traumatol Arthrosc',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.024004 seconds
+Computing Block 371 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.003712 seconds
+Computing Block 372 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+clean_bool length:2
+newest best op: Uniop(df,'journal_title','Physiotherapy',(['journal_abbreviation'], {('Physiotherapy',)}),{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.008273 seconds
+  当前节点: journal_title 有 13 个清洗操作
+['journal_title']的清洗完成
+
+本层累积的编辑规则数: 13
+读入数据大小：1000
+处理了 13 条规则，更新数据...
+所有编辑规则已更新完成
+
+处理第 1 层级, 包含节点: ['journal_abbreviation']
+  跳过已清洗结束的节点: journal_abbreviation
+['journal_abbreviation']的清洗完成
+
+本层累积的编辑规则数: 0
+本层没有可以进行的清洗操作，进行下一层
+
+处理第 2 层级, 包含节点: ['journal_title']
+  当前节点: journal_title 存在可用清洗信号
+数据块大小: 1000
+分块属性:
+[['journal_abbreviation']]
+Starting initial block mapping...
+Initial number of blocks: 377
+Final number of blocks after further splitting: 377
+Computing Block 15 out of 377
+Processing Block size=2
+begin cleaner[FunctionalDependency:(s: {'journal_abbreviation'}, t: {'journal_title'})]*1.0
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002453 seconds
+Computing Block 41 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002226 seconds
+Computing Block 46 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002083 seconds
+Computing Block 74 out of 377
+Processing Block size=5
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.005083 seconds
+Computing Block 76 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002086 seconds
+Computing Block 88 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002061 seconds
+Computing Block 140 out of 377
+Processing Block size=2
+WARNING:root:No partitioning rule specified, processing might be slow
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002144 seconds
+Computing Block 165 out of 377
+Processing Block size=3
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.003009 seconds
+Computing Block 182 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002091 seconds
+Computing Block 192 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002062 seconds
+Computing Block 210 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002301 seconds
+Computing Block 212 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002178 seconds
+Computing Block 218 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002077 seconds
+Computing Block 222 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002134 seconds
+Computing Block 237 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002162 seconds
+Computing Block 257 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002234 seconds
+Computing Block 264 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002085 seconds
+Computing Block 285 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002072 seconds
+Computing Block 297 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002083 seconds
+Computing Block 327 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002645 seconds
+Computing Block 347 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002156 seconds
+Computing Block 353 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002087 seconds
+Computing Block 371 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002118 seconds
+Computing Block 372 out of 377
+Processing Block size=2
+begin cleaner{left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_title})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}
+列 'p' 不存在，对列 journal_title 不过滤，直接选择所有非无效值。
+Block processing time: 0.002208 seconds
+  当前节点: journal_title 无清洗操作
+['journal_title']的清洗完成
+
+本层累积的编辑规则数: 0
+本层没有可以进行的清洗操作，进行下一层
+
+处理第 3 层级, 包含节点: ['journal_issn']
+  当前节点: journal_issn 存在可用清洗信号
+数据块大小: 1000
+分块属性:
+[['journal_abbreviation'], ['journal_title']]
+Grouping by ['journal_abbreviation'] yields 377 groups.
+Grouping by ['journal_title'] yields 626 groups.
+Current group product: 236002, Total rows: 1000
+Removing attribute group ['journal_title'] with 626 groups.
+Current group product: 377, Total rows: 1000
+Final selected attributes for partitioning: [['journal_abbreviation']]
+Removed attributes for potential later use: [['journal_title']]
+Starting initial block mapping...
+Initial number of blocks: 377
+Final number of blocks after further splitting: 377
+Computing Block 15 out of 377
+Processing Block size=2
+begin cleaner[FunctionalDependency:(s: {'journal_abbreviation'}, t: {'journal_issn'})]*1.0+[FunctionalDependency:(s: {'journal_title'}, t: {'journal_issn'})]*1.0
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_issn','1423-0356',(['journal_abbreviation'], {('Respiration',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.016091 seconds
+Computing Block 41 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.00728 seconds
+Computing Block 46 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_issn','Mar-67',(['journal_abbreviation'], {('Annals of the rheumatic diseases',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.015796 seconds
+Computing Block 74 out of 377
+Processing Block size=5
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.018399 seconds
+Computing Block 76 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1365-2346',(['journal_abbreviation'], {('Eur J Anaesthesiol',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.025973 seconds
+Computing Block 88 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_issn','0363-5%0#23',(['journal_abbreviation'], {('The Journal of hand surgery',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.016732 seconds
+Computing Block 140 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_issn','0017-5749',(['journal_abbreviation'], {('Gut',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.016059 seconds
+Computing Block 165 out of 377
+Processing Block size=3
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1524-4539',(['journal_abbreviation'], {('Circulation',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+newest best op: Uniop(df,'journal_issn','22-Sep',(['journal_abbreviation'], {('Circulation',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.034708 seconds
+Computing Block 182 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1%5$39-3704',(['journal_abbreviation'], {('Ann. Intern. Med.',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.02375 seconds
+Computing Block 192 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1525-1446',(['journal_abbreviation'], {('Public Health Nurs',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.023371 seconds
+Computing Block 210 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1467-@@1107',(['journal_abbreviation'], {('Cardiol Young',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.023295 seconds
+Computing Block 212 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.007081 seconds
+Computing Block 218 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_issn','1423-0380',(['journal_abbreviation'], {('Tumour Biol.',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.015305 seconds
+Computing Block 222 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1930-739X',(['journal_abbreviation'], {('Obesity (Silver Spring)',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.024156 seconds
+Computing Block 237 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.007132 seconds
+Computing Block 257 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1097-014#2',(['journal_abbreviation'], {('Cancer',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.023201 seconds
+Computing Block 264 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.007074 seconds
+Computing Block 285 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.007056 seconds
+Computing Block 297 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:5
+newest best op: Uniop(df,'journal_issn','1462-03$2$4',(['journal_abbreviation'], {('Rheumatology (Oxford England)',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.023597 seconds
+Computing Block 327 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+clean_bool length:3
+newest best op: Uniop(df,'journal_issn','1463-1318',(['journal_abbreviation'], {('Colorectal Dis',)}),{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0})
+now error: 0.0
+Block processing time: 0.014727 seconds
+Computing Block 347 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.006872 seconds
+Computing Block 353 out of 377
+Processing Block size=2
+WARNING:root:No partitioning rule specified, processing might be slow
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.006783 seconds
+Computing Block 371 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.006684 seconds
+Computing Block 372 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 1.0), operator: *, right: (1.0, 1.0), result: 1.0}, 1.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 1.0), operator: *, right: (1.0, 1.0), result: 1.0}, 1.0), result: 1.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.006662 seconds
+  当前节点: journal_issn 有 14 个清洗操作
+['journal_issn']的清洗完成
+
+本层累积的编辑规则数: 14
+读入数据大小：1000
+处理了 14 条规则，更新数据...
+所有编辑规则已更新完成
+
+处理第 1 层级, 包含节点: ['journal_abbreviation']
+  跳过已清洗结束的节点: journal_abbreviation
+['journal_abbreviation']的清洗完成
+
+本层累积的编辑规则数: 0
+本层没有可以进行的清洗操作，进行下一层
+
+处理第 2 层级, 包含节点: ['journal_title']
+  跳过已清洗结束的节点: journal_title
+['journal_title']的清洗完成
+
+本层累积的编辑规则数: 0
+本层没有可以进行的清洗操作，进行下一层
+
+处理第 3 层级, 包含节点: ['journal_issn']
+  当前节点: journal_issn 存在可用清洗信号
+数据块大小: 1000
+分块属性:
+[['journal_abbreviation'], ['journal_title']]
+Grouping by ['journal_abbreviation'] yields 377 groups.
+Grouping by ['journal_title'] yields 626 groups.
+Current group product: 236002, Total rows: 1000
+Removing attribute group ['journal_title'] with 626 groups.
+Current group product: 377, Total rows: 1000
+Final selected attributes for partitioning: [['journal_abbreviation']]
+Removed attributes for potential later use: [['journal_title']]
+Starting initial block mapping...
+Initial number of blocks: 377
+Final number of blocks after further splitting: 377
+Computing Block 15 out of 377
+Processing Block size=2
+begin cleaner[FunctionalDependency:(s: {'journal_abbreviation'}, t: {'journal_issn'})]*1.0+[FunctionalDependency:(s: {'journal_title'}, t: {'journal_issn'})]*1.0
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010956 seconds
+Computing Block 41 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010821 seconds
+Computing Block 46 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.01053 seconds
+Computing Block 74 out of 377
+Processing Block size=5
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.025587 seconds
+Computing Block 76 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010525 seconds
+Computing Block 88 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010015 seconds
+Computing Block 140 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010732 seconds
+Computing Block 165 out of 377
+Processing Block size=3
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.015293 seconds
+Computing Block 182 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010113 seconds
+Computing Block 192 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010633 seconds
+Computing Block 210 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010228 seconds
+Computing Block 212 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009958 seconds
+Computing Block 218 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009902 seconds
+Computing Block 222 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009981 seconds
+Computing Block 237 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009877 seconds
+Computing Block 257 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009832 seconds
+Computing Block 264 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009853 seconds
+Computing Block 285 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009916 seconds
+Computing Block 297 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009989 seconds
+Computing Block 327 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009967 seconds
+Computing Block 347 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010022 seconds
+Computing Block 353 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.009985 seconds
+Computing Block 371 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 0.0), operator: *, right: (1.0, 1.0), result: 0.0}, 0.0), result: 0.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010056 seconds
+Computing Block 372 out of 377
+Processing Block size=2
+begin cleaner{left: ({left: ("[FunctionalDependency:(s: {journal_abbreviation}, t: {journal_issn})]", 1.0), operator: *, right: (1.0, 1.0), result: 1.0}, 1.0), operator: +, right: ({left: ("[FunctionalDependency:(s: {journal_title}, t: {journal_issn})]", 1.0), operator: *, right: (1.0, 1.0), result: 1.0}, 1.0), result: 1.0}
+列 'p' 不存在，对列 journal_issn 不过滤，直接选择所有非无效值。
+Block processing time: 0.010091 seconds
+  当前节点: journal_issn 无清洗操作
+['journal_issn']的清洗完成
+
+本层累积的编辑规则数: 0
+本层没有可以进行的清洗操作，进行下一层
+
+清洗规则溯源分析:
+
+处理第 1 层级, 包含节点: ['journal_abbreviation']
+
+处理第 2 层级, 包含节点: ['journal_title']
+
+处理第 3 层级, 包含节点: ['journal_issn']
+
+清洗流程展示:
+关联图存储到: TestDataset/result/train/rayyan/rayyan_11/acplt.png
+清洗总执行时间: 5.8448 秒
+清洗结果已保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11Cleaned.csv
+测评性能开始：
+没有指定错误比例，仅进行原数据集的空值替换，不添加错误
+已将注入错误的文件保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11Cleaned.csv
+差异文件已保存到:
+TestDataset/result/train/rayyan/rayyan_11/rayyan_11_clean_vs_dirty.csv
+TestDataset/result/train/rayyan/rayyan_11/rayyan_11_dirty_vs_cleaned.csv
+TestDataset/result/train/rayyan/rayyan_11/rayyan_11_clean_vs_cleaned.csv
+修复错误数据文件已保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11_repair_errors.csv
+未修复但是应该修复数据文件已保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11_unrepaired.csv
+修复准确率: 0.5151515151515151, 修复召回率: 0.00734341252699784, F1值: 0.014480408855831668
+========================================
+EDR 结果已保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11_edr_evaluation.txt
+错误减少率 (EDR): 0.003023758099352052
+========================================
+混合距离结果已保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11_hybrid_distance_evaluation.txt
+混合距离 (Hybrid Distance): 0.20958800440909042
+========================================
+R-EDR 结果已保存到: TestDataset/result/train/rayyan/rayyan_11/rayyan_11_record_based_edr_evaluation.txt
+基于条目的错误减少率 (R-EDR): 0.002207505518763797
+========================================
+测试结果:
+Accuracy: 0.5151515151515151
+Recall: 0.00734341252699784
+F1 Score: 0.014480408855831668
+EDR: 0.003023758099352052
+Hybrid Distance: 0.20958800440909042
+R-EDR: 0.002207505518763797
+time(s): 5.844805708
+speed: 0.5844805708 seconds/100num
+测评结束，详细测评日志见：TestDataset/result/train/rayyan/rayyan_11

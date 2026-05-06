@@ -1,0 +1,239 @@
+Attribute,Index,Dirty Value,Clean Value
+src,9,empty,flightstats
+src,23,empty,airtravelcenter
+src,27,empty,flightaware
+src,68,empty,panynj
+src,108,empty,flightstats
+src,125,empty,wunderground
+src,137,empty,foxbusiness
+src,274,empty,boston
+src,331,empty,flightview
+src,343,empty,quicktrip
+src,352,empty,boston
+src,375,empty,allegiantair
+src,393,empty,quicktrip
+src,428,empty,allegiantair
+src,429,empty,boston
+src,442,empty,mia
+src,475,empty,world-flight-tracker
+src,498,empty,usatoday
+src,528,empty,airtravelcenter
+src,546,empty,panynj
+src,578,empty,aa
+src,619,empty,helloflight
+src,628,empty,usatoday
+src,654,empty,travelocity
+src,673,empty,foxbusiness
+src,678,empty,orbitz
+src,736,empty,weather
+src,775,empty,flightview
+src,804,empty,flytecomm
+src,806,empty,gofox
+src,818,empty,allegiantair
+src,852,empty,flytecomm
+src,871,empty,flightaware
+src,881,empty,myrateplan
+src,883,empty,ord
+src,903,empty,foxbusiness
+src,910,empty,quicktrip
+src,911,empty,travelocity
+src,914,empty,world-flight-tracker
+src,919,empty,boston
+src,925,empty,flightstats
+src,964,empty,panynj
+src,979,empty,flightstats
+src,1027,empty,flightview
+src,1049,empty,flightaware
+src,1134,empty,gofox
+src,1140,empty,panynj
+src,1141,empty,quicktrip
+src,1178,empty,businesstravellogue
+src,1190,empty,myrateplan
+src,1192,empty,orbitz
+src,1240,empty,myrateplan
+src,1268,empty,panynj
+src,1319,empty,airtravelcenter
+src,1327,empty,flylouisville
+src,1508,empty,flightview
+src,1521,empty,wunderground
+src,1559,empty,myrateplan
+src,1570,empty,flightarrival
+src,1611,empty,den
+src,1658,empty,flytecomm
+src,1667,empty,wunderground
+src,1674,empty,flightstats
+src,1687,empty,weather
+src,1709,empty,flightarrival
+src,1711,empty,flightstats
+src,1719,empty,myrateplan
+src,1726,empty,airtravelcenter
+src,1739,empty,gofox
+src,1743,empty,mytripandmore
+src,1763,empty,foxbusiness
+src,1792,empty,ua
+src,1800,empty,flightexplorer
+src,1859,empty,ua
+src,1943,empty,myrateplan
+src,1950,empty,usatoday
+src,1958,empty,flightaware
+src,1981,empty,boston
+src,2006,empty,flightarrival
+src,2013,empty,foxbusiness
+src,2096,empty,flylouisville
+src,2113,empty,businesstravellogue
+src,2118,empty,flightstats
+src,2133,empty,ua
+src,2142,empty,flights
+src,2152,empty,panynj
+src,2157,empty,weather
+src,2169,empty,flytecomm
+src,2192,empty,gofox
+src,2199,empty,weather
+src,2241,empty,airtravelcenter
+src,2255,empty,gofox
+src,2260,empty,ord
+src,2268,empty,world-flight-tracker
+src,2274,empty,flightarrival
+src,2279,empty,flightview
+src,2314,empty,weather
+flight,49,empty,AA-1221-MCO-ORD
+flight,50,empty,AA-1221-MCO-ORD
+flight,51,empty,AA-1221-MCO-ORD
+flight,65,empty,AA-1221-MCO-ORD
+flight,81,empty,AA-1279-DFW-PHX
+flight,153,empty,AA-1544-SAN-ORD
+flight,190,empty,AA-1640-MIA-MCO
+flight,199,empty,AA-1664-MIA-ATL
+flight,224,empty,AA-1664-MIA-ATL
+flight,236,empty,AA-1733-ORD-PHX
+flight,247,empty,AA-1733-ORD-PHX
+flight,271,empty,AA-1917-JFK-MCO
+flight,275,empty,AA-1917-JFK-MCO
+flight,276,empty,AA-1917-JFK-MCO
+flight,306,empty,AA-204-LAX-MCO
+flight,321,empty,AA-2050-ORD-MIA
+flight,339,empty,AA-2050-ORD-MIA
+flight,386,empty,AA-2268-PHX-ORD
+flight,397,empty,AA-2268-PHX-ORD
+flight,400,empty,AA-2312-DFW-DTW
+flight,407,empty,AA-2312-DFW-DTW
+flight,423,empty,AA-2312-DFW-DTW
+flight,441,empty,AA-2525-DFW-MIA
+flight,445,empty,AA-2525-DFW-MIA
+flight,448,empty,AA-2525-DFW-MIA
+flight,484,empty,AA-2957-DFW-CVG
+flight,500,empty,AA-2957-DFW-CVG
+flight,505,empty,AA-3-JFK-LAX
+flight,552,empty,AA-3468-CVG-MIA
+flight,554,empty,AA-3468-CVG-MIA
+flight,586,empty,AA-3756-ORD-SLC
+flight,609,empty,AA-3786-IAH-ORD
+flight,614,empty,AA-3786-IAH-ORD
+flight,625,empty,AA-3786-IAH-ORD
+flight,678,empty,AA-3809-PHX-LAX
+flight,714,empty,AA-3842-MSP-ORD
+flight,725,empty,AA-3842-MSP-ORD
+flight,748,empty,AA-3859-IAH-ORD
+flight,779,empty,AA-3979-CVG-ORD
+flight,796,empty,AA-400-DFW-JFK
+flight,803,empty,AA-400-DFW-JFK
+flight,824,empty,AA-404-MIA-MCO
+flight,826,empty,AA-404-MIA-MCO
+flight,828,empty,AA-404-MIA-MCO
+flight,832,empty,AA-404-MIA-MCO
+flight,841,empty,AA-404-MIA-MCO
+flight,858,empty,AA-415-BOS-ORD
+flight,875,empty,AA-4198-ORD-CLE
+flight,887,empty,AA-4198-ORD-CLE
+flight,905,empty,AA-4277-CVG-JFK
+flight,928,empty,AA-4307-ORD-DTW
+flight,935,empty,AA-4307-ORD-DTW
+flight,942,empty,AA-4307-ORD-DTW
+flight,960,empty,AA-431-MIA-SFO
+flight,972,empty,AA-4330-CVG-ORD
+flight,978,empty,AA-4330-CVG-ORD
+flight,1011,empty,AA-4344-ORD-DTW
+flight,1068,empty,AA-466-IAH-MIA
+flight,1130,empty,AA-59-JFK-SFO
+flight,1159,empty,AA-616-DFW-DTW
+flight,1184,empty,AA-643-MIA-ORD
+flight,1205,empty,AA-649-ORD-SNA
+flight,1212,empty,AA-649-ORD-SNA
+flight,1216,empty,AA-649-ORD-SNA
+flight,1219,empty,AA-649-ORD-SNA
+flight,1223,empty,AA-789-ORD-DEN
+flight,1227,empty,AA-789-ORD-DEN
+flight,1248,empty,AA-789-ORD-DEN
+flight,1287,empty,CO-1023-IAH-DEN
+flight,1303,empty,CO-1088-CLE-IAH
+flight,1309,empty,CO-1088-CLE-IAH
+flight,1365,empty,CO-1250-MIA-IAH
+flight,1374,empty,CO-1250-MIA-IAH
+flight,1382,empty,CO-1250-MIA-IAH
+flight,1411,empty,CO-1586-IAH-MCO
+flight,1425,empty,CO-1586-IAH-MCO
+flight,1440,empty,CO-16-LAX-EWR
+flight,1483,empty,CO-1694-LAX-IAH
+flight,1490,empty,CO-1694-LAX-IAH
+flight,1530,empty,CO-47-IAH-LAX
+flight,1542,empty,CO-47-IAH-LAX
+flight,1549,empty,CO-4888-IAH-DAL
+flight,1562,empty,CO-4888-IAH-DAL
+flight,1570,empty,CO-50-CLE-EWR
+flight,1585,empty,CO-50-CLE-EWR
+flight,1594,empty,CO-52-IAH-LAX
+flight,1607,empty,CO-58-DEN-IAH
+flight,1628,empty,CO-62-IAH-EWR
+flight,1729,empty,UA-233-LAX-JFK
+flight,1749,empty,UA-233-LAX-JFK
+flight,1835,empty,UA-2704-DTW-PHX
+flight,1859,empty,UA-2708-EWR-CLT
+flight,1873,empty,UA-2726-FLL-PHL
+flight,1882,empty,UA-2726-FLL-PHL
+flight,1906,empty,UA-2906-PHL-MCO
+flight,1958,empty,UA-3050-PHX-CLT
+flight,1979,empty,UA-3099-PHX-PHL
+flight,2020,empty,UA-3373-IAD-PHL
+flight,2044,empty,UA-3515-IAD-MSP
+flight,2074,empty,UA-37-EWR-MCO
+flight,2093,empty,UA-382-IAD-LAX
+flight,2107,empty,UA-382-IAD-LAX
+flight,2117,empty,UA-3925-IAD-ORF
+flight,2168,empty,UA-414-LAX-SFO
+flight,2170,empty,UA-414-LAX-SFO
+flight,2185,empty,UA-5487-SFO-MRY
+flight,2186,empty,UA-5487-SFO-MRY
+flight,2201,empty,UA-62-IAH-EWR
+flight,2230,empty,UA-6273-YYC-SFO
+flight,2238,empty,UA-6273-YYC-SFO
+flight,2244,empty,UA-664-ORD-PHL
+flight,2258,empty,UA-664-ORD-PHL
+flight,2289,empty,UA-828-SFO-ORD
+flight,2300,empty,UA-843-LAX-ORD
+flight,2321,empty,UA-854-SFO-IAH
+flight,2329,empty,UA-854-SFO-IAH
+flight,2330,empty,UA-854-SFO-IAH
+flight,2356,empty,UA-938-DEN-ORD
+sched_dep_time,65,empty,8:00 p.m.
+sched_dep_time,505,empty,12:00 p.m.
+sched_dep_time,552,empty,7:00 a.m.
+sched_dep_time,1184,empty,7:10 a.m.
+sched_dep_time,1585,empty,2:55 p.m.
+sched_dep_time,2300,empty,1:55 p.m.
+act_dep_time,50,empty,8:23 p.m.
+act_dep_time,224,empty,10:18 a.m.
+act_dep_time,321,empty,11:05 a.m.
+act_dep_time,484,empty,8:04 a.m.
+act_dep_time,500,empty,8:04 a.m.
+act_dep_time,875,empty,10:54 a.m.
+act_dep_time,1184,empty,7:30 a.m.
+act_dep_time,2168,empty,5:56 a.m.
+sched_arr_time,224,empty,12:10 p.m.
+sched_arr_time,306,empty,6:55 a.m.
+sched_arr_time,614,empty,6:40 p.m.
+sched_arr_time,779,empty,8:00 a.m.
+sched_arr_time,824,empty,7:45 a.m.
+sched_arr_time,2238,empty,9:43 a.m.
+sched_arr_time,2258,empty,4:31 p.m.
+act_arr_time,942,empty,8:53 p.m.
+act_arr_time,2329,empty,1:30 p.m.

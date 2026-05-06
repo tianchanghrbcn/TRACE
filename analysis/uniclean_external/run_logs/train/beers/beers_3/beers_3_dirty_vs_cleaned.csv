@@ -1,0 +1,818 @@
+Attribute,Index,Dirty Value,Cleaned Value
+brewery_name,2,nan,18th Street Brewery
+brewery_name,4,nan,18th Street Brewery
+brewery_name,8,nan,18th Street Brewery
+brewery_name,13,nan,18th Street Brewery
+brewery_name,19,nan,2 Towns Ciderhouse
+brewery_name,30,nan,21st Amendment Brewery
+brewery_name,55,nan,450 North Brewing Company
+brewery_name,68,nan,Against The Grain Brewery
+brewery_name,70,nan,Against the Grain Brewery
+brewery_name,76,nan,Against the Grain Brewery
+brewery_name,77,nan,Against the Grain Brewery
+brewery_name,87,nan,Alameda Brewing
+brewery_name,94,nan,Amnesia Brewing Company
+brewery_name,111,nan,Anderson Valley Brewing Company
+brewery_name,139,nan,Asheville Brewing Company
+brewery_name,140,nan,Asheville Brewing Company
+brewery_name,149,nan,Astoria Brewing Company
+brewery_name,153,nan,Atwater Brewery
+brewery_name,176,nan,Back East Brewing Company
+brewery_name,177,nan,Back East Brewing Company
+brewery_name,186,nan,Ballast Point Brewing Company
+brewery_name,209,nan,Baxter Brewing Company
+brewery_name,211,nan,Baxter Brewing Company
+brewery_name,214,nan,Beer Works Brewery
+brewery_name,217,nan,Beer Works Brewery
+brewery_name,234,nan,Berkshire Brewing Company
+brewery_name,249,nan,Big Muddy Brewing
+brewery_name,254,nan,Big Sky Brewing Company
+brewery_name,263,nan,Big Sky Brewing Company
+brewery_name,265,nan,Big Storm Brewing Company
+brewery_name,273,nan,Bitter Root Brewing
+brewery_name,297,nan,Blue Blood Brewing Company
+brewery_name,299,nan,Blue Blood Brewing Company
+brewery_name,305,nan,Blue Blood Brewing Company
+brewery_name,314,nan,Blue Mountain Brewery
+brewery_name,336,nan,Bonfire Brewing Company
+brewery_name,345,nan,Bonfire Brewing Company
+brewery_name,352,nan,Bonfire Brewing Company
+brewery_name,365,nan,Boulder Beer Company
+brewery_name,370,nan,Boxcar Brewing Company
+brewery_name,380,nan,Breckenridge Brewery
+brewery_name,382,nan,Breckenridge Brewery
+brewery_name,395,nan,Brewery Vivant
+brewery_name,408,nan,Brewery Vivant
+brewery_name,417,nan,Brewery Vivant
+brewery_name,418,nan,Brewery Vivant
+brewery_name,420,nan,Brewery Vivant
+brewery_name,429,nan,Brewery Vivant
+brewery_name,449,nan,Brewery Vivant
+brewery_name,457,nan,Broken Tooth Brewing Company
+brewery_name,474,nan,Buffalo Bayou Brewing Company
+brewery_name,481,nan,Burn 'Em Brewing
+brewery_name,489,nan,Butternuts Beer and Ale
+brewery_name,494,nan,COAST Brewing Company
+brewery_name,516,nan,Caldera Brewing Company
+brewery_name,518,nan,Caldera Brewing Company
+brewery_name,531,nan,Cape Cod Beer
+brewery_name,544,nan,Carolina Beer & Beverage
+brewery_name,562,nan,Catawba Island Brewing
+brewery_name,566,nan,Cedar Creek Brewery
+brewery_name,582,nan,Champion Brewing Company
+brewery_name,597,nan,Ciderboys
+brewery_name,609,nan,Cigar City Brewing Company
+brewery_name,639,nan,Coastal Extreme Brewing Company
+brewery_name,647,nan,Core Brewing & Distilling Company
+brewery_name,657,nan,Crazy Mountain Brewing Company
+brewery_name,667,nan,Crow Peak Brewing Company
+brewery_name,670,nan,Crow Peak Brewing Company
+brewery_name,675,nan,Cutters Brewing Company
+brewery_name,688,nan,DC Brau Brewing Company
+brewery_name,694,nan,David's Ale Works
+brewery_name,700,nan,Deep Ellum Brewing Company
+brewery_name,706,nan,Defiance Brewing Company
+brewery_name,715,nan,Destihl Brewery
+brewery_name,733,nan,Dolores River Brewery
+brewery_name,759,nan,Everybody's Brewing
+brewery_name,763,nan,Evil Czech Brewery
+brewery_name,769,nan,Evil Twin Brewing
+brewery_name,771,nan,Evil Twin Brewing
+brewery_name,772,nan,Fargo Brewing Company
+brewery_name,778,nan,Fate Brewing Company
+brewery_name,779,nan,Fate Brewing Company
+brewery_name,787,nan,Fearless Brewing Company
+brewery_name,794,nan,Figueroa Mountain Brewing Company
+brewery_name,815,nan,Flying Dog Brewery
+brewery_name,819,nan,Foolproof Brewing Company
+brewery_name,840,nan,Fort Point Beer Company
+brewery_name,843,nan,Founders Brewing Company
+brewery_name,854,nan,Four Peaks Brewing Company
+brewery_name,882,nan,French Broad Brewery
+brewery_name,893,nan,Golden Road Brewing
+brewery_name,897,nan,Golden Road Brewing
+brewery_name,909,nan,Good People Brewing Company
+brewery_name,941,nan,Great Crescent Brewery
+brewery_name,947,nan,Great Crescent Brewery
+brewery_name,948,nan,Great Crescent Brewery
+brewery_name,963,nan,Great River Brewery
+brewery_name,966,nan,Great River Brewery
+brewery_name,968,nan,Great River Brewery
+brewery_name,973,nan,Great River Brewery
+brewery_name,982,nan,Greenbrier Valley Brewing Company
+brewery_name,983,nan,Grey Sail Brewing Company
+brewery_name,994,nan,Griffin Claw Brewing Company
+brewery_name,995,nan,Griffin Claw Brewing Company
+brewery_name,996,nan,Griffin Claw Brewing Company
+brewery_name,1021,nan,Harpoon Brewery
+brewery_name,1022,nan,Harpoon Brewery
+brewery_name,1027,nan,Harpoon Brewery
+brewery_name,1033,nan,Hawai'i Nui Brewing Co.
+brewery_name,1035,nan,Hawai'i Nui Brewing Co.
+brewery_name,1050,nan,High Noon Saloon And Brewery
+brewery_name,1055,nan,Hilliard's Beer
+brewery_name,1063,nan,Hop Valley Brewing Company
+brewery_name,1069,nan,Hops & Grain Brewery
+brewery_name,1082,nan,Hopworks Urban Brewery
+brewery_name,1089,nan,Hopworks Urban Brewery
+brewery_name,1090,nan,Hopworks Urban Brewery
+brewery_name,1095,nan,Hopworks Urban Brewery
+brewery_name,1100,nan,Howard Brewing Company
+brewery_name,1106,nan,Indeed Brewing Company
+brewery_name,1113,nan,Infamous Brewing Company
+brewery_name,1127,nan,Jackie O's Pub & Brewery
+brewery_name,1146,nan,Karbach Brewing Company
+brewery_name,1151,nan,Karbach Brewing Company
+brewery_name,1153,nan,Karbach Brewing Company
+brewery_name,1157,nan,KelSo Beer Company
+brewery_name,1173,nan,Keweenaw Brewing Company
+brewery_name,1174,nan,Keweenaw Brewing Company
+brewery_name,1175,nan,King Street Brewing Company
+brewery_name,1183,nan,Kona Brewing Company
+brewery_name,1190,nan,Lancaster Brewing Company
+brewery_name,1209,nan,Liquid Hero Brewery
+brewery_name,1219,nan,Long Trail Brewing Company
+brewery_name,1221,nan,Long Trail Brewing Company
+brewery_name,1232,nan,Lucette Brewing Company
+brewery_name,1251,nan,Madtree Brewing Company
+brewery_name,1252,nan,Madtree Brewing Company
+brewery_name,1271,nan,Manzanita Brewing Company
+brewery_name,1278,nan,Marshall Wharf Brewing Company
+brewery_name,1279,nan,Marshall Wharf Brewing Company
+brewery_name,1285,nan,Martin House Brewing Company
+brewery_name,1292,nan,Matt Brewing Company
+brewery_name,1310,nan,Maui Brewing Company
+brewery_name,1336,nan,Mike Hess Brewing Company
+brewery_name,1337,nan,Mike Hess Brewing Company
+brewery_name,1347,nan,Mikerphone Brewing
+brewery_name,1368,nan,Minhas Craft Brewery
+brewery_name,1380,nan,Moab Brewery
+brewery_name,1403,nan,Morgan Street Brewery
+brewery_name,1421,nan,Narragansett Brewing Company
+brewery_name,1422,nan,Narragansett Brewing Company
+brewery_name,1431,nan,Natian Brewery
+brewery_name,1435,nan,Natian Brewery
+brewery_name,1439,nan,Nebraska Brewing Company
+brewery_name,1446,nan,New Belgium Brewing Company
+brewery_name,1460,nan,New Belgium Brewing Company
+brewery_name,1466,nan,New England Brewing Company
+brewery_name,1490,nan,North Country Brewing Company
+brewery_name,1492,nan,North Country Brewing Company
+brewery_name,1496,nan,NorthGate Brewing
+brewery_name,1504,nan,Northwoods Brewpub
+brewery_name,1507,nan,O'Fallon Brewery
+brewery_name,1509,nan,O'Fallon Brewery
+brewery_name,1518,nan,Occidental Brewing Company
+brewery_name,1524,nan,Odyssey Beerwerks
+brewery_name,1537,nan,Old Forge Brewing Company
+brewery_name,1558,nan,Oskar Blues Brewery
+brewery_name,1565,nan,Oskar Blues Brewery
+brewery_name,1589,nan,Oskar Blues Brewery
+brewery_name,1597,nan,Oskar Blues Brewery
+brewery_name,1601,nan,Oskar Blues Brewery (North Carol...
+brewery_name,1602,nan,Oskar Blues Brewery (North Carol...
+brewery_name,1608,nan,Palisade Brewing Company
+brewery_name,1611,nan,Pateros Creek Brewing Company
+brewery_name,1616,nan,Payette Brewing Company
+brewery_name,1634,nan,Pete's Brewing Company
+brewery_name,1638,nan,Pete's Brewing Company
+brewery_name,1653,nan,Piney River Brewing Company
+brewery_name,1663,nan,Pizza Port Brewing Company
+brewery_name,1664,nan,Pizza Port Brewing Company
+brewery_name,1672,nan,Pug Ryan's Brewery
+brewery_name,1680,nan,Quest Brewing Company
+brewery_name,1692,nan,Red Hare Brewing Company
+brewery_name,1702,nan,Redhook Brewery
+brewery_name,1709,nan,Renegade Brewing Company
+brewery_name,1711,nan,Renegade Brewing Company
+brewery_name,1728,nan,Revolution Brewing Company
+brewery_name,1729,nan,Rhinegeist Brewery
+brewery_name,1762,nan,Rochester Mills Brewing Company
+brewery_name,1766,nan,Rochester Mills Brewing Company
+brewery_name,1771,nan,Round Guys Brewing
+brewery_name,1775,nan,Round Guys Brewing
+brewery_name,1788,nan,SanTan Brewing Company
+brewery_name,1793,nan,SanTan Brewing Company
+brewery_name,1798,nan,SanTan Brewing Company
+brewery_name,1802,nan,SanTan Brewing Company
+brewery_name,1805,nan,SanTan Brewing Company
+brewery_name,1814,nan,Santa Fe Brewing Company
+brewery_name,1824,nan,Schlafly Brewing Company
+brewery_name,1858,nan,Sixpoint Craft Ales
+brewery_name,1862,nan,Sixpoint Craft Ales
+brewery_name,1867,nan,Sixpoint Craft Ales
+brewery_name,1875,nan,Sixpoint Craft Ales
+brewery_name,1887,nan,Ska Brewing Company
+brewery_name,1892,nan,Ska Brewing Company
+brewery_name,1894,nan,Slanted Rock Brewing Company
+brewery_name,1901,nan,Sly Fox Brewing Company
+brewery_name,1919,nan,Snake River Brewing Company
+brewery_name,1929,nan,Sockeye Brewing Company
+brewery_name,1934,nan,Sockeye Brewing Company
+brewery_name,1944,nan,Southern Oregon Brewing Company
+brewery_name,1948,nan,Southern Prohibition Brewing Com...
+brewery_name,1949,nan,Southern Prohibition Brewing Com...
+brewery_name,1960,nan,Southern Star Brewing Company
+brewery_name,1978,nan,Spiteful Brewing Company
+brewery_name,1981,nan,Spiteful Brewing Company
+brewery_name,1990,nan,Starr Hill Brewery
+brewery_name,2007,nan,Stevens Point Brewery
+brewery_name,2011,nan,Stevens Point Brewery
+brewery_name,2023,nan,Straight to Ale
+brewery_name,2033,nan,Sun King Brewing Company
+brewery_name,2050,nan,Sun King Brewing Company
+brewery_name,2052,nan,Sun King Brewing Company
+brewery_name,2053,nan,Sun King Brewing Company
+brewery_name,2061,nan,Sun King Brewing Company
+brewery_name,2067,nan,Sun King Brewing Company
+brewery_name,2074,nan,Surly Brewing Company
+brewery_name,2080,nan,Surly Brewing Company
+brewery_name,2103,nan,TailGate Beer
+brewery_name,2111,nan,Tallgrass Brewing Company
+brewery_name,2126,nan,Tapistry Brewing
+brewery_name,2130,nan,Telluride Brewing Company
+brewery_name,2132,nan,Telluride Brewing Company
+brewery_name,2138,nan,Texian Brewing Co.
+brewery_name,2142,nan,The Alchemist
+brewery_name,2145,nan,The Alchemist
+brewery_name,2146,nan,The Alchemist
+brewery_name,2155,nan,The Bronx Brewery
+brewery_name,2156,nan,The Bronx Brewery
+brewery_name,2159,nan,The Dudes' Brewing Company
+brewery_name,2160,nan,The Dudes' Brewing Company
+brewery_name,2182,nan,Three Pints Brewing
+brewery_name,2185,nan,Thunderhead Brewing Company
+brewery_name,2187,nan,Thunderhead Brewing Company
+brewery_name,2208,nan,Tractor Brewing Company
+brewery_name,2210,nan,Tractor Brewing Company
+brewery_name,2215,nan,Tröegs Brewing Company
+brewery_name,2226,nan,Two Beers Brewing Company
+brewery_name,2227,nan,Two Beers Brewing Company
+brewery_name,2231,nan,Two Beers Brewing Company
+brewery_name,2234,nan,Two Beers Brewing Company
+brewery_name,2237,nan,Two Brothers Brewing Company
+brewery_name,2259,nan,Uinta Brewing Company
+brewery_name,2265,nan,Uncle John's Fruit House Winery
+brewery_name,2285,nan,Upslope Brewing Company
+brewery_name,2294,nan,Upslope Brewing Company
+brewery_name,2309,nan,Vander Mill Ciders
+brewery_name,2319,nan,Wachusett Brewing Company
+brewery_name,2329,nan,Wachusett Brewing Company
+brewery_name,2336,nan,West Sixth Brewing
+brewery_name,2337,nan,West Sixth Brewing
+brewery_name,2351,nan,Weston Brewing Company
+brewery_name,2367,nan,Wild Onion Brewing Company
+brewery_name,2379,nan,Wind River Brewing Company
+brewery_name,2398,nan,Worthy Brewing Company
+brewery_name,2404,nan,Wynkoop Brewing Company
+city,5,nan,Gary
+city,10,nan,Gary
+city,22,nan,San Francisco
+city,36,nan,San Francisco
+city,37,nan,San Francisco
+city,55,nan,Columbus
+city,85,nan,Kent
+city,87,nan,Portland
+city,98,nan,San Francisco
+city,103,nan,Boonville
+city,108,nan,Boonville
+city,121,nan,Hayward
+city,126,nan,Oklahoma City
+city,135,nan,Denton
+city,144,nan,Bellingham
+city,148,nan,Astoria
+city,154,nan,Detroit
+city,177,nan,Bloomfield
+city,197,nan,Portland
+city,199,nan,Portland
+city,202,nan,Minneapolis
+city,221,nan,Kalamazoo
+city,245,nan,Sheffield
+city,249,nan,Murphysboro
+city,256,nan,Missoula
+city,269,nan,Vadnais Heights
+city,281,nan,Denver
+city,282,nan,Denver
+city,286,nan,Sheridan
+city,289,nan,Marquette
+city,314,nan,Afton
+city,317,nan,Austin
+city,343,nan,Eagle
+city,350,nan,Eagle
+city,351,nan,Eagle
+city,371,nan,West Chester
+city,384,nan,Tampa
+city,401,nan,Grand Rapids
+city,406,nan,Grand Rapids
+city,408,nan,Grand Rapids
+city,423,nan,Grand Rapids
+city,428,nan,Grand Rapids
+city,436,nan,Grand Rapids
+city,439,nan,Grand Rapids
+city,441,nan,Grand Rapids
+city,459,nan,Brooklyn
+city,467,nan,Reno
+city,469,nan,Reno
+city,473,nan,Houston
+city,479,nan,Michigan City
+city,482,nan,Michigan City
+city,511,nan,Ashland
+city,516,nan,Ashland
+city,517,nan,Ashland
+city,541,nan,Middleton
+city,556,nan,Morganton
+city,584,nan,Charlottesville
+city,585,nan,Charlottesville
+city,588,nan,Angola
+city,591,nan,Chatham
+city,593,nan,Cheboygan
+city,603,nan,Tampa
+city,623,nan,Tampa
+city,627,nan,Nantucket
+city,633,nan,Portland
+city,637,nan,Newport
+city,645,nan,Springdale
+city,651,nan,Greeley
+city,654,nan,Edwards
+city,667,nan,Spearfish
+city,668,nan,Spearfish
+city,675,nan,Avon
+city,688,nan,Washington
+city,700,nan,Dallas
+city,701,nan,Dallas
+city,717,nan,Bloomington
+city,718,nan,Bloomington
+city,719,nan,Bloomington
+city,724,nan,Belmont
+city,726,nan,Belmont
+city,738,nan,Aurora
+city,768,nan,Brooklyn
+city,770,nan,Brooklyn
+city,808,nan,Paso Robles
+city,815,nan,Frederick
+city,821,nan,Pawtucket
+city,851,nan,Valparaiso
+city,883,nan,Asheville
+city,888,nan,Lake Geneva
+city,889,nan,Lake Geneva
+city,892,nan,Los Angeles
+city,902,nan,Los Angeles
+city,912,nan,Birmingham
+city,917,nan,Chicago
+city,930,nan,Aurora
+city,942,nan,Aurora
+city,946,nan,Aurora
+city,957,nan,Denver
+city,959,nan,Whitefish
+city,964,nan,Davenport
+city,967,nan,Davenport
+city,976,nan,Davenport
+city,985,nan,Westerly
+city,993,nan,Birmingham
+city,994,nan,Birmingham
+city,999,nan,Birmingham
+city,1000,nan,Birmingham
+city,1021,nan,Boston
+city,1053,nan,Seattle
+city,1055,nan,Seattle
+city,1078,nan,Portland
+city,1080,nan,Portland
+city,1094,nan,Portland
+city,1096,nan,Portland
+city,1105,nan,Minneapolis
+city,1112,nan,Austin
+city,1116,nan,Jacksonville
+city,1120,nan,Framingham
+city,1130,nan,Athens
+city,1134,nan,Stevens Point
+city,1137,nan,Stevens Point
+city,1142,nan,Henderson
+city,1144,nan,Kalona
+city,1146,nan,Houston
+city,1167,nan,Missoula
+city,1171,nan,Houghton
+city,1179,nan,Anchorage
+city,1184,nan,Kona
+city,1185,nan,Kona
+city,1207,nan,Stillwater
+city,1247,nan,Cincinnati
+city,1264,nan,Philadelphia
+city,1266,nan,Philadelphia
+city,1278,nan,Belfast
+city,1283,nan,Fort Worth
+city,1291,nan,Utica
+city,1304,nan,Lahaina
+city,1319,nan,Somerset Center
+city,1336,nan,San Diego
+city,1338,nan,San Diego
+city,1358,nan,Milwaukee
+city,1366,nan,Monroe
+city,1367,nan,Monroe
+city,1378,nan,San Diego
+city,1381,nan,Moab
+city,1398,nan,Montauk
+city,1403,nan,Saint Louis
+city,1416,nan,Mustang
+city,1417,nan,Mustang
+city,1432,nan,Portland
+city,1441,nan,Papillion
+city,1448,nan,Fort Collins
+city,1462,nan,Woodbridge
+city,1479,nan,College Station
+city,1484,nan,Newburyport
+city,1499,nan,Minneapolis
+city,1534,nan,Spirit Lake
+city,1552,nan,Longmont
+city,1568,nan,Longmont
+city,1569,nan,Longmont
+city,1576,nan,Longmont
+city,1589,nan,Lyons
+city,1615,nan,Garden City
+city,1638,nan,San Antonio
+city,1640,nan,San Antonio
+city,1647,nan,Monument
+city,1669,nan,Prescott
+city,1676,nan,Dillon
+city,1687,nan,Blanco
+city,1690,nan,Blanco
+city,1707,nan,Denver
+city,1720,nan,Paonia
+city,1728,nan,Chicago
+city,1730,nan,Cincinnati
+city,1748,nan,Export
+city,1769,nan,Midwest City
+city,1770,nan,Midwest City
+city,1771,nan,Lansdale
+city,1774,nan,Lansdale
+city,1779,nan,Sacramento
+city,1782,nan,Sacramento
+city,1788,nan,Chandler
+city,1790,nan,Chandler
+city,1793,nan,Chandler
+city,1794,nan,Chandler
+city,1799,nan,Chandler
+city,1800,nan,Chandler
+city,1830,nan,Seattle
+city,1845,nan,Chico
+city,1846,nan,Chico
+city,1853,nan,Chico
+city,1855,nan,Silverton
+city,1864,nan,Brooklyn
+city,1910,nan,Pottstown
+city,1936,nan,Boise
+city,1941,nan,South Austin
+city,1944,nan,Medford
+city,1963,nan,Conroe
+city,1975,nan,Chicago
+city,1987,nan,Crozet
+city,1991,nan,Durango
+city,1996,nan,Stevens Point
+city,2007,nan,Stevens Point
+city,2009,nan,Stevens Point
+city,2010,nan,Stevens Point
+city,2012,nan,Stevens Point
+city,2018,nan,Baltimore
+city,2040,nan,Indianapolis
+city,2041,nan,Indianapolis
+city,2044,nan,Indianapolis
+city,2047,nan,Indianapolis
+city,2051,nan,Indianapolis
+city,2066,nan,Indianapolis
+city,2068,nan,Indianapolis
+city,2096,nan,San Diego
+city,2100,nan,San Diego
+city,2123,nan,Lakeside
+city,2137,nan,Richmond
+city,2138,nan,Richmond
+city,2153,nan,Baltimore
+city,2157,nan,Torrance
+city,2182,nan,Martinsville
+city,2190,nan,Evansville
+city,2193,nan,Evansville
+city,2205,nan,Idaho Springs
+city,2209,nan,Albuquerque
+city,2211,nan,Durham
+city,2236,nan,Warrenville
+city,2239,nan,Warrenville
+city,2241,nan,Warrenville
+city,2242,nan,Warrenville
+city,2245,nan,Warrenville
+city,2254,nan,Salt Lake City
+city,2258,nan,Salt Lake City
+city,2265,nan,St. John's
+city,2266,nan,St. John's
+city,2281,nan,Boulder
+city,2286,nan,Boulder
+city,2291,nan,Boulder
+city,2292,nan,Boulder
+city,2316,nan,Meadville
+city,2318,nan,Meadville
+city,2319,nan,Westminster
+city,2335,nan,Lexington
+city,2340,nan,Mt. Pleasant
+city,2341,nan,Mt. Pleasant
+city,2345,nan,Westfield
+city,2356,nan,Hooksett
+city,2362,nan,Lake Barrington
+city,2365,nan,Lake Barrington
+city,2370,nan,Lake Barrington
+city,2381,nan,Tacoma
+city,2384,nan,Verona
+city,2405,nan,Denver
+state,3,nan,IN
+state,5,nan,IN
+state,28,nan,CA
+state,42,nan,FL
+state,83,nan,WA
+state,87,nan,OR
+state,97,nan,CA
+state,98,nan,CA
+state,113,nan,CA
+state,115,nan,CA
+state,116,nan,CA
+state,127,nan,OK
+state,142,nan,WA
+state,147,nan,OR
+state,155,nan,MI
+state,158,nan,TX
+state,161,nan,TX
+state,162,nan,CO
+state,163,nan,CO
+state,170,nan,NC
+state,190,nan,MA
+state,202,nan,MN
+state,226,nan,MN
+state,240,nan,CO
+state,242,nan,CO
+state,243,nan,CO
+state,244,nan,MA
+state,246,nan,MA
+state,250,nan,IL
+state,261,nan,MT
+state,265,nan,FL
+state,283,nan,CO
+state,286,nan,WY
+state,289,nan,MI
+state,291,nan,MI
+state,311,nan,VA
+state,314,nan,VA
+state,317,nan,TX
+state,336,nan,CO
+state,351,nan,CO
+state,353,nan,CO
+state,360,nan,MA
+state,369,nan,PA
+state,389,nan,MI
+state,403,nan,MI
+state,405,nan,MI
+state,424,nan,MI
+state,429,nan,MI
+state,439,nan,MI
+state,442,nan,MI
+state,451,nan,FL
+state,459,nan,NY
+state,463,nan,NY
+state,466,nan,NV
+state,469,nan,NV
+state,483,nan,IN
+state,490,nan,NY
+state,492,nan,NY
+state,497,nan,SC
+state,506,nan,OR
+state,508,nan,OR
+state,511,nan,OR
+state,523,nan,NC
+state,529,nan,MA
+state,542,nan,WI
+state,544,nan,NC
+state,551,nan,NJ
+state,552,nan,NJ
+state,563,nan,OH
+state,568,nan,TX
+state,573,nan,CO
+state,581,nan,CA
+state,597,nan,WI
+state,601,nan,FL
+state,608,nan,FL
+state,618,nan,FL
+state,623,nan,FL
+state,628,nan,MA
+state,643,nan,IA
+state,664,nan,ID
+state,665,nan,ID
+state,682,nan,DC
+state,688,nan,DC
+state,694,nan,CA
+state,696,nan,TX
+state,703,nan,TX
+state,704,nan,TX
+state,705,nan,KS
+state,708,nan,AK
+state,719,nan,IL
+state,721,nan,VA
+state,730,nan,CO
+state,736,nan,MA
+state,741,nan,CO
+state,744,nan,CO
+state,763,nan,IN
+state,764,nan,IN
+state,770,nan,NY
+state,780,nan,CO
+state,784,nan,OR
+state,788,nan,VT
+state,789,nan,VT
+state,791,nan,VT
+state,794,nan,CA
+state,810,nan,IN
+state,811,nan,IN
+state,858,nan,AZ
+state,862,nan,OH
+state,869,nan,TX
+state,876,nan,WA
+state,883,nan,NC
+state,884,nan,NC
+state,896,nan,CA
+state,902,nan,CA
+state,905,nan,CA
+state,909,nan,AL
+state,916,nan,IL
+state,941,nan,IN
+state,955,nan,CO
+state,961,nan,LA
+state,970,nan,IA
+state,974,nan,IA
+state,978,nan,IA
+state,998,nan,MI
+state,1023,nan,MA
+state,1024,nan,MA
+state,1043,nan,MD
+state,1055,nan,WA
+state,1056,nan,WA
+state,1076,nan,OR
+state,1077,nan,OR
+state,1082,nan,OR
+state,1100,nan,NC
+state,1104,nan,MN
+state,1105,nan,MN
+state,1109,nan,TX
+state,1115,nan,FL
+state,1124,nan,PA
+state,1128,nan,OH
+state,1137,nan,WI
+state,1139,nan,NV
+state,1142,nan,NV
+state,1145,nan,TX
+state,1154,nan,TX
+state,1158,nan,AK
+state,1173,nan,MI
+state,1185,nan,HI
+state,1220,nan,VT
+state,1223,nan,VT
+state,1224,nan,VT
+state,1235,nan,MS
+state,1254,nan,VT
+state,1260,nan,PA
+state,1261,nan,PA
+state,1279,nan,ME
+state,1281,nan,TX
+state,1294,nan,NY
+state,1307,nan,HI
+state,1308,nan,HI
+state,1310,nan,HI
+state,1316,nan,CA
+state,1319,nan,MI
+state,1325,nan,HI
+state,1332,nan,AK
+state,1338,nan,CA
+state,1341,nan,CA
+state,1346,nan,IL
+state,1348,nan,IL
+state,1357,nan,WI
+state,1358,nan,WI
+state,1364,nan,WI
+state,1365,nan,WI
+state,1368,nan,WI
+state,1381,nan,UT
+state,1386,nan,CA
+state,1388,nan,CA
+state,1395,nan,CA
+state,1407,nan,NC
+state,1417,nan,OK
+state,1422,nan,RI
+state,1423,nan,RI
+state,1426,nan,RI
+state,1431,nan,OR
+state,1432,nan,OR
+state,1436,nan,OR
+state,1437,nan,NE
+state,1454,nan,CO
+state,1458,nan,CO
+state,1469,nan,CT
+state,1474,nan,LA
+state,1477,nan,LA
+state,1491,nan,PA
+state,1499,nan,MN
+state,1510,nan,OR
+state,1515,nan,TX
+state,1518,nan,OR
+state,1527,nan,CO
+state,1537,nan,PA
+state,1545,nan,WA
+state,1549,nan,WA
+state,1553,nan,CO
+state,1578,nan,CO
+state,1587,nan,CO
+state,1591,nan,CO
+state,1598,nan,NC
+state,1602,nan,NC
+state,1607,nan,CO
+state,1610,nan,CO
+state,1627,nan,IN
+state,1629,nan,MI
+state,1640,nan,TX
+state,1660,nan,NC
+state,1669,nan,AZ
+state,1676,nan,CO
+state,1683,nan,TX
+state,1684,nan,TX
+state,1693,nan,GA
+state,1701,nan,WA
+state,1710,nan,CO
+state,1712,nan,CO
+state,1716,nan,CO
+state,1717,nan,CO
+state,1721,nan,IL
+state,1724,nan,IL
+state,1728,nan,IL
+state,1747,nan,PA
+state,1761,nan,MI
+state,1766,nan,MI
+state,1778,nan,CA
+state,1787,nan,AZ
+state,1791,nan,AZ
+state,1794,nan,AZ
+state,1801,nan,AZ
+state,1809,nan,CA
+state,1812,nan,NM
+state,1816,nan,NM
+state,1820,nan,WA
+state,1826,nan,MO
+state,1847,nan,CA
+state,1848,nan,CA
+state,1850,nan,CA
+state,1851,nan,CA
+state,1855,nan,CO
+state,1871,nan,NY
+state,1877,nan,NY
+state,1885,nan,CO
+state,1889,nan,CO
+state,1891,nan,CO
+state,1892,nan,CO
+state,1904,nan,PA
+state,1909,nan,PA
+state,1923,nan,ID
+state,1944,nan,OR
+state,1950,nan,MS
+state,1957,nan,TX
+state,1959,nan,TX
+state,1963,nan,TX
+state,1968,nan,TX
+state,2015,nan,WI
+state,2039,nan,IN
+state,2041,nan,IN
+state,2042,nan,IN
+state,2076,nan,MN
+state,2100,nan,CA
+state,2109,nan,KS
+state,2110,nan,KS
+state,2122,nan,MT
+state,2144,nan,VT
+state,2149,nan,WY
+state,2159,nan,CA
+state,2196,nan,IN
+state,2205,nan,CO
+state,2210,nan,NM
+state,2211,nan,NC
+state,2215,nan,PA
+state,2223,nan,TX
+state,2248,nan,CT
+state,2249,nan,CT
+state,2251,nan,CT
+state,2258,nan,UT
+state,2276,nan,IN
+state,2277,nan,IN
+state,2286,nan,CO
+state,2288,nan,CO
+state,2295,nan,CO
+state,2296,nan,CO
+state,2310,nan,MI
+state,2314,nan,PA
+state,2333,nan,OH
+state,2358,nan,OR
+state,2359,nan,OR
+state,2361,nan,IL
+state,2363,nan,IL
+state,2373,nan,VA
+state,2374,nan,VA
+state,2402,nan,CO
+state,2410,nan,CO

@@ -1,0 +1,4 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+sched_dep_time,1935,12:00 a.??m@@.,12:00 p.m.,12:00 a.m.
+act_arr_time,1474,12:21 a.$m@@.,12:21 p.m.,12:21 a.m.
+act_arr_time,2053,1#2:09 p.m.$,2:09 p.m.,12:09 p.m.

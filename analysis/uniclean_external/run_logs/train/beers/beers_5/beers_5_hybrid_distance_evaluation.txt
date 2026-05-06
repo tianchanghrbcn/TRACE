@@ -1,0 +1,13 @@
+Attribute: id, MSE: nan, Jaccard: 0.12011173184357538
+Attribute: beer_name, MSE: nan, Jaccard: 0.14781623403378652
+Attribute: style, MSE: nan, Jaccard: 0.5772798593467032
+Attribute: ounces, MSE: nan, Jaccard: 0.943113253546334
+检查你指定的属性 abv 是否为数值型！
+Attribute: abv, MSE: nan, Jaccard: 0.6656582995998226
+检查你指定的属性 ibu 是否为数值型！
+Attribute: ibu, MSE: nan, Jaccard: 0.47529131963305604
+Attribute: brewery_id, MSE: nan, Jaccard: 0.2583243563624037
+Attribute: brewery_name, MSE: nan, Jaccard: 0.09083236855257582
+Attribute: city, MSE: nan, Jaccard: 0.10727012670227598
+Attribute: state, MSE: nan, Jaccard: 0.3864346529098469
+加权混合距离: 0.188606610126519

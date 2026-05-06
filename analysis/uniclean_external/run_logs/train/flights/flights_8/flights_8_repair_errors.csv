@@ -1,0 +1,5 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+act_dep_time,1443,1??0:20 a.m.,12:20 a.m.,10:20 a.m.
+act_arr_time,225,1#0:30 p.m.,12:30 a.m.,10:30 p.m.
+act_arr_time,707,12:15 a@@.m.,12:15 p.m.,12:15 a.m.
+act_arr_time,1387,1#1:32 %a.m.,1:32 a.m.,11:32 a.m.

@@ -1,0 +1,27 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+brewery_name,180,Back Forty Beer Company,Back F@@orty Beer% Company,Back Forty Beer Company
+brewery_name,266,Big Storm Brewing Company,Big Storm Br%ewing Comp@@any,Big Storm Brewing Company
+brewery_name,543,Carolina Beer & Beverage,Carolina Beer & ??Beverage,Carolina Beer & Beverage
+brewery_name,545,nan,Carolina Beer & ??Beverage,Carolina Beer & Beverage
+brewery_name,564,Catawba Valley Brewing Company,Ca%tawba Valley Brewing Company,Catawba Valley Brewing Company
+brewery_name,638,nan,Coastal Extreme Brewing Compan$y,Coastal Extreme Brewing Company
+brewery_name,639,nan,Coastal Extreme Brewing Compan$y,Coastal Extreme Brewing Company
+brewery_name,775,nan,Fat Head's?? Brewer@@y,Fat Head's Brewery
+brewery_name,1218,nan,Lonerider Brewing Company%,Lonerider Brewing Company
+brewery_name,1832,Seven Brides Brewery,Seven Brides$ Brew$ery,Seven Brides Brewery
+city,309,nan,Eugen$e,Eugene
+city,984,Westerly,We##sterly,Westerly
+city,1232,Menominie,Menominie$,Menominie
+state,124,nan,O@@#H,OH
+state,329,FL,??F$L,FL
+state,331,nan,??F$L,FL
+state,564,NC,%NC$,NC
+state,1352,MI,??@@MI,MI
+state,1624,IN,I$N,IN
+state,1693,GA,G%A,GA
+state,1809,CA,$CA%,CA
+state,1810,nan,$CA%,CA
+state,2353,nan,%NH,NH
+state,2354,NH,%NH,NH
+state,2355,nan,%NH,NH
+state,2394,NH,%NH$,NH

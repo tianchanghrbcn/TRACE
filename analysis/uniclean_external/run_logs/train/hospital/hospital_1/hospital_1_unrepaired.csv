@@ -1,0 +1,205 @@
+Attribute,Index,Dirty Value,Clean Value
+ProviderNumber,18,empty,10019
+ProviderNumber,34,empty,10001
+ProviderNumber,79,empty,10006
+ProviderNumber,92,empty,10006
+ProviderNumber,108,empty,10007
+ProviderNumber,148,empty,10009
+ProviderNumber,158,empty,10009
+ProviderNumber,164,empty,10009
+ProviderNumber,193,empty,10010
+ProviderNumber,244,empty,10012
+ProviderNumber,251,empty,10015
+ProviderNumber,263,empty,10015
+ProviderNumber,292,empty,10016
+ProviderNumber,303,empty,10018
+ProviderNumber,315,empty,10038
+ProviderNumber,326,empty,10038
+ProviderNumber,334,empty,10055
+ProviderNumber,356,empty,10086
+ProviderNumber,401,empty,10108
+ProviderNumber,405,empty,10108
+ProviderNumber,446,empty,20017
+ProviderNumber,532,empty,10023
+ProviderNumber,559,empty,10024
+ProviderNumber,627,empty,10029
+ProviderNumber,640,empty,10029
+ProviderNumber,655,empty,10032
+ProviderNumber,670,empty,10033
+ProviderNumber,688,empty,10033
+ProviderNumber,696,empty,10034
+ProviderNumber,714,empty,10034
+ProviderNumber,731,empty,10035
+ProviderNumber,746,empty,10036
+ProviderNumber,791,empty,10039
+ProviderNumber,795,empty,10039
+ProviderNumber,802,empty,10039
+ProviderNumber,846,empty,10043
+ProviderNumber,852,empty,10043
+ProviderNumber,886,empty,10045
+ProviderNumber,909,empty,10046
+ProviderNumber,914,empty,10046
+ProviderNumber,928,empty,10046
+ProviderNumber,934,empty,10047
+ProviderNumber,945,empty,10047
+ProviderNumber,963,empty,10049
+ProviderNumber,973,empty,10049
+ProviderNumber,984,empty,10050
+ProviderNumber,987,empty,10050
+ProviderNumber,988,empty,10050
+HospitalName,963,empty,medical center enterprise
+CountyName,354,empty,morgan
+EmergencyService,354,empty,yes
+Condition,6,empty,surgical infection prevention
+Condition,233,empty,pneumonia
+MeasureCode,6,empty,scip-inf-6
+MeasureCode,42,empty,scip-inf-6
+MeasureCode,89,empty,scip-inf-2
+MeasureCode,119,empty,scip-vte-2
+MeasureCode,176,empty,ami-8a
+MeasureCode,219,empty,scip-vte-2
+MeasureCode,220,empty,ami-1
+MeasureCode,233,empty,pn-4
+MeasureCode,245,empty,ami-1
+MeasureCode,360,empty,ami-7a
+MeasureCode,388,empty,hf-2
+MeasureCode,391,empty,pn-2
+MeasureCode,408,empty,pn-7
+MeasureCode,416,empty,ami-2
+MeasureCode,492,empty,ami-1
+MeasureCode,551,empty,hf-3
+MeasureCode,575,empty,hf-2
+MeasureCode,603,empty,pn-2
+MeasureCode,654,empty,pn-3b
+MeasureCode,678,empty,pn-2
+MeasureCode,685,empty,scip-inf-1
+MeasureCode,696,empty,ami-5
+MeasureCode,700,empty,hf-2
+MeasureCode,725,empty,hf-2
+MeasureCode,744,empty,ami-3
+MeasureCode,774,empty,scip-vte-2
+MeasureCode,790,empty,pn-3b
+MeasureCode,803,empty,ami-1
+MeasureCode,826,empty,scip-vte-1
+MeasureCode,900,empty,scip-inf-6
+MeasureCode,905,empty,cac-3
+MeasureCode,917,empty,pn-2
+MeasureCode,931,empty,ami-1
+MeasureCode,949,empty,scip-inf-1
+MeasureCode,961,empty,ami-7a
+MeasureCode,971,empty,pn-6
+MeasureCode,983,empty,ami-3
+MeasureCode,993,empty,pn-3b
+MeasureName,89,empty,surgery patients who were given the  right kind  of antibiotic to help prevent infection
+MeasureName,220,empty,heart attack patients given aspirin at arrival
+MeasureName,654,empty,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics
+MeasureName,803,empty,heart attack patients given aspirin at arrival
+Score,52,empty,78%
+Score,120,empty,0%
+Score,124,empty,0%
+Score,140,empty,100%
+Score,146,empty,100%
+Score,192,empty,100%
+Score,199,empty,99%
+Score,204,empty,98%
+Score,273,empty,100%
+Score,282,empty,100%
+Score,286,empty,92%
+Score,292,empty,100%
+Score,345,empty,98%
+Score,356,empty,100%
+Score,375,empty,94%
+Score,455,empty,97%
+Score,471,empty,83%
+Score,511,empty,100%
+Score,530,empty,94%
+Score,531,empty,95%
+Score,542,empty,95%
+Score,543,empty,92%
+Score,550,empty,90%
+Score,553,empty,85%
+Score,582,empty,85%
+Score,677,empty,100%
+Score,690,empty,79%
+Score,694,empty,100%
+Score,696,empty,75%
+Score,742,empty,100%
+Score,743,empty,60%
+Score,750,empty,91%
+Score,781,empty,100%
+Score,798,empty,93%
+Score,819,empty,96%
+Score,832,empty,100%
+Score,869,empty,91%
+Score,917,empty,99%
+Score,926,empty,79%
+Score,930,empty,84%
+Score,946,empty,50%
+Score,976,empty,100%
+Score,994,empty,83%
+Sample,12,empty,4 patients
+Sample,17,empty,149 patients
+Sample,25,empty,0 patients
+Sample,67,empty,237 patients
+Sample,83,empty,65 patients
+Sample,140,empty,2 patients
+Sample,143,empty,4 patients
+Sample,146,empty,1 patients
+Sample,152,empty,35 patients
+Sample,159,empty,51 patients
+Sample,164,empty,7 patients
+Sample,188,empty,66 patients
+Sample,218,empty,229 patients
+Sample,267,empty,15 patients
+Sample,285,empty,116 patients
+Sample,287,empty,96 patients
+Sample,316,empty,14 patients
+Sample,343,empty,957 patients
+Sample,353,empty,242 patients
+Sample,369,empty,85 patients
+Sample,370,empty,62 patients
+Sample,372,empty,19 patients
+Sample,393,empty,4 patients
+Sample,399,empty,75 patients
+Sample,408,empty,89 patients
+Sample,426,empty,69 patients
+Sample,437,empty,37 patients
+Sample,439,empty,26 patients
+Sample,450,empty,223 patients
+Sample,471,empty,6 patients
+Sample,490,empty,50 patients
+Sample,517,empty,134 patients
+Sample,535,empty,412 patients
+Sample,547,empty,0 patients
+Sample,559,empty,180 patients
+Sample,573,empty,0 patients
+Sample,574,empty,137 patients
+Sample,603,empty,31 patients
+Sample,633,empty,89 patients
+Sample,673,empty,47 patients
+Sample,683,empty,242 patients
+Sample,687,empty,317 patients
+Sample,701,empty,30 patients
+Sample,704,empty,76 patients
+Sample,714,empty,33 patients
+Sample,753,empty,77 patients
+Sample,755,empty,43 patients
+Sample,757,empty,64 patients
+Sample,794,empty,409 patients
+Sample,795,empty,123 patients
+Sample,814,empty,255 patients
+Sample,818,empty,153 patients
+Sample,829,empty,1 patients
+Sample,837,empty,4 patients
+Sample,875,empty,19 patients
+Sample,903,empty,4 patients
+Sample,904,empty,4 patients
+Sample,934,empty,6 patients
+Sample,937,empty,0 patients
+Sample,990,empty,7 patients
+Sample,995,empty,105 patients
+Stateavg,388,empty,al_hf-2
+Stateavg,408,empty,al_pn-7
+Stateavg,803,empty,al_ami-1
+Stateavg,917,empty,al_pn-2
+Stateavg,993,empty,al_pn-3b

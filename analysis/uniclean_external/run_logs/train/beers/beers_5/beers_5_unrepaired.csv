@@ -1,0 +1,1687 @@
+Attribute,Index,Dirty Value,Clean Value
+id,13,10747.836217767284,2097
+id,26,2751.7168915578573,802
+id,30,4513.247161048477,797
+id,31,3585.2798679863895,796
+id,61,nan,47
+id,66,nan,515
+id,74,nan,2682
+id,77,nan,2679
+id,88,10218.379468974768,2401
+id,113,nan,753
+id,153,nan,2495
+id,158,nan,343
+id,175,nan,1483
+id,180,nan,1875
+id,182,4399.284071857309,965
+id,190,8123.18787234219,1644
+id,194,nan,1343
+id,213,nan,1806
+id,216,nan,2420
+id,230,8001.063202401001,1901
+id,231,5232.927613238862,1261
+id,236,5460.574682117728,1157
+id,244,nan,1003
+id,246,nan,1001
+id,249,10025.481267162637,2586
+id,250,nan,2585
+id,262,nan,159
+id,265,nan,2096
+id,309,7305.415523580402,1371
+id,344,nan,1421
+id,354,nan,633
+id,364,5750.584522673826,1143
+id,365,7312.0712374335,1395
+id,368,8282.952356477674,2596
+id,386,nan,1799
+id,394,nan,2542
+id,395,11053.91502209492,2541
+id,413,12669.445313687876,2137
+id,416,8422.66441824848,2091
+id,427,nan,1949
+id,441,nan,873
+id,444,nan,671
+id,445,nan,670
+id,451,6498.454497004514,1096
+id,459,nan,756
+id,466,nan,383
+id,472,14059.158170693046,2552
+id,475,nan,2123
+id,482,nan,2464
+id,497,11525.916798519444,2653
+id,499,nan,2252
+id,510,nan,793
+id,513,3286.2790156519777,790
+id,526,10716.476455834338,2067
+id,551,nan,1940
+id,573,4931.198675811263,1218
+id,581,nan,1646
+id,589,nan,2016
+id,592,nan,2380
+id,609,6442.510172119702,1694
+id,610,nan,1693
+id,615,nan,1141
+id,640,nan,2061
+id,657,nan,940
+id,668,nan,1602
+id,681,nan,2078
+id,694,nan,1734
+id,718,nan,2015
+id,731,nan,450
+id,735,1392.5196548580757,446
+id,751,nan,1642
+id,777,6810.598222675181,1455
+id,783,6802.318259898997,1731
+id,789,nan,2027
+id,798,nan,1662
+id,843,7842.925547920448,1565
+id,845,9829.296356973908,1874
+id,853,nan,2309
+id,868,12908.102169990463,2526
+id,883,nan,1260
+id,893,7822.032893169822,1777
+id,905,3092.635885488851,548
+id,912,1626.3948797369094,309
+id,913,1410.5243283968302,308
+id,930,8709.332817722667,1990
+id,938,nan,639
+id,947,2516.3378297013232,436
+id,958,1857.2803184684656,404
+id,968,nan,1028
+id,989,nan,984
+id,1006,3416.6242916786205,1134
+id,1026,nan,770
+id,1028,nan,610
+id,1037,nan,2179
+id,1039,6867.60701920864,1894
+id,1047,8132.84633369113,2295
+id,1065,6642.212683256301,1354
+id,1070,nan,1004
+id,1082,9372.060580091242,2394
+id,1086,10785.620428254597,2390
+id,1104,7925.208532648806,1555
+id,1119,nan,2673
+id,1138,nan,1254
+id,1141,1917.487581169861,468
+id,1147,nan,1557
+id,1178,nan,1666
+id,1181,nan,2459
+id,1185,nan,590
+id,1186,nan,781
+id,1217,8831.616515237441,2327
+id,1219,nan,1926
+id,1232,nan,1122
+id,1235,nan,2032
+id,1261,nan,1626
+id,1262,nan,1625
+id,1267,7368.422470032365,1355
+id,1276,7101.49510887383,1783
+id,1313,144.50026097037951,31
+id,1316,5555.652439469448,1047
+id,1332,7657.520638372008,1814
+id,1333,nan,587
+id,1350,8763.771319395826,1612
+id,1355,9699.869893137142,1884
+id,1363,7705.430994348483,2359
+id,1381,nan,645
+id,1386,8559.569357455757,2159
+id,1387,nan,2157
+id,1412,3676.6032972158177,625
+id,1430,nan,314
+id,1439,nan,1147
+id,1451,nan,1690
+id,1461,8364.79208269905,1417
+id,1480,nan,2041
+id,1489,8071.963110458701,1621
+id,1493,4701.65074936731,1304
+id,1494,12406.781776053467,2692
+id,1527,6893.225129637718,1431
+id,1528,nan,1430
+id,1540,7538.822213023176,1381
+id,1541,nan,900
+id,1558,nan,1751
+id,1572,2501.240291699089,726
+id,1587,4179.1365608645965,803
+id,1589,nan,786
+id,1592,3828.4936617592552,744
+id,1596,nan,734
+id,1602,4275.063428554393,1166
+id,1604,nan,1908
+id,1617,4544.199872128917,890
+id,1621,6031.489476658505,1930
+id,1641,15399.19918477034,2635
+id,1647,nan,1518
+id,1655,5036.9721719106265,847
+id,1683,9591.940913176291,2370
+id,1695,7905.610842602291,2515
+id,1757,nan,1099
+id,1762,nan,1280
+id,1768,nan,1577
+id,1770,7360.596297050607,1575
+id,1784,8823.539490870846,1867
+id,1790,nan,1995
+id,1801,4081.794527006164,764
+id,1824,4683.864575064584,1078
+id,1833,nan,917
+id,1850,nan,1338
+id,1851,nan,1295
+id,1878,nan,425
+id,1879,nan,424
+id,1882,7916.613692056972,1942
+id,1890,nan,70
+id,1921,1943.2283616520433,393
+id,1930,nan,1298
+id,1949,nan,2297
+id,1951,5546.036466972079,1745
+id,1961,nan,1010
+id,1970,nan,763
+id,1973,nan,2136
+id,1988,5748.1161535789715,1205
+id,2007,nan,816
+id,2013,nan,141
+id,2036,8680.798471359925,2085
+id,2097,3770.761706296969,1164
+id,2108,nan,1063
+id,2115,2282.6488104007603,537
+id,2128,nan,2447
+id,2150,nan,1197
+id,2152,nan,1079
+id,2153,318.4515700194174,94
+id,2166,nan,1278
+id,2211,nan,594
+id,2214,14111.792061289683,2445
+id,2246,9499.59936544947,2037
+id,2255,nan,1723
+id,2262,10392.52329727263,2372
+id,2288,3996.628709116826,907
+id,2292,2677.0308431907615,466
+id,2319,6386.095648182796,1846
+id,2320,10248.80611758586,1845
+id,2334,12371.753977480565,2221
+id,2352,8477.939711866675,2340
+id,2356,14879.324539972433,2570
+id,2363,nan,1364
+id,2386,nan,2047
+id,2398,nan,1514
+id,2404,nan,1045
+beer_name,11,nan,Sophomoric Saison
+beer_name,17,Cherried A@@way,Cherried Away
+beer_name,18,nan,Rhubarbarian
+beer_name,20,%He Said Balti$c-Style Porter,He Said Baltic-Style Porter
+beer_name,21,nan,He Said Belgian-Style Tripel
+beer_name,27,nan,Hell or High Watermelon Wheat (2009)
+beer_name,34,nan,Bitter American (2011)
+beer_name,50,Contact High@@,Contact High
+beer_name,54,Scare%crow,Scarecrow
+beer_name,68,Cit#ra Ass Down,Citra Ass Down
+beer_name,76,S#ho'nuff,Sho'nuff
+beer_name,97,nan,Liberty Ale
+beer_name,106,nan,Barney Flats Oatmeal Stout
+beer_name,131,nan,Porter (a/k/a Black Gold Porter)
+beer_name,143,Aslan IP@@A,Aslan IPA
+beer_name,146,nan,Independence Pass Ale
+beer_name,149,nan,Poop Deck Porter
+beer_name,160,P%earl-Snap,Pearl-Snap
+beer_name,165,nan,White Rascal
+beer_name,183,Grapefr#uit S#culpin,Grapefruit Sculpin
+beer_name,192,nan,Thai.p.a
+beer_name,203,Wonde??rstuf??f,Wonderstuff
+beer_name,247,nan,Dark Star
+beer_name,254,nan,Scape Goat Pale Ale
+beer_name,274,nan,Single Hop Ale
+beer_name,293,Grand Rabb??i#ts,Grand Rabbits
+beer_name,294,nan,1800 Big Log Wheat (2012)
+beer_name,317,nan,Little Boss
+beer_name,351,nan,Demshitz Brown Ale
+beer_name,353,B$rush Creek Blon@@de,Brush Creek Blonde
+beer_name,355,N??oche Dulce,Noche Dulce
+beer_name,400,nan,Paris
+beer_name,406,@@Dubbe??licious,Dubbelicious
+beer_name,407,nan,Psychopomp
+beer_name,409,nan,Earth-Like Planets
+beer_name,410,Sk??i Patrol,Ski Patrol
+beer_name,425,A$gent a Deux,Agent a Deux
+beer_name,426,Belgian% Wit,Belgian Wit
+beer_name,429,Le Fla#neur $Ale,Le Flaneur Ale
+beer_name,431,nan,Trebuchet Double IPA
+beer_name,445,Vivant Tripel (2$012),Vivant Tripel (2012)
+beer_name,447,K#ludde,Kludde
+beer_name,448,nan,Farm Hand
+beer_name,458,nan,East India Pale Ale
+beer_name,463,nan,Brooklyn Lager (12 oz.)
+beer_name,479,Pale #Alement,Pale Alement
+beer_name,481,Kre$amed% Corn,Kreamed Corn
+beer_name,519,nan,Remain in Light
+beer_name,532,nan,Dark Voyage Black IPA (2013)
+beer_name,537,Mu@@@@tiny IPA,Mutiny IPA
+beer_name,544,Carolina Blonde# (2006%),Carolina Blonde (2006)
+beer_name,549,%Epit??ome,Epitome
+beer_name,563,nan,Seiche Scottish Ale
+beer_name,572,nan,All American Blonde Ale
+beer_name,573,nan,All American Red Ale
+beer_name,576,nan,Main St. Virginia Ale
+beer_name,577,Ray Ray’s Pale$ Ale,Ray Ray’s Pale Ale
+beer_name,585,Missi??le IPA,Missile IPA
+beer_name,611,nan,Hopped on the High Seas (Ahtanum)
+beer_name,618,nan,Maduro Brown Ale
+beer_name,621,Tocoba@@ga Red@@ Ale,Tocobaga Red Ale
+beer_name,636,Rhod??e I#sland Blueberry,Rhode Island Blueberry
+beer_name,640,nan,Big Blue Van
+beer_name,656,nan,WinterWonderGrass Festival Ale
+beer_name,664,nan,3 Picket Porter
+beer_name,665,Rusty N$ail?? Pale Ale,Rusty Nail Pale Ale
+beer_name,668,Bear Butte N??ut @@Brown Ale,Bear Butte Nut Brown Ale
+beer_name,688,The# Public,The Public
+beer_name,695,nan,Dead Armadillo Amber Ale
+beer_name,735,nan,Dolores River Mild
+beer_name,739,nan,Apricot Blonde
+beer_name,765,nan,Voodoo
+beer_name,779,Norns Rogge$nbier,Norns Roggenbier
+beer_name,781,nan,Moirai India Pale Ale
+beer_name,788,nan,Mastermind
+beer_name,791,nan,Hodad Porter
+beer_name,794,FMB?? 101@@,FMB 101
+beer_name,800,nan,Fascist Pig Ale
+beer_name,828,nan,Java the Hop
+beer_name,829,nan,Next Adventure Black IPA
+beer_name,843,Cente$nnial IPA,Centennial IPA
+beer_name,851,nan,The Gadget
+beer_name,859,S??@@unbru Kölsch,Sunbru Kölsch
+beer_name,874,nan,Yo Soy Un Berliner
+beer_name,881,nan,Interurban IPA
+beer_name,886,nan,Cack-A-Lacky
+beer_name,902,Burning Bush Smoked IP@@A,Burning Bush Smoked IPA
+beer_name,934,nan,Great Crescent Blonde Ale
+beer_name,936,nan,Great Crescent Oktoberfest Lager
+beer_name,953,nan,Orabelle
+beer_name,970,nan,Roller Dam Red Ale
+beer_name,977,Redban@@d Stout#,Redband Stout
+beer_name,981,nan,Wild Trail Pale Ale
+beer_name,987,Hazy Day @@Belgian-Style Wit,Hazy Day Belgian-Style Wit
+beer_name,991,nan,Flagship Ale
+beer_name,993,3 Scro#oges,3 Scrooges
+beer_name,1003,nan,Hale's Pale American Ale
+beer_name,1004,Heyoka ??IPA,Heyoka IPA
+beer_name,1013,Half Full Br%ight Ale,Half Full Bright Ale
+beer_name,1015,Hangar 24 #Helles Lager,Hangar 24 Helles Lager
+beer_name,1026,$Harpoon $IPA (2012),Harpoon IPA (2012)
+beer_name,1034,Sunset $Amber,Sunset Amber
+beer_name,1036,Hapa Brown A$le,Hapa Brown Ale
+beer_name,1045,nan,Habitus IPA
+beer_name,1052,The% 12th Can#�?American Pale Ale (APA),The 12th Can�?American Pale Ale (APA)
+beer_name,1058,P#rovision,Provision
+beer_name,1070,The O@@ne They Call Zoe,The One They Call Zoe
+beer_name,1090,nan,Hopworks IPA
+beer_name,1093,nan,Rise-Up Red (2014)
+beer_name,1098,nan,Laka Laka Pineapple
+beer_name,1142,nan,Joseph James American Lager
+beer_name,1157,KelSo #Pils@@ner,KelSo Pilsner
+beer_name,1166,Double $Haul IPA,Double Haul IPA
+beer_name,1177,King St??reet IPA,King Street IPA
+beer_name,1184,$Longboard Island $Lager,Longboard Island Lager
+beer_name,1189,E$levated IPA,Elevated IPA
+beer_name,1200,Dulu??ch@@an India Pale Ale,Duluchan India Pale Ale
+beer_name,1205,nan,Miner's Gold Hefeweizen
+beer_name,1209,nan,Adam's Stout
+beer_name,1222,nan,Blackbeary Wheat
+beer_name,1226,nan,Mosaic Single Hop IPA
+beer_name,1244,nan,Galaxy High
+beer_name,1246,Thu#nder Snow,Thunder Snow
+beer_name,1248,LIF??T,LIFT
+beer_name,1258,nan,Golden Trout Pilsner
+beer_name,1279,Ac??e Hol@@e American Pale Ale,Ace Hole American Pale Ale
+beer_name,1281,nan,River House
+beer_name,1283,nan,Rubberneck Red
+beer_name,1286,Day Break@@% 4-Grain Breakfast Beer,Day Break 4-Grain Breakfast Beer
+beer_name,1298,Sar#anac Whit#e IPA,Saranac White IPA
+beer_name,1300,Saranac Pa@@le $Ale (12 oz.),Saranac Pale Ale (12 oz.)
+beer_name,1310,Mana W??heat,Mana Wheat
+beer_name,1314,nan,Pit Stop Chocolate Porter
+beer_name,1321,Tsunami IPA#,Tsunami IPA
+beer_name,1327,G#ator Tail Brown A#le,Gator Tail Brown Ale
+beer_name,1330,nan,Mickey Finn's Amber Ale
+beer_name,1340,Graz#ia@@s,Grazias
+beer_name,1360,Flaming Dams@@el L%ager (2010),Flaming Damsel Lager (2010)
+beer_name,1365,Hub??er,Huber
+beer_name,1373,Box??e#r Ice,Boxer Ice
+beer_name,1386,nan,City of the Sun
+beer_name,1395,nan,Sweet Georgia Brown
+beer_name,1408,Towh??e#ad,Towhead
+beer_name,1419,Mustang Gol$den Ale,Mustang Golden Ale
+beer_name,1423,nan,Autocrat Coffee Milk Stout
+beer_name,1438,nan,Nebraska India Pale Ale
+beer_name,1453,%Shift# (1),Shift (1)
+beer_name,1457,Fat Ti#re Amber $Ale,Fat Tire Amber Ale
+beer_name,1464,Atlan??tic Amber #Ale (2004),Atlantic Amber Ale (2004)
+beer_name,1469,Elm City Lager (200$7),Elm City Lager (2007)
+beer_name,1471,Sea Hag IPA (Curre#nt),Sea Hag IPA (Current)
+beer_name,1476,nan,NOLA Brown Ale
+beer_name,1477,NOLA %Bl$onde Ale,NOLA Blonde Ale
+beer_name,1485,nan,Plum Island Belgian White
+beer_name,1496,Wall'#s End,Wall's End
+beer_name,1510,nan,Watershed IPA
+beer_name,1519,Occiden@@tal Dunk#el,Occidental Dunkel
+beer_name,1527,Gh$ost Rider Pale Ale (2013),Ghost Rider Pale Ale (2013)
+beer_name,1553,nan,Centennial State Pale Ale
+beer_name,1569,nan,Gordon Imperial Red (2010)
+beer_name,1575,HGH (Home Grown Hop??s): Part# Duh,HGH (Home Grown Hops): Part Duh
+beer_name,1578,G'KNIG#HT (12 oz.),G'KNIGHT (12 oz.)
+beer_name,1591,Dale's Pale A%le (20@@08),Dale's Pale Ale (2008)
+beer_name,1593,Dale's Pale Ale (2$004),Dale's Pale Ale (2004)
+beer_name,1626,Farmer's Daug??hter Wheat,Farmer's Daughter Wheat
+beer_name,1628,nan,Hotbox Brown
+beer_name,1649,Black Bay Milk St??#out,Black Bay Milk Stout
+beer_name,1653,nan,Sweet Potato Ale
+beer_name,1674,Over the Rail P??a#le Ale,Over the Rail Pale Ale
+beer_name,1681,nan,Rahr's Blonde
+beer_name,1694,nan,Farmer's Daughter Blonde
+beer_name,1699,H????appy Cider,Happy Cider
+beer_name,1703,Nectar of #??the Hops,Nectar of the Hops
+beer_name,1709,Redacted Rye I??PA,Redacted Rye IPA
+beer_name,1710,Elevation Triple India Pale Al$#e,Elevation Triple India Pale Ale
+beer_name,1716,Mine#r's Gold,Miner's Gold
+beer_name,1731,nan,Dad
+beer_name,1732,nan,Panther
+beer_name,1761,nan,Cal and Co. Black Cherry Porter
+beer_name,1775,nan,Alpha Blackback
+beer_name,1776,nan,Kiss Off IPA
+beer_name,1797,Sex Panther (2014)??,Sex Panther (2014)
+beer_name,1804,nan,Devil’s Ale (2010)
+beer_name,1812,B%lack IPA%,Black IPA
+beer_name,1831,nan,Dry Hard Cider
+beer_name,1834,nan,Seventh Son of a Seventh Son
+beer_name,1836,Seve%nth Son %Hopped Red Ale,Seventh Son Hopped Red Ale
+beer_name,1842,nan,Shipyard Summer Ale
+beer_name,1845,nan,Nooner
+beer_name,1848,nan,CANfusion Rye Bock
+beer_name,1852,To%rp#edo,Torpedo
+beer_name,1869,Ri#ghteous Ale,Righteous Ale
+beer_name,1870,Be@@n$gali Tiger,Bengali Tiger
+beer_name,1871,nan,3Beans
+beer_name,1890,True Blon%de Ale,True Blonde Ale
+beer_name,1895,nan,Initial Point India Pale Ale
+beer_name,1903,Helles Golden ??Lage#r,Helles Golden Lager
+beer_name,1905,Odys@@se??y Imperial IPA,Odyssey Imperial IPA
+beer_name,1912,nan,Rule G IPA
+beer_name,1922,nan,Thanksgiving Ale
+beer_name,1930,Sockeye Belgian Style Summer $Al$e,Sockeye Belgian Style Summer Ale
+beer_name,1953,Suzy@@ B Dirty Blonde Ale,Suzy B Dirty Blonde Ale
+beer_name,1971,nan,Ball & Chain (2014)
+beer_name,1984,Special?? Ambe#r,Special Amber
+beer_name,1993,S#team Engine Lage#r,Steam Engine Lager
+beer_name,2011,nan,Point Oktoberfest
+beer_name,2017,$Wisco Disco,Wisco Disco
+beer_name,2025,Straub Beer (Curr%ent),Straub Beer (Current)
+beer_name,2038,Bourbon Barrel Batch %666: Sympathy for the Devil,Bourbon Barrel Batch 666: Sympathy for the Devil
+beer_name,2040,P??ort Barrel Wee Mac,Port Barrel Wee Mac
+beer_name,2051,nan,Stupid Sexy Flanders
+beer_name,2094,S??weetWater IPA,SweetWater IPA
+beer_name,2105,nan,Ginger Peach Saison
+beer_name,2108,nan,Vanilla Bean Buffalo Sweat
+beer_name,2136,Recre$ationAle,RecreationAle
+beer_name,2143,nan,Beelzebub
+beer_name,2171,Three Way Pale Al$??e,Three Way Pale Ale
+beer_name,2172,nan,Rise to the Top
+beer_name,2175,nan,Knotty Blonde Ale
+beer_name,2182,nan,Pale
+beer_name,2197,nan,Turnrow Harvest Ale
+beer_name,2207,nan,Preservation IPA
+beer_name,2245,nan,Outlaw IPA (2015)
+beer_name,2250,$Worker$s Comp Saison,Workers Comp Saison
+beer_name,2256,nan,SUM'R
+beer_name,2266,Dr%aught Hard Apple Cider,Draught Hard Apple Cider
+beer_name,2273,nan,Old Pro
+beer_name,2278,Drago$nf%ly IPA,Dragonfly IPA
+beer_name,2279,Lee Hill Series Vol. 5% - Bel#gian Style Quadrupel Ale,Lee Hill Series Vol. 5 - Belgian Style Quadrupel Ale
+beer_name,2282,nan,Lee Hill Series Vol. 3 - Barrel Aged Imperial Stout
+beer_name,2299,Squatters Full$ Suspension Pale Ale,Squatters Full Suspension Pale Ale
+beer_name,2314,nan,White Magick of the Sun
+beer_name,2322,nan,Strawberry White
+beer_name,2332,E#rmal's??,Ermal's
+beer_name,2334,nan,Flyin' Rye
+beer_name,2343,Westfield Oc$toberfest,Westfield Octoberfest
+beer_name,2356,Berliner$ W$eisse,Berliner Weisse
+beer_name,2365,nan,Hop Slayer Double IPA (2011)
+beer_name,2374,nan,Alpha Ale
+beer_name,2380,Ac%e@@ IPA,Ace IPA
+beer_name,2382,#001 Golden?? Amber Lager,#001 Golden Amber Lager
+beer_name,2384,nan,#003 Brown & Robust Porter
+beer_name,2385,#004 Sess@@ion I.P.A.$,#004 Session I.P.A.
+beer_name,2397,nan,Worthy IPA
+beer_name,2402,nan,Patty's Chile Beer
+beer_name,2403,nan,Colorojo Imperial Red Ale
+style,13,nan,Saison / Farmhouse Ale
+style,14,Bel??gian IPA,Belgian IPA
+style,16,nan,Cider
+style,37,Belgian Dark Al@@e,Belgian Dark Ale
+style,70,A#merican?? Double / Imperial IPA,American Double / Imperial IPA
+style,85,Ameri??ca%n Pilsner,American Pilsner
+style,88,nan,American Double / Imperial IPA
+style,106,Oatmeal?? S%tout,Oatmeal Stout
+style,114,Oatmeal St@@out,Oatmeal Stout
+style,124,Cider$@@,Cider
+style,127,Witbi??e??r,Witbier
+style,140,nan,American Porter
+style,167,America%n# Brown Ale,American Brown Ale
+style,172,$Trip#el,Tripel
+style,173,nan,American Amber / Red Ale
+style,175,nan,American Porter
+style,176,nan,American Blonde Ale
+style,192,America%n @@IPA,American IPA
+style,198,nan,Witbier
+style,204,Califor$nia #Common / Steam Beer,California Common / Steam Beer
+style,218,nan,American Pale Wheat Ale
+style,219,nan,Rye Beer
+style,225,nan,American Double / Imperial IPA
+style,227,nan,American Black Ale
+style,257,nan,English Strong Ale
+style,277,nan,American Blonde Ale
+style,280,nan,American Pale Ale (APA)
+style,285,American B%rown A%le,American Brown Ale
+style,297,America#n Amber / Red Ale,American Amber / Red Ale
+style,306,Extra Special / Strong Bitter (E??SB),Extra Special / Strong Bitter (ESB)
+style,321,A@@mer#ican White IPA,American White IPA
+style,325,nan,Altbier
+style,330,nan,Cream Ale
+style,332,A#merican IPA,American IPA
+style,339,nan,Märzen / Oktoberfest
+style,351,Ame@@rican Brown Ale,American Brown Ale
+style,355,American ??Porter,American Porter
+style,357,nan,American IPA
+style,362,@@Märzen #/ Oktoberfest,Märzen / Oktoberfest
+style,402,nan,Saison / Farmhouse Ale
+style,420,Fruit / Vegeta%$ble Beer,Fruit / Vegetable Beer
+style,458,nan,English India Pale Ale (IPA)
+style,478,nan,Fruit / Vegetable Beer
+style,498,$American Double / Imper??ial IPA,American Double / Imperial IPA
+style,510,nan,American IPA
+style,511,nan,American IPA
+style,512,nan,American Pale Ale (APA)
+style,515,nan,American Pale Ale (APA)
+style,519,nan,American Pilsner
+style,522,nan,American Amber / Red Ale
+style,524,nan,English Dark Mild Ale
+style,548,nan,Kölsch
+style,551,nan,American Double / Imperial IPA
+style,555,nan,Cream Ale
+style,559,nan,Witbier
+style,569,nan,Smoked Beer
+style,570,nan,American Pale Ale (APA)
+style,578,Herbed / Spice#d Beer,Herbed / Spiced Beer
+style,618,English Brown A??l@@e,English Brown Ale
+style,623,W#i@@tbier,Witbier
+style,627,nan,Munich Helles Lager
+style,633,A??merican% Pale Wheat Ale,American Pale Wheat Ale
+style,641,nan,American IPA
+style,663,nan,American Blonde Ale
+style,670,Cr$eam A%le,Cream Ale
+style,710,nan,Irish Red Ale
+style,711,nan,American IPA
+style,713,America%n Pale Ale (APA),American Pale Ale (APA)
+style,714,nan,Hefeweizen
+style,717,%#Gose,Gose
+style,744,??Pumpkin@@ Ale,Pumpkin Ale
+style,751,nan,Extra Special / Strong Bitter (ESB)
+style,752,nan,American Amber / Red Lager
+style,766,nan,Czech Pilsener
+style,778,Belg@@ian P#ale Ale,Belgian Pale Ale
+style,784,$Ame#rican IPA,American IPA
+style,807,nan,German Pilsener
+style,808,#American Blonde Ale%,American Blonde Ale
+style,813,American I$#PA,American IPA
+style,830,nan,American IPA
+style,844,Amer$ican IP??A,American IPA
+style,846,nan,American Porter
+style,871,Ameri??can Amber / Red Ale,American Amber / Red Ale
+style,875,nan,American IPA
+style,889,Amer@@ican Amber / Red?? Ale,American Amber / Red Ale
+style,893,Amer@@ican IPA??,American IPA
+style,905,Hefe%weizen,Hefeweizen
+style,919,American Pale ??Wh#eat Ale,American Pale Wheat Ale
+style,921,American Pale?? Lager,American Pale Lager
+style,936,nan,Märzen / Oktoberfest
+style,939,nan,Dortmunder / Export Lager
+style,954,nan,American IPA
+style,962,Fruit /?? Vegetable Beer,Fruit / Vegetable Beer
+style,968,nan,Vienna Lager
+style,982,nan,American Black Ale
+style,1003,nan,American Pale Ale (APA)
+style,1010,A#merican $Blonde Ale,American Blonde Ale
+style,1037,nan,Flanders Red Ale
+style,1038,nan,Belgian IPA
+style,1062,nan,American Strong Ale
+style,1085,nan,American Pale Wheat Ale
+style,1112,nan,American IPA
+style,1120,#American Pale Lager@@,American Pale Lager
+style,1125,Cid#%er,Cider
+style,1139,Hefewe@@izen,Hefeweizen
+style,1149,nan,Kölsch
+style,1154,Ame??rican IPA,American IPA
+style,1173,$American Blonde Ale,American Blonde Ale
+style,1174,nan,American Amber / Red Ale
+style,1188,nan,Hefeweizen
+style,1196,Crea??m Ale,Cream Ale
+style,1202,nan,Kölsch
+style,1213,nan,American Pale Ale (APA)
+style,1236,nan,American Pale Ale (APA)
+style,1251,nan,American Brown Ale
+style,1259,nan,American Amber / Red Ale
+style,1268,American Dou#ble / Imperial IPA,American Double / Imperial IPA
+style,1277,nan,American Pale Ale (APA)
+style,1285,nan,American Double / Imperial IPA
+style,1289,Ameri@@can IPA,American IPA
+style,1296,Fruit / Vegetable Beer@@,Fruit / Vegetable Beer
+style,1308,nan,Witbier
+style,1310,nan,American Pale Wheat Ale
+style,1323,American ??Porter,American Porter
+style,1333,W@@$itbier,Witbier
+style,1335,nan,American IPA
+style,1337,nan,American IPA
+style,1342,Amer#ican Double / Imperial$ IPA,American Double / Imperial IPA
+style,1346,Saison / ??Farmhouse Ale,Saison / Farmhouse Ale
+style,1347,Berli%ner Weissbier,Berliner Weissbier
+style,1363,%Bo$ck,Bock
+style,1372,Light Lager@@,Light Lager
+style,1389,American Amb%er ??/ Red Ale,American Amber / Red Ale
+style,1411,Witb@@ier,Witbier
+style,1419,nan,American Blonde Ale
+style,1421,nan,Light Lager
+style,1423,nan,Milk / Sweet Stout
+style,1457,American Amber / Red Al$e,American Amber / Red Ale
+style,1488,American P#ale Ale (APA),American Pale Ale (APA)
+style,1490,English?? India Pale Ale (IPA)%,English India Pale Ale (IPA)
+style,1492,nan,Irish Red Ale
+style,1503,Ger%man Pilsener,German Pilsener
+style,1505,nan,American IPA
+style,1518,American Pale Wheat A@@le,American Pale Wheat Ale
+style,1523,nan,Scotch Ale / Wee Heavy
+style,1541,American Blond#e Ale,American Blonde Ale
+style,1549,L??ight Lager,Light Lager
+style,1583,nan,American Double / Imperial IPA
+style,1596,nan,American Brown Ale
+style,1603,Am#erican Pale Ale (AP??A),American Pale Ale (APA)
+style,1606,American Pal@@e Ale (APA),American Pale Ale (APA)
+style,1619,Kölsc@@h??,Kölsch
+style,1627,nan,German Pilsener
+style,1633,American ??@@IPA,American IPA
+style,1657,nan,American Amber / Red Ale
+style,1664,nan,American IPA
+style,1675,Czech Pils#ener,Czech Pilsener
+style,1676,nan,American Pale Wheat Ale
+style,1696,Belgian$ IPA,Belgian IPA
+style,1713,nan,American Stout
+style,1714,America??n% Stout,American Stout
+style,1722,Belgian Pale Ale%,Belgian Pale Ale
+style,1737,Cream# A#le,Cream Ale
+style,1740,Wit??bier,Witbier
+style,1744,American IPA@@,American IPA
+style,1747,A#mer??ican IPA,American IPA
+style,1764,nan,Milk / Sweet Stout
+style,1769,nan,American IPA
+style,1777,nan,Kölsch
+style,1802,Amer%ican IPA,American IPA
+style,1804,nan,American Pale Ale (APA)
+style,1812,nan,American Black Ale
+style,1881,Ame??rica$n IPA,American IPA
+style,1895,nan,American IPA
+style,1907,A@@merica@@n IPA,American IPA
+style,1909,nan,Hefeweizen
+style,1911,nan,American Pale Ale (APA)
+style,1924,nan,American IPA
+style,1940,nan,American IPA
+style,1942,nan,Kölsch
+style,1958,nan,American Double / Imperial IPA
+style,1973,Am#erican ??Porter,American Porter
+style,1986,Ci$??der,Cider
+style,1994,nan,American IPA
+style,2005,nan,Märzen / Oktoberfest
+style,2010,nan,Kölsch
+style,2018,American Black Ale@@,American Black Ale
+style,2029,nan,American Pale Ale (APA)
+style,2030,nan,Extra Special / Strong Bitter (ESB)
+style,2041,nan,American IPA
+style,2048,Am#erican IP%A,American IPA
+style,2052,A#merican Porter,American Porter
+style,2057,American Bro??wn Ale,American Brown Ale
+style,2083,Keller Bier / Zwickel Bi%er,Keller Bier / Zwickel Bier
+style,2086,Ame$ri%can IPA,American IPA
+style,2099,A??#merican IPA,American IPA
+style,2105,nan,Saison / Farmhouse Ale
+style,2107,nan,Saison / Farmhouse Ale
+style,2121,Amer??ic#an IPA,American IPA
+style,2149,nan,English Brown Ale
+style,2157,#American Pale Ale (APA),American Pale Ale (APA)
+style,2168,Am%erican Pale Ale (APA),American Pale Ale (APA)
+style,2169,Shand@@y,Shandy
+style,2172,$Cream?? Ale,Cream Ale
+style,2175,Am%erican #Blonde Ale,American Blonde Ale
+style,2198,nan,American IPA
+style,2204,nan,American IPA
+style,2211,American IPA??,American IPA
+style,2214,Doppe@@lbock,Doppelbock
+style,2226,Amer#ican Ambe%r / Red Ale,American Amber / Red Ale
+style,2233,A@@merica??n IPA,American IPA
+style,2243,American Pale$ Ale (APA#),American Pale Ale (APA)
+style,2244,American #Strong@@ Ale,American Strong Ale
+style,2251,nan,German Pilsener
+style,2276,nan,American IPA
+style,2279,Qu%adrupel (Qua$d),Quadrupel (Quad)
+style,2287,American Dou@@ble / Imperial I#PA,American Double / Imperial IPA
+style,2288,Winter W@@armer,Winter Warmer
+style,2295,American Pa$le Ale (APA),American Pale Ale (APA)
+style,2304,nan,Fruit / Vegetable Beer
+style,2313,Tri#pel,Tripel
+style,2344,nan,American Amber / Red Lager
+style,2346,American P@@a??le Lager,American Pale Lager
+style,2347,nan,Bock
+style,2348,Englis??h Stout,English Stout
+style,2359,Hefewe$izen,Hefeweizen
+style,2363,nan,American Brown Ale
+style,2367,W#itbier,Witbier
+style,2368,$Oatmeal Stout,Oatmeal Stout
+style,2374,Amer$ican Pale Ale (APA),American Pale Ale (APA)
+style,2393,nan,Cider
+ounces,7,54.148007664491026,12
+ounces,13,69.38464470749842,12
+ounces,19,64.95465562537865,12
+ounces,20,nan,12
+ounces,60,53.53854291512157,16
+ounces,63,nan,12
+ounces,65,56.85416416965216,12
+ounces,76,91.26659360696108,16
+ounces,109,57.59561396645421,12
+ounces,136,64.3023456358062,12
+ounces,147,nan,12
+ounces,184,53.34890170469454,12
+ounces,203,59.056435845030656,12
+ounces,222,67.9115414683038,16
+ounces,250,55.26677028591768,16
+ounces,253,nan,12
+ounces,256,nan,12
+ounces,264,nan,12
+ounces,267,79.64501020677352,16
+ounces,273,nan,12
+ounces,274,50.90315295210935,12
+ounces,285,70.0733309859768,12
+ounces,295,71.25056757582276,12
+ounces,302,64.02466715642981,12
+ounces,304,nan,12
+ounces,309,68.78793518455832,12
+ounces,310,nan,12
+ounces,317,66.72054421473842,12
+ounces,326,40.00165892937161,12
+ounces,329,nan,12
+ounces,349,55.91271226494494,16
+ounces,376,42.346724606437746,12
+ounces,378,71.0212575998732,16
+ounces,397,49.43697886788342,16
+ounces,409,55.51682261694014,16
+ounces,412,85.245267385595,16
+ounces,419,nan,16
+ounces,423,nan,16
+ounces,426,nan,16
+ounces,431,nan,16
+ounces,432,nan,16
+ounces,433,75.2275084620263,16
+ounces,445,nan,16
+ounces,448,49.843397538976184,16
+ounces,476,nan,16
+ounces,506,nan,12
+ounces,510,61.021863748578795,12
+ounces,542,nan,12
+ounces,565,nan,12
+ounces,576,40.660137697218275,12
+ounces,582,89.17475562408225,24
+ounces,589,52.13136211619393,16
+ounces,606,56.832991124021746,12
+ounces,607,44.9617509974976,12
+ounces,618,nan,12
+ounces,622,nan,12
+ounces,646,nan,12
+ounces,655,44.92026303092688,12
+ounces,708,nan,12
+ounces,709,nan,12
+ounces,710,nan,12
+ounces,722,53.912103517407786,12
+ounces,726,89.56839448747377,16
+ounces,734,nan,16
+ounces,739,nan,12
+ounces,749,nan,16
+ounces,751,76.19814658491381,16
+ounces,784,92.16518784162696,16
+ounces,797,51.3930375087594,16
+ounces,804,60.87654583312147,16
+ounces,806,42.95040622876951,12
+ounces,826,63.271541826688875,12
+ounces,827,60.17590228360951,16
+ounces,843,40.642999426868805,12
+ounces,849,56.46341173459541,16
+ounces,861,nan,12
+ounces,877,39.832416561456384,12
+ounces,878,nan,12
+ounces,899,66.29499939358364,12
+ounces,901,nan,16
+ounces,910,nan,12
+ounces,916,81.79380663152307,16
+ounces,955,nan,12
+ounces,958,nan,24
+ounces,992,60.03813359917811,16
+ounces,999,nan,12
+ounces,1023,nan,12
+ounces,1030,nan,12
+ounces,1031,71.70405466702854,12
+ounces,1034,62.88588480066422,12
+ounces,1040,57.43596473509563,16
+ounces,1047,49.19584387153856,12
+ounces,1076,82.81609166893858,16
+ounces,1086,nan,16
+ounces,1094,62.1229981892602,16
+ounces,1105,nan,12
+ounces,1137,43.86294601457739,12
+ounces,1141,nan,12
+ounces,1145,nan,12
+ounces,1153,66.26652660184855,12
+ounces,1154,nan,12
+ounces,1158,52.69840029232179,12
+ounces,1203,41.25186724810746,12
+ounces,1208,60.19966270669231,16
+ounces,1210,38.717773618607005,12
+ounces,1218,55.20610319747158,12
+ounces,1228,nan,12
+ounces,1233,nan,16
+ounces,1234,nan,12
+ounces,1237,nan,12
+ounces,1248,59.5468678598434,12
+ounces,1259,59.426148170183794,12
+ounces,1272,nan,12
+ounces,1273,47.850852615093736,12
+ounces,1292,43.68685459175718,12
+ounces,1296,69.87967966836636,12
+ounces,1301,nan,16
+ounces,1304,56.90234301353843,12
+ounces,1348,118.09303031224376,24
+ounces,1387,nan,16
+ounces,1390,69.48869811587812,16
+ounces,1395,nan,16
+ounces,1397,83.38336079727652,16
+ounces,1402,66.13979500651301,12
+ounces,1403,54.42189409349356,12
+ounces,1408,nan,12
+ounces,1410,nan,16
+ounces,1414,nan,12
+ounces,1426,80.21600790092695,16
+ounces,1430,nan,16
+ounces,1440,nan,12
+ounces,1443,nan,12
+ounces,1446,nan,12
+ounces,1452,45.12630286393471,12
+ounces,1466,54.211058821558474,12
+ounces,1477,41.47120056109372,12
+ounces,1495,79.30385284712868,16
+ounces,1506,nan,12
+ounces,1510,50.77599395786687,12
+ounces,1521,nan,16
+ounces,1522,nan,12
+ounces,1525,61.29796332824921,12
+ounces,1528,nan,12
+ounces,1543,nan,16
+ounces,1586,nan,12
+ounces,1594,nan,12
+ounces,1598,42.207742995277485,12
+ounces,1602,69.56554474768869,19.2
+ounces,1616,nan,12
+ounces,1617,67.9683528128671,12
+ounces,1622,63.79459937413647,12
+ounces,1631,66.6541670552565,12
+ounces,1636,nan,12
+ounces,1641,nan,16
+ounces,1653,72.47415991670357,16
+ounces,1654,nan,16
+ounces,1657,59.60438682245264,16
+ounces,1671,nan,12
+ounces,1685,53.93520727623349,12
+ounces,1692,55.87276854481924,12
+ounces,1717,61.05763733240297,16
+ounces,1723,56.85404977485321,12
+ounces,1726,42.86429351986037,12
+ounces,1733,nan,12
+ounces,1735,64.83372465432544,12
+ounces,1736,57.84554675661393,12
+ounces,1765,nan,16
+ounces,1768,nan,16
+ounces,1777,nan,12
+ounces,1796,64.3282809775737,12
+ounces,1808,73.10523727312093,16
+ounces,1810,70.02095083254773,16
+ounces,1811,nan,12
+ounces,1824,nan,12
+ounces,1831,nan,16
+ounces,1873,78.52747223651205,16
+ounces,1888,nan,12
+ounces,1892,nan,12
+ounces,1914,nan,12
+ounces,1917,67.88008774410397,12
+ounces,1922,50.68209412893586,12
+ounces,1927,38.591084818605665,12
+ounces,1942,86.54015335361856,16
+ounces,1954,nan,16
+ounces,1958,nan,12
+ounces,1966,nan,12
+ounces,1968,56.71528119516248,12
+ounces,1977,57.77482056297586,12
+ounces,1984,60.61156889782222,12
+ounces,2005,67.99352510836982,16
+ounces,2007,56.426840375153255,12
+ounces,2031,75.77897740651821,16
+ounces,2039,86.98549058961697,16
+ounces,2056,nan,16
+ounces,2092,58.6067384231902,12
+ounces,2110,nan,16
+ounces,2114,nan,16
+ounces,2124,nan,16
+ounces,2125,94.24342329827005,16
+ounces,2161,nan,16
+ounces,2166,nan,12
+ounces,2196,nan,16
+ounces,2202,46.670919807748895,12
+ounces,2218,42.72132948069166,12
+ounces,2223,nan,12
+ounces,2229,70.34827242926492,12
+ounces,2239,nan,12
+ounces,2241,37.61932909215131,12
+ounces,2271,nan,16
+ounces,2278,nan,16
+ounces,2298,nan,12
+ounces,2318,55.935662053937975,12
+ounces,2322,38.96837505031236,12
+ounces,2327,nan,12
+ounces,2331,93.52153456621228,16
+ounces,2342,nan,12
+ounces,2350,52.55969166678068,12
+ounces,2357,79.60362067986948,16
+ounces,2383,42.59897882299885,12
+ounces,2390,nan,12
+ounces,2393,48.173152889368694,12
+ounces,2395,49.59966386038561,12
+ounces,2400,44.118116749285534,12
+abv,11,0.4240248042958945,0.072
+abv,14,0.3994262857798002,0.085
+abv,17,0.3109574838069333,0.06
+abv,22,0.4966207664921948,0.099
+abv,33,0.3243908016315976,0.097
+abv,45,nan,0.055
+abv,74,0.2077964534142984,0.05
+abv,96,nan,0.062
+abv,107,0.1882218324346549,0.056
+abv,111,nan,0.055
+abv,134,nan,0.052
+abv,143,nan,0.077
+abv,161,0.2278755379524518,0.052
+abv,175,0.3494743662929471,0.06
+abv,191,0.1670540148421058,0.035
+abv,202,0.2918198712546023,0.05
+abv,209,nan,0.047
+abv,211,nan,0.049
+abv,218,nan,0.058
+abv,221,0.1876982015931299,0.058
+abv,222,0.2206884567288133,0.07
+abv,231,nan,0.06
+abv,232,0.2488637958356588,0.05
+abv,234,nan,0.053
+abv,241,0.5317755347051984,0.095
+abv,242,0.2237284020847039,0.041
+abv,246,0.3287497831718929,0.06
+abv,282,0.3654408846735208,0.071
+abv,286,0.162445557845889,0.046
+abv,288,0.1829566714244353,0.048
+abv,291,nan,0.068
+abv,341,nan,0.047
+abv,344,nan,0.047
+abv,371,nan,0.047
+abv,379,nan,0.042
+abv,380,nan,0.045
+abv,381,0.2978418940518764,0.062
+abv,385,nan,0.05
+abv,391,nan,0.098
+abv,398,nan,0.065
+abv,407,0.3402834107284571,0.062
+abv,411,0.2587771609344185,0.063
+abv,413,0.5364485327145722,0.099
+abv,414,nan,0.051
+abv,415,nan,0.062
+abv,419,0.3334727617028005,0.064
+abv,427,nan,0.063
+abv,455,0.3008738613629973,0.052
+abv,463,nan,0.052
+abv,464,0.4300508788923644,0.08
+abv,473,0.2256144241406206,0.06
+abv,502,nan,0.068
+abv,516,nan,0.056
+abv,534,nan,0.046
+abv,556,0.1868654727718544,0.052
+abv,569,nan,0.051
+abv,574,0.1844638378203127,0.05
+abv,593,0.3059872492139195,0.057
+abv,596,nan,0.049
+abv,613,nan,0.052
+abv,624,0.2565962282765103,0.048
+abv,627,nan,0.062
+abv,663,nan,0.049
+abv,673,nan,0.06
+abv,679,nan,0.045
+abv,681,nan,0.08
+abv,703,0.1847532944801013,0.052
+abv,740,0.1602306083060872,0.043
+abv,752,0.2551100767071935,0.049
+abv,753,0.2589856715998987,0.07
+abv,761,nan,0.049
+abv,766,0.2431653826639496,0.054
+abv,767,nan,0.04
+abv,779,nan,0.05
+abv,784,0.2056200343450631,0.051
+abv,787,0.2172325690984407,0.05
+abv,792,0.2267610793663675,0.045
+abv,812,nan,0.06
+abv,831,0.2452234130625724,0.058
+abv,833,nan,0.055
+abv,840,0.2516860236654297,0.046
+abv,841,0.32022439562744,0.063
+abv,846,nan,0.057
+abv,882,nan,0.053
+abv,888,nan,0.049
+abv,896,nan,0.059
+abv,911,nan,0.06
+abv,919,nan,0.042
+abv,924,nan,0.054
+abv,939,0.1732062975329181,0.057
+abv,946,0.2307894733084922,0.042
+abv,955,0.5245891056643419,0.095
+abv,965,nan,0.048
+abv,966,0.2479435810556613,0.048
+abv,971,nan,0.053
+abv,976,0.1779171795765903,0.048
+abv,979,nan,0.054
+abv,987,nan,0.04
+abv,993,nan,0.065
+abv,1030,0.3358468278783174,0.059
+abv,1058,nan,0.042
+abv,1070,0.2295606884997981,0.051
+abv,1075,0.0841656253806436,0.027
+abv,1081,nan,0.039
+abv,1103,nan,0.065
+abv,1114,0.2643319677111564,0.045
+abv,1130,0.1914326179077019,0.05
+abv,1142,0.2720338423652912,0.052
+abv,1153,0.2918681142965114,0.052
+abv,1160,nan,0.068
+abv,1183,0.230110629445588,0.046
+abv,1189,0.4125403092324018,0.072
+abv,1190,0.21006809142937,0.066
+abv,1192,nan,0.045
+abv,1194,0.2011902425719429,0.05
+abv,1199,nan,0.064
+abv,1213,0.3236747931523355,0.057
+abv,1229,0.1908930410482061,0.056
+abv,1238,0.2134292351455513,0.061
+abv,1262,nan,0.045
+abv,1267,0.281806309830272,0.06
+abv,1270,nan,0.08
+abv,1276,nan,0.072
+abv,1280,0.39027999341325,0.097
+abv,1281,nan,0.05
+abv,1287,0.2682651790918831,0.05
+abv,1292,0.1753716575778981,0.051
+abv,1299,nan,0.047
+abv,1301,0.2263309407377111,0.055
+abv,1305,nan,0.07
+abv,1308,nan,0.05
+abv,1350,nan,0.05
+abv,1351,nan,0.068
+abv,1362,nan,0.099
+abv,1371,nan,0.05
+abv,1374,nan,0.05
+abv,1375,0.2764145253993446,0.05
+abv,1419,0.2826620754538643,0.053
+abv,1421,nan,0.037
+abv,1446,nan,0.05
+abv,1468,0.3244992520094589,0.088
+abv,1469,nan,0.05
+abv,1482,0.2697786061442541,0.046
+abv,1512,0.2978296639003823,0.058
+abv,1518,nan,0.047
+abv,1521,0.1428164588445735,0.045
+abv,1527,0.2145957143193101,0.051
+abv,1530,nan,0.065
+abv,1552,0.2366950802494668,0.049
+abv,1566,nan,0.07
+abv,1577,0.3590471615078627,0.09
+abv,1601,0.2898253393687726,0.08
+abv,1613,nan,0.05
+abv,1620,0.1695548127954758,0.046
+abv,1623,0.1995772095334778,0.05
+abv,1624,nan,0.065
+abv,1626,0.166274279472819,0.042
+abv,1636,0.1792287951585818,0.049
+abv,1641,0.150618276142738,0.041
+abv,1645,0.3562262640242847,0.061
+abv,1647,nan,0.073
+abv,1652,0.2920211805945863,0.07
+abv,1656,0.1755392046258879,0.045
+abv,1670,0.2113276800203113,0.059
+abv,1672,0.2658270812261759,0.06
+abv,1673,0.2239027944603031,0.058
+abv,1698,nan,0.058
+abv,1699,0.2710398472323532,0.055
+abv,1707,nan,0.05
+abv,1717,0.2167554637439054,0.046
+abv,1726,0.238633850203168,0.068
+abv,1737,0.1964245426411629,0.038
+abv,1740,0.2268053285875284,0.05
+abv,1745,nan,0.062
+abv,1755,0.3419403254229107,0.061
+abv,1759,0.1561970719633527,0.045
+abv,1772,0.4354741146196427,0.099
+abv,1791,nan,0.05
+abv,1793,0.3629205240036334,0.065
+abv,1795,nan,0.05
+abv,1802,nan,0.07
+abv,1812,nan,0.071
+abv,1816,nan,0.055
+abv,1821,0.3490453963373868,0.065
+abv,1836,nan,0.077
+abv,1842,0.2004935166913146,0.051
+abv,1847,0.2681372824697869,0.06
+abv,1849,nan,0.056
+abv,1876,nan,0.063
+abv,1879,nan,0.052
+abv,1886,nan,0.058
+abv,1914,0.2520703637098561,0.062
+abv,1915,0.2565608757038046,0.05
+abv,1921,0.4079065796868164,0.068
+abv,1922,nan,0.05
+abv,1923,0.3173827670113975,0.092
+abv,1929,nan,0.055
+abv,1940,nan,0.055
+abv,1948,nan,0.053
+abv,1952,nan,0.058
+abv,1953,nan,0.05
+abv,1961,0.3267782865965069,0.072
+abv,1981,nan,0.058
+abv,1984,nan,0.05
+abv,1995,nan,0.047
+abv,2009,0.1254152808822645,0.035
+abv,2014,0.2967993455974962,0.054
+abv,2026,nan,0.041
+abv,2029,nan,0.053
+abv,2034,nan,0.054
+abv,2042,nan,0.063
+abv,2043,0.3777174413741928,0.064
+abv,2053,0.3060986464635339,0.054
+abv,2059,0.2593083481041435,0.055
+abv,2061,nan,0.052
+abv,2067,nan,0.099
+abv,2068,nan,0.054
+abv,2101,nan,0.05
+abv,2106,0.2080359075066668,0.062
+abv,2108,0.1625165525922274,0.05
+abv,2109,0.2978214081752485,0.068
+abv,2113,0.1820479397539571,0.05
+abv,2114,nan,0.052
+abv,2121,0.3479280464433884,0.063
+abv,2142,0.3378457253586368,0.096
+abv,2157,nan,0.052
+abv,2161,nan,0.099
+abv,2186,0.3420126841554914,0.075
+abv,2211,0.3086058411965098,0.057
+abv,2216,0.2401775082283824,0.045
+abv,2238,nan,0.058
+abv,2240,nan,0.051
+abv,2243,0.3327460707004753,0.065
+abv,2251,nan,0.05
+abv,2258,0.3748959948923088,0.073
+abv,2297,nan,0.053
+abv,2311,0.3020680914376928,0.068
+abv,2323,0.4078314638271069,0.085
+abv,2325,nan,0.051
+abv,2337,0.2444589483256137,0.055
+abv,2339,nan,0.055
+abv,2352,nan,0.052
+abv,2360,0.2225889220785146,0.049
+abv,2368,nan,0.06
+abv,2373,nan,0.045
+abv,2378,0.2683134005913235,0.072
+abv,2381,nan,0.08
+abv,2382,nan,0.055
+abv,2396,0.3437123500738502,0.065
+abv,2397,0.2262087365038949,0.069
+abv,2407,nan,0.052
+ibu,22,nan,92
+ibu,25,152.8069526050358,42
+ibu,39,60.96172652699316,17
+ibu,108,nan,80
+ibu,132,182.0876462693168,55
+ibu,145,nan,27
+ibu,173,130.11174665454178,41
+ibu,184,167.15304109740956,40
+ibu,185,nan,23
+ibu,195,nan,22
+ibu,200,nan,55
+ibu,212,363.0746529174776,69
+ibu,217,nan,16
+ibu,251,nan,32
+ibu,252,190.23379085795636,55
+ibu,270,nan,35
+ibu,271,nan,50
+ibu,321,156.73704434534412,40
+ibu,336,nan,72
+ibu,347,193.3789041432052,45
+ibu,354,377.7449750180352,72
+ibu,360,nan,30
+ibu,363,nan,7
+ibu,367,nan,35
+ibu,374,319.14456567833946,80
+ibu,375,nan,25
+ibu,479,nan,40
+ibu,508,92.21127940699736,16
+ibu,510,486.07768224342215,94
+ibu,511,351.4056681827358,94
+ibu,529,107.48972601080165,30
+ibu,546,nan,22
+ibu,574,nan,40
+ibu,577,nan,42
+ibu,587,43.06313904857819,8
+ibu,599,nan,25
+ibu,616,nan,65
+ibu,631,324.58661669730606,60
+ibu,651,167.8863424540511,29
+ibu,695,112.69702588016683,37
+ibu,710,211.74028685312103,46
+ibu,716,nan,76
+ibu,721,nan,45
+ibu,745,nan,74
+ibu,777,nan,58
+ibu,805,nan,47
+ibu,812,nan,104
+ibu,815,nan,60
+ibu,839,nan,16
+ibu,889,90.9758023772498,26
+ibu,913,179.65506600530566,36
+ibu,921,nan,19
+ibu,927,115.91551906234542,21
+ibu,966,98.64022433903924,20
+ibu,967,nan,30
+ibu,980,nan,30
+ibu,981,134.87126681598778,44
+ibu,982,nan,71
+ibu,996,139.9229161478588,25
+ibu,1002,212.7951586230628,67
+ibu,1058,76.89069327008319,25
+ibu,1061,nan,20
+ibu,1084,nan,20
+ibu,1090,nan,75
+ibu,1102,nan,90
+ibu,1103,71.10440792736945,22
+ibu,1110,135.95956126710504,27
+ibu,1111,nan,58
+ibu,1164,nan,65
+ibu,1165,nan,50
+ibu,1178,nan,10
+ibu,1182,nan,18
+ibu,1189,nan,100
+ibu,1196,nan,12
+ibu,1207,109.79326257354695,30
+ibu,1209,nan,40
+ibu,1221,131.53909322885224,33
+ibu,1222,26.971449234932273,8
+ibu,1245,66.9855459301282,18
+ibu,1248,nan,11
+ibu,1265,nan,18
+ibu,1324,nan,23
+ibu,1337,374.5214876848947,85
+ibu,1339,487.8892071241046,100
+ibu,1387,445.8442182971902,75
+ibu,1392,nan,40
+ibu,1426,87.62602529479206,22
+ibu,1433,425.3575000392264,86
+ibu,1455,116.59073153105872,29
+ibu,1480,210.77599310475765,50
+ibu,1502,180.53265122919927,42
+ibu,1509,32.211606547513256,7
+ibu,1514,nan,25
+ibu,1585,450.1224769863789,85
+ibu,1595,nan,65
+ibu,1609,106.22166912057624,23
+ibu,1624,254.40597050870153,77
+ibu,1632,175.06299476624494,40
+ibu,1648,nan,75
+ibu,1672,81.67092799892994,15
+ibu,1712,434.61762184899777,100
+ibu,1724,nan,31
+ibu,1727,nan,70
+ibu,1733,84.95251209327623,21
+ibu,1774,165.98357943237,40
+ibu,1781,nan,55
+ibu,1785,nan,40
+ibu,1791,nan,15
+ibu,1812,367.1069681415137,95
+ibu,1818,nan,11
+ibu,1832,nan,105
+ibu,1851,120.49058013006756,28
+ibu,1875,546.7742991842059,103
+ibu,1892,292.4772457755289,58
+ibu,1894,223.51265654577628,39
+ibu,1904,59.59229672150175,16
+ibu,1913,164.58747067308036,35
+ibu,1916,nan,55
+ibu,1953,nan,20
+ibu,1961,157.72877128349086,40
+ibu,1984,nan,22
+ibu,2006,nan,7
+ibu,2015,42.87426987383267,14
+ibu,2023,nan,30
+ibu,2027,nan,8
+ibu,2030,nan,40
+ibu,2032,334.2135694850962,100
+ibu,2040,84.20481854021078,23
+ibu,2054,130.02545550438288,27
+ibu,2056,326.3247577799854,60
+ibu,2098,nan,44
+ibu,2106,nan,35
+ibu,2108,nan,20
+ibu,2112,nan,20
+ibu,2119,125.96723307703051,22
+ibu,2120,99.74493925706136,20
+ibu,2137,nan,35
+ibu,2145,nan,120
+ibu,2156,258.87367527477505,50
+ibu,2179,191.141915466888,50
+ibu,2183,nan,27
+ibu,2196,nan,35
+ibu,2221,nan,26
+ibu,2232,nan,27
+ibu,2233,357.10034767313783,70
+ibu,2241,nan,23
+ibu,2253,105.56390165405934,22
+ibu,2258,nan,82
+ibu,2273,46.65429010227064,10
+ibu,2300,232.51789476178223,75
+ibu,2332,94.56908421479788,20
+ibu,2361,nan,100
+ibu,2385,184.3811370704129,38
+ibu,2388,81.4993437271676,23
+brewery_id,3,nan,177
+brewery_id,4,nan,177
+brewery_id,5,nan,177
+brewery_id,25,1717.6628425562224,368
+brewery_id,36,nan,368
+brewery_id,37,nan,368
+brewery_id,45,214.61112895787508,60
+brewery_id,74,5.982970130745372,1
+brewery_id,87,439.9776770374182,117
+brewery_id,93,2113.197916432378,388
+brewery_id,111,835.4743040332775,171
+brewery_id,119,923.8093433420967,171
+brewery_id,128,nan,193
+brewery_id,129,nan,69
+brewery_id,131,nan,69
+brewery_id,151,230.64807331972392,72
+brewery_id,181,2578.93026259519,483
+brewery_id,182,2439.258959759842,483
+brewery_id,210,nan,292
+brewery_id,215,601.9894006288533,103
+brewery_id,236,nan,463
+brewery_id,237,1504.8920223461446,463
+brewery_id,238,nan,463
+brewery_id,242,nan,220
+brewery_id,262,nan,336
+brewery_id,278,nan,112
+brewery_id,293,nan,12
+brewery_id,304,nan,380
+brewery_id,305,nan,380
+brewery_id,314,1914.7990361648483,382
+brewery_id,321,nan,489
+brewery_id,345,435.18923020397847,107
+brewery_id,346,nan,107
+brewery_id,347,nan,107
+brewery_id,385,nan,308
+brewery_id,387,nan,19
+brewery_id,389,34.04082704611341,10
+brewery_id,400,36.14513061381902,10
+brewery_id,416,37.45431428639307,10
+brewery_id,425,nan,10
+brewery_id,430,nan,10
+brewery_id,439,nan,10
+brewery_id,490,nan,556
+brewery_id,495,nan,5
+brewery_id,498,15.263097986741364,5
+brewery_id,511,678.9129082398318,155
+brewery_id,512,466.9888778703238,155
+brewery_id,526,nan,230
+brewery_id,527,1236.7723729020047,230
+brewery_id,546,994.027519872349,179
+brewery_id,549,916.4268750579128,222
+brewery_id,552,1178.1013452084192,222
+brewery_id,553,2167.7904044381694,404
+brewery_id,556,nan,331
+brewery_id,566,109.40106310194258,29
+brewery_id,583,nan,236
+brewery_id,593,522.4599897664777,121
+brewery_id,609,762.7148706952471,141
+brewery_id,617,nan,141
+brewery_id,618,nan,141
+brewery_id,622,733.7722517588057,141
+brewery_id,636,543.2590380369122,101
+brewery_id,637,nan,101
+brewery_id,642,nan,482
+brewery_id,649,nan,553
+brewery_id,652,nan,515
+brewery_id,661,1223.7718519176387,247
+brewery_id,664,nan,169
+brewery_id,666,1195.7887473178516,212
+brewery_id,667,nan,212
+brewery_id,669,1253.2696316978888,212
+brewery_id,681,1139.4444902249886,227
+brewery_id,690,2242.442797089631,451
+brewery_id,694,1125.5223654505487,333
+brewery_id,723,nan,491
+brewery_id,729,1602.1813811104107,488
+brewery_id,742,1219.4399179741595,340
+brewery_id,756,482.2406208010044,81
+brewery_id,774,1873.7802425150053,335
+brewery_id,790,nan,172
+brewery_id,791,nan,172
+brewery_id,794,110.8092160779734,36
+brewery_id,796,1214.2638845678493,256
+brewery_id,805,nan,48
+brewery_id,807,nan,48
+brewery_id,813,nan,532
+brewery_id,815,nan,521
+brewery_id,827,nan,206
+brewery_id,829,943.9952567547062,206
+brewery_id,832,nan,206
+brewery_id,833,nan,206
+brewery_id,837,nan,151
+brewery_id,869,nan,66
+brewery_id,879,nan,460
+brewery_id,881,nan,460
+brewery_id,883,nan,433
+brewery_id,887,1233.5161727745772,228
+brewery_id,896,904.3438116055034,240
+brewery_id,897,nan,240
+brewery_id,898,1368.7750215261187,240
+brewery_id,922,nan,536
+brewery_id,933,697.5486906207494,165
+brewery_id,935,697.7930154687564,165
+brewery_id,944,nan,165
+brewery_id,952,nan,6
+brewery_id,991,nan,379
+brewery_id,1027,nan,234
+brewery_id,1036,1102.8127007166204,204
+brewery_id,1061,953.2573029316201,198
+brewery_id,1071,2120.6832812475786,395
+brewery_id,1072,nan,395
+brewery_id,1081,nan,80
+brewery_id,1104,nan,277
+brewery_id,1117,532.0395094473106,123
+brewery_id,1120,nan,2
+brewery_id,1133,142.94361808249334,32
+brewery_id,1147,439.37485936492016,125
+brewery_id,1152,521.6219331043234,125
+brewery_id,1167,2430.445151371126,510
+brewery_id,1172,378.70634559427265,84
+brewery_id,1178,433.64020931595735,102
+brewery_id,1181,nan,87
+brewery_id,1215,730.7131775642479,149
+brewery_id,1218,nan,149
+brewery_id,1240,nan,485
+brewery_id,1245,nan,91
+brewery_id,1258,nan,534
+brewery_id,1275,nan,443
+brewery_id,1286,nan,161
+brewery_id,1300,nan,299
+brewery_id,1308,nan,375
+brewery_id,1311,1208.572772564667,375
+brewery_id,1318,1440.653950830442,254
+brewery_id,1326,1585.2053732537101,393
+brewery_id,1354,nan,440
+brewery_id,1356,nan,284
+brewery_id,1357,1520.0412659782219,284
+brewery_id,1378,472.00276720220995,98
+brewery_id,1390,641.3734415112514,209
+brewery_id,1403,1289.9128159432248,326
+brewery_id,1423,nan,143
+brewery_id,1451,nan,82
+brewery_id,1465,2426.473468636765,410
+brewery_id,1478,nan,241
+brewery_id,1488,nan,359
+brewery_id,1489,nan,359
+brewery_id,1490,2581.293034627119,431
+brewery_id,1506,1519.2018244020733,271
+brewery_id,1509,nan,442
+brewery_id,1512,602.3439204204725,150
+brewery_id,1532,2732.6911057258144,471
+brewery_id,1535,1164.9987794254948,301
+brewery_id,1551,804.8502987589321,216
+brewery_id,1555,nan,Oskar Blues Brewery
+brewery_id,1578,897.3306709139351,166
+brewery_id,1590,2835.5840944112174,503
+brewery_id,1591,2904.167117625574,503
+brewery_id,1594,nan,503
+brewery_id,1598,nan,389
+brewery_id,1611,nan,441
+brewery_id,1623,960.47105950817,187
+brewery_id,1628,74.5073941946381,13
+brewery_id,1640,nan,470
+brewery_id,1656,1675.5980605974758,314
+brewery_id,1657,1392.1530855383558,314
+brewery_id,1659,nan,52
+brewery_id,1662,nan,370
+brewery_id,1664,nan,370
+brewery_id,1685,396.04726408858414,128
+brewery_id,1688,522.5397012975736,128
+brewery_id,1695,nan,68
+brewery_id,1707,nan,110
+brewery_id,1708,495.3752360376497,110
+brewery_id,1719,1791.692722242944,386
+brewery_id,1732,nan,93
+brewery_id,1737,520.9810555425905,162
+brewery_id,1746,212.82981887090276,43
+brewery_id,1748,nan,43
+brewery_id,1757,nan,43
+brewery_id,1758,nan,43
+brewery_id,1760,1181.1422292531795,229
+brewery_id,1774,nan,164
+brewery_id,1791,154.3285243781023,30
+brewery_id,1792,148.9322496635399,30
+brewery_id,1795,nan,30
+brewery_id,1803,nan,30
+brewery_id,1806,nan,419
+brewery_id,1821,2047.0466495845674,394
+brewery_id,1828,2948.0148175217037,502
+brewery_id,1872,nan,46
+brewery_id,1908,1908.2573312910095,371
+brewery_id,1909,1152.5838306336661,371
+brewery_id,1919,873.7360246764053,191
+brewery_id,1968,695.892543720989,118
+brewery_id,1969,284.15361814581115,78
+brewery_id,1972,nan,175
+brewery_id,1979,nan,175
+brewery_id,1985,2035.3294061398376,372
+brewery_id,1989,1711.7001783362798,383
+brewery_id,2070,104.27897509549587,25
+brewery_id,2077,nan,61
+brewery_id,2089,nan,447
+brewery_id,2101,nan,449
+brewery_id,2109,nan,45
+brewery_id,2110,229.26459566117987,45
+brewery_id,2116,205.58427820137769,45
+brewery_id,2121,254.71733804119324,45
+brewery_id,2126,nan,7
+brewery_id,2152,1031.578459796891,262
+brewery_id,2186,nan,282
+brewery_id,2207,nan,474
+brewery_id,2217,nan,97
+brewery_id,2220,1814.8996631488014,520
+brewery_id,2233,810.5696538179166,190
+brewery_id,2254,683.2214607477771,159
+brewery_id,2266,1482.7787938501274,338
+brewery_id,2292,277.4607519590638,51
+brewery_id,2296,230.02011743602256,51
+brewery_id,2298,2163.3749470712346,546
+brewery_id,2300,1140.380690083979,302
+brewery_id,2304,1493.2798877151502,302
+brewery_id,2306,nan,302
+brewery_id,2307,nan,185
+brewery_id,2311,779.6677347248095,185
+brewery_id,2323,1136.9797271749403,295
+brewery_id,2332,373.44418938169906,94
+brewery_id,2340,nan,384
+brewery_id,2341,nan,384
+brewery_id,2347,nan,132
+brewery_id,2350,530.5911417347844,132
+brewery_id,2353,174.4125452014807,47
+brewery_id,2369,nan,361
+brewery_id,2373,873.2378166401578,181
+brewery_id,2381,nan,509
+brewery_id,2389,nan,14
+brewery_id,2407,1653.6452846801392,424
+brewery_name,92,Alltec@@h's Lexington Brewing Company,Alltech's Lexington Brewing Company
+brewery_name,120,Angry Minno??w,Angry Minnow
+brewery_name,131,Appalachian Mo??untain Brewery,Appalachian Mountain Brewery
+brewery_name,134,Arcti??c Craft Brew$ery,Arctic Craft Brewery
+brewery_name,181,nan,Bale Breaker Brewing Company
+brewery_name,192,Bare Hands Brewery@@,Bare Hands Brewery
+brewery_name,498,nan,COAST Brewing Company
+brewery_name,551,Ca??rton Brewing Company,Carton Brewing Company
+brewery_name,565,Catawba@@ Valley Brewing Compan%y,Catawba Valley Brewing Company
+brewery_name,583,nan,Champion Brewing Company
+brewery_name,663,nan,Crooked Fence Brewing Company
+brewery_name,665,nan,Crooked Fence Brewing Company
+brewery_name,674,Crystal S@@prings Brewing Compan@@y,Crystal Springs Brewing Company
+brewery_name,691,nan,Daredevil Brewing Company
+brewery_name,695,Dead Armadillo Craft Brew#ing,Dead Armadillo Craft Brewing
+brewery_name,711,Denver Beer@@ Compa%ny,Denver Beer Company
+brewery_name,722,Devil's Backbone Brewing?? Company$,Devil's Backbone Brewing Company
+brewery_name,879,nan,Fremont Brewing Company
+brewery_name,885,nan,Frog Level Brewing Company
+brewery_name,887,Geneva Lake Brew@@ing Company,Geneva Lake Brewing Company
+brewery_name,906,Gonzo's BiggDogg?? Brewing,Gonzo's BiggDogg Brewing
+brewery_name,991,Grey Sail Bre??win@@g of Rhode Island,Grey Sail Brewing of Rhode Island
+brewery_name,1073,nan,Hops & Grains Brewing Company
+brewery_name,1100,@@Howard Br%ewing Company,Howard Brewing Company
+brewery_name,1117,nan,Ipswich Ale Brewery
+brewery_name,1126,nan,Jackalope Brewing Company
+brewery_name,1215,nan,Lonerider Brewing Company
+brewery_name,1241,nan,MacTarnahans Brewing Company
+brewery_name,1286,Martin House?? @@Brewing Company,Martin House Brewing Company
+brewery_name,1410,nan,Mountain Town Brewing Company
+brewery_name,1550,#Orpheus Brewing,Orpheus Brewing
+brewery_name,1719,nan,Revolution Brewing
+brewery_name,1760,nan,Rochester Mills Brewing Company
+brewery_name,1821,Schilling & Co$mpany,Schilling & Company
+brewery_name,1909,nan,Sly Fox Brewing Company
+brewery_name,1969,Speakasy A%les & Lagers,Speakasy Ales & Lagers
+brewery_name,1979,Spiteful B#rewing Compa@@ny,Spiteful Brewing Company
+brewery_name,2077,Surly B%rewing Compan@@y,Surly Brewing Company
+brewery_name,2101,nan,TailGate Beer
+brewery_name,2223,Twiste%d X Brewing Company,Twisted X Brewing Company
+brewery_name,2298,Upstate Bre#wing Compan%y,Upstate Brewing Company
+brewery_name,2300,U%tah Brewers Cooperative,Utah Brewers Cooperative
+brewery_name,2350,nan,Weston Brewing Company
+brewery_name,2395,Woodstock I$nn Sta??tion & Brewery,Woodstock Inn Station & Brewery
+brewery_name,2396,nan,Wormtown Brewery
+city,3,@@Gary,Gary
+city,25,nan,San Francisco
+city,45,nan,Saint Louis
+city,91,Madis??on,Madison
+city,129,nan,Boone
+city,130,Boone@@@@,Boone
+city,151,Detr$oit,Detroit
+city,182,nan,Yakima
+city,416,nan,Grand Rapids
+city,472,Lyon%s#,Lyons
+city,512,nan,Ashland
+city,530,??Hyannis,Hyannis
+city,662,nan,Athens
+city,706,Ha#ys#,Hays
+city,743,#Rocheste#r,Rochester
+city,754,nan,Tacoma
+city,796,Ch$icago,Chicago
+city,827,nan,Astoria
+city,879,nan,Seattle
+city,882,Ash%evi#lle,Asheville
+city,887,nan,Lake Geneva
+city,889,Lake# Gene#va,Lake Geneva
+city,935,??Aur%ora,Aurora
+city,1027,Bosto$n#,Boston
+city,1071,nan,Austin
+city,1172,Houg%$hton,Houghton
+city,1186,nan,Krebs
+city,1208,$Stillwat??er,Stillwater
+city,1245,nan,Cincinnati
+city,1317,Somerset Cente@@r,Somerset Center
+city,1403,nan,Saint Louis
+city,1500,Northa%m??tpon,Northamtpon
+city,1550,A@@tlanta$,Atlanta
+city,1622,Fr%edericksbur#g,Fredericksburg
+city,1739,Portland????,Portland
+city,1792,C%han#dler,Chandler
+city,1839,nan,Wolcott
+city,1909,nan,Pottstown
+city,1979,nan,Chicago
+city,2029,@@St Paul,St Paul
+city,2077,Brooklyn #C@@enter,Brooklyn Center
+city,2110,nan,Manhattan
+city,2136,#Athens,Athens
+city,2207,Mi$nnetonka#,Minnetonka
+city,2254,nan,Salt Lake City
+city,2292,Boul$der,Boulder
+city,2350,%Weston,Weston
+city,2396,W$$orcester,Worcester
+state,192,nan,IN
+state,305,N??E,NE
+state,385,@@FL,FL
+state,416,nan,MI
+state,453,nan,CT
+state,511,@@OR,OR
+state,527,$@@MA,MA
+state,622,nan,FL
+state,662,GA??,GA
+state,690,??CO,CO
+state,695,%@@OK,OK
+state,723,@@CA@@,CA
+state,756,nan,CO
+state,796,nan,IL
+state,824,N$#J,NJ
+state,829,nan,OR
+state,882,$N$C,NC
+state,889,WI@@%,WI
+state,961,L#A@@,LA
+state,980,F??L$,FL
+state,981,W%%V,WV
+state,982,W%%V,WV
+state,1036,H?@@?I,HI
+state,1057,nan,WI
+state,1201,WI??,WI
+state,1274,nan,NM
+state,1311,nan,HI
+state,1383,@@%NH,NH
+state,1482,$SC#,SC
+state,1604,nan,VT
+state,1619,nan,IA
+state,1622,nan,TX
+state,1656,nan,MO
+state,1664,CA$,CA
+state,1792,#AZ$,AZ
+state,1969,nan,CA
+state,2017,%WI??,WI
+state,2110,nan,KS
+state,2125,FL$??,FL
+state,2129,nan,IN
+state,2207,??MN#,MN
+state,2297,nan,NY
+state,2307,M??I,MI
+state,2373,VA$#,VA
+state,2389,$M%I,MI
+state,2393,nan,VT
+state,2407,#??CO,CO

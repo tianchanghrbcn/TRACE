@@ -1,0 +1,1593 @@
+Attribute,Index,Dirty Value,Clean Value
+src,2,ai#rtravelcenter,airtravelcenter
+src,6,fligh??t??aware,flightaware
+src,7,empty,flightexplorer
+src,9,empty,flightstats
+src,12,%fly??tecomm,flytecomm
+src,15,empty,helloflight
+src,19,empty,panynj
+src,21,empty,wunderground
+src,24,empty,allegiantair
+src,26,empty,businesstravellogue
+src,29,empty,flights
+src,31,empty,flightview
+src,37,empty,mia
+src,40,or#bitz,orbitz
+src,43,travelocit##y,travelocity
+src,44,wea%ther@@,weather
+src,45,world-??flight-tr%acker,world-flight-tracker
+src,48,empty,airtravelcenter
+src,54,empty,flightexplorer
+src,56,empty,flightstats
+src,57,empty,flightview
+src,58,empty,flylouisville
+src,60,foxbusi$nes%s,foxbusiness
+src,63,m@@@@co,mco
+src,66,empty,orbitz
+src,72,w??eather,weather
+src,80,d#fw,dfw
+src,82,flightawa%??re,flightaware
+src,83,flightexpl@@orer,flightexplorer
+src,84,empty,flights
+src,90,??gofox#,gofox
+src,92,myratepla%n,myrateplan
+src,105,empty,flightaware
+src,108,flightstats??,flightstats
+src,110,empty,flightwise
+src,115,$hellofligh#t,helloflight
+src,116,ifl%y,ifly
+src,119,empty,orbitz
+src,121,$$quicktrip,quicktrip
+src,126,a??%a,aa
+src,127,airtravelcen??ter,airtravelcenter
+src,128,a$lleg%iantair,allegiantair
+src,130,businesstravellog%ue,businesstravellogue
+src,131,empty,flightexplorer
+src,133,fligh%tst%ats,flightstats
+src,139,h#ellofli??ght,helloflight
+src,144,quicktrip$$,quicktrip
+src,147,empty,weather
+src,150,air@@travelcenter,airtravelcenter
+src,151,empty,allegiantair
+src,153,empty,businesstravellogue
+src,155,empty,flightexplorer
+src,157,f@@lightview,flightview
+src,158,empty,flylouisville
+src,159,empty,flytecomm
+src,163,myratepla@??@n,myrateplan
+src,165,empty,orbitz
+src,172,airtrave??lcen??ter,airtravelcenter
+src,173,al#legiantair,allegiantair
+src,182,empty,flightwise
+src,186,$gofox#,gofox
+src,188,m??@@co,mco
+src,189,myrate##plan,myrateplan
+src,197,empty,world-flight-tracker
+src,203,empty,businesstravellogue
+src,205,fli@@ghtaware,flightaware
+src,207,empty,flights
+src,212,#foxbusin$ess,foxbusiness
+src,217,o%rbitz,orbitz
+src,220,empty,travelocity
+src,221,usat$oday,usatoday
+src,222,empty,weather
+src,226,empty,airtravelcenter
+src,234,flightv??iew,flightview
+src,239,empty,helloflight
+src,240,empty,ifly
+src,243,empty,orbitz
+src,261,empty,flytecomm
+src,265,empty,myrateplan
+src,268,empty,travelocity
+src,270,weather#%,weather
+src,273,empty,allegiantair
+src,278,flights#tats@@,flightstats
+src,286,empty,mco
+src,288,my$tripandmore??,mytripandmore
+src,292,empty,travelocity
+src,295,empty,wunderground
+src,299,bost??@@on,boston
+src,302,empty,flightexplorer
+src,304,flig%htstats,flightstats
+src,307,flyteco??mm,flytecomm
+src,311,empty,mco
+src,312,myratepla#n,myrateplan
+src,316,empty,quicktrip
+src,317,trav??e#locity,travelocity
+src,319,empty,world-flight-tracker
+src,320,wunder@@ground,wunderground
+src,323,empty,allegiantair
+src,326,empty,flightarrival
+src,327,empty,flightaware
+src,337,ifl#y??,ifly
+src,345,usatod%ay,usatoday
+src,349,empty,aa
+src,352,%bo@@ston,boston
+src,356,f%lightexplorer,flightexplorer
+src,357,f@#@lights,flights
+src,358,empty,flightstats
+src,359,empty,flightview
+src,367,empty,panynj
+src,370,empty,weather
+src,377,empty,businesstravellogue
+src,378,empty,flightarrival
+src,385,empty,flytecomm
+src,387,gofox%,gofox
+src,389,myratepla@@n,myrateplan
+src,390,empty,orbitz
+src,398,empty,wunderground
+src,401,empty,allegiantair
+src,403,empty,businesstravellogue
+src,406,empty,flightaware
+src,407,f$ligh#texplorer,flightexplorer
+src,408,empty,flights
+src,413,fl%ytecomm,flytecomm
+src,416,he??lloflight,helloflight
+src,417,%$myrateplan,myrateplan
+src,421,quic??ktrip,quicktrip
+src,429,empty,boston
+src,432,f@@lightexplorer,flightexplorer
+src,433,flig$hts,flights
+src,436,flightw??ise,flightwise
+src,437,empty,flylouisville
+src,449,empty,weather
+src,453,empty,airtravelcenter
+src,455,empty,boston
+src,464,fly@@tecomm,flytecomm
+src,466,gof#ox%,gofox
+src,469,empty,mytripandmore
+src,471,empty,panynj
+src,473,empty,travelocity
+src,474,weathe$$r,weather
+src,475,world-flight-track??er,world-flight-tracker
+src,480,empty,boston
+src,484,empty,flightexplorer
+src,486,empty,flightstats
+src,487,empty,flightview
+src,488,empty,flylouisville
+src,504,empty,allegiantair
+src,505,empty,boston
+src,506,busine$sstravellogue,businesstravellogue
+src,511,flightsta%t%s,flightstats
+src,514,empty,flytecomm
+src,518,empty,ifly
+src,520,empty,orbitz
+src,521,empty,panynj
+src,524,empty,weather
+src,537,empty,flylouisville
+src,542,ifly$@@,ifly
+src,543,myra??teplan,myrateplan
+src,544,empty,mytripandmore
+src,547,empty,quicktrip
+src,552,empty,airtravelcenter
+src,555,empty,businesstravellogue
+src,557,flighta$wa%re,flightaware
+src,562,empty,flylouisville
+src,576,w%orld-flight-??tracker,world-flight-tracker
+src,582,empty,businesstravellogue
+src,584,flighte@@xplorer,flightexplorer
+src,589,empty,flytecomm
+src,619,he#llofligh$t,helloflight
+src,620,if%ly,ifly
+src,629,empty,weather
+src,630,empty,world-flight-tracker
+src,637,empty,flightaware
+src,640,flig%h%tstats,flightstats
+src,644,empty,foxbusiness
+src,645,????gofox,gofox
+src,651,#pany@@nj,panynj
+src,655,empty,usatoday
+src,662,bos??ton#,boston
+src,667,empty,flights
+src,670,empty,flightwise
+src,674,gofox$@@,gofox
+src,676,empty,ifly
+src,677,empty,myrateplan
+src,680,empty,quicktrip
+src,683,empty,weather
+src,691,empty,den
+src,695,empty,flightstats
+src,697,empty,flylouisville
+src,700,empty,gofox
+src,704,empty,mytripandmore
+src,705,orbi??tz@@,orbitz
+src,708,empty,travelocity
+src,720,flig%htstats,flightstats
+src,722,empty,flightwise
+src,723,flyloui%sville,flylouisville
+src,734,quick@@trip,quicktrip
+src,738,empty,wunderground
+src,744,empty,flightarrival
+src,746,empty,flightexplorer
+src,749,empty,flightview
+src,751,empty,flylouisville
+src,758,empty,ord
+src,767,empty,airtravelcenter
+src,769,boston%,boston
+src,771,empty,flightaware
+src,774,empty,flightstats
+src,776,empty,flylouisville
+src,779,empty,gofox
+src,780,empty,helloflight
+src,785,empty,ord
+src,788,traveloc??ity,travelocity
+src,794,all%egia??ntair,allegiantair
+src,797,empty,dfw
+src,806,empty,gofox
+src,807,empty,helloflight
+src,814,empty,weather
+src,815,empty,wunderground
+src,820,empty,businesstravellogue
+src,821,empty,flightarrival
+src,823,empty,flightexplorer
+src,825,empty,flightstats
+src,826,empty,flightview
+src,827,flylo#uisv@@ille,flylouisville
+src,828,empty,flytecomm
+src,834,empty,mytripandmore
+src,837,empty,quicktrip
+src,839,$usatod@@ay,usatoday
+src,840,empty,weather
+src,845,empty,allegiantair
+src,846,bo??ston,boston
+src,849,empty,flightstats
+src,854,g$ofox,gofox
+src,856,??ifly,ifly
+src,859,orbit$z,orbitz
+src,865,aa$,aa
+src,868,empty,boston
+src,869,empty,businesstravellogue
+src,870,empty,flightarrival
+src,874,empty,flightstats
+src,877,empty,flytecomm
+src,887,weath@@er,weather
+src,896,empty,flightaware
+src,902,empty,flytecomm
+src,907,empty,mytripandmore
+src,910,quic#ktrip,quicktrip
+src,916,empty,aa
+src,918,empty,allegiantair
+src,921,flightarri%val??,flightarrival
+src,923,flightexplo#rer,flightexplorer
+src,925,empty,flightstats
+src,927,empty,flightwise
+src,931,gofo#x,gofox
+src,938,empty,quicktrip
+src,942,wor$ld-f??light-tracker,world-flight-tracker
+src,950,empty,flightaware
+src,952,empty,flights
+src,968,weat@@her,weather
+src,969,world-fligh??t%-tracker,world-flight-tracker
+src,970,empty,wunderground
+src,974,b??oston,boston
+src,981,fli%ght??wise,flightwise
+src,988,empty,orbitz
+src,992,us%atoday??,usatoday
+src,993,empty,wunderground
+src,1001,empty,flights
+src,1006,empty,foxbusiness
+src,1008,hellof#light%,helloflight
+src,1012,o@@rd,ord
+src,1022,empty,dfw
+src,1027,empty,flightview
+src,1035,empty,orbitz
+src,1039,tra??ve@@locity,travelocity
+src,1049,empty,flightaware
+src,1051,f#??lights,flights
+src,1052,flight$stats,flightstats
+src,1053,empty,flightview
+src,1054,empty,flylouisville
+src,1057,$gofox,gofox
+src,1059,mi@@a,mia
+src,1061,empty,mytripandmore
+src,1064,q$uicktrip,quicktrip
+src,1066,empty,usatoday
+src,1068,empty,world-flight-tracker
+src,1072,empty,allegiantair
+src,1078,empty,flights
+src,1081,empty,flylouisville
+src,1082,empty,flytecomm
+src,1084,empty,gofox
+src,1090,empty,quicktrip
+src,1093,empty,weather
+src,1096,empty,aa
+src,1100,empty,businesstravellogue
+src,1101,f#lig@@htaware,flightaware
+src,1103,empty,flightstats
+src,1116,empty,weather
+src,1122,empty,boston
+src,1126,flightexp??lorer,flightexplorer
+src,1132,%flytecomm,flytecomm
+src,1134,gofox??$,gofox
+src,1142,empty,sfo
+src,1143,empty,travelocity
+src,1145,weather%#,weather
+src,1151,empty,boston
+src,1155,flightexplore??r,flightexplorer
+src,1156,empty,flights
+src,1160,fl$%ytecomm,flytecomm
+src,1162,empty,gofox
+src,1169,empty,quicktrip
+src,1170,empty,travelocity
+src,1173,wundergroun%d,wunderground
+src,1174,empty,aa
+src,1179,f%lightawa$re,flightaware
+src,1190,empty,myrateplan
+src,1193,??@@ord,ord
+src,1202,%al%legiantair,allegiantair
+src,1205,flig??htaware,flightaware
+src,1208,@@flightview,flightview
+src,1209,empty,flylouisville
+src,1212,empty,gofox
+src,1214,myrat%eplan,myrateplan
+src,1216,empty,orbitz
+src,1220,world-flight-tracker@@,world-flight-tracker
+src,1221,empty,wunderground
+src,1232,empty,flightview
+src,1237,gof$ox,gofox
+src,1238,empty,helloflight
+src,1239,empty,ifly
+src,1247,wea$ther,weather
+src,1249,empty,wunderground
+src,1250,empty,aa
+src,1251,empty,airtravelcenter
+src,1256,empty,flightaware
+src,1257,empty,flights
+src,1258,empty,flightstats
+src,1264,gofo#x,gofox
+src,1284,empty,flights
+src,1288,empty,flytecomm
+src,1292,empty,myrateplan
+src,1300,allegiantair#??,allegiantair
+src,1305,flights$tats,flightstats
+src,1306,empty,flightview
+src,1312,empty,myrateplan
+src,1314,panyn$j#,panynj
+src,1320,allegiant??ai#r,allegiantair
+src,1322,empty,businesstravellogue
+src,1323,empty,flightarrival
+src,1324,empty,flights
+src,1325,empty,flightstats
+src,1330,empty,gofox
+src,1332,empty,ifly
+src,1336,empty,panynj
+src,1338,empty,weather
+src,1342,bo$st@@on,boston
+src,1345,empty,flightaware
+src,1350,empty,flylouisville
+src,1351,empty,flytecomm
+src,1355,empty,mco
+src,1357,empty,orbitz
+src,1360,t$raveloc$ity,travelocity
+src,1362,empty,weather
+src,1363,wor?#?ld-flight-tracker,world-flight-tracker
+src,1378,empty,ifly
+src,1379,empty,myrateplan
+src,1380,empty,mytripandmore
+src,1398,empty,flytecomm
+src,1406,empty,travelocity
+src,1413,empty,flightaware
+src,1414,empty,flightexplorer
+src,1415,empty,flights
+src,1418,empty,flylouisville
+src,1420,foxbusi$ness,foxbusiness
+src,1424,empty,myrateplan
+src,1427,empty,panynj
+src,1428,qu??ick??trip,quicktrip
+src,1439,empty,flightview
+src,1444,hellof??light,helloflight
+src,1445,empty,ifly
+src,1447,empty,orbitz
+src,1451,empty,weather
+src,1452,empty,CO
+src,1454,empty,allegiantair
+src,1455,@@boston,boston
+src,1456,empty,businesstravellogue
+src,1458,empty,flightexplorer
+src,1461,empty,flightview
+src,1463,empty,flytecomm
+src,1468,m??yrateplan,myrateplan
+src,1471,panyn??j,panynj
+src,1477,empty,boston
+src,1479,empty,flightarrival
+src,1481,empty,flights
+src,1487,empty,foxbusiness
+src,1488,empty,gofox
+src,1494,empty,quicktrip
+src,1495,empty,travelocity
+src,1496,empty,usatoday
+src,1498,world%-flight-trac#ker,world-flight-tracker
+src,1503,empty,boston
+src,1508,fl#ig%htview,flightview
+src,1509,empty,flylouisville
+src,1513,empty,helloflight
+src,1514,empty,myrateplan
+src,1518,empty,travelocity
+src,1519,empty,weather
+src,1520,empty,world-flight-tracker
+src,1521,empty,wunderground
+src,1529,empty,flightstats
+src,1532,empty,flylouisville
+src,1534,empty,foxbusiness
+src,1536,hello#flight,helloflight
+src,1541,quickt#rip,quicktrip
+src,1543,$CO@@,CO
+src,1561,empty,panynj
+src,1565,empty,CO
+src,1569,empty,businesstravellogue
+src,1574,empty,flylouisville
+src,1580,empty,mytripandmore
+src,1583,@@quick??trip,quicktrip
+src,1588,empty,allegiantair
+src,1595,empty,flightview
+src,1596,empty,flylouisville
+src,1598,empty,foxbusiness
+src,1599,empty,gofox
+src,1606,empty,CO
+src,1609,empty,boston
+src,1612,empty,flights
+src,1620,empty,ifly
+src,1624,empty,quicktrip
+src,1625,w@@$eather,weather
+src,1626,$CO$,CO
+src,1628,empty,allegiantair
+src,1634,empty,flightview
+src,1638,empty,gofox
+src,1665,empty,quicktrip
+src,1667,wundergr??ound,wunderground
+src,1671,empty,boston
+src,1672,bu%siness#travellogue,businesstravellogue
+src,1674,flight@@sta#ts,flightstats
+src,1678,fox%??business,foxbusiness
+src,1680,he$llofl@@ight,helloflight
+src,1682,myrate#pl$an,myrateplan
+src,1688,empty,airtravelcenter
+src,1691,empty,businesstravellogue
+src,1700,empty,myrateplan
+src,1704,usat??@@oday,usatoday
+src,1705,airtravelc??en??ter,airtravelcenter
+src,1706,empty,allegiantair
+src,1710,empty,flights
+src,1718,i??$fly,ifly
+src,1722,empty,quicktrip
+src,1725,empty,weather
+src,1727,empty,allegiantair
+src,1733,$flights,flights
+src,1736,$flylouisville,flylouisville
+src,1742,empty,myrateplan
+src,1745,empty,panynj
+src,1752,wunder%grou@@nd,wunderground
+src,1759,flightsta@@ts,flightstats
+src,1762,flytec@@omm,flytecomm
+src,1763,foxbusi@@ness,foxbusiness
+src,1765,empty,helloflight
+src,1770,empty,quicktrip
+src,1771,ua%,ua
+src,1776,business$travellogu@@e,businesstravellogue
+src,1778,empty,flights
+src,1779,flightstat$s,flightstats
+src,1780,empty,flightview
+src,1785,empty,helloflight
+src,1788,empty,orbitz
+src,1804,empty,flylouisville
+src,1809,empty,myrateplan
+src,1813,empty,quicktrip
+src,1815,empty,travelocity
+src,1821,empty,airtravelcenter
+src,1822,al??legia$ntair,allegiantair
+src,1825,empty,flightarrival
+src,1826,flig%hts,flights
+src,1827,empty,flightstats
+src,1828,f@@lightview,flightview
+src,1832,empty,gofox
+src,1833,empty,helloflight
+src,1836,empty,panynj
+src,1837,empty,quicktrip
+src,1848,empty,flightview
+src,1851,@@%foxbusiness,foxbusiness
+src,1855,empty,orbitz
+src,1874,empty,helloflight
+src,1882,%we%ather,weather
+src,1889,%f??lights,flights
+src,1890,empty,flightstats
+src,1891,f@@%lightview,flightview
+src,1896,empty,helloflight
+src,1905,world-flig@@h@@t-tracker,world-flight-tracker
+src,1907,empty,allegiantair
+src,1911,empty,flightaware
+src,1912,fl#ights,flights
+src,1917,foxbus??iness,foxbusiness
+src,1920,empty,ifly
+src,1930,airtra$velcenter$,airtravelcenter
+src,1937,%flightvi??ew,flightview
+src,1943,empty,myrateplan
+src,1946,pany$nj,panynj
+src,1956,b@@osto#n,boston
+src,1963,flylouisvil@@@@le,flylouisville
+src,1964,empty,flytecomm
+src,1967,helloflig??ht,helloflight
+src,1971,empty,panynj
+src,1972,empty,quicktrip
+src,1976,weather%,weather
+src,1980,empty,allegiantair
+src,1982,empty,businesstravellogue
+src,1987,f@@lylou$isville,flylouisville
+src,1988,empty,flytecomm
+src,1992,empty,ifly
+src,1994,empty,orbitz
+src,1995,empty,panynj
+src,1996,qu#ick%trip,quicktrip
+src,1997,tra%vel%ocity,travelocity
+src,1999,weather%,weather
+src,2009,f%lightstats,flightstats
+src,2030,empty,flightstats
+src,2032,empty,flylouisville
+src,2037,myratep@@lan,myrateplan
+src,2044,empty,weather
+src,2047,empty,boston
+src,2058,empty,mytripandmore
+src,2060,pan@@ynj,panynj
+src,2069,empty,flightarrival
+src,2077,$foxbusiness,foxbusiness
+src,2078,gofox$,gofox
+src,2081,orbit??z,orbitz
+src,2083,empty,quicktrip
+src,2086,empty,airtravelcenter
+src,2088,bosto??n,boston
+src,2100,h@@elloflight,helloflight
+src,2109,w#underground,wunderground
+src,2116,empty,flightexplorer
+src,2120,flig%htwise,flightwise
+src,2121,flylouisv$ille,flylouisville
+src,2144,empty,flightview
+src,2148,empty,gofox
+src,2150,myratepla@@n,myrateplan
+src,2153,empty,quicktrip
+src,2157,empty,weather
+src,2161,empty,boston
+src,2164,empty,flightexplorer
+src,2176,q$uicktrip,quicktrip
+src,2178,trave%locity@@,travelocity
+src,2194,empty,myrateplan
+src,2196,empty,orbitz
+src,2197,empty,panynj
+src,2203,empty,businesstravellogue
+src,2204,fl$ights,flights
+src,2205,empty,flightstats
+src,2214,empty,orbitz
+src,2224,empty,flightarrival
+src,2226,fligh#ts,flights
+src,2230,foxbusine@@ss,foxbusiness
+src,2234,mytrip%andmore,mytripandmore
+src,2243,empty,boston
+src,2245,empty,flightarrival
+src,2248,empty,flights
+src,2253,flytec$omm,flytecomm
+src,2256,empty,helloflight
+src,2260,%ord,ord
+src,2263,empty,quicktrip
+src,2267,weathe%r$,weather
+src,2269,wunder??groun@@d,wunderground
+src,2270,airtravelc%enter,airtravelcenter
+src,2275,flighta#ware,flightaware
+src,2279,empty,flightview
+src,2281,fl@@ytecomm,flytecomm
+src,2287,or%@@bitz,orbitz
+src,2293,empty,wunderground
+src,2295,allegiantair??,allegiantair
+src,2297,empty,businesstravellogue
+src,2300,empty,flightview
+src,2302,empty,flytecomm
+src,2304,empty,gofox
+src,2305,empty,helloflight
+src,2312,empty,ua
+src,2313,empty,usatoday
+src,2314,wea#ther,weather
+src,2317,empty,boston
+src,2318,empty,businesstravellogue
+src,2325,empty,foxbusiness
+src,2327,helloflight@@,helloflight
+src,2328,empty,myrateplan
+src,2336,airtravelcent#$er,airtravelcenter
+src,2343,flylouisv%ille,flylouisville
+src,2349,or??bitz,orbitz
+src,2356,empty,boston
+src,2360,empty,flightexplorer
+src,2362,empty,flightstats
+src,2368,hellofli@@g%ht,helloflight
+src,2370,m@@yratep%lan,myrateplan
+src,2372,o??rd,ord
+src,2374,empty,quicktrip
+src,2376,w$eather,weather
+flight,9,$AA-1007-MIA-PHX,AA-1007-MIA-PHX
+flight,12,empty,AA-1007-MIA-PHX
+flight,16,empty,AA-1007-MIA-PHX
+flight,24,AA%-1165-JFK-MIA,AA-1165-JFK-MIA
+flight,26,empty,AA-1165-JFK-MIA
+flight,28,empty,AA-1165-JFK-MIA
+flight,29,AA-1165-JFK$-MIA,AA-1165-JFK-MIA
+flight,34,empty,AA-1165-JFK-MIA
+flight,39,empty,AA-1165-JFK-MIA
+flight,43,empty,AA-1165-JFK-MIA
+flight,52,AA-1221-??MCO-ORD,AA-1221-MCO-ORD
+flight,67,empty,AA-1221-MCO-ORD
+flight,68,empty,AA-1221-MCO-ORD
+flight,74,AA-1#221-MCO-ORD,AA-1221-MCO-ORD
+flight,75,empty,AA-1279-DFW-PHX
+flight,88,empty,AA-1279-DFW-PHX
+flight,115,empty,AA-1434-DFW-MCO
+flight,117,??AA-1434-DFW-MCO,AA-1434-DFW-MCO
+flight,123,AA-14??34-DFW-MCO,AA-1434-DFW-MCO
+flight,124,empty,AA-1434-DFW-MCO
+flight,129,empty,AA-1522-SFO-ORD
+flight,140,empty,AA-1522-SFO-ORD
+flight,148,empty,AA-1522-SFO-ORD
+flight,149,empty,AA-1544-SAN-ORD
+flight,155,empty,AA-1544-SAN-ORD
+flight,157,empty,AA-1544-SAN-ORD
+flight,160,AA-1#544-SAN-ORD#,AA-1544-SAN-ORD
+flight,164,empty,AA-1544-SAN-ORD
+flight,178,empty,AA-1640-MIA-MCO
+flight,181,#AA-1640-MIA-MCO,AA-1640-MIA-MCO
+flight,182,empty,AA-1640-MIA-MCO
+flight,185,empty,AA-1640-MIA-MCO
+flight,186,empty,AA-1640-MIA-MCO
+flight,193,AA-1%640-MIA-MCO,AA-1640-MIA-MCO
+flight,194,AA-#164#0-MIA-MCO,AA-1640-MIA-MCO
+flight,198,empty,AA-1640-MIA-MCO
+flight,205,empty,AA-1664-MIA-ATL
+flight,208,empty,AA-1664-MIA-ATL
+flight,209,empty,AA-1664-MIA-ATL
+flight,215,empty,AA-1664-MIA-ATL
+flight,224,A@@??A-1664-MIA-ATL,AA-1664-MIA-ATL
+flight,225,AA-1733-ORD#-PHX#,AA-1733-ORD-PHX
+flight,227,empty,AA-1733-ORD-PHX
+flight,229,empty,AA-1733-ORD-PHX
+flight,232,AA-1733-??ORD-PHX,AA-1733-ORD-PHX
+flight,233,empty,AA-1733-ORD-PHX
+flight,235,empty,AA-1733-ORD-PHX
+flight,239,AA-1733-ORD@@-PHX,AA-1733-ORD-PHX
+flight,240,empty,AA-1733-ORD-PHX
+flight,241,empty,AA-1733-ORD-PHX
+flight,247,empty,AA-1733-ORD-PHX
+flight,251,AA-1733-ORD-P%HX,AA-1733-ORD-PHX
+flight,258,empty,AA-1886-BOS-MIA
+flight,261,empty,AA-1886-BOS-MIA
+flight,264,empty,AA-1886-BOS-MIA
+flight,268,empty,AA-1886-BOS-MIA
+flight,271,AA-$1917-JFK-MCO,AA-1917-JFK-MCO
+flight,275,empty,AA-1917-JFK-MCO
+flight,278,AA-#1917-JFK-MCO,AA-1917-JFK-MCO
+flight,279,??AA-1917-JFK-MCO,AA-1917-JFK-MCO
+flight,281,AA%-1917-JFK-MCO#,AA-1917-JFK-MCO
+flight,283,empty,AA-1917-JFK-MCO
+flight,293,empty,AA-1917-JFK-MCO
+flight,299,empty,AA-204-LAX-MCO
+flight,301,empty,AA-204-LAX-MCO
+flight,304,empty,AA-204-LAX-MCO
+flight,305,AA-204-%L$AX-MCO,AA-204-LAX-MCO
+flight,306,AA-20??4-LAX-MCO,AA-204-LAX-MCO
+flight,308,empty,AA-204-LAX-MCO
+flight,314,AA-204-L@@AX-MCO,AA-204-LAX-MCO
+flight,321,empty,AA-2050-ORD-MIA
+flight,330,empty,AA-2050-ORD-MIA
+flight,332,empty,AA-2050-ORD-MIA
+flight,334,AA-2050-ORD-M%$IA,AA-2050-ORD-MIA
+flight,337,empty,AA-2050-ORD-MIA
+flight,338,empty,AA-2050-ORD-MIA
+flight,340,A$A-2050-ORD-MIA,AA-2050-ORD-MIA
+flight,345,empty,AA-2050-ORD-MIA
+flight,347,empty,AA-2050-ORD-MIA
+flight,351,AA-222-LAX??-BOS,AA-222-LAX-BOS
+flight,357,AA-2@@22-LAX-BOS,AA-222-LAX-BOS
+flight,359,empty,AA-222-LAX-BOS
+flight,361,empty,AA-222-LAX-BOS
+flight,368,empty,AA-222-LAX-BOS
+flight,369,empty,AA-222-LAX-BOS
+flight,378,empty,AA-2268-PHX-ORD
+flight,386,empty,AA-2268-PHX-ORD
+flight,390,empty,AA-2268-PHX-ORD
+flight,399,AA-2312-DFW-D@@TW,AA-2312-DFW-DTW
+flight,400,empty,AA-2312-DFW-DTW
+flight,402,empty,AA-2312-DFW-DTW
+flight,403,empty,AA-2312-DFW-DTW
+flight,410,AA-2312-D%FW-DTW,AA-2312-DFW-DTW
+flight,411,empty,AA-2312-DFW-DTW
+flight,418,empty,AA-2312-DFW-DTW
+flight,424,AA-231??2-$DFW-DTW,AA-2312-DFW-DTW
+flight,430,AA-252#5-DFW$-MIA,AA-2525-DFW-MIA
+flight,434,AA-%2525-DFW-MIA,AA-2525-DFW-MIA
+flight,435,empty,AA-2525-DFW-MIA
+flight,438,empty,AA-2525-DFW-MIA
+flight,441,empty,AA-2525-DFW-MIA
+flight,442,empty,AA-2525-DFW-MIA
+flight,449,empty,AA-2525-DFW-MIA
+flight,451,AA-2525#@@-DFW-MIA,AA-2525-DFW-MIA
+flight,464,empty,AA-271-MIA-LAX
+flight,465,empty,AA-271-MIA-LAX
+flight,468,empty,AA-271-MIA-LAX
+flight,471,??AA-271-MIA-L??AX,AA-271-MIA-LAX
+flight,472,empty,AA-271-MIA-LAX
+flight,478,empty,AA-2957-DFW-CVG
+flight,494,empty,AA-2957-DFW-CVG
+flight,498,empty,AA-2957-DFW-CVG
+flight,500,empty,AA-2957-DFW-CVG
+flight,511,empty,AA-3-JFK-LAX
+flight,517,??@@AA-3-JFK-LAX,AA-3-JFK-LAX
+flight,518,AA-3-JFK-#LAX,AA-3-JFK-LAX
+flight,524,AA-3-JFK-$??LAX,AA-3-JFK-LAX
+flight,525,empty,AA-3-JFK-LAX
+flight,528,empty,AA-3063-SLC-LAX
+flight,531,AA-3063-S@@LC@@-LAX,AA-3063-SLC-LAX
+flight,533,AA-3063-SLC@@-LA$X,AA-3063-SLC-LAX
+flight,535,empty,AA-3063-SLC-LAX
+flight,536,AA-3063-SLC-L@@%AX,AA-3063-SLC-LAX
+flight,545,AA-3063-@@SLC-LAX,AA-3063-SLC-LAX
+flight,549,AA-3063-@@SLC-LAX,AA-3063-SLC-LAX
+flight,550,empty,AA-3063-SLC-LAX
+flight,553,empty,AA-3468-CVG-MIA
+flight,555,empty,AA-3468-CVG-MIA
+flight,565,empty,AA-3468-CVG-MIA
+flight,567,AA-3468-C$VG$-MIA,AA-3468-CVG-MIA
+flight,570,empty,AA-3468-CVG-MIA
+flight,581,AA-3756-O@@#RD-SLC,AA-3756-ORD-SLC
+flight,582,AA-3756-ORD-SLC??@@,AA-3756-ORD-SLC
+flight,583,??AA-3756-OR@@D-SLC,AA-3756-ORD-SLC
+flight,589,empty,AA-3756-ORD-SLC
+flight,590,AA-$3756-OR@@D-SLC,AA-3756-ORD-SLC
+flight,593,#AA-3756-ORD@@-SLC,AA-3756-ORD-SLC
+flight,594,empty,AA-3756-ORD-SLC
+flight,596,AA-3756-O??RD-SLC,AA-3756-ORD-SLC
+flight,598,empty,AA-3756-ORD-SLC
+flight,605,AA-37??86-@@IAH-ORD,AA-3786-IAH-ORD
+flight,609,empty,AA-3786-IAH-ORD
+flight,612,AA-3786-IAH-????ORD,AA-3786-IAH-ORD
+flight,616,%AA-3786-IAH-O#RD,AA-3786-IAH-ORD
+flight,622,empty,AA-3786-IAH-ORD
+flight,623,empty,AA-3786-IAH-ORD
+flight,625,AA-3786-%IAH-ORD,AA-3786-IAH-ORD
+flight,629,empty,AA-3786-IAH-ORD
+flight,630,AA-%3786-IAH-ORD,AA-3786-IAH-ORD
+flight,633,empty,AA-3804-PHL-ORD
+flight,635,empty,AA-3804-PHL-ORD
+flight,639,AA-380@@4-PHL-ORD,AA-3804-PHL-ORD
+flight,641,AA-$3804-PHL-ORD,AA-3804-PHL-ORD
+flight,648,AA-3%804-PHL-ORD,AA-3804-PHL-ORD
+flight,657,AA-3804-PHL-??ORD$,AA-3804-PHL-ORD
+flight,666,empty,AA-3809-PHX-LAX
+flight,667,AA-3809-PHX-LA%X,AA-3809-PHX-LAX
+flight,672,empty,AA-3809-PHX-LAX
+flight,673,empty,AA-3809-PHX-LAX
+flight,676,AA-38$09-PHX-LAX,AA-3809-PHX-LAX
+flight,683,empty,AA-3809-PHX-LAX
+flight,684,AA-3@@809-PHX-LAX,AA-3809-PHX-LAX
+flight,685,AA-3809-PHX-@@#LAX,AA-3809-PHX-LAX
+flight,688,empty,AA-3823-LAX-DEN
+flight,689,empty,AA-3823-LAX-DEN
+flight,690,empty,AA-3823-LAX-DEN
+flight,693,AA-382#3-#LAX-DEN,AA-3823-LAX-DEN
+flight,694,empty,AA-3823-LAX-DEN
+flight,695,??AA-3%823-LAX-DEN,AA-3823-LAX-DEN
+flight,698,empty,AA-3823-LAX-DEN
+flight,702,AA-3823-LA??X-D%EN,AA-3823-LAX-DEN
+flight,704,A??A-3823-LAX-DEN,AA-3823-LAX-DEN
+flight,705,empty,AA-3823-LAX-DEN
+flight,710,empty,AA-3823-LAX-DEN
+flight,725,empty,AA-3842-MSP-ORD
+flight,729,empty,AA-3842-MSP-ORD
+flight,730,AA-3842-??MSP-ORD,AA-3842-MSP-ORD
+flight,731,empty,AA-3842-MSP-ORD
+flight,734,??AA-3842-MSP-ORD#,AA-3842-MSP-ORD
+flight,741,empty,AA-3859-IAH-ORD
+flight,749,A#A-3859-IAH-ORD,AA-3859-IAH-ORD
+flight,757,empty,AA-3859-IAH-ORD
+flight,758,AA-3#859-I#AH-ORD,AA-3859-IAH-ORD
+flight,762,AA-3859@@-IAH-ORD,AA-3859-IAH-ORD
+flight,767,AA-3979-CVG-OR$D,AA-3979-CVG-ORD
+flight,770,empty,AA-3979-CVG-ORD
+flight,772,empty,AA-3979-CVG-ORD
+flight,777,empty,AA-3979-CVG-ORD
+flight,778,AA-#3979-CVG-ORD,AA-3979-CVG-ORD
+flight,787,empty,AA-3979-CVG-ORD
+flight,793,AA-400-DFW??-JFK,AA-400-DFW-JFK
+flight,797,AA-400-DFW-JF%K,AA-400-DFW-JFK
+flight,798,empty,AA-400-DFW-JFK
+flight,803,AA-4@@00-D@@FW-JFK,AA-400-DFW-JFK
+flight,804,empty,AA-400-DFW-JFK
+flight,805,A$A-400-DFW-JFK,AA-400-DFW-JFK
+flight,810,empty,AA-400-DFW-JFK
+flight,812,AA-$400-DFW-JFK,AA-400-DFW-JFK
+flight,815,AA-400-$DFW-JFK,AA-400-DFW-JFK
+flight,818,empty,AA-404-MIA-MCO
+flight,820,AA-404-MIA-MCO@@,AA-404-MIA-MCO
+flight,822,empty,AA-404-MIA-MCO
+flight,823,AA-404-MIA-M@@$CO,AA-404-MIA-MCO
+flight,828,AA-404-#MIA-MCO,AA-404-MIA-MCO
+flight,833,@@AA-404-MIA-MCO,AA-404-MIA-MCO
+flight,834,empty,AA-404-MIA-MCO
+flight,838,empty,AA-404-MIA-MCO
+flight,846,AA-415-BOS-ORD%,AA-415-BOS-ORD
+flight,849,%AA-415-BOS-??ORD,AA-415-BOS-ORD
+flight,855,AA-415-BOS-ORD??,AA-415-BOS-ORD
+flight,862,empty,AA-415-BOS-ORD
+flight,863,empty,AA-415-BOS-ORD
+flight,875,AA-4198-ORD-%CLE,AA-4198-ORD-CLE
+flight,879,empty,AA-4198-ORD-CLE
+flight,886,AA-4198-ORD-CL%E,AA-4198-ORD-CLE
+flight,894,AA-4277-CV??G-JFK,AA-4277-CVG-JFK
+flight,895,empty,AA-4277-CVG-JFK
+flight,903,empty,AA-4277-CVG-JFK
+flight,905,empty,AA-4277-CVG-JFK
+flight,911,empty,AA-4277-CVG-JFK
+flight,919,empty,AA-4307-ORD-DTW
+flight,924,empty,AA-4307-ORD-DTW
+flight,937,$AA-4$307-ORD-DTW,AA-4307-ORD-DTW
+flight,938,AA-4307-ORD-@@DTW,AA-4307-ORD-DTW
+flight,941,AA@@-4307-ORD-DTW,AA-4307-ORD-DTW
+flight,943,AA-430$$7-ORD-DTW,AA-4307-ORD-DTW
+flight,945,@@AA-431-MIA-SF#O,AA-431-MIA-SFO
+flight,950,%AA-431-MIA??-SFO,AA-431-MIA-SFO
+flight,953,empty,AA-431-MIA-SFO
+flight,955,empty,AA-431-MIA-SFO
+flight,956,AA-431%-MIA-SFO$,AA-431-MIA-SFO
+flight,959,empty,AA-431-MIA-SFO
+flight,964,AA-4@@@@31-MIA-SFO,AA-431-MIA-SFO
+flight,966,empty,AA-431-MIA-SFO
+flight,969,empty,AA-431-MIA-SFO
+flight,978,empty,AA-4330-CVG-ORD
+flight,979,empty,AA-4330-CVG-ORD
+flight,980,empty,AA-4330-CVG-ORD
+flight,985,AA-4330-$CVG-ORD,AA-4330-CVG-ORD
+flight,991,AA-4@@330-$CVG-ORD,AA-4330-CVG-ORD
+flight,1000,empty,AA-4344-ORD-DTW
+flight,1011,AA-4%344-ORD-DTW,AA-4344-ORD-DTW
+flight,1013,empty,AA-4344-ORD-DTW
+flight,1015,AA-4344%-ORD-DT@@W,AA-4344-ORD-DTW
+flight,1021,empty,AA-446-DFW-PHL
+flight,1028,empty,AA-446-DFW-PHL
+flight,1036,AA-446-DFW-%PHL,AA-446-DFW-PHL
+flight,1037,AA-%@@446-DFW-PHL,AA-446-DFW-PHL
+flight,1040,empty,AA-446-DFW-PHL
+flight,1042,empty,AA-446-DFW-PHL
+flight,1058,empty,AA-466-IAH-MIA
+flight,1061,AA-466-I@@AH-@@MIA,AA-466-IAH-MIA
+flight,1062,empty,AA-466-IAH-MIA
+flight,1069,AA-466-IAH-#MIA,AA-466-IAH-MIA
+flight,1070,AA-484-DFW-$MIA,AA-484-DFW-MIA
+flight,1072,AA-484-??DFW-MI@@A,AA-484-DFW-MIA
+flight,1074,AA-484-D#FW-MIA,AA-484-DFW-MIA
+flight,1075,empty,AA-484-DFW-MIA
+flight,1077,empty,AA-484-DFW-MIA
+flight,1087,empty,AA-484-DFW-MIA
+flight,1090,AA-484-DFW-MI%A%,AA-484-DFW-MIA
+flight,1103,empty,AA-518-MIA-JFK
+flight,1106,empty,AA-518-MIA-JFK
+flight,1107,AA-518-MI#A-JFK,AA-518-MIA-JFK
+flight,1108,A@@A-51#8-MIA-JFK,AA-518-MIA-JFK
+flight,1113,empty,AA-518-MIA-JFK
+flight,1114,AA-518-MIA%-JFK??,AA-518-MIA-JFK
+flight,1116,empty,AA-518-MIA-JFK
+flight,1121,empty,AA-59-JFK-SFO
+flight,1123,empty,AA-59-JFK-SFO
+flight,1128,empty,AA-59-JFK-SFO
+flight,1131,empty,AA-59-JFK-SFO
+flight,1134,AA-59-JFK-%@@SFO,AA-59-JFK-SFO
+flight,1140,AA-59#-JFK-S$FO,AA-59-JFK-SFO
+flight,1154,empty,AA-616-DFW-DTW
+flight,1155,AA-616-DFW-D??TW,AA-616-DFW-DTW
+flight,1156,empty,AA-616-DFW-DTW
+flight,1160,empty,AA-616-DFW-DTW
+flight,1161,AA-6??16-DFW-DTW,AA-616-DFW-DTW
+flight,1162,empty,AA-616-DFW-DTW
+flight,1164,empty,AA-616-DFW-DTW
+flight,1167,AA-61#6-DF@@W-DTW,AA-616-DFW-DTW
+flight,1168,AA-616-DFW-DTW#,AA-616-DFW-DTW
+flight,1182,AA-643-MI#A-OR$D,AA-643-MIA-ORD
+flight,1184,empty,AA-643-MIA-ORD
+flight,1185,AA$-643-MIA-ORD,AA-643-MIA-ORD
+flight,1187,empty,AA-643-MIA-ORD
+flight,1193,empty,AA-643-MIA-ORD
+flight,1203,AA-649-OR?#?D-SNA,AA-649-ORD-SNA
+flight,1205,AA-649-OR%D%-SNA,AA-649-ORD-SNA
+flight,1209,empty,AA-649-ORD-SNA
+flight,1215,A$A-649-ORD-SNA,AA-649-ORD-SNA
+flight,1227,AA-789-ORD-D@@EN,AA-789-ORD-DEN
+flight,1233,empty,AA-789-ORD-DEN
+flight,1235,AA-789-%ORD-DEN,AA-789-ORD-DEN
+flight,1243,empty,AA-789-ORD-DEN
+flight,1255,empty,AA-85-JFK-SFO
+flight,1261,AA-??8#5-JFK-SFO,AA-85-JFK-SFO
+flight,1262,AA@@-85-JFK-SFO,AA-85-JFK-SFO
+flight,1263,AA-85-JFK-SFO%,AA-85-JFK-SFO
+flight,1264,AA-85-JFK#-SFO,AA-85-JFK-SFO
+flight,1278,CO-102$3-IAH-$DEN,CO-1023-IAH-DEN
+flight,1280,empty,CO-1023-IAH-DEN
+flight,1284,empty,CO-1023-IAH-DEN
+flight,1289,CO-1023$-IAH-DEN,CO-1023-IAH-DEN
+flight,1290,empty,CO-1023-IAH-DEN
+flight,1298,empty,CO-1088-CLE-IAH
+flight,1300,empty,CO-1088-CLE-IAH
+flight,1303,empty,CO-1088-CLE-IAH
+flight,1308,empty,CO-1088-CLE-IAH
+flight,1310,CO-1088-CLE-IA%H$,CO-1088-CLE-IAH
+flight,1311,empty,CO-1088-CLE-IAH
+flight,1312,CO-1088-CLE??-IAH,CO-1088-CLE-IAH
+flight,1314,empty,CO-1088-CLE-IAH
+flight,1317,empty,CO-1088-CLE-IAH
+flight,1320,empty,CO-1090-BOS-IAH
+flight,1322,empty,CO-1090-BOS-IAH
+flight,1334,empty,CO-1090-BOS-IAH
+flight,1342,empty,CO-1193-EWR-MCO
+flight,1345,CO-1193-E%WR-M$CO,CO-1193-EWR-MCO
+flight,1347,CO-11??93-EWR-MCO,CO-1193-EWR-MCO
+flight,1350,empty,CO-1193-EWR-MCO
+flight,1357,empty,CO-1193-EWR-MCO
+flight,1358,$CO-11%93-EWR-MCO,CO-1193-EWR-MCO
+flight,1361,empty,CO-1193-EWR-MCO
+flight,1381,$CO-1250-MIA-IAH,CO-1250-MIA-IAH
+flight,1382,empty,CO-1250-MIA-IAH
+flight,1385,empty,CO-1250-MIA-IAH
+flight,1386,empty,CO-1250-MIA-IAH
+flight,1387,empty,CO-1561-PHX-IAH
+flight,1389,empty,CO-1561-PHX-IAH
+flight,1399,empty,CO-1561-PHX-IAH
+flight,1400,empty,CO-1561-PHX-IAH
+flight,1403,CO-1561-PHX-@@IAH,CO-1561-PHX-IAH
+flight,1405,empty,CO-1561-PHX-IAH
+flight,1408,CO-1586-IAH-$MCO,CO-1586-IAH-MCO
+flight,1414,empty,CO-1586-IAH-MCO
+flight,1415,empty,CO-1586-IAH-MCO
+flight,1422,empty,CO-1586-IAH-MCO
+flight,1430,empty,CO-1586-IAH-MCO
+flight,1431,empty,CO-16-LAX-EWR
+flight,1433,empty,CO-16-LAX-EWR
+flight,1436,empty,CO-16-LAX-EWR
+flight,1437,empty,CO-16-LAX-EWR
+flight,1441,empty,CO-16-LAX-EWR
+flight,1442,empty,CO-16-LAX-EWR
+flight,1443,CO-16-LAX-EW$R,CO-16-LAX-EWR
+flight,1445,CO-16-L#%AX-EWR,CO-16-LAX-EWR
+flight,1447,empty,CO-16-LAX-EWR
+flight,1448,empty,CO-16-LAX-EWR
+flight,1459,empty,CO-1614-LAX-IAH
+flight,1460,CO-1614-LAX-IAH@@,CO-1614-LAX-IAH
+flight,1472,empty,CO-1614-LAX-IAH
+flight,1481,empty,CO-1694-LAX-IAH
+flight,1483,empty,CO-1694-LAX-IAH
+flight,1488,empty,CO-1694-LAX-IAH
+flight,1489,CO-1694%-LAX-IAH,CO-1694-LAX-IAH
+flight,1495,CO-1694-@@%LAX-IAH,CO-1694-LAX-IAH
+flight,1499,CO-1694-LAX%-@@IAH,CO-1694-LAX-IAH
+flight,1505,CO-45#-EWR-MI#A,CO-45-EWR-MIA
+flight,1509,empty,CO-45-EWR-MIA
+flight,1510,C#O-45-EWR-MIA,CO-45-EWR-MIA
+flight,1512,CO-45-EWR%-MIA,CO-45-EWR-MIA
+flight,1513,empty,CO-45-EWR-MIA
+flight,1520,CO-%4#5-EWR-MIA,CO-45-EWR-MIA
+flight,1522,empty,CO-47-IAH-LAX
+flight,1526,??CO-47-IAH-LAX,CO-47-IAH-LAX
+flight,1528,empty,CO-47-IAH-LAX
+flight,1533,empty,CO-47-IAH-LAX
+flight,1540,empty,CO-47-IAH-LAX
+flight,1541,empty,CO-47-IAH-LAX
+flight,1544,CO-4888-IAH-D$AL,CO-4888-IAH-DAL
+flight,1549,empty,CO-4888-IAH-DAL
+flight,1551,empty,CO-4888-IAH-DAL
+flight,1554,empty,CO-4888-IAH-DAL
+flight,1558,empty,CO-4888-IAH-DAL
+flight,1562,CO-48%88-IAH-DAL@@,CO-4888-IAH-DAL
+flight,1575,empty,CO-50-CLE-EWR
+flight,1583,empty,CO-50-CLE-EWR
+flight,1584,??CO-50-@@CLE-EWR,CO-50-CLE-EWR
+flight,1592,CO#-52-IAH-LAX,CO-52-IAH-LAX
+flight,1593,empty,CO-52-IAH-LAX
+flight,1595,empty,CO-52-IAH-LAX
+flight,1601,#CO-52-IAH-LA#X,CO-52-IAH-LAX
+flight,1610,empty,CO-58-DEN-IAH
+flight,1617,empty,CO-58-DEN-IAH
+flight,1624,CO-58-DEN-??IAH,CO-58-DEN-IAH
+flight,1626,CO-6@@2-IAH-E??WR,CO-62-IAH-EWR
+flight,1629,empty,CO-62-IAH-EWR
+flight,1637,CO-62-I%AH-#EWR,CO-62-IAH-EWR
+flight,1645,CO-6%2$-IAH-EWR,CO-62-IAH-EWR
+flight,1647,empty,CO-63-EWR-IAH
+flight,1653,empty,CO-63-EWR-IAH
+flight,1655,empty,CO-63-EWR-IAH
+flight,1656,empty,CO-63-EWR-IAH
+flight,1659,empty,CO-63-EWR-IAH
+flight,1660,empty,CO-63-EWR-IAH
+flight,1663,empty,CO-63-EWR-IAH
+flight,1664,empty,CO-63-EWR-IAH
+flight,1666,empty,CO-63-EWR-IAH
+flight,1668,empty,CO-89-IAH-EWR
+flight,1673,CO-89#-??IAH-EWR,CO-89-IAH-EWR
+flight,1674,CO-89-%IA@@H-EWR,CO-89-IAH-EWR
+flight,1676,empty,CO-89-IAH-EWR
+flight,1677,empty,CO-89-IAH-EWR
+flight,1678,CO-89-IAH-E$WR,CO-89-IAH-EWR
+flight,1680,empty,CO-89-IAH-EWR
+flight,1681,empty,CO-89-IAH-EWR
+flight,1687,CO-89-??IAH-EWR,CO-89-IAH-EWR
+flight,1689,$UA-1500-IAH$-GUA,UA-1500-IAH-GUA
+flight,1690,UA-1500-I@@AH-GUA,UA-1500-IAH-GUA
+flight,1694,empty,UA-1500-IAH-GUA
+flight,1695,empty,UA-1500-IAH-GUA
+flight,1702,UA-150@@@@0-IAH-GUA,UA-1500-IAH-GUA
+flight,1703,U%A-1500-IAH-G@@UA,UA-1500-IAH-GUA
+flight,1704,empty,UA-1500-IAH-GUA
+flight,1706,UA-2314-ATL#-PHL#,UA-2314-ATL-PHL
+flight,1710,empty,UA-2314-ATL-PHL
+flight,1720,UA$-2??314-ATL-PHL,UA-2314-ATL-PHL
+flight,1723,UA-2314-AT@@L-P#HL,UA-2314-ATL-PHL
+flight,1727,empty,UA-233-LAX-JFK
+flight,1730,UA-233-L????AX-JFK,UA-233-LAX-JFK
+flight,1734,empty,UA-233-LAX-JFK
+flight,1735,UA-233-LAX-JF#??K,UA-233-LAX-JFK
+flight,1740,UA-23%3-LAX-JFK,UA-233-LAX-JFK
+flight,1741,empty,UA-233-LAX-JFK
+flight,1752,empty,UA-233-LAX-JFK
+flight,1753,empty,UA-248-PHX-ORD
+flight,1758,empty,UA-248-PHX-ORD
+flight,1759,empty,UA-248-PHX-ORD
+flight,1768,empty,UA-248-PHX-ORD
+flight,1769,empty,UA-248-PHX-ORD
+flight,1773,empty,UA-2515-DFW-CLT
+flight,1775,UA-#2515-DFW-CLT@@,UA-2515-DFW-CLT
+flight,1782,empty,UA-2515-DFW-CLT
+flight,1792,UA-2515-%DFW-CL??T,UA-2515-DFW-CLT
+flight,1793,empty,UA-2515-DFW-CLT
+flight,1805,empty,UA-257-JFK-SFO
+flight,1807,UA-257-??JFK-SF??O,UA-257-JFK-SFO
+flight,1813,UA-257-JFK-#SFO,UA-257-JFK-SFO
+flight,1815,empty,UA-257-JFK-SFO
+flight,1817,empty,UA-257-JFK-SFO
+flight,1821,UA-2704-DTW-P$HX,UA-2704-DTW-PHX
+flight,1823,UA-2704-DTW-PH??X,UA-2704-DTW-PHX
+flight,1825,$UA-2704-DTW-PHX,UA-2704-DTW-PHX
+flight,1830,UA-2704-DTW-??PHX,UA-2704-DTW-PHX
+flight,1835,??UA-2704-DTW-PHX,UA-2704-DTW-PHX
+flight,1850,empty,UA-2708-EWR-CLT
+flight,1855,UA-@@2708-EWR-CLT,UA-2708-EWR-CLT
+flight,1856,empty,UA-2708-EWR-CLT
+flight,1857,UA-2708-$EWR-CLT,UA-2708-EWR-CLT
+flight,1858,empty,UA-2708-EWR-CLT
+flight,1864,U#A-2726-FLL-PH#L,UA-2726-FLL-PHL
+flight,1865,UA-2726-FLL-P$HL,UA-2726-FLL-PHL
+flight,1872,UA-2726-F#LL-PHL,UA-2726-FLL-PHL
+flight,1875,empty,UA-2726-FLL-PHL
+flight,1882,empty,UA-2726-FLL-PHL
+flight,1888,empty,UA-2830-MCO-CLT
+flight,1894,UA-$2830-M#CO-CLT,UA-2830-MCO-CLT
+flight,1895,UA-2830-MC@@O-CLT#,UA-2830-MCO-CLT
+flight,1899,empty,UA-2830-MCO-CLT
+flight,1904,empty,UA-2830-MCO-CLT
+flight,1912,U@@A-290%6-PHL-MCO,UA-2906-PHL-MCO
+flight,1914,empty,UA-2906-PHL-MCO
+flight,1917,empty,UA-2906-PHL-MCO
+flight,1921,%UA-2906-PHL-M@@CO,UA-2906-PHL-MCO
+flight,1929,UA-2906-PHL-M??CO,UA-2906-PHL-MCO
+flight,1930,empty,UA-2945-PHL-CLT
+flight,1932,empty,UA-2945-PHL-CLT
+flight,1933,UA-294#5-$PHL-CLT,UA-2945-PHL-CLT
+flight,1935,UA-2945-PHL-C??LT,UA-2945-PHL-CLT
+flight,1939,UA-294#5-PHL-CLT,UA-2945-PHL-CLT
+flight,1946,empty,UA-2945-PHL-CLT
+flight,1948,empty,UA-2945-PHL-CLT
+flight,1956,UA-3050-PH%X-CLT,UA-3050-PHX-CLT
+flight,1957,empty,UA-3050-PHX-CLT
+flight,1958,UA-3050-P@@HX-CLT,UA-3050-PHX-CLT
+flight,1960,empty,UA-3050-PHX-CLT
+flight,1964,%UA-3050-PHX-CLT,UA-3050-PHX-CLT
+flight,1973,empty,UA-3050-PHX-CLT
+flight,1984,empty,UA-3099-PHX-PHL
+flight,1990,empty,UA-3099-PHX-PHL
+flight,1993,U@@A-3099-PHX-PHL,UA-3099-PHX-PHL
+flight,2011,??UA-3373%-IAD-PHL,UA-3373-IAD-PHL
+flight,2018,UA??-3373-IAD-%PHL,UA-3373-IAD-PHL
+flight,2021,empty,UA-3373-IAD-PHL
+flight,2026,UA-3@@515-IAD-M@@SP,UA-3515-IAD-MSP
+flight,2032,empty,UA-3515-IAD-MSP
+flight,2034,empty,UA-3515-IAD-MSP
+flight,2035,UA-3515-IAD-MS$P,UA-3515-IAD-MSP
+flight,2041,UA-3515-IAD$-MSP,UA-3515-IAD-MSP
+flight,2045,UA-37-EDI-EWR#,UA-37-EDI-EWR
+flight,2046,empty,UA-37-EDI-EWR
+flight,2048,UA-37??-EDI-EW@@R,UA-37-EDI-EWR
+flight,2049,UA-#37-EDI-EWR,UA-37-EDI-EWR
+flight,2054,empty,UA-37-EDI-EWR
+flight,2058,UA-37-EDI-E??WR,UA-37-EDI-EWR
+flight,2063,empty,UA-37-EDI-EWR
+flight,2066,UA-37-EWR#-MCO,UA-37-EWR-MCO
+flight,2070,empty,UA-37-EWR-MCO
+flight,2072,empty,UA-37-EWR-MCO
+flight,2074,UA-37-EW%R-MCO,UA-37-EWR-MCO
+flight,2079,UA-37-EWR-M%CO,UA-37-EWR-MCO
+flight,2080,empty,UA-37-EWR-MCO
+flight,2082,empty,UA-37-EWR-MCO
+flight,2093,empty,UA-382-IAD-LAX
+flight,2094,UA-382-IAD-LAX%$,UA-382-IAD-LAX
+flight,2097,UA-382@@-IAD-LAX,UA-382-IAD-LAX
+flight,2098,UA-382-IA#D??-LAX,UA-382-IAD-LAX
+flight,2099,empty,UA-382-IAD-LAX
+flight,2106,empty,UA-382-IAD-LAX
+flight,2110,UA$-3925-IAD-ORF,UA-3925-IAD-ORF
+flight,2112,empty,UA-3925-IAD-ORF
+flight,2114,empty,UA-3925-IAD-ORF
+flight,2125,empty,UA-3925-IAD-ORF
+flight,2126,empty,UA-3925-IAD-ORF
+flight,2131,UA-3925??-IAD-ORF,UA-3925-IAD-ORF
+flight,2133,empty,UA-3925-IAD-ORF
+flight,2135,empty,UA-3925-IAD-ORF
+flight,2136,empty,UA-3925-IAD-ORF
+flight,2142,UA-39??7-JFK-S@@FO,UA-397-JFK-SFO
+flight,2145,empty,UA-397-JFK-SFO
+flight,2148,empty,UA-397-JFK-SFO
+flight,2160,empty,UA-414-LAX-SFO
+flight,2161,empty,UA-414-LAX-SFO
+flight,2162,empty,UA-414-LAX-SFO
+flight,2163,UA-414-LA#X-SFO,UA-414-LAX-SFO
+flight,2164,empty,UA-414-LAX-SFO
+flight,2166,empty,UA-414-LAX-SFO
+flight,2168,UA-414-LA#X-#SFO,UA-414-LAX-SFO
+flight,2170,empty,UA-414-LAX-SFO
+flight,2171,empty,UA-414-LAX-SFO
+flight,2176,empty,UA-414-LAX-SFO
+flight,2181,UA-414-LAX-SFO#,UA-414-LAX-SFO
+flight,2186,U%%A-5487-SFO-MRY,UA-5487-SFO-MRY
+flight,2202,empty,UA-62-IAH-EWR
+flight,2203,UA-62-@@IAH-EWR,UA-62-IAH-EWR
+flight,2204,empty,UA-62-IAH-EWR
+flight,2213,UA-62-IA%H-EWR,UA-62-IAH-EWR
+flight,2214,empty,UA-62-IAH-EWR
+flight,2215,empty,UA-62-IAH-EWR
+flight,2216,empty,UA-62-IAH-EWR
+flight,2219,empty,UA-62-IAH-EWR
+flight,2223,empty,UA-6273-YYC-SFO
+flight,2224,UA-6273-YYC-SF@@O,UA-6273-YYC-SFO
+flight,2225,empty,UA-6273-YYC-SFO
+flight,2230,#UA-6273-YYC-SFO,UA-6273-YYC-SFO
+flight,2231,empty,UA-6273-YYC-SFO
+flight,2238,empty,UA-6273-YYC-SFO
+flight,2242,??UA-664-ORD-%PHL,UA-664-ORD-PHL
+flight,2243,empty,UA-664-ORD-PHL
+flight,2244,UA-??664-ORD-PHL,UA-664-ORD-PHL
+flight,2249,empty,UA-664-ORD-PHL
+flight,2250,empty,UA-664-ORD-PHL
+flight,2251,UA-664??-ORD-PHL,UA-664-ORD-PHL
+flight,2258,empty,UA-664-ORD-PHL
+flight,2260,empty,UA-664-ORD-PHL
+flight,2262,empty,UA-664-ORD-PHL
+flight,2263,empty,UA-664-ORD-PHL
+flight,2267,empty,UA-664-ORD-PHL
+flight,2268,UA-664-ORD#-PHL,UA-664-ORD-PHL
+flight,2272,empty,UA-828-SFO-ORD
+flight,2276,UA-828??-S$FO-ORD,UA-828-SFO-ORD
+flight,2286,UA-8#28-SFO-OR@@D,UA-828-SFO-ORD
+flight,2289,empty,UA-828-SFO-ORD
+flight,2294,empty,UA-843-LAX-ORD
+flight,2304,empty,UA-843-LAX-ORD
+flight,2305,UA-843-#LAX-ORD,UA-843-LAX-ORD
+flight,2307,empty,UA-843-LAX-ORD
+flight,2311,empty,UA-843-LAX-ORD
+flight,2313,empty,UA-843-LAX-ORD
+flight,2315,empty,UA-854-SFO-IAH
+flight,2321,UA-854#-SFO-IAH,UA-854-SFO-IAH
+flight,2324,UA#-854-SFO-IAH,UA-854-SFO-IAH
+flight,2326,empty,UA-854-SFO-IAH
+flight,2328,UA-854-SFO-IAH??$,UA-854-SFO-IAH
+flight,2329,empty,UA-854-SFO-IAH
+flight,2330,UA-854-SFO-@@IAH,UA-854-SFO-IAH
+flight,2332,empty,UA-854-SFO-IAH
+flight,2335,UA-??854-SFO-IAH,UA-854-SFO-IAH
+flight,2337,empty,UA-858-PVG-SFO
+flight,2338,U@@A-??858-PVG-SFO,UA-858-PVG-SFO
+flight,2342,empty,UA-858-PVG-SFO
+flight,2345,UA-8@@58-PVG-$SFO,UA-858-PVG-SFO
+flight,2347,empty,UA-858-PVG-SFO
+flight,2348,empty,UA-858-PVG-SFO
+flight,2349,empty,UA-858-PVG-SFO
+flight,2350,@@UA-858-PVG-SFO,UA-858-PVG-SFO
+flight,2351,UA-858-PVG-S@@FO,UA-858-PVG-SFO
+flight,2355,empty,UA-938-DEN-ORD
+flight,2359,UA-938-DEN-OR$D,UA-938-DEN-ORD
+flight,2368,empty,UA-938-DEN-ORD
+sched_dep_time,52,empty,8:00 p.m.
+sched_dep_time,68,empty,8:00 p.m.
+sched_dep_time,124,empty,7:15 a.m.
+sched_dep_time,148,11:5%5 p.m.??,11:55 p.m.
+sched_dep_time,149,empty,11:25 a.m.
+sched_dep_time,178,empty,6:30 p.m.
+sched_dep_time,209,empty,10:15 a.m.
+sched_dep_time,275,empty,2:55 p.m.
+sched_dep_time,278,empty,2:55 p.m.
+sched_dep_time,283,@@2:55 p.#m.,2:55 p.m.
+sched_dep_time,299,empty,11:25 p.m.
+sched_dep_time,332,empty,10:40 a.m.
+sched_dep_time,337,empty,10:40 a.m.
+sched_dep_time,361,empty,7:10 a.m.
+sched_dep_time,399,empty,8:25 p.m.
+sched_dep_time,410,8:2#5 p.@@m.,8:25 p.m.
+sched_dep_time,442,empty,7:25 a.m.
+sched_dep_time,471,empty,11:35 a.m.
+sched_dep_time,500,empty,7:55 a.m.
+sched_dep_time,525,12:0?@@?0 p.m.,12:00 p.m.
+sched_dep_time,550,empty,8:20 p.m.
+sched_dep_time,567,7:0@@0 a.m#.,7:00 a.m.
+sched_dep_time,594,empty,12:15 p.m.
+sched_dep_time,609,empty,4:00 p.m.
+sched_dep_time,676,empty,6:00 a.m.
+sched_dep_time,694,9:0@@0 p.m.,9:00 p.m.
+sched_dep_time,705,empty,9:00 p.m.
+sched_dep_time,731,empty,6:00 a.m.
+sched_dep_time,734,empty,6:00 a.m.
+sched_dep_time,749,empty,7:10 a.m.
+sched_dep_time,772,empty,7:30 a.m.
+sched_dep_time,797,empty,10:40 a.m.
+sched_dep_time,828,empty,6:45 a.m.
+sched_dep_time,834,6:4$#5 a.m.,6:45 a.m.
+sched_dep_time,862,empty,8:35 a.m.
+sched_dep_time,937,6:45 ??p#.m.,6:45 p.m.
+sched_dep_time,950,empty,8:35 a.m.
+sched_dep_time,955,empty,8:35 a.m.
+sched_dep_time,969,empty,8:35 a.m.
+sched_dep_time,980,empty,3:35 p.m.
+sched_dep_time,991,empty,3:35 p.m.
+sched_dep_time,1011,empty,11:45 a.m.
+sched_dep_time,1069,empty,6:00 a.m.
+sched_dep_time,1123,empty,7:10 a.m.
+sched_dep_time,1131,empty,7:10 a.m.
+sched_dep_time,1155,empty,9:05 a.m.
+sched_dep_time,1156,empty,9:05 a.m.
+sched_dep_time,1203,empty,1:30 p.m.
+sched_dep_time,1233,empty,1:05 p.m.
+sched_dep_time,1261,empty,3:05 p.m.
+sched_dep_time,1308,empty,8:40 a.m.
+sched_dep_time,1314,empty,8:40 a.m.
+sched_dep_time,1320,empty,9:45 a.m.
+sched_dep_time,1347,empty,9:15 a.m.
+sched_dep_time,1361,empty,9:15 a.m.
+sched_dep_time,1522,7:10 p.$m.,7:10 p.m.
+sched_dep_time,1595,empty,7:35 a.m.
+sched_dep_time,1626,empty,2:30 p.m.
+sched_dep_time,1659,empty,5:25 p.m.
+sched_dep_time,1664,empty,5:25 p.m.
+sched_dep_time,1676,empty,6:00 a.m.
+sched_dep_time,1677,empty,6:00 a.m.
+sched_dep_time,1706,empty,2:55 p.m.
+sched_dep_time,1710,empty,2:55 p.m.
+sched_dep_time,1752,4:25 p.$m.,4:25 p.m.
+sched_dep_time,1753,empty,12:57 p.m.
+sched_dep_time,1805,empty,2:30 p.m.
+sched_dep_time,1815,empty,2:30 p.m.
+sched_dep_time,1823,empty,11:15 a.m.
+sched_dep_time,1865,empty,4:00 p.m.
+sched_dep_time,1872,empty,4:00 p.m.
+sched_dep_time,1914,empty,3:50 p.m.
+sched_dep_time,1921,empty,3:50 p.m.
+sched_dep_time,1993,empty,11:55 a.m.
+sched_dep_time,2035,empty,8:15 a.m.
+sched_dep_time,2045,empty,9:05 a.m.
+sched_dep_time,2048,empty,9:05 a.m.
+sched_dep_time,2049,empty,9:05 a.m.
+sched_dep_time,2063,empty,9:05 a.m.
+sched_dep_time,2079,empty,1:29 p.m.
+sched_dep_time,2112,8??:4@@1 a.m.,8:41 a.m.
+sched_dep_time,2114,empty,8:41 a.m.
+sched_dep_time,2145,empty,8:00 a.m.
+sched_dep_time,2162,empty,6:00 a.m.
+sched_dep_time,2170,empty,6:00 a.m.
+sched_dep_time,2181,empty,6:00 a.m.
+sched_dep_time,2203,empty,2:30 p.m.
+sched_dep_time,2215,empty,2:30 p.m.
+sched_dep_time,2224,empty,7:35 a.m.
+sched_dep_time,2243,empty,1:33 p.m.
+sched_dep_time,2251,empty,1:33 p.m.
+sched_dep_time,2258,empty,1:33 p.m.
+sched_dep_time,2286,empty,11:08 p.m.
+sched_dep_time,2326,7:5$3 a.m.,7:53 a.m.
+sched_dep_time,2342,empty,1:45 p.m.
+sched_dep_time,2345,1:4??5 p.m.,1:45 p.m.
+sched_dep_time,2347,1:4$5?? p.m.,1:45 p.m.
+act_dep_time,9,empty,5:08 p.m.
+act_dep_time,24,7:2??2 a.m.,7:22 a.m.
+act_dep_time,34,empty,7:22 a.m.
+act_dep_time,123,empty,7:21 a.m.
+act_dep_time,124,empty,7:21 a.m.
+act_dep_time,140,empty,11:55 p.m.
+act_dep_time,155,empty,11:40 a.m.
+act_dep_time,198,empty,6:30 p.m.
+act_dep_time,240,empty,7:58 p.m.
+act_dep_time,275,empty,3:27 p.m.
+act_dep_time,351,7:3@@1 a.m.,7:31 a.m.
+act_dep_time,438,empty,7:39 a.m.
+act_dep_time,441,empty,7:39 a.m.
+act_dep_time,472,empty,11:52 a.m.
+act_dep_time,494,empty,8:04 a.m.
+act_dep_time,622,4:12 p@@.m.@@,4:12 p.m.
+act_dep_time,683,empty,6:10 a.m.
+act_dep_time,684,empty,6:10 a.m.
+act_dep_time,685,empty,6:10 a.m.
+act_dep_time,689,empty,9:00 p.m.
+act_dep_time,730,empty,6:56 a.m.
+act_dep_time,734,empty,6:56 a.m.
+act_dep_time,828,empty,6:57 a.m.
+act_dep_time,833,empty,6:57 a.m.
+act_dep_time,894,empty,12:10 p.m.
+act_dep_time,903,empty,12:10 p.m.
+act_dep_time,905,empty,12:10 p.m.
+act_dep_time,919,empty,6:55 p.m.
+act_dep_time,941,empty,6:55 p.m.
+act_dep_time,943,empty,6:55 p.m.
+act_dep_time,964,empty,8:51 a.m.
+act_dep_time,1015,empty,12:13 p.m.
+act_dep_time,1028,empty,12:12 p.m.
+act_dep_time,1040,empty,12:12 p.m.
+act_dep_time,1042,empty,12:12 p.m.
+act_dep_time,1075,empty,4:29 p.m.
+act_dep_time,1168,empty,10:10 a.m.
+act_dep_time,1215,empty,1:30 p.m.
+act_dep_time,1235,empty,1:19 p.m.
+act_dep_time,1243,empty,1:19 p.m.
+act_dep_time,1261,empty,3:36 p.m.
+act_dep_time,1263,empty,3:36 p.m.
+act_dep_time,1289,11:5@@6 a.m.,11:56 a.m.
+act_dep_time,1300,empty,8:40 a.m.
+act_dep_time,1430,empty,7:14 p.m.
+act_dep_time,1442,empty,10:20 a.m.
+act_dep_time,1447,empty,10:20 a.m.
+act_dep_time,1488,empty,7:15 p.m.
+act_dep_time,1520,empty,3:58 p.m.
+act_dep_time,1540,empty,8:25 p.m.
+act_dep_time,1541,empty,8:25 p.m.
+act_dep_time,1544,empty,5:30 p.m.
+act_dep_time,1595,empty,7:29 a.m.
+act_dep_time,1655,5:22 @@p#.m.,5:22 p.m.
+act_dep_time,1660,empty,5:22 p.m.
+act_dep_time,1664,5:22 p$.m.,5:22 p.m.
+act_dep_time,1676,empty,6:02 a.m.
+act_dep_time,1678,empty,6:02 a.m.
+act_dep_time,1703,empty,9:16 a.m.
+act_dep_time,1723,empty,2:55 p.m.
+act_dep_time,1727,empty,4:25 p.m.
+act_dep_time,1768,empty,1:32 p.m.
+act_dep_time,1773,empty,7:05 a.m.
+act_dep_time,1817,empty,2:26 p.m.
+act_dep_time,1823,empty,11:15 a.m.
+act_dep_time,1830,11#:1%5 a.m.,11:15 a.m.
+act_dep_time,1856,empty,2:55 p.m.
+act_dep_time,1857,empty,2:55 p.m.
+act_dep_time,1864,4:0%@@0 p.m.,4:00 p.m.
+act_dep_time,1894,empty,3:27 p.m.
+act_dep_time,1899,empty,3:27 p.m.
+act_dep_time,1914,empty,4:28 p.m.
+act_dep_time,1917,empty,4:28 p.m.
+act_dep_time,1929,empty,4:28 p.m.
+act_dep_time,1933,empty,3:11 a.m.
+act_dep_time,1939,empty,3:11 a.m.
+act_dep_time,2018,empty,8:26 a.m.
+act_dep_time,2032,empty,8:12 a.m.
+act_dep_time,2058,empty,8:52 a.m.
+act_dep_time,2079,empty,1:48 p.m.
+act_dep_time,2080,1:4$8 p.m.,1:48 p.m.
+act_dep_time,2094,empty,12:35 p.m.
+act_dep_time,2106,empty,12:35 p.m.
+act_dep_time,2133,empty,8:42 a.m.
+act_dep_time,2164,empty,5:56 a.m.
+act_dep_time,2168,empty,5:56 a.m.
+act_dep_time,2202,empty,2:48 p.m.
+act_dep_time,2214,empty,2:48 p.m.
+act_dep_time,2215,empty,2:48 p.m.
+act_dep_time,2243,empty,1:31 p.m.
+act_dep_time,2272,empty,11:08 p.m.
+act_dep_time,2351,empty,1:32 p.m.
+act_dep_time,2359,empty,4:15 p.m.
+sched_arr_time,28,empty,10:34 a.m.
+sched_arr_time,68,empty,9:45 p.m.
+sched_arr_time,74,9:45?? p$.m.,9:45 p.m.
+sched_arr_time,75,@@2:35 p.$m.,2:35 p.m.
+sched_arr_time,115,empty,10:35 a.m.
+sched_arr_time,157,empty,5:25 p.m.
+sched_arr_time,232,empty,10:30 p.m.
+sched_arr_time,235,10:30% p.$m.,10:30 p.m.
+sched_arr_time,240,10:30 p??.$m.,10:30 p.m.
+sched_arr_time,241,empty,10:30 p.m.
+sched_arr_time,258,2:20 @@p??.m.,2:20 p.m.
+sched_arr_time,271,5:@@55 p.??m.,5:55 p.m.
+sched_arr_time,281,empty,5:55 p.m.
+sched_arr_time,293,5:??55 p%.m.,5:55 p.m.
+sched_arr_time,299,empty,6:55 a.m.
+sched_arr_time,332,empty,2:45 p.m.
+sched_arr_time,338,empty,2:45 p.m.
+sched_arr_time,399,11:5@@0 p.m#.,11:50 p.m.
+sched_arr_time,410,11:5??0 #p.m.,11:50 p.m.
+sched_arr_time,411,empty,11:50 p.m.
+sched_arr_time,430,empty,11:10 a.m.
+sched_arr_time,471,2:25 p$.m.,2:25 p.m.
+sched_arr_time,478,empty,11:05 a.m.
+sched_arr_time,525,empty,3:15 p.m.
+sched_arr_time,533,empty,9:20 p.m.
+sched_arr_time,553,9:5@@5 a.m.,9:55 a.m.
+sched_arr_time,555,empty,9:55 a.m.
+sched_arr_time,567,empty,9:55 a.m.
+sched_arr_time,583,2:??45 p.@@m.,2:45 p.m.
+sched_arr_time,598,empty,2:45 p.m.
+sched_arr_time,625,6:4%0 p.@@m.,6:40 p.m.
+sched_arr_time,633,empty,4:05 p.m.
+sched_arr_time,635,empty,4:05 p.m.
+sched_arr_time,672,empty,6:40 a.m.
+sched_arr_time,684,empty,6:40 a.m.
+sched_arr_time,702,empty,12:15 a.m.
+sched_arr_time,741,empty,9:40 a.m.
+sched_arr_time,815,2:59 p.@@??m.,2:59 p.m.
+sched_arr_time,863,empty,10:40 a.m.
+sched_arr_time,875,empty,12:55 p.m.
+sched_arr_time,905,empty,2:15 p.m.
+sched_arr_time,924,??9:10 p%.m.,9:10 p.m.
+sched_arr_time,955,empty,11:50 a.m.
+sched_arr_time,985,empty,4:00 p.m.
+sched_arr_time,1011,empty,2:00 p.m.
+sched_arr_time,1070,empty,7:55 p.m.
+sched_arr_time,1074,empty,7:55 p.m.
+sched_arr_time,1087,empty,7:55 p.m.
+sched_arr_time,1106,empty,9:25 a.m.
+sched_arr_time,1116,empty,9:25 a.m.
+sched_arr_time,1140,empty,10:45 a.m.
+sched_arr_time,1155,empty,12:35 p.m.
+sched_arr_time,1156,1%2:35 p.@@m.,12:35 p.m.
+sched_arr_time,1161,empty,12:35 p.m.
+sched_arr_time,1193,empty,9:35 a.m.
+sched_arr_time,1203,empty,3:50 p.m.
+sched_arr_time,1205,empty,3:50 p.m.
+sched_arr_time,1209,empty,3:50 p.m.
+sched_arr_time,1227,empty,2:35 p.m.
+sched_arr_time,1280,1:1??7 p.??m.,1:17 p.m.
+sched_arr_time,1289,1:17 p.$m.,1:17 p.m.
+sched_arr_time,1290,empty,1:17 p.m.
+sched_arr_time,1422,empty,10:15 p.m.
+sched_arr_time,1512,empty,7:05 p.m.
+sched_arr_time,1540,empty,8:56 p.m.
+sched_arr_time,1541,empty,8:56 p.m.
+sched_arr_time,1601,empty,9:21 a.m.
+sched_arr_time,1629,7:03 p#.m.,7:03 p.m.
+sched_arr_time,1653,empty,8:22 p.m.
+sched_arr_time,1656,empty,8:22 p.m.
+sched_arr_time,1660,empty,8:22 p.m.
+sched_arr_time,1663,empty,8:22 p.m.
+sched_arr_time,1677,empty,10:20 a.m.
+sched_arr_time,1703,empty,11:45 a.m.
+sched_arr_time,1723,empty,5:00 p.m.
+sched_arr_time,1835,empty,1:40 p.m.
+sched_arr_time,1864,6:%4@@6 p.m.,6:46 p.m.
+sched_arr_time,1865,empty,6:46 p.m.
+sched_arr_time,1888,empty,5:05 p.m.
+sched_arr_time,1904,empty,5:05 p.m.
+sched_arr_time,1921,empty,6:23 p.m.
+sched_arr_time,1946,empty,1:45 p.m.
+sched_arr_time,1957,4:57 p@@$.m.,4:57 p.m.
+sched_arr_time,2011,empty,9:24 a.m.
+sched_arr_time,2035,empty,10:06 a.m.
+sched_arr_time,2063,empty,11:53 a.m.
+sched_arr_time,2080,empty,4:17 p.m.
+sched_arr_time,2093,empty,3:19 p.m.
+sched_arr_time,2110,empty,9:54 a.m.
+sched_arr_time,2136,empty,9:54 a.m.
+sched_arr_time,2142,empty,11:55 a.m.
+sched_arr_time,2145,empty,11:55 a.m.
+sched_arr_time,2160,empty,7:23 a.m.
+sched_arr_time,2181,empty,7:23 a.m.
+sched_arr_time,2203,empty,7:03 p.m.
+sched_arr_time,2204,7@@:03 p??.m.,7:03 p.m.
+sched_arr_time,2213,empty,7:03 p.m.
+sched_arr_time,2214,empty,7:03 p.m.
+sched_arr_time,2250,empty,4:31 p.m.
+sched_arr_time,2263,empty,4:31 p.m.
+sched_arr_time,2267,empty,4:31 p.m.
+sched_arr_time,2286,empty,5:11 a.m.
+sched_arr_time,2324,1:3$9 p.m.,1:39 p.m.
+sched_arr_time,2349,empty,8:27 a.m.
+sched_arr_time,2368,empty,7:35 p.m.
+act_arr_time,24,empty,10:04 a.m.
+act_arr_time,26,empty,10:04 a.m.
+act_arr_time,39,empty,10:04 a.m.
+act_arr_time,129,empty,5:50 a.m.
+act_arr_time,140,empty,5:50 a.m.
+act_arr_time,155,empty,4:56 p.m.
+act_arr_time,182,empty,7:25 p.m.
+act_arr_time,227,empty,10:30 p.m.
+act_arr_time,240,10:3??0 p.m.,10:30 p.m.
+act_arr_time,304,empty,6:55 a.m.
+act_arr_time,330,empty,2:46 p.m.
+act_arr_time,338,empty,2:46 p.m.
+act_arr_time,351,3:1$4 p.%m.,3:14 p.m.
+act_arr_time,369,empty,3:14 p.m.
+act_arr_time,378,empty,11:06 a.m.
+act_arr_time,403,empty,11:50 p.m.
+act_arr_time,410,empty,11:50 p.m.
+act_arr_time,411,empty,11:50 p.m.
+act_arr_time,465,2:2$7 p.m.,2:27 p.m.
+act_arr_time,472,empty,2:27 p.m.
+act_arr_time,524,3:16 p#.m.,3:16 p.m.
+act_arr_time,525,empty,3:16 p.m.
+act_arr_time,528,empty,9:20 p.m.
+act_arr_time,535,empty,9:20 p.m.
+act_arr_time,550,empty,9:20 p.m.
+act_arr_time,555,empty,9:45 a.m.
+act_arr_time,582,??2:5#0 p.m.,2:50 p.m.
+act_arr_time,583,empty,2:50 p.m.
+act_arr_time,589,empty,2:50 p.m.
+act_arr_time,596,empty,2:50 p.m.
+act_arr_time,605,empty,6:15 p.m.
+act_arr_time,633,empty,3:43 p.m.
+act_arr_time,684,empty,6:19 a.m.
+act_arr_time,694,empty,12:15 a.m.
+act_arr_time,730,empty,7:51 a.m.
+act_arr_time,777,empty,8:06 a.m.
+act_arr_time,778,empty,8:06 a.m.
+act_arr_time,793,empty,3:04 p.m.
+act_arr_time,895,empty,1:43 p.m.
+act_arr_time,905,empty,1:43 p.m.
+act_arr_time,924,empty,8:53 p.m.
+act_arr_time,937,empty,8:53 p.m.
+act_arr_time,1000,2:10 p??.m.,2:10 p.m.
+act_arr_time,1013,empty,2:10 p.m.
+act_arr_time,1058,empty,9:05 a.m.
+act_arr_time,1077,empty,7:39 p.m.
+act_arr_time,1108,empty,9:28 a.m.
+act_arr_time,1116,empty,9:28 a.m.
+act_arr_time,1121,11:1#??2 a.m.,11:12 a.m.
+act_arr_time,1131,empty,11:12 a.m.
+act_arr_time,1164,empty,1:27 p.m.
+act_arr_time,1167,1:27 p@@.m.#,1:27 p.m.
+act_arr_time,1203,empty,3:50 p.m.
+act_arr_time,1205,empty,3:50 p.m.
+act_arr_time,1215,empty,3:50 p.m.
+act_arr_time,1255,empty,6:43 p.m.
+act_arr_time,1261,empty,6:43 p.m.
+act_arr_time,1298,empty,10:56 a.m.
+act_arr_time,1334,empty,1:19 p.m.
+act_arr_time,1405,empty,11:32 a.m.
+act_arr_time,1445,empty,6:34 p.m.
+act_arr_time,1447,empty,6:34 p.m.
+act_arr_time,1483,empty,12:21 a.m.
+act_arr_time,1499,empty,12:21 a.m.
+act_arr_time,1509,empty,6:36 p.m.
+act_arr_time,1528,9:52 p$%.m.,9:52 p.m.
+act_arr_time,1558,6??:4$0 p.m.,6:40 p.m.
+act_arr_time,1617,empty,3:31 p.m.
+act_arr_time,1626,7:1??0 p.m.,7:10 p.m.
+act_arr_time,1689,empty,11:56 a.m.
+act_arr_time,1723,4:47 p%.%m.,4:47 p.m.
+act_arr_time,1727,empty,12:29 a.m.
+act_arr_time,1730,empty,12:29 a.m.
+act_arr_time,1769,empty,5:34 p.m.
+act_arr_time,1792,empty,10:47 a.m.
+act_arr_time,1817,empty,5:42 p.m.
+act_arr_time,1855,empty,4:44 p.m.
+act_arr_time,1875,6:@@2@@8 p.m.,6:28 p.m.
+act_arr_time,1899,empty,5:17 p.m.
+act_arr_time,1930,empty,1:15 p.m.
+act_arr_time,1956,empty,5:05 p.m.
+act_arr_time,2018,empty,9:13 a.m.
+act_arr_time,2032,empty,9:56 a.m.
+act_arr_time,2034,empty,9:56 a.m.
+act_arr_time,2072,empty,4:17 p.m.
+act_arr_time,2082,empty,4:17 p.m.
+act_arr_time,2110,empty,9:43 a.m.
+act_arr_time,2112,empty,9:43 a.m.
+act_arr_time,2148,empty,11:58 a.m.
+act_arr_time,2168,empty,7:17 a.m.
+act_arr_time,2181,empty,7:17 a.m.
+act_arr_time,2204,empty,7:10 p.m.
+act_arr_time,2215,empty,7:10 p.m.
+act_arr_time,2224,empty,8:45 a.m.
+act_arr_time,2238,empty,8:45 a.m.
+act_arr_time,2268,4:23# p.#m.,4:23 p.m.
+act_arr_time,2272,empty,5:11 a.m.
+act_arr_time,2276,empty,5:11 a.m.
+act_arr_time,2289,empty,5:11 a.m.
+act_arr_time,2304,empty,7:58 p.m.
+act_arr_time,2329,1:3#0 p.m.,1:30 p.m.
+act_arr_time,2330,empty,1:30 p.m.
+act_arr_time,2337,empty,8:02 a.m.
+act_arr_time,2349,empty,8:02 a.m.
+act_arr_time,2368,empty,7:36 p.m.

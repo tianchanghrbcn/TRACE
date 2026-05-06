@@ -1,0 +1,22 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+City,413,empty,russellvill%@@e,russellville
+State,451,ak,$ak@@,ak
+PhoneNumber,414,empty,11666744377.589342,2563321611
+PhoneNumber,451,9075436300,45404496722.14328,9075436300
+HospitalOwner,451,empty,gover#nment - federal,government - federal
+Condition,775,children s asthma care,children s asthma?? care,children s asthma care
+Condition,866,empty,pneumonia$,pneumonia
+Stateavg,433,ak_hf-1,al_hf-1,ak_hf-1
+Stateavg,434,ak_hf-2,al_hf-2,ak_hf-2
+Stateavg,435,ak_hf-3,al_hf-3,ak_hf-3
+Stateavg,436,ak_hf-4,al_hf-4,ak_hf-4
+Stateavg,439,ak_pn-4,al_pn-4,ak_pn-4
+Stateavg,440,ak@@_pn-5c,al_pn-5c,ak_pn-5c
+Stateavg,441,ak_p$n-6,al_pn-6,ak_pn-6
+Stateavg,442,empty,al_pn-7,ak_pn-7
+Stateavg,445,ak_scip-%inf-2,al_scip-inf-2,ak_scip-inf-2
+Stateavg,447,ak_scip-inf-4,al_scip-inf-4,ak_scip-inf-4
+Stateavg,448,ak_scip-inf-6,al_scip-inf-6,ak_scip-inf-6
+Stateavg,449,ak_scip-vte-1,al_scip-vte-1,ak_scip-vte-1
+Stateavg,451,ak_ami-1,al_ami-1,ak_ami-1
+Stateavg,452,ak_ami-2,al_ami-2,ak_ami-2

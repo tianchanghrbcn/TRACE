@@ -1,0 +1,3565 @@
+Attribute,Index,Clean Value,Dirty Value
+src,2,airtravelcenter,ai#rtravelcenter
+src,6,flightaware,fligh??t??aware
+src,7,flightexplorer,empty
+src,9,flightstats,empty
+src,12,flytecomm,%fly??tecomm
+src,15,helloflight,empty
+src,19,panynj,empty
+src,21,wunderground,empty
+src,24,allegiantair,empty
+src,26,businesstravellogue,empty
+src,29,flights,empty
+src,31,flightview,empty
+src,37,mia,empty
+src,40,orbitz,or#bitz
+src,43,travelocity,travelocit##y
+src,44,weather,wea%ther@@
+src,45,world-flight-tracker,world-??flight-tr%acker
+src,48,airtravelcenter,empty
+src,54,flightexplorer,empty
+src,56,flightstats,empty
+src,57,flightview,empty
+src,58,flylouisville,empty
+src,60,foxbusiness,foxbusi$nes%s
+src,63,mco,m@@@@co
+src,66,orbitz,empty
+src,72,weather,w??eather
+src,80,dfw,d#fw
+src,82,flightaware,flightawa%??re
+src,83,flightexplorer,flightexpl@@orer
+src,84,flights,empty
+src,90,gofox,??gofox#
+src,92,myrateplan,myratepla%n
+src,105,flightaware,empty
+src,108,flightstats,flightstats??
+src,110,flightwise,empty
+src,115,helloflight,$hellofligh#t
+src,116,ifly,ifl%y
+src,119,orbitz,empty
+src,121,quicktrip,$$quicktrip
+src,126,aa,a??%a
+src,127,airtravelcenter,airtravelcen??ter
+src,128,allegiantair,a$lleg%iantair
+src,130,businesstravellogue,businesstravellog%ue
+src,131,flightexplorer,empty
+src,133,flightstats,fligh%tst%ats
+src,139,helloflight,h#ellofli??ght
+src,144,quicktrip,quicktrip$$
+src,147,weather,empty
+src,150,airtravelcenter,air@@travelcenter
+src,151,allegiantair,empty
+src,153,businesstravellogue,empty
+src,155,flightexplorer,empty
+src,157,flightview,f@@lightview
+src,158,flylouisville,empty
+src,159,flytecomm,empty
+src,163,myrateplan,myratepla@??@n
+src,165,orbitz,empty
+src,172,airtravelcenter,airtrave??lcen??ter
+src,173,allegiantair,al#legiantair
+src,182,flightwise,empty
+src,186,gofox,$gofox#
+src,188,mco,m??@@co
+src,189,myrateplan,myrate##plan
+src,197,world-flight-tracker,empty
+src,203,businesstravellogue,empty
+src,205,flightaware,fli@@ghtaware
+src,207,flights,empty
+src,212,foxbusiness,#foxbusin$ess
+src,217,orbitz,o%rbitz
+src,220,travelocity,empty
+src,221,usatoday,usat$oday
+src,222,weather,empty
+src,226,airtravelcenter,empty
+src,234,flightview,flightv??iew
+src,239,helloflight,empty
+src,240,ifly,empty
+src,243,orbitz,empty
+src,261,flytecomm,empty
+src,265,myrateplan,empty
+src,268,travelocity,empty
+src,270,weather,weather#%
+src,273,allegiantair,empty
+src,278,flightstats,flights#tats@@
+src,286,mco,empty
+src,288,mytripandmore,my$tripandmore??
+src,292,travelocity,empty
+src,295,wunderground,empty
+src,299,boston,bost??@@on
+src,302,flightexplorer,empty
+src,304,flightstats,flig%htstats
+src,307,flytecomm,flyteco??mm
+src,311,mco,empty
+src,312,myrateplan,myratepla#n
+src,316,quicktrip,empty
+src,317,travelocity,trav??e#locity
+src,319,world-flight-tracker,empty
+src,320,wunderground,wunder@@ground
+src,323,allegiantair,empty
+src,326,flightarrival,empty
+src,327,flightaware,empty
+src,337,ifly,ifl#y??
+src,345,usatoday,usatod%ay
+src,349,aa,empty
+src,352,boston,%bo@@ston
+src,356,flightexplorer,f%lightexplorer
+src,357,flights,f@#@lights
+src,358,flightstats,empty
+src,359,flightview,empty
+src,367,panynj,empty
+src,370,weather,empty
+src,377,businesstravellogue,empty
+src,378,flightarrival,empty
+src,385,flytecomm,empty
+src,387,gofox,gofox%
+src,389,myrateplan,myratepla@@n
+src,390,orbitz,empty
+src,398,wunderground,empty
+src,401,allegiantair,empty
+src,403,businesstravellogue,empty
+src,406,flightaware,empty
+src,407,flightexplorer,f$ligh#texplorer
+src,408,flights,empty
+src,413,flytecomm,fl%ytecomm
+src,416,helloflight,he??lloflight
+src,417,myrateplan,%$myrateplan
+src,421,quicktrip,quic??ktrip
+src,429,boston,empty
+src,432,flightexplorer,f@@lightexplorer
+src,433,flights,flig$hts
+src,436,flightwise,flightw??ise
+src,437,flylouisville,empty
+src,449,weather,empty
+src,453,airtravelcenter,empty
+src,455,boston,empty
+src,464,flytecomm,fly@@tecomm
+src,466,gofox,gof#ox%
+src,469,mytripandmore,empty
+src,471,panynj,empty
+src,473,travelocity,empty
+src,474,weather,weathe$$r
+src,475,world-flight-tracker,world-flight-track??er
+src,480,boston,empty
+src,484,flightexplorer,empty
+src,486,flightstats,empty
+src,487,flightview,empty
+src,488,flylouisville,empty
+src,504,allegiantair,empty
+src,505,boston,empty
+src,506,businesstravellogue,busine$sstravellogue
+src,511,flightstats,flightsta%t%s
+src,514,flytecomm,empty
+src,518,ifly,empty
+src,520,orbitz,empty
+src,521,panynj,empty
+src,524,weather,empty
+src,537,flylouisville,empty
+src,542,ifly,ifly$@@
+src,543,myrateplan,myra??teplan
+src,544,mytripandmore,empty
+src,547,quicktrip,empty
+src,552,airtravelcenter,empty
+src,555,businesstravellogue,empty
+src,557,flightaware,flighta$wa%re
+src,562,flylouisville,empty
+src,576,world-flight-tracker,w%orld-flight-??tracker
+src,582,businesstravellogue,empty
+src,584,flightexplorer,flighte@@xplorer
+src,589,flytecomm,empty
+src,619,helloflight,he#llofligh$t
+src,620,ifly,if%ly
+src,629,weather,empty
+src,630,world-flight-tracker,empty
+src,637,flightaware,empty
+src,640,flightstats,flig%h%tstats
+src,644,foxbusiness,empty
+src,645,gofox,????gofox
+src,651,panynj,#pany@@nj
+src,655,usatoday,empty
+src,662,boston,bos??ton#
+src,667,flights,empty
+src,670,flightwise,empty
+src,674,gofox,gofox$@@
+src,676,ifly,empty
+src,677,myrateplan,empty
+src,680,quicktrip,empty
+src,683,weather,empty
+src,691,den,empty
+src,695,flightstats,empty
+src,697,flylouisville,empty
+src,700,gofox,empty
+src,704,mytripandmore,empty
+src,705,orbitz,orbi??tz@@
+src,708,travelocity,empty
+src,720,flightstats,flig%htstats
+src,722,flightwise,empty
+src,723,flylouisville,flyloui%sville
+src,734,quicktrip,quick@@trip
+src,738,wunderground,empty
+src,744,flightarrival,empty
+src,746,flightexplorer,empty
+src,749,flightview,empty
+src,751,flylouisville,empty
+src,758,ord,empty
+src,767,airtravelcenter,empty
+src,769,boston,boston%
+src,771,flightaware,empty
+src,774,flightstats,empty
+src,776,flylouisville,empty
+src,779,gofox,empty
+src,780,helloflight,empty
+src,785,ord,empty
+src,788,travelocity,traveloc??ity
+src,794,allegiantair,all%egia??ntair
+src,797,dfw,empty
+src,806,gofox,empty
+src,807,helloflight,empty
+src,814,weather,empty
+src,815,wunderground,empty
+src,820,businesstravellogue,empty
+src,821,flightarrival,empty
+src,823,flightexplorer,empty
+src,825,flightstats,empty
+src,826,flightview,empty
+src,827,flylouisville,flylo#uisv@@ille
+src,828,flytecomm,empty
+src,834,mytripandmore,empty
+src,837,quicktrip,empty
+src,839,usatoday,$usatod@@ay
+src,840,weather,empty
+src,845,allegiantair,empty
+src,846,boston,bo??ston
+src,849,flightstats,empty
+src,854,gofox,g$ofox
+src,856,ifly,??ifly
+src,859,orbitz,orbit$z
+src,865,aa,aa$
+src,868,boston,empty
+src,869,businesstravellogue,empty
+src,870,flightarrival,empty
+src,874,flightstats,empty
+src,877,flytecomm,empty
+src,887,weather,weath@@er
+src,896,flightaware,empty
+src,902,flytecomm,empty
+src,907,mytripandmore,empty
+src,910,quicktrip,quic#ktrip
+src,916,aa,empty
+src,918,allegiantair,empty
+src,921,flightarrival,flightarri%val??
+src,923,flightexplorer,flightexplo#rer
+src,925,flightstats,empty
+src,927,flightwise,empty
+src,931,gofox,gofo#x
+src,938,quicktrip,empty
+src,942,world-flight-tracker,wor$ld-f??light-tracker
+src,950,flightaware,empty
+src,952,flights,empty
+src,968,weather,weat@@her
+src,969,world-flight-tracker,world-fligh??t%-tracker
+src,970,wunderground,empty
+src,974,boston,b??oston
+src,981,flightwise,fli%ght??wise
+src,988,orbitz,empty
+src,992,usatoday,us%atoday??
+src,993,wunderground,empty
+src,1001,flights,empty
+src,1006,foxbusiness,empty
+src,1008,helloflight,hellof#light%
+src,1012,ord,o@@rd
+src,1022,dfw,empty
+src,1027,flightview,empty
+src,1035,orbitz,empty
+src,1039,travelocity,tra??ve@@locity
+src,1049,flightaware,empty
+src,1051,flights,f#??lights
+src,1052,flightstats,flight$stats
+src,1053,flightview,empty
+src,1054,flylouisville,empty
+src,1057,gofox,$gofox
+src,1059,mia,mi@@a
+src,1061,mytripandmore,empty
+src,1064,quicktrip,q$uicktrip
+src,1066,usatoday,empty
+src,1068,world-flight-tracker,empty
+src,1072,allegiantair,empty
+src,1078,flights,empty
+src,1081,flylouisville,empty
+src,1082,flytecomm,empty
+src,1084,gofox,empty
+src,1090,quicktrip,empty
+src,1093,weather,empty
+src,1096,aa,empty
+src,1100,businesstravellogue,empty
+src,1101,flightaware,f#lig@@htaware
+src,1103,flightstats,empty
+src,1116,weather,empty
+src,1122,boston,empty
+src,1126,flightexplorer,flightexp??lorer
+src,1132,flytecomm,%flytecomm
+src,1134,gofox,gofox??$
+src,1142,sfo,empty
+src,1143,travelocity,empty
+src,1145,weather,weather%#
+src,1151,boston,empty
+src,1155,flightexplorer,flightexplore??r
+src,1156,flights,empty
+src,1160,flytecomm,fl$%ytecomm
+src,1162,gofox,empty
+src,1169,quicktrip,empty
+src,1170,travelocity,empty
+src,1173,wunderground,wundergroun%d
+src,1174,aa,empty
+src,1179,flightaware,f%lightawa$re
+src,1190,myrateplan,empty
+src,1193,ord,??@@ord
+src,1202,allegiantair,%al%legiantair
+src,1205,flightaware,flig??htaware
+src,1208,flightview,@@flightview
+src,1209,flylouisville,empty
+src,1212,gofox,empty
+src,1214,myrateplan,myrat%eplan
+src,1216,orbitz,empty
+src,1220,world-flight-tracker,world-flight-tracker@@
+src,1221,wunderground,empty
+src,1232,flightview,empty
+src,1237,gofox,gof$ox
+src,1238,helloflight,empty
+src,1239,ifly,empty
+src,1247,weather,wea$ther
+src,1249,wunderground,empty
+src,1250,aa,empty
+src,1251,airtravelcenter,empty
+src,1256,flightaware,empty
+src,1257,flights,empty
+src,1258,flightstats,empty
+src,1264,gofox,gofo#x
+src,1284,flights,empty
+src,1288,flytecomm,empty
+src,1292,myrateplan,empty
+src,1300,allegiantair,allegiantair#??
+src,1305,flightstats,flights$tats
+src,1306,flightview,empty
+src,1312,myrateplan,empty
+src,1314,panynj,panyn$j#
+src,1320,allegiantair,allegiant??ai#r
+src,1322,businesstravellogue,empty
+src,1323,flightarrival,empty
+src,1324,flights,empty
+src,1325,flightstats,empty
+src,1330,gofox,empty
+src,1332,ifly,empty
+src,1336,panynj,empty
+src,1338,weather,empty
+src,1342,boston,bo$st@@on
+src,1345,flightaware,empty
+src,1350,flylouisville,empty
+src,1351,flytecomm,empty
+src,1355,mco,empty
+src,1357,orbitz,empty
+src,1360,travelocity,t$raveloc$ity
+src,1362,weather,empty
+src,1363,world-flight-tracker,wor?#?ld-flight-tracker
+src,1378,ifly,empty
+src,1379,myrateplan,empty
+src,1380,mytripandmore,empty
+src,1398,flytecomm,empty
+src,1406,travelocity,empty
+src,1413,flightaware,empty
+src,1414,flightexplorer,empty
+src,1415,flights,empty
+src,1418,flylouisville,empty
+src,1420,foxbusiness,foxbusi$ness
+src,1424,myrateplan,empty
+src,1427,panynj,empty
+src,1428,quicktrip,qu??ick??trip
+src,1439,flightview,empty
+src,1444,helloflight,hellof??light
+src,1445,ifly,empty
+src,1447,orbitz,empty
+src,1451,weather,empty
+src,1452,CO,empty
+src,1454,allegiantair,empty
+src,1455,boston,@@boston
+src,1456,businesstravellogue,empty
+src,1458,flightexplorer,empty
+src,1461,flightview,empty
+src,1463,flytecomm,empty
+src,1468,myrateplan,m??yrateplan
+src,1471,panynj,panyn??j
+src,1477,boston,empty
+src,1479,flightarrival,empty
+src,1481,flights,empty
+src,1487,foxbusiness,empty
+src,1488,gofox,empty
+src,1494,quicktrip,empty
+src,1495,travelocity,empty
+src,1496,usatoday,empty
+src,1498,world-flight-tracker,world%-flight-trac#ker
+src,1503,boston,empty
+src,1508,flightview,fl#ig%htview
+src,1509,flylouisville,empty
+src,1513,helloflight,empty
+src,1514,myrateplan,empty
+src,1518,travelocity,empty
+src,1519,weather,empty
+src,1520,world-flight-tracker,empty
+src,1521,wunderground,empty
+src,1529,flightstats,empty
+src,1532,flylouisville,empty
+src,1534,foxbusiness,empty
+src,1536,helloflight,hello#flight
+src,1541,quicktrip,quickt#rip
+src,1543,CO,$CO@@
+src,1561,panynj,empty
+src,1565,CO,empty
+src,1569,businesstravellogue,empty
+src,1574,flylouisville,empty
+src,1580,mytripandmore,empty
+src,1583,quicktrip,@@quick??trip
+src,1588,allegiantair,empty
+src,1595,flightview,empty
+src,1596,flylouisville,empty
+src,1598,foxbusiness,empty
+src,1599,gofox,empty
+src,1606,CO,empty
+src,1609,boston,empty
+src,1612,flights,empty
+src,1620,ifly,empty
+src,1624,quicktrip,empty
+src,1625,weather,w@@$eather
+src,1626,CO,$CO$
+src,1628,allegiantair,empty
+src,1634,flightview,empty
+src,1638,gofox,empty
+src,1665,quicktrip,empty
+src,1667,wunderground,wundergr??ound
+src,1671,boston,empty
+src,1672,businesstravellogue,bu%siness#travellogue
+src,1674,flightstats,flight@@sta#ts
+src,1678,foxbusiness,fox%??business
+src,1680,helloflight,he$llofl@@ight
+src,1682,myrateplan,myrate#pl$an
+src,1688,airtravelcenter,empty
+src,1691,businesstravellogue,empty
+src,1700,myrateplan,empty
+src,1704,usatoday,usat??@@oday
+src,1705,airtravelcenter,airtravelc??en??ter
+src,1706,allegiantair,empty
+src,1710,flights,empty
+src,1718,ifly,i??$fly
+src,1722,quicktrip,empty
+src,1725,weather,empty
+src,1727,allegiantair,empty
+src,1733,flights,$flights
+src,1736,flylouisville,$flylouisville
+src,1742,myrateplan,empty
+src,1745,panynj,empty
+src,1752,wunderground,wunder%grou@@nd
+src,1759,flightstats,flightsta@@ts
+src,1762,flytecomm,flytec@@omm
+src,1763,foxbusiness,foxbusi@@ness
+src,1765,helloflight,empty
+src,1770,quicktrip,empty
+src,1771,ua,ua%
+src,1776,businesstravellogue,business$travellogu@@e
+src,1778,flights,empty
+src,1779,flightstats,flightstat$s
+src,1780,flightview,empty
+src,1785,helloflight,empty
+src,1788,orbitz,empty
+src,1804,flylouisville,empty
+src,1809,myrateplan,empty
+src,1813,quicktrip,empty
+src,1815,travelocity,empty
+src,1821,airtravelcenter,empty
+src,1822,allegiantair,al??legia$ntair
+src,1825,flightarrival,empty
+src,1826,flights,flig%hts
+src,1827,flightstats,empty
+src,1828,flightview,f@@lightview
+src,1832,gofox,empty
+src,1833,helloflight,empty
+src,1836,panynj,empty
+src,1837,quicktrip,empty
+src,1848,flightview,empty
+src,1851,foxbusiness,@@%foxbusiness
+src,1855,orbitz,empty
+src,1874,helloflight,empty
+src,1882,weather,%we%ather
+src,1889,flights,%f??lights
+src,1890,flightstats,empty
+src,1891,flightview,f@@%lightview
+src,1896,helloflight,empty
+src,1905,world-flight-tracker,world-flig@@h@@t-tracker
+src,1907,allegiantair,empty
+src,1911,flightaware,empty
+src,1912,flights,fl#ights
+src,1917,foxbusiness,foxbus??iness
+src,1920,ifly,empty
+src,1930,airtravelcenter,airtra$velcenter$
+src,1937,flightview,%flightvi??ew
+src,1943,myrateplan,empty
+src,1946,panynj,pany$nj
+src,1956,boston,b@@osto#n
+src,1963,flylouisville,flylouisvil@@@@le
+src,1964,flytecomm,empty
+src,1967,helloflight,helloflig??ht
+src,1971,panynj,empty
+src,1972,quicktrip,empty
+src,1976,weather,weather%
+src,1980,allegiantair,empty
+src,1982,businesstravellogue,empty
+src,1987,flylouisville,f@@lylou$isville
+src,1988,flytecomm,empty
+src,1992,ifly,empty
+src,1994,orbitz,empty
+src,1995,panynj,empty
+src,1996,quicktrip,qu#ick%trip
+src,1997,travelocity,tra%vel%ocity
+src,1999,weather,weather%
+src,2009,flightstats,f%lightstats
+src,2030,flightstats,empty
+src,2032,flylouisville,empty
+src,2037,myrateplan,myratep@@lan
+src,2044,weather,empty
+src,2047,boston,empty
+src,2058,mytripandmore,empty
+src,2060,panynj,pan@@ynj
+src,2069,flightarrival,empty
+src,2077,foxbusiness,$foxbusiness
+src,2078,gofox,gofox$
+src,2081,orbitz,orbit??z
+src,2083,quicktrip,empty
+src,2086,airtravelcenter,empty
+src,2088,boston,bosto??n
+src,2100,helloflight,h@@elloflight
+src,2109,wunderground,w#underground
+src,2116,flightexplorer,empty
+src,2120,flightwise,flig%htwise
+src,2121,flylouisville,flylouisv$ille
+src,2144,flightview,empty
+src,2148,gofox,empty
+src,2150,myrateplan,myratepla@@n
+src,2153,quicktrip,empty
+src,2157,weather,empty
+src,2161,boston,empty
+src,2164,flightexplorer,empty
+src,2176,quicktrip,q$uicktrip
+src,2178,travelocity,trave%locity@@
+src,2194,myrateplan,empty
+src,2196,orbitz,empty
+src,2197,panynj,empty
+src,2203,businesstravellogue,empty
+src,2204,flights,fl$ights
+src,2205,flightstats,empty
+src,2214,orbitz,empty
+src,2224,flightarrival,empty
+src,2226,flights,fligh#ts
+src,2230,foxbusiness,foxbusine@@ss
+src,2234,mytripandmore,mytrip%andmore
+src,2243,boston,empty
+src,2245,flightarrival,empty
+src,2248,flights,empty
+src,2253,flytecomm,flytec$omm
+src,2256,helloflight,empty
+src,2260,ord,%ord
+src,2263,quicktrip,empty
+src,2267,weather,weathe%r$
+src,2269,wunderground,wunder??groun@@d
+src,2270,airtravelcenter,airtravelc%enter
+src,2275,flightaware,flighta#ware
+src,2279,flightview,empty
+src,2281,flytecomm,fl@@ytecomm
+src,2287,orbitz,or%@@bitz
+src,2293,wunderground,empty
+src,2295,allegiantair,allegiantair??
+src,2297,businesstravellogue,empty
+src,2300,flightview,empty
+src,2302,flytecomm,empty
+src,2304,gofox,empty
+src,2305,helloflight,empty
+src,2312,ua,empty
+src,2313,usatoday,empty
+src,2314,weather,wea#ther
+src,2317,boston,empty
+src,2318,businesstravellogue,empty
+src,2325,foxbusiness,empty
+src,2327,helloflight,helloflight@@
+src,2328,myrateplan,empty
+src,2336,airtravelcenter,airtravelcent#$er
+src,2343,flylouisville,flylouisv%ille
+src,2349,orbitz,or??bitz
+src,2356,boston,empty
+src,2360,flightexplorer,empty
+src,2362,flightstats,empty
+src,2368,helloflight,hellofli@@g%ht
+src,2370,myrateplan,m@@yratep%lan
+src,2372,ord,o??rd
+src,2374,quicktrip,empty
+src,2376,weather,w$eather
+flight,9,AA-1007-MIA-PHX,$AA-1007-MIA-PHX
+flight,12,AA-1007-MIA-PHX,empty
+flight,16,AA-1007-MIA-PHX,empty
+flight,24,AA-1165-JFK-MIA,AA%-1165-JFK-MIA
+flight,26,AA-1165-JFK-MIA,empty
+flight,28,AA-1165-JFK-MIA,empty
+flight,29,AA-1165-JFK-MIA,AA-1165-JFK$-MIA
+flight,34,AA-1165-JFK-MIA,empty
+flight,39,AA-1165-JFK-MIA,empty
+flight,43,AA-1165-JFK-MIA,empty
+flight,52,AA-1221-MCO-ORD,AA-1221-??MCO-ORD
+flight,67,AA-1221-MCO-ORD,empty
+flight,68,AA-1221-MCO-ORD,empty
+flight,74,AA-1221-MCO-ORD,AA-1#221-MCO-ORD
+flight,75,AA-1279-DFW-PHX,empty
+flight,88,AA-1279-DFW-PHX,empty
+flight,115,AA-1434-DFW-MCO,empty
+flight,117,AA-1434-DFW-MCO,??AA-1434-DFW-MCO
+flight,123,AA-1434-DFW-MCO,AA-14??34-DFW-MCO
+flight,124,AA-1434-DFW-MCO,empty
+flight,129,AA-1522-SFO-ORD,empty
+flight,140,AA-1522-SFO-ORD,empty
+flight,148,AA-1522-SFO-ORD,empty
+flight,149,AA-1544-SAN-ORD,empty
+flight,155,AA-1544-SAN-ORD,empty
+flight,157,AA-1544-SAN-ORD,empty
+flight,160,AA-1544-SAN-ORD,AA-1#544-SAN-ORD#
+flight,164,AA-1544-SAN-ORD,empty
+flight,178,AA-1640-MIA-MCO,empty
+flight,181,AA-1640-MIA-MCO,#AA-1640-MIA-MCO
+flight,182,AA-1640-MIA-MCO,empty
+flight,185,AA-1640-MIA-MCO,empty
+flight,186,AA-1640-MIA-MCO,empty
+flight,193,AA-1640-MIA-MCO,AA-1%640-MIA-MCO
+flight,194,AA-1640-MIA-MCO,AA-#164#0-MIA-MCO
+flight,198,AA-1640-MIA-MCO,empty
+flight,205,AA-1664-MIA-ATL,empty
+flight,208,AA-1664-MIA-ATL,empty
+flight,209,AA-1664-MIA-ATL,empty
+flight,215,AA-1664-MIA-ATL,empty
+flight,224,AA-1664-MIA-ATL,A@@??A-1664-MIA-ATL
+flight,225,AA-1733-ORD-PHX,AA-1733-ORD#-PHX#
+flight,227,AA-1733-ORD-PHX,empty
+flight,229,AA-1733-ORD-PHX,empty
+flight,232,AA-1733-ORD-PHX,AA-1733-??ORD-PHX
+flight,233,AA-1733-ORD-PHX,empty
+flight,235,AA-1733-ORD-PHX,empty
+flight,239,AA-1733-ORD-PHX,AA-1733-ORD@@-PHX
+flight,240,AA-1733-ORD-PHX,empty
+flight,241,AA-1733-ORD-PHX,empty
+flight,247,AA-1733-ORD-PHX,empty
+flight,251,AA-1733-ORD-PHX,AA-1733-ORD-P%HX
+flight,258,AA-1886-BOS-MIA,empty
+flight,261,AA-1886-BOS-MIA,empty
+flight,264,AA-1886-BOS-MIA,empty
+flight,268,AA-1886-BOS-MIA,empty
+flight,271,AA-1917-JFK-MCO,AA-$1917-JFK-MCO
+flight,275,AA-1917-JFK-MCO,empty
+flight,278,AA-1917-JFK-MCO,AA-#1917-JFK-MCO
+flight,279,AA-1917-JFK-MCO,??AA-1917-JFK-MCO
+flight,281,AA-1917-JFK-MCO,AA%-1917-JFK-MCO#
+flight,283,AA-1917-JFK-MCO,empty
+flight,293,AA-1917-JFK-MCO,empty
+flight,299,AA-204-LAX-MCO,empty
+flight,301,AA-204-LAX-MCO,empty
+flight,304,AA-204-LAX-MCO,empty
+flight,305,AA-204-LAX-MCO,AA-204-%L$AX-MCO
+flight,306,AA-204-LAX-MCO,AA-20??4-LAX-MCO
+flight,308,AA-204-LAX-MCO,empty
+flight,314,AA-204-LAX-MCO,AA-204-L@@AX-MCO
+flight,321,AA-2050-ORD-MIA,empty
+flight,330,AA-2050-ORD-MIA,empty
+flight,332,AA-2050-ORD-MIA,empty
+flight,334,AA-2050-ORD-MIA,AA-2050-ORD-M%$IA
+flight,337,AA-2050-ORD-MIA,empty
+flight,338,AA-2050-ORD-MIA,empty
+flight,340,AA-2050-ORD-MIA,A$A-2050-ORD-MIA
+flight,345,AA-2050-ORD-MIA,empty
+flight,347,AA-2050-ORD-MIA,empty
+flight,351,AA-222-LAX-BOS,AA-222-LAX??-BOS
+flight,357,AA-222-LAX-BOS,AA-2@@22-LAX-BOS
+flight,359,AA-222-LAX-BOS,empty
+flight,361,AA-222-LAX-BOS,empty
+flight,368,AA-222-LAX-BOS,empty
+flight,369,AA-222-LAX-BOS,empty
+flight,378,AA-2268-PHX-ORD,empty
+flight,386,AA-2268-PHX-ORD,empty
+flight,390,AA-2268-PHX-ORD,empty
+flight,399,AA-2312-DFW-DTW,AA-2312-DFW-D@@TW
+flight,400,AA-2312-DFW-DTW,empty
+flight,402,AA-2312-DFW-DTW,empty
+flight,403,AA-2312-DFW-DTW,empty
+flight,410,AA-2312-DFW-DTW,AA-2312-D%FW-DTW
+flight,411,AA-2312-DFW-DTW,empty
+flight,418,AA-2312-DFW-DTW,empty
+flight,424,AA-2312-DFW-DTW,AA-231??2-$DFW-DTW
+flight,430,AA-2525-DFW-MIA,AA-252#5-DFW$-MIA
+flight,434,AA-2525-DFW-MIA,AA-%2525-DFW-MIA
+flight,435,AA-2525-DFW-MIA,empty
+flight,438,AA-2525-DFW-MIA,empty
+flight,441,AA-2525-DFW-MIA,empty
+flight,442,AA-2525-DFW-MIA,empty
+flight,449,AA-2525-DFW-MIA,empty
+flight,451,AA-2525-DFW-MIA,AA-2525#@@-DFW-MIA
+flight,464,AA-271-MIA-LAX,empty
+flight,465,AA-271-MIA-LAX,empty
+flight,468,AA-271-MIA-LAX,empty
+flight,471,AA-271-MIA-LAX,??AA-271-MIA-L??AX
+flight,472,AA-271-MIA-LAX,empty
+flight,478,AA-2957-DFW-CVG,empty
+flight,494,AA-2957-DFW-CVG,empty
+flight,498,AA-2957-DFW-CVG,empty
+flight,500,AA-2957-DFW-CVG,empty
+flight,511,AA-3-JFK-LAX,empty
+flight,517,AA-3-JFK-LAX,??@@AA-3-JFK-LAX
+flight,518,AA-3-JFK-LAX,AA-3-JFK-#LAX
+flight,524,AA-3-JFK-LAX,AA-3-JFK-$??LAX
+flight,525,AA-3-JFK-LAX,empty
+flight,528,AA-3063-SLC-LAX,empty
+flight,531,AA-3063-SLC-LAX,AA-3063-S@@LC@@-LAX
+flight,533,AA-3063-SLC-LAX,AA-3063-SLC@@-LA$X
+flight,535,AA-3063-SLC-LAX,empty
+flight,536,AA-3063-SLC-LAX,AA-3063-SLC-L@@%AX
+flight,545,AA-3063-SLC-LAX,AA-3063-@@SLC-LAX
+flight,549,AA-3063-SLC-LAX,AA-3063-@@SLC-LAX
+flight,550,AA-3063-SLC-LAX,empty
+flight,553,AA-3468-CVG-MIA,empty
+flight,555,AA-3468-CVG-MIA,empty
+flight,565,AA-3468-CVG-MIA,empty
+flight,567,AA-3468-CVG-MIA,AA-3468-C$VG$-MIA
+flight,570,AA-3468-CVG-MIA,empty
+flight,581,AA-3756-ORD-SLC,AA-3756-O@@#RD-SLC
+flight,582,AA-3756-ORD-SLC,AA-3756-ORD-SLC??@@
+flight,583,AA-3756-ORD-SLC,??AA-3756-OR@@D-SLC
+flight,589,AA-3756-ORD-SLC,empty
+flight,590,AA-3756-ORD-SLC,AA-$3756-OR@@D-SLC
+flight,593,AA-3756-ORD-SLC,#AA-3756-ORD@@-SLC
+flight,594,AA-3756-ORD-SLC,empty
+flight,596,AA-3756-ORD-SLC,AA-3756-O??RD-SLC
+flight,598,AA-3756-ORD-SLC,empty
+flight,605,AA-3786-IAH-ORD,AA-37??86-@@IAH-ORD
+flight,609,AA-3786-IAH-ORD,empty
+flight,612,AA-3786-IAH-ORD,AA-3786-IAH-????ORD
+flight,616,AA-3786-IAH-ORD,%AA-3786-IAH-O#RD
+flight,622,AA-3786-IAH-ORD,empty
+flight,623,AA-3786-IAH-ORD,empty
+flight,625,AA-3786-IAH-ORD,AA-3786-%IAH-ORD
+flight,629,AA-3786-IAH-ORD,empty
+flight,630,AA-3786-IAH-ORD,AA-%3786-IAH-ORD
+flight,633,AA-3804-PHL-ORD,empty
+flight,635,AA-3804-PHL-ORD,empty
+flight,639,AA-3804-PHL-ORD,AA-380@@4-PHL-ORD
+flight,641,AA-3804-PHL-ORD,AA-$3804-PHL-ORD
+flight,648,AA-3804-PHL-ORD,AA-3%804-PHL-ORD
+flight,657,AA-3804-PHL-ORD,AA-3804-PHL-??ORD$
+flight,666,AA-3809-PHX-LAX,empty
+flight,667,AA-3809-PHX-LAX,AA-3809-PHX-LA%X
+flight,672,AA-3809-PHX-LAX,empty
+flight,673,AA-3809-PHX-LAX,empty
+flight,676,AA-3809-PHX-LAX,AA-38$09-PHX-LAX
+flight,683,AA-3809-PHX-LAX,empty
+flight,684,AA-3809-PHX-LAX,AA-3@@809-PHX-LAX
+flight,685,AA-3809-PHX-LAX,AA-3809-PHX-@@#LAX
+flight,688,AA-3823-LAX-DEN,empty
+flight,689,AA-3823-LAX-DEN,empty
+flight,690,AA-3823-LAX-DEN,empty
+flight,693,AA-3823-LAX-DEN,AA-382#3-#LAX-DEN
+flight,694,AA-3823-LAX-DEN,empty
+flight,695,AA-3823-LAX-DEN,??AA-3%823-LAX-DEN
+flight,698,AA-3823-LAX-DEN,empty
+flight,702,AA-3823-LAX-DEN,AA-3823-LA??X-D%EN
+flight,704,AA-3823-LAX-DEN,A??A-3823-LAX-DEN
+flight,705,AA-3823-LAX-DEN,empty
+flight,710,AA-3823-LAX-DEN,empty
+flight,725,AA-3842-MSP-ORD,empty
+flight,729,AA-3842-MSP-ORD,empty
+flight,730,AA-3842-MSP-ORD,AA-3842-??MSP-ORD
+flight,731,AA-3842-MSP-ORD,empty
+flight,734,AA-3842-MSP-ORD,??AA-3842-MSP-ORD#
+flight,741,AA-3859-IAH-ORD,empty
+flight,749,AA-3859-IAH-ORD,A#A-3859-IAH-ORD
+flight,757,AA-3859-IAH-ORD,empty
+flight,758,AA-3859-IAH-ORD,AA-3#859-I#AH-ORD
+flight,762,AA-3859-IAH-ORD,AA-3859@@-IAH-ORD
+flight,767,AA-3979-CVG-ORD,AA-3979-CVG-OR$D
+flight,770,AA-3979-CVG-ORD,empty
+flight,772,AA-3979-CVG-ORD,empty
+flight,777,AA-3979-CVG-ORD,empty
+flight,778,AA-3979-CVG-ORD,AA-#3979-CVG-ORD
+flight,787,AA-3979-CVG-ORD,empty
+flight,793,AA-400-DFW-JFK,AA-400-DFW??-JFK
+flight,797,AA-400-DFW-JFK,AA-400-DFW-JF%K
+flight,798,AA-400-DFW-JFK,empty
+flight,803,AA-400-DFW-JFK,AA-4@@00-D@@FW-JFK
+flight,804,AA-400-DFW-JFK,empty
+flight,805,AA-400-DFW-JFK,A$A-400-DFW-JFK
+flight,810,AA-400-DFW-JFK,empty
+flight,812,AA-400-DFW-JFK,AA-$400-DFW-JFK
+flight,815,AA-400-DFW-JFK,AA-400-$DFW-JFK
+flight,818,AA-404-MIA-MCO,empty
+flight,820,AA-404-MIA-MCO,AA-404-MIA-MCO@@
+flight,822,AA-404-MIA-MCO,empty
+flight,823,AA-404-MIA-MCO,AA-404-MIA-M@@$CO
+flight,828,AA-404-MIA-MCO,AA-404-#MIA-MCO
+flight,833,AA-404-MIA-MCO,@@AA-404-MIA-MCO
+flight,834,AA-404-MIA-MCO,empty
+flight,838,AA-404-MIA-MCO,empty
+flight,846,AA-415-BOS-ORD,AA-415-BOS-ORD%
+flight,849,AA-415-BOS-ORD,%AA-415-BOS-??ORD
+flight,855,AA-415-BOS-ORD,AA-415-BOS-ORD??
+flight,862,AA-415-BOS-ORD,empty
+flight,863,AA-415-BOS-ORD,empty
+flight,875,AA-4198-ORD-CLE,AA-4198-ORD-%CLE
+flight,879,AA-4198-ORD-CLE,empty
+flight,886,AA-4198-ORD-CLE,AA-4198-ORD-CL%E
+flight,894,AA-4277-CVG-JFK,AA-4277-CV??G-JFK
+flight,895,AA-4277-CVG-JFK,empty
+flight,903,AA-4277-CVG-JFK,empty
+flight,905,AA-4277-CVG-JFK,empty
+flight,911,AA-4277-CVG-JFK,empty
+flight,919,AA-4307-ORD-DTW,empty
+flight,924,AA-4307-ORD-DTW,empty
+flight,937,AA-4307-ORD-DTW,$AA-4$307-ORD-DTW
+flight,938,AA-4307-ORD-DTW,AA-4307-ORD-@@DTW
+flight,941,AA-4307-ORD-DTW,AA@@-4307-ORD-DTW
+flight,943,AA-4307-ORD-DTW,AA-430$$7-ORD-DTW
+flight,945,AA-431-MIA-SFO,@@AA-431-MIA-SF#O
+flight,950,AA-431-MIA-SFO,%AA-431-MIA??-SFO
+flight,953,AA-431-MIA-SFO,empty
+flight,955,AA-431-MIA-SFO,empty
+flight,956,AA-431-MIA-SFO,AA-431%-MIA-SFO$
+flight,959,AA-431-MIA-SFO,empty
+flight,964,AA-431-MIA-SFO,AA-4@@@@31-MIA-SFO
+flight,966,AA-431-MIA-SFO,empty
+flight,969,AA-431-MIA-SFO,empty
+flight,978,AA-4330-CVG-ORD,empty
+flight,979,AA-4330-CVG-ORD,empty
+flight,980,AA-4330-CVG-ORD,empty
+flight,985,AA-4330-CVG-ORD,AA-4330-$CVG-ORD
+flight,991,AA-4330-CVG-ORD,AA-4@@330-$CVG-ORD
+flight,1000,AA-4344-ORD-DTW,empty
+flight,1011,AA-4344-ORD-DTW,AA-4%344-ORD-DTW
+flight,1013,AA-4344-ORD-DTW,empty
+flight,1015,AA-4344-ORD-DTW,AA-4344%-ORD-DT@@W
+flight,1021,AA-446-DFW-PHL,empty
+flight,1028,AA-446-DFW-PHL,empty
+flight,1036,AA-446-DFW-PHL,AA-446-DFW-%PHL
+flight,1037,AA-446-DFW-PHL,AA-%@@446-DFW-PHL
+flight,1040,AA-446-DFW-PHL,empty
+flight,1042,AA-446-DFW-PHL,empty
+flight,1058,AA-466-IAH-MIA,empty
+flight,1061,AA-466-IAH-MIA,AA-466-I@@AH-@@MIA
+flight,1062,AA-466-IAH-MIA,empty
+flight,1069,AA-466-IAH-MIA,AA-466-IAH-#MIA
+flight,1070,AA-484-DFW-MIA,AA-484-DFW-$MIA
+flight,1072,AA-484-DFW-MIA,AA-484-??DFW-MI@@A
+flight,1074,AA-484-DFW-MIA,AA-484-D#FW-MIA
+flight,1075,AA-484-DFW-MIA,empty
+flight,1077,AA-484-DFW-MIA,empty
+flight,1087,AA-484-DFW-MIA,empty
+flight,1090,AA-484-DFW-MIA,AA-484-DFW-MI%A%
+flight,1103,AA-518-MIA-JFK,empty
+flight,1106,AA-518-MIA-JFK,empty
+flight,1107,AA-518-MIA-JFK,AA-518-MI#A-JFK
+flight,1108,AA-518-MIA-JFK,A@@A-51#8-MIA-JFK
+flight,1113,AA-518-MIA-JFK,empty
+flight,1114,AA-518-MIA-JFK,AA-518-MIA%-JFK??
+flight,1116,AA-518-MIA-JFK,empty
+flight,1121,AA-59-JFK-SFO,empty
+flight,1123,AA-59-JFK-SFO,empty
+flight,1128,AA-59-JFK-SFO,empty
+flight,1131,AA-59-JFK-SFO,empty
+flight,1134,AA-59-JFK-SFO,AA-59-JFK-%@@SFO
+flight,1140,AA-59-JFK-SFO,AA-59#-JFK-S$FO
+flight,1154,AA-616-DFW-DTW,empty
+flight,1155,AA-616-DFW-DTW,AA-616-DFW-D??TW
+flight,1156,AA-616-DFW-DTW,empty
+flight,1160,AA-616-DFW-DTW,empty
+flight,1161,AA-616-DFW-DTW,AA-6??16-DFW-DTW
+flight,1162,AA-616-DFW-DTW,empty
+flight,1164,AA-616-DFW-DTW,empty
+flight,1167,AA-616-DFW-DTW,AA-61#6-DF@@W-DTW
+flight,1168,AA-616-DFW-DTW,AA-616-DFW-DTW#
+flight,1182,AA-643-MIA-ORD,AA-643-MI#A-OR$D
+flight,1184,AA-643-MIA-ORD,empty
+flight,1185,AA-643-MIA-ORD,AA$-643-MIA-ORD
+flight,1187,AA-643-MIA-ORD,empty
+flight,1193,AA-643-MIA-ORD,empty
+flight,1203,AA-649-ORD-SNA,AA-649-OR?#?D-SNA
+flight,1205,AA-649-ORD-SNA,AA-649-OR%D%-SNA
+flight,1209,AA-649-ORD-SNA,empty
+flight,1215,AA-649-ORD-SNA,A$A-649-ORD-SNA
+flight,1227,AA-789-ORD-DEN,AA-789-ORD-D@@EN
+flight,1233,AA-789-ORD-DEN,empty
+flight,1235,AA-789-ORD-DEN,AA-789-%ORD-DEN
+flight,1243,AA-789-ORD-DEN,empty
+flight,1255,AA-85-JFK-SFO,empty
+flight,1261,AA-85-JFK-SFO,AA-??8#5-JFK-SFO
+flight,1262,AA-85-JFK-SFO,AA@@-85-JFK-SFO
+flight,1263,AA-85-JFK-SFO,AA-85-JFK-SFO%
+flight,1264,AA-85-JFK-SFO,AA-85-JFK#-SFO
+flight,1278,CO-1023-IAH-DEN,CO-102$3-IAH-$DEN
+flight,1280,CO-1023-IAH-DEN,empty
+flight,1284,CO-1023-IAH-DEN,empty
+flight,1289,CO-1023-IAH-DEN,CO-1023$-IAH-DEN
+flight,1290,CO-1023-IAH-DEN,empty
+flight,1298,CO-1088-CLE-IAH,empty
+flight,1300,CO-1088-CLE-IAH,empty
+flight,1303,CO-1088-CLE-IAH,empty
+flight,1308,CO-1088-CLE-IAH,empty
+flight,1310,CO-1088-CLE-IAH,CO-1088-CLE-IA%H$
+flight,1311,CO-1088-CLE-IAH,empty
+flight,1312,CO-1088-CLE-IAH,CO-1088-CLE??-IAH
+flight,1314,CO-1088-CLE-IAH,empty
+flight,1317,CO-1088-CLE-IAH,empty
+flight,1320,CO-1090-BOS-IAH,empty
+flight,1322,CO-1090-BOS-IAH,empty
+flight,1334,CO-1090-BOS-IAH,empty
+flight,1342,CO-1193-EWR-MCO,empty
+flight,1345,CO-1193-EWR-MCO,CO-1193-E%WR-M$CO
+flight,1347,CO-1193-EWR-MCO,CO-11??93-EWR-MCO
+flight,1350,CO-1193-EWR-MCO,empty
+flight,1357,CO-1193-EWR-MCO,empty
+flight,1358,CO-1193-EWR-MCO,$CO-11%93-EWR-MCO
+flight,1361,CO-1193-EWR-MCO,empty
+flight,1381,CO-1250-MIA-IAH,$CO-1250-MIA-IAH
+flight,1382,CO-1250-MIA-IAH,empty
+flight,1385,CO-1250-MIA-IAH,empty
+flight,1386,CO-1250-MIA-IAH,empty
+flight,1387,CO-1561-PHX-IAH,empty
+flight,1389,CO-1561-PHX-IAH,empty
+flight,1399,CO-1561-PHX-IAH,empty
+flight,1400,CO-1561-PHX-IAH,empty
+flight,1403,CO-1561-PHX-IAH,CO-1561-PHX-@@IAH
+flight,1405,CO-1561-PHX-IAH,empty
+flight,1408,CO-1586-IAH-MCO,CO-1586-IAH-$MCO
+flight,1414,CO-1586-IAH-MCO,empty
+flight,1415,CO-1586-IAH-MCO,empty
+flight,1422,CO-1586-IAH-MCO,empty
+flight,1430,CO-1586-IAH-MCO,empty
+flight,1431,CO-16-LAX-EWR,empty
+flight,1433,CO-16-LAX-EWR,empty
+flight,1436,CO-16-LAX-EWR,empty
+flight,1437,CO-16-LAX-EWR,empty
+flight,1441,CO-16-LAX-EWR,empty
+flight,1442,CO-16-LAX-EWR,empty
+flight,1443,CO-16-LAX-EWR,CO-16-LAX-EW$R
+flight,1445,CO-16-LAX-EWR,CO-16-L#%AX-EWR
+flight,1447,CO-16-LAX-EWR,empty
+flight,1448,CO-16-LAX-EWR,empty
+flight,1459,CO-1614-LAX-IAH,empty
+flight,1460,CO-1614-LAX-IAH,CO-1614-LAX-IAH@@
+flight,1472,CO-1614-LAX-IAH,empty
+flight,1481,CO-1694-LAX-IAH,empty
+flight,1483,CO-1694-LAX-IAH,empty
+flight,1488,CO-1694-LAX-IAH,empty
+flight,1489,CO-1694-LAX-IAH,CO-1694%-LAX-IAH
+flight,1495,CO-1694-LAX-IAH,CO-1694-@@%LAX-IAH
+flight,1499,CO-1694-LAX-IAH,CO-1694-LAX%-@@IAH
+flight,1505,CO-45-EWR-MIA,CO-45#-EWR-MI#A
+flight,1509,CO-45-EWR-MIA,empty
+flight,1510,CO-45-EWR-MIA,C#O-45-EWR-MIA
+flight,1512,CO-45-EWR-MIA,CO-45-EWR%-MIA
+flight,1513,CO-45-EWR-MIA,empty
+flight,1520,CO-45-EWR-MIA,CO-%4#5-EWR-MIA
+flight,1522,CO-47-IAH-LAX,empty
+flight,1526,CO-47-IAH-LAX,??CO-47-IAH-LAX
+flight,1528,CO-47-IAH-LAX,empty
+flight,1533,CO-47-IAH-LAX,empty
+flight,1540,CO-47-IAH-LAX,empty
+flight,1541,CO-47-IAH-LAX,empty
+flight,1544,CO-4888-IAH-DAL,CO-4888-IAH-D$AL
+flight,1549,CO-4888-IAH-DAL,empty
+flight,1551,CO-4888-IAH-DAL,empty
+flight,1554,CO-4888-IAH-DAL,empty
+flight,1558,CO-4888-IAH-DAL,empty
+flight,1562,CO-4888-IAH-DAL,CO-48%88-IAH-DAL@@
+flight,1575,CO-50-CLE-EWR,empty
+flight,1583,CO-50-CLE-EWR,empty
+flight,1584,CO-50-CLE-EWR,??CO-50-@@CLE-EWR
+flight,1592,CO-52-IAH-LAX,CO#-52-IAH-LAX
+flight,1593,CO-52-IAH-LAX,empty
+flight,1595,CO-52-IAH-LAX,empty
+flight,1601,CO-52-IAH-LAX,#CO-52-IAH-LA#X
+flight,1610,CO-58-DEN-IAH,empty
+flight,1617,CO-58-DEN-IAH,empty
+flight,1624,CO-58-DEN-IAH,CO-58-DEN-??IAH
+flight,1626,CO-62-IAH-EWR,CO-6@@2-IAH-E??WR
+flight,1629,CO-62-IAH-EWR,empty
+flight,1637,CO-62-IAH-EWR,CO-62-I%AH-#EWR
+flight,1645,CO-62-IAH-EWR,CO-6%2$-IAH-EWR
+flight,1647,CO-63-EWR-IAH,empty
+flight,1653,CO-63-EWR-IAH,empty
+flight,1655,CO-63-EWR-IAH,empty
+flight,1656,CO-63-EWR-IAH,empty
+flight,1659,CO-63-EWR-IAH,empty
+flight,1660,CO-63-EWR-IAH,empty
+flight,1663,CO-63-EWR-IAH,empty
+flight,1664,CO-63-EWR-IAH,empty
+flight,1666,CO-63-EWR-IAH,empty
+flight,1668,CO-89-IAH-EWR,empty
+flight,1673,CO-89-IAH-EWR,CO-89#-??IAH-EWR
+flight,1674,CO-89-IAH-EWR,CO-89-%IA@@H-EWR
+flight,1676,CO-89-IAH-EWR,empty
+flight,1677,CO-89-IAH-EWR,empty
+flight,1678,CO-89-IAH-EWR,CO-89-IAH-E$WR
+flight,1680,CO-89-IAH-EWR,empty
+flight,1681,CO-89-IAH-EWR,empty
+flight,1687,CO-89-IAH-EWR,CO-89-??IAH-EWR
+flight,1689,UA-1500-IAH-GUA,$UA-1500-IAH$-GUA
+flight,1690,UA-1500-IAH-GUA,UA-1500-I@@AH-GUA
+flight,1694,UA-1500-IAH-GUA,empty
+flight,1695,UA-1500-IAH-GUA,empty
+flight,1702,UA-1500-IAH-GUA,UA-150@@@@0-IAH-GUA
+flight,1703,UA-1500-IAH-GUA,U%A-1500-IAH-G@@UA
+flight,1704,UA-1500-IAH-GUA,empty
+flight,1706,UA-2314-ATL-PHL,UA-2314-ATL#-PHL#
+flight,1710,UA-2314-ATL-PHL,empty
+flight,1720,UA-2314-ATL-PHL,UA$-2??314-ATL-PHL
+flight,1723,UA-2314-ATL-PHL,UA-2314-AT@@L-P#HL
+flight,1727,UA-233-LAX-JFK,empty
+flight,1730,UA-233-LAX-JFK,UA-233-L????AX-JFK
+flight,1734,UA-233-LAX-JFK,empty
+flight,1735,UA-233-LAX-JFK,UA-233-LAX-JF#??K
+flight,1740,UA-233-LAX-JFK,UA-23%3-LAX-JFK
+flight,1741,UA-233-LAX-JFK,empty
+flight,1752,UA-233-LAX-JFK,empty
+flight,1753,UA-248-PHX-ORD,empty
+flight,1758,UA-248-PHX-ORD,empty
+flight,1759,UA-248-PHX-ORD,empty
+flight,1768,UA-248-PHX-ORD,empty
+flight,1769,UA-248-PHX-ORD,empty
+flight,1773,UA-2515-DFW-CLT,empty
+flight,1775,UA-2515-DFW-CLT,UA-#2515-DFW-CLT@@
+flight,1782,UA-2515-DFW-CLT,empty
+flight,1792,UA-2515-DFW-CLT,UA-2515-%DFW-CL??T
+flight,1793,UA-2515-DFW-CLT,empty
+flight,1805,UA-257-JFK-SFO,empty
+flight,1807,UA-257-JFK-SFO,UA-257-??JFK-SF??O
+flight,1813,UA-257-JFK-SFO,UA-257-JFK-#SFO
+flight,1815,UA-257-JFK-SFO,empty
+flight,1817,UA-257-JFK-SFO,empty
+flight,1821,UA-2704-DTW-PHX,UA-2704-DTW-P$HX
+flight,1823,UA-2704-DTW-PHX,UA-2704-DTW-PH??X
+flight,1825,UA-2704-DTW-PHX,$UA-2704-DTW-PHX
+flight,1830,UA-2704-DTW-PHX,UA-2704-DTW-??PHX
+flight,1835,UA-2704-DTW-PHX,??UA-2704-DTW-PHX
+flight,1850,UA-2708-EWR-CLT,empty
+flight,1855,UA-2708-EWR-CLT,UA-@@2708-EWR-CLT
+flight,1856,UA-2708-EWR-CLT,empty
+flight,1857,UA-2708-EWR-CLT,UA-2708-$EWR-CLT
+flight,1858,UA-2708-EWR-CLT,empty
+flight,1864,UA-2726-FLL-PHL,U#A-2726-FLL-PH#L
+flight,1865,UA-2726-FLL-PHL,UA-2726-FLL-P$HL
+flight,1872,UA-2726-FLL-PHL,UA-2726-F#LL-PHL
+flight,1875,UA-2726-FLL-PHL,empty
+flight,1882,UA-2726-FLL-PHL,empty
+flight,1888,UA-2830-MCO-CLT,empty
+flight,1894,UA-2830-MCO-CLT,UA-$2830-M#CO-CLT
+flight,1895,UA-2830-MCO-CLT,UA-2830-MC@@O-CLT#
+flight,1899,UA-2830-MCO-CLT,empty
+flight,1904,UA-2830-MCO-CLT,empty
+flight,1912,UA-2906-PHL-MCO,U@@A-290%6-PHL-MCO
+flight,1914,UA-2906-PHL-MCO,empty
+flight,1917,UA-2906-PHL-MCO,empty
+flight,1921,UA-2906-PHL-MCO,%UA-2906-PHL-M@@CO
+flight,1929,UA-2906-PHL-MCO,UA-2906-PHL-M??CO
+flight,1930,UA-2945-PHL-CLT,empty
+flight,1932,UA-2945-PHL-CLT,empty
+flight,1933,UA-2945-PHL-CLT,UA-294#5-$PHL-CLT
+flight,1935,UA-2945-PHL-CLT,UA-2945-PHL-C??LT
+flight,1939,UA-2945-PHL-CLT,UA-294#5-PHL-CLT
+flight,1946,UA-2945-PHL-CLT,empty
+flight,1948,UA-2945-PHL-CLT,empty
+flight,1956,UA-3050-PHX-CLT,UA-3050-PH%X-CLT
+flight,1957,UA-3050-PHX-CLT,empty
+flight,1958,UA-3050-PHX-CLT,UA-3050-P@@HX-CLT
+flight,1960,UA-3050-PHX-CLT,empty
+flight,1964,UA-3050-PHX-CLT,%UA-3050-PHX-CLT
+flight,1973,UA-3050-PHX-CLT,empty
+flight,1984,UA-3099-PHX-PHL,empty
+flight,1990,UA-3099-PHX-PHL,empty
+flight,1993,UA-3099-PHX-PHL,U@@A-3099-PHX-PHL
+flight,2011,UA-3373-IAD-PHL,??UA-3373%-IAD-PHL
+flight,2018,UA-3373-IAD-PHL,UA??-3373-IAD-%PHL
+flight,2021,UA-3373-IAD-PHL,empty
+flight,2026,UA-3515-IAD-MSP,UA-3@@515-IAD-M@@SP
+flight,2032,UA-3515-IAD-MSP,empty
+flight,2034,UA-3515-IAD-MSP,empty
+flight,2035,UA-3515-IAD-MSP,UA-3515-IAD-MS$P
+flight,2041,UA-3515-IAD-MSP,UA-3515-IAD$-MSP
+flight,2045,UA-37-EDI-EWR,UA-37-EDI-EWR#
+flight,2046,UA-37-EDI-EWR,empty
+flight,2048,UA-37-EDI-EWR,UA-37??-EDI-EW@@R
+flight,2049,UA-37-EDI-EWR,UA-#37-EDI-EWR
+flight,2054,UA-37-EDI-EWR,empty
+flight,2058,UA-37-EDI-EWR,UA-37-EDI-E??WR
+flight,2063,UA-37-EDI-EWR,empty
+flight,2066,UA-37-EWR-MCO,UA-37-EWR#-MCO
+flight,2070,UA-37-EWR-MCO,empty
+flight,2072,UA-37-EWR-MCO,empty
+flight,2074,UA-37-EWR-MCO,UA-37-EW%R-MCO
+flight,2079,UA-37-EWR-MCO,UA-37-EWR-M%CO
+flight,2080,UA-37-EWR-MCO,empty
+flight,2082,UA-37-EWR-MCO,empty
+flight,2093,UA-382-IAD-LAX,empty
+flight,2094,UA-382-IAD-LAX,UA-382-IAD-LAX%$
+flight,2097,UA-382-IAD-LAX,UA-382@@-IAD-LAX
+flight,2098,UA-382-IAD-LAX,UA-382-IA#D??-LAX
+flight,2099,UA-382-IAD-LAX,empty
+flight,2106,UA-382-IAD-LAX,empty
+flight,2110,UA-3925-IAD-ORF,UA$-3925-IAD-ORF
+flight,2112,UA-3925-IAD-ORF,empty
+flight,2114,UA-3925-IAD-ORF,empty
+flight,2125,UA-3925-IAD-ORF,empty
+flight,2126,UA-3925-IAD-ORF,empty
+flight,2131,UA-3925-IAD-ORF,UA-3925??-IAD-ORF
+flight,2133,UA-3925-IAD-ORF,empty
+flight,2135,UA-3925-IAD-ORF,empty
+flight,2136,UA-3925-IAD-ORF,empty
+flight,2142,UA-397-JFK-SFO,UA-39??7-JFK-S@@FO
+flight,2145,UA-397-JFK-SFO,empty
+flight,2148,UA-397-JFK-SFO,empty
+flight,2160,UA-414-LAX-SFO,empty
+flight,2161,UA-414-LAX-SFO,empty
+flight,2162,UA-414-LAX-SFO,empty
+flight,2163,UA-414-LAX-SFO,UA-414-LA#X-SFO
+flight,2164,UA-414-LAX-SFO,empty
+flight,2166,UA-414-LAX-SFO,empty
+flight,2168,UA-414-LAX-SFO,UA-414-LA#X-#SFO
+flight,2170,UA-414-LAX-SFO,empty
+flight,2171,UA-414-LAX-SFO,empty
+flight,2176,UA-414-LAX-SFO,empty
+flight,2181,UA-414-LAX-SFO,UA-414-LAX-SFO#
+flight,2186,UA-5487-SFO-MRY,U%%A-5487-SFO-MRY
+flight,2202,UA-62-IAH-EWR,empty
+flight,2203,UA-62-IAH-EWR,UA-62-@@IAH-EWR
+flight,2204,UA-62-IAH-EWR,empty
+flight,2213,UA-62-IAH-EWR,UA-62-IA%H-EWR
+flight,2214,UA-62-IAH-EWR,empty
+flight,2215,UA-62-IAH-EWR,empty
+flight,2216,UA-62-IAH-EWR,empty
+flight,2219,UA-62-IAH-EWR,empty
+flight,2223,UA-6273-YYC-SFO,empty
+flight,2224,UA-6273-YYC-SFO,UA-6273-YYC-SF@@O
+flight,2225,UA-6273-YYC-SFO,empty
+flight,2230,UA-6273-YYC-SFO,#UA-6273-YYC-SFO
+flight,2231,UA-6273-YYC-SFO,empty
+flight,2238,UA-6273-YYC-SFO,empty
+flight,2242,UA-664-ORD-PHL,??UA-664-ORD-%PHL
+flight,2243,UA-664-ORD-PHL,empty
+flight,2244,UA-664-ORD-PHL,UA-??664-ORD-PHL
+flight,2249,UA-664-ORD-PHL,empty
+flight,2250,UA-664-ORD-PHL,empty
+flight,2251,UA-664-ORD-PHL,UA-664??-ORD-PHL
+flight,2258,UA-664-ORD-PHL,empty
+flight,2260,UA-664-ORD-PHL,empty
+flight,2262,UA-664-ORD-PHL,empty
+flight,2263,UA-664-ORD-PHL,empty
+flight,2267,UA-664-ORD-PHL,empty
+flight,2268,UA-664-ORD-PHL,UA-664-ORD#-PHL
+flight,2272,UA-828-SFO-ORD,empty
+flight,2276,UA-828-SFO-ORD,UA-828??-S$FO-ORD
+flight,2286,UA-828-SFO-ORD,UA-8#28-SFO-OR@@D
+flight,2289,UA-828-SFO-ORD,empty
+flight,2294,UA-843-LAX-ORD,empty
+flight,2304,UA-843-LAX-ORD,empty
+flight,2305,UA-843-LAX-ORD,UA-843-#LAX-ORD
+flight,2307,UA-843-LAX-ORD,empty
+flight,2311,UA-843-LAX-ORD,empty
+flight,2313,UA-843-LAX-ORD,empty
+flight,2315,UA-854-SFO-IAH,empty
+flight,2321,UA-854-SFO-IAH,UA-854#-SFO-IAH
+flight,2324,UA-854-SFO-IAH,UA#-854-SFO-IAH
+flight,2326,UA-854-SFO-IAH,empty
+flight,2328,UA-854-SFO-IAH,UA-854-SFO-IAH??$
+flight,2329,UA-854-SFO-IAH,empty
+flight,2330,UA-854-SFO-IAH,UA-854-SFO-@@IAH
+flight,2332,UA-854-SFO-IAH,empty
+flight,2335,UA-854-SFO-IAH,UA-??854-SFO-IAH
+flight,2337,UA-858-PVG-SFO,empty
+flight,2338,UA-858-PVG-SFO,U@@A-??858-PVG-SFO
+flight,2342,UA-858-PVG-SFO,empty
+flight,2345,UA-858-PVG-SFO,UA-8@@58-PVG-$SFO
+flight,2347,UA-858-PVG-SFO,empty
+flight,2348,UA-858-PVG-SFO,empty
+flight,2349,UA-858-PVG-SFO,empty
+flight,2350,UA-858-PVG-SFO,@@UA-858-PVG-SFO
+flight,2351,UA-858-PVG-SFO,UA-858-PVG-S@@FO
+flight,2355,UA-938-DEN-ORD,empty
+flight,2359,UA-938-DEN-ORD,UA-938-DEN-OR$D
+flight,2368,UA-938-DEN-ORD,empty
+sched_dep_time,1,4:55 p.m.,4:55 p.??m.
+sched_dep_time,3,4:55 p.m.,empty
+sched_dep_time,7,4:55 p.m.,empty
+sched_dep_time,11,4:55 p.m.,empty
+sched_dep_time,15,4:55 p.m.,4??:55 #p.m.
+sched_dep_time,18,4:55 p.m.,empty
+sched_dep_time,28,6:59 a.m.,6@#@:59 a.m.
+sched_dep_time,33,6:59 a.m.,empty
+sched_dep_time,36,6:59 a.m.,empty
+sched_dep_time,38,6:59 a.m.,empty
+sched_dep_time,50,8:00 p.m.,empty
+sched_dep_time,52,8:00 p.m.,empty
+sched_dep_time,53,8:00 p.m.,empty
+sched_dep_time,55,8:00 p.m.,empty
+sched_dep_time,56,8:00 p.m.,empty
+sched_dep_time,57,8:00 p.m.,8:00 p#.%m.
+sched_dep_time,58,8:00 p.m.,8:@@00 p.m.$
+sched_dep_time,59,8:00 p.m.,empty
+sched_dep_time,60,8:00 p.m.,8:0%0 p.$m.
+sched_dep_time,61,8:00 p.m.,8:00 p.m.%
+sched_dep_time,65,8:00 p.m.,empty
+sched_dep_time,68,8:00 p.m.,empty
+sched_dep_time,71,8:00 p.m.,8:00 p??.m.
+sched_dep_time,72,8:00 p.m.,8:0$0 p.m.
+sched_dep_time,78,1:00 p.m.,1:00 @@??p.m.
+sched_dep_time,82,1:00 p.m.,1:00# p@@.m.
+sched_dep_time,92,1:00 p.m.,empty
+sched_dep_time,93,1:00 p.m.,empty
+sched_dep_time,95,1:00 p.m.,??1:00 p.m.@@
+sched_dep_time,99,1:00 p.m.,empty
+sched_dep_time,102,7:15 a.m.,empty
+sched_dep_time,103,7:15 a.m.,empty
+sched_dep_time,109,7:15 a.m.,7:??15 a.m.
+sched_dep_time,116,7:15 a.m.,7:15 a.m#.
+sched_dep_time,119,7:15 a.m.,empty
+sched_dep_time,121,7:15 a.m.,empty
+sched_dep_time,124,7:15 a.m.,empty
+sched_dep_time,126,11:55 p.m.,11:5#5 p.m.
+sched_dep_time,130,11:55 p.m.,1??1:55 p.m.
+sched_dep_time,132,11:55 p.m.,empty
+sched_dep_time,134,11:55 p.m.,empty
+sched_dep_time,143,11:55 p.m.,empty
+sched_dep_time,147,11:55 p.m.,empty
+sched_dep_time,148,11:55 p.m.,11:5%5 p.m.??
+sched_dep_time,149,11:25 a.m.,empty
+sched_dep_time,150,11:25 a.m.,empty
+sched_dep_time,152,11:25 a.m.,#11$:25 a.m.
+sched_dep_time,156,11:25 a.m.,11:25 a??.m.
+sched_dep_time,158,11:25 a.m.,??1#1:25 a.m.
+sched_dep_time,167,11:25 a.m.,empty
+sched_dep_time,168,11:25 a.m.,%11:??25 a.m.
+sched_dep_time,178,6:30 p.m.,empty
+sched_dep_time,179,6:30 p.m.,6:30 p.@@m.
+sched_dep_time,185,6:30 p.m.,6%:30 p.m.
+sched_dep_time,190,6:30 p.m.,empty
+sched_dep_time,192,6:30 p.m.,empty
+sched_dep_time,196,6:30 p.m.,@@6:30 #p.m.
+sched_dep_time,203,10:15 a.m.,empty
+sched_dep_time,204,10:15 a.m.,1??0:15 $a.m.
+sched_dep_time,208,10:15 a.m.,10:15 %a.m.
+sched_dep_time,209,10:15 a.m.,empty
+sched_dep_time,210,10:15 a.m.,empty
+sched_dep_time,213,10:15 a.m.,empty
+sched_dep_time,216,10:15 a.m.,empty
+sched_dep_time,223,10:15 a.m.,empty
+sched_dep_time,224,10:15 a.m.,10:15% a??.m.
+sched_dep_time,226,7:45 p.m.,empty
+sched_dep_time,228,7:45 p.m.,empty
+sched_dep_time,231,7:45 p.m.,empty
+sched_dep_time,234,7:45 p.m.,empty
+sched_dep_time,236,7:45 p.m.,empty
+sched_dep_time,246,7:45 p.m.,7:45$ p.m.
+sched_dep_time,247,7:45 p.m.,7:$45 #p.m.
+sched_dep_time,249,7:45 p.m.,7:45 p.m$.
+sched_dep_time,252,10:45 a.m.,empty
+sched_dep_time,253,10:45 a.m.,empty
+sched_dep_time,256,10:45 a.m.,empty
+sched_dep_time,257,10:45 a.m.,empty
+sched_dep_time,259,10:45 a.m.,10:@@45 a.m.
+sched_dep_time,261,10:45 a.m.,10:45% a.m.
+sched_dep_time,266,10:45 a.m.,empty
+sched_dep_time,274,2:55 p.m.,empty
+sched_dep_time,275,2:55 p.m.,empty
+sched_dep_time,278,2:55 p.m.,empty
+sched_dep_time,282,2:55 p.m.,empty
+sched_dep_time,283,2:55 p.m.,@@2:55 p.#m.
+sched_dep_time,284,2:55 p.m.,2:55 p.m@@??.
+sched_dep_time,287,2:55 p.m.,2%:5#5 p.m.
+sched_dep_time,288,2:55 p.m.,2:55 p.@@m.
+sched_dep_time,289,2:55 p.m.,empty
+sched_dep_time,292,2:55 p.m.,2:5%5 p.??m.
+sched_dep_time,299,11:25 p.m.,empty
+sched_dep_time,302,11:25 p.m.,11:25 p??.m.#
+sched_dep_time,306,11:25 p.m.,11:25 #p.m%.
+sched_dep_time,316,11:25 p.m.,empty
+sched_dep_time,317,11:25 p.m.,empty
+sched_dep_time,318,11:25 p.m.,empty
+sched_dep_time,319,11:25 p.m.,empty
+sched_dep_time,327,10:40 a.m.,empty
+sched_dep_time,328,10:40 a.m.,10:%40 a.m.??
+sched_dep_time,332,10:40 a.m.,empty
+sched_dep_time,335,10:40 a.m.,empty
+sched_dep_time,337,10:40 a.m.,empty
+sched_dep_time,341,10:40 a.m.,empty
+sched_dep_time,343,10:40 a.m.,empty
+sched_dep_time,350,7:10 a.m.,$%7:10 a.m.
+sched_dep_time,351,7:10 a.m.,%7:10 a.%m.
+sched_dep_time,352,7:10 a.m.,empty
+sched_dep_time,361,7:10 a.m.,empty
+sched_dep_time,367,7:10 a.m.,empty
+sched_dep_time,370,7:10 a.m.,empty
+sched_dep_time,377,7:15 a.m.,empty
+sched_dep_time,380,7:15 a.m.,empty
+sched_dep_time,381,7:15 a.m.,7:15 a.m#.
+sched_dep_time,384,7:15 a.m.,empty
+sched_dep_time,385,7:15 a.m.,empty
+sched_dep_time,388,7:15 a.m.,empty
+sched_dep_time,396,7:15 a.m.,7:15 %a.m.
+sched_dep_time,399,8:25 p.m.,empty
+sched_dep_time,400,8:25 p.m.,8:25 $p.m.
+sched_dep_time,401,8:25 p.m.,empty
+sched_dep_time,405,8:25 p.m.,8:25 p.m.@@
+sched_dep_time,410,8:25 p.m.,8:2#5 p.@@m.
+sched_dep_time,419,8:25 p.m.,empty
+sched_dep_time,421,8:25 p.m.,empty
+sched_dep_time,422,8:25 p.m.,#8:25 p.%m.
+sched_dep_time,427,7:25 a.m.,empty
+sched_dep_time,428,7:25 a.m.,empty
+sched_dep_time,436,7:25 a.m.,empty
+sched_dep_time,440,7:25 a.m.,empty
+sched_dep_time,442,7:25 a.m.,empty
+sched_dep_time,446,7:25 a.m.,empty
+sched_dep_time,453,11:35 a.m.,11$:35 %a.m.
+sched_dep_time,454,11:35 a.m.,empty
+sched_dep_time,456,11:35 a.m.,11@@:35 a.%m.
+sched_dep_time,466,11:35 a.m.,11:3$5 a.m.
+sched_dep_time,469,11:35 a.m.,empty
+sched_dep_time,471,11:35 a.m.,empty
+sched_dep_time,474,11:35 a.m.,empty
+sched_dep_time,475,11:35 a.m.,empty
+sched_dep_time,482,7:55 a.m.,empty
+sched_dep_time,489,7:55 a.m.,7:55 a.#m.
+sched_dep_time,490,7:55 a.m.,empty
+sched_dep_time,500,7:55 a.m.,empty
+sched_dep_time,504,12:00 p.m.,empty
+sched_dep_time,507,12:00 p.m.,12:00 p.m.??
+sched_dep_time,510,12:00 p.m.,empty
+sched_dep_time,511,12:00 p.m.,12??:00 p.m.
+sched_dep_time,514,12:00 p.m.,12$:00 p.m.
+sched_dep_time,515,12:00 p.m.,%12:00 p??.m.
+sched_dep_time,516,12:00 p.m.,empty
+sched_dep_time,525,12:00 p.m.,12:0?@@?0 p.m.
+sched_dep_time,540,8:20 p.m.,@@8:%20 p.m.
+sched_dep_time,544,8:20 p.m.,8:20 p%.m.
+sched_dep_time,545,8:20 p.m.,empty
+sched_dep_time,546,8:20 p.m.,empty
+sched_dep_time,550,8:20 p.m.,empty
+sched_dep_time,557,7:00 a.m.,empty
+sched_dep_time,559,7:00 a.m.,empty
+sched_dep_time,564,7:00 a.m.,7:%00 a.$m.
+sched_dep_time,567,7:00 a.m.,7:0@@0 a.m#.
+sched_dep_time,568,7:00 a.m.,empty
+sched_dep_time,572,7:00 a.m.,empty
+sched_dep_time,575,7:00 a.m.,empty
+sched_dep_time,578,12:15 p.m.,12:15 ??p.m.%
+sched_dep_time,587,12:15 p.m.,12:15 p.m%.#
+sched_dep_time,589,12:15 p.m.,1??2:15 p.m.
+sched_dep_time,591,12:15 p.m.,12$:$15 p.m.
+sched_dep_time,594,12:15 p.m.,empty
+sched_dep_time,595,12:15 p.m.,empty
+sched_dep_time,598,12:15 p.m.,12:??15 p.m.$
+sched_dep_time,608,4:00 p.m.,4:00 p.$m%.
+sched_dep_time,609,4:00 p.m.,empty
+sched_dep_time,610,4:00 p.m.,empty
+sched_dep_time,612,4:00 p.m.,4:00@@ p.m.
+sched_dep_time,613,4:00 p.m.,empty
+sched_dep_time,614,4:00 p.m.,4:00 @@p.m.
+sched_dep_time,615,4:00 p.m.,empty
+sched_dep_time,617,4:00 p.m.,4:00 p.m$.@@
+sched_dep_time,649,2:35 p.m.,empty
+sched_dep_time,650,2:35 p.m.,empty
+sched_dep_time,658,2:35 p.m.,empty
+sched_dep_time,661,6:00 a.m.,empty
+sched_dep_time,664,6:00 a.m.,6:00 ??a.m.
+sched_dep_time,676,6:00 a.m.,empty
+sched_dep_time,686,9:00 p.m.,9:00?? p.m.$
+sched_dep_time,694,9:00 p.m.,9:0@@0 p.m.
+sched_dep_time,699,9:00 p.m.,empty
+sched_dep_time,700,9:00 p.m.,empty
+sched_dep_time,705,9:00 p.m.,empty
+sched_dep_time,707,9:00 p.m.,empty
+sched_dep_time,709,9:00 p.m.,??9:00 p.m??.
+sched_dep_time,713,6:00 a.m.,@@6:00 a.m.
+sched_dep_time,731,6:00 a.m.,empty
+sched_dep_time,734,6:00 a.m.,empty
+sched_dep_time,738,6:00 a.m.,@@6:00 a.m.
+sched_dep_time,739,7:10 a.m.,7:10 a.$m.
+sched_dep_time,744,7:10 a.m.,empty
+sched_dep_time,746,7:10 a.m.,7:$10 a.m.
+sched_dep_time,747,7:10 a.m.,7:10 @@a.m.
+sched_dep_time,749,7:10 a.m.,empty
+sched_dep_time,759,7:10 a.m.,7:@@10 a.m.
+sched_dep_time,772,7:30 a.m.,empty
+sched_dep_time,777,7:30 a.m.,7:30 a.m%.
+sched_dep_time,781,7:30 a.m.,empty
+sched_dep_time,783,7:30 a.m.,empty
+sched_dep_time,790,7:30 a.m.,empty
+sched_dep_time,791,7:30 a.m.,empty
+sched_dep_time,794,10:40 a.m.,empty
+sched_dep_time,797,10:40 a.m.,empty
+sched_dep_time,802,10:40 a.m.,empty
+sched_dep_time,806,10:40 a.m.,empty
+sched_dep_time,809,10:40 a.m.,10:40 #a.m.
+sched_dep_time,814,10:40 a.m.,empty
+sched_dep_time,817,6:45 a.m.,empty
+sched_dep_time,819,6:45 a.m.,empty
+sched_dep_time,821,6:45 a.m.,empty
+sched_dep_time,827,6:45 a.m.,empty
+sched_dep_time,828,6:45 a.m.,empty
+sched_dep_time,832,6:45 a.m.,empty
+sched_dep_time,834,6:45 a.m.,6:4$#5 a.m.
+sched_dep_time,837,6:45 a.m.,6:45 a.$m.
+sched_dep_time,844,8:35 a.m.,8:35 a.@@@@m.
+sched_dep_time,848,8:35 a.m.,8$:35 a.m%.
+sched_dep_time,854,8:35 a.m.,empty
+sched_dep_time,859,8:35 a.m.,empty
+sched_dep_time,862,8:35 a.m.,empty
+sched_dep_time,870,10:40 a.m.,empty
+sched_dep_time,871,10:40 a.m.,10:40@@ a.m.
+sched_dep_time,872,10:40 a.m.,10:40 a.%m.
+sched_dep_time,874,10:40 a.m.,empty
+sched_dep_time,880,10:40 a.m.,empty
+sched_dep_time,881,10:40 a.m.,empty
+sched_dep_time,889,10:40 a.m.,10:40?? a.m.
+sched_dep_time,891,12:10 p.m.,empty
+sched_dep_time,892,12:10 p.m.,empty
+sched_dep_time,893,12:10 p.m.,empty
+sched_dep_time,899,12:10 p.m.,12:10?? p.m#.
+sched_dep_time,900,12:10 p.m.,empty
+sched_dep_time,901,12:10 p.m.,empty
+sched_dep_time,903,12:10 p.m.,1??2:#10 p.m.
+sched_dep_time,906,12:10 p.m.,12:%10 #p.m.
+sched_dep_time,910,12:10 p.m.,empty
+sched_dep_time,913,12:10 p.m.,empty
+sched_dep_time,915,12:10 p.m.,#12:10 p.m.
+sched_dep_time,918,6:45 p.m.,empty
+sched_dep_time,923,6:45 p.m.,6??:45 ??p.m.
+sched_dep_time,929,6:45 p.m.,6:45 p@@.m.
+sched_dep_time,935,6:45 p.m.,empty
+sched_dep_time,937,6:45 p.m.,6:45 ??p#.m.
+sched_dep_time,950,8:35 a.m.,empty
+sched_dep_time,951,8:35 a.m.,empty
+sched_dep_time,955,8:35 a.m.,empty
+sched_dep_time,957,8:35 a.m.,empty
+sched_dep_time,962,8:35 a.m.,empty
+sched_dep_time,964,8:35 a.m.,8:35 a.m$.
+sched_dep_time,966,8:35 a.m.,8:35 a.@@m.
+sched_dep_time,969,8:35 a.m.,empty
+sched_dep_time,970,8:35 a.m.,8:35@@$ a.m.
+sched_dep_time,980,3:35 p.m.,empty
+sched_dep_time,991,3:35 p.m.,empty
+sched_dep_time,993,3:35 p.m.,empty
+sched_dep_time,998,11:45 a.m.,1%1:45 ??a.m.
+sched_dep_time,999,11:45 a.m.,empty
+sched_dep_time,1011,11:45 a.m.,empty
+sched_dep_time,1019,11:50 a.m.,11:50 %a.m.
+sched_dep_time,1025,11:50 a.m.,empty
+sched_dep_time,1026,11:50 a.m.,empty
+sched_dep_time,1035,11:50 a.m.,empty
+sched_dep_time,1054,6:00 a.m.,6:00 a%.m.
+sched_dep_time,1055,6:00 a.m.,empty
+sched_dep_time,1057,6:00 a.m.,empty
+sched_dep_time,1060,6:00 a.m.,6:00 a.m.%
+sched_dep_time,1063,6:00 a.m.,empty
+sched_dep_time,1066,6:00 a.m.,empty
+sched_dep_time,1069,6:00 a.m.,empty
+sched_dep_time,1090,4:15 p.m.,4%#:15 p.m.
+sched_dep_time,1092,4:15 p.m.,empty
+sched_dep_time,1096,6:40 a.m.,empty
+sched_dep_time,1101,6:40 a.m.,empty
+sched_dep_time,1111,6:40 a.m.,empty
+sched_dep_time,1113,6:40 a.m.,6:40% a.m.
+sched_dep_time,1118,6:40 a.m.,empty
+sched_dep_time,1119,7:10 a.m.,7%:10 a#.m.
+sched_dep_time,1121,7:10 a.m.,@@7:10 @@a.m.
+sched_dep_time,1123,7:10 a.m.,empty
+sched_dep_time,1127,7:10 a.m.,7@@:10 a.m.
+sched_dep_time,1129,7:10 a.m.,empty
+sched_dep_time,1131,7:10 a.m.,empty
+sched_dep_time,1143,7:10 a.m.,empty
+sched_dep_time,1145,7:10 a.m.,7:10 a.m@@.
+sched_dep_time,1146,7:10 a.m.,empty
+sched_dep_time,1147,7:10 a.m.,empty
+sched_dep_time,1148,9:05 a.m.,empty
+sched_dep_time,1151,9:05 a.m.,empty
+sched_dep_time,1155,9:05 a.m.,empty
+sched_dep_time,1156,9:05 a.m.,empty
+sched_dep_time,1169,9:05 a.m.,9:05 a.m.@@@@
+sched_dep_time,1177,7:10 a.m.,7:@@10 a.m.
+sched_dep_time,1178,7:10 a.m.,7:??10 $a.m.
+sched_dep_time,1181,7:10 a.m.,empty
+sched_dep_time,1190,7:10 a.m.,empty
+sched_dep_time,1191,7:10 a.m.,empty
+sched_dep_time,1198,7:10 a.m.,7:#10 a.m.
+sched_dep_time,1202,1:30 p.m.,empty
+sched_dep_time,1203,1:30 p.m.,empty
+sched_dep_time,1206,1:30 p.m.,empty
+sched_dep_time,1213,1:30 p.m.,empty
+sched_dep_time,1214,1:30 p.m.,empty
+sched_dep_time,1216,1:30 p.m.,empty
+sched_dep_time,1220,1:30 p.m.,1:30 $??p.m.
+sched_dep_time,1228,1:05 p.m.,empty
+sched_dep_time,1229,1:05 p.m.,empty
+sched_dep_time,1232,1:05 p.m.,empty
+sched_dep_time,1233,1:05 p.m.,empty
+sched_dep_time,1236,1:05 p.m.,1:05 @@p.m.
+sched_dep_time,1241,1:05 p.m.,empty
+sched_dep_time,1244,1:05 p.m.,empty
+sched_dep_time,1257,3:05 p.m.,empty
+sched_dep_time,1260,3:05 p.m.,empty
+sched_dep_time,1261,3:05 p.m.,empty
+sched_dep_time,1269,3:05 p.m.,3:05% p.m??.
+sched_dep_time,1273,3:05 p.m.,empty
+sched_dep_time,1276,11:40 a.m.,11:40 $a.m.
+sched_dep_time,1277,11:40 a.m.,empty
+sched_dep_time,1282,11:40 a.m.,@@11:40 a.m.
+sched_dep_time,1292,11:40 a.m.,empty
+sched_dep_time,1293,11:40 a.m.,1#@@1:40 a.m.
+sched_dep_time,1294,11:40 a.m.,empty
+sched_dep_time,1299,8:40 a.m.,empty
+sched_dep_time,1302,8:40 a.m.,empty
+sched_dep_time,1305,8:40 a.m.,@@8:40 a.m.%
+sched_dep_time,1307,8:40 a.m.,empty
+sched_dep_time,1308,8:40 a.m.,empty
+sched_dep_time,1314,8:40 a.m.,empty
+sched_dep_time,1319,9:45 a.m.,@@9:45 a.m.$
+sched_dep_time,1320,9:45 a.m.,empty
+sched_dep_time,1321,9:45 a.m.,%9:4$5 a.m.
+sched_dep_time,1332,9:45 a.m.,9??:45 a.m.#
+sched_dep_time,1338,9:45 a.m.,empty
+sched_dep_time,1340,9:15 a.m.,9:15 $a.m.
+sched_dep_time,1347,9:15 a.m.,empty
+sched_dep_time,1352,9:15 a.m.,empty
+sched_dep_time,1359,9:15 a.m.,empty
+sched_dep_time,1360,9:15 a.m.,empty
+sched_dep_time,1361,9:15 a.m.,empty
+sched_dep_time,1362,9:15 a.m.,empty
+sched_dep_time,1368,2:53 p.m.,empty
+sched_dep_time,1370,2:53 p.m.,empty
+sched_dep_time,1393,8:05 a.m.,empty
+sched_dep_time,1396,8:05 a.m.,empty
+sched_dep_time,1398,8:05 a.m.,empty
+sched_dep_time,1399,8:05 a.m.,8:05 a.m%.$
+sched_dep_time,1400,8:05 a.m.,8$:05 a.$m.
+sched_dep_time,1401,8:05 a.m.,8:0$5 a.m.
+sched_dep_time,1402,8:05 a.m.,8:05# a.m.
+sched_dep_time,1409,7:00 p.m.,empty
+sched_dep_time,1410,7:00 p.m.,empty
+sched_dep_time,1412,7:00 p.m.,empty
+sched_dep_time,1416,7:00 p.m.,7:00 p.m.??%
+sched_dep_time,1417,7:00 p.m.,7:00 p.m#.
+sched_dep_time,1429,7:00 p.m.,empty
+sched_dep_time,1444,10:25 a.m.,empty
+sched_dep_time,1446,10:25 a.m.,empty
+sched_dep_time,1449,10:25 a.m.,10:25 ??a.m.
+sched_dep_time,1450,10:25 a.m.,10:25 a$.m.
+sched_dep_time,1453,12:30 a.m.,empty
+sched_dep_time,1455,12:30 a.m.,empty
+sched_dep_time,1456,12:30 a.m.,empty
+sched_dep_time,1457,12:30 a.m.,12:30 a??.m.@@
+sched_dep_time,1458,12:30 a.m.,1%2:??30 a.m.
+sched_dep_time,1464,12:30 a.m.,empty
+sched_dep_time,1469,12:30 a.m.,12:30 a.#m.
+sched_dep_time,1475,7:15 p.m.,empty
+sched_dep_time,1484,7:15 p.m.,empty
+sched_dep_time,1485,7:15 p.m.,7:15 p.$m.
+sched_dep_time,1490,7:15 p.m.,7:15 p.@@m.
+sched_dep_time,1493,7:15 p.m.,empty
+sched_dep_time,1494,7:15 p.m.,empty
+sched_dep_time,1497,7:15 p.m.,7#:15 p.m.
+sched_dep_time,1500,4:00 p.m.,4:00@@ p.m.
+sched_dep_time,1501,4:00 p.m.,empty
+sched_dep_time,1506,4:00 p.m.,4:@@0$0 p.m.
+sched_dep_time,1508,4:00 p.m.,4??:00 p.m.
+sched_dep_time,1512,4:00 p.m.,4%:00 p.m$.
+sched_dep_time,1522,7:10 p.m.,7:10 p.$m.
+sched_dep_time,1524,7:10 p.m.,empty
+sched_dep_time,1529,7:10 p.m.,empty
+sched_dep_time,1530,7:10 p.m.,empty
+sched_dep_time,1534,7:10 p.m.,empty
+sched_dep_time,1535,7:10 p.m.,empty
+sched_dep_time,1543,5:30 p.m.,$5:30 p.m.
+sched_dep_time,1545,5:30 p.m.,#5:30 p.m.
+sched_dep_time,1546,5:30 p.m.,5:30 %p.m.
+sched_dep_time,1550,5:30 p.m.,empty
+sched_dep_time,1553,5:30 p.m.,5:30 p.%@@m.
+sched_dep_time,1555,5:30 p.m.,5:30 p.$m.
+sched_dep_time,1561,5:30 p.m.,5:30 p.m@@.
+sched_dep_time,1565,2:55 p.m.,empty
+sched_dep_time,1576,2:55 p.m.,2:5$5 p.??m.
+sched_dep_time,1580,2:55 p.m.,2#:55 p.m.
+sched_dep_time,1586,7:35 a.m.,empty
+sched_dep_time,1589,7:35 a.m.,empty
+sched_dep_time,1591,7:35 a.m.,7%:35 a.m.
+sched_dep_time,1595,7:35 a.m.,empty
+sched_dep_time,1597,7:35 a.m.,7:??35 a.m.
+sched_dep_time,1609,11:25 a.m.,empty
+sched_dep_time,1615,11:25 a.m.,11%:25 a.m.
+sched_dep_time,1622,11:25 a.m.,empty
+sched_dep_time,1625,11:25 a.m.,empty
+sched_dep_time,1626,2:30 p.m.,empty
+sched_dep_time,1630,2:30 p.m.,empty
+sched_dep_time,1632,2:30 p.m.,2:30 #p.m.
+sched_dep_time,1638,2:30 p.m.,empty
+sched_dep_time,1641,2:30 p.m.,2:30 #p.m.
+sched_dep_time,1643,2:30 p.m.,empty
+sched_dep_time,1646,2:30 p.m.,2:30 %p.m.
+sched_dep_time,1651,5:25 p.m.,empty
+sched_dep_time,1653,5:25 p.m.,5:@%@25 p.m.
+sched_dep_time,1659,5:25 p.m.,empty
+sched_dep_time,1661,5:25 p.m.,5:$25 p@@.m.
+sched_dep_time,1664,5:25 p.m.,empty
+sched_dep_time,1667,5:25 p.m.,empty
+sched_dep_time,1673,6:00 a.m.,6:00 a$.m.
+sched_dep_time,1675,6:00 a.m.,6:00@@ a.m.
+sched_dep_time,1676,6:00 a.m.,empty
+sched_dep_time,1677,6:00 a.m.,empty
+sched_dep_time,1698,8:55 a.m.,empty
+sched_dep_time,1700,8:55 a.m.,empty
+sched_dep_time,1705,2:55 p.m.,empty
+sched_dep_time,1706,2:55 p.m.,empty
+sched_dep_time,1707,2:55 p.m.,2:55$ p.m.
+sched_dep_time,1710,2:55 p.m.,empty
+sched_dep_time,1716,2:55 p.m.,empty
+sched_dep_time,1718,2:55 p.m.,empty
+sched_dep_time,1722,2:55 p.m.,empty
+sched_dep_time,1726,4:25 p.m.,4:25 p.m#.??
+sched_dep_time,1729,4:25 p.m.,4:25 p.m$.
+sched_dep_time,1732,4:25 p.m.,empty
+sched_dep_time,1736,4:25 p.m.,empty
+sched_dep_time,1739,4:25 p.m.,empty
+sched_dep_time,1743,4:25 p.m.,4:25 p#.??m.
+sched_dep_time,1748,4:25 p.m.,4:25$$ p.m.
+sched_dep_time,1749,4:25 p.m.,empty
+sched_dep_time,1752,4:25 p.m.,4:25 p.$m.
+sched_dep_time,1753,12:57 p.m.,empty
+sched_dep_time,1763,12:57 p.m.,empty
+sched_dep_time,1764,12:57 p.m.,12:57 $p.m%.
+sched_dep_time,1774,7:05 a.m.,empty
+sched_dep_time,1776,7:05 a.m.,empty
+sched_dep_time,1784,7:05 a.m.,empty
+sched_dep_time,1802,2:30 p.m.,empty
+sched_dep_time,1805,2:30 p.m.,empty
+sched_dep_time,1806,2:30 p.m.,empty
+sched_dep_time,1808,2:30 p.m.,empty
+sched_dep_time,1809,2:30 p.m.,2:30 @@p.m.
+sched_dep_time,1812,2:30 p.m.,empty
+sched_dep_time,1814,2:30 p.m.,empty
+sched_dep_time,1815,2:30 p.m.,empty
+sched_dep_time,1823,11:15 a.m.,empty
+sched_dep_time,1830,11:15 a.m.,11:15@@@@ a.m.
+sched_dep_time,1831,11:15 a.m.,empty
+sched_dep_time,1841,11:15 a.m.,empty
+sched_dep_time,1849,2:55 p.m.,2$:55 p??.m.
+sched_dep_time,1850,2:55 p.m.,2:$55?? p.m.
+sched_dep_time,1855,2:55 p.m.,2@@:55 p.m%.
+sched_dep_time,1860,2:55 p.m.,empty
+sched_dep_time,1864,4:00 p.m.,4:00 p.m.%@@
+sched_dep_time,1865,4:00 p.m.,empty
+sched_dep_time,1870,4:00 p.m.,4:00$ p.m.
+sched_dep_time,1871,4:00 p.m.,??4:??00 p.m.
+sched_dep_time,1872,4:00 p.m.,empty
+sched_dep_time,1877,4:00 p.m.,4:00 p.m#.
+sched_dep_time,1880,4:00 p.m.,empty
+sched_dep_time,1884,4:00 p.m.,empty
+sched_dep_time,1913,3:50 p.m.,empty
+sched_dep_time,1914,3:50 p.m.,empty
+sched_dep_time,1916,3:50 p.m.,empty
+sched_dep_time,1919,3:50 p.m.,3:5??0 p.m.
+sched_dep_time,1921,3:50 p.m.,empty
+sched_dep_time,1922,3:50 p.m.,empty
+sched_dep_time,1924,3:50 p.m.,3:50# p.m.
+sched_dep_time,1928,3:50 p.m.,empty
+sched_dep_time,1935,12:00 a.m.,1@@2$:00 a.m.
+sched_dep_time,1936,12:00 a.m.,12:00 a.m$@@.
+sched_dep_time,1943,12:00 a.m.,empty
+sched_dep_time,1945,12:00 a.m.,12??:00 a@@.m.
+sched_dep_time,1951,12:00 a.m.,empty
+sched_dep_time,1952,12:00 a.m.,empty
+sched_dep_time,1961,11:05 a.m.,11:05@@ a.??m.
+sched_dep_time,1962,11:05 a.m.,empty
+sched_dep_time,1967,11:05 a.m.,empty
+sched_dep_time,1975,11:05 a.m.,@@11:05 a.m.
+sched_dep_time,1982,11:55 a.m.,empty
+sched_dep_time,1993,11:55 a.m.,empty
+sched_dep_time,1996,11:55 a.m.,11:55# a.m.
+sched_dep_time,2013,8:29 a.m.,8:29 a??.$m.
+sched_dep_time,2014,8:29 a.m.,8:29$ a.m$.
+sched_dep_time,2019,8:29 a.m.,empty
+sched_dep_time,2022,8:29 a.m.,8:29 a.$m.
+sched_dep_time,2030,8:15 a.m.,8:@@15 a.m.%
+sched_dep_time,2035,8:15 a.m.,empty
+sched_dep_time,2038,8:15 a.m.,empty
+sched_dep_time,2040,8:15 a.m.,empty
+sched_dep_time,2045,9:05 a.m.,empty
+sched_dep_time,2047,9:05 a.m.,9:05 a.$m.
+sched_dep_time,2048,9:05 a.m.,empty
+sched_dep_time,2049,9:05 a.m.,empty
+sched_dep_time,2050,9:05 a.m.,??9:05 a.m??.
+sched_dep_time,2051,9:05 a.m.,empty
+sched_dep_time,2054,9:05 a.m.,9:05 a.m.%
+sched_dep_time,2061,9:05 a.m.,empty
+sched_dep_time,2063,9:05 a.m.,empty
+sched_dep_time,2065,1:29 p.m.,empty
+sched_dep_time,2068,1:29 p.m.,empty
+sched_dep_time,2069,1:29 p.m.,1:2$9 p.m.
+sched_dep_time,2070,1:29 p.m.,1:%29?? p.m.
+sched_dep_time,2071,1:29 p.m.,empty
+sched_dep_time,2073,1:29 p.m.,1:29# p.m.
+sched_dep_time,2079,1:29 p.m.,empty
+sched_dep_time,2084,1:29 p.m.,1@@:29 p.m.
+sched_dep_time,2086,12:30 p.m.,empty
+sched_dep_time,2094,12:30 p.m.,$12:30 p.m.$
+sched_dep_time,2112,8:41 a.m.,8??:4@@1 a.m.
+sched_dep_time,2114,8:41 a.m.,empty
+sched_dep_time,2119,8:41 a.m.,8:41 @@a.m.
+sched_dep_time,2126,8:41 a.m.,8:41 a.??m.
+sched_dep_time,2128,8:41 a.m.,empty
+sched_dep_time,2132,8:41 a.m.,$8:41 a.m.
+sched_dep_time,2134,8:41 a.m.,empty
+sched_dep_time,2143,8:00 a.m.,empty
+sched_dep_time,2145,8:00 a.m.,empty
+sched_dep_time,2146,8:00 a.m.,empty
+sched_dep_time,2147,8:00 a.m.,#8:0$0 a.m.
+sched_dep_time,2149,8:00 a.m.,8:0@@0 a.m.
+sched_dep_time,2155,8:00 a.m.,8%:00 a.m.
+sched_dep_time,2156,8:00 a.m.,??8:0%0 a.m.
+sched_dep_time,2157,8:00 a.m.,8@@%:00 a.m.
+sched_dep_time,2159,6:00 a.m.,6:00 ??a.m.$
+sched_dep_time,2161,6:00 a.m.,6:$00 a.m.
+sched_dep_time,2162,6:00 a.m.,empty
+sched_dep_time,2167,6:00 a.m.,empty
+sched_dep_time,2168,6:00 a.m.,6:00 a.??m.#
+sched_dep_time,2170,6:00 a.m.,empty
+sched_dep_time,2172,6:00 a.m.,6:00 a.m@@.
+sched_dep_time,2175,6:00 a.m.,empty
+sched_dep_time,2180,6:00 a.m.,6:00 a#.m.
+sched_dep_time,2181,6:00 a.m.,empty
+sched_dep_time,2183,10:39 a.m.,%@@10:39 a.m.
+sched_dep_time,2185,10:39 a.m.,empty
+sched_dep_time,2187,10:39 a.m.,10:39 #@@a.m.
+sched_dep_time,2189,10:39 a.m.,empty
+sched_dep_time,2196,10:39 a.m.,empty
+sched_dep_time,2197,10:39 a.m.,10$:@@39 a.m.
+sched_dep_time,2203,2:30 p.m.,empty
+sched_dep_time,2209,2:30 p.m.,@@2:30 p.??m.
+sched_dep_time,2211,2:30 p.m.,2#@@:30 p.m.
+sched_dep_time,2212,2:30 p.m.,empty
+sched_dep_time,2215,2:30 p.m.,empty
+sched_dep_time,2218,2:30 p.m.,empty
+sched_dep_time,2220,7:35 a.m.,7:3$5 a.m.
+sched_dep_time,2222,7:35 a.m.,empty
+sched_dep_time,2224,7:35 a.m.,empty
+sched_dep_time,2227,7:35 a.m.,7@@:35 $a.m.
+sched_dep_time,2231,7:35 a.m.,7:35 a.??m.
+sched_dep_time,2234,7:35 a.m.,empty
+sched_dep_time,2241,1:33 p.m.,1:%33$ p.m.
+sched_dep_time,2243,1:33 p.m.,empty
+sched_dep_time,2249,1:33 p.m.,1:??33% p.m.
+sched_dep_time,2251,1:33 p.m.,empty
+sched_dep_time,2258,1:33 p.m.,empty
+sched_dep_time,2261,1:33 p.m.,1:33% p.m.
+sched_dep_time,2269,1:33 p.m.,empty
+sched_dep_time,2277,11:08 p.m.,empty
+sched_dep_time,2280,11:08 p.m.,11:08 p.m#.#
+sched_dep_time,2286,11:08 p.m.,empty
+sched_dep_time,2289,11:08 p.m.,#11:08 p.m.
+sched_dep_time,2291,11:08 p.m.,11:%08 p.%m.
+sched_dep_time,2296,1:55 p.m.,1:55# p@@.m.
+sched_dep_time,2303,1:55 p.m.,1??:55 p.m.
+sched_dep_time,2306,1:55 p.m.,empty
+sched_dep_time,2308,1:55 p.m.,empty
+sched_dep_time,2312,1:55 p.m.,1#:55 p$.m.
+sched_dep_time,2319,7:53 a.m.,empty
+sched_dep_time,2325,7:53 a.m.,empty
+sched_dep_time,2326,7:53 a.m.,7:5$3 a.m.
+sched_dep_time,2340,1:45 p.m.,1:45 p??.m.
+sched_dep_time,2341,1:45 p.m.,empty
+sched_dep_time,2342,1:45 p.m.,empty
+sched_dep_time,2343,1:45 p.m.,empty
+sched_dep_time,2344,1:45 p.m.,$#1:45 p.m.
+sched_dep_time,2345,1:45 p.m.,1:4??5 p.m.
+sched_dep_time,2347,1:45 p.m.,1:4$5?? p.m.
+sched_dep_time,2357,4:16 p.m.,empty
+sched_dep_time,2362,4:16 p.m.,4:16 p.$m.
+sched_dep_time,2372,4:16 p.m.,empty
+sched_dep_time,2376,4:16 p.m.,empty
+act_dep_time,2,5:08 p.m.,empty
+act_dep_time,9,5:08 p.m.,empty
+act_dep_time,15,5:08 p.m.,empty
+act_dep_time,18,5:08 p.m.,empty
+act_dep_time,19,5:08 p.m.,empty
+act_dep_time,21,5:08 p.m.,empty
+act_dep_time,24,7:22 a.m.,7:2??2 a.m.
+act_dep_time,30,7:22 a.m.,empty
+act_dep_time,32,7:22 a.m.,7:22@@ a.#m.
+act_dep_time,33,7:22 a.m.,empty
+act_dep_time,34,7:22 a.m.,empty
+act_dep_time,43,7:22 a.m.,@@7:22 %a.m.
+act_dep_time,45,7:22 a.m.,7:22 a??.m$.
+act_dep_time,46,7:22 a.m.,empty
+act_dep_time,49,8:23 p.m.,empty
+act_dep_time,53,8:23 p.m.,empty
+act_dep_time,56,8:23 p.m.,empty
+act_dep_time,58,8:23 p.m.,empty
+act_dep_time,59,8:23 p.m.,empty
+act_dep_time,62,8:23 p.m.,empty
+act_dep_time,65,8:23 p.m.,empty
+act_dep_time,66,8:23 p.m.,8%:23 p.m.
+act_dep_time,69,8:23 p.m.,8#:23 p.m.
+act_dep_time,76,2:04 p.m.,empty
+act_dep_time,82,2:04 p.m.,empty
+act_dep_time,85,2:04 p.m.,2:0??#4 p.m.
+act_dep_time,95,2:04 p.m.,2:04$ #p.m.
+act_dep_time,100,7:21 a.m.,7:2#1 a.m.
+act_dep_time,104,7:21 a.m.,7:#2%1 a.m.
+act_dep_time,105,7:21 a.m.,7$:2%1 a.m.
+act_dep_time,106,7:21 a.m.,7:21 #a@@.m.
+act_dep_time,107,7:21 a.m.,empty
+act_dep_time,108,7:21 a.m.,7:21 a.m#.
+act_dep_time,116,7:21 a.m.,empty
+act_dep_time,118,7:21 a.m.,empty
+act_dep_time,121,7:21 a.m.,7:2??1 @@a.m.
+act_dep_time,122,7:21 a.m.,empty
+act_dep_time,123,7:21 a.m.,empty
+act_dep_time,124,7:21 a.m.,empty
+act_dep_time,125,7:21 a.m.,empty
+act_dep_time,140,11:55 p.m.,empty
+act_dep_time,141,11:55 p.m.,11:55 p.m%%.
+act_dep_time,143,11:55 p.m.,empty
+act_dep_time,146,11:55 p.m.,11:55 p.??m.
+act_dep_time,153,11:40 a.m.,1??1:40 a.m.
+act_dep_time,155,11:40 a.m.,empty
+act_dep_time,161,11:40 a.m.,empty
+act_dep_time,163,11:40 a.m.,empty
+act_dep_time,165,11:40 a.m.,1@@1:40 %a.m.
+act_dep_time,177,6:30 p.m.,6:30 p%@@.m.
+act_dep_time,181,6:30 p.m.,6:30 #p.m.
+act_dep_time,188,6:30 p.m.,6:30 ??p.m.
+act_dep_time,196,6:30 p.m.,6:30 p.m.?@@?
+act_dep_time,197,6:30 p.m.,6:30# p.m.
+act_dep_time,198,6:30 p.m.,empty
+act_dep_time,206,10:18 a.m.,empty
+act_dep_time,210,10:18 a.m.,empty
+act_dep_time,214,10:18 a.m.,empty
+act_dep_time,231,7:58 p.m.,7$:@@58 p.m.
+act_dep_time,233,7:58 p.m.,7:58 %p.m.
+act_dep_time,240,7:58 p.m.,empty
+act_dep_time,242,7:58 p.m.,empty
+act_dep_time,243,7:58 p.m.,empty
+act_dep_time,244,7:58 p.m.,empty
+act_dep_time,245,7:58 p.m.,empty
+act_dep_time,257,10:55 a.m.,empty
+act_dep_time,262,10:55 a.m.,10:55 a.$m.
+act_dep_time,267,10:55 a.m.,empty
+act_dep_time,269,10:55 a.m.,$10:55 a.m.
+act_dep_time,273,3:27 p.m.,empty
+act_dep_time,275,3:27 p.m.,empty
+act_dep_time,285,3:27 p.m.,empty
+act_dep_time,292,3:27 p.m.,3:27@@ p%.m.
+act_dep_time,301,11:25 p.m.,11:25 p.m@@.
+act_dep_time,324,11:05 a.m.,empty
+act_dep_time,325,11:05 a.m.,empty
+act_dep_time,329,11:05 a.m.,empty
+act_dep_time,348,11:05 a.m.,%1#1:05 a.m.
+act_dep_time,350,7:31 a.m.,empty
+act_dep_time,351,7:31 a.m.,7:3@@1 a.m.
+act_dep_time,355,7:31 a.m.,empty
+act_dep_time,365,7:31 a.m.,empty
+act_dep_time,373,7:22 a.m.,empty
+act_dep_time,374,7:22 a.m.,empty
+act_dep_time,377,7:22 a.m.,7:22 a.@@m.
+act_dep_time,378,7:22 a.m.,7:22 a%.m.
+act_dep_time,379,7:22 a.m.,empty
+act_dep_time,395,7:22 a.m.,7:2#2 a.m.@@
+act_dep_time,404,8:25 p.m.,empty
+act_dep_time,406,8:25 p.m.,empty
+act_dep_time,414,8:25 p.m.,empty
+act_dep_time,422,8:25 p.m.,empty
+act_dep_time,426,7:39 a.m.,7:@@39 a.m.
+act_dep_time,429,7:39 a.m.,7$:39 #a.m.
+act_dep_time,436,7:39 a.m.,empty
+act_dep_time,437,7:39 a.m.,empty
+act_dep_time,438,7:39 a.m.,empty
+act_dep_time,441,7:39 a.m.,empty
+act_dep_time,450,7:39 a.m.,7:@@39 ??a.m.
+act_dep_time,453,11:52 a.m.,11:52 @@a??.m.
+act_dep_time,456,11:52 a.m.,empty
+act_dep_time,457,11:52 a.m.,empty
+act_dep_time,467,11:52 a.m.,empty
+act_dep_time,471,11:52 a.m.,11:52 a.#m.
+act_dep_time,472,11:52 a.m.,empty
+act_dep_time,491,8:04 a.m.,empty
+act_dep_time,492,8:04 a.m.,8:#04 a.$m.
+act_dep_time,494,8:04 a.m.,empty
+act_dep_time,498,8:04 a.m.,8:#04 a.m.
+act_dep_time,502,12:11 p.m.,empty
+act_dep_time,504,12:11 p.m.,empty
+act_dep_time,509,12:11 p.m.,12:$11 p.m.
+act_dep_time,510,12:11 p.m.,empty
+act_dep_time,518,12:11 p.m.,12:11 p.m.#
+act_dep_time,519,12:11 p.m.,empty
+act_dep_time,522,12:11 p.m.,1#2:11 p.m.
+act_dep_time,527,8:39 p.m.,empty
+act_dep_time,530,8:39 p.m.,8:39 p$.m.
+act_dep_time,531,8:39 p.m.,8$:39 p.m.
+act_dep_time,534,8:39 p.m.,empty
+act_dep_time,535,8:39 p.m.,8??:39 p.m$.
+act_dep_time,537,8:39 p.m.,empty
+act_dep_time,542,8:39 p.m.,empty
+act_dep_time,548,8:39 p.m.,empty
+act_dep_time,554,7:25 a.m.,empty
+act_dep_time,559,7:25 a.m.,empty
+act_dep_time,561,7:25 a.m.,empty
+act_dep_time,564,7:25 a.m.,7:25 ?%?a.m.
+act_dep_time,571,7:25 a.m.,#7:2#5 a.m.
+act_dep_time,574,7:25 a.m.,empty
+act_dep_time,576,7:25 a.m.,empty
+act_dep_time,578,12:41 p.m.,empty
+act_dep_time,584,12:41 p.m.,empty
+act_dep_time,592,12:41 p.m.,empty
+act_dep_time,597,12:41 p.m.,12:41?? p.m$.
+act_dep_time,604,4:12 p.m.,empty
+act_dep_time,619,4:12 p.m.,empty
+act_dep_time,620,4:12 p.m.,4:1@@2 p.$m.
+act_dep_time,622,4:12 p.m.,4:12 p@@.m.@@
+act_dep_time,623,4:12 p.m.,4:12 p.m.#
+act_dep_time,624,4:12 p.m.,4:12 p.m.@%@
+act_dep_time,626,4:12 p.m.,4#:12 p.m.
+act_dep_time,629,4:12 p.m.,4??:12 p.m.
+act_dep_time,632,2:44 p.m.,2:44 p.m%.
+act_dep_time,637,2:44 p.m.,empty
+act_dep_time,642,2:44 p.m.,2:$44 p.m.
+act_dep_time,643,2:44 p.m.,empty
+act_dep_time,645,2:44 p.m.,2:44 p.%m.
+act_dep_time,652,2:44 p.m.,empty
+act_dep_time,654,2:44 p.m.,empty
+act_dep_time,655,2:44 p.m.,empty
+act_dep_time,656,2:44 p.m.,empty
+act_dep_time,666,6:10 a.m.,6:10 a.#m.
+act_dep_time,667,6:10 a.m.,6:10 a.m.@@@@
+act_dep_time,669,6:10 a.m.,empty
+act_dep_time,673,6:10 a.m.,??6:10 a#.m.
+act_dep_time,675,6:10 a.m.,empty
+act_dep_time,676,6:10 a.m.,6:10$ a.m.
+act_dep_time,683,6:10 a.m.,empty
+act_dep_time,684,6:10 a.m.,empty
+act_dep_time,685,6:10 a.m.,empty
+act_dep_time,689,9:00 p.m.,empty
+act_dep_time,691,9:00 p.m.,9:00 p.m.%%
+act_dep_time,693,9:00 p.m.,9:00 @@%p.m.
+act_dep_time,696,9:00 p.m.,9:00 p.m#.
+act_dep_time,699,9:00 p.m.,empty
+act_dep_time,706,9:00 p.m.,empty
+act_dep_time,709,9:00 p.m.,empty
+act_dep_time,719,6:56 a.m.,6:56 a??.m.
+act_dep_time,722,6:56 a.m.,6:56 a.m%.
+act_dep_time,726,6:56 a.m.,6:56 a%.m.
+act_dep_time,730,6:56 a.m.,empty
+act_dep_time,731,6:56 a.m.,$$6:56 a.m.
+act_dep_time,733,6:56 a.m.,6:56 a.m.%
+act_dep_time,734,6:56 a.m.,empty
+act_dep_time,735,6:56 a.m.,??6:5@@6 a.m.
+act_dep_time,747,7:16 a.m.,empty
+act_dep_time,748,7:16 a.m.,$7:16 a.m.
+act_dep_time,750,7:16 a.m.,7:16 a@@.m.
+act_dep_time,765,7:16 a.m.,7:16 a%.m.
+act_dep_time,775,8:04 a.m.,empty
+act_dep_time,776,8:04 a.m.,8:04# a.m.#
+act_dep_time,779,8:04 a.m.,8:$04 a@@.m.
+act_dep_time,781,8:04 a.m.,@@8:0$4 a.m.
+act_dep_time,782,8:04 a.m.,8:0#4 a.m.
+act_dep_time,783,8:04 a.m.,empty
+act_dep_time,790,8:04 a.m.,empty
+act_dep_time,796,11:01 a.m.,empty
+act_dep_time,798,11:01 a.m.,1#%1:01 a.m.
+act_dep_time,799,11:01 a.m.,empty
+act_dep_time,801,11:01 a.m.,empty
+act_dep_time,802,11:01 a.m.,11:01 a.$m.??
+act_dep_time,804,11:01 a.m.,11:01 a#.m.$
+act_dep_time,806,11:01 a.m.,11:0@@1 a.m.
+act_dep_time,808,11:01 a.m.,empty
+act_dep_time,813,11:01 a.m.,empty
+act_dep_time,828,6:57 a.m.,empty
+act_dep_time,832,6:57 a.m.,empty
+act_dep_time,833,6:57 a.m.,empty
+act_dep_time,835,6:57 a.m.,empty
+act_dep_time,847,8:56 a.m.,empty
+act_dep_time,851,8:56 a.m.,8:56 a.m#.
+act_dep_time,856,8:56 a.m.,empty
+act_dep_time,863,8:56 a.m.,8:56 a.$m.
+act_dep_time,870,10:54 a.m.,empty
+act_dep_time,880,10:54 a.m.,empty
+act_dep_time,882,10:54 a.m.,empty
+act_dep_time,883,10:54 a.m.,empty
+act_dep_time,884,10:54 a.m.,10:5$4 a.@@m.
+act_dep_time,887,10:54 a.m.,empty
+act_dep_time,888,10:54 a.m.,10:54 a.m.%#
+act_dep_time,892,12:10 p.m.,empty
+act_dep_time,894,12:10 p.m.,empty
+act_dep_time,897,12:10 p.m.,empty
+act_dep_time,898,12:10 p.m.,12:10 p#.m.
+act_dep_time,901,12:10 p.m.,empty
+act_dep_time,903,12:10 p.m.,empty
+act_dep_time,904,12:10 p.m.,empty
+act_dep_time,905,12:10 p.m.,empty
+act_dep_time,908,12:10 p.m.,1%2:10 p.m.
+act_dep_time,912,12:10 p.m.,empty
+act_dep_time,919,6:55 p.m.,empty
+act_dep_time,923,6:55 p.m.,empty
+act_dep_time,936,6:55 p.m.,6:5@@5 p.m.$
+act_dep_time,937,6:55 p.m.,@@6:55 p.m%.
+act_dep_time,941,6:55 p.m.,empty
+act_dep_time,943,6:55 p.m.,empty
+act_dep_time,948,8:51 a.m.,empty
+act_dep_time,950,8:51 a.m.,8:$51 a.m.
+act_dep_time,958,8:51 a.m.,8:51 a.m#.
+act_dep_time,961,8:51 a.m.,empty
+act_dep_time,964,8:51 a.m.,empty
+act_dep_time,971,3:36 p.m.,3:36 p.m.@@
+act_dep_time,973,3:36 p.m.,empty
+act_dep_time,979,3:36 p.m.,3@@:36 p.m%.
+act_dep_time,987,3:36 p.m.,empty
+act_dep_time,990,3:36 p.m.,??3:36 p@@.m.
+act_dep_time,1001,12:13 p.m.,empty
+act_dep_time,1008,12:13 p.m.,12:13 p.m??.
+act_dep_time,1010,12:13 p.m.,empty
+act_dep_time,1014,12:13 p.m.,12:13# p#.m.
+act_dep_time,1015,12:13 p.m.,empty
+act_dep_time,1019,12:12 p.m.,empty
+act_dep_time,1020,12:12 p.m.,12:12 p??%.m.
+act_dep_time,1023,12:12 p.m.,empty
+act_dep_time,1027,12:12 p.m.,12:12 p??.m.
+act_dep_time,1028,12:12 p.m.,empty
+act_dep_time,1040,12:12 p.m.,empty
+act_dep_time,1042,12:12 p.m.,empty
+act_dep_time,1051,6:08 a.m.,empty
+act_dep_time,1052,6:08 a.m.,6:08@@ %a.m.
+act_dep_time,1060,6:08 a.m.,empty
+act_dep_time,1063,6:08 a.m.,empty
+act_dep_time,1064,6:08 a.m.,empty
+act_dep_time,1068,6:08 a.m.,6:08@@ a.m.
+act_dep_time,1075,4:29 p.m.,empty
+act_dep_time,1084,4:29 p.m.,4:29 #p.m.
+act_dep_time,1089,4:29 p.m.,4:29 p$.m.
+act_dep_time,1092,4:29 p.m.,4:29 p.%m.
+act_dep_time,1093,4:29 p.m.,empty
+act_dep_time,1101,6:54 a.m.,empty
+act_dep_time,1104,6:54 a.m.,6:54?? a.m.
+act_dep_time,1108,6:54 a.m.,@@6:54# a.m.
+act_dep_time,1111,6:54 a.m.,6:54$ a.m.
+act_dep_time,1112,6:54 a.m.,$6:54 a.m.
+act_dep_time,1114,6:54 a.m.,6#:$54 a.m.
+act_dep_time,1115,6:54 a.m.,6:@@@@54 a.m.
+act_dep_time,1116,6:54 a.m.,6:54 a.#m.
+act_dep_time,1117,6:54 a.m.,6:54 a%.m.
+act_dep_time,1119,7:39 a.m.,empty
+act_dep_time,1124,7:39 a.m.,empty
+act_dep_time,1133,7:39 a.m.,7:39 a.m.#
+act_dep_time,1136,7:39 a.m.,empty
+act_dep_time,1141,7:39 a.m.,empty
+act_dep_time,1145,7:39 a.m.,empty
+act_dep_time,1147,7:39 a.m.,empty
+act_dep_time,1164,10:10 a.m.,%$10:10 a.m.
+act_dep_time,1168,10:10 a.m.,empty
+act_dep_time,1178,7:30 a.m.,7:$30% a.m.
+act_dep_time,1179,7:30 a.m.,empty
+act_dep_time,1181,7:30 a.m.,empty
+act_dep_time,1191,7:30 a.m.,empty
+act_dep_time,1197,7:30 a.m.,empty
+act_dep_time,1206,1:30 p.m.,empty
+act_dep_time,1215,1:30 p.m.,empty
+act_dep_time,1216,1:30 p.m.,empty
+act_dep_time,1220,1:30 p.m.,empty
+act_dep_time,1223,1:19 p.m.,empty
+act_dep_time,1224,1:19 p.m.,1:19 p.m$.
+act_dep_time,1235,1:19 p.m.,empty
+act_dep_time,1242,1:19 p.m.,empty
+act_dep_time,1243,1:19 p.m.,empty
+act_dep_time,1244,1:19 p.m.,1:19 p.m@??@.
+act_dep_time,1249,1:19 p.m.,empty
+act_dep_time,1254,3:36 p.m.,empty
+act_dep_time,1261,3:36 p.m.,empty
+act_dep_time,1263,3:36 p.m.,empty
+act_dep_time,1265,3:36 p.m.,%3:36 ??p.m.
+act_dep_time,1266,3:36 p.m.,empty
+act_dep_time,1270,3:36 p.m.,empty
+act_dep_time,1272,3:36 p.m.,3:36 $p.m%.
+act_dep_time,1276,11:56 a.m.,empty
+act_dep_time,1277,11:56 a.m.,empty
+act_dep_time,1288,11:56 a.m.,empty
+act_dep_time,1289,11:56 a.m.,11:5@@6 a.m.
+act_dep_time,1293,11:56 a.m.,11:5%6% a.m.
+act_dep_time,1296,11:56 a.m.,11:5%6 a%.m.
+act_dep_time,1299,8:40 a.m.,empty
+act_dep_time,1300,8:40 a.m.,empty
+act_dep_time,1307,8:40 a.m.,empty
+act_dep_time,1318,10:19 a.m.,10:1@@9 a??.m.
+act_dep_time,1320,10:19 a.m.,10:19 #a.m.
+act_dep_time,1344,9:14 a.m.,??9:14 a.m.
+act_dep_time,1349,9:14 a.m.,empty
+act_dep_time,1356,9:14 a.m.,9:#14$ a.m.
+act_dep_time,1378,3:01 p.m.,empty
+act_dep_time,1384,3:01 p.m.,3:01 @@p.m.
+act_dep_time,1389,8:00 a.m.,8:00 $a.$m.
+act_dep_time,1407,8:00 a.m.,empty
+act_dep_time,1410,7:14 p.m.,empty
+act_dep_time,1425,7:14 p.m.,empty
+act_dep_time,1426,7:14 p.m.,empty
+act_dep_time,1428,7:14 p.m.,empty
+act_dep_time,1429,7:14 p.m.,empty
+act_dep_time,1430,7:14 p.m.,empty
+act_dep_time,1438,10:20 a.m.,empty
+act_dep_time,1442,10:20 a.m.,empty
+act_dep_time,1447,10:20 a.m.,empty
+act_dep_time,1451,10:20 a.m.,10$:20% a.m.
+act_dep_time,1456,12:41 a.m.,12:41 a.m.#
+act_dep_time,1459,12:41 a.m.,1$%2:41 a.m.
+act_dep_time,1465,12:41 a.m.,12:#41 a??.m.
+act_dep_time,1466,12:41 a.m.,empty
+act_dep_time,1469,12:41 a.m.,empty
+act_dep_time,1472,12:41 a.m.,1#2:41 a.m.
+act_dep_time,1474,7:15 p.m.,empty
+act_dep_time,1479,7:15 p.m.,empty
+act_dep_time,1488,7:15 p.m.,empty
+act_dep_time,1494,7:15 p.m.,empty
+act_dep_time,1499,7:15 p.m.,7:%15 p.m??.
+act_dep_time,1500,3:58 p.m.,empty
+act_dep_time,1502,3:58 p.m.,empty
+act_dep_time,1511,3:58 p.m.,empty
+act_dep_time,1512,3:58 p.m.,3:@@58$ p.m.
+act_dep_time,1520,3:58 p.m.,empty
+act_dep_time,1523,8:25 p.m.,8:25 p??.m.
+act_dep_time,1529,8:25 p.m.,8:25 p.$m.
+act_dep_time,1536,8:25 p.m.,#8:25 p.m.
+act_dep_time,1538,8:25 p.m.,empty
+act_dep_time,1540,8:25 p.m.,empty
+act_dep_time,1541,8:25 p.m.,empty
+act_dep_time,1543,5:30 p.m.,empty
+act_dep_time,1544,5:30 p.m.,empty
+act_dep_time,1546,5:30 p.m.,empty
+act_dep_time,1556,5:30 p.m.,empty
+act_dep_time,1562,5:30 p.m.,5:30 p.m%%.
+act_dep_time,1569,3:31 p.m.,empty
+act_dep_time,1571,3:31 p.m.,#3:31 p.m.??
+act_dep_time,1572,3:31 p.m.,empty
+act_dep_time,1582,3:31 p.m.,empty
+act_dep_time,1587,7:29 a.m.,7:29 a.m%.
+act_dep_time,1595,7:29 a.m.,empty
+act_dep_time,1604,7:29 a.m.,7:29% a.m.
+act_dep_time,1605,7:29 a.m.,7:29 a@@.m.
+act_dep_time,1618,11:32 a.m.,$11:32 a.m.
+act_dep_time,1619,11:32 a.m.,empty
+act_dep_time,1621,11:32 a.m.,empty
+act_dep_time,1625,11:32 a.m.,empty
+act_dep_time,1627,2:48 p.m.,empty
+act_dep_time,1628,2:48 p.m.,empty
+act_dep_time,1631,2:48 p.m.,2:4??8 p.??m.
+act_dep_time,1633,2:48 p.m.,empty
+act_dep_time,1642,2:48 p.m.,2:#48 p.m.#
+act_dep_time,1644,2:48 p.m.,empty
+act_dep_time,1646,2:48 p.m.,2:48 p.m$.
+act_dep_time,1647,5:22 p.m.,$5:#22 p.m.
+act_dep_time,1648,5:22 p.m.,empty
+act_dep_time,1655,5:22 p.m.,5:22 @@p#.m.
+act_dep_time,1660,5:22 p.m.,empty
+act_dep_time,1661,5:22 p.m.,empty
+act_dep_time,1664,5:22 p.m.,5:22 p$.m.
+act_dep_time,1670,6:02 a.m.,6:02 a.m.@@
+act_dep_time,1676,6:02 a.m.,empty
+act_dep_time,1677,6:02 a.m.,6#:$02 a.m.
+act_dep_time,1678,6:02 a.m.,empty
+act_dep_time,1683,6:02 a.m.,empty
+act_dep_time,1686,6:02 a.m.,empty
+act_dep_time,1688,9:16 a.m.,9:16 a.#m.
+act_dep_time,1694,9:16 a.m.,$9%:16 a.m.
+act_dep_time,1697,9:16 a.m.,empty
+act_dep_time,1703,9:16 a.m.,empty
+act_dep_time,1707,2:55 p.m.,@@2%:55 p.m.
+act_dep_time,1712,2:55 p.m.,empty
+act_dep_time,1722,2:55 p.m.,empty
+act_dep_time,1723,2:55 p.m.,empty
+act_dep_time,1726,4:25 p.m.,empty
+act_dep_time,1727,4:25 p.m.,empty
+act_dep_time,1733,4:25 p.m.,4:25 p@@.m.
+act_dep_time,1738,4:25 p.m.,empty
+act_dep_time,1743,4:25 p.m.,empty
+act_dep_time,1744,4:25 p.m.,4:25 p??.m.
+act_dep_time,1746,4:25 p.m.,4:25@@ p.m.
+act_dep_time,1753,1:32 p.m.,1:32 p.m.#??
+act_dep_time,1756,1:32 p.m.,empty
+act_dep_time,1763,1:32 p.m.,empty
+act_dep_time,1766,1:32 p.m.,empty
+act_dep_time,1768,1:32 p.m.,empty
+act_dep_time,1772,1:32 p.m.,empty
+act_dep_time,1773,7:05 a.m.,empty
+act_dep_time,1774,7:05 a.m.,7:0%5 a.$m.
+act_dep_time,1778,7:05 a.m.,7:05$ a.@@m.
+act_dep_time,1780,7:05 a.m.,@@7:05 a.m.
+act_dep_time,1784,7:05 a.m.,empty
+act_dep_time,1787,7:05 a.m.,empty
+act_dep_time,1788,7:05 a.m.,empty
+act_dep_time,1792,7:05 a.m.,7?%?:05 a.m.
+act_dep_time,1795,2:26 p.m.,#2:26 #p.m.
+act_dep_time,1800,2:26 p.m.,#2:26 p$.m.
+act_dep_time,1804,2:26 p.m.,2:26 p??.m.
+act_dep_time,1808,2:26 p.m.,empty
+act_dep_time,1811,2:26 p.m.,empty
+act_dep_time,1814,2:26 p.m.,2:26## p.m.
+act_dep_time,1817,2:26 p.m.,empty
+act_dep_time,1823,11:15 a.m.,empty
+act_dep_time,1829,11:15 a.m.,11:15?? a%.m.
+act_dep_time,1830,11:15 a.m.,11#:1%5 a.m.
+act_dep_time,1836,11:15 a.m.,11:15$ a.m.#
+act_dep_time,1842,2:55 p.m.,$@@2:55 p.m.
+act_dep_time,1845,2:55 p.m.,empty
+act_dep_time,1851,2:55 p.m.,empty
+act_dep_time,1853,2:55 p.m.,empty
+act_dep_time,1856,2:55 p.m.,empty
+act_dep_time,1857,2:55 p.m.,empty
+act_dep_time,1859,2:55 p.m.,empty
+act_dep_time,1863,4:00 p.m.,empty
+act_dep_time,1864,4:00 p.m.,4:0%@@0 p.m.
+act_dep_time,1876,4:00 p.m.,4#:00 p.m.
+act_dep_time,1879,4:00 p.m.,4:00 ??p.m.
+act_dep_time,1880,4:00 p.m.,4:$00 p.m.
+act_dep_time,1883,4:00 p.m.,empty
+act_dep_time,1892,3:27 p.m.,empty
+act_dep_time,1894,3:27 p.m.,empty
+act_dep_time,1899,3:27 p.m.,empty
+act_dep_time,1900,3:27 p.m.,empty
+act_dep_time,1901,3:27 p.m.,empty
+act_dep_time,1902,3:27 p.m.,3:2@@7 p.m.$
+act_dep_time,1906,4:28 p.m.,empty
+act_dep_time,1908,4:28 p.m.,empty
+act_dep_time,1910,4:28 p.m.,4:28 p.%m.
+act_dep_time,1913,4:28 p.m.,$4:28% p.m.
+act_dep_time,1914,4:28 p.m.,empty
+act_dep_time,1917,4:28 p.m.,empty
+act_dep_time,1919,4:28 p.m.,empty
+act_dep_time,1920,4:28 p.m.,4:28 p.??m.
+act_dep_time,1921,4:28 p.m.,4:@@28 p.m.
+act_dep_time,1923,4:28 p.m.,#4:28 p.@@m.
+act_dep_time,1925,4:28 p.m.,empty
+act_dep_time,1927,4:28 p.m.,empty
+act_dep_time,1929,4:28 p.m.,empty
+act_dep_time,1933,3:11 a.m.,empty
+act_dep_time,1939,3:11 a.m.,empty
+act_dep_time,1941,3:11 a.m.,3:11# a.m.
+act_dep_time,1944,3:11 a.m.,empty
+act_dep_time,1959,11:30 a.m.,empty
+act_dep_time,1960,11:30 a.m.,11$:30 a.m.@@
+act_dep_time,1971,11:30 a.m.,empty
+act_dep_time,1975,11:30 a.m.,11:30 a.%m.
+act_dep_time,1976,11:30 a.m.,#11:30 a.m.
+act_dep_time,1980,11:55 a.m.,empty
+act_dep_time,1981,11:55 a.m.,11%:55 @@a.m.
+act_dep_time,1986,11:55 a.m.,empty
+act_dep_time,2002,8:26 a.m.,8:26 a%.m.$
+act_dep_time,2007,8:26 a.m.,empty
+act_dep_time,2010,8:26 a.m.,8:#26 %a.m.
+act_dep_time,2012,8:26 a.m.,#8:26 a%.m.
+act_dep_time,2013,8:26 a.m.,empty
+act_dep_time,2014,8:26 a.m.,empty
+act_dep_time,2016,8:26 a.m.,8:@@26 a.m.
+act_dep_time,2018,8:26 a.m.,empty
+act_dep_time,2028,8:12 a.m.,empty
+act_dep_time,2031,8:12 a.m.,empty
+act_dep_time,2032,8:12 a.m.,empty
+act_dep_time,2033,8:12 a.m.,empty
+act_dep_time,2042,8:12 a.m.,empty
+act_dep_time,2043,8:12 a.m.,8:1@@2 a.%m.
+act_dep_time,2050,8:52 a.m.,empty
+act_dep_time,2051,8:52 a.m.,empty
+act_dep_time,2055,8:52 a.m.,empty
+act_dep_time,2058,8:52 a.m.,empty
+act_dep_time,2063,8:52 a.m.,??8:52 a.m.
+act_dep_time,2064,8:52 a.m.,8:52 #a.m.
+act_dep_time,2073,1:48 p.m.,empty
+act_dep_time,2076,1:48 p.m.,empty
+act_dep_time,2079,1:48 p.m.,empty
+act_dep_time,2080,1:48 p.m.,1:4$8 p.m.
+act_dep_time,2085,1:48 p.m.,empty
+act_dep_time,2091,12:35 p.m.,$12:35 p.#m.
+act_dep_time,2094,12:35 p.m.,empty
+act_dep_time,2104,12:35 p.m.,12:@@$35 p.m.
+act_dep_time,2106,12:35 p.m.,empty
+act_dep_time,2108,12:35 p.m.,12:35 p.m%.
+act_dep_time,2109,12:35 p.m.,empty
+act_dep_time,2115,8:42 a.m.,empty
+act_dep_time,2117,8:42 a.m.,8:%4#2 a.m.
+act_dep_time,2133,8:42 a.m.,empty
+act_dep_time,2138,8:29 a.m.,empty
+act_dep_time,2139,8:29 a.m.,empty
+act_dep_time,2140,8:29 a.m.,empty
+act_dep_time,2144,8:29 a.m.,@@#8:29 a.m.
+act_dep_time,2149,8:29 a.m.,empty
+act_dep_time,2153,8:29 a.m.,empty
+act_dep_time,2161,5:56 a.m.,5$:56 a.#m.
+act_dep_time,2164,5:56 a.m.,empty
+act_dep_time,2167,5:56 a.m.,empty
+act_dep_time,2168,5:56 a.m.,empty
+act_dep_time,2173,5:56 a.m.,empty
+act_dep_time,2174,5:56 a.m.,5:56# #a.m.
+act_dep_time,2180,5:56 a.m.,5@@:#56 a.m.
+act_dep_time,2188,10:33 a.m.,empty
+act_dep_time,2197,10:33 a.m.,??10:33 a.m.
+act_dep_time,2202,2:48 p.m.,empty
+act_dep_time,2209,2:48 p.m.,empty
+act_dep_time,2212,2:48 p.m.,%2:48 p.m.
+act_dep_time,2214,2:48 p.m.,empty
+act_dep_time,2215,2:48 p.m.,empty
+act_dep_time,2218,2:48 p.m.,2:48 p.m@@.
+act_dep_time,2225,7:27 a.m.,7:27# a.@@m.
+act_dep_time,2243,1:31 p.m.,empty
+act_dep_time,2249,1:31 p.m.,1:31 %#p.m.
+act_dep_time,2255,1:31 p.m.,1:31 p.m%.
+act_dep_time,2258,1:31 p.m.,1:31 ?@@?p.m.
+act_dep_time,2263,1:31 p.m.,1:31 p.m#.
+act_dep_time,2269,1:31 p.m.,1#:31 p.m.
+act_dep_time,2271,11:08 p.m.,empty
+act_dep_time,2272,11:08 p.m.,empty
+act_dep_time,2277,11:08 p.m.,empty
+act_dep_time,2282,11:08 p.m.,11%:08 p.m.
+act_dep_time,2284,11:08 p.m.,11:08 @@p.m.
+act_dep_time,2290,11:08 p.m.,11:08 p@@.$m.
+act_dep_time,2293,11:08 p.m.,empty
+act_dep_time,2295,2:10 p.m.,2:10 %p.m.
+act_dep_time,2296,2:10 p.m.,empty
+act_dep_time,2297,2:10 p.m.,empty
+act_dep_time,2301,2:10 p.m.,2:10 p.@@#m.
+act_dep_time,2302,2:10 p.m.,2:10$ ??p.m.
+act_dep_time,2306,2:10 p.m.,2:10 p.m%.
+act_dep_time,2309,2:10 p.m.,empty
+act_dep_time,2317,7:49 a.m.,7%:49 $a.m.
+act_dep_time,2321,7:49 a.m.,7:#49 a.m.
+act_dep_time,2322,7:49 a.m.,7:49 a.m$.
+act_dep_time,2333,7:49 a.m.,empty
+act_dep_time,2337,1:32 p.m.,1#:32 ??p.m.
+act_dep_time,2340,1:32 p.m.,empty
+act_dep_time,2351,1:32 p.m.,empty
+act_dep_time,2353,1:32 p.m.,empty
+act_dep_time,2359,4:15 p.m.,empty
+act_dep_time,2361,4:15 p.m.,empty
+act_dep_time,2363,4:15 p.m.,empty
+act_dep_time,2367,4:15 p.m.,4:15 @@p.m.
+act_dep_time,2374,4:15 p.m.,empty
+sched_arr_time,4,8:05 p.m.,empty
+sched_arr_time,6,8:05 p.m.,8$:05 p.m.
+sched_arr_time,8,8:05 p.m.,8:%05 $p.m.
+sched_arr_time,15,8:05 p.m.,empty
+sched_arr_time,18,8:05 p.m.,$8:05# p.m.
+sched_arr_time,19,8:05 p.m.,empty
+sched_arr_time,21,8:05 p.m.,8:%05% p.m.
+sched_arr_time,27,10:34 a.m.,empty
+sched_arr_time,28,10:34 a.m.,empty
+sched_arr_time,33,10:34 a.m.,empty
+sched_arr_time,36,10:34 a.m.,empty
+sched_arr_time,41,10:34 a.m.,empty
+sched_arr_time,45,10:34 a.m.,10:3??4 a.m.
+sched_arr_time,47,9:45 p.m.,empty
+sched_arr_time,54,9:45 p.m.,empty
+sched_arr_time,57,9:45 p.m.,9:45 p.#m.
+sched_arr_time,61,9:45 p.m.,9$:45 p.m.
+sched_arr_time,68,9:45 p.m.,empty
+sched_arr_time,74,9:45 p.m.,9:45?? p$.m.
+sched_arr_time,75,2:35 p.m.,@@2:35 p.$m.
+sched_arr_time,81,2:35 p.m.,empty
+sched_arr_time,83,2:35 p.m.,empty
+sched_arr_time,85,2:35 p.m.,empty
+sched_arr_time,87,2:35 p.m.,2:%35 p.m.
+sched_arr_time,102,10:35 a.m.,empty
+sched_arr_time,110,10:35 a.m.,10:35 a@@.%m.
+sched_arr_time,114,10:35 a.m.,empty
+sched_arr_time,115,10:35 a.m.,empty
+sched_arr_time,116,10:35 a.m.,empty
+sched_arr_time,120,10:35 a.m.,empty
+sched_arr_time,121,10:35 a.m.,@@10:35 a.m.
+sched_arr_time,125,10:35 a.m.,1#0:??35 a.m.
+sched_arr_time,127,5:50 a.m.,5:#50 a.m.
+sched_arr_time,135,5:50 a.m.,empty
+sched_arr_time,137,5:50 a.m.,empty
+sched_arr_time,138,5:50 a.m.,%5:50 a.m.
+sched_arr_time,146,5:50 a.m.,5:50 a.m@@.??
+sched_arr_time,150,5:25 p.m.,empty
+sched_arr_time,152,5:25 p.m.,5:25 p.@@m.
+sched_arr_time,157,5:25 p.m.,empty
+sched_arr_time,162,5:25 p.m.,5:25 p$.m#.
+sched_arr_time,172,7:25 p.m.,7%:25 $p.m.
+sched_arr_time,182,7:25 p.m.,7:25 p.m??$.
+sched_arr_time,191,7:25 p.m.,7:25$ p.m.@@
+sched_arr_time,196,7:25 p.m.,7#:2$5 p.m.
+sched_arr_time,197,7:25 p.m.,empty
+sched_arr_time,204,12:10 p.m.,empty
+sched_arr_time,210,12:10 p.m.,12:10% p.m%.
+sched_arr_time,219,12:10 p.m.,empty
+sched_arr_time,221,12:10 p.m.,empty
+sched_arr_time,227,10:30 p.m.,1%0:30 p.m.
+sched_arr_time,232,10:30 p.m.,empty
+sched_arr_time,235,10:30 p.m.,10:30% p.$m.
+sched_arr_time,236,10:30 p.m.,empty
+sched_arr_time,240,10:30 p.m.,10:30 p??.$m.
+sched_arr_time,241,10:30 p.m.,empty
+sched_arr_time,242,10:30 p.m.,empty
+sched_arr_time,247,10:30 p.m.,10:30$ p.m.
+sched_arr_time,249,10:30 p.m.,empty
+sched_arr_time,254,2:20 p.m.,empty
+sched_arr_time,258,2:20 p.m.,2:20 @@p??.m.
+sched_arr_time,265,2:20 p.m.,empty
+sched_arr_time,266,2:20 p.m.,empty
+sched_arr_time,269,2:20 p.m.,empty
+sched_arr_time,271,5:55 p.m.,5:@@55 p.??m.
+sched_arr_time,279,5:55 p.m.,$5:55 p.m.
+sched_arr_time,280,5:55 p.m.,5:5??5 p.m.
+sched_arr_time,281,5:55 p.m.,empty
+sched_arr_time,285,5:55 p.m.,empty
+sched_arr_time,293,5:55 p.m.,5:??55 p%.m.
+sched_arr_time,297,6:55 a.m.,empty
+sched_arr_time,299,6:55 a.m.,empty
+sched_arr_time,303,6:55 a.m.,empty
+sched_arr_time,311,6:55 a.m.,empty
+sched_arr_time,314,6:55 a.m.,6:55 a.m$.
+sched_arr_time,318,6:55 a.m.,empty
+sched_arr_time,320,6:55 a.m.,empty
+sched_arr_time,323,2:45 p.m.,2:??45 p.m.
+sched_arr_time,325,2:45 p.m.,2:45 p.m.$
+sched_arr_time,326,2:45 p.m.,empty
+sched_arr_time,331,2:45 p.m.,empty
+sched_arr_time,332,2:45 p.m.,empty
+sched_arr_time,338,2:45 p.m.,empty
+sched_arr_time,343,2:45 p.m.,2:45 p.@??@m.
+sched_arr_time,352,3:30 p.m.,empty
+sched_arr_time,353,3:30 p.m.,3#:30 p.m??.
+sched_arr_time,355,3:30 p.m.,??3:30 p.m.
+sched_arr_time,367,3:30 p.m.,empty
+sched_arr_time,373,11:35 a.m.,empty
+sched_arr_time,375,11:35 a.m.,empty
+sched_arr_time,376,11:35 a.m.,empty
+sched_arr_time,381,11:35 a.m.,empty
+sched_arr_time,387,11:35 a.m.,empty
+sched_arr_time,394,11:35 a.m.,11:35 a.m.#
+sched_arr_time,396,11:35 a.m.,empty
+sched_arr_time,399,11:50 p.m.,11:5@@0 p.m#.
+sched_arr_time,406,11:50 p.m.,empty
+sched_arr_time,407,11:50 p.m.,11:$50?? p.m.
+sched_arr_time,409,11:50 p.m.,11:50 #p.m.
+sched_arr_time,410,11:50 p.m.,11:5??0 #p.m.
+sched_arr_time,411,11:50 p.m.,empty
+sched_arr_time,416,11:50 p.m.,empty
+sched_arr_time,417,11:50 p.m.,empty
+sched_arr_time,419,11:50 p.m.,empty
+sched_arr_time,430,11:10 a.m.,empty
+sched_arr_time,436,11:10 a.m.,$11:10$ a.m.
+sched_arr_time,438,11:10 a.m.,$11:10 a@@.m.
+sched_arr_time,443,11:10 a.m.,#??11:10 a.m.
+sched_arr_time,447,11:10 a.m.,$11%:10 a.m.
+sched_arr_time,453,2:25 p.m.,empty
+sched_arr_time,455,2:25 p.m.,empty
+sched_arr_time,457,2:25 p.m.,2$:25 p.m.
+sched_arr_time,458,2:25 p.m.,2:25 p.m#.
+sched_arr_time,459,2:25 p.m.,2:25 ??p.#m.
+sched_arr_time,470,2:25 p.m.,empty
+sched_arr_time,471,2:25 p.m.,2:25 p$.m.
+sched_arr_time,478,11:05 a.m.,empty
+sched_arr_time,483,11:05 a.m.,empty
+sched_arr_time,487,11:05 a.m.,empty
+sched_arr_time,489,11:05 a.m.,empty
+sched_arr_time,490,11:05 a.m.,11:05# a.m.
+sched_arr_time,493,11:05 a.m.,empty
+sched_arr_time,499,11:05 a.m.,11:05 a.$m.
+sched_arr_time,504,3:15 p.m.,empty
+sched_arr_time,511,3:15 p.m.,$3:15 p.m.
+sched_arr_time,516,3:15 p.m.,empty
+sched_arr_time,518,3:15 p.m.,3:15%@@ p.m.
+sched_arr_time,519,3:15 p.m.,3@@:15 p.m$.
+sched_arr_time,520,3:15 p.m.,@@3:15 #p.m.
+sched_arr_time,522,3:15 p.m.,empty
+sched_arr_time,525,3:15 p.m.,empty
+sched_arr_time,533,9:20 p.m.,empty
+sched_arr_time,543,9:20 p.m.,9:2%0 p@@.m.
+sched_arr_time,546,9:20 p.m.,9:20 p????.m.
+sched_arr_time,549,9:20 p.m.,empty
+sched_arr_time,553,9:55 a.m.,9:5@@5 a.m.
+sched_arr_time,555,9:55 a.m.,empty
+sched_arr_time,559,9:55 a.m.,empty
+sched_arr_time,560,9:55 a.m.,empty
+sched_arr_time,561,9:55 a.m.,9:55 a.m#.
+sched_arr_time,567,9:55 a.m.,empty
+sched_arr_time,574,9:55 a.m.,9:55 #a.??m.
+sched_arr_time,578,2:45 p.m.,empty
+sched_arr_time,581,2:45 p.m.,2:??$45 p.m.
+sched_arr_time,583,2:45 p.m.,2:??45 p.@@m.
+sched_arr_time,584,2:45 p.m.,empty
+sched_arr_time,586,2:45 p.m.,empty
+sched_arr_time,597,2:45 p.m.,empty
+sched_arr_time,598,2:45 p.m.,empty
+sched_arr_time,599,2:45 p.m.,empty
+sched_arr_time,600,2:45 p.m.,empty
+sched_arr_time,601,2:45 p.m.,empty
+sched_arr_time,614,6:40 p.m.,empty
+sched_arr_time,618,6:40 p.m.,empty
+sched_arr_time,619,6:40 p.m.,@@6:40 p#.m.
+sched_arr_time,625,6:40 p.m.,6:4%0 p.@@m.
+sched_arr_time,627,6:40 p.m.,empty
+sched_arr_time,629,6:40 p.m.,6??:40# p.m.
+sched_arr_time,633,4:05 p.m.,empty
+sched_arr_time,635,4:05 p.m.,empty
+sched_arr_time,636,4:05 p.m.,empty
+sched_arr_time,640,4:05 p.m.,empty
+sched_arr_time,653,4:05 p.m.,empty
+sched_arr_time,654,4:05 p.m.,empty
+sched_arr_time,660,6:40 a.m.,6:40 a.m%.??
+sched_arr_time,664,6:40 a.m.,6:40 a.m$.
+sched_arr_time,666,6:40 a.m.,6:40 #a.@@m.
+sched_arr_time,668,6:40 a.m.,6:4$0 a.m$.
+sched_arr_time,672,6:40 a.m.,empty
+sched_arr_time,684,6:40 a.m.,empty
+sched_arr_time,692,12:15 a.m.,empty
+sched_arr_time,693,12:15 a.m.,12:15 #a.#m.
+sched_arr_time,702,12:15 a.m.,empty
+sched_arr_time,707,12:15 a.m.,empty
+sched_arr_time,711,12:15 a.m.,12:15 a#.m.
+sched_arr_time,715,7:30 a.m.,empty
+sched_arr_time,724,7:30 a.m.,empty
+sched_arr_time,728,7:30 a.m.,empty
+sched_arr_time,729,7:30 a.m.,7:3#0 a#.m.
+sched_arr_time,733,7:30 a.m.,7:3@@0 a.m.
+sched_arr_time,740,9:40 a.m.,empty
+sched_arr_time,741,9:40 a.m.,empty
+sched_arr_time,751,9:40 a.m.,9:40 a%.m.
+sched_arr_time,754,9:40 a.m.,%9:40 a$.m.
+sched_arr_time,756,9:40 a.m.,9:@@40 a.m.??
+sched_arr_time,759,9:40 a.m.,9??:40 %a.m.
+sched_arr_time,760,9:40 a.m.,empty
+sched_arr_time,767,8:00 a.m.,8:%#00 a.m.
+sched_arr_time,781,8:00 a.m.,8:00# @@a.m.
+sched_arr_time,782,8:00 a.m.,8@@:00 a.m.
+sched_arr_time,784,8:00 a.m.,empty
+sched_arr_time,788,8:00 a.m.,8:00 a.m.??
+sched_arr_time,789,8:00 a.m.,8@@:00 a.m.
+sched_arr_time,795,2:59 p.m.,empty
+sched_arr_time,796,2:59 p.m.,empty
+sched_arr_time,799,2:59 p.m.,empty
+sched_arr_time,805,2:59 p.m.,2:59# $p.m.
+sched_arr_time,809,2:59 p.m.,2:59 p$$.m.
+sched_arr_time,814,2:59 p.m.,2:59 $p.m.
+sched_arr_time,815,2:59 p.m.,2:59 p.@@??m.
+sched_arr_time,816,7:45 a.m.,empty
+sched_arr_time,819,7:45 a.m.,7:$45 a.m.
+sched_arr_time,820,7:45 a.m.,7:45 a@@.m@@.
+sched_arr_time,830,7:45 a.m.,empty
+sched_arr_time,832,7:45 a.m.,7:45 a%.m.
+sched_arr_time,835,7:45 a.m.,7:4#5 a.m.%
+sched_arr_time,847,10:40 a.m.,empty
+sched_arr_time,851,10:40 a.m.,empty
+sched_arr_time,852,10:40 a.m.,10:#%40 a.m.
+sched_arr_time,858,10:40 a.m.,empty
+sched_arr_time,860,10:40 a.m.,10:4@@0 a.m.
+sched_arr_time,862,10:40 a.m.,10:%40 a.m.
+sched_arr_time,863,10:40 a.m.,empty
+sched_arr_time,866,12:55 p.m.,empty
+sched_arr_time,871,12:55 p.m.,empty
+sched_arr_time,875,12:55 p.m.,empty
+sched_arr_time,876,12:55 p.m.,12:55 p.m.%
+sched_arr_time,879,12:55 p.m.,12:#55?? p.m.
+sched_arr_time,880,12:55 p.m.,empty
+sched_arr_time,883,12:55 p.m.,12:%55 p.m.
+sched_arr_time,893,2:15 p.m.,empty
+sched_arr_time,900,2:15 p.m.,2:??15 p.m.
+sched_arr_time,905,2:15 p.m.,empty
+sched_arr_time,919,9:10 p.m.,9%#:10 p.m.
+sched_arr_time,922,9:10 p.m.,empty
+sched_arr_time,924,9:10 p.m.,??9:10 p%.m.
+sched_arr_time,933,9:10 p.m.,empty
+sched_arr_time,935,9:10 p.m.,empty
+sched_arr_time,936,9:10 p.m.,9:10 %p.m.%
+sched_arr_time,947,11:50 a.m.,empty
+sched_arr_time,952,11:50 a.m.,empty
+sched_arr_time,955,11:50 a.m.,empty
+sched_arr_time,958,11:50 a.m.,empty
+sched_arr_time,959,11:50 a.m.,11:50 $a.m.
+sched_arr_time,962,11:50 a.m.,empty
+sched_arr_time,972,4:00 p.m.,4:0@@0 @@p.m.
+sched_arr_time,973,4:00 p.m.,4:00 p.????m.
+sched_arr_time,975,4:00 p.m.,4:00 %p.m.
+sched_arr_time,985,4:00 p.m.,empty
+sched_arr_time,994,2:00 p.m.,2:00 p#.m.
+sched_arr_time,1009,2:00 p.m.,2:00 p.@@m.
+sched_arr_time,1011,2:00 p.m.,empty
+sched_arr_time,1016,2:00 p.m.,empty
+sched_arr_time,1017,3:50 p.m.,3:50?? $p.m.
+sched_arr_time,1018,3:50 p.m.,3:$50 p.m.
+sched_arr_time,1019,3:50 p.m.,empty
+sched_arr_time,1022,3:50 p.m.,empty
+sched_arr_time,1025,3:50 p.m.,empty
+sched_arr_time,1029,3:50 p.m.,empty
+sched_arr_time,1032,3:50 p.m.,empty
+sched_arr_time,1033,3:50 p.m.,empty
+sched_arr_time,1034,3:50 p.m.,$3:50 p.m@@.
+sched_arr_time,1048,9:20 a.m.,$9:20 a.??m.
+sched_arr_time,1052,9:20 a.m.,empty
+sched_arr_time,1056,9:20 a.m.,9:%20 a.m.
+sched_arr_time,1057,9:20 a.m.,empty
+sched_arr_time,1064,9:20 a.m.,empty
+sched_arr_time,1070,7:55 p.m.,empty
+sched_arr_time,1074,7:55 p.m.,empty
+sched_arr_time,1078,7:55 p.m.,empty
+sched_arr_time,1083,7:55 p.m.,empty
+sched_arr_time,1086,7:55 p.m.,empty
+sched_arr_time,1087,7:55 p.m.,empty
+sched_arr_time,1093,7:55 p.m.,7:55 $p.m.
+sched_arr_time,1099,9:25 a.m.,empty
+sched_arr_time,1104,9:25 a.m.,empty
+sched_arr_time,1105,9:25 a.m.,9:25 a.@@m.
+sched_arr_time,1106,9:25 a.m.,empty
+sched_arr_time,1107,9:25 a.m.,9:25 a.m$.
+sched_arr_time,1115,9:25 a.m.,%9:2#5 a.m.
+sched_arr_time,1116,9:25 a.m.,empty
+sched_arr_time,1122,10:45 a.m.,10:4#5 a%.m.
+sched_arr_time,1129,10:45 a.m.,empty
+sched_arr_time,1132,10:45 a.m.,empty
+sched_arr_time,1133,10:45 a.m.,10:45@@ a.m.
+sched_arr_time,1137,10:45 a.m.,empty
+sched_arr_time,1140,10:45 a.m.,empty
+sched_arr_time,1141,10:45 a.m.,empty
+sched_arr_time,1143,10:45 a.m.,10:45 $a.m.
+sched_arr_time,1144,10:45 a.m.,10:45 a.m.%$
+sched_arr_time,1150,12:35 p.m.,empty
+sched_arr_time,1153,12:35 p.m.,empty
+sched_arr_time,1155,12:35 p.m.,empty
+sched_arr_time,1156,12:35 p.m.,1%2:35 p.@@m.
+sched_arr_time,1159,12:35 p.m.,empty
+sched_arr_time,1161,12:35 p.m.,empty
+sched_arr_time,1168,12:35 p.m.,??12:35 p.m#.
+sched_arr_time,1169,12:35 p.m.,12:35@@ p.m.
+sched_arr_time,1171,12:35 p.m.,??12:35 p.#m.
+sched_arr_time,1176,9:35 a.m.,empty
+sched_arr_time,1178,9:35 a.m.,empty
+sched_arr_time,1179,9:35 a.m.,empty
+sched_arr_time,1188,9:35 a.m.,empty
+sched_arr_time,1190,9:35 a.m.,empty
+sched_arr_time,1193,9:35 a.m.,empty
+sched_arr_time,1195,9:35 a.m.,@@9:35 a.m??.
+sched_arr_time,1202,3:50 p.m.,empty
+sched_arr_time,1203,3:50 p.m.,empty
+sched_arr_time,1204,3:50 p.m.,empty
+sched_arr_time,1205,3:50 p.m.,empty
+sched_arr_time,1209,3:50 p.m.,empty
+sched_arr_time,1211,3:50 p.m.,empty
+sched_arr_time,1217,3:50 p.m.,empty
+sched_arr_time,1227,2:35 p.m.,empty
+sched_arr_time,1228,2:35 p.m.,empty
+sched_arr_time,1230,2:35 p.m.,2:3@@5 p.m$.
+sched_arr_time,1231,2:35 p.m.,2:35 p.%??m.
+sched_arr_time,1237,2:35 p.m.,empty
+sched_arr_time,1238,2:35 p.m.,2:35 p.m@@.
+sched_arr_time,1239,2:35 p.m.,empty
+sched_arr_time,1240,2:35 p.m.,%2:35 p.m.
+sched_arr_time,1242,2:35 p.m.,empty
+sched_arr_time,1244,2:35 p.m.,$2:35 p.m.
+sched_arr_time,1251,6:30 p.m.,%6:$30 p.m.
+sched_arr_time,1252,6:30 p.m.,empty
+sched_arr_time,1254,6:30 p.m.,6:$30 @@p.m.
+sched_arr_time,1268,6:30 p.m.,6:30 p.m.??
+sched_arr_time,1269,6:30 p.m.,empty
+sched_arr_time,1271,6:30 p.m.,empty
+sched_arr_time,1272,6:30 p.m.,empty
+sched_arr_time,1277,1:17 p.m.,%1:17 p.m.
+sched_arr_time,1280,1:17 p.m.,1:1??7 p.??m.
+sched_arr_time,1281,1:17 p.m.,empty
+sched_arr_time,1282,1:17 p.m.,empty
+sched_arr_time,1286,1:17 p.m.,empty
+sched_arr_time,1289,1:17 p.m.,1:17 p.$m.
+sched_arr_time,1290,1:17 p.m.,empty
+sched_arr_time,1297,1:17 p.m.,empty
+sched_arr_time,1304,10:54 a.m.,empty
+sched_arr_time,1307,10:54 a.m.,empty
+sched_arr_time,1309,10:54 a.m.,10%:54 a.m.
+sched_arr_time,1322,1:16 p.m.,%??1:16 p.m.
+sched_arr_time,1331,1:16 p.m.,1:16 %p.m.??
+sched_arr_time,1332,1:16 p.m.,empty
+sched_arr_time,1333,1:16 p.m.,empty
+sched_arr_time,1334,1:16 p.m.,1:%16@@ p.m.
+sched_arr_time,1335,1:16 p.m.,1:16 p.m#??.
+sched_arr_time,1338,1:16 p.m.,??$1:16 p.m.
+sched_arr_time,1340,12:18 p.m.,12:18 p.m#.
+sched_arr_time,1343,12:18 p.m.,12:18 p.m.@@%
+sched_arr_time,1346,12:18 p.m.,12:18 p.m@@.
+sched_arr_time,1348,12:18 p.m.,empty
+sched_arr_time,1349,12:18 p.m.,12:@@18 %p.m.
+sched_arr_time,1358,12:18 p.m.,12%:18% p.m.
+sched_arr_time,1359,12:18 p.m.,$12:18 @@p.m.
+sched_arr_time,1360,12:18 p.m.,empty
+sched_arr_time,1361,12:18 p.m.,1??2:18 p.m.
+sched_arr_time,1365,4:48 p.m.,empty
+sched_arr_time,1369,4:48 p.m.,empty
+sched_arr_time,1371,4:48 p.m.,4:4%8 p.m.
+sched_arr_time,1375,4:48 p.m.,4:48 p@@.m.
+sched_arr_time,1378,4:48 p.m.,empty
+sched_arr_time,1379,4:48 p.m.,4#:48 p.m.
+sched_arr_time,1384,4:48 p.m.,empty
+sched_arr_time,1388,11:35 a.m.,empty
+sched_arr_time,1391,11:35 a.m.,11:35$ a.m.
+sched_arr_time,1392,11:35 a.m.,empty
+sched_arr_time,1395,11:35 a.m.,1??1:35 a.m.
+sched_arr_time,1396,11:35 a.m.,empty
+sched_arr_time,1400,11:35 a.m.,11:35 a.??m.
+sched_arr_time,1406,11:35 a.m.,empty
+sched_arr_time,1412,10:15 p.m.,empty
+sched_arr_time,1417,10:15 p.m.,10:15 p.@@m.
+sched_arr_time,1418,10:15 p.m.,empty
+sched_arr_time,1421,10:15 p.m.,1%0:15 p.m.#
+sched_arr_time,1422,10:15 p.m.,empty
+sched_arr_time,1425,10:15 p.m.,1????0:15 p.m.
+sched_arr_time,1428,10:15 p.m.,empty
+sched_arr_time,1435,6:44 p.m.,empty
+sched_arr_time,1455,5:35 a.m.,5:35 a$.m.
+sched_arr_time,1459,5:35 a.m.,5:35 a.m.$
+sched_arr_time,1462,5:35 a.m.,empty
+sched_arr_time,1466,5:35 a.m.,empty
+sched_arr_time,1474,12:21 a.m.,empty
+sched_arr_time,1479,12:21 a.m.,empty
+sched_arr_time,1484,12:21 a.m.,empty
+sched_arr_time,1498,12:21 a.m.,??12:21 a.m.
+sched_arr_time,1499,12:21 a.m.,12@@:21 a.m.
+sched_arr_time,1507,7:05 p.m.,empty
+sched_arr_time,1512,7:05 p.m.,empty
+sched_arr_time,1514,7:05 p.m.,empty
+sched_arr_time,1515,7:05 p.m.,empty
+sched_arr_time,1516,7:05 p.m.,empty
+sched_arr_time,1519,7:05 p.m.,empty
+sched_arr_time,1523,8:56 p.m.,empty
+sched_arr_time,1535,8:56 p.m.,8:5$6 p.@@m.
+sched_arr_time,1540,8:56 p.m.,empty
+sched_arr_time,1541,8:56 p.m.,empty
+sched_arr_time,1551,6:40 p.m.,%6:40 p.m.
+sched_arr_time,1566,4:49 p.m.,empty
+sched_arr_time,1567,4:49 p.m.,empty
+sched_arr_time,1568,4:49 p.m.,empty
+sched_arr_time,1571,4:49 p.m.,4:4@@9 p.m.@@
+sched_arr_time,1576,4:49 p.m.,empty
+sched_arr_time,1580,4:49 p.m.,empty
+sched_arr_time,1586,9:21 a.m.,empty
+sched_arr_time,1593,9:21 a.m.,9@@:21 %a.m.
+sched_arr_time,1596,9:21 a.m.,9:21$ a#.m.
+sched_arr_time,1601,9:21 a.m.,empty
+sched_arr_time,1604,9:21 a.m.,9:21% a@@.m.
+sched_arr_time,1605,9:21 a.m.,empty
+sched_arr_time,1608,2:50 p.m.,empty
+sched_arr_time,1611,2:50 p.m.,empty
+sched_arr_time,1620,2:50 p.m.,empty
+sched_arr_time,1627,7:03 p.m.,empty
+sched_arr_time,1628,7:03 p.m.,7:03@@ p.m.%
+sched_arr_time,1629,7:03 p.m.,7:03 p#.m.
+sched_arr_time,1630,7:03 p.m.,7:0@#@3 p.m.
+sched_arr_time,1636,7:03 p.m.,#7:03 p.m.
+sched_arr_time,1637,7:03 p.m.,7:??03 p.m.
+sched_arr_time,1641,7:03 p.m.,7:03 $p.m??.
+sched_arr_time,1642,7:03 p.m.,empty
+sched_arr_time,1653,8:22 p.m.,empty
+sched_arr_time,1656,8:22 p.m.,empty
+sched_arr_time,1657,8:22 p.m.,empty
+sched_arr_time,1658,8:22 p.m.,??8:22 ??p.m.
+sched_arr_time,1660,8:22 p.m.,empty
+sched_arr_time,1663,8:22 p.m.,empty
+sched_arr_time,1672,10:20 a.m.,empty
+sched_arr_time,1677,10:20 a.m.,empty
+sched_arr_time,1678,10:20 a.m.,10:20 a.m.%$
+sched_arr_time,1688,11:45 a.m.,11:4#5 a.??m.
+sched_arr_time,1692,11:45 a.m.,11:45 a.m$.
+sched_arr_time,1696,11:45 a.m.,empty
+sched_arr_time,1697,11:45 a.m.,11:45 a@@??.m.
+sched_arr_time,1703,11:45 a.m.,empty
+sched_arr_time,1709,5:00 p.m.,empty
+sched_arr_time,1720,5:00 p.m.,5:00$# p.m.
+sched_arr_time,1723,5:00 p.m.,empty
+sched_arr_time,1728,12:29 a.m.,empty
+sched_arr_time,1729,12:29 a.m.,empty
+sched_arr_time,1732,12:29 a.m.,12:29 a.m%.
+sched_arr_time,1742,12:29 a.m.,empty
+sched_arr_time,1745,12:29 a.m.,empty
+sched_arr_time,1750,12:29 a.m.,12:2@@9@@ a.m.
+sched_arr_time,1753,5:15 p.m.,5:15 p.m##.
+sched_arr_time,1755,5:15 p.m.,empty
+sched_arr_time,1756,5:15 p.m.,5$#:15 p.m.
+sched_arr_time,1757,5:15 p.m.,%5:15 p.m$.
+sched_arr_time,1764,5:15 p.m.,empty
+sched_arr_time,1775,10:31 a.m.,1@@0:31 a.m.??
+sched_arr_time,1777,10:31 a.m.,empty
+sched_arr_time,1781,10:31 a.m.,empty
+sched_arr_time,1783,10:31 a.m.,empty
+sched_arr_time,1786,10:31 a.m.,10:3%1 a$.m.
+sched_arr_time,1798,6:15 p.m.,6:15# p.m.
+sched_arr_time,1800,6:15 p.m.,empty
+sched_arr_time,1803,6:15 p.m.,empty
+sched_arr_time,1814,6:15 p.m.,empty
+sched_arr_time,1830,1:40 p.m.,1:40 #p.m.
+sched_arr_time,1835,1:40 p.m.,empty
+sched_arr_time,1836,1:40 p.m.,empty
+sched_arr_time,1841,1:40 p.m.,empty
+sched_arr_time,1842,4:53 p.m.,empty
+sched_arr_time,1844,4:53 p.m.,empty
+sched_arr_time,1859,4:53 p.m.,4$:53 p.m.
+sched_arr_time,1861,4:53 p.m.,4:53 p%.m$.
+sched_arr_time,1864,6:46 p.m.,6:%4@@6 p.m.
+sched_arr_time,1865,6:46 p.m.,empty
+sched_arr_time,1866,6:46 p.m.,%6:4#6 p.m.
+sched_arr_time,1869,6:46 p.m.,empty
+sched_arr_time,1871,6:46 p.m.,empty
+sched_arr_time,1876,6:46 p.m.,#6:46 p@@.m.
+sched_arr_time,1877,6:46 p.m.,empty
+sched_arr_time,1884,6:46 p.m.,@@6:46 p.m.@@
+sched_arr_time,1888,5:05 p.m.,empty
+sched_arr_time,1890,5:05 p.m.,empty
+sched_arr_time,1897,5:05 p.m.,empty
+sched_arr_time,1898,5:05 p.m.,empty
+sched_arr_time,1900,5:05 p.m.,5:??05 p.m#.
+sched_arr_time,1903,5:05 p.m.,empty
+sched_arr_time,1904,5:05 p.m.,empty
+sched_arr_time,1906,6:23 p.m.,empty
+sched_arr_time,1915,6:23 p.m.,empty
+sched_arr_time,1916,6:23 p.m.,empty
+sched_arr_time,1919,6:23 p.m.,empty
+sched_arr_time,1921,6:23 p.m.,empty
+sched_arr_time,1925,6:23 p.m.,6:2$#3 p.m.
+sched_arr_time,1926,6:23 p.m.,6:23?? p.m.
+sched_arr_time,1931,1:45 p.m.,empty
+sched_arr_time,1946,1:45 p.m.,empty
+sched_arr_time,1950,1:45 p.m.,empty
+sched_arr_time,1955,4:57 p.m.,4@@:57 p.m.
+sched_arr_time,1957,4:57 p.m.,4:57 p@@$.m.
+sched_arr_time,1960,4:57 p.m.,4:57 p.m$.
+sched_arr_time,1961,4:57 p.m.,empty
+sched_arr_time,1962,4:57 p.m.,empty
+sched_arr_time,1976,4:57 p.m.,4:57 p@@.m.
+sched_arr_time,1977,4:57 p.m.,4:57 p.%@@m.
+sched_arr_time,1982,6:17 p.m.,6:17 p.m.%
+sched_arr_time,1988,6:17 p.m.,empty
+sched_arr_time,1992,6:17 p.m.,empty
+sched_arr_time,1996,6:17 p.m.,6:#17 p??.m.
+sched_arr_time,2001,6:17 p.m.,empty
+sched_arr_time,2002,9:24 a.m.,empty
+sched_arr_time,2003,9:24 a.m.,9:24 a$.m.
+sched_arr_time,2007,9:24 a.m.,9:24 ??a.m.
+sched_arr_time,2011,9:24 a.m.,empty
+sched_arr_time,2013,9:24 a.m.,empty
+sched_arr_time,2016,9:24 a.m.,empty
+sched_arr_time,2018,9:24 a.m.,9:24 @@a.m.
+sched_arr_time,2024,9:24 a.m.,empty
+sched_arr_time,2026,10:06 a.m.,@@10:06# a.m.
+sched_arr_time,2028,10:06 a.m.,empty
+sched_arr_time,2029,10:06 a.m.,10@@:0??6 a.m.
+sched_arr_time,2035,10:06 a.m.,empty
+sched_arr_time,2040,10:06 a.m.,10?#?:06 a.m.
+sched_arr_time,2047,11:53 a.m.,empty
+sched_arr_time,2050,11:53 a.m.,11:53 a%.m.
+sched_arr_time,2058,11:53 a.m.,11:#53 a.m.
+sched_arr_time,2061,11:53 a.m.,11@@:53 a.m@@.
+sched_arr_time,2062,11:53 a.m.,empty
+sched_arr_time,2063,11:53 a.m.,empty
+sched_arr_time,2071,4:17 p.m.,4:17 p@$@.m.
+sched_arr_time,2078,4:17 p.m.,empty
+sched_arr_time,2080,4:17 p.m.,empty
+sched_arr_time,2086,3:19 p.m.,empty
+sched_arr_time,2089,3:19 p.m.,3:@@19 p.m.
+sched_arr_time,2093,3:19 p.m.,empty
+sched_arr_time,2098,3:19 p.m.,3:19 $p.m.
+sched_arr_time,2099,3:19 p.m.,3:@@19 p.m.
+sched_arr_time,2101,3:19 p.m.,empty
+sched_arr_time,2109,3:19 p.m.,empty
+sched_arr_time,2110,9:54 a.m.,empty
+sched_arr_time,2116,9:54 a.m.,empty
+sched_arr_time,2119,9:54 a.m.,empty
+sched_arr_time,2120,9:54 a.m.,empty
+sched_arr_time,2123,9:54 a.m.,empty
+sched_arr_time,2124,9:54 a.m.,9:5@@4@@ a.m.
+sched_arr_time,2127,9:54 a.m.,empty
+sched_arr_time,2130,9:54 a.m.,empty
+sched_arr_time,2133,9:54 a.m.,9:54 a.m.##
+sched_arr_time,2136,9:54 a.m.,empty
+sched_arr_time,2140,11:55 a.m.,11:$55 $a.m.
+sched_arr_time,2141,11:55 a.m.,empty
+sched_arr_time,2142,11:55 a.m.,empty
+sched_arr_time,2145,11:55 a.m.,empty
+sched_arr_time,2147,11:55 a.m.,empty
+sched_arr_time,2155,11:55 a.m.,11:5@@5 a.m.
+sched_arr_time,2159,7:23 a.m.,empty
+sched_arr_time,2160,7:23 a.m.,empty
+sched_arr_time,2166,7:23 a.m.,7@@:23 a#.m.
+sched_arr_time,2169,7:23 a.m.,empty
+sched_arr_time,2173,7:23 a.m.,#%7:23 a.m.
+sched_arr_time,2175,7:23 a.m.,7:23 a$.m.
+sched_arr_time,2181,7:23 a.m.,empty
+sched_arr_time,2182,11:19 a.m.,11:19 %a.m.
+sched_arr_time,2183,11:19 a.m.,11:#19 a.m??.
+sched_arr_time,2184,11:19 a.m.,empty
+sched_arr_time,2185,11:19 a.m.,empty
+sched_arr_time,2186,11:19 a.m.,11:??19 a.%m.
+sched_arr_time,2192,11:19 a.m.,empty
+sched_arr_time,2193,11:19 a.m.,empty
+sched_arr_time,2194,11:19 a.m.,empty
+sched_arr_time,2203,7:03 p.m.,empty
+sched_arr_time,2204,7:03 p.m.,7@@:03 p??.m.
+sched_arr_time,2206,7:03 p.m.,empty
+sched_arr_time,2208,7:03 p.m.,7:$@@03 p.m.
+sched_arr_time,2210,7:03 p.m.,empty
+sched_arr_time,2212,7:03 p.m.,7%:03 p.m.
+sched_arr_time,2213,7:03 p.m.,empty
+sched_arr_time,2214,7:03 p.m.,empty
+sched_arr_time,2220,9:43 a.m.,empty
+sched_arr_time,2222,9:43 a.m.,9%:43 a.m.
+sched_arr_time,2228,9:43 a.m.,9:4@@3?? a.m.
+sched_arr_time,2233,9:43 a.m.,empty
+sched_arr_time,2238,9:43 a.m.,9:43 a.m.??@@
+sched_arr_time,2250,4:31 p.m.,empty
+sched_arr_time,2252,4:31 p.m.,empty
+sched_arr_time,2261,4:31 p.m.,empty
+sched_arr_time,2263,4:31 p.m.,empty
+sched_arr_time,2264,4:31 p.m.,empty
+sched_arr_time,2266,4:31 p.m.,4$:31 p.m.
+sched_arr_time,2267,4:31 p.m.,empty
+sched_arr_time,2277,5:11 a.m.,empty
+sched_arr_time,2280,5:11 a.m.,5:11 a.m.??
+sched_arr_time,2281,5:11 a.m.,5:@@11 a??.m.
+sched_arr_time,2283,5:11 a.m.,empty
+sched_arr_time,2286,5:11 a.m.,empty
+sched_arr_time,2287,5:11 a.m.,empty
+sched_arr_time,2296,7:53 p.m.,7:#53$ p.m.
+sched_arr_time,2303,7:53 p.m.,empty
+sched_arr_time,2306,7:53 p.m.,7:53 p%.m.%
+sched_arr_time,2309,7:53 p.m.,empty
+sched_arr_time,2310,7:53 p.m.,empty
+sched_arr_time,2311,7:53 p.m.,7:53@@# p.m.
+sched_arr_time,2312,7:53 p.m.,empty
+sched_arr_time,2324,1:39 p.m.,1:3$9 p.m.
+sched_arr_time,2325,1:39 p.m.,empty
+sched_arr_time,2332,1:39 p.m.,1:39 ??%p.m.
+sched_arr_time,2333,1:39 p.m.,1:3??9 p.m.
+sched_arr_time,2336,8:27 a.m.,empty
+sched_arr_time,2347,8:27 a.m.,8:27 a.m$.
+sched_arr_time,2349,8:27 a.m.,empty
+sched_arr_time,2352,8:27 a.m.,empty
+sched_arr_time,2353,8:27 a.m.,8:27?$? a.m.
+sched_arr_time,2356,7:35 p.m.,7:35??# p.m.
+sched_arr_time,2362,7:35 p.m.,empty
+sched_arr_time,2366,7:35 p.m.,empty
+sched_arr_time,2367,7:35 p.m.,empty
+sched_arr_time,2368,7:35 p.m.,empty
+sched_arr_time,2371,7:35 p.m.,7:35 $p.m.
+act_arr_time,5,7:55 p.m.,??7:55 p.m.
+act_arr_time,8,7:55 p.m.,7:5#5 p.m.
+act_arr_time,9,7:55 p.m.,7:%55?? p.m.
+act_arr_time,12,7:55 p.m.,7:55 p.m????.
+act_arr_time,13,7:55 p.m.,7:#55 p.m.$
+act_arr_time,24,10:04 a.m.,empty
+act_arr_time,25,10:04 a.m.,empty
+act_arr_time,26,10:04 a.m.,empty
+act_arr_time,29,10:04 a.m.,10:04 a.??m.%
+act_arr_time,31,10:04 a.m.,10:04 a.m.$
+act_arr_time,34,10:04 a.m.,10:04 a??.m.
+act_arr_time,35,10:04 a.m.,??10:04 a.m.
+act_arr_time,37,10:04 a.m.,empty
+act_arr_time,39,10:04 a.m.,empty
+act_arr_time,41,10:04 a.m.,empty
+act_arr_time,48,9:53 p.m.,@@9:53@@ p.m.
+act_arr_time,51,9:53 p.m.,@@9:53 p.m.
+act_arr_time,56,9:53 p.m.,empty
+act_arr_time,65,9:53 p.m.,9:53???? p.m.
+act_arr_time,70,9:53 p.m.,empty
+act_arr_time,72,9:53 p.m.,empty
+act_arr_time,82,3:30 p.m.,3:30 @@p.@@m.
+act_arr_time,84,3:30 p.m.,3:30 ??p.$m.
+act_arr_time,86,3:30 p.m.,empty
+act_arr_time,92,3:30 p.m.,empty
+act_arr_time,96,3:30 p.m.,empty
+act_arr_time,98,3:30 p.m.,3:@@3??0 p.m.
+act_arr_time,99,3:30 p.m.,3:30 #p.m.
+act_arr_time,100,10:36 a.m.,empty
+act_arr_time,107,10:36 a.m.,empty
+act_arr_time,115,10:36 a.m.,10:36 a.m@@.
+act_arr_time,121,10:36 a.m.,empty
+act_arr_time,127,5:50 a.m.,empty
+act_arr_time,129,5:50 a.m.,empty
+act_arr_time,135,5:50 a.m.,5:50 a.m.@@
+act_arr_time,136,5:50 a.m.,5:50 ??a.m.
+act_arr_time,138,5:50 a.m.,5:50 a#.m.
+act_arr_time,140,5:50 a.m.,empty
+act_arr_time,141,5:50 a.m.,5:5$0 a.m.
+act_arr_time,142,5:50 a.m.,empty
+act_arr_time,143,5:50 a.m.,5:$50 a.m.
+act_arr_time,153,4:56 p.m.,empty
+act_arr_time,155,4:56 p.m.,empty
+act_arr_time,156,4:56 p.m.,empty
+act_arr_time,159,4:56 p.m.,empty
+act_arr_time,161,4:56 p.m.,4:%56 p.m.%
+act_arr_time,165,4:56 p.m.,4:56 p.m.@@
+act_arr_time,168,4:56 p.m.,4$:56 p.m.
+act_arr_time,174,7:25 p.m.,empty
+act_arr_time,179,7:25 p.m.,7:25 ??p.m.??
+act_arr_time,182,7:25 p.m.,empty
+act_arr_time,187,7:25 p.m.,empty
+act_arr_time,189,7:25 p.m.,empty
+act_arr_time,201,11:56 a.m.,empty
+act_arr_time,204,11:56 a.m.,11:5$6 a.m.
+act_arr_time,205,11:56 a.m.,1@@1:56 a.m.
+act_arr_time,207,11:56 a.m.,empty
+act_arr_time,213,11:56 a.m.,empty
+act_arr_time,214,11:56 a.m.,empty
+act_arr_time,219,11:56 a.m.,11:56 a.m??.??
+act_arr_time,223,11:56 a.m.,11:56 a$.m.
+act_arr_time,227,10:30 p.m.,empty
+act_arr_time,230,10:30 p.m.,empty
+act_arr_time,233,10:30 p.m.,10:30 p.m.#
+act_arr_time,234,10:30 p.m.,10??:30 p??.m.
+act_arr_time,240,10:30 p.m.,10:3??0 p.m.
+act_arr_time,242,10:30 p.m.,empty
+act_arr_time,243,10:30 p.m.,10:30 p.??m.
+act_arr_time,252,1:40 p.m.,empty
+act_arr_time,256,1:40 p.m.,1:40 p%%.m.
+act_arr_time,257,1:40 p.m.,empty
+act_arr_time,259,1:40 p.m.,empty
+act_arr_time,269,1:40 p.m.,empty
+act_arr_time,274,5:43 p.m.,5:43 p.m#.
+act_arr_time,280,5:43 p.m.,empty
+act_arr_time,286,5:43 p.m.,empty
+act_arr_time,287,5:43 p.m.,5:43 p#.m.$
+act_arr_time,291,5:43 p.m.,#5:43 p.m.
+act_arr_time,292,5:43 p.m.,empty
+act_arr_time,304,6:55 a.m.,empty
+act_arr_time,305,6:55 a.m.,6:55 %a.m.
+act_arr_time,307,6:55 a.m.,empty
+act_arr_time,312,6:55 a.m.,empty
+act_arr_time,317,6:55 a.m.,empty
+act_arr_time,319,6:55 a.m.,empty
+act_arr_time,320,6:55 a.m.,empty
+act_arr_time,325,2:46 p.m.,$2:46 p.$m.
+act_arr_time,330,2:46 p.m.,empty
+act_arr_time,336,2:46 p.m.,empty
+act_arr_time,338,2:46 p.m.,empty
+act_arr_time,339,2:46 p.m.,empty
+act_arr_time,344,2:46 p.m.,empty
+act_arr_time,351,3:14 p.m.,3:1$4 p.%m.
+act_arr_time,356,3:14 p.m.,$3:1#4 p.m.
+act_arr_time,358,3:14 p.m.,empty
+act_arr_time,363,3:14 p.m.,3:14% p.m.
+act_arr_time,367,3:14 p.m.,empty
+act_arr_time,369,3:14 p.m.,empty
+act_arr_time,371,3:14 p.m.,3:14?? p.m.
+act_arr_time,376,11:06 a.m.,empty
+act_arr_time,377,11:06 a.m.,11:06 a%.m.
+act_arr_time,378,11:06 a.m.,empty
+act_arr_time,379,11:06 a.m.,11:06 a.m$.#
+act_arr_time,380,11:06 a.m.,11:06 a.m#.
+act_arr_time,381,11:06 a.m.,empty
+act_arr_time,388,11:06 a.m.,empty
+act_arr_time,390,11:06 a.m.,1%1:06 a.m.
+act_arr_time,394,11:06 a.m.,11:06 a.m.%
+act_arr_time,400,11:50 p.m.,11:$50 ??p.m.
+act_arr_time,403,11:50 p.m.,empty
+act_arr_time,410,11:50 p.m.,empty
+act_arr_time,411,11:50 p.m.,empty
+act_arr_time,416,11:50 p.m.,11#:50 p.m.
+act_arr_time,419,11:50 p.m.,11:50??% p.m.
+act_arr_time,426,11:06 a.m.,11:06 a.m.%@@
+act_arr_time,431,11:06 a.m.,11:06 a.m.@@
+act_arr_time,432,11:06 a.m.,empty
+act_arr_time,437,11:06 a.m.,11:06 a.m.#
+act_arr_time,440,11:06 a.m.,11:06 a.??m??.
+act_arr_time,447,11:06 a.m.,empty
+act_arr_time,450,11:06 a.m.,empty
+act_arr_time,454,2:27 p.m.,empty
+act_arr_time,457,2:27 p.m.,empty
+act_arr_time,460,2:27 p.m.,empty
+act_arr_time,461,2:27 p.m.,empty
+act_arr_time,462,2:27 p.m.,empty
+act_arr_time,463,2:27 p.m.,empty
+act_arr_time,465,2:27 p.m.,2:2$7 p.m.
+act_arr_time,467,2:27 p.m.,empty
+act_arr_time,470,2:27 p.m.,2:27 p$??.m.
+act_arr_time,472,2:27 p.m.,empty
+act_arr_time,475,2:27 p.m.,empty
+act_arr_time,479,11:01 a.m.,empty
+act_arr_time,485,11:01 a.m.,empty
+act_arr_time,487,11:01 a.m.,empty
+act_arr_time,489,11:01 a.m.,11:01 @@a.m.
+act_arr_time,495,11:01 a.m.,empty
+act_arr_time,497,11:01 a.m.,empty
+act_arr_time,502,3:16 p.m.,empty
+act_arr_time,506,3:16 p.m.,empty
+act_arr_time,513,3:16 p.m.,3:16 p.??m@@.
+act_arr_time,516,3:16 p.m.,empty
+act_arr_time,519,3:16 p.m.,empty
+act_arr_time,524,3:16 p.m.,3:16 p#.m.
+act_arr_time,525,3:16 p.m.,empty
+act_arr_time,527,9:20 p.m.,empty
+act_arr_time,528,9:20 p.m.,empty
+act_arr_time,529,9:20 p.m.,empty
+act_arr_time,533,9:20 p.m.,9:%20 %p.m.
+act_arr_time,534,9:20 p.m.,empty
+act_arr_time,535,9:20 p.m.,empty
+act_arr_time,540,9:20 p.m.,9:%20 p.m.
+act_arr_time,542,9:20 p.m.,empty
+act_arr_time,547,9:20 p.m.,9:@@@@20 p.m.
+act_arr_time,548,9:20 p.m.,empty
+act_arr_time,550,9:20 p.m.,empty
+act_arr_time,551,9:45 a.m.,empty
+act_arr_time,555,9:45 a.m.,empty
+act_arr_time,562,9:45 a.m.,empty
+act_arr_time,568,9:45 a.m.,empty
+act_arr_time,569,9:45 a.m.,empty
+act_arr_time,579,2:50 p.m.,empty
+act_arr_time,582,2:50 p.m.,??2:5#0 p.m.
+act_arr_time,583,2:50 p.m.,empty
+act_arr_time,584,2:50 p.m.,2:??50 p.m.#
+act_arr_time,588,2:50 p.m.,empty
+act_arr_time,589,2:50 p.m.,empty
+act_arr_time,591,2:50 p.m.,2:??50 p.m.
+act_arr_time,592,2:50 p.m.,empty
+act_arr_time,594,2:50 p.m.,2:#50 p.m.#
+act_arr_time,596,2:50 p.m.,empty
+act_arr_time,604,6:15 p.m.,6:15 p.m#.
+act_arr_time,605,6:15 p.m.,empty
+act_arr_time,610,6:15 p.m.,empty
+act_arr_time,624,6:15 p.m.,empty
+act_arr_time,626,6:15 p.m.,empty
+act_arr_time,633,3:43 p.m.,empty
+act_arr_time,638,3:43 p.m.,empty
+act_arr_time,640,3:43 p.m.,3:43$ p.m.
+act_arr_time,644,3:43 p.m.,empty
+act_arr_time,649,3:43 p.m.,empty
+act_arr_time,650,3:43 p.m.,empty
+act_arr_time,651,3:43 p.m.,@@??3:43 p.m.
+act_arr_time,664,6:19 a.m.,6:19 a.m.#
+act_arr_time,672,6:19 a.m.,6:19$ a.m.
+act_arr_time,673,6:19 a.m.,6??:19 a.m.
+act_arr_time,675,6:19 a.m.,empty
+act_arr_time,678,6:19 a.m.,empty
+act_arr_time,684,6:19 a.m.,empty
+act_arr_time,687,12:15 a.m.,12@@:15 a.m.
+act_arr_time,692,12:15 a.m.,12:15 a.m.??
+act_arr_time,694,12:15 a.m.,empty
+act_arr_time,696,12:15 a.m.,12:15%@@ a.m.
+act_arr_time,698,12:15 a.m.,12$:15 a.m$.
+act_arr_time,702,12:15 a.m.,12:$15 a.m.#
+act_arr_time,703,12:15 a.m.,empty
+act_arr_time,709,12:15 a.m.,empty
+act_arr_time,713,7:51 a.m.,empty
+act_arr_time,715,7:51 a.m.,empty
+act_arr_time,719,7:51 a.m.,7:51 a#.m.
+act_arr_time,720,7:51 a.m.,empty
+act_arr_time,724,7:51 a.m.,empty
+act_arr_time,730,7:51 a.m.,empty
+act_arr_time,732,7:51 a.m.,empty
+act_arr_time,740,9:32 a.m.,9:32 a%.m.
+act_arr_time,743,9:32 a.m.,empty
+act_arr_time,746,9:32 a.m.,9:@@32 a.m.
+act_arr_time,756,9:32 a.m.,%9:32 a.m.
+act_arr_time,769,8:06 a.m.,8:06 a$.m.
+act_arr_time,770,8:06 a.m.,8:06 a.m$.
+act_arr_time,773,8:06 a.m.,@@8:06 a.m.??
+act_arr_time,774,8:06 a.m.,empty
+act_arr_time,775,8:06 a.m.,8:0$6 a.m$.
+act_arr_time,776,8:06 a.m.,empty
+act_arr_time,777,8:06 a.m.,empty
+act_arr_time,778,8:06 a.m.,empty
+act_arr_time,786,8:06 a.m.,empty
+act_arr_time,791,8:06 a.m.,empty
+act_arr_time,793,3:04 p.m.,empty
+act_arr_time,795,3:04 p.m.,empty
+act_arr_time,799,3:04 p.m.,empty
+act_arr_time,803,3:04 p.m.,??3:04 p.m.
+act_arr_time,806,3:04 p.m.,empty
+act_arr_time,809,3:04 p.m.,3:04 p.@@m.
+act_arr_time,817,7:40 a.m.,7:4@@0 %a.m.
+act_arr_time,819,7:40 a.m.,empty
+act_arr_time,820,7:40 a.m.,7:40?? a.m.
+act_arr_time,830,7:40 a.m.,7:$40 a.m@@.
+act_arr_time,841,7:40 a.m.,7:40 a.m%.
+act_arr_time,842,7:40 a.m.,empty
+act_arr_time,856,10:16 a.m.,10:16 a.#m.
+act_arr_time,870,12:50 p.m.,empty
+act_arr_time,876,12:50 p.m.,empty
+act_arr_time,877,12:50 p.m.,empty
+act_arr_time,878,12:50 p.m.,12:5$0 #p.m.
+act_arr_time,880,12:50 p.m.,12:50 p??.m.
+act_arr_time,888,12:50 p.m.,empty
+act_arr_time,891,1:43 p.m.,1:43# p.m.
+act_arr_time,893,1:43 p.m.,empty
+act_arr_time,895,1:43 p.m.,empty
+act_arr_time,897,1:43 p.m.,empty
+act_arr_time,898,1:43 p.m.,empty
+act_arr_time,905,1:43 p.m.,empty
+act_arr_time,906,1:43 p.m.,empty
+act_arr_time,907,1:43 p.m.,1:43 p.m%.
+act_arr_time,918,8:53 p.m.,$8:53?? p.m.
+act_arr_time,924,8:53 p.m.,empty
+act_arr_time,926,8:53 p.m.,8:53 p.%m.
+act_arr_time,928,8:53 p.m.,empty
+act_arr_time,931,8:53 p.m.,8:53 p??.m.
+act_arr_time,934,8:53 p.m.,empty
+act_arr_time,937,8:53 p.m.,empty
+act_arr_time,944,11:44 a.m.,1#1:44 #a.m.
+act_arr_time,946,11:44 a.m.,empty
+act_arr_time,951,11:44 a.m.,empty
+act_arr_time,954,11:44 a.m.,empty
+act_arr_time,959,11:44 a.m.,11:44 a#.m.
+act_arr_time,960,11:44 a.m.,empty
+act_arr_time,961,11:44 a.m.,empty
+act_arr_time,965,11:44 a.m.,11:44 %a.m.
+act_arr_time,967,11:44 a.m.,11:44# a.@@m.
+act_arr_time,968,11:44 a.m.,1??1:44 a.m.
+act_arr_time,973,3:33 p.m.,empty
+act_arr_time,976,3:33 p.m.,$3:3#3 p.m.
+act_arr_time,997,2:10 p.m.,2:10# p.m.
+act_arr_time,999,2:10 p.m.,empty
+act_arr_time,1000,2:10 p.m.,2:10 p??.m.
+act_arr_time,1001,2:10 p.m.,empty
+act_arr_time,1002,2:10 p.m.,empty
+act_arr_time,1007,2:10 p.m.,empty
+act_arr_time,1012,2:10 p.m.,empty
+act_arr_time,1013,2:10 p.m.,empty
+act_arr_time,1018,4:09 p.m.,4:09$ p.m.
+act_arr_time,1025,4:09 p.m.,4:09 ??p.m%.
+act_arr_time,1027,4:09 p.m.,4:09% p.m.
+act_arr_time,1031,4:09 p.m.,empty
+act_arr_time,1035,4:09 p.m.,empty
+act_arr_time,1043,9:05 a.m.,9:@@05 a.#m.
+act_arr_time,1046,9:05 a.m.,empty
+act_arr_time,1049,9:05 a.m.,9:05# a.m#.
+act_arr_time,1050,9:05 a.m.,empty
+act_arr_time,1051,9:05 a.m.,9@@:05 a.m.
+act_arr_time,1056,9:05 a.m.,#9:05 a.m??.
+act_arr_time,1058,9:05 a.m.,empty
+act_arr_time,1060,9:05 a.m.,empty
+act_arr_time,1077,7:39 p.m.,empty
+act_arr_time,1083,7:39 p.m.,empty
+act_arr_time,1086,7:39 p.m.,empty
+act_arr_time,1087,7:39 p.m.,%7:39 p.m.#
+act_arr_time,1091,7:39 p.m.,7:39@@ p@@.m.
+act_arr_time,1093,7:39 p.m.,#7:3%9 p.m.
+act_arr_time,1094,7:39 p.m.,7:$39 p.m.
+act_arr_time,1100,9:28 a.m.,empty
+act_arr_time,1102,9:28 a.m.,empty
+act_arr_time,1108,9:28 a.m.,empty
+act_arr_time,1116,9:28 a.m.,empty
+act_arr_time,1119,11:12 a.m.,11:12# a.m#.
+act_arr_time,1120,11:12 a.m.,empty
+act_arr_time,1121,11:12 a.m.,11:1#??2 a.m.
+act_arr_time,1122,11:12 a.m.,empty
+act_arr_time,1124,11:12 a.m.,empty
+act_arr_time,1125,11:12 a.m.,11:%1#2 a.m.
+act_arr_time,1127,11:12 a.m.,empty
+act_arr_time,1131,11:12 a.m.,empty
+act_arr_time,1132,11:12 a.m.,empty
+act_arr_time,1135,11:12 a.m.,empty
+act_arr_time,1136,11:12 a.m.,empty
+act_arr_time,1138,11:12 a.m.,empty
+act_arr_time,1143,11:12 a.m.,empty
+act_arr_time,1148,1:27 p.m.,empty
+act_arr_time,1149,1:27 p.m.,empty
+act_arr_time,1152,1:27 p.m.,empty
+act_arr_time,1155,1:27 p.m.,??1:27 p.m.
+act_arr_time,1157,1:27 p.m.,@@1:27 p.m??.
+act_arr_time,1163,1:27 p.m.,empty
+act_arr_time,1164,1:27 p.m.,empty
+act_arr_time,1167,1:27 p.m.,1:27 p@@.m.#
+act_arr_time,1173,1:27 p.m.,empty
+act_arr_time,1178,9:31 a.m.,empty
+act_arr_time,1182,9:31 a.m.,$9:31 a.m.
+act_arr_time,1183,9:31 a.m.,empty
+act_arr_time,1187,9:31 a.m.,9:31 a.m.%
+act_arr_time,1189,9:31 a.m.,9:31 @@a.m.
+act_arr_time,1195,9:31 a.m.,empty
+act_arr_time,1196,9:31 a.m.,9:31 %a.m.
+act_arr_time,1200,3:50 p.m.,empty
+act_arr_time,1203,3:50 p.m.,empty
+act_arr_time,1205,3:50 p.m.,empty
+act_arr_time,1210,3:50 p.m.,empty
+act_arr_time,1211,3:50 p.m.,empty
+act_arr_time,1213,3:50 p.m.,3:50 p.%m.
+act_arr_time,1215,3:50 p.m.,empty
+act_arr_time,1216,3:50 p.m.,empty
+act_arr_time,1222,3:13 p.m.,empty
+act_arr_time,1229,3:13 p.m.,3:13 p.%m.
+act_arr_time,1230,3:13 p.m.,empty
+act_arr_time,1236,3:13 p.m.,empty
+act_arr_time,1244,3:13 p.m.,3:13 #p.??m.
+act_arr_time,1245,3:13 p.m.,empty
+act_arr_time,1248,3:13 p.m.,3:13 p.%m.
+act_arr_time,1250,6:43 p.m.,empty
+act_arr_time,1251,6:43 p.m.,6:4#3 p.m.#
+act_arr_time,1255,6:43 p.m.,empty
+act_arr_time,1256,6:43 p.m.,empty
+act_arr_time,1259,6:43 p.m.,%6:43# p.m.
+act_arr_time,1261,6:43 p.m.,empty
+act_arr_time,1262,6:43 p.m.,6:43 p.m@@@@.
+act_arr_time,1265,6:43 p.m.,6:43% p.m.
+act_arr_time,1269,6:43 p.m.,6:43 p.%m.
+act_arr_time,1271,6:43 p.m.,empty
+act_arr_time,1272,6:43 p.m.,empty
+act_arr_time,1274,6:43 p.m.,6:43# p.m.
+act_arr_time,1284,1:14 p.m.,1:14@@ p.m.
+act_arr_time,1296,1:14 p.m.,empty
+act_arr_time,1298,10:56 a.m.,empty
+act_arr_time,1299,10:56 a.m.,empty
+act_arr_time,1302,10:56 a.m.,1??0:56 a??.m.
+act_arr_time,1304,10:56 a.m.,10:%56# a.m.
+act_arr_time,1309,10:56 a.m.,empty
+act_arr_time,1313,10:56 a.m.,10:56 $a.m.
+act_arr_time,1322,1:19 p.m.,1:@@19 p.m.
+act_arr_time,1334,1:19 p.m.,empty
+act_arr_time,1335,1:19 p.m.,empty
+act_arr_time,1344,12:09 p.m.,12:09 p.m#.
+act_arr_time,1348,12:09 p.m.,empty
+act_arr_time,1349,12:09 p.m.,%12:09$ p.m.
+act_arr_time,1355,12:09 p.m.,empty
+act_arr_time,1360,12:09 p.m.,12:#09 p.m.
+act_arr_time,1362,12:09 p.m.,empty
+act_arr_time,1368,4:59 p.m.,empty
+act_arr_time,1370,4:59 p.m.,4:59 p.m#.
+act_arr_time,1373,4:59 p.m.,4:5%9 @@p.m.
+act_arr_time,1374,4:59 p.m.,4:59 p.m.%
+act_arr_time,1375,4:59 p.m.,empty
+act_arr_time,1376,4:59 p.m.,empty
+act_arr_time,1378,4:59 p.m.,empty
+act_arr_time,1379,4:59 p.m.,empty
+act_arr_time,1381,4:59 p.m.,4:59 p.m@@%.
+act_arr_time,1383,4:59 p.m.,empty
+act_arr_time,1388,11:32 a.m.,empty
+act_arr_time,1389,11:32 a.m.,11:32 a??.m.
+act_arr_time,1391,11:32 a.m.,11:$32 a.m.??
+act_arr_time,1403,11:32 a.m.,11:32 a@@.m.
+act_arr_time,1404,11:32 a.m.,empty
+act_arr_time,1405,11:32 a.m.,empty
+act_arr_time,1409,10:29 p.m.,10:29 #p.m.
+act_arr_time,1411,10:29 p.m.,1@@0:29# p.m.
+act_arr_time,1414,10:29 p.m.,10:#%29 p.m.
+act_arr_time,1419,10:29 p.m.,1$0:29 p.m.
+act_arr_time,1423,10:29 p.m.,empty
+act_arr_time,1428,10:29 p.m.,empty
+act_arr_time,1431,6:34 p.m.,6@@:34 p.m.
+act_arr_time,1439,6:34 p.m.,empty
+act_arr_time,1445,6:34 p.m.,empty
+act_arr_time,1447,6:34 p.m.,empty
+act_arr_time,1449,6:34 p.m.,6:34 p.m??.
+act_arr_time,1450,6:34 p.m.,empty
+act_arr_time,1453,5:26 a.m.,empty
+act_arr_time,1464,5:26 a.m.,5:26% a.%m.
+act_arr_time,1468,5:26 a.m.,5:26 a%.m.
+act_arr_time,1471,5:26 a.m.,empty
+act_arr_time,1476,12:21 a.m.,12:21 a.??m.
+act_arr_time,1479,12:21 a.m.,empty
+act_arr_time,1483,12:21 a.m.,empty
+act_arr_time,1490,12:21 a.m.,12@@:$21 a.m.
+act_arr_time,1493,12:21 a.m.,empty
+act_arr_time,1496,12:21 a.m.,empty
+act_arr_time,1499,12:21 a.m.,empty
+act_arr_time,1500,6:36 p.m.,@@6:36 p.m.
+act_arr_time,1505,6:36 p.m.,6:36 p.m.??
+act_arr_time,1507,6:36 p.m.,empty
+act_arr_time,1509,6:36 p.m.,empty
+act_arr_time,1510,6:36 p.m.,6:36 p.m.??
+act_arr_time,1511,6:36 p.m.,6:36 p.m.@@
+act_arr_time,1512,6:36 p.m.,6:36 #p.m%.
+act_arr_time,1519,6:36 p.m.,empty
+act_arr_time,1523,9:52 p.m.,??9:52 p.m.
+act_arr_time,1527,9:52 p.m.,empty
+act_arr_time,1528,9:52 p.m.,9:52 p$%.m.
+act_arr_time,1530,9:52 p.m.,empty
+act_arr_time,1536,9:52 p.m.,empty
+act_arr_time,1537,9:52 p.m.,empty
+act_arr_time,1547,6:40 p.m.,6:40?? p.m.
+act_arr_time,1555,6:40 p.m.,empty
+act_arr_time,1557,6:40 p.m.,6@@:40 p.m$.
+act_arr_time,1558,6:40 p.m.,6??:4$0 p.m.
+act_arr_time,1564,6:40 p.m.,empty
+act_arr_time,1568,5:26 p.m.,empty
+act_arr_time,1581,5:26 p.m.,empty
+act_arr_time,1584,5:26 p.m.,5:$26 p.m.
+act_arr_time,1585,5:26 p.m.,empty
+act_arr_time,1588,9:14 a.m.,%9:14 a.m.
+act_arr_time,1590,9:14 a.m.,9:14 %a.@@m.
+act_arr_time,1597,9:14 a.m.,empty
+act_arr_time,1600,9:14 a.m.,empty
+act_arr_time,1603,9:14 a.m.,empty
+act_arr_time,1604,9:14 a.m.,9:14 a.m.%@@
+act_arr_time,1607,3:31 p.m.,3:31 p.$m.
+act_arr_time,1615,3:31 p.m.,empty
+act_arr_time,1617,3:31 p.m.,empty
+act_arr_time,1618,3:31 p.m.,%3:31 p.m??.
+act_arr_time,1620,3:31 p.m.,empty
+act_arr_time,1623,3:31 p.m.,3:31 p.m@@@@.
+act_arr_time,1626,7:10 p.m.,7:1??0 p.m.
+act_arr_time,1631,7:10 p.m.,empty
+act_arr_time,1636,7:10 p.m.,empty
+act_arr_time,1640,7:10 p.m.,empty
+act_arr_time,1641,7:10 p.m.,7:1@@0$ p.m.
+act_arr_time,1650,8:03 p.m.,empty
+act_arr_time,1651,8:03 p.m.,8:03 p??.m$.
+act_arr_time,1672,10:27 a.m.,1@@0:27 a.m#.
+act_arr_time,1681,10:27 a.m.,??10:27 a.m.
+act_arr_time,1684,10:27 a.m.,empty
+act_arr_time,1688,11:56 a.m.,11:56 %a.$m.
+act_arr_time,1689,11:56 a.m.,empty
+act_arr_time,1692,11:56 a.m.,empty
+act_arr_time,1696,11:56 a.m.,empty
+act_arr_time,1700,11:56 a.m.,empty
+act_arr_time,1707,4:47 p.m.,@@4:47 p.m.
+act_arr_time,1708,4:47 p.m.,4$:47 p.m.
+act_arr_time,1715,4:47 p.m.,4:47 p.%m.
+act_arr_time,1718,4:47 p.m.,empty
+act_arr_time,1721,4:47 p.m.,empty
+act_arr_time,1723,4:47 p.m.,4:47 p%.%m.
+act_arr_time,1727,12:29 a.m.,empty
+act_arr_time,1730,12:29 a.m.,empty
+act_arr_time,1734,12:29 a.m.,1@@2:29 a.m.
+act_arr_time,1736,12:29 a.m.,12:2@@9 a.m.
+act_arr_time,1737,12:29 a.m.,empty
+act_arr_time,1739,12:29 a.m.,empty
+act_arr_time,1740,12:29 a.m.,1??2:29 a.m.??
+act_arr_time,1749,12:29 a.m.,empty
+act_arr_time,1750,12:29 a.m.,empty
+act_arr_time,1769,5:34 p.m.,empty
+act_arr_time,1775,10:47 a.m.,10@@??:47 a.m.
+act_arr_time,1776,10:47 a.m.,1??0:47 a.m.
+act_arr_time,1787,10:47 a.m.,empty
+act_arr_time,1790,10:47 a.m.,10:47# a.m.
+act_arr_time,1792,10:47 a.m.,empty
+act_arr_time,1795,5:42 p.m.,empty
+act_arr_time,1800,5:42 p.m.,empty
+act_arr_time,1802,5:42 p.m.,5:42 ??p.m.
+act_arr_time,1805,5:42 p.m.,5:42 p.m.%
+act_arr_time,1808,5:42 p.m.,empty
+act_arr_time,1810,5:42 p.m.,empty
+act_arr_time,1817,5:42 p.m.,empty
+act_arr_time,1819,5:42 p.m.,5:42 p@@.m.
+act_arr_time,1827,2:00 p.m.,empty
+act_arr_time,1831,2:00 p.m.,2:%00 p.m.
+act_arr_time,1833,2:00 p.m.,empty
+act_arr_time,1841,2:00 p.m.,$2:00 p.m.
+act_arr_time,1845,4:44 p.m.,empty
+act_arr_time,1850,4:44 p.m.,4$:44?? p.m.
+act_arr_time,1853,4:44 p.m.,empty
+act_arr_time,1855,4:44 p.m.,empty
+act_arr_time,1860,4:44 p.m.,empty
+act_arr_time,1874,6:28 p.m.,empty
+act_arr_time,1875,6:28 p.m.,6:@@2@@8 p.m.
+act_arr_time,1881,6:28 p.m.,#6:28 p.m.$
+act_arr_time,1886,5:17 p.m.,5:17 %p.m.
+act_arr_time,1893,5:17 p.m.,5:17 p.m.%
+act_arr_time,1899,5:17 p.m.,empty
+act_arr_time,1904,5:17 p.m.,5:%17 p.m.
+act_arr_time,1909,6:38 p.m.,empty
+act_arr_time,1922,6:38 p.m.,empty
+act_arr_time,1924,6:38 p.m.,6:38 p%.m.
+act_arr_time,1930,1:15 p.m.,empty
+act_arr_time,1940,1:15 p.m.,1:15 p.m.$
+act_arr_time,1943,1:15 p.m.,1:1$5 p.m.
+act_arr_time,1944,1:15 p.m.,1$:15# p.m.
+act_arr_time,1947,1:15 p.m.,empty
+act_arr_time,1951,1:15 p.m.,empty
+act_arr_time,1953,1:15 p.m.,empty
+act_arr_time,1956,5:05 p.m.,empty
+act_arr_time,1958,5:05 p.m.,5:05 ??p.m.
+act_arr_time,1967,5:05 p.m.,5:05 ##p.m.
+act_arr_time,1970,5:05 p.m.,empty
+act_arr_time,1972,5:05 p.m.,empty
+act_arr_time,1977,5:05 p.m.,empty
+act_arr_time,1983,5:38 p.m.,empty
+act_arr_time,1992,5:38 p.m.,5:38 p.%#m.
+act_arr_time,1995,5:38 p.m.,empty
+act_arr_time,1998,5:38 p.m.,empty
+act_arr_time,2007,9:13 a.m.,empty
+act_arr_time,2008,9:13 a.m.,empty
+act_arr_time,2013,9:13 a.m.,empty
+act_arr_time,2016,9:13 a.m.,empty
+act_arr_time,2018,9:13 a.m.,empty
+act_arr_time,2022,9:13 a.m.,empty
+act_arr_time,2030,9:56 a.m.,empty
+act_arr_time,2032,9:56 a.m.,empty
+act_arr_time,2034,9:56 a.m.,empty
+act_arr_time,2039,9:56 a.m.,empty
+act_arr_time,2044,9:56 a.m.,9:@@??56 a.m.
+act_arr_time,2052,12:09 p.m.,empty
+act_arr_time,2061,12:09 p.m.,empty
+act_arr_time,2064,12:09 p.m.,empty
+act_arr_time,2072,4:17 p.m.,empty
+act_arr_time,2078,4:17 p.m.,%4:17 p.m.%
+act_arr_time,2082,4:17 p.m.,empty
+act_arr_time,2084,4:17 p.m.,@@4:1#7 p.m.
+act_arr_time,2086,3:21 p.m.,3:21 p.@@m.
+act_arr_time,2088,3:21 p.m.,empty
+act_arr_time,2089,3:21 p.m.,3:21 p%.#m.
+act_arr_time,2091,3:21 p.m.,#3:#21 p.m.
+act_arr_time,2095,3:21 p.m.,empty
+act_arr_time,2096,3:21 p.m.,3:2@@1% p.m.
+act_arr_time,2110,9:43 a.m.,empty
+act_arr_time,2112,9:43 a.m.,empty
+act_arr_time,2115,9:43 a.m.,9:43 a$.m.
+act_arr_time,2124,9:43 a.m.,empty
+act_arr_time,2135,9:43 a.m.,9:??43 a.m.
+act_arr_time,2138,11:58 a.m.,1??1:58 #a.m.
+act_arr_time,2142,11:58 a.m.,11%:58 a.m@@.
+act_arr_time,2146,11:58 a.m.,empty
+act_arr_time,2147,11:58 a.m.,empty
+act_arr_time,2148,11:58 a.m.,empty
+act_arr_time,2154,11:58 a.m.,11:58 a.m#.
+act_arr_time,2156,11:58 a.m.,11:58 a.m#.
+act_arr_time,2163,7:17 a.m.,7:17 a.m#.
+act_arr_time,2165,7:17 a.m.,empty
+act_arr_time,2168,7:17 a.m.,empty
+act_arr_time,2175,7:17 a.m.,??7:$17 a.m.
+act_arr_time,2181,7:17 a.m.,empty
+act_arr_time,2187,11:21 a.m.,empty
+act_arr_time,2189,11:21 a.m.,11:21???? a.m.
+act_arr_time,2190,11:21 a.m.,empty
+act_arr_time,2191,11:21 a.m.,11:21 %a.%m.
+act_arr_time,2200,7:10 p.m.,empty
+act_arr_time,2204,7:10 p.m.,empty
+act_arr_time,2212,7:10 p.m.,empty
+act_arr_time,2215,7:10 p.m.,empty
+act_arr_time,2217,7:10 p.m.,empty
+act_arr_time,2221,8:45 a.m.,empty
+act_arr_time,2224,8:45 a.m.,empty
+act_arr_time,2229,8:45 a.m.,??8:45 a.@@m.
+act_arr_time,2235,8:45 a.m.,empty
+act_arr_time,2236,8:45 a.m.,8:4#5 a.m.
+act_arr_time,2238,8:45 a.m.,empty
+act_arr_time,2241,4:23 p.m.,empty
+act_arr_time,2253,4:23 p.m.,empty
+act_arr_time,2268,4:23 p.m.,4:23# p.#m.
+act_arr_time,2271,5:11 a.m.,5:11$# a.m.
+act_arr_time,2272,5:11 a.m.,empty
+act_arr_time,2275,5:11 a.m.,empty
+act_arr_time,2276,5:11 a.m.,empty
+act_arr_time,2281,5:11 a.m.,5#:11 a.??m.
+act_arr_time,2282,5:11 a.m.,5:11 a.@@$m.
+act_arr_time,2283,5:11 a.m.,empty
+act_arr_time,2289,5:11 a.m.,empty
+act_arr_time,2291,5:11 a.m.,5:11 a??@@.m.
+act_arr_time,2304,7:58 p.m.,empty
+act_arr_time,2310,7:58 p.m.,#7:58 p.#m.
+act_arr_time,2312,7:58 p.m.,empty
+act_arr_time,2324,1:30 p.m.,1:30 ??p.m.
+act_arr_time,2329,1:30 p.m.,1:3#0 p.m.
+act_arr_time,2330,1:30 p.m.,empty
+act_arr_time,2337,8:02 a.m.,empty
+act_arr_time,2339,8:02 a.m.,empty
+act_arr_time,2340,8:02 a.m.,empty
+act_arr_time,2341,8:02 a.m.,8%:02 a.#m.
+act_arr_time,2343,8:02 a.m.,empty
+act_arr_time,2345,8:02 a.m.,8:02 @@a.m.
+act_arr_time,2349,8:02 a.m.,empty
+act_arr_time,2351,8:02 a.m.,8:02 a%$.m.
+act_arr_time,2354,7:36 p.m.,7#:36 p.%m.
+act_arr_time,2359,7:36 p.m.,7:36 p.m$.
+act_arr_time,2367,7:36 p.m.,empty
+act_arr_time,2368,7:36 p.m.,empty
+act_arr_time,2371,7:36 p.m.,empty
+act_arr_time,2372,7:36 p.m.,empty
+act_arr_time,2373,7:36 p.m.,??7:36 p.m.
+act_arr_time,2376,7:36 p.m.,$7:3%6 p.m.

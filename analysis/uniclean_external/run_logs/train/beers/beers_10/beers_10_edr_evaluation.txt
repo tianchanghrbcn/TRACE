@@ -1,0 +1,43 @@
+Attribute: id
+Distance (Dirty to Clean): 465
+Distance (Repaired to Clean): 465
+========================================
+Attribute: beer_name
+Distance (Dirty to Clean): 491
+Distance (Repaired to Clean): 491
+========================================
+Attribute: style
+Distance (Dirty to Clean): 496
+Distance (Repaired to Clean): 496
+========================================
+Attribute: ounces
+Distance (Dirty to Clean): 487
+Distance (Repaired to Clean): 487
+========================================
+Attribute: abv
+Distance (Dirty to Clean): 463
+Distance (Repaired to Clean): 463
+========================================
+Attribute: ibu
+Distance (Dirty to Clean): 275
+Distance (Repaired to Clean): 275
+========================================
+Attribute: brewery_id
+Distance (Dirty to Clean): 484
+Distance (Repaired to Clean): 484
+========================================
+Attribute: brewery_name
+Distance (Dirty to Clean): 456
+Distance (Repaired to Clean): 156
+========================================
+Attribute: city
+Distance (Dirty to Clean): 500
+Distance (Repaired to Clean): 193
+========================================
+Attribute: state
+Distance (Dirty to Clean): 489
+Distance (Repaired to Clean): 174
+========================================
+总的脏数据到干净数据距离: 4606
+总的修复后数据到干净数据距离: 3684
+错误减少率 (EDR): 0.20017368649587494

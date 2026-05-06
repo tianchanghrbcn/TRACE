@@ -1,0 +1,89 @@
+<!--A Design by W3layouts Author: W3layout Author URL: http://w3layouts.com License: Creative Commons Attribution 3.0 Unported License URL: http://creativecommons.org/licenses/by/3.0/-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>哈尔滨工业大学</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="网络准入认证系统" />
+        <link href="/static/hit/css/main.css" rel="stylesheet">
+        <link href="/static/hit/css/iconfont.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <link href="/static/hit/css/patch.css" rel="stylesheet">
+        <![endif]-->
+		<script src="/static/js/device.min.js"></script>
+		<script>
+            if (device.mobile()) {
+                locationURI("/srun_portal_phone")
+			}
+            function locationURI(uri) { return location.href = uri + location.search; }
+		</script>
+	</head>
+	<body>
+        <input type="hidden" name="ac_id" id="ac_id" value="27">
+        <input type="hidden" name="user_ip" id="user_ip" value="10.68.98.194">
+        <input type="hidden" name="nas_ip" id="nas_ip" value="">
+        <input type="hidden" name="user_mac" id="user_mac" value="">
+        <input type="hidden" name="url" id="url" value="">
+        <input type="hidden" name="viewType" id="viewType" value="one">
+        <div class="logo">
+            <img src="static/hit/images/logo.png">
+        </div>
+        <div class="copyright">
+            <p>HIT.©Copyright</p>
+        </div>
+        <div class="bg-text">
+           
+        </div>
+        <div class="notice">
+            <h2 id="notice-title"></h2>
+            <p id="notice-content"></p>
+        </div>
+        <div class="login-container">
+            <div class="panel-login">
+                <div class="lang">
+                    <a href="javascript:;" id="language">English</a>
+                </div>
+                <div class="title">
+                    <h2>上网账号登录</h2>
+                </div>
+                <div class="input-group">
+                    <span class="iconfont icon-user"></span>
+                     <!--[if lt IE 10]> 
+                    <span class="input-before">请输入用户名：</span>
+                     <![endif]--> 
+                    <input type="text" name="username" id="username" class="form-control" placeholder="请输入用户名">
+                </div>
+
+                <div class="input-group">
+                    <span class="iconfont icon-lock"></span>
+                     <!--[if lt IE 10]> 
+                    <span class="input-before">请输入密码：</span>
+                     <![endif]--> 
+                    <input type="password" name="password" id="password" class="form-control" placeholder="请输入密码">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="remember"> 记住用户名
+                    </label>
+                </div>
+                <button type="button" class="login btn" id="login">登录</button>
+                <button type="button" class="service btn" id="self-service">自助服务</button>
+                
+
+                
+            </div>
+        </div>
+		<script src="/static/bower/all/1.0.0/all.min.js?v=20180302?v=2.00.20240628"></script>
+		<script type="text/javascript">
+			var isIPV6 =  false ;
+			var portal = {"AuthIP":"","AuthIP6":"","ServiceIP":"https://webportal.hit.edu.cn:8800","DoubleStackPC":false,"DoubleStackMobile":false,"AuthMode":false,"CloseLogout":false,"MacAuth":true,"RedirectUrl":true,"OtherPCStack":"IPV4","OtherMobileStack":"IPV4","MsgApi":"new","PublicSuccessPages":false,"TrafficCarry":1000};
+			var lang = "zh-CN" || "zh-CN";
+		</script>
+		<script src="/static/js/srun.portal.lang.js?v=2.00.20240628"></script>
+		<script src="/static/js/jquery.srun.portal.js?v=2.00.20240628"></script>
+		<script src="/static/js/main.js?v=2.00.20240628"></script>
+	</body>
+</html>

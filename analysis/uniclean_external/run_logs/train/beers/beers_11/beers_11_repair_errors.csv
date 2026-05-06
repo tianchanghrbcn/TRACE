@@ -1,0 +1,79 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+brewery_name,218,nan,Bell'@$@s Brewery,Bell's Brewery
+brewery_name,220,nan,Bell'@$@s Brewery,Bell's Brewery
+brewery_name,221,nan,Bell'@$@s Brewery,Bell's Brewery
+brewery_name,222,Bell's Brewery,Bell'@$@s Brewery,Bell's Brewery
+brewery_name,329,Bold City Brewery,B??old City Brewe??ry,Bold City Brewery
+brewery_name,331,nan,B??old City Brewe??ry,Bold City Brewery
+brewery_name,641,Confluence Brewing Company,Confluence Brewing $Comp@@any,Confluence Brewing Company
+brewery_name,643,nan,Confluence Brewing $Comp@@any,Confluence Brewing Company
+brewery_name,666,Crow Peak Brewing Company,Cr%ow Peak Brewing @@Company,Crow Peak Brewing Company
+brewery_name,669,nan,Cr%ow Peak Brewing @@Company,Crow Peak Brewing Company
+brewery_name,672,nan,Cr%ow Peak Brewing @@Company,Crow Peak Brewing Company
+brewery_name,680,nan,D.L. Ge$ary Brewin#g Company,D.L. Geary Brewing Company
+brewery_name,864,nan,Frankenmu@@th Brewery,Frankenmuth Brewery
+brewery_name,865,Frankenmuth Brewery,Frankenmu@@th Brewery,Frankenmuth Brewery
+brewery_name,982,nan,Greenbrier Valle@@y Brewi%ng Company,Greenbrier Valley Brewing Company
+brewery_name,983,Grey Sail Brewing Company,Grey Sail Brewing Compan%y,Grey Sail Brewing Company
+brewery_name,1002,Hale's Ales,Ha%le'$s Ales,Hale's Ales
+brewery_name,1017,Hardywood Park Craft Brewery,Hardywood Park Craft @@Brewery,Hardywood Park Craft Brewery
+brewery_name,1134,nan,James Page Brewing Com%pany,James Page Brewing Company
+brewery_name,1138,nan,James Page Brewing Com%pany,James Page Brewing Company
+brewery_name,1189,La Cumbre ??Brewing Co$mpany,La Cumbre Brew@@ing Company,La Cumbre Brewing Company
+brewery_name,1228,nan,Lost$ Rhino Brewing Com%pany,Lost Rhino Brewing Company
+brewery_name,1243,nan,Macon Beer Company#,Macon Beer Company
+brewery_name,1479,New Republic Brewing Company,New?? Republic Brewing Company,New Republic Brewing Company
+brewery_name,1480,nan,New?? Republic Brewing Company,New Republic Brewing Company
+brewery_name,1502,Northwest Brewing Company,Nor#thwest$ Brewing Company,Northwest Brewing Company
+brewery_name,1621,Peak Organic Brewing Company,Pea$k Organic Brewing Co??mpany,Peak Organic Brewing Company
+brewery_name,1831,Seattle Cider Company,S$eattle Cider Compa??ny,Seattle Cider Company
+brewery_name,1912,Smartmouth Brewing Company,Smartmouth Br$ewing Comp@@any,Smartmouth Brewing Company
+brewery_name,1913,nan,Smartmouth Br$ewing Comp@@any,Smartmouth Brewing Company
+brewery_name,1987,Starr Hill Brewery,Starr Hill B??rewery,Starr Hill Brewery
+brewery_name,2263,Uncle Billy's Brewery and Smokeh...,U@@ncle Billy's Brewery and Smokeh...,Uncle Billy's Brewery and Smokeh...
+brewery_name,2381,nan,Wing$m$an Brewers,Wingman Brewers
+city,141,Asheville,%Asheville#,Asheville
+city,332,nan,Ridgefi@@eld@@ Park,Ridgefield Park
+city,590,Chatham,Chath#am,Chatham
+city,680,nan,Po$rtland,Portland
+city,823,Cherry Hill,C%her??ry Hill,Cherry Hill
+city,844,Grand Rapids,#Grand Rapid??s,Grand Rapids
+city,1049,nan,Leave$nworth,Leavenworth
+city,1051,Leavenworth,Leave$nworth,Leavenworth
+city,1098,Milwaukee,Milwauk??ee,Milwaukee
+city,1232,nan,#@@Menominie,Menominie
+city,1238,Flagstaff,Flag??s$taff,Flagstaff
+city,1240,Portland,Portla@@nd,Portland
+city,1269,Santee$,%Santee%,Santee
+city,1270,nan,%Santee%,Santee
+city,1272,??$Santee,%Santee%,Santee
+city,1416,nan,Mustan@@g,Mustang
+city,1420,Mustang,Mustan@@g,Mustang
+city,1502,@@Pacific,Paci%fic,Pacific
+city,1608,nan,#Palisade,Palisade
+city,1641,nan,Petos??key#,Petoskey
+city,1643,nan,Petos??key#,Petoskey
+city,1738,Portland,Portland#,Portland
+city,2210,nan,Albu#querq@@ue,Albuquerque
+city,2394,North Woodstock,Nort$h Woodstock,North Woodstock
+state,547,NC,N#@@C,NC
+state,928,TX,TX%,TX
+state,1002,WA%,W#@@A,WA
+state,1039,CA,??CA,CA
+state,1191,nan,??PA,PA
+state,1228,VA,VA@@,VA
+state,1242,GA,G$A,GA
+state,1244,nan,O#H,OH
+state,1245,OH,O#H,OH
+state,1246,nan,O#H,OH
+state,1247,nan,O#H,OH
+state,1248,nan,O#H,OH
+state,1249,nan,O#H,OH
+state,1251,nan,O#H,OH
+state,1252,nan,O#H,OH
+state,1269,nan,C#A??,CA
+state,1270,nan,C#A??,CA
+state,1271,CA,C#A??,CA
+state,1409,MO,M$??O,MO
+state,1493,PA,PA%,PA
+state,1894,ID,ID??$,ID

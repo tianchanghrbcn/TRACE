@@ -1,0 +1,49 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+brewery_name,40,3 Daughters Brewing,3 Daughters Br@@ew#ing,3 Daughters Brewing
+brewery_name,41,nan,3 Daughters Br@@ew#ing,3 Daughters Brewing
+brewery_name,332,Bolero Snort Brewery,Bole$ro S#nort Brewery,Bolero Snort Brewery
+brewery_name,530,Cape Cod Beer,Ca@@pe Cod %Beer,Cape Cod Beer
+brewery_name,573,Centennial Beer Company,Centennial Be@@er% Company,Centennial Beer Company
+brewery_name,815,Flying Dog Brewery,Flying Dog Brewery@@,Flying Dog Brewery
+brewery_name,928,Grapevine Craft Brewery,Grapevine Craft Bre#wery,Grapevine Craft Brewery
+brewery_name,1031,Harvest Moon Brewing Company,Harvest M%oon Brewing Comp??any,Harvest Moon Brewing Company
+brewery_name,1620,Peak Organic Brewing Company,P%eak Organic Brewing Company,Peak Organic Brewing Company
+brewery_name,1807,Sanitas Brewing Company,Sanitas #Brewing Compan@@y,Sanitas Brewing Company
+brewery_name,2128,Tapistry Brewing,Tapistry #Brewing%,Tapistry Brewing
+brewery_name,2208,Tractor Brewing Company,Tractor Brewing #Company,Tractor Brewing Company
+brewery_name,2210,nan,Tractor Brewing #Company,Tractor Brewing Company
+city,92,Lexington,L%exington,Lexington
+city,96,Washougal,W??asho$ugal,Washougal
+city,366,Boulder,Bould@@$er,Boulder
+city,367,nan,Bould@@$er,Boulder
+city,597,nan,Stev%ens Point#,Stevens Point
+city,737,Leominster,Leomin%@@ster,Leominster
+city,923,??W??illiams,%Williams,Williams
+city,925,Williams,%Williams,Williams
+city,1013,Stamford,S$t#amford,Stamford
+city,1113,Austin,Au@@stin,Austin
+city,1144,Kalona,Kalon#a,Kalona
+city,1188,Albuquerque,Albuquerq%ue,Albuquerque
+city,1274,nan,Albuqu??erque,Albuquerque
+city,1509,O'Fallon,O'Fal$lon,O'Fallon
+city,1646,@@Monument,Monument#,Monument
+city,1681,Fort Worth,Fort# Worth,Fort Worth
+city,1806,Boulder,Bould$er,Boulder
+city,2125,#Tamp??a,Ta$mpa,Tampa
+state,96,nan,%W#A,WA
+state,122,WI,W@@I,WI
+state,129,NC,N@@#C,NC
+state,266,FL,FL##,FL
+state,573,#CO,CO#,CO
+state,663,%ID,#ID,ID
+state,665,ID,#ID,ID
+state,1031,MT,MT@@,MT
+state,1048,CO,C##O,CO
+state,1181,MO,MO#,MO
+state,1408,MO,??#MO,MO
+state,1646,CO,??CO,CO
+state,1832,OR,??OR#,OR
+state,1857,CO,??#CO,CO
+state,1896,IL,#IL,IL
+state,2205,CO,C@@O,CO
+state,2262,TX,$T$X,TX

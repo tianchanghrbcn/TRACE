@@ -1,0 +1,1682 @@
+Attribute,Index,Clean Value,Dirty Value
+ProviderNumber,4,10018,empty
+ProviderNumber,7,10018,empty
+ProviderNumber,14,10019,empty
+ProviderNumber,17,10019,empty
+ProviderNumber,31,10001,empty
+ProviderNumber,56,10005,empty
+ProviderNumber,67,10005,empty
+ProviderNumber,71,10006,empty
+ProviderNumber,72,10006,empty
+ProviderNumber,80,10006,empty
+ProviderNumber,83,10006,empty
+ProviderNumber,88,10006,empty
+ProviderNumber,90,10006,empty
+ProviderNumber,121,10008,empty
+ProviderNumber,145,10009,empty
+ProviderNumber,171,10010,empty
+ProviderNumber,184,10010,empty
+ProviderNumber,194,10010,empty
+ProviderNumber,206,10011,empty
+ProviderNumber,213,10011,empty
+ProviderNumber,222,10012,empty
+ProviderNumber,229,10012,empty
+ProviderNumber,233,10012,empty
+ProviderNumber,240,10012,empty
+ProviderNumber,263,10015,empty
+ProviderNumber,264,10015,empty
+ProviderNumber,279,10016,empty
+ProviderNumber,283,10016,empty
+ProviderNumber,287,10016,empty
+ProviderNumber,290,10016,empty
+ProviderNumber,292,10016,empty
+ProviderNumber,295,10018,empty
+ProviderNumber,301,10018,empty
+ProviderNumber,307,10018,empty
+ProviderNumber,315,10038,empty
+ProviderNumber,324,10038,empty
+ProviderNumber,332,10055,empty
+ProviderNumber,343,10055,empty
+ProviderNumber,347,10055,empty
+ProviderNumber,348,10055,empty
+ProviderNumber,358,10086,empty
+ProviderNumber,389,10087,empty
+ProviderNumber,418,10164,empty
+ProviderNumber,422,10164,empty
+ProviderNumber,424,10164,empty
+ProviderNumber,427,10164,empty
+ProviderNumber,432,10164,empty
+ProviderNumber,441,20017,empty
+ProviderNumber,450,20017,empty
+ProviderNumber,461,10019,empty
+ProviderNumber,464,10019,empty
+ProviderNumber,469,10021,empty
+ProviderNumber,472,10021,empty
+ProviderNumber,473,10021,empty
+ProviderNumber,485,10021,empty
+ProviderNumber,512,10022,empty
+ProviderNumber,519,10023,empty
+ProviderNumber,591,10025,empty
+ProviderNumber,598,10027,empty
+ProviderNumber,608,10027,empty
+ProviderNumber,611,10027,empty
+ProviderNumber,612,10027,empty
+ProviderNumber,616,10027,empty
+ProviderNumber,619,10029,empty
+ProviderNumber,621,10029,empty
+ProviderNumber,639,10029,empty
+ProviderNumber,652,10032,empty
+ProviderNumber,654,10032,empty
+ProviderNumber,666,10032,empty
+ProviderNumber,680,10033,empty
+ProviderNumber,698,10034,empty
+ProviderNumber,714,10034,empty
+ProviderNumber,721,10035,empty
+ProviderNumber,731,10035,empty
+ProviderNumber,764,10036,empty
+ProviderNumber,768,10038,empty
+ProviderNumber,787,10039,empty
+ProviderNumber,792,10039,empty
+ProviderNumber,838,10043,empty
+ProviderNumber,840,10043,empty
+ProviderNumber,852,10043,empty
+ProviderNumber,864,10044,empty
+ProviderNumber,876,10044,empty
+ProviderNumber,880,10045,empty
+ProviderNumber,884,10045,empty
+ProviderNumber,893,10045,empty
+ProviderNumber,898,10045,empty
+ProviderNumber,900,10045,empty
+ProviderNumber,929,10046,empty
+ProviderNumber,938,10047,empty
+ProviderNumber,950,10047,empty
+ProviderNumber,961,10049,empty
+ProviderNumber,997,10050,empty
+HospitalName,2,callahan eye foundation hospital,empty
+HospitalName,3,callahan eye foundation hospital,empty
+HospitalName,12,helen keller memorial hospital,empty
+HospitalName,17,helen keller memorial hospital,empty
+HospitalName,21,southeast alabama medical center,empty
+HospitalName,23,southeast alabama medical center,empty
+HospitalName,28,southeast alabama medical center,empty
+HospitalName,41,southeast alabama medical center,empty
+HospitalName,51,marshall medical center south,empty
+HospitalName,56,marshall medical center south,empty
+HospitalName,59,marshall medical center south,empty
+HospitalName,107,mizell memorial hospital,empty
+HospitalName,118,mizell memorial hospital,empty
+HospitalName,120,crenshaw community hospital,empty
+HospitalName,126,crenshaw community hospital,empty
+HospitalName,136,crenshaw community hospital,empty
+HospitalName,149,hartselle medical center,empty
+HospitalName,152,hartselle medical center,empty
+HospitalName,157,hartselle medical center,empty
+HospitalName,166,hartselle medical center,empty
+HospitalName,172,marshall medical center north,empty
+HospitalName,177,marshall medical center north,empty
+HospitalName,194,marshall medical center north,empty
+HospitalName,202,st vincents east,empty
+HospitalName,203,st vincents east,empty
+HospitalName,215,st vincents east,empty
+HospitalName,219,st vincents east,empty
+HospitalName,220,dekalb regional medical center,empty
+HospitalName,223,dekalb regional medical center,empty
+HospitalName,227,dekalb regional medical center,empty
+HospitalName,236,dekalb regional medical center,empty
+HospitalName,243,dekalb regional medical center,empty
+HospitalName,244,dekalb regional medical center,empty
+HospitalName,248,southwest alabama medical center,empty
+HospitalName,257,southwest alabama medical center,empty
+HospitalName,258,southwest alabama medical center,empty
+HospitalName,268,southwest alabama medical center,empty
+HospitalName,274,shelby baptist medical center,empty
+HospitalName,276,shelby baptist medical center,empty
+HospitalName,314,stringfellow memorial hospital,empty
+HospitalName,318,stringfellow memorial hospital,empty
+HospitalName,324,stringfellow memorial hospital,empty
+HospitalName,334,flowers hospital,empty
+HospitalName,354,decatur general hospital,empty
+HospitalName,365,northwest medical center,empty
+HospitalName,395,prattville baptist hospital,empty
+HospitalName,416,coosa valley medical center,empty
+HospitalName,433,alaska regional hospital,empty
+HospitalName,438,alaska regional hospital,empty
+HospitalName,451,yukon kuskokwim delta reg hospital,empty
+HospitalName,453,helen keller memorial hospital,empty
+HospitalName,454,helen keller memorial hospital,empty
+HospitalName,459,helen keller memorial hospital,empty
+HospitalName,464,helen keller memorial hospital,empty
+HospitalName,492,cherokee medical center,empty
+HospitalName,498,cherokee medical center,empty
+HospitalName,502,cherokee medical center,empty
+HospitalName,521,baptist medical center south,empty
+HospitalName,531,baptist medical center south,empty
+HospitalName,532,baptist medical center south,empty
+HospitalName,534,baptist medical center south,empty
+HospitalName,549,jackson hospital & clinic inc,empty
+HospitalName,585,g h lanier memorial hospital,empty
+HospitalName,591,g h lanier memorial hospital,empty
+HospitalName,597,elba general hospital,empty
+HospitalName,598,elba general hospital,empty
+HospitalName,601,elba general hospital,empty
+HospitalName,618,east alabama medical center and snf,empty
+HospitalName,622,east alabama medical center and snf,empty
+HospitalName,642,wedowee hospital,empty
+HospitalName,644,wedowee hospital,empty
+HospitalName,652,wedowee hospital,empty
+HospitalName,675,university of alabama hospital,empty
+HospitalName,676,university of alabama hospital,empty
+HospitalName,682,university of alabama hospital,empty
+HospitalName,695,community hospital inc,empty
+HospitalName,717,cullman regional medical center,empty
+HospitalName,723,cullman regional medical center,empty
+HospitalName,731,cullman regional medical center,empty
+HospitalName,732,cullman regional medical center,empty
+HospitalName,736,cullman regional medical center,empty
+HospitalName,739,cullman regional medical center,empty
+HospitalName,744,andalusia regional hospital,empty
+HospitalName,746,andalusia regional hospital,empty
+HospitalName,747,andalusia regional hospital,empty
+HospitalName,748,andalusia regional hospital,empty
+HospitalName,749,andalusia regional hospital,empty
+HospitalName,771,stringfellow memorial hospital,empty
+HospitalName,784,huntsville hospital,empty
+HospitalName,795,huntsville hospital,empty
+HospitalName,803,gadsden regional medical center,empty
+HospitalName,813,gadsden regional medical center,empty
+HospitalName,819,gadsden regional medical center,empty
+HospitalName,823,gadsden regional medical center,empty
+HospitalName,829,chilton medical center,empty
+HospitalName,831,chilton medical center,empty
+HospitalName,836,chilton medical center,empty
+HospitalName,844,chilton medical center,empty
+HospitalName,847,chilton medical center,empty
+HospitalName,870,marion regional medical center,empty
+HospitalName,880,fayette medical center,empty
+HospitalName,897,fayette medical center,empty
+HospitalName,899,fayette medical center,empty
+HospitalName,905,riverview regional medical center,empty
+HospitalName,933,georgiana hospital,empty
+HospitalName,958,medical center enterprise,empty
+HospitalName,988,st vincents blount,empty
+HospitalName,997,st vincents blount,empty
+HospitalName,998,st vincents blount,empty
+Address1,6,1720 university blvd,empty
+Address1,7,1720 university blvd,empty
+Address1,8,1720 university blvd,empty
+Address1,11,1300 south montgomery avenue,empty
+Address1,19,1300 south montgomery avenue,empty
+Address1,27,1108 ross clark circle,empty
+Address1,35,1108 ross clark circle,empty
+Address1,47,2505 u s highway 431 north,empty
+Address1,82,205 marengo street,empty
+Address1,105,702 n main st,empty
+Address1,107,702 n main st,empty
+Address1,111,702 n main st,empty
+Address1,128,101 hospital circle,empty
+Address1,133,101 hospital circle,empty
+Address1,140,101 hospital circle,empty
+Address1,157,201 pine street northwest,empty
+Address1,170,8000 alabama highway 69,empty
+Address1,171,8000 alabama highway 69,empty
+Address1,183,8000 alabama highway 69,empty
+Address1,194,8000 alabama highway 69,empty
+Address1,205,50 medical park east drive,empty
+Address1,206,50 medical park east drive,empty
+Address1,218,50 medical park east drive,empty
+Address1,226,200 med center drive,empty
+Address1,255,33700 highway 43,empty
+Address1,265,33700 highway 43,empty
+Address1,268,33700 highway 43,empty
+Address1,271,1000 first street north,empty
+Address1,283,1000 first street north,empty
+Address1,285,1000 first street north,empty
+Address1,291,1000 first street north,empty
+Address1,329,301 east 18th st,empty
+Address1,354,1201 7th street se,empty
+Address1,364,1530 u s highway 43,empty
+Address1,365,1530 u s highway 43,empty
+Address1,370,1530 u s highway 43,empty
+Address1,398,124 s memorial dr,empty
+Address1,400,124 s memorial dr,empty
+Address1,405,124 s memorial dr,empty
+Address1,409,124 s memorial dr,empty
+Address1,412,124 s memorial dr,empty
+Address1,414,15155 highway 43,empty
+Address1,432,315 w hickory st,empty
+Address1,442,2801 debarr road,empty
+Address1,448,2801 debarr road,empty
+Address1,456,1300 south montgomery avenue,empty
+Address1,465,1300 south montgomery avenue,empty
+Address1,483,126 hospital ave,empty
+Address1,499,400 northwood dr,empty
+Address1,500,400 northwood dr,empty
+Address1,522,2105 east south boulevard,empty
+Address1,525,2105 east south boulevard,empty
+Address1,539,2105 east south boulevard,empty
+Address1,558,1725 pine street,empty
+Address1,562,1725 pine street,empty
+Address1,575,4800 48th st,empty
+Address1,580,4800 48th st,empty
+Address1,583,4800 48th st,empty
+Address1,586,4800 48th st,empty
+Address1,587,4800 48th st,empty
+Address1,599,987 drayton street,empty
+Address1,600,987 drayton street,empty
+Address1,603,987 drayton street,empty
+Address1,628,2000 pepperell parkway,empty
+Address1,633,2000 pepperell parkway,empty
+Address1,642,209 north main street,empty
+Address1,704,805 friendship road,empty
+Address1,705,805 friendship road,empty
+Address1,707,805 friendship road,empty
+Address1,737,1912 alabama highway 157,empty
+Address1,751,849 south three notch street,empty
+Address1,756,849 south three notch street,empty
+Address1,768,301 east 18th st,empty
+Address1,795,101 sivley rd,empty
+Address1,816,1007 goodyear avenue,empty
+Address1,834,1010 lay dam road,empty
+Address1,846,1010 lay dam road,empty
+Address1,847,1010 lay dam road,empty
+Address1,857,1256 military street south,empty
+Address1,860,1256 military street south,empty
+Address1,861,1256 military street south,empty
+Address1,866,1256 military street south,empty
+Address1,872,1256 military street south,empty
+Address1,877,1256 military street south,empty
+Address1,905,600 south third street,empty
+Address1,908,600 south third street,empty
+Address1,920,600 south third street,empty
+Address1,940,515 miranda st,empty
+Address1,946,515 miranda st,empty
+Address1,951,515 miranda st,empty
+Address1,963,400 n edwards street,empty
+Address1,966,400 n edwards street,empty
+Address1,980,400 n edwards street,empty
+Address1,991,150 gilbreath drive,empty
+Address1,992,150 gilbreath drive,empty
+City,42,dothan,empty
+City,51,boaz,empty
+City,65,boaz,empty
+City,73,florence,empty
+City,74,florence,empty
+City,101,opp,empty
+City,120,luverne,empty
+City,126,luverne,empty
+City,129,luverne,empty
+City,164,hartselle,empty
+City,174,guntersville,empty
+City,196,birmingham,empty
+City,213,birmingham,empty
+City,223,fort payne,empty
+City,230,fort payne,empty
+City,249,thomasville,empty
+City,251,thomasville,empty
+City,282,alabaster,empty
+City,288,alabaster,empty
+City,292,alabaster,empty
+City,307,birmingham,empty
+City,323,anniston,empty
+City,369,winfield,empty
+City,385,mobile,empty
+City,442,anchorage,empty
+City,463,sheffield,empty
+City,476,ozark,empty
+City,479,ozark,empty
+City,487,ozark,empty
+City,489,ozark,empty
+City,498,centre,empty
+City,506,centre,empty
+City,515,centre,empty
+City,516,centre,empty
+City,521,montgomery,empty
+City,522,montgomery,empty
+City,526,montgomery,empty
+City,531,montgomery,empty
+City,547,montgomery,empty
+City,553,montgomery,empty
+City,554,montgomery,empty
+City,555,montgomery,empty
+City,574,valley,empty
+City,589,valley,empty
+City,609,elba,empty
+City,612,elba,empty
+City,613,elba,empty
+City,614,elba,empty
+City,623,opelika,empty
+City,645,wedowee,empty
+City,650,wedowee,empty
+City,657,wedowee,empty
+City,671,birmingham,empty
+City,678,birmingham,empty
+City,681,birmingham,empty
+City,688,birmingham,empty
+City,702,tallassee,empty
+City,703,tallassee,empty
+City,720,cullman,empty
+City,725,cullman,empty
+City,726,cullman,empty
+City,748,andalusia,empty
+City,760,andalusia,empty
+City,764,andalusia,empty
+City,769,anniston,empty
+City,803,gadsden,empty
+City,805,gadsden,empty
+City,828,clanton,empty
+City,842,clanton,empty
+City,849,clanton,empty
+City,893,fayette,empty
+City,895,fayette,empty
+City,916,gadsden,empty
+City,951,georgiana,empty
+City,957,enterprise,empty
+City,959,enterprise,empty
+City,962,enterprise,empty
+City,967,enterprise,empty
+City,971,enterprise,empty
+City,975,enterprise,empty
+City,983,oneonta,empty
+City,986,oneonta,empty
+City,989,oneonta,empty
+State,5,al,empty
+State,7,al,empty
+State,27,al,empty
+State,43,al,empty
+State,46,al,empty
+State,75,al,empty
+State,83,al,empty
+State,84,al,empty
+State,85,al,empty
+State,91,al,empty
+State,105,al,empty
+State,112,al,empty
+State,121,al,empty
+State,122,al,empty
+State,124,al,empty
+State,125,al,empty
+State,130,al,empty
+State,142,al,empty
+State,147,al,empty
+State,149,al,empty
+State,184,al,empty
+State,203,al,empty
+State,221,al,empty
+State,222,al,empty
+State,224,al,empty
+State,264,al,empty
+State,270,al,empty
+State,286,al,empty
+State,293,al,empty
+State,303,al,empty
+State,305,al,empty
+State,320,al,empty
+State,336,al,empty
+State,354,al,empty
+State,356,al,empty
+State,358,al,empty
+State,361,al,empty
+State,365,al,empty
+State,370,al,empty
+State,409,al,empty
+State,412,al,empty
+State,431,al,empty
+State,442,ak,empty
+State,445,ak,empty
+State,446,ak,empty
+State,451,ak,empty
+State,465,al,empty
+State,467,al,empty
+State,486,al,empty
+State,496,al,empty
+State,502,al,empty
+State,503,al,empty
+State,508,al,empty
+State,520,al,empty
+State,524,al,empty
+State,537,al,empty
+State,543,al,empty
+State,549,al,empty
+State,555,al,empty
+State,565,al,empty
+State,574,al,empty
+State,576,al,empty
+State,592,al,empty
+State,596,al,empty
+State,609,al,empty
+State,613,al,empty
+State,621,al,empty
+State,626,al,empty
+State,631,al,empty
+State,632,al,empty
+State,639,al,empty
+State,648,al,empty
+State,658,al,empty
+State,666,al,empty
+State,682,al,empty
+State,724,al,empty
+State,741,al,empty
+State,747,al,empty
+State,748,al,empty
+State,768,al,empty
+State,774,al,empty
+State,777,al,empty
+State,778,al,empty
+State,793,al,empty
+State,795,al,empty
+State,818,al,empty
+State,822,al,empty
+State,830,al,empty
+State,835,al,empty
+State,839,al,empty
+State,842,al,empty
+State,847,al,empty
+State,851,al,empty
+State,866,al,empty
+State,888,al,empty
+State,890,al,empty
+State,894,al,empty
+State,895,al,empty
+State,919,al,empty
+State,923,al,empty
+State,929,al,empty
+State,930,al,empty
+State,931,al,empty
+State,934,al,empty
+State,936,al,empty
+State,948,al,empty
+State,949,al,empty
+State,960,al,empty
+State,1000,al,empty
+ZipCode,15,35660,empty
+ZipCode,45,35957,empty
+ZipCode,46,35957,empty
+ZipCode,52,35957,empty
+ZipCode,69,35957,empty
+ZipCode,93,35631,empty
+ZipCode,122,36049,empty
+ZipCode,126,36049,empty
+ZipCode,143,36049,empty
+ZipCode,154,35640,empty
+ZipCode,173,35976,empty
+ZipCode,178,35976,empty
+ZipCode,185,35976,empty
+ZipCode,188,35976,empty
+ZipCode,195,35235,empty
+ZipCode,196,35235,empty
+ZipCode,198,35235,empty
+ZipCode,207,35235,empty
+ZipCode,219,35235,empty
+ZipCode,224,35968,empty
+ZipCode,228,35968,empty
+ZipCode,238,35968,empty
+ZipCode,243,35968,empty
+ZipCode,245,36784,empty
+ZipCode,248,36784,empty
+ZipCode,272,35007,empty
+ZipCode,276,35007,empty
+ZipCode,284,35007,empty
+ZipCode,297,35233,empty
+ZipCode,308,35233,empty
+ZipCode,314,36201,empty
+ZipCode,317,36201,empty
+ZipCode,324,36201,empty
+ZipCode,336,36305,empty
+ZipCode,347,36305,empty
+ZipCode,358,35594,empty
+ZipCode,375,35594,empty
+ZipCode,376,35594,empty
+ZipCode,380,36617,empty
+ZipCode,381,36617,empty
+ZipCode,387,36617,empty
+ZipCode,395,36067,empty
+ZipCode,406,36067,empty
+ZipCode,418,35150,empty
+ZipCode,421,35150,empty
+ZipCode,422,35150,empty
+ZipCode,424,35150,empty
+ZipCode,428,35150,empty
+ZipCode,460,35660,empty
+ZipCode,461,35660,empty
+ZipCode,466,35660,empty
+ZipCode,472,36360,empty
+ZipCode,480,36360,empty
+ZipCode,508,35960,empty
+ZipCode,523,36116,empty
+ZipCode,540,36116,empty
+ZipCode,555,36106,empty
+ZipCode,565,36106,empty
+ZipCode,569,36854,empty
+ZipCode,573,36854,empty
+ZipCode,576,36854,empty
+ZipCode,577,36854,empty
+ZipCode,580,36854,empty
+ZipCode,593,36323,empty
+ZipCode,599,36323,empty
+ZipCode,600,36323,empty
+ZipCode,627,36801,empty
+ZipCode,633,36801,empty
+ZipCode,648,36278,empty
+ZipCode,652,36278,empty
+ZipCode,653,36278,empty
+ZipCode,662,36278,empty
+ZipCode,668,35233,empty
+ZipCode,671,35233,empty
+ZipCode,699,36078,empty
+ZipCode,700,36078,empty
+ZipCode,706,36078,empty
+ZipCode,708,36078,empty
+ZipCode,710,36078,empty
+ZipCode,712,36078,empty
+ZipCode,719,35058,empty
+ZipCode,746,36420,empty
+ZipCode,748,36420,empty
+ZipCode,751,36420,empty
+ZipCode,764,36420,empty
+ZipCode,776,35801,empty
+ZipCode,778,35801,empty
+ZipCode,781,35801,empty
+ZipCode,787,35801,empty
+ZipCode,805,35903,empty
+ZipCode,831,35045,empty
+ZipCode,849,35045,empty
+ZipCode,856,35570,empty
+ZipCode,865,35570,empty
+ZipCode,872,35570,empty
+ZipCode,889,35555,empty
+ZipCode,891,35555,empty
+ZipCode,908,35901,empty
+ZipCode,926,35901,empty
+ZipCode,944,36033,empty
+ZipCode,977,36330,empty
+ZipCode,986,35121,empty
+ZipCode,990,35121,empty
+CountyName,1,jefferson,empty
+CountyName,2,jefferson,empty
+CountyName,8,jefferson,empty
+CountyName,13,jefferson,empty
+CountyName,24,houston,empty
+CountyName,33,houston,empty
+CountyName,42,houston,empty
+CountyName,51,marshall,empty
+CountyName,53,marshall,empty
+CountyName,60,marshall,empty
+CountyName,61,marshall,empty
+CountyName,103,covington,empty
+CountyName,106,covington,empty
+CountyName,141,crenshaw,empty
+CountyName,148,morgan,empty
+CountyName,151,morgan,empty
+CountyName,157,morgan,empty
+CountyName,163,morgan,empty
+CountyName,177,marshall,empty
+CountyName,181,marshall,empty
+CountyName,191,marshall,empty
+CountyName,202,jefferson,empty
+CountyName,204,jefferson,empty
+CountyName,206,jefferson,empty
+CountyName,223,de kalb,empty
+CountyName,233,de kalb,empty
+CountyName,235,de kalb,empty
+CountyName,251,clarke,empty
+CountyName,261,clarke,empty
+CountyName,273,shelby,empty
+CountyName,275,shelby,empty
+CountyName,278,shelby,empty
+CountyName,280,shelby,empty
+CountyName,295,jefferson,empty
+CountyName,302,jefferson,empty
+CountyName,325,calhoun,empty
+CountyName,345,houston,empty
+CountyName,370,marion,empty
+CountyName,372,marion,empty
+CountyName,394,autauga,empty
+CountyName,401,autauga,empty
+CountyName,409,autauga,empty
+CountyName,413,franklin,empty
+CountyName,414,franklin,empty
+CountyName,444,anchorage,empty
+CountyName,460,jefferson,empty
+CountyName,468,dale,empty
+CountyName,478,dale,empty
+CountyName,482,dale,empty
+CountyName,492,cherokee,empty
+CountyName,513,cherokee,empty
+CountyName,514,cherokee,empty
+CountyName,516,cherokee,empty
+CountyName,545,montgomery,empty
+CountyName,549,montgomery,empty
+CountyName,554,montgomery,empty
+CountyName,561,montgomery,empty
+CountyName,575,chambers,empty
+CountyName,584,chambers,empty
+CountyName,587,chambers,empty
+CountyName,590,chambers,empty
+CountyName,591,chambers,empty
+CountyName,599,coffee,empty
+CountyName,613,coffee,empty
+CountyName,615,coffee,empty
+CountyName,628,lee,empty
+CountyName,633,lee,empty
+CountyName,634,lee,empty
+CountyName,639,lee,empty
+CountyName,678,jefferson,empty
+CountyName,686,jefferson,empty
+CountyName,696,elmore,empty
+CountyName,697,elmore,empty
+CountyName,702,elmore,empty
+CountyName,706,elmore,empty
+CountyName,723,cullman,empty
+CountyName,734,cullman,empty
+CountyName,735,cullman,empty
+CountyName,737,cullman,empty
+CountyName,738,cullman,empty
+CountyName,752,covington,empty
+CountyName,788,madison,empty
+CountyName,794,madison,empty
+CountyName,797,madison,empty
+CountyName,807,etowah,empty
+CountyName,817,etowah,empty
+CountyName,837,chilton,empty
+CountyName,839,chilton,empty
+CountyName,847,chilton,empty
+CountyName,850,chilton,empty
+CountyName,890,fayette,empty
+CountyName,892,fayette,empty
+CountyName,900,fayette,empty
+CountyName,905,etowah,empty
+CountyName,925,etowah,empty
+CountyName,939,butler,empty
+CountyName,946,butler,empty
+CountyName,948,butler,empty
+CountyName,961,coffee,empty
+CountyName,962,coffee,empty
+CountyName,972,coffee,empty
+CountyName,978,coffee,empty
+CountyName,985,blount,empty
+CountyName,993,blount,empty
+CountyName,997,blount,empty
+PhoneNumber,6,2053258100,empty
+PhoneNumber,15,2563864556,empty
+PhoneNumber,27,3347938701,empty
+PhoneNumber,43,3347938701,empty
+PhoneNumber,45,2565938310,empty
+PhoneNumber,50,2565938310,empty
+PhoneNumber,62,2565938310,empty
+PhoneNumber,64,2565938310,empty
+PhoneNumber,75,2567688400,empty
+PhoneNumber,80,2567688400,empty
+PhoneNumber,111,3344933541,empty
+PhoneNumber,131,3343353374,empty
+PhoneNumber,161,2567736511,empty
+PhoneNumber,164,2567736511,empty
+PhoneNumber,191,2565718000,empty
+PhoneNumber,197,2058383122,empty
+PhoneNumber,206,2058383122,empty
+PhoneNumber,220,2568453150,empty
+PhoneNumber,235,2568453150,empty
+PhoneNumber,240,2568453150,empty
+PhoneNumber,241,2568453150,empty
+PhoneNumber,261,3346366221,empty
+PhoneNumber,274,2056208100,empty
+PhoneNumber,275,2056208100,empty
+PhoneNumber,284,2056208100,empty
+PhoneNumber,288,2056208100,empty
+PhoneNumber,305,2053258100,empty
+PhoneNumber,327,2562358900,empty
+PhoneNumber,332,3347935000,empty
+PhoneNumber,351,2059397000,empty
+PhoneNumber,357,2054877736,empty
+PhoneNumber,371,2054877736,empty
+PhoneNumber,382,2514717110,empty
+PhoneNumber,396,3343614267,empty
+PhoneNumber,397,3343614267,empty
+PhoneNumber,429,2562495000,empty
+PhoneNumber,449,9072761131,empty
+PhoneNumber,481,3347742601,empty
+PhoneNumber,487,3347742601,empty
+PhoneNumber,492,2569275531,empty
+PhoneNumber,495,2569275531,empty
+PhoneNumber,496,2569275531,empty
+PhoneNumber,524,3342882100,empty
+PhoneNumber,529,3342882100,empty
+PhoneNumber,578,3347561400,empty
+PhoneNumber,580,3347561400,empty
+PhoneNumber,585,3347561400,empty
+PhoneNumber,603,3348972257,empty
+PhoneNumber,607,3348972257,empty
+PhoneNumber,616,3348972257,empty
+PhoneNumber,631,3347493411,empty
+PhoneNumber,653,2563572111,empty
+PhoneNumber,655,2563572111,empty
+PhoneNumber,665,2563572111,empty
+PhoneNumber,669,2059344011,empty
+PhoneNumber,683,2059344011,empty
+PhoneNumber,696,3342836541,empty
+PhoneNumber,703,3342836541,empty
+PhoneNumber,706,3342836541,empty
+PhoneNumber,714,3342836541,empty
+PhoneNumber,715,3342836541,empty
+PhoneNumber,740,2567372000,empty
+PhoneNumber,776,2562651000,empty
+PhoneNumber,784,2562651000,empty
+PhoneNumber,812,2564944000,empty
+PhoneNumber,818,2564944000,empty
+PhoneNumber,824,2564944000,empty
+PhoneNumber,865,2059216200,empty
+PhoneNumber,871,2059216200,empty
+PhoneNumber,892,2059325966,empty
+PhoneNumber,914,2565435200,empty
+PhoneNumber,922,2565435200,empty
+PhoneNumber,925,2565435200,empty
+PhoneNumber,946,3343762205,empty
+PhoneNumber,948,3343762205,empty
+PhoneNumber,951,3343762205,empty
+PhoneNumber,952,3343762205,empty
+PhoneNumber,956,3343470584,empty
+PhoneNumber,973,3343470584,empty
+PhoneNumber,977,3343470584,empty
+PhoneNumber,979,3343470584,empty
+PhoneNumber,983,2052743000,empty
+PhoneNumber,991,2052743000,empty
+HospitalType,3,acute care hospitals,empty
+HospitalType,7,acute care hospitals,empty
+HospitalType,20,acute care hospitals,empty
+HospitalType,36,acute care hospitals,empty
+HospitalType,41,acute care hospitals,empty
+HospitalType,48,acute care hospitals,empty
+HospitalType,49,acute care hospitals,empty
+HospitalType,54,acute care hospitals,empty
+HospitalType,61,acute care hospitals,empty
+HospitalType,63,acute care hospitals,empty
+HospitalType,80,acute care hospitals,empty
+HospitalType,91,acute care hospitals,empty
+HospitalType,97,acute care hospitals,empty
+HospitalType,110,acute care hospitals,empty
+HospitalType,156,acute care hospitals,empty
+HospitalType,168,acute care hospitals,empty
+HospitalType,170,acute care hospitals,empty
+HospitalType,173,acute care hospitals,empty
+HospitalType,187,acute care hospitals,empty
+HospitalType,195,acute care hospitals,empty
+HospitalType,210,acute care hospitals,empty
+HospitalType,242,acute care hospitals,empty
+HospitalType,247,acute care hospitals,empty
+HospitalType,254,acute care hospitals,empty
+HospitalType,269,acute care hospitals,empty
+HospitalType,271,acute care hospitals,empty
+HospitalType,283,acute care hospitals,empty
+HospitalType,285,acute care hospitals,empty
+HospitalType,289,acute care hospitals,empty
+HospitalType,305,acute care hospitals,empty
+HospitalType,306,acute care hospitals,empty
+HospitalType,307,acute care hospitals,empty
+HospitalType,335,acute care hospitals,empty
+HospitalType,341,acute care hospitals,empty
+HospitalType,346,acute care hospitals,empty
+HospitalType,373,acute care hospitals,empty
+HospitalType,375,acute care hospitals,empty
+HospitalType,412,acute care hospitals,empty
+HospitalType,416,acute care hospitals,empty
+HospitalType,429,acute care hospitals,empty
+HospitalType,435,acute care hospitals,empty
+HospitalType,451,acute care hospitals,empty
+HospitalType,457,acute care hospitals,empty
+HospitalType,478,acute care hospitals,empty
+HospitalType,479,acute care hospitals,empty
+HospitalType,480,acute care hospitals,empty
+HospitalType,501,acute care hospitals,empty
+HospitalType,506,acute care hospitals,empty
+HospitalType,509,acute care hospitals,empty
+HospitalType,512,acute care hospitals,empty
+HospitalType,522,acute care hospitals,empty
+HospitalType,526,acute care hospitals,empty
+HospitalType,545,acute care hospitals,empty
+HospitalType,546,acute care hospitals,empty
+HospitalType,557,acute care hospitals,empty
+HospitalType,559,acute care hospitals,empty
+HospitalType,566,acute care hospitals,empty
+HospitalType,569,acute care hospitals,empty
+HospitalType,570,acute care hospitals,empty
+HospitalType,574,acute care hospitals,empty
+HospitalType,580,acute care hospitals,empty
+HospitalType,617,acute care hospitals,empty
+HospitalType,622,acute care hospitals,empty
+HospitalType,626,acute care hospitals,empty
+HospitalType,638,acute care hospitals,empty
+HospitalType,640,acute care hospitals,empty
+HospitalType,643,acute care hospitals,empty
+HospitalType,652,acute care hospitals,empty
+HospitalType,661,acute care hospitals,empty
+HospitalType,700,acute care hospitals,empty
+HospitalType,709,acute care hospitals,empty
+HospitalType,727,acute care hospitals,empty
+HospitalType,730,acute care hospitals,empty
+HospitalType,731,acute care hospitals,empty
+HospitalType,734,acute care hospitals,empty
+HospitalType,742,acute care hospitals,empty
+HospitalType,757,acute care hospitals,empty
+HospitalType,770,acute care hospitals,empty
+HospitalType,772,acute care hospitals,empty
+HospitalType,791,acute care hospitals,empty
+HospitalType,803,acute care hospitals,empty
+HospitalType,819,acute care hospitals,empty
+HospitalType,830,acute care hospitals,empty
+HospitalType,833,acute care hospitals,empty
+HospitalType,858,acute care hospitals,empty
+HospitalType,860,acute care hospitals,empty
+HospitalType,864,acute care hospitals,empty
+HospitalType,871,acute care hospitals,empty
+HospitalType,877,acute care hospitals,empty
+HospitalType,882,acute care hospitals,empty
+HospitalType,891,acute care hospitals,empty
+HospitalType,918,acute care hospitals,empty
+HospitalType,921,acute care hospitals,empty
+HospitalType,932,acute care hospitals,empty
+HospitalType,948,acute care hospitals,empty
+HospitalType,950,acute care hospitals,empty
+HospitalType,966,acute care hospitals,empty
+HospitalType,970,acute care hospitals,empty
+HospitalType,972,acute care hospitals,empty
+HospitalType,989,acute care hospitals,empty
+HospitalType,992,acute care hospitals,empty
+HospitalType,999,acute care hospitals,empty
+HospitalOwner,4,voluntary non-profit - private,empty
+HospitalOwner,17,government - hospital district or authority,empty
+HospitalOwner,19,government - hospital district or authority,empty
+HospitalOwner,30,government - hospital district or authority,empty
+HospitalOwner,35,government - hospital district or authority,empty
+HospitalOwner,57,government - hospital district or authority,empty
+HospitalOwner,83,voluntary non-profit - other,empty
+HospitalOwner,99,voluntary non-profit - private,empty
+HospitalOwner,101,voluntary non-profit - private,empty
+HospitalOwner,118,voluntary non-profit - private,empty
+HospitalOwner,138,government - federal,empty
+HospitalOwner,143,government - federal,empty
+HospitalOwner,148,proprietary,empty
+HospitalOwner,151,proprietary,empty
+HospitalOwner,181,government - hospital district or authority,empty
+HospitalOwner,182,government - hospital district or authority,empty
+HospitalOwner,188,government - hospital district or authority,empty
+HospitalOwner,194,government - hospital district or authority,empty
+HospitalOwner,195,voluntary non-profit - private,empty
+HospitalOwner,196,voluntary non-profit - private,empty
+HospitalOwner,202,voluntary non-profit - private,empty
+HospitalOwner,203,voluntary non-profit - private,empty
+HospitalOwner,206,voluntary non-profit - private,empty
+HospitalOwner,214,voluntary non-profit - private,empty
+HospitalOwner,223,voluntary non-profit - church,empty
+HospitalOwner,243,voluntary non-profit - church,empty
+HospitalOwner,255,government - federal,empty
+HospitalOwner,259,government - federal,empty
+HospitalOwner,261,government - federal,empty
+HospitalOwner,272,voluntary non-profit - church,empty
+HospitalOwner,284,voluntary non-profit - church,empty
+HospitalOwner,297,voluntary non-profit - private,empty
+HospitalOwner,307,voluntary non-profit - private,empty
+HospitalOwner,332,proprietary,empty
+HospitalOwner,335,proprietary,empty
+HospitalOwner,336,proprietary,empty
+HospitalOwner,347,proprietary,empty
+HospitalOwner,350,voluntary non-profit - other,empty
+HospitalOwner,371,proprietary,empty
+HospitalOwner,375,proprietary,empty
+HospitalOwner,383,government - state,empty
+HospitalOwner,386,government - state,empty
+HospitalOwner,411,voluntary non-profit - private,empty
+HospitalOwner,416,voluntary non-profit - other,empty
+HospitalOwner,423,voluntary non-profit - other,empty
+HospitalOwner,439,proprietary,empty
+HospitalOwner,440,proprietary,empty
+HospitalOwner,457,government - hospital district or authority,empty
+HospitalOwner,461,government - hospital district or authority,empty
+HospitalOwner,465,government - hospital district or authority,empty
+HospitalOwner,472,government - hospital district or authority,empty
+HospitalOwner,474,government - hospital district or authority,empty
+HospitalOwner,484,government - hospital district or authority,empty
+HospitalOwner,486,government - hospital district or authority,empty
+HospitalOwner,488,government - hospital district or authority,empty
+HospitalOwner,491,government - hospital district or authority,empty
+HospitalOwner,496,voluntary non-profit - private,empty
+HospitalOwner,520,voluntary non-profit - church,empty
+HospitalOwner,531,voluntary non-profit - church,empty
+HospitalOwner,551,voluntary non-profit - private,empty
+HospitalOwner,552,voluntary non-profit - private,empty
+HospitalOwner,573,voluntary non-profit - other,empty
+HospitalOwner,575,voluntary non-profit - other,empty
+HospitalOwner,598,voluntary non-profit - other,empty
+HospitalOwner,632,government - hospital district or authority,empty
+HospitalOwner,646,government - local,empty
+HospitalOwner,647,government - local,empty
+HospitalOwner,653,government - local,empty
+HospitalOwner,660,government - local,empty
+HospitalOwner,666,government - local,empty
+HospitalOwner,678,government - state,empty
+HospitalOwner,679,government - state,empty
+HospitalOwner,680,government - state,empty
+HospitalOwner,689,government - state,empty
+HospitalOwner,697,voluntary non-profit - private,empty
+HospitalOwner,705,voluntary non-profit - private,empty
+HospitalOwner,716,voluntary non-profit - private,empty
+HospitalOwner,719,government - hospital district or authority,empty
+HospitalOwner,721,government - hospital district or authority,empty
+HospitalOwner,723,government - hospital district or authority,empty
+HospitalOwner,740,government - hospital district or authority,empty
+HospitalOwner,745,proprietary,empty
+HospitalOwner,761,proprietary,empty
+HospitalOwner,786,government - hospital district or authority,empty
+HospitalOwner,802,government - hospital district or authority,empty
+HospitalOwner,810,proprietary,empty
+HospitalOwner,819,proprietary,empty
+HospitalOwner,826,proprietary,empty
+HospitalOwner,831,voluntary non-profit - private,empty
+HospitalOwner,847,voluntary non-profit - private,empty
+HospitalOwner,851,voluntary non-profit - private,empty
+HospitalOwner,852,voluntary non-profit - private,empty
+HospitalOwner,867,voluntary non-profit - private,empty
+HospitalOwner,870,voluntary non-profit - private,empty
+HospitalOwner,871,voluntary non-profit - private,empty
+HospitalOwner,872,voluntary non-profit - private,empty
+HospitalOwner,878,voluntary non-profit - other,empty
+HospitalOwner,880,voluntary non-profit - other,empty
+HospitalOwner,884,voluntary non-profit - other,empty
+HospitalOwner,903,proprietary,empty
+HospitalOwner,906,proprietary,empty
+HospitalOwner,908,proprietary,empty
+HospitalOwner,915,proprietary,empty
+HospitalOwner,918,proprietary,empty
+HospitalOwner,920,proprietary,empty
+HospitalOwner,930,proprietary,empty
+HospitalOwner,934,voluntary non-profit - private,empty
+HospitalOwner,957,proprietary,empty
+HospitalOwner,967,proprietary,empty
+HospitalOwner,983,voluntary non-profit - private,empty
+HospitalOwner,991,voluntary non-profit - private,empty
+EmergencyService,7,yes,empty
+EmergencyService,20,yes,empty
+EmergencyService,41,yes,empty
+EmergencyService,60,yes,empty
+EmergencyService,63,yes,empty
+EmergencyService,84,yes,empty
+EmergencyService,90,yes,empty
+EmergencyService,113,no,empty
+EmergencyService,117,no,empty
+EmergencyService,125,yes,empty
+EmergencyService,127,yes,empty
+EmergencyService,131,yes,empty
+EmergencyService,138,yes,empty
+EmergencyService,149,yes,empty
+EmergencyService,161,yes,empty
+EmergencyService,168,yes,empty
+EmergencyService,171,yes,empty
+EmergencyService,178,yes,empty
+EmergencyService,188,yes,empty
+EmergencyService,193,yes,empty
+EmergencyService,198,yes,empty
+EmergencyService,203,yes,empty
+EmergencyService,206,yes,empty
+EmergencyService,218,yes,empty
+EmergencyService,237,yes,empty
+EmergencyService,265,yes,empty
+EmergencyService,266,yes,empty
+EmergencyService,278,yes,empty
+EmergencyService,281,yes,empty
+EmergencyService,285,yes,empty
+EmergencyService,319,yes,empty
+EmergencyService,340,yes,empty
+EmergencyService,366,yes,empty
+EmergencyService,370,yes,empty
+EmergencyService,374,yes,empty
+EmergencyService,387,yes,empty
+EmergencyService,389,yes,empty
+EmergencyService,392,yes,empty
+EmergencyService,404,yes,empty
+EmergencyService,410,yes,empty
+EmergencyService,420,no,empty
+EmergencyService,427,no,empty
+EmergencyService,429,no,empty
+EmergencyService,430,no,empty
+EmergencyService,432,no,empty
+EmergencyService,442,yes,empty
+EmergencyService,446,yes,empty
+EmergencyService,448,yes,empty
+EmergencyService,461,yes,empty
+EmergencyService,468,yes,empty
+EmergencyService,469,yes,empty
+EmergencyService,484,yes,empty
+EmergencyService,494,yes,empty
+EmergencyService,513,yes,empty
+EmergencyService,514,yes,empty
+EmergencyService,516,yes,empty
+EmergencyService,530,yes,empty
+EmergencyService,542,yes,empty
+EmergencyService,556,yes,empty
+EmergencyService,565,yes,empty
+EmergencyService,578,yes,empty
+EmergencyService,601,yes,empty
+EmergencyService,614,yes,empty
+EmergencyService,623,yes,empty
+EmergencyService,628,yes,empty
+EmergencyService,631,yes,empty
+EmergencyService,632,yes,empty
+EmergencyService,637,yes,empty
+EmergencyService,638,yes,empty
+EmergencyService,639,yes,empty
+EmergencyService,640,yes,empty
+EmergencyService,675,yes,empty
+EmergencyService,696,no,empty
+EmergencyService,707,no,empty
+EmergencyService,709,no,empty
+EmergencyService,712,no,empty
+EmergencyService,713,no,empty
+EmergencyService,724,yes,empty
+EmergencyService,761,no,empty
+EmergencyService,776,yes,empty
+EmergencyService,813,yes,empty
+EmergencyService,825,yes,empty
+EmergencyService,828,yes,empty
+EmergencyService,829,yes,empty
+EmergencyService,836,yes,empty
+EmergencyService,845,yes,empty
+EmergencyService,875,yes,empty
+EmergencyService,879,yes,empty
+EmergencyService,890,yes,empty
+EmergencyService,892,yes,empty
+EmergencyService,895,yes,empty
+EmergencyService,904,yes,empty
+EmergencyService,906,yes,empty
+EmergencyService,911,yes,empty
+EmergencyService,930,yes,empty
+EmergencyService,942,no,empty
+EmergencyService,947,no,empty
+EmergencyService,975,yes,empty
+EmergencyService,997,yes,empty
+EmergencyService,998,yes,empty
+Condition,1,surgical infection prevention,empty
+Condition,18,heart failure,empty
+Condition,27,heart failure,empty
+Condition,30,heart failure,empty
+Condition,63,surgical infection prevention,empty
+Condition,70,heart attack,empty
+Condition,76,heart attack,empty
+Condition,85,pneumonia,empty
+Condition,87,surgical infection prevention,empty
+Condition,88,surgical infection prevention,empty
+Condition,89,surgical infection prevention,empty
+Condition,99,heart attack,empty
+Condition,110,pneumonia,empty
+Condition,111,pneumonia,empty
+Condition,112,surgical infection prevention,empty
+Condition,117,surgical infection prevention,empty
+Condition,125,heart attack,empty
+Condition,126,heart attack,empty
+Condition,156,pneumonia,empty
+Condition,170,heart attack,empty
+Condition,184,pneumonia,empty
+Condition,187,surgical infection prevention,empty
+Condition,194,surgical infection prevention,empty
+Condition,195,heart attack,empty
+Condition,198,heart attack,empty
+Condition,200,heart attack,empty
+Condition,207,pneumonia,empty
+Condition,208,pneumonia,empty
+Condition,219,surgical infection prevention,empty
+Condition,232,pneumonia,empty
+Condition,235,pneumonia,empty
+Condition,240,surgical infection prevention,empty
+Condition,242,surgical infection prevention,empty
+Condition,245,heart attack,empty
+Condition,258,pneumonia,empty
+Condition,285,pneumonia,empty
+Condition,302,heart failure,empty
+Condition,305,heart failure,empty
+Condition,314,heart attack,empty
+Condition,333,heart failure,empty
+Condition,334,heart failure,empty
+Condition,346,surgical infection prevention,empty
+Condition,350,heart attack,empty
+Condition,410,surgical infection prevention,empty
+Condition,435,heart failure,empty
+Condition,458,pneumonia,empty
+Condition,459,surgical infection prevention,empty
+Condition,466,surgical infection prevention,empty
+Condition,470,heart attack,empty
+Condition,471,heart attack,empty
+Condition,473,heart attack,empty
+Condition,481,pneumonia,empty
+Condition,489,surgical infection prevention,empty
+Condition,502,heart failure,empty
+Condition,530,pneumonia,empty
+Condition,568,heart attack,empty
+Condition,571,heart attack,empty
+Condition,595,heart attack,empty
+Condition,600,heart failure,empty
+Condition,605,pneumonia,empty
+Condition,637,surgical infection prevention,empty
+Condition,676,heart failure,empty
+Condition,677,heart failure,empty
+Condition,693,heart attack,empty
+Condition,694,heart attack,empty
+Condition,696,heart attack,empty
+Condition,719,heart attack,empty
+Condition,724,heart failure,empty
+Condition,727,heart failure,empty
+Condition,729,pneumonia,empty
+Condition,735,surgical infection prevention,empty
+Condition,747,heart attack,empty
+Condition,749,heart failure,empty
+Condition,770,surgical infection prevention,empty
+Condition,791,pneumonia,empty
+Condition,794,pneumonia,empty
+Condition,817,pneumonia,empty
+Condition,823,surgical infection prevention,empty
+Condition,833,heart attack,empty
+Condition,855,heart attack,empty
+Condition,864,pneumonia,empty
+Condition,865,pneumonia,empty
+Condition,870,surgical infection prevention,empty
+Condition,873,surgical infection prevention,empty
+Condition,877,surgical infection prevention,empty
+Condition,878,heart attack,empty
+Condition,884,heart attack,empty
+Condition,886,heart failure,empty
+Condition,890,pneumonia,empty
+Condition,902,surgical infection prevention,empty
+Condition,904,children s asthma care,empty
+Condition,907,heart attack,empty
+Condition,921,pneumonia,empty
+Condition,926,surgical infection prevention,empty
+Condition,927,surgical infection prevention,empty
+Condition,966,heart failure,empty
+Condition,967,pneumonia,empty
+Condition,970,pneumonia,empty
+Condition,972,pneumonia,empty
+Condition,975,surgical infection prevention,empty
+Condition,977,surgical infection prevention,empty
+Condition,979,surgical infection prevention,empty
+Condition,989,heart failure,empty
+Condition,991,heart failure,empty
+MeasureCode,15,ami-8a,empty
+MeasureCode,35,pn-6,empty
+MeasureCode,39,scip-inf-2,empty
+MeasureCode,41,scip-inf-4,empty
+MeasureCode,43,scip-vte-1,empty
+MeasureCode,54,hf-3,empty
+MeasureCode,67,scip-inf-6,empty
+MeasureCode,72,ami-3,empty
+MeasureCode,76,ami-8a,empty
+MeasureCode,78,hf-2,empty
+MeasureCode,79,hf-3,empty
+MeasureCode,93,scip-vte-1,empty
+MeasureCode,95,ami-1,empty
+MeasureCode,100,ami-7a,empty
+MeasureCode,123,ami-4,empty
+MeasureCode,136,pn-7,empty
+MeasureCode,140,scip-inf-3,empty
+MeasureCode,141,scip-inf-4,empty
+MeasureCode,142,scip-inf-6,empty
+MeasureCode,149,ami-5,empty
+MeasureCode,170,ami-1,empty
+MeasureCode,173,ami-4,empty
+MeasureCode,176,ami-8a,empty
+MeasureCode,196,ami-2,empty
+MeasureCode,201,ami-8a,empty
+MeasureCode,205,hf-4,empty
+MeasureCode,207,pn-3b,empty
+MeasureCode,209,pn-5c,empty
+MeasureCode,210,pn-6,empty
+MeasureCode,225,ami-7a,empty
+MeasureCode,235,pn-6,empty
+MeasureCode,240,scip-inf-3,empty
+MeasureCode,244,scip-vte-2,empty
+MeasureCode,259,pn-5c,empty
+MeasureCode,268,scip-vte-1,empty
+MeasureCode,290,scip-inf-3,empty
+MeasureCode,294,scip-vte-2,empty
+MeasureCode,303,hf-2,empty
+MeasureCode,308,pn-4,empty
+MeasureCode,309,pn-5c,empty
+MeasureCode,310,pn-6,empty
+MeasureCode,318,ami-5,empty
+MeasureCode,323,hf-3,empty
+MeasureCode,324,hf-4,empty
+MeasureCode,333,hf-3,empty
+MeasureCode,338,pn-5c,empty
+MeasureCode,371,pn-7,empty
+MeasureCode,379,scip-vte-2,empty
+MeasureCode,382,ami-3,empty
+MeasureCode,424,hf-3,empty
+MeasureCode,428,pn-4,empty
+MeasureCode,435,hf-3,empty
+MeasureCode,443,scip-card-2,empty
+MeasureCode,451,ami-1,empty
+MeasureCode,459,scip-card-2,empty
+MeasureCode,476,hf-3,empty
+MeasureCode,483,pn-7,empty
+MeasureCode,495,ami-4,empty
+MeasureCode,504,pn-3b,empty
+MeasureCode,505,pn-4,empty
+MeasureCode,515,scip-vte-1,empty
+MeasureCode,516,scip-vte-2,empty
+MeasureCode,521,ami-5,empty
+MeasureCode,531,pn-5c,empty
+MeasureCode,541,scip-vte-2,empty
+MeasureCode,545,ami-4,empty
+MeasureCode,564,scip-inf-6,empty
+MeasureCode,593,ami-2,empty
+MeasureCode,598,ami-8a,empty
+MeasureCode,612,scip-inf-3,empty
+MeasureCode,617,ami-1,empty
+MeasureCode,630,pn-4,empty
+MeasureCode,649,hf-1,empty
+MeasureCode,654,pn-3b,empty
+MeasureCode,657,pn-6,empty
+MeasureCode,666,scip-vte-2,empty
+MeasureCode,687,scip-inf-3,empty
+MeasureCode,697,ami-7a,empty
+MeasureCode,701,hf-3,empty
+MeasureCode,703,pn-2,empty
+MeasureCode,706,pn-5c,empty
+MeasureCode,734,scip-card-2,empty
+MeasureCode,735,scip-inf-1,empty
+MeasureCode,739,scip-inf-6,empty
+MeasureCode,741,scip-vte-2,empty
+MeasureCode,753,pn-2,empty
+MeasureCode,772,scip-inf-6,empty
+MeasureCode,782,ami-5,empty
+MeasureCode,785,hf-1,empty
+MeasureCode,791,pn-4,empty
+MeasureCode,795,scip-card-2,empty
+MeasureCode,809,ami-8a,empty
+MeasureCode,825,scip-inf-6,empty
+MeasureCode,831,ami-4,empty
+MeasureCode,849,scip-inf-4,empty
+MeasureCode,852,scip-vte-2,empty
+MeasureCode,853,ami-1,empty
+MeasureCode,854,ami-2,empty
+MeasureCode,858,ami-7a,empty
+MeasureCode,874,scip-inf-4,empty
+MeasureCode,876,scip-vte-1,empty
+MeasureCode,882,ami-5,empty
+MeasureCode,888,hf-4,empty
+MeasureCode,898,scip-inf-3,empty
+MeasureCode,899,scip-inf-4,empty
+MeasureCode,907,ami-2,empty
+MeasureCode,908,ami-3,empty
+MeasureCode,925,scip-inf-2,empty
+MeasureCode,933,ami-3,empty
+MeasureCode,935,ami-5,empty
+MeasureCode,941,hf-4,empty
+MeasureCode,955,scip-vte-2,empty
+MeasureCode,957,ami-2,empty
+MeasureCode,976,scip-inf-3,empty
+MeasureCode,984,ami-4,empty
+MeasureCode,988,hf-1,empty
+MeasureCode,991,hf-4,empty
+MeasureCode,996,pn-6,empty
+MeasureName,1,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,empty
+MeasureName,16,heart failure patients given discharge instructions,empty
+MeasureName,33,pneumonia patients given smoking cessation advice/counseling,empty
+MeasureName,46,heart attack patients given aspirin at discharge,empty
+MeasureName,61,pneumonia patients assessed and given influenza vaccination,empty
+MeasureName,69,patients who got treatment  at the right time (within 24 hours before or after their surgery) to help prevent blood clots after certain types of surgery,empty
+MeasureName,83,pneumonia patients given smoking cessation advice/counseling,empty
+MeasureName,98,heart attack patients given smoking cessation advice/counseling,empty
+MeasureName,99,heart attack patients given beta blocker at discharge,empty
+MeasureName,116,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,empty
+MeasureName,154,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,159,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,empty
+MeasureName,189,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,199,heart attack patients given beta blocker at discharge,empty
+MeasureName,205,heart failure patients given smoking cessation advice/counseling,empty
+MeasureName,214,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,216,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,empty
+MeasureName,239,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,265,surgery patients whose preventive antibiotics were stopped at the right time (within 24 hours after surgery),empty
+MeasureName,271,heart attack patients given aspirin at discharge,empty
+MeasureName,286,pneumonia patients assessed and given influenza vaccination,empty
+MeasureName,302,heart failure patients given discharge instructions,empty
+MeasureName,305,heart failure patients given smoking cessation advice/counseling,empty
+MeasureName,320,heart attack patients given pci within 90 minutes of arrival,empty
+MeasureName,323,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,326,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,empty
+MeasureName,331,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,empty
+MeasureName,354,patients who got treatment  at the right time (within 24 hours before or after their surgery) to help prevent blood clots after certain types of surgery,empty
+MeasureName,367,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,empty
+MeasureName,389,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,391,pneumonia patients assessed and given pneumococcal vaccination,empty
+MeasureName,393,heart attack patients given aspirin at discharge,empty
+MeasureName,396,heart attack patients given beta blocker at discharge,empty
+MeasureName,402,heart failure patients given smoking cessation advice/counseling,empty
+MeasureName,413,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,empty
+MeasureName,415,heart attack patients given aspirin at arrival,empty
+MeasureName,418,heart attack patients given smoking cessation advice/counseling,empty
+MeasureName,421,heart attack patients given pci within 90 minutes of arrival,empty
+MeasureName,434,heart failure patients given an evaluation of left ventricular systolic (lvs) function,empty
+MeasureName,435,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,451,heart attack patients given aspirin at arrival,empty
+MeasureName,462,surgery patients whose preventive antibiotics were stopped at the right time (within 24 hours after surgery),empty
+MeasureName,499,heart failure patients given discharge instructions,empty
+MeasureName,501,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,505,pneumonia patients given smoking cessation advice/counseling,empty
+MeasureName,512,surgery patients whose preventive antibiotics were stopped at the right time (within 24 hours after surgery),empty
+MeasureName,523,heart attack patients given pci within 90 minutes of arrival,empty
+MeasureName,551,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,562,surgery patients whose preventive antibiotics were stopped at the right time (within 24 hours after surgery),empty
+MeasureName,578,pneumonia patients assessed and given pneumococcal vaccination,empty
+MeasureName,581,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,empty
+MeasureName,585,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,empty
+MeasureName,586,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,603,pneumonia patients assessed and given pneumococcal vaccination,empty
+MeasureName,614,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),empty
+MeasureName,619,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,630,pneumonia patients given smoking cessation advice/counseling,empty
+MeasureName,634,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,empty
+MeasureName,636,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,661,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,664,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),empty
+MeasureName,685,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,empty
+MeasureName,689,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),empty
+MeasureName,715,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,empty
+MeasureName,739,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),empty
+MeasureName,741,patients who got treatment  at the right time (within 24 hours before or after their surgery) to help prevent blood clots after certain types of surgery,empty
+MeasureName,750,heart failure patients given an evaluation of left ventricular systolic (lvs) function,empty
+MeasureName,767,children who received reliever medication while hospitalized for asthma,empty
+MeasureName,780,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,781,heart attack patients given smoking cessation advice/counseling,empty
+MeasureName,796,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,empty
+MeasureName,797,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,805,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,818,pneumonia patients given the most appropriate initial antibiotic(s),empty
+MeasureName,826,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,empty
+MeasureName,830,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,847,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,871,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,empty
+MeasureName,872,surgery patients who were given the  right kind  of antibiotic to help prevent infection,empty
+MeasureName,880,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,905,children and their caregivers who received a home management plan of care document while hospitalized for asthma,empty
+MeasureName,916,heart failure patients given smoking cessation advice/counseling,empty
+MeasureName,917,pneumonia patients assessed and given pneumococcal vaccination,empty
+MeasureName,919,pneumonia patients given smoking cessation advice/counseling,empty
+MeasureName,924,surgery patients who were given an antibiotic at the right time (within one hour before surgery) to help prevent infection,empty
+MeasureName,929,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,empty
+MeasureName,945,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,empty
+MeasureName,948,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,empty
+MeasureName,956,heart attack patients given aspirin at arrival,empty
+MeasureName,986,heart attack patients given fibrinolytic medication within 30 minutes of arrival,empty
+MeasureName,987,heart attack patients given pci within 90 minutes of arrival,empty
+MeasureName,990,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),empty
+MeasureName,998,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,empty
+Score,9,97%,empty
+Score,13,86%,empty
+Score,19,100%,empty
+Score,30,100%,empty
+Score,53,99%,empty
+Score,65,95%,empty
+Score,67,100%,empty
+Score,72,93%,empty
+Score,74,96%,empty
+Score,81,90%,empty
+Score,82,95%,empty
+Score,88,99%,empty
+Score,130,0%,empty
+Score,154,100%,empty
+Score,167,100%,empty
+Score,204,98%,empty
+Score,240,98%,empty
+Score,242,100%,empty
+Score,252,100%,empty
+Score,255,88%,empty
+Score,259,96%,empty
+Score,268,90%,empty
+Score,270,99%,empty
+Score,280,100%,empty
+Score,287,89%,empty
+Score,319,0%,empty
+Score,321,87%,empty
+Score,328,97%,empty
+Score,351,85%,empty
+Score,355,100%,empty
+Score,357,100%,empty
+Score,367,98%,empty
+Score,368,98%,empty
+Score,374,99%,empty
+Score,382,100%,empty
+Score,400,94%,empty
+Score,406,94%,empty
+Score,444,96%,empty
+Score,460,92%,empty
+Score,461,91%,empty
+Score,468,100%,empty
+Score,471,83%,empty
+Score,472,0%,empty
+Score,500,94%,empty
+Score,506,89%,empty
+Score,526,100%,empty
+Score,536,97%,empty
+Score,544,79%,empty
+Score,551,85%,empty
+Score,555,91%,empty
+Score,558,82%,empty
+Score,575,99%,empty
+Score,579,95%,empty
+Score,604,100%,empty
+Score,627,100%,empty
+Score,639,100%,empty
+Score,641,90%,empty
+Score,679,92%,empty
+Score,685,88%,empty
+Score,712,100%,empty
+Score,720,100%,empty
+Score,729,100%,empty
+Score,730,100%,empty
+Score,751,86%,empty
+Score,765,80%,empty
+Score,766,80%,empty
+Score,772,100%,empty
+Score,774,89%,empty
+Score,779,100%,empty
+Score,790,99%,empty
+Score,811,100%,empty
+Score,825,100%,empty
+Score,832,100%,empty
+Score,838,100%,empty
+Score,854,67%,empty
+Score,862,78%,empty
+Score,864,96%,empty
+Score,889,85%,empty
+Score,906,100%,empty
+Score,957,100%,empty
+Score,963,96%,empty
+Score,972,100%,empty
+Score,985,100%,empty
+Score,989,85%,empty
+Score,1000,88%,empty
+Sample,21,516 patients,empty
+Sample,51,0 patients,empty
+Sample,66,0 patients,empty
+Sample,70,159 patients,empty
+Sample,88,457 patients,empty
+Sample,96,2 patients,empty
+Sample,99,2 patients,empty
+Sample,114,101 patients,empty
+Sample,139,2 patients,empty
+Sample,156,44 patients,empty
+Sample,159,51 patients,empty
+Sample,161,30 patients,empty
+Sample,175,0 patients,empty
+Sample,176,0 patients,empty
+Sample,183,65 patients,empty
+Sample,188,66 patients,empty
+Sample,202,316 patients,empty
+Sample,213,461 patients,empty
+Sample,260,26 patients,empty
+Sample,278,246 patients,empty
+Sample,315,73 patients,empty
+Sample,332,342 patients,empty
+Sample,346,1295 patients,empty
+Sample,347,497 patients,empty
+Sample,357,2 patients,empty
+Sample,366,66 patients,empty
+Sample,372,19 patients,empty
+Sample,375,98 patients,empty
+Sample,393,4 patients,empty
+Sample,409,1 patients,empty
+Sample,411,10 patients,empty
+Sample,417,1 patients,empty
+Sample,418,0 patients,empty
+Sample,420,0 patients,empty
+Sample,421,0 patients,empty
+Sample,423,105 patients,empty
+Sample,438,47 patients,empty
+Sample,443,106 patients,empty
+Sample,450,223 patients,empty
+Sample,458,119 patients,empty
+Sample,464,369 patients,empty
+Sample,479,67 patients,empty
+Sample,489,94 patients,empty
+Sample,493,1 patients,empty
+Sample,496,0 patients,empty
+Sample,497,0 patients,empty
+Sample,513,0 patients,empty
+Sample,516,5 patients,empty
+Sample,517,134 patients,empty
+Sample,532,71 patients,empty
+Sample,535,412 patients,empty
+Sample,536,423 patients,empty
+Sample,540,179 patients,empty
+Sample,543,165 patients,empty
+Sample,547,0 patients,empty
+Sample,583,60 patients,empty
+Sample,603,31 patients,empty
+Sample,634,208 patients,empty
+Sample,643,3 patients,empty
+Sample,679,378 patients,empty
+Sample,688,140 patients,empty
+Sample,702,9 patients,empty
+Sample,708,56 patients,empty
+Sample,713,0 patients,empty
+Sample,735,411 patients,empty
+Sample,736,417 patients,empty
+Sample,781,135 patients,empty
+Sample,782,301 patients,empty
+Sample,784,44 patients,empty
+Sample,787,102 patients,empty
+Sample,808,25 patients,empty
+Sample,813,70 patients,empty
+Sample,815,187 patients,empty
+Sample,818,153 patients,empty
+Sample,821,557 patients,empty
+Sample,822,564 patients,empty
+Sample,836,28 patients,empty
+Sample,843,38 patients,empty
+Sample,850,5 patients,empty
+Sample,858,0 patients,empty
+Sample,863,10 patients,empty
+Sample,876,4 patients,empty
+Sample,900,7 patients,empty
+Sample,904,4 patients,empty
+Sample,911,8 patients,empty
+Sample,915,90 patients,empty
+Sample,936,0 patients,empty
+Sample,937,0 patients,empty
+Sample,941,8 patients,empty
+Sample,987,0 patients,empty
+Sample,998,8 patients,empty
+Sample,999,28 patients,empty
+Stateavg,2,al_scip-inf-1,empty
+Stateavg,5,al_scip-inf-4,empty
+Stateavg,10,al_ami-2,empty
+Stateavg,12,al_ami-4,empty
+Stateavg,31,al_pn-2,empty
+Stateavg,33,al_pn-4,empty
+Stateavg,35,al_pn-6,empty
+Stateavg,37,al_scip-card-2,empty
+Stateavg,51,al_ami-8a,empty
+Stateavg,52,al_hf-1,empty
+Stateavg,55,al_hf-4,empty
+Stateavg,56,al_pn-2,empty
+Stateavg,76,al_ami-8a,empty
+Stateavg,88,al_scip-inf-1,empty
+Stateavg,98,al_ami-4,empty
+Stateavg,101,al_ami-8a,empty
+Stateavg,102,al_hf-1,empty
+Stateavg,106,al_pn-2,empty
+Stateavg,135,al_pn-6,empty
+Stateavg,137,al_scip-card-2,empty
+Stateavg,147,al_ami-3,empty
+Stateavg,148,al_ami-4,empty
+Stateavg,162,al_scip-card-2,empty
+Stateavg,173,al_ami-4,empty
+Stateavg,178,al_hf-2,empty
+Stateavg,190,al_scip-inf-3,empty
+Stateavg,201,al_ami-8a,empty
+Stateavg,207,al_pn-3b,empty
+Stateavg,208,al_pn-4,empty
+Stateavg,218,al_scip-vte-1,empty
+Stateavg,221,al_ami-2,empty
+Stateavg,232,al_pn-3b,empty
+Stateavg,233,al_pn-4,empty
+Stateavg,238,al_scip-inf-1,empty
+Stateavg,248,al_ami-4,empty
+Stateavg,253,al_hf-2,empty
+Stateavg,267,al_scip-inf-6,empty
+Stateavg,328,al_pn-5c,empty
+Stateavg,330,al_pn-7,empty
+Stateavg,339,al_pn-6,empty
+Stateavg,358,al_ami-4,empty
+Stateavg,365,al_hf-4,empty
+Stateavg,382,al_ami-3,empty
+Stateavg,436,ak_hf-4,empty
+Stateavg,443,ak_scip-card-2,empty
+Stateavg,454,al_pn-3b,empty
+Stateavg,457,al_pn-6,empty
+Stateavg,462,al_scip-inf-3,empty
+Stateavg,465,al_scip-vte-1,empty
+Stateavg,484,al_scip-card-2,empty
+Stateavg,485,al_scip-inf-1,empty
+Stateavg,486,al_scip-inf-2,empty
+Stateavg,505,al_pn-4,empty
+Stateavg,509,al_scip-card-2,empty
+Stateavg,518,al_ami-2,empty
+Stateavg,546,al_ami-5,empty
+Stateavg,549,al_hf-1,empty
+Stateavg,558,al_pn-7,empty
+Stateavg,568,al_ami-2,empty
+Stateavg,590,al_scip-vte-1,empty
+Stateavg,621,al_ami-5,empty
+Stateavg,622,al_ami-7a,empty
+Stateavg,641,al_scip-vte-2,empty
+Stateavg,651,al_hf-3,empty
+Stateavg,659,al_scip-card-2,empty
+Stateavg,666,al_scip-vte-2,empty
+Stateavg,675,al_hf-2,empty
+Stateavg,689,al_scip-inf-6,empty
+Stateavg,695,al_ami-4,empty
+Stateavg,699,al_hf-1,empty
+Stateavg,701,al_hf-3,empty
+Stateavg,704,al_pn-3b,empty
+Stateavg,709,al_scip-card-2,empty
+Stateavg,715,al_scip-vte-1,empty
+Stateavg,718,al_ami-2,empty
+Stateavg,719,al_ami-3,empty
+Stateavg,749,al_hf-1,empty
+Stateavg,757,al_pn-6,empty
+Stateavg,790,al_pn-3b,empty
+Stateavg,792,al_pn-5c,empty
+Stateavg,813,al_hf-4,empty
+Stateavg,834,al_ami-8a,empty
+Stateavg,841,al_pn-4,empty
+Stateavg,845,al_scip-card-2,empty
+Stateavg,850,al_scip-inf-6,empty
+Stateavg,853,al_ami-1,empty
+Stateavg,860,al_hf-1,empty
+Stateavg,865,al_pn-3b,empty
+Stateavg,888,al_hf-4,empty
+Stateavg,933,al_ami-3,empty
+Stateavg,934,al_ami-4,empty
+Stateavg,957,al_ami-2,empty
+Stateavg,966,al_hf-4,empty
+Stateavg,979,al_scip-vte-1,empty
+Stateavg,982,al_ami-2,empty
+Stateavg,999,al_scip-inf-1,empty

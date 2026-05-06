@@ -1,0 +1,1832 @@
+Attribute,Index,Dirty Value,Clean Value
+id,3,3572852.7737189806,789958
+id,4,nan,169865
+id,8,nan,729712
+id,12,2420356.4955426008,729686
+id,17,nan,668310
+id,26,nan,21910
+id,27,nan,378490
+id,47,2051262.0413866444,433667
+id,48,2364852.250862953,530323
+id,50,4714895.704858086,864817
+id,54,162822.06756023582,42247
+id,56,nan,158672
+id,62,379660.74138787383,108424
+id,63,4171925.303389718,841679
+id,65,nan,852927
+id,66,nan,237623
+id,80,nan,282039
+id,81,nan,835177
+id,86,nan,894596
+id,92,2993374.209795387,612846
+id,105,nan,72089
+id,109,nan,125072
+id,118,nan,185291
+id,122,nan,843485
+id,137,2898580.447730436,513829
+id,138,nan,862798
+id,149,nan,224232
+id,157,nan,963532
+id,164,nan,199407
+id,170,1683996.8950117575,456691
+id,177,nan,835178
+id,178,1186958.216535685,335521
+id,183,nan,431896
+id,191,nan,928952
+id,197,nan,143029
+id,201,nan,55412
+id,202,2540793.314797627,546048
+id,210,4650688.498546807,979059
+id,214,nan,440401
+id,215,nan,77389
+id,218,1444998.975209473,288711
+id,222,1584859.8496251472,315926
+id,228,nan,572425
+id,229,nan,581864
+id,231,3770464.861488998,696362
+id,235,nan,659896
+id,238,5138498.787168146,922795
+id,240,1367432.3688892017,428363
+id,241,nan,519287
+id,242,nan,638918
+id,247,nan,59308
+id,250,nan,846537
+id,254,2221937.7707821997,417373
+id,256,1740049.352803504,386327
+id,269,nan,782541
+id,270,nan,692358
+id,272,3571824.7840988664,867207
+id,277,nan,113399
+id,286,609307.7583821807,198650
+id,287,3971194.635456971,671386
+id,291,155681.30599988648,46028
+id,309,nan,872389
+id,312,1157981.6335723158,320139
+id,315,nan,152626
+id,316,283416.14755147597,90272
+id,326,2514534.570919428,453637
+id,339,2772512.5014983835,853676
+id,346,3015787.011344352,950233
+id,351,nan,720775
+id,352,nan,294439
+id,355,nan,896848
+id,362,nan,235924
+id,370,1395566.572759958,313030
+id,373,988753.2665093936,180827
+id,374,nan,723057
+id,385,3434003.3366423487,615903
+id,397,1543487.965547036,343395
+id,398,nan,826830
+id,409,nan,205187
+id,412,nan,583682
+id,414,nan,54613
+id,422,612547.1823571414,119186
+id,434,4181409.368201676,972821
+id,439,nan,982590
+id,442,nan,71263
+id,444,5094022.5055469,941646
+id,458,nan,226966
+id,466,4047123.380299286,873987
+id,478,nan,516758
+id,483,nan,732272
+id,487,2532084.610508674,684476
+id,493,nan,208435
+id,497,nan,720372
+id,499,836965.4373815777,260745
+id,504,nan,958639
+id,506,nan,125302
+id,510,nan,473599
+id,515,1556537.2158619915,408902
+id,516,nan,89897
+id,529,241806.52457432545,73792
+id,533,2250627.422184431,408198
+id,540,nan,592663
+id,547,1598522.358407209,491837
+id,550,nan,26475
+id,553,2378053.8952027815,467318
+id,557,nan,258486
+id,561,nan,812757
+id,564,nan,828214
+id,573,1687087.1679555138,283168
+id,576,nan,373015
+id,579,3145903.176092824,966388
+id,581,1882394.779732392,494428
+id,587,nan,918698
+id,594,635010.3900309847,161847
+id,598,nan,314737
+id,613,2535973.826551568,584706
+id,620,nan,779555
+id,622,nan,646572
+id,623,623441.1070420307,128182
+id,625,1177194.6990675223,231933
+id,628,684349.2905874838,117678
+id,636,3652769.724836585,944558
+id,643,2851989.1249497193,847600
+id,650,nan,935189
+id,656,3433306.1269105654,950926
+id,659,2421111.369678796,526825
+id,665,nan,541739
+id,666,nan,558824
+id,671,nan,193059
+id,672,2405624.5737396595,416171
+id,676,1579226.046511835,490750
+id,677,nan,136068
+id,683,nan,280418
+id,694,179280.9727615298,45797
+id,696,nan,749261
+id,707,1995689.3399920173,560120
+id,719,nan,820059
+id,721,nan,54202
+id,722,4014973.0818350017,888477
+id,727,nan,453909
+id,730,nan,696132
+id,733,2213953.7221353357,617801
+id,742,nan,123731
+id,746,nan,964184
+id,752,nan,292018
+id,755,991495.9742901864,276001
+id,762,2673932.594226847,570704
+id,763,1905987.5763165744,520153
+id,769,58556.66366617102,18298
+id,780,nan,62246
+id,790,447912.0708638633,97795
+id,792,404132.4772480669,100986
+id,793,nan,166179
+id,805,1051627.1990380858,252118
+id,814,nan,133777
+id,816,2824529.759212428,497593
+id,819,nan,161290
+id,826,2232319.757834478,382853
+id,833,1741432.6201119367,446599
+id,840,116749.68334784146,38130
+id,845,nan,176844
+id,854,nan,12554
+id,864,3635203.7631700286,673560
+id,868,nan,570263
+id,871,3215830.2942954767,813023
+id,874,491999.5130096147,121133
+id,875,nan,82486
+id,878,1489533.194524614,448384
+id,886,nan,399134
+id,890,nan,730754
+id,895,nan,198813
+id,901,nan,6786
+id,910,343657.8697616079,82540
+id,918,1820136.2537156325,345575
+id,927,4488803.962963375,892141
+id,932,410189.8980729943,83012
+id,936,1115660.4838847627,296269
+id,937,5310801.254213972,960478
+id,945,nan,168157
+id,947,2954976.502922918,740227
+id,949,nan,456934
+id,950,nan,134738
+id,955,nan,272806
+id,956,3850857.563119862,773090
+id,958,nan,385346
+id,959,nan,938092
+id,966,181003.74055289448,35875
+id,978,551805.9077257427,160121
+id,979,nan,471093
+id,983,5040652.222441577,946487
+id,987,3023835.4546241323,558738
+id,988,3853020.463024448,908011
+id,991,nan,752075
+id,992,3210334.0088600484,670823
+id,997,nan,814758
+article_title,4,[Noninvasive p@@renatal diagnosis of trisomy 21 18 and 13 using $cell-free fetal DNA],[Noninvasive prenatal diagnosis of trisomy 21 18 and 13 using cell-free fetal DNA]
+article_title,5,Diagnosis and Management of C#utaneous B-cell Lymphoma.,Diagnosis and Management of Cutaneous B-cell Lymphoma.
+article_title,7,Activation an@@d blockade of beta adrenoceptors in common cardiac disorders,Activation and blockade of beta adrenoceptors in common cardiac disorders
+article_title,19,Haemodynamic ischaemia in paediatric moyamoya disease associa@@ted with renovascular hypertension.,Haemodynamic ischaemia in paediatric moyamoya disease associated with renovascular hypertension.
+article_title,26,nan,Examining waiting placement in hospital: utilization and the lived experience.
+article_title,31,nan,[A case of giant Brunner's gland hyperplasia combined with adenomyomatous hyperplasia].
+article_title,38,Fat and neurosurgery: does obesity affect outcom$e after in@@tracranial surgery?,Fat and neurosurgery: does obesity affect outcome after intracranial surgery?
+article_title,40,The i#%ncidence of contrast-induced nephropathy in trauma patients.,The incidence of contrast-induced nephropathy in trauma patients.
+article_title,47,Norton Waterlow and Braden scores: a review of t??he literature and a comparison between the scores and clinical judgement,Norton Waterlow and Braden scores: a review of the literature and a comparison between the scores and clinical judgement
+article_title,51,nan,Use of alendronate in peri-implant defect regeneration
+article_title,55,nan,Adolescent overscheduling: The relationship between levels of participation in scheduled activities and self-reported clinical symptomology
+article_title,58,nan,Novel genetic linkage of rat Sp6 mutation to Amelogenesis imperfecta
+article_title,59,Educatin$g Emergent Bilinguals: Policies P@@rograms and Practices for English Language Learners. Language & Literacy Series,Educating Emergent Bilinguals: Policies Programs and Practices for English Language Learners. Language & Literacy Series
+article_title,61,nan,Current palliative chemotherapy trials in the elderly neglect patient-centred outcome measures.
+article_title,63,A Mod$ified Technique for Pulmonary Valve Replacement with a Homograft,A Modified Technique for Pulmonary Valve Replacement with a Homograft
+article_title,66,nan,Neck pain.
+article_title,71,nan,A pilot study of rituximab in patients with recurrent classic Hodgkin disease.
+article_title,74,nan,Three-year Outcomes in de Novo Liver Transplant Patients     Receiving Everolimus with Reduced Tacrolimus: Follow-Up Results from     a Randomized Multicenter Study
+article_title,77,Health-promoting behaviors of low-income can$cer survivors,Health-promoting behaviors of low-income cancer survivors
+article_title,84,Adheren#ce to fesoterodine in women with @@overactive bladder in routine clinical practice.,Adherence to fesoterodine in women with overactive bladder in routine clinical practice.
+article_title,85,nan,Chronic pain related to quality of sleep
+article_title,89,FIGO staging of gynecologic cancer.$ 1994-1997 FIGO Committee on Gynecologic Oncology. International Federation of Gynecology and Obstetrics,FIGO staging of gynecologic cancer. 1994-1997 FIGO Committee on Gynecologic Oncology. International Federation of Gynecology and Obstetrics
+article_title,115,T$he value of a continuous ambulatory activity monitor to quantify the amoun@@t and intensity of daily activity in patients with rheumatoid arthritis.,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.
+article_title,116,nan,Antiplatelet therapy in patients with ST-elevation myocardial infarction undergoing myocardial revascularisation: Beyond clopidogrel.
+article_title,124,Sustained c$omplete remission of a limited-stage blastic plasmacytoid dendritic cell neoplasm followed by a sim%ultaneous combination of low-dose DeVIC therapy and radiation therapy: a case report and review of the literature.,Sustained complete remission of a limited-stage blastic plasmacytoid dendritic cell neoplasm followed by a simultaneous combination of low-dose DeVIC therapy and radiation therapy: a case report and review of the literature.
+article_title,125,Primary vaginal cancer and chemoradiotherapy: a patte%rns-of-care anal#ysis,Primary vaginal cancer and chemoradiotherapy: a patterns-of-care analysis
+article_title,126,nan,[Neurological dysfunction induced by bilirrubin].
+article_title,132,nan,Low prevalence and increased household clustering of Mycobacterium tuberculosis infection in high altitude villages in Peru.
+article_title,148,nan,The value of routine radiography in patients with knee osteoarthritis consulting primary health care: a study of agreement
+article_title,156,nan,Posterior positional plagiocephaly treated with cranial remodeling orthosis.
+article_title,174,nan,Sinus arrhythmia and pupil size in Chiari I malformation: Evidence of autonomic dysfunction
+article_title,187,nan,A randomized study with a hyaluronic acid and chondroitin sulfate lotion for radiodermitis in breast cancer patients
+article_title,189,nan,Using Debate as a Pedagogical Tool in Enhancing Pre-Service Teachers' Learning and Critical Thinking
+article_title,191,nan,Are physicians and patients in agreement? Exploring dyadic concordance
+article_title,197,Steroids and antihistamines synergiz$e to inhibit ra@@t's airway smooth muscle contractility.,Steroids and antihistamines synergize to inhibit rat's airway smooth muscle contractility.
+article_title,200,nan,Ultrasonically enhanced vancomycin activity against Staphylococcus epidermidis biofilms in vivo.
+article_title,203,nan,Muscle - tendon unit mechanical and morphological properties and sprint performance.
+article_title,204,An insulin-??like growth factor-I gene polymorphism modifies the risk of microalbuminuria in subjects with an abnormal glucose tolerance,An insulin-like growth factor-I gene polymorphism modifies the risk of microalbuminuria in subjects with an abnormal glucose tolerance
+article_title,205,nan,Biofeedback dialysis for hypotension and hypervolemia: a systematic review and meta-analysis.
+article_title,206,Cytokine profiling of young overweight and obese fe$male African American adults with prediabetes,Cytokine profiling of young overweight and obese female African American adults with prediabetes
+article_title,207,Review of prasugrel for the secondary prevention of %atherothrombosis.,Review of prasugrel for the secondary prevention of atherothrombosis.
+article_title,209,nan,Pancreatic surgery. A paradigm for progress in the age of the bottom line
+article_title,216,nan,Isolates and antibiotic resistance of culture-proven endophthalmitis cases presented to a referral center in Tehran
+article_title,220,Life stress and the long-term treatment course of recurrent depression: III. Nonseve@@re life events predict recurrenc%e for medicated patients over 3 years,Life stress and the long-term treatment course of recurrent depression: III. Nonsevere life events predict recurrence for medicated patients over 3 years
+article_title,225,Atomoxetine treatment of child%ren and adoles$cents with ADHD: Clinical questions and answers. (German),Atomoxetine treatment of children and adolescents with ADHD: Clinical questions and answers. (German)
+article_title,232,Tropical infec$tion after a ca@@se of total hip arthroplasty.,Tropical infection after a case of total hip arthroplasty.
+article_title,236,nan,Body mass index and outcome of ASC-H-interpreted cervical smears in postmenopausal women.
+article_title,258,Mortality at older ages and moves in residential$ and sheltered housing: evidence from the UK,Mortality at older ages and moves in residential and sheltered housing: evidence from the UK
+article_title,274,A geographic analysis of chronically ??homeless adults before and after enrollment in a multi-site supported housing initiative: community characteristics and migration,A geographic analysis of chronically homeless adults before and after enrollment in a multi-site supported housing initiative: community characteristics and migration
+article_title,277,nan,Use of Job Design to Reduce Mechanical Stress on the Back
+article_title,279,nan,A meta-analysis of two genome-wide association studies identifies 3 new loci for alcohol dependence.
+article_title,280,Crowdsourced Multimedia Enhanced Spatio-tem??poral Constraint Based on-Demand Social Network for Group% Mobility,Crowdsourced Multimedia Enhanced Spatio-temporal Constraint Based on-Demand Social Network for Group Mobility
+article_title,290,Direct healthcare costs and cost-effectiveness of acute coronary syndrome secondary p%revention with #ticagrelor compared to clopidogrel: Economic evaluation from the public payer's perspective in Poland based on the PLATO trial results,Direct healthcare costs and cost-effectiveness of acute coronary syndrome secondary prevention with ticagrelor compared to clopidogrel: Economic evaluation from the public payer's perspective in Poland based on the PLATO trial results
+article_title,295,Treatment of large vessel vascu$litis,Treatment of large vessel vasculitis
+article_title,296,Quantitative assessment of the influence of common varia??tions (rs%8034191 and rs1051730) at 15q25 and lung cancer risk.,Quantitative assessment of the influence of common variations (rs8034191 and rs1051730) at 15q25 and lung cancer risk.
+article_title,305,nan,Anxiety and depression in patients with chronic obstructive pulmonary disease: an open agenda for research.
+article_title,320,Normalisation of left ventricular systolic function after change from VVI pacing to biventricular pacing in a child with conge@@nital complete atrioventricular block long-QT syndrome and congenital muscular dystrophy: a 10-year follow-up.,Normalisation of left ventricular systolic function after change from VVI pacing to biventricular pacing in a child with congenital complete atrioventricular block long-QT syndrome and congenital muscular dystrophy: a 10-year follow-up.
+article_title,322,Radiographic detection of artificially created horizontal root fracture using different cone beam CT units with small f$ields of view.,Radiographic detection of artificially created horizontal root fracture using different cone beam CT units with small fields of view.
+article_title,323,nan,Pharmacological treatments for obsessive-compulsive disorder in children and adolescents: a qualitative review.
+article_title,324,Anterior approach unilateral right sacrospinous fixation for recurrent pelvic organ prolapse following multi#ple c??olorectal surgeries.,Anterior approach unilateral right sacrospinous fixation for recurrent pelvic organ prolapse following multiple colorectal surgeries.
+article_title,331,Usefulness of a Survey on Underage Drinking in a Rural American Indian Com#munity Health Clinic,Usefulness of a Survey on Underage Drinking in a Rural American Indian Community Health Clinic
+article_title,338,nan,Long-term outcome for immune suppression and immune related lymphoproliferative disorder: Prospective data from the United Kingdom Children's Leukaemia and Cancer Group registry 1994-2004
+article_title,339,Pulsed cyclophosphamide thalidomi??de and dexamethasone: an oral regimen for previously treated patients with multiple myeloma.,Pulsed cyclophosphamide thalidomide and dexamethasone: an oral regimen for previously treated patients with multiple myeloma.
+article_title,344,nan,Spontaneous pneumomediastinum in a healthy adolescent.
+article_title,348,nan,Stapled haemorrhoidopexy for the treatment of haemorrhoids: a systematic review.
+article_title,349,Rapid diagnosis of My??cobacterium tuberculosis infection in children using interferon-gamma release assays (IGR#As).,Rapid diagnosis of Mycobacterium tuberculosis infection in children using interferon-gamma release assays (IGRAs).
+article_title,351,nan,Depression treatment preferences among Japanese undergraduates: using conjoint analysis
+article_title,360,Specific collaborative group intervention for patients with medically unexplained symptoms in general practice: A cluster rand$omized controlled trial,Specific collaborative group intervention for patients with medically unexplained symptoms in general practice: A cluster randomized controlled trial
+article_title,368,nan,[Changes in plasma concentrations of human hepatocyte growth factor before and after major intra-abdominal surgery under nitrous oxide-sevoflurane anesthesia].
+article_title,373,CO2 emission inventories for Chinese cities in highly urb@@anized areas compared with European cities,CO2 emission inventories for Chinese cities in highly urbanized areas compared with European cities
+article_title,375,Trends in the quality of data from 5168 oligonucleoti$de microarrays from a single facility,Trends in the quality of data from 5168 oligonucleotide microarrays from a single facility
+article_title,382,The pathogenesis of normal %pressure hy#drocephalus: a theoretical analysis.,The pathogenesis of normal pressure hydrocephalus: a theoretical analysis.
+article_title,389,Attitudes of physicians regard$ing anticoagulation $for atrial fibrillation: a systematic review. [Review],Attitudes of physicians regarding anticoagulation for atrial fibrillation: a systematic review. [Review]
+article_title,390,Impact of clinical pharmacist intervention on diabetes#-related outcomes in a military treatment facility,Impact of clinical pharmacist intervention on diabetes-related outcomes in a military treatment facility
+article_title,391,nan,Usefulness of US cost-of-illness studies in healthcare decision making.
+article_title,392,Diabetes incidence in Pi$ma indians: contributions of @@obesity and parental diabetes.,Diabetes incidence in Pima indians: contributions of obesity and parental diabetes.
+article_title,395,Oral dimenhydrinate versus@@ placebo in children with gastroenteritis: A #randomized controlled trial,Oral dimenhydrinate versus placebo in children with gastroenteritis: A randomized controlled trial
+article_title,404,Pneumonia and encephalopathy in a patient with progressing Parkinson's disease and# dementia,Pneumonia and encephalopathy in a patient with progressing Parkinson's disease and dementia
+article_title,406,nan,Clinical and pharmacologic phase I study of Cemadotin-HCl (LU103793) a novel antimitotic peptide given as 24-hour infusion in patients with advanced cancer. A study of the Arbeitsgemeinschaft Internistische Onkologie (AIO) Phase I Group and Arbeitsgruppe Pharmakologie in der Onkologie und Haematologie (APOH) Group of the German Cancer Society.
+article_title,411,Co#ntinuation of metformin reduces $early pregnancy loss in obese Pakistani women with polycystic ovarian syndrome,Continuation of metformin reduces early pregnancy loss in obese Pakistani women with polycystic ovarian syndrome
+article_title,412,nan,Critique that! Analytical Writing Assignments in Advanced Mathematics Courses
+article_title,414,nan,Evaluation of an Internet Support Group for Women with Primary Breast Cancer
+article_title,420,nan,Impact of hepatitis C on survival in dialysis patients: A link with cardiovascular mortality?.
+article_title,426,Discontinuing penicillin prophylaxis in children with sickle cell anemia. ??Prophylactic Penicillin Study II,Discontinuing penicillin prophylaxis in children with sickle cell anemia. Prophylactic Penicillin Study II
+article_title,430,Reproduction of excursive tooth contact in an articulator with computerized axiograp#hy data,Reproduction of excursive tooth contact in an articulator with computerized axiography data
+article_title,437,$The impact of orthodontic treatment on the quality of life a systematic review.$,The impact of orthodontic treatment on the quality of life a systematic review.
+article_title,448,Electrocardiogram QRS detection using multiscale filtering based on mathematical morpholog??y$,Electrocardiogram QRS detection using multiscale filtering based on mathematical morphology
+article_title,450,Cystic fibrosis: cost of illness# and considerations for the economic evaluation of potential therapies,Cystic fibrosis: cost of illness and considerations for the economic evaluation of potential therapies
+article_title,451,nan,Working memory short-term memory and reading disabilities: a selective meta-analysis of the literature.
+article_title,458,Vaginal incisiona??l wound healing in a rabbit menopause model: a histologic analysi%s.,Vaginal incisional wound healing in a rabbit menopause model: a histologic analysis.
+article_title,466,nan,Bullous impetigo in children infected with methicillin-resistant Staphylococcus aureus alone or in combination with methicillin-susceptible S. aureus: analysis of genetic characteristics including assessment of exfoliative toxin gene carriage
+article_title,469,Impact of endoscopic ultrasonography (EUS) on surgical decision-making in upper gastrointestinal tract cancer: An internationa#l multicenter study,Impact of endoscopic ultrasonography (EUS) on surgical decision-making in upper gastrointestinal tract cancer: An international multicenter study
+article_title,470,Family care giving in th@@e context o%f HIV/AIDS in Africa,Family care giving in the context of HIV/AIDS in Africa
+article_title,471,Empowered diabetes management: life coaching$ and pharmacist counseling for employed adults with diabetes,Empowered diabetes management: life coaching and pharmacist counseling for employed adults with diabetes
+article_title,482,Chronic pain-associated behaviors in the nursing home: resident versus careg@@iver perceptions,Chronic pain-associated behaviors in the nursing home: resident versus caregiver perceptions
+article_title,484,Commun??ity nursing is@@sues in Maori mental health.,Community nursing issues in Maori mental health.
+article_title,487,nan,Pulmonary rehabilitation for chronic obstructive pulmonary disease: a pilot study evaluating a once-weekly versus twice-weekly supervised programme.
+article_title,488,nan,Primary Banded Roux-en-Y Gastric Bypass: a Systematic Review.
+article_title,494,nan,Fludarabine vs cladribine plus busulfan and low-dose TBI as reduced intensity conditioning for allogeneic hematopoietic stem cell transplantation: a prospective randomized trial
+article_title,496,nan,Does this patient have obstructive sleep apnea?: The Rational Clinical Examination systematic review.
+article_title,500,Is prolonged use of computer games a risk factor for deep venous thrombosi%s in children?,Is prolonged use of computer games a risk factor for deep venous thrombosis in children?
+article_title,507,Trends in domestic violence service and leadership#: implications for% an integrated shelter model,Trends in domestic violence service and leadership: implications for an integrated shelter model
+article_title,512,Cogniti??ve Outcome of Pediatric Moyamo??ya Disease.,Cognitive Outcome of Pediatric Moyamoya Disease.
+article_title,513,Fruit consumption and risk of type 2 diabetes: results from three prospective longitudinal@@ cohort studies.,Fruit consumption and risk of type 2 diabetes: results from three prospective longitudinal cohort studies.
+article_title,521,nan,Malignant lymphomas of the oral region.
+article_title,525,nan,Epithelial Splicing Regulatory Proteins 1 (ESRP1) and 2 (ESRP2) Suppress Cancer Cell Motility via Different Mechanisms.
+article_title,526,nan,Combined and sequential treatment of oral and maxillofacial malignancies: an evolving concept and clinical protocol.
+article_title,536,nan,Eczema - quiz.
+article_title,543,Long-term subcutaneous recombinant interleukin-2 as maintenance therapy: Biological effects and clinic#al implications,Long-term subcutaneous recombinant interleukin-2 as maintenance therapy: Biological effects and clinical implications
+article_title,544,nan,School soft drink intervention study
+article_title,548,nan,A screening methodology for crowdsourcing video QoE evaluation
+article_title,550,nan,Situating universal design architecture: designing with whom?
+article_title,555,Diagnostic accuracy %of endoscopic ultrasound-guided fine-needle aspiration for solid pancreatic lesion: a systematic review.,Diagnostic accuracy of endoscopic ultrasound-guided fine-needle aspiration for solid pancreatic lesion: a systematic review.
+article_title,561,nan,Development of a SNP genotyping panel and a medical decision support algorithm to predict drug response in schizophrenia
+article_title,567,nan,Fast-food habits weight gain and insulin resistance (the CARDIA study): 15-year prospective analysis.
+article_title,569,Changing tide#s: improving outcomes through mentorship on all levels of nursing,Changing tides: improving outcomes through mentorship on all levels of nursing
+article_title,571,nan,Pulmonary rehabilitation programs for patients with COPD.
+article_title,572,nan,The Impact of Nursing Case Management on Women With Diabetes in Pregnancy
+article_title,574,Monteggia lesions in adults.% A multicenter Bota study,Monteggia lesions in adults. A multicenter Bota study
+article_title,583,nan,A randomized controlled trial of paracetamol versus morphine for the treatment of acute painful crisis of sickle cell disease
+article_title,584,nan,Puberty suppression in adolescents with gender identity disorder: a prospective follow-up study
+article_title,585,A meta-analysi%s of clinical trials comparing mirtazapine with selective serotonin reuptake inhibitors for the treatment of major depressive disorder.,A meta-analysis of clinical trials comparing mirtazapine with selective serotonin reuptake inhibitors for the treatment of major depressive disorder.
+article_title,587,nan,Sevoflurane postconditioning converts persistent ventricular fibrillation into regular rhythm.
+article_title,590,[Methicilli#n-resistant Staphyloc#occus aureus forming the fried egg appearance colonies isolated from a patient with septicemia],[Methicillin-resistant Staphylococcus aureus forming the fried egg appearance colonies isolated from a patient with septicemia]
+article_title,600,Effect of QVA149 on lung volumes an$d exercise tolerance in COPD patients: the BRIGHT study,Effect of QVA149 on lung volumes and exercise tolerance in COPD patients: the BRIGHT study
+article_title,605,nan,Overlap of food addiction and substance use disorders definitions: analysis of animal and human studies.
+article_title,615,nan,Outcomes from patients with multi-vessel disease following primary PCI: staged PCI imparts very low mortality.
+article_title,621,Women's sexuality in the South African const??itutional court,Women's sexuality in the South African constitutional court
+article_title,624,Efficacy and safety of NMDA receptor antagonists augmentation ??ther??apy for schizophrenia: An updated meta-analysis of randomized placebo-controlled trials,Efficacy and safety of NMDA receptor antagonists augmentation therapy for schizophrenia: An updated meta-analysis of randomized placebo-controlled trials
+article_title,626,Pre#frontal hypoactivation and recovery in insomni$a.,Prefrontal hypoactivation and recovery in insomnia.
+article_title,627,Determinants of drug response in a cisplatin-resistant human l#ung cancer cell line.,Determinants of drug response in a cisplatin-resistant human lung cancer cell line.
+article_title,628,nan,Association between genetic polymorphism of tumor necrosis factor-alpha and risk of oral submucous fibrosis a pre-cancerous condition of oral cancer.
+article_title,630,Diabetes and other comorbidities in breast cancer survival by race/ethnicity: The California breast cancer sur%vivorship consortium (CBCSC)%,Diabetes and other comorbidities in breast cancer survival by race/ethnicity: The California breast cancer survivorship consortium (CBCSC)
+article_title,644,Letter by Raposeiras#-Roubin et al regarding %article mortality associated with atrial fibrillation in patients with myocardial infarction: a systematic review and meta-analysis.,Letter by Raposeiras-Roubin et al regarding article mortality associated with atrial fibrillation in patients with myocardial infarction: a systematic review and meta-analysis.
+article_title,661,Seria$l postop??erative awake and sleep EEG and long-term seizure outcome after anterior temporal lobectomy for hippocampal sclerosis.,Serial postoperative awake and sleep EEG and long-term seizure outcome after anterior temporal lobectomy for hippocampal sclerosis.
+article_title,669,Chronic hypokalemia due to ex#cessive cola consumption: a case report,Chronic hypokalemia due to excessive cola consumption: a case report
+article_title,679,nan,A review of cyanoacrylate liquid skin protectant and its efficacy on pedal fissures
+article_title,680,nan,The special status of actions in causal reasoning in rats.
+article_title,687,Causes of death in Tunisia: Estimates of y??ears of life lost. [French],Causes of death in Tunisia: Estimates of years of life lost. [French]
+article_title,690,nan,[Studies on cefotaxime (HR 756) concentration in human biliary tract and clinical effect for acute or subacute cholecystitis with cholelithiasis (author's transl)]
+article_title,693,nan,Defining interaction interfaces important for the establishment of cell polarity in Drosophila neuroblasts
+article_title,694,The e??xercise prescription: focus on vascular mechanisms.,The exercise prescription: focus on vascular mechanisms.
+article_title,702,nan,Lung function efficacy of olodaterol qd delivered via respimat vs placebo and formoterol bid in patients with COPD: two 48-week studies [Abstract]
+article_title,711,nan,A comparative outcome study of body awareness therapy feldenkrais and conventional physiotherapy for patients with nonspecific musculoskeletal disorders: Changes in psychological symptoms pain and self-image
+article_title,718,The effect% of lymphatico-venous anastomosis for an intractable ulcer at the lower leg in a marked obese patient.,The effect of lymphatico-venous anastomosis for an intractable ulcer at the lower leg in a marked obese patient.
+article_title,723,%Bradykinin is a mediator b$ut unlikely a trigger of antiarrhythmic effects of ischemic preconditioning,Bradykinin is a mediator but unlikely a trigger of antiarrhythmic effects of ischemic preconditioning
+article_title,724,nan,The NADPH oxidase-mediated production of hydrogen peroxide (H(2)O(2)) and resistance to oxidative stress in the necrotrophic pathogen Alternaria alternata of citrus.
+article_title,729,nan,The potential impact of bias in studies of residential exposure to magnetic fields and childhood leukemia
+article_title,733,nan,Remission rates following antidepressant therapy with bupropion or selective serotonin reuptake inhibitors: a meta-analysis of original data from 7 randomized controlled trials.
+article_title,735,nan,Inappropriate use of emergency services: a systematic review of prevalence and associated factors.
+article_title,746,Myocardial fibrosis b@@y T1?? mapping is an early indicator of severe cardiac allograft vasculopathy,Myocardial fibrosis by T1 mapping is an early indicator of severe cardiac allograft vasculopathy
+article_title,749,Insights in public health: taxing sugar sweetened bevera??ges to improve public health: policy action in Hawai'i. Doctoral Health Policy Seminar Spring 2013,Insights in public health: taxing sugar sweetened beverages to improve public health: policy action in Hawai'i. Doctoral Health Policy Seminar Spring 2013
+article_title,750,nan,[Evidence-based therapy guideline of the German Working Group on Obesity in Childhood and Adolescence].
+article_title,752,nan,Simple steps to fitness. Secrets of strength. Strength training is as important to weight loss and fitness as aerobic exercise is but many people ignore it. Here's how to get started.
+article_title,758,nan,Palliative sedation therapy in the last weeks of life: a literature review and recommendations for standards.
+article_title,764,Intra-operative$ change of gastric ph during laparotomic cholecystectomy under general anaesthesia: A prospective case-control study,Intra-operative change of gastric ph during laparotomic cholecystectomy under general anaesthesia: A prospective case-control study
+article_title,769,nan,Ulcer Healing After Peripheral Intervention.
+article_title,771,[M??ammographic density: a valid risk factor for breast cancer?].,[Mammographic density: a valid risk factor for breast cancer?].
+article_title,774,Human p$apillomavirus infection and increased risk of HIV acquisition. A systematic review# and meta-analysis.,Human papillomavirus infection and increased risk of HIV acquisition. A systematic review and meta-analysis.
+article_title,775,Prevalence of different morphologic forms of the human tongue in y@@oung Finns.,Prevalence of different morphologic forms of the human tongue in young Finns.
+article_title,780,nan,Pulpal response to a fluoride-releasing all-in-one resin bonding system.
+article_title,783,Use# of a Brief Phone Cal??l After ED Discharge,Use of a Brief Phone Call After ED Discharge
+article_title,789,Reporting methods in studies d%evel#oping prognostic models in cancer: a review.,Reporting methods in studies developing prognostic models in cancer: a review.
+article_title,793,nan,[Severe exposure to environmental lead in a child population in Antofagasta Chile]
+article_title,799,nan,13th IEEE/ACM Symposium on Distributed Simulation and Real-Time Applications DS-RT 2009
+article_title,802,nan,Alcohol-related morbidity and mortality.
+article_title,803,nan,Clinical outcome following ICD removal. The Bilitch Registry Group
+article_title,804,nan,Eliciting relative preferences for two methods of colorectal cancer screening
+article_title,805,nan,Bilingual speech: Bilateral control?
+article_title,807,nan,One-pot semisynthesis of exon 1 of the Huntingtin protein: new tools for elucidating the role of posttranslational modifications in the pathogenesis of Huntington's disease.
+article_title,809,Impact of physical abuse on adulthood depressive sy??mptoms among women.,Impact of physical abuse on adulthood depressive symptoms among women.
+article_title,812,nan,American Society of Clinical Oncology clinical practice guideline update on the use of pharmacologic interventions including tamoxifen raloxifene and aromatase inhibition for breast cancer risk reduction.
+article_title,817,Maxillofacial metastases: a r@@etrospective review of one institution's 15-year experience,Maxillofacial metastases: a retrospective review of one institution's 15-year experience
+article_title,819,nan,Premature androgenic alopecia and insulin resistance. Male equivalent of polycystic ovary syndrome?
+article_title,821,Mold contamination in a contr??olled hospital environment: a 3-year surveillance in southern Italy,Mold contamination in a controlled hospital environment: a 3-year surveillance in southern Italy
+article_title,823,nan,CSM2004 best platform
+article_title,832,Efficacy of allo%geneic hematopoietic stem cell transplantation depends on cytogenetic risk for acute myeloid leukemia in first disease remission: a me??taanalysis.,Efficacy of allogeneic hematopoietic stem cell transplantation depends on cytogenetic risk for acute myeloid leukemia in first disease remission: a metaanalysis.
+article_title,834,Considerations for the diagnosis and treatment of testosterone deficiency in el#derly men.,Considerations for the diagnosis and treatment of testosterone deficiency in elderly men.
+article_title,836,Definitive radiotherapy for T1 glottic squamous cell carcinoma: a 15-ye@@ar Cruces University Hospital experience,Definitive radiotherapy for T1 glottic squamous cell carcinoma: a 15-year Cruces University Hospital experience
+article_title,841,Systematic@@ review of o@@ccupational engagement and health outcomes among community-dwelling older adults,Systematic review of occupational engagement and health outcomes among community-dwelling older adults
+article_title,849,nan,Non-steroidal anti-inflammatory drugs and myocardial infarctions: comparative systematic review of evidence from observational studies and randomised controlled trials.
+article_title,852,nan,Recognizing naming and measuring a family intensive care unit syndrome
+article_title,856,Comparison of serum and renal gentamicin concentrations with fractional urinary excretio$n tests as indicators of nephrotoxicity,Comparison of serum and renal gentamicin concentrations with fractional urinary excretion tests as indicators of nephrotoxicity
+article_title,858,nan,Determinants of arterial wall remodeling during lipid-lowering therapy: serial intravascular ultrasound observations from the Reversal of Atherosclerosis with Aggressive Lipid Lowering Therapy (REVERSAL) trial
+article_title,859,nan,Economic evaluation of inhaled nitric oxide in preterm infants undergoing mechanical ventilation
+article_title,861,nan,Can we improve the follow up of asthmatic patients with asthma educational program (PAMA)? [Abstract]
+article_title,864,[P@@o$stacute care].,[Postacute care].
+article_title,866,Sleep-related$ nighttime crying (yonaki) in Japan: a community-based study.,Sleep-related nighttime crying (yonaki) in Japan: a community-based study.
+article_title,868,Successful treatment with a rituximab-based regimen of a splenic marginal zone lymphoma with villous lymphocytes in a very frail patient on maintenance$ dialysis.,Successful treatment with a rituximab-based regimen of a splenic marginal zone lymphoma with villous lymphocytes in a very frail patient on maintenance dialysis.
+article_title,872,Behaviour change inte??rventions to% promote prescribing of generic drugs: a rapid evidence synthesis and systematic review.,Behaviour change interventions to promote prescribing of generic drugs: a rapid evidence synthesis and systematic review.
+article_title,875,nan,Robotic surgery in gynecology.
+article_title,892,nan,Comparison of different distal radius dorsal and volar fracture fixation plates: a biomechanical study
+article_title,899,Too little but not too lat$e: results of a lit%erature review to improve routine immunization programs in developing countries,Too little but not too late: results of a literature review to improve routine immunization programs in developing countries
+article_title,902,Factors Predicting Su@@ccess and Fa#ilure for Cervical Facet Radiofrequency Denervation: A Multi-Center Analysis,Factors Predicting Success and Failure for Cervical Facet Radiofrequency Denervation: A Multi-Center Analysis
+article_title,910,nan,Body mass index and socioeconomic status measured in adolescence country of origin and the incidence of gastroesophageal adenocarcinoma in a cohort of 1 million men.
+article_title,911,nan,Galphai generates multiple Pins activation states to link cortical polarity and spindle orientation in Drosophila neuroblasts
+article_title,915,The choice of whether to participate in a phase I clinical trial: increasing the awareness of patients with cancer. An exploratory# study.,The choice of whether to participate in a phase I clinical trial: increasing the awareness of patients with cancer. An exploratory study.
+article_title,920,nan,Branching enzyme deficiency: expanding the clinical spectrum.
+article_title,922,Stu@@dy: Edoxaban safer alternative to warfarin for Afib patients,Study: Edoxaban safer alternative to warfarin for Afib patients
+article_title,924,@@Can moxibusti@@on an ancient treatment modality be evaluated in a double-blind randomized controlled trial? - A narrative review,Can moxibustion an ancient treatment modality be evaluated in a double-blind randomized controlled trial? - A narrative review
+article_title,929,nan,Preferences and practices of Americans and their physicians in antihypertensive therapy
+article_title,939,Consumption of fried foods and risk of metab$olic syndrome: the SUN cohort study,Consumption of fried foods and risk of metabolic syndrome: the SUN cohort study
+article_title,949,Same-Day Discharge After Percutaneous C%oronary Intervention: A Meta-Analysis.,Same-Day Discharge After Percutaneous Coronary Intervention: A Meta-Analysis.
+article_title,953,nan,Preval_ncia de bruxismo e dist_rbio do sono em deficientes visuais Prevalence of bruxism and sleep disorders in the visually impaired individuals
+article_title,955,nan,Stress enhances retrieval of drug-related memories in abstinent heroin addicts
+article_title,957,nan,Effects of control over office workspace on perceptions of the work environment and work outcomes
+article_title,958,New con#cepts in predicting evaluating and managing neurode@@velopmental outcomes in children with congenital heart disease.,New concepts in predicting evaluating and managing neurodevelopmental outcomes in children with congenital heart disease.
+article_title,968,nan,Poverty is the main environmental factor for obesity in a Mexican-border city
+article_title,974,nan,Functional conservation and divergence of J-domain-containing ZUO1/ZRF orthologs throughout evolution.
+article_title,979,Nonsyndromic 46XX Testicu%lar Disorders of Sex Development,Nonsyndromic 46XX Testicular Disorders of Sex Development
+article_title,983,Effe@@ctiveness of #measles vaccination and vitamin A treatment,Effectiveness of measles vaccination and vitamin A treatment
+article_title,987,nan,Antimicrobial susceptibility among Gram-positive organisms collected from pediatric patients globally between 2004 and 2011: results from the Tigecycline Evaluation and Surveillance Trial
+article_title,994,An evaluation of the effectiveness of recruitment methods: The staying well after $depression randomized c??ontrolled trial,An evaluation of the effectiveness of recruitment methods: The staying well after depression randomized controlled trial
+article_title,999,Long-term survival after liv%er first approach for locally advanced rectal cancer$ and synchronous liver metastases,Long-term survival after liver first approach for locally advanced rectal cancer and synchronous liver metastases
+article_title,1000,nan,Pharmacoeconomic Evaluation of Tiotropium Bromide in the Long-Term Treatment of Chronic Obstructive Pulmonary Disease (COPD) in Italy
+article_language,1,%eng,eng
+article_language,2,E??NG$,ENG
+article_language,5,nan,eng
+article_language,8,English; ABST$RACT LANGUAGE:English,English; ABSTRACT LANGUAGE:English
+article_language,12,nan,English
+article_language,13,??en%g,eng
+article_language,24,nan,eng
+article_language,31,#kor,kor
+article_language,34,e%%ng,eng
+article_language,46,nan,eng
+article_language,57,nan,eng
+article_language,69,nan,chi
+article_language,72,en??g#,eng
+article_language,76,nan,eng
+article_language,81,eng#,eng
+article_language,84,engsp$a$,engspa
+article_language,85,nan,eng     por
+article_language,94,nan,English
+article_language,106,nan,eng
+article_language,115,nan,eng
+article_language,125,nan,eng
+article_language,140,eng@@??,eng
+article_language,141,eng$,eng
+article_language,142,en#g,eng
+article_language,145,@@$eng,eng
+article_language,149,#en@@g,eng
+article_language,165,nan,eng
+article_language,174,Eng@@lish,English
+article_language,182,%ENG,ENG
+article_language,186,Eng#lish,English
+article_language,197,@@ENG,ENG
+article_language,198,#eng,eng
+article_language,203,nan,eng
+article_language,215,$eng,eng
+article_language,233,$eng,eng
+article_language,234,%eng,eng
+article_language,245,eng??,eng
+article_language,249,e??@@ng,eng
+article_language,255,nan,eng
+article_language,265,Engl@@ish,English
+article_language,269,Engli@@sh,English
+article_language,281,nan,eng
+article_language,313,%ENG??,ENG
+article_language,323,e$ng,eng
+article_language,342,nan,eng
+article_language,353,Engl$ish%,English
+article_language,354,$en#g,eng
+article_language,357,ENG%,ENG
+article_language,368,nan,jpn
+article_language,369,??en%g,eng
+article_language,378,$??eng,eng
+article_language,394,nan,por
+article_language,416,eng#,eng
+article_language,419,e??ng,eng
+article_language,424,nan,eng
+article_language,440,nan,eng
+article_language,442,nan,eng
+article_language,447,nan,eng
+article_language,450,e$ng,eng
+article_language,455,nan,English
+article_language,478,EN#@@G,ENG
+article_language,513,e@@%ng,eng
+article_language,525,%eng#,eng
+article_language,527,nan,eng
+article_language,529,nan,eng
+article_language,531,nan,English
+article_language,533,e@@n#g,eng
+article_language,547,Engl??i#sh,English
+article_language,549,e@@??ng,eng
+article_language,554,eng@@,eng
+article_language,556,en@@g,eng
+article_language,560,nan,eng
+article_language,564,nan,eng
+article_language,570,$eng??,eng
+article_language,573,h??eb,heb
+article_language,575,nan,eng
+article_language,580,#ita$,ita
+article_language,587,eng@@,eng
+article_language,590,j%p$n,jpn
+article_language,596,#eng,eng
+article_language,622,nan,ger
+article_language,623,e??ng%,eng
+article_language,627,nan,eng
+article_language,628,nan,eng
+article_language,631,nan,English
+article_language,644,nan,eng
+article_language,657,nan,eng
+article_language,661,eng%??,eng
+article_language,672,%French,French
+article_language,675,$eng$,eng
+article_language,689,eng??,eng
+article_language,691,e#ng,eng
+article_language,702,nan,English
+article_language,714,nan,eng
+article_language,720,e$ng,eng
+article_language,734,en@@g,eng
+article_language,737,nan,eng
+article_language,738,e@@@@ng,eng
+article_language,742,e@@ng,eng
+article_language,745,nan,eng
+article_language,750,nan,ger
+article_language,774,eng??,eng
+article_language,781,en@@%g,eng
+article_language,796,nan,eng
+article_language,800,nan,eng
+article_language,813,En%gl%ish,English
+article_language,818,English$,English
+article_language,825,eng??#,eng
+article_language,826,#en??g,eng
+article_language,830,nan,eng
+article_language,838,nan,eng
+article_language,839,nan,eng
+article_language,849,nan,eng
+article_language,854,nan,eng
+article_language,866,nan,eng
+article_language,872,e@@@@ng,eng
+article_language,874,en$g,eng
+article_language,876,nan,eng
+article_language,904,En$glish,English
+article_language,914,nan,eng
+article_language,918,%e#ng,eng
+article_language,921,ita@@,ita
+article_language,925,%eng,eng
+article_language,929,nan,eng
+article_language,931,nan,eng
+article_language,932,nan,eng
+article_language,938,eng@%@,eng
+article_language,951,nan,eng
+article_language,954,nan,eng
+article_language,955,e??$ng,eng
+article_language,962,en%??g,eng
+article_language,966,??e%ng,eng
+article_language,969,nan,eng
+article_language,999,nan,English
+journal_title,1,nan,Proc R Soc Med
+journal_title,9,Clinica@@l Neuropsychologist,Clinical Neuropsychologist
+journal_title,18,Coc??hrane Database ??Syst Rev,Cochrane Database Syst Rev
+journal_title,20,Medicine a#nd scien@@ce in sports and exercise,Medicine and science in sports and exercise
+journal_title,24,Journal of clinical oncology : official journal of @@the American Society of Clinica#l Oncology,Journal of clinical oncology : official journal of the American Society of Clinical Oncology
+journal_title,25,Scandinavia??n Journal of Gastroenterology,Scandinavian Journal of Gastroenterology
+journal_title,28,Metabolism: Clinical and Experimen@@tal,Metabolism: Clinical and Experimental
+journal_title,32,nan,Eur. Heart J.
+journal_title,44,Journal of the American Board@@ of Family Medicine : JABFM,Journal of the American Board of Family Medicine : JABFM
+journal_title,46,nan,Cancer research
+journal_title,67,Paediatrics and Chil%d Health,Paediatrics and Child Health
+journal_title,70,Ophthalmic surgery$ and lasers,Ophthalmic surgery and lasers
+journal_title,82,%Statistical methods in m$edical research,Statistical methods in medical research
+journal_title,83,TEACHING E%xceptional Children Plus,TEACHING Exceptional Children Plus
+journal_title,91,nan,J Cardiovasc Med (Hagerstown)
+journal_title,94,nan,Journal of Social Service Research
+journal_title,102,nan,Cognitive Processing
+journal_title,112,BMJ## Open,BMJ Open
+journal_title,117,nan,Journal of applied physiology
+journal_title,121,nan,Anesthesiology (Hagerstown)
+journal_title,126,Neurologia ($Barcelona Spa#in),Neurologia (Barcelona Spain)
+journal_title,131,nan,Journal of the American Geriatrics Society
+journal_title,143,nan,Health Technology Assessment Database
+journal_title,148,Eu%$r J Gen Pract,Eur J Gen Pract
+journal_title,150,nan,General dentistry
+journal_title,155,American Journ%al of Acupuncture,American Journal of Acupuncture
+journal_title,158,nan,CNS spectrums
+journal_title,161,nan,Psycho-Oncology
+journal_title,168,nan,Animal
+journal_title,169,Cochrane Database## of Systematic Reviews,Cochrane Database of Systematic Reviews
+journal_title,178,Obesity (Silver Spring# ??Md.),Obesity (Silver Spring Md.)
+journal_title,185,A%IDS Ca@@re,AIDS Care
+journal_title,199,nan,Annals Of Surgery
+journal_title,202,nan,ProQuest LLC
+journal_title,203,Journ$a$l of sports sciences,Journal of sports sciences
+journal_title,204,nan,European Journal of Endocrinology
+journal_title,211,nan,Social science & medicine (1982)
+journal_title,215,Critical reviews in oncology@@/h??ematology,Critical reviews in oncology/hematology
+journal_title,217,nan,Public health reports (Washington D.C. : 1974)
+journal_title,218,Colorectal disease : the official journal of the Association of@@ Colo@@proctology of Great Britain and Ireland,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland
+journal_title,232,nan,The Journal of hospital infection
+journal_title,237,Atherosclerosis. Supple%ment%s,Atherosclerosis. Supplements
+journal_title,241,BMC Mus??culoskelet Dis#ord,BMC Musculoskelet Disord
+journal_title,247,Journal of the International Neuropsychological?? Soc??iety : JINS,Journal of the International Neuropsychological Society : JINS
+journal_title,265,nan,Chest
+journal_title,266,nan,Psychiatric Services.
+journal_title,267,Arch??ives of Gene??ral Psychiatry,Archives of General Psychiatry
+journal_title,272,nan,Vox Sanguinis
+journal_title,275,Ultrasound Obstet. Gyne#col.,Ultrasound Obstet. Gynecol.
+journal_title,293,Transfusion and apheresis science : official journal of the Wor@@ld A#pheresis Association : official journal of the European Society for Haemapheresis,Transfusion and apheresis science : official journal of the World Apheresis Association : official journal of the European Society for Haemapheresis
+journal_title,294,nan,Chin. Med
+journal_title,302,JOURNAL$ OF CHEMICAL@@ PHYSICS,JOURNAL OF CHEMICAL PHYSICS
+journal_title,309,G$u$t,Gut
+journal_title,313,nan,European journal of applied physiology
+journal_title,318,nan,Canadian Journal of Anaesthesia
+journal_title,319,nan,The British journal of social psychology / the British Psychological Society
+journal_title,321,Urban Studi%es (Routledge),Urban Studies (Routledge)
+journal_title,341,Internati@@onal journal of geriatri@@c psychiatry,International journal of geriatric psychiatry
+journal_title,344,Acta Clin. C$ro@@at.,Acta Clin. Croat.
+journal_title,363,nan,Journal of Sports Medicine & Physical Fitness
+journal_title,374,PLo??S ONE [Electronic Resource],PLoS ONE [Electronic Resource]
+journal_title,383,Kekkaku : [T@@uberculosis],Kekkaku : [Tuberculosis]
+journal_title,393,Cirug_a Peditrica: Organo Oficial De La Sociedad Espaola De Cirug_a?? Peditrica,Cirug_a Peditrica: Organo Oficial De La Sociedad Espaola De Cirug_a Peditrica
+journal_title,394,O papel dos profissionais de saude em casos de violencia domesti@@ca: um relato de ex#periencia.,O papel dos profissionais de saude em casos de violencia domestica: um relato de experiencia.
+journal_title,396,nan,Postgraduate medical journal
+journal_title,398,%Anesthesia And Analgesia,Anesthesia And Analgesia
+journal_title,401,World J Pe#diatr Congenit Heart Surg,World J Pediatr Congenit Heart Surg
+journal_title,403,Supply Chain Management%,Supply Chain Management
+journal_title,421,Nature Clinical Practice Neurolog%y,Nature Clinical Practice Neurology
+journal_title,440,BR$. J. C$ANCER,BR. J. CANCER
+journal_title,442,Revue de stomatolo??gie de chirurgie maxillo-faciale et de chirurgie orale,Revue de stomatologie de chirurgie maxillo-faciale et de chirurgie orale
+journal_title,456,nan,Nowoczesne biomateria_y jako opatrunki hemostatyczne w chirurgii oszczedzajacej miazsz nerki--model zwierzecy. Doniesienie wstepne.
+journal_title,476,nan,Physics in medicine and biology
+journal_title,479,nan,The International journal of developmental biology
+journal_title,482,Pai@@n,Pain
+journal_title,484,Australian & New Zealand Journal of Mental He@@alth Nursing,Australian & New Zealand Journal of Mental Health Nursing
+journal_title,490,Pediat#ric@@s,Pediatrics
+journal_title,495,Horumon to rinsho. Clinical@@ endocrinology,Horumon to rinsho. Clinical endocrinology
+journal_title,500,nan,Clinical medicine (London England)
+journal_title,501,nan,Forsinket implementering af internationale retningslinjer for computertomografi med iodholdigt kontraststof .
+journal_title,505,nan,TAKAYASUSCHE ARTERIITIS MIT MULTIPLEN INTRAKRANIELLEN ANEURYSMEN
+journal_title,507,nan,Administration and policy in mental health
+journal_title,511,nan,Pediatric physical therapy
+journal_title,512,Journal of Korean Neurosurgical S@@ociety,Journal of Korean Neurosurgical Society
+journal_title,520,nan,CHUNG-HUA I HSUEH TSA CHIH [CHINESE MEDICAL JOURNAL]
+journal_title,521,nan,Canadian Forces Dental Services quarterly
+journal_title,529,Environmental toxicology and pharmacol$ogy,Environmental toxicology and pharmacology
+journal_title,546,Rheuma$tology (Ox@@ford),Rheumatology (Oxford)
+journal_title,556,International journal of o$besity (2005),International journal of obesity (2005)
+journal_title,568,Small %R$uminant Research,Small Ruminant Research
+journal_title,577,International jou#rnal of stroke : official journal of @@the International Stroke Society,International journal of stroke : official journal of the International Stroke Society
+journal_title,580,nan,Patologie asbesto correlate in congiunti di lavoratori del settore cemento-amianto.
+journal_title,584,Journal o??f ??Sexual Medicine,Journal of Sexual Medicine
+journal_title,591,$J Nutr Gerontol @@Geriatr,J Nutr Gerontol Geriatr
+journal_title,592,Journal of Epidemiology & Commun$ity Health,Journal of Epidemiology & Community Health
+journal_title,608,P??hysica D: Nonlinear Phenomena,Physica D: Nonlinear Phenomena
+journal_title,610,nan,Int. Angiol.
+journal_title,613,J@@ama%,Jama
+journal_title,622,nan,Impfstoffe: Akzeptanz und Sicherheit.
+journal_title,626,Sle@@ep#,Sleep
+journal_title,629,nan,Therapeutic advances in respiratory disease
+journal_title,634,Rheum%atology (United Kingdom),Rheumatology (United Kingdom)
+journal_title,636,Neurol Re%s,Neurol Res
+journal_title,642,nan,Journal of Women's Health (15409996)
+journal_title,654,Stroke; a journal?? o$f cerebral circulation,Stroke; a journal of cerebral circulation
+journal_title,667,Chinese Journal of Evidence-Base%d Medicin@@e,Chinese Journal of Evidence-Based Medicine
+journal_title,694,Blood pressu$re monitor@@ing,Blood pressure monitoring
+journal_title,697,nan,J Anal Toxicol
+journal_title,700,nan,Business Wire
+journal_title,708,nan,European journal of clinical nutrition
+journal_title,716,Pharmacy practi#ce,Pharmacy practice
+journal_title,720,nan,Bjog
+journal_title,723,nan,Journal of Cardiovascular Electrophysiology
+journal_title,730,nan,Journal of Mathematics Teacher Education
+journal_title,732,nan,Occupational and environmental medicine
+journal_title,733,nan,J. Clin. Psychiatry
+journal_title,738,nan,Psychosomatic medicine
+journal_title,740,J Hosp Inf@@ect,J Hosp Infect
+journal_title,750,nan,Bundesgesundheitsblatt Gesundheitsforschung Gesundheitsschutz
+journal_title,757,Oncology n@@ursing forum$,Oncology nursing forum
+journal_title,763,R%A%DIOLOGY,RADIOLOGY
+journal_title,772,nan,Ann. Hematol.
+journal_title,782,Psychological assessme%nt,Psychological assessment
+journal_title,788,nan,Stomatologiia
+journal_title,792,Journal$ of cardiovascular medicine (Hagerstown Md.),Journal of cardiovascular medicine (Hagerstown Md.)
+journal_title,798,J Hand Surg Am%,J Hand Surg Am
+journal_title,800,European# journal of preventive cardiology,European journal of preventive cardiology
+journal_title,806,Chin. J. Ev#id.-Based Med.$,Chin. J. Evid.-Based Med.
+journal_title,808,Cardiology in t%he young,Cardiology in the young
+journal_title,826,nan,Thorax
+journal_title,859,Pediatri%c$s,Pediatrics
+journal_title,867,Cochrane Database ??Syst. Rev.,Cochrane Database Syst. Rev.
+journal_title,873,nan,The Behavioral and brain sciences
+journal_title,882,Journal of P$sychopharmacolog??y,Journal of Psychopharmacology
+journal_title,894,nan,The European respiratory journal
+journal_title,905,nan,Chest
+journal_title,911,Pro@@ceedings of the National Academy of Sciences of the United States of America,Proceedings of the National Academy of Sciences of the United States of America
+journal_title,931,nan,International journal of medical informatics
+journal_title,937,Am J Crit Ca$re,Am J Crit Care
+journal_title,940,Chronic @@Illness,Chronic Illness
+journal_title,942,Tech Colopro@@ctol,Tech Coloproctol
+journal_title,945,nan,Journal of environmental monitoring : JEM
+journal_title,964,nan,Current Opinion in Infectious Diseases
+journal_title,970,nan,Journal of Neurotrauma
+journal_title,985,Biology of Blood and Marrow T@@ransplantation,Biology of Blood and Marrow Transplantation
+journal_title,992,American journal of respirato#ry and critical care medicine,American journal of respiratory and critical care medicine
+journal_title,997,Revie$w of Scientific Instruments,Review of Scientific Instruments
+jounral_abbreviation,1,Proce$edings of the Royal Society of Medici$ne,Proceedings of the Royal Society of Medicine
+jounral_abbreviation,3,nan,Indian J Ophthalmol
+jounral_abbreviation,42,J. Cereb. Blood Flow% Metab.,J. Cereb. Blood Flow Metab.
+jounral_abbreviation,44,J Am Board %Fam Med,J Am Board Fam Med
+jounral_abbreviation,60,nan,Knee Surg Sports Traumatol Arthrosc
+jounral_abbreviation,61,nan,J Geriatr Oncol
+jounral_abbreviation,96,Expert opinion on drug metabolism & toxic$ology??,Expert opinion on drug metabolism & toxicology
+jounral_abbreviation,104,Fertil. Steri#l??.,Fertil. Steril.
+jounral_abbreviation,106,nan,Psychooncology
+jounral_abbreviation,110,Cochran??e Database Syst Rev,Cochrane Database Syst Rev
+jounral_abbreviation,122,Trans. R. Soc. Trop.# Med. H@@yg.,Trans. R. Soc. Trop. Med. Hyg.
+jounral_abbreviation,152,nan,Neuropsychologia
+jounral_abbreviation,158,nan,CNS Spectr
+jounral_abbreviation,160,nan,Hippokratia
+jounral_abbreviation,175,Sp@@ine,Spine
+jounral_abbreviation,178,nan,Obesity (Silver Spring)
+jounral_abbreviation,201,nan,J Headache Pain
+jounral_abbreviation,209,nan,Archives of surgery (Chicago Ill. : 1960)
+jounral_abbreviation,210,nan,Muscle Nerve
+jounral_abbreviation,221,Comput Med Imaging# Graph,Comput Med Imaging Graph
+jounral_abbreviation,224,International jou#rnal of obesity (2005),International journal of obesity (2005)
+jounral_abbreviation,256,C@@ardiol %Young,Cardiol Young
+jounral_abbreviation,259,Crit. Car$e Med.,Crit. Care Med.
+jounral_abbreviation,279,nan,J Psychiatr Res
+jounral_abbreviation,281,Neu??rology,Neurology
+jounral_abbreviation,283,nan,J. Am. Vet. Med. Assoc.
+jounral_abbreviation,289,nan,PloS one
+jounral_abbreviation,292,Nutrie#nts,Nutrients
+jounral_abbreviation,313,Eur. J%. Appl. Physiol.,Eur. J. Appl. Physiol.
+jounral_abbreviation,320,nan,Cardiol Young
+jounral_abbreviation,322,nan,Dentomaxillofac Radiol
+jounral_abbreviation,348,nan,Colorectal Dis
+jounral_abbreviation,355,nan,J Anesth
+jounral_abbreviation,366,nan,Biomed Res Int
+jounral_abbreviation,383,nan,Kekkaku
+jounral_abbreviation,386,Sci. Total En$viron.,Sci. Total Environ.
+jounral_abbreviation,396,nan,Postgrad Med J
+jounral_abbreviation,428,nan,Anadolu Kardiyol Derg
+jounral_abbreviation,435,nan,The American journal of clinical nutrition
+jounral_abbreviation,442,nan,Rev Stomatol Chir Maxillofac Chir Orale
+jounral_abbreviation,447,F#ront Hum Neurosc??i,Front Hum Neurosci
+jounral_abbreviation,453,nan,Diabetes Technol. Ther.
+jounral_abbreviation,461,Rev Lat Am Enfermag??$em,Rev Lat Am Enfermagem
+jounral_abbreviation,463,nan,Public Health Nutr
+jounral_abbreviation,472,nan,J Am Acad Child Adolesc Psychiatry
+jounral_abbreviation,478,%IEEE Trans Nucl# Sci,IEEE Trans Nucl Sci
+jounral_abbreviation,492,nan,Eur. Heart J.
+jounral_abbreviation,495,Horumon To Rinsh#o,Horumon To Rinsho
+jounral_abbreviation,516,nan,JAMA Otolaryngol Head Neck Surg
+jounral_abbreviation,529,Environ. Toxicol. Phar@@m??acol.,Environ. Toxicol. Pharmacol.
+jounral_abbreviation,533,nan,Neuroscience
+jounral_abbreviation,556,Int J Obes$ (L#ond),Int J Obes (Lond)
+jounral_abbreviation,567,La@$@ncet,Lancet
+jounral_abbreviation,577,nan,Int J Stroke
+jounral_abbreviation,601,nan,Vet Clin Pathol
+jounral_abbreviation,603,nan,Bull.WHO
+jounral_abbreviation,605,%Neuropharmacology??,Neuropharmacology
+jounral_abbreviation,607,Phys The@@r,Phys Ther
+jounral_abbreviation,609,nan,Z Erkr Atmungsorgane Folia Bronchol
+jounral_abbreviation,615,Ca$theter Cardiovasc Interv,Catheter Cardiovasc Interv
+jounral_abbreviation,617,%E$ur. Respir. J.,Eur. Respir. J.
+jounral_abbreviation,633,Onk$olo@@gie,Onkologie
+jounral_abbreviation,648,Am J Orthod Dentofacial Orthop@@@@,Am J Orthod Dentofacial Orthop
+jounral_abbreviation,665,nan,Acad Radiol
+jounral_abbreviation,669,@@Cases @@journal,Cases journal
+jounral_abbreviation,684,nan,Infect. Immun.
+jounral_abbreviation,688,The Jo??urnal of bone and joint surgery. American v$olume,The Journal of bone and joint surgery. American volume
+jounral_abbreviation,705,Bio@@med ??Res Int,Biomed Res Int
+jounral_abbreviation,709,J Pe#rs Soc Psychol%,J Pers Soc Psychol
+jounral_abbreviation,710,nan,The Journal of hand surgery
+jounral_abbreviation,719,Int@@.J.Neuros#ci.,Int.J.Neurosci.
+jounral_abbreviation,752,Diab$etes Forecast,Diabetes Forecast
+jounral_abbreviation,765,H%eadache,Headache
+jounral_abbreviation,776,Arch@@ives of internal medicine,Archives of internal medicine
+jounral_abbreviation,788,Stomatologiia (Mosk%),Stomatologiia (Mosk)
+jounral_abbreviation,807,nan,Angew. Chem. Int. Ed. Engl.
+jounral_abbreviation,814,Act??a Clin Belg#,Acta Clin Belg
+jounral_abbreviation,822,nan,Obesity (Silver Spring)
+jounral_abbreviation,826,nan,Thorax
+jounral_abbreviation,830,World J P??ediatr Cong@@enit Heart Surg,World J Pediatr Congenit Heart Surg
+jounral_abbreviation,834,nan,Am. J. Med.
+jounral_abbreviation,837,nan,J. Bone Miner. Res.
+jounral_abbreviation,843,nan,Foot & ankle international
+jounral_abbreviation,847,Interna@@tion%al journal of surgery (London England),International journal of surgery (London England)
+jounral_abbreviation,853,nan,Circulation
+jounral_abbreviation,858,Circ%ulation,Circulation
+jounral_abbreviation,875,A%rch. Gynecol. #Obstet.,Arch. Gynecol. Obstet.
+jounral_abbreviation,889,PloS ??one,PloS one
+jounral_abbreviation,894,nan,Eur. Respir. J.
+jounral_abbreviation,900,Clin. Infect%. Dis.,Clin. Infect. Dis.
+jounral_abbreviation,903,nan,Rev Endocr Metab Disord
+jounral_abbreviation,909,Inte%gr. Ph#ysiol. Behav. Sci.,Integr. Physiol. Behav. Sci.
+jounral_abbreviation,916,nan,Bioelectromagnetics
+jounral_abbreviation,930,Neurosu@@r@@g,Neurosurg
+jounral_abbreviation,931,nan,Int J Med Inform
+jounral_abbreviation,945,J E$nviron Monit,J Environ Monit
+jounral_abbreviation,951,nan,PLoS ONE
+jounral_abbreviation,964,Curr.Opin.In@@fect.Dis.,Curr.Opin.Infect.Dis.
+jounral_abbreviation,966,J.# Nuc%l. Med.,J. Nucl. Med.
+jounral_abbreviation,968,nan,J Health Care Poor Underserved
+jounral_abbreviation,985,nan,Biol.Blood Marrow Transplant.
+jounral_abbreviation,990,Acta# ??Radiol,Acta Radiol
+jounral_abbreviation,992,nan,Am. J. Respir. Crit. Care Med.
+jounral_abbreviation,996,The American review$ of respiratory disease,The American review of respiratory disease
+journal_issn,3,030??1-4738,0301-4738
+journal_issn,5,1558-052@@??0,1558-0520
+journal_issn,14,nan,1547-5271
+journal_issn,31,1598-99%92,1598-9992
+journal_issn,34,nan,0077-8923
+journal_issn,39,0899-@@6210,0899-6210
+journal_issn,42,1559%-7016,1559-7016
+journal_issn,46,nan,1538-7445
+journal_issn,57,0952-818#@@0,0952-8180
+journal_issn,65,nan,1756-9966
+journal_issn,69,10$01-55@@15,1001-5515
+journal_issn,72,1474-5151????,1474-5151
+journal_issn,75,nan,0377-4929
+journal_issn,78,0??9#29-693X,0929-693X
+journal_issn,85,nan,1679-4508
+journal_issn,87,15#56-$9039,1556-9039
+journal_issn,92,1776@@-2588,1776-2588
+journal_issn,96,nan,1742-5255
+journal_issn,102,nan,1612-4782     1612-4790
+journal_issn,115,0315$-16??2X,0315-162X
+journal_issn,119,nan,2115-7863(Electronic);2115-8789(Print)
+journal_issn,122,1878-3503$,1878-3503
+journal_issn,129,1??051-0443,1051-0443
+journal_issn,130,-35948.97091777022,-7518
+journal_issn,144,0266-7681 (Print) 0266-#7681,0266-7681 (Print) 0266-7681
+journal_issn,160,17%90-8019,1790-8019
+journal_issn,168,nan,1751-7311
+journal_issn,206,1096-@@0023,1096-0023
+journal_issn,217,0033-354#9,0033-3549
+journal_issn,221,nan,0895-6111
+journal_issn,224,nan,0307-0565
+journal_issn,233,nan,1532-1916
+journal_issn,254,10%88-3#371,1088-3371
+journal_issn,255,009@@0-0028,0090-0028
+journal_issn,264,0091-74??35,0091-7435
+journal_issn,280,978-1-4503-3459-$$4,978-1-4503-3459-4
+journal_issn,302,108??9-769??0,1089-7690
+journal_issn,313,1439-63%27,1439-6327
+journal_issn,327,1074-@@79#31,1074-7931
+journal_issn,331,nan,1533-7731
+journal_issn,337,10#79-071@@3,1079-0713
+journal_issn,338,NCT00227591/ClinicalTrials.gov NCT005??09899/ClinicalTrials.gov NCT00599547/ClinicalTrials.gov NCT00631462/ClinicalTrials.gov NCT00934544/ClinicalTrials.gov NCT00952289/ClinicalTrials.gov NCT01420770/ClinicalTrials.gov NCT01437787/ClinicalTrials.gov,NCT00227591/ClinicalTrials.gov NCT00509899/ClinicalTrials.gov NCT00599547/ClinicalTrials.gov NCT00631462/ClinicalTrials.gov NCT00934544/ClinicalTrials.gov NCT00952289/ClinicalTrials.gov NCT01420770/ClinicalTrials.gov NCT01437787/ClinicalTrials.gov
+journal_issn,344,nan,0353-9466
+journal_issn,346,13??6??0-7863,1360-7863
+journal_issn,354,nan,1471-2407
+journal_issn,355,nan,1438-8359
+journal_issn,361,1442-2??050,1442-2050
+journal_issn,364,nan,1090-2422
+journal_issn,366,2314-6#141,2314-6141
+journal_issn,368,nan,0021-4892
+journal_issn,385,nan,1473-0480
+journal_issn,401,nan,2150-1351 (Print)     2150-1351
+journal_issn,403,nan,13598546
+journal_issn,412,nan,1051-1970 1051-1970
+journal_issn,418,nan,0269-2163
+journal_issn,421,nan,1745-834X     1745-8358
+journal_issn,431,037%7-208X,0377-208X
+journal_issn,437,1472-6#831,1472-6831
+journal_issn,454,1179-17??21,1179-1721
+journal_issn,474,nan,1687-9627
+journal_issn,481,1462-0#324,1462-0324
+journal_issn,484,$1%324-3780,1324-3780
+journal_issn,487,1873-146@@5,1873-1465
+journal_issn,505,042#8-8246,0428-8246
+journal_issn,512,nan,2005-3711
+journal_issn,516,nan,2168-619X
+journal_issn,517,nan,0301-4851
+journal_issn,534,nan,1090-2430
+journal_issn,538,nan,0160-6379
+journal_issn,544,nan,1468-5833 (Electronic)
+journal_issn,549,nan,0022-5347
+journal_issn,581,nan,1715-5258
+journal_issn,589,nan,1462-2416
+journal_issn,590,0047-1860 (Print)     00#47-1860,0047-1860 (Print)     0047-1860
+journal_issn,601,nan,1939-165X
+journal_issn,603,00@@42-$9686,0042-9686
+journal_issn,604,nan,1935-2735
+journal_issn,615,1522#-726X,1522-726X
+journal_issn,639,14$40-1584,1440-1584
+journal_issn,644,nan,1524-4539
+journal_issn,647,1469-%896??X,1469-896X
+journal_issn,649,nan,1547-1896
+journal_issn,650,019#??6-6553,0196-6553
+journal_issn,651,nan,1063-8652
+journal_issn,653,107#6-$6294 (Print)     1076-6294,1076-6294 (Print)     1076-6294
+journal_issn,660,nan,1873-5592
+journal_issn,665,nan,1878-4046
+journal_issn,668,01#95-6744#,0195-6744
+journal_issn,673,-45362.82342889501,-9262
+journal_issn,684,nan,0019-9567
+journal_issn,688,??0021-9355 (Print),0021-9355 (Print)
+journal_issn,694,1473-@@5725,1473-5725
+journal_issn,695,0214$-9915,0214-9915
+journal_issn,697,nan,0146-4760 (Print) 0146-4760
+journal_issn,703,%146$9-493X,1469-493X
+journal_issn,706,nan,0021-8987 (Print)     0021-8987
+journal_issn,717,nan,1053-8135
+journal_issn,746,nan,22-Sep
+journal_issn,750,nan,1437-1588
+journal_issn,754,nan,2049-9434
+journal_issn,760,1098-301$5,1098-3015
+journal_issn,763,nan,0033-8419
+journal_issn,772,0939-55??55,0939-5555
+journal_issn,793,0034-%$9887,0034-9887
+journal_issn,798,nan,0363-5023
+journal_issn,807,nan,1521-3773
+journal_issn,808,nan,1467-1107
+journal_issn,809,nan,1096-4673
+journal_issn,815,0021%-925#8,0021-9258
+journal_issn,825,%1473-55#98,1473-5598
+journal_issn,853,nan,22-Sep
+journal_issn,854,$1043-034#2,1043-0342
+journal_issn,858,22-Se@@p,22-Sep
+journal_issn,863,nan,1699-5198
+journal_issn,866,1098-42#??75,1098-4275
+journal_issn,872,nan,2044-6055
+journal_issn,889,??1932-6203,1932-6203
+journal_issn,892,nan,0363-5023
+journal_issn,897,nan,0306-5251
+journal_issn,903,1573-2#606#,1573-2606
+journal_issn,911,nan,0027-8424
+journal_issn,918,1%558-3597@@,1558-3597
+journal_issn,924,nan,1672-1977
+journal_issn,932,1527#??-7755,1527-7755
+journal_issn,936,2%054-2704,2054-2704
+journal_issn,945,nan,1464-0325
+journal_issn,951,1#932-6203,1932-6203
+journal_issn,957,nan,0272-4944
+journal_issn,958,??@@1531-698X,1531-698X
+journal_issn,962,nan,0951-418X
+journal_issn,965,nan,2162-3279
+journal_issn,966,15??35-5#667,1535-5667
+journal_issn,968,1049-2089%,1049-2089
+journal_issn,972,nan,0021-9525
+journal_issn,973,nan,1175-3277
+journal_issn,975,155??7-867#4,1557-8674
+journal_issn,995,030@@5-4179,0305-4179
+journal_issn,999,nan,-4473
+article_jvolumn,11,nan,14
+article_jvolumn,13,362.6946340088876,92
+article_jvolumn,17,28.943382686102915,7
+article_jvolumn,20,214.1832730432919,39
+article_jvolumn,29,nan,8
+article_jvolumn,31,nan,52
+article_jvolumn,33,nan,0
+article_jvolumn,38,nan,64
+article_jvolumn,55,nan,90
+article_jvolumn,78,nan,13
+article_jvolumn,80,nan,48
+article_jvolumn,91,nan,10
+article_jvolumn,93,nan,1
+article_jvolumn,95,nan,19
+article_jvolumn,97,312.8301981143798,64
+article_jvolumn,100,477.6487189825704,92
+article_jvolumn,112,9.512512169757436,3
+article_jvolumn,117,nan,41
+article_jvolumn,120,nan,0
+article_jvolumn,126,nan,27
+article_jvolumn,127,nan,14
+article_jvolumn,131,232.76620402944656,61
+article_jvolumn,135,nan,143
+article_jvolumn,136,285.6330604679427,55
+article_jvolumn,147,nan,94
+article_jvolumn,164,nan,24
+article_jvolumn,172,nan,12
+article_jvolumn,175,nan,27
+article_jvolumn,186,nan,79
+article_jvolumn,199,1398.3801738574489,260
+article_jvolumn,203,nan,25
+article_jvolumn,209,646.8268860079338,130
+article_jvolumn,222,102.93053685324875,34
+article_jvolumn,226,nan,0
+article_jvolumn,235,199.3668484190577,35
+article_jvolumn,236,nan,56
+article_jvolumn,239,nan,4
+article_jvolumn,245,nan,16
+article_jvolumn,248,nan,20
+article_jvolumn,251,197.82869566974543,35
+article_jvolumn,255,nan,242
+article_jvolumn,258,214.78402171626695,68
+article_jvolumn,262,nan,137
+article_jvolumn,277,nan,0
+article_jvolumn,279,nan,45
+article_jvolumn,305,674.6648516149816,118
+article_jvolumn,315,nan,49
+article_jvolumn,316,nan,270
+article_jvolumn,317,80.53698689508545,22
+article_jvolumn,333,nan,25
+article_jvolumn,344,nan,48
+article_jvolumn,348,nan,11
+article_jvolumn,353,143.59558911980156,30
+article_jvolumn,357,4.037551957958408,1
+article_jvolumn,362,96.50132486815733,25
+article_jvolumn,364,1487.9586900958225,319
+article_jvolumn,367,14.206427534919117,3
+article_jvolumn,370,99.41865690407413,24
+article_jvolumn,383,nan,80
+article_jvolumn,395,nan,129
+article_jvolumn,397,nan,62
+article_jvolumn,398,647.5181729646052,113
+article_jvolumn,401,nan,4
+article_jvolumn,402,nan,75
+article_jvolumn,406,nan,9
+article_jvolumn,410,nan,147
+article_jvolumn,412,nan,16
+article_jvolumn,426,nan,127
+article_jvolumn,432,nan,27
+article_jvolumn,435,232.18752928313424,74
+article_jvolumn,444,60.30405072058359,13
+article_jvolumn,451,nan,42
+article_jvolumn,455,264.3353797761615,48
+article_jvolumn,458,nan,23
+article_jvolumn,466,210.61061142434255,49
+article_jvolumn,476,nan,55
+article_jvolumn,481,208.01491179347096,45
+article_jvolumn,491,26.465524330890712,6
+article_jvolumn,496,nan,310
+article_jvolumn,508,nan,20
+article_jvolumn,515,nan,3
+article_jvolumn,521,70.30061039830137,18
+article_jvolumn,526,nan,121
+article_jvolumn,527,nan,58
+article_jvolumn,532,973.6243331766368,316
+article_jvolumn,533,nan,254
+article_jvolumn,534,-4.79772680914729,-1
+article_jvolumn,552,218.90591484682983,67
+article_jvolumn,556,137.14626754201473,36
+article_jvolumn,566,72.60439143799594,19
+article_jvolumn,570,nan,12
+article_jvolumn,576,241.74694420112104,46
+article_jvolumn,578,nan,16
+article_jvolumn,580,nan,29
+article_jvolumn,582,161.82600032030015,30
+article_jvolumn,590,177.29938006511688,43
+article_jvolumn,592,nan,68
+article_jvolumn,599,nan,24
+article_jvolumn,600,588.3102709896356,108
+article_jvolumn,609,nan,133
+article_jvolumn,611,nan,28
+article_jvolumn,613,1423.6272845392164,256
+article_jvolumn,614,nan,21
+article_jvolumn,616,nan,506
+article_jvolumn,622,nan,135
+article_jvolumn,623,115.01350591908756,32
+article_jvolumn,632,419.4126691597312,91
+article_jvolumn,635,nan,0
+article_jvolumn,636,nan,25
+article_jvolumn,638,nan,94
+article_jvolumn,640,nan,84
+article_jvolumn,645,322.0023218011707,76
+article_jvolumn,651,91.754713844694,16
+article_jvolumn,652,292.835647087885,53
+article_jvolumn,656,nan,29
+article_jvolumn,670,nan,18
+article_jvolumn,698,149.14080286154976,36
+article_jvolumn,718,nan,34
+article_jvolumn,720,462.57817869920416,115
+article_jvolumn,726,nan,0
+article_jvolumn,751,262.5282527140048,65
+article_jvolumn,762,205.88014511401164,48
+article_jvolumn,764,nan,56
+article_jvolumn,765,nan,53
+article_jvolumn,768,nan,26
+article_jvolumn,771,333.11826763720205,89
+article_jvolumn,774,nan,26
+article_jvolumn,780,157.63907533331215,27
+article_jvolumn,782,118.23390684834789,22
+article_jvolumn,789,29.299046923856004,8
+article_jvolumn,794,nan,33
+article_jvolumn,798,155.87341739802,29
+article_jvolumn,802,136.33947125171855,27
+article_jvolumn,804,72.14575924525826,14
+article_jvolumn,807,198.4123220493688,53
+article_jvolumn,808,nan,25
+article_jvolumn,813,nan,7
+article_jvolumn,816,236.9006806105432,64
+article_jvolumn,826,314.07467266661394,70
+article_jvolumn,831,nan,123
+article_jvolumn,840,nan,23
+article_jvolumn,844,557.5334867606265,159
+article_jvolumn,851,nan,22
+article_jvolumn,866,491.76409218251234,115
+article_jvolumn,878,nan,0
+article_jvolumn,880,nan,76
+article_jvolumn,885,nan,0
+article_jvolumn,888,nan,-1
+article_jvolumn,908,177.09917337352363,30
+article_jvolumn,917,nan,0
+article_jvolumn,930,33.128166575231255,11
+article_jvolumn,932,nan,31
+article_jvolumn,933,nan,0
+article_jvolumn,939,105.69455347570974,33
+article_jvolumn,941,nan,15
+article_jvolumn,961,nan,42
+article_jvolumn,962,75.74034502583405,19
+article_jvolumn,971,nan,13
+article_jvolumn,973,37.42195185851486,7
+article_jvolumn,985,nan,19
+article_jvolumn,987,248.20787408018103,51
+article_jvolumn,992,670.3629526274406,188
+article_jissue,1,nan,12
+article_jissue,6,nan,4
+article_jissue,9,nan,7
+article_jissue,14,nan,5
+article_jissue,23,nan,6
+article_jissue,41,3.072116017889936,1
+article_jissue,51,7.365694118667629,2
+article_jissue,54,34.044884874550036,6
+article_jissue,58,nan,0
+article_jissue,65,nan,-1
+article_jissue,69,12.123556210639077,3
+article_jissue,71,6.013783655708151,2
+article_jissue,76,nan,1
+article_jissue,80,42.90965132892581,9
+article_jissue,88,nan,1
+article_jissue,89,nan,1
+article_jissue,103,nan,2
+article_jissue,106,nan,3
+article_jissue,121,nan,5
+article_jissue,142,nan,0
+article_jissue,145,nan,3
+article_jissue,152,nan,12
+article_jissue,158,nan,-1
+article_jissue,169,37.00522522895291,7
+article_jissue,178,nan,1
+article_jissue,192,5.944819562026246,1
+article_jissue,211,29.2516027490751,6
+article_jissue,219,nan,0
+article_jissue,228,nan,3
+article_jissue,237,21.41653561143639,4
+article_jissue,238,nan,-1
+article_jissue,253,nan,0
+article_jissue,258,nan,6
+article_jissue,260,nan,24
+article_jissue,266,nan,2
+article_jissue,274,nan,3
+article_jissue,288,nan,0
+article_jissue,290,nan,9
+article_jissue,295,nan,4
+article_jissue,296,nan,3
+article_jissue,297,35.99145991323297,6
+article_jissue,300,nan,4
+article_jissue,301,11.873343713100962,2
+article_jissue,302,nan,8
+article_jissue,324,nan,-1
+article_jissue,349,9.656687978153077,3
+article_jissue,350,37.03358340967034,8
+article_jissue,356,nan,3
+article_jissue,359,7.083198703375384,2
+article_jissue,365,16.634776658416357,4
+article_jissue,366,-4.721038932457222,-1
+article_jissue,368,nan,10
+article_jissue,369,34.46832620273754,11
+article_jissue,379,nan,1
+article_jissue,381,nan,5
+article_jissue,391,6.540416183913134,2
+article_jissue,397,9.327638512038495,2
+article_jissue,400,nan,3
+article_jissue,407,nan,4
+article_jissue,422,-5.757537125304372,-1
+article_jissue,423,37.46763839634384,8
+article_jissue,428,nan,6
+article_jissue,434,nan,0
+article_jissue,440,36.15162294177201,12
+article_jissue,441,nan,0
+article_jissue,444,nan,3
+article_jissue,447,nan,-1
+article_jissue,448,nan,0
+article_jissue,449,nan,3
+article_jissue,457,17.54333991261201,4
+article_jissue,460,nan,17
+article_jissue,464,nan,1
+article_jissue,467,nan,0
+article_jissue,468,nan,2
+article_jissue,471,24.92386958420045,5
+article_jissue,477,nan,3
+article_jissue,482,nan,3
+article_jissue,483,8.730223847780517,2
+article_jissue,484,6.963424720603173,2
+article_jissue,491,nan,0
+article_jissue,493,34.802781222162835,9
+article_jissue,500,8.534345094614068,2
+article_jissue,502,nan,2
+article_jissue,503,22.3489983834624,4
+article_jissue,504,4.93565687159189,1
+article_jissue,505,nan,1
+article_jissue,510,27.31161849328337,5
+article_jissue,521,nan,1
+article_jissue,522,13.023358459870895,4
+article_jissue,523,21.78758651981325,4
+article_jissue,527,nan,2
+article_jissue,530,30.1481636341687,6
+article_jissue,541,nan,5
+article_jissue,543,nan,3
+article_jissue,548,nan,0
+article_jissue,564,nan,5
+article_jissue,566,5.526813709200757,1
+article_jissue,576,12.398722059791766,4
+article_jissue,583,25.445759880902617,5
+article_jissue,587,nan,9
+article_jissue,588,nan,10
+article_jissue,591,nan,1
+article_jissue,595,nan,0
+article_jissue,598,nan,9
+article_jissue,599,15.789887809510756,4
+article_jissue,601,13.693218762284973,3
+article_jissue,606,nan,2
+article_jissue,610,nan,4
+article_jissue,613,nan,4
+article_jissue,625,nan,4
+article_jissue,627,25.180260509504087,5
+article_jissue,628,nan,12
+article_jissue,630,7.8876081034298515,2
+article_jissue,632,24.577074955557265,5
+article_jissue,645,nan,3
+article_jissue,649,nan,1
+article_jissue,650,nan,2
+article_jissue,652,28.71257222706796,6
+article_jissue,660,nan,11
+article_jissue,662,nan,0
+article_jissue,664,nan,7
+article_jissue,665,16.64691559731691,5
+article_jissue,668,10.9303397003651,2
+article_jissue,669,nan,1
+article_jissue,675,17.77099210848239,4
+article_jissue,691,nan,11
+article_jissue,693,nan,1
+article_jissue,709,11.184364613539906,2
+article_jissue,716,nan,2
+article_jissue,717,nan,4
+article_jissue,720,nan,1
+article_jissue,728,9.680415551973262,2
+article_jissue,731,nan,0
+article_jissue,737,11.097766654679155,2
+article_jissue,740,11.322672875050245,2
+article_jissue,754,17.93373622111682,3
+article_jissue,756,nan,10
+article_jissue,757,17.33860102923139,5
+article_jissue,760,nan,7
+article_jissue,761,7.39459261391012,2
+article_jissue,765,nan,10
+article_jissue,784,11.31152837955133,2
+article_jissue,788,9.537325932642258,2
+article_jissue,794,25.66025379395039,5
+article_jissue,799,nan,0
+article_jissue,808,3.867546122312618,1
+article_jissue,809,15.500213128910977,3
+article_jissue,815,nan,16
+article_jissue,821,nan,0
+article_jissue,824,60.469886001865866,19
+article_jissue,825,nan,4
+article_jissue,831,nan,2
+article_jissue,846,3.788793082425801,1
+article_jissue,856,17.120887100187474,4
+article_jissue,858,110.25985684125496,24
+article_jissue,859,nan,5
+article_jissue,865,18.165399487359025,6
+article_jissue,880,nan,5
+article_jissue,887,nan,6
+article_jissue,891,nan,5
+article_jissue,892,nan,1
+article_jissue,896,16.685664767670666,4
+article_jissue,899,nan,0
+article_jissue,904,3.413026496614862,1
+article_jissue,908,9.881192403949626,3
+article_jissue,914,nan,11
+article_jissue,923,nan,0
+article_jissue,936,nan,1
+article_jissue,939,nan,3
+article_jissue,950,nan,0
+article_jissue,966,43.10060527416932,8
+article_jissue,976,nan,-1
+article_jissue,984,nan,2
+article_jissue,999,nan,9
+article_jcreated_at,4,$1/13/0%1,1/13/01
+article_jcreated_at,5,nan,1/15/10
+article_jcreated_at,8,nan,1/1/07
+article_jcreated_at,18,%1/$5/01,1/5/01
+article_jcreated_at,26,nan,1/14/03
+article_jcreated_at,29,1??/13/01,1/13/01
+article_jcreated_at,36,1/8$/01,1/8/01
+article_jcreated_at,38,1/9/02%,1/9/02
+article_jcreated_at,42,1%/$14/10,1/14/10
+article_jcreated_at,45,nan,1/10/01
+article_jcreated_at,61,nan,1/15/01
+article_jcreated_at,68,nan,1/10/01
+article_jcreated_at,80,nan,1/8/01
+article_jcreated_at,82,nan,1/7/02
+article_jcreated_at,83,#1/5/01,1/5/01
+article_jcreated_at,87,1@@/6/12,1/6/12
+article_jcreated_at,88,nan,1/12/01
+article_jcreated_at,93,1/1/@@99,1/1/99
+article_jcreated_at,94,nan,1/11/01
+article_jcreated_at,95,1/#13@@/01,1/13/01
+article_jcreated_at,102,1/1$4$/01,1/14/01
+article_jcreated_at,103,nan,1/15/01
+article_jcreated_at,104,nan,1/9/08
+article_jcreated_at,105,1/14/??04@@,1/14/04
+article_jcreated_at,113,1/7??/01,1/7/01
+article_jcreated_at,122,1/12/$02,1/12/02
+article_jcreated_at,126,#%1/12/05,1/12/05
+article_jcreated_at,131,1/1#3/01,1/13/01
+article_jcreated_at,135,nan,1/5/01
+article_jcreated_at,136,nan,12/1/00
+article_jcreated_at,138,1/5??/01,1/5/01
+article_jcreated_at,140,nan,1/14/01
+article_jcreated_at,141,nan,1/11/01
+article_jcreated_at,143,nan,1/11/01
+article_jcreated_at,146,nan,1/12/01
+article_jcreated_at,148,1/1%4@@/01,1/14/01
+article_jcreated_at,173,1/14/1@@#2,1/14/12
+article_jcreated_at,179,nan,1/14/01
+article_jcreated_at,186,1/$12/01,1/12/01
+article_jcreated_at,206,nan,1/13/01
+article_jcreated_at,210,nan,10/15/09
+article_jcreated_at,220,1/6/01??,1/6/01
+article_jcreated_at,224,nan,1/9/01
+article_jcreated_at,228,nan,1/1/06
+article_jcreated_at,234,nan,1/12/01
+article_jcreated_at,237,1/3/12#$,1/3/12
+article_jcreated_at,247,1/10/%01,1/10/01
+article_jcreated_at,281,8/20/13??,8/20/13
+article_jcreated_at,286,nan,1/1/92
+article_jcreated_at,293,nan,1/9/02
+article_jcreated_at,295,1/1@@1%/01,1/11/01
+article_jcreated_at,310,1@@%/15/01,1/15/01
+article_jcreated_at,318,1/??9/01,1/9/01
+article_jcreated_at,323,nan,1/13/05
+article_jcreated_at,327,nan,1/12/05
+article_jcreated_at,329,1/1$0/01,1/10/01
+article_jcreated_at,333,nan,1/6/01
+article_jcreated_at,334,1/7/0??1,1/7/01
+article_jcreated_at,342,1/1/8$@@8,1/1/88
+article_jcreated_at,351,nan,1/12/01
+article_jcreated_at,354,1/1??2/01,1/12/01
+article_jcreated_at,356,nan,1/10/01
+article_jcreated_at,373,1/12/??$01,1/12/01
+article_jcreated_at,376,??1/14/07,1/14/07
+article_jcreated_at,379,#1@@/1/96,1/1/96
+article_jcreated_at,383,1/5/0#8,1/5/08
+article_jcreated_at,386,#1/1/85,1/1/85
+article_jcreated_at,390,1/12/01%,1/12/01
+article_jcreated_at,398,nan,1/11/01
+article_jcreated_at,400,nan,1/14/03
+article_jcreated_at,403,#1/14/01,1/14/01
+article_jcreated_at,408,1/13/??0@@7,1/13/07
+article_jcreated_at,412,1@@/6/03%,1/6/03
+article_jcreated_at,421,nan,1/8/01
+article_jcreated_at,422,1/1/63@@#,1/1/63
+article_jcreated_at,428,1/9/12??,1/9/12
+article_jcreated_at,445,1%/7/01,1/7/01
+article_jcreated_at,446,nan,10/20/14
+article_jcreated_at,452,nan,1/12/09
+article_jcreated_at,455,1/#4/01,1/4/01
+article_jcreated_at,461,nan,1/12/01
+article_jcreated_at,465,nan,1/13/01
+article_jcreated_at,467,1$/1@@5/01,1/15/01
+article_jcreated_at,468,1/11/05$,1/11/05
+article_jcreated_at,481,1/6$/01,1/6/01
+article_jcreated_at,482,1/1/%99,1/1/99
+article_jcreated_at,483,nan,1/11/04
+article_jcreated_at,498,1/5/01#$,1/5/01
+article_jcreated_at,500,nan,1/4/01
+article_jcreated_at,502,%$1/1/91,1/1/91
+article_jcreated_at,508,nan,1/1/67
+article_jcreated_at,509,1/13@@/01,1/13/01
+article_jcreated_at,510,nan,1/13/01
+article_jcreated_at,513,1#/13/01,1/13/01
+article_jcreated_at,514,nan,1/1/97
+article_jcreated_at,520,nan,10/26/05
+article_jcreated_at,527,1/8%/03,1/8/03
+article_jcreated_at,528,@@1/??14/01,1/14/01
+article_jcreated_at,543,nan,1/1/95
+article_jcreated_at,548,nan,1/14/01
+article_jcreated_at,569,1/1%0/01,1/10/01
+article_jcreated_at,574,1/1/9#6%,1/1/96
+article_jcreated_at,576,1/5/0#1,1/5/01
+article_jcreated_at,584,$1/11/0??1,1/11/01
+article_jcreated_at,587,1/??9/%09,1/9/09
+article_jcreated_at,589,nan,1/13/01
+article_jcreated_at,595,nan,1/5/04
+article_jcreated_at,598,1????/2/01,1/2/01
+article_jcreated_at,604,nan,1/12/01
+article_jcreated_at,605,1??/14/10,1/14/10
+article_jcreated_at,607,1??/9/01,1/9/01
+article_jcreated_at,608,6/15/92?@@?,6/15/92
+article_jcreated_at,615,nan,1/11/04
+article_jcreated_at,616,6/14/0%2,6/14/02
+article_jcreated_at,627,nan,5/1/90
+article_jcreated_at,629,nan,1/13/12
+article_jcreated_at,638,??1$/9/01,1/9/01
+article_jcreated_at,648,nan,4/1/90
+article_jcreated_at,653,nan,1/10/01
+article_jcreated_at,662,1/%11/01,1/11/01
+article_jcreated_at,664,1/14%/01,1/14/01
+article_jcreated_at,674,nan,1/9/01
+article_jcreated_at,675,1/4/??10,1/4/10
+article_jcreated_at,676,nan,1/11/01
+article_jcreated_at,679,1/10/0#1,1/10/01
+article_jcreated_at,680,1/8@@/08,1/8/08
+article_jcreated_at,681,1#/#13/03,1/13/03
+article_jcreated_at,685,nan,1/10/01
+article_jcreated_at,687,1/1@@4/01,1/14/01
+article_jcreated_at,689,nan,1/9/07
+article_jcreated_at,703,1/15??/01,1/15/01
+article_jcreated_at,705,nan,1/14/01
+article_jcreated_at,708,nan,1/2/07
+article_jcreated_at,715,nan,1/13/10
+article_jcreated_at,720,1@@/8/01,1/8/01
+article_jcreated_at,726,nan,1/1/86
+article_jcreated_at,729,nan,1/1/01
+article_jcreated_at,730,#1/11/10,1/11/10
+article_jcreated_at,737,1/6%/01,1/6/01
+article_jcreated_at,740,@@1/1/00,1/1/00
+article_jcreated_at,752,1/??2/08,1/2/08
+article_jcreated_at,753,1/5/@%@01,1/5/01
+article_jcreated_at,754,nan,1/13/05
+article_jcreated_at,756,1/10/0#1,1/10/01
+article_jcreated_at,763,nan,1/6/07
+article_jcreated_at,765,nan,1/13/11
+article_jcreated_at,769,nan,4/14/07
+article_jcreated_at,771,??1/8/09,1/8/09
+article_jcreated_at,772,1#/1/01,1/1/01
+article_jcreated_at,777,nan,1/13/06
+article_jcreated_at,793,nan,1/1/00
+article_jcreated_at,798,1/4/09%,1/4/09
+article_jcreated_at,804,1/5/0@@1,1/5/01
+article_jcreated_at,809,1/8#/03@@,1/8/03
+article_jcreated_at,821,1/14/01@@,1/14/01
+article_jcreated_at,822,1/1$4/@@04,1/14/04
+article_jcreated_at,823,nan,1/4/01
+article_jcreated_at,825,nan,1/11/04
+article_jcreated_at,826,nan,1/15/04
+article_jcreated_at,831,1/3/$01,1/3/01
+article_jcreated_at,837,nan,6/1/95
+article_jcreated_at,845,nan,1/14/01
+article_jcreated_at,850,nan,1/11/01
+article_jcreated_at,873,nan,9/1/97
+article_jcreated_at,874,nan,1/5/01
+article_jcreated_at,875,nan,1/14/01
+article_jcreated_at,876,nan,1/4/01
+article_jcreated_at,884,1/%1/89,1/1/89
+article_jcreated_at,889,1/%13/01,1/13/01
+article_jcreated_at,891,nan,1/1/97
+article_jcreated_at,902,nan,1/7/11
+article_jcreated_at,903,$1/13/09,1/13/09
+article_jcreated_at,911,1/7/@@01,1/7/01
+article_jcreated_at,931,1/15??/02,1/15/02
+article_jcreated_at,940,nan,1/8/01
+article_jcreated_at,942,1/10/0@@1,1/10/01
+article_jcreated_at,947,1/#1/76,1/1/76
+article_jcreated_at,955,1/10??/01%,1/10/01
+article_jcreated_at,958,1/13??/10,1/13/10
+article_jcreated_at,963,#1/14$/01,1/14/01
+article_jcreated_at,973,1/7/01$,1/7/01
+article_jcreated_at,986,nan,1/1/90
+article_jcreated_at,988,nan,1/1/99
+article_jcreated_at,998,nan,10/27/14
+article_jcreated_at,1000,1/@@12/01,1/12/01
+article_pagination,5,835@@-40%,835-40
+article_pagination,12,nan,10213-10224
+article_pagination,24,#2496-502%,2496-502
+article_pagination,30,nan,W1-W4
+article_pagination,31,nan,384-8
+article_pagination,43,%655-663,655-663
+article_pagination,48,CD00284#3,CD002843
+article_pagination,54,nan,597-601
+article_pagination,57,nan,427-35
+article_pagination,81,16#7-71,167-71
+article_pagination,84,nan,222-8
+article_pagination,85,nan,159-63
+article_pagination,92,Jul-%93,Jul-93
+article_pagination,96,315-@@20,315-20
+article_pagination,97,326-327%,326-327
+article_pagination,99,nan,E556-64
+article_pagination,104,667-77$,667-77
+article_pagination,111,911-2$@@4,911-24
+article_pagination,117,nan,57-61
+article_pagination,138,275%-287,275-287
+article_pagination,141,nan,152-9
+article_pagination,157,nan,1577-1588
+article_pagination,161,nan,1171-1178
+article_pagination,165,1#23-@@6,123-6
+article_pagination,172,nan,139-43
+article_pagination,179,nan,305-11
+article_pagination,185,nan,612-7
+article_pagination,203,1@@035$-46,1035-46
+article_pagination,212,30??5-1??1,305-11
+article_pagination,215,13$0-48,130-48
+article_pagination,218,nan,81-83
+article_pagination,220,11%2-1%20,112-120
+article_pagination,229,4$32-438,432-438
+article_pagination,236,#259-65,259-65
+article_pagination,245,nan,159-73
+article_pagination,250,nan,S46-S61
+article_pagination,253,nan,22
+article_pagination,256,nan,642-55
+article_pagination,261,431#-446 @@16p,431-446 16p
+article_pagination,274,3$41-51,341-51
+article_pagination,275,314??-320,314-320
+article_pagination,278,nan,1314-21
+article_pagination,281,nan,736-44
+article_pagination,282,nan,1024-1025
+article_pagination,290,nan,823-830
+article_pagination,291,7-Jan$,7-Jan
+article_pagination,293,2@@3$-31,23-31
+article_pagination,299,3$90-3,390-3
+article_pagination,316,nan,629-30
+article_pagination,318,nan,590-6
+article_pagination,325,@@173-1@@81,173-181
+article_pagination,349,217-2??6,217-26
+article_pagination,351,nan,195-203
+article_pagination,352,708??-711#,708-711
+article_pagination,355,627-30@%@,627-30
+article_pagination,358,nan,373-6
+article_pagination,364,J%ul??-00,Jul-00
+article_pagination,377,392$-398@@,392-398
+article_pagination,396,nan,437-42
+article_pagination,400,nan,725.e11-5
+article_pagination,410,nan,359-61
+article_pagination,422,nan,328-39
+article_pagination,424,nan,Aug-43
+article_pagination,426,685-9$0,685-90
+article_pagination,448,319%6-@@3199,3196-3199
+article_pagination,449,nan,535-41
+article_pagination,455,31-4%0,31-40
+article_pagination,456,Ma#$y-51,May-51
+article_pagination,461,nan,101-108
+article_pagination,462,1074$-9$,1074-9
+article_pagination,464,19-??35,19-35
+article_pagination,465,12??@@1-36,121-36
+article_pagination,466,Apr-??72,Apr-72
+article_pagination,469,nan,431-438
+article_pagination,480,Se#p-94$,Sep-94
+article_pagination,489,nan,-
+article_pagination,490,nan,S306-S314
+article_pagination,496,nan,731-741
+article_pagination,504,nan,238
+article_pagination,505,nan,60-61
+article_pagination,509,875-??81,875-81
+article_pagination,510,1??309$-1318,1309-1318
+article_pagination,511,nan,55-56 2p
+article_pagination,515,nan,57-65
+article_pagination,519,8@@34-40,834-40
+article_pagination,520,nan,15-Jul
+article_pagination,523,nan,CD001880
+article_pagination,528,nan,S136
+article_pagination,543,nan,195-203
+article_pagination,552,4%08??-427,408-427
+article_pagination,564,nan,389-95
+article_pagination,565,207??-220$,207-220
+article_pagination,567,??36-42,36-42
+article_pagination,576,664-#669,664-669
+article_pagination,578,454-46@@0??,454-460
+article_pagination,596,nan,502-8
+article_pagination,610,nan,383-92
+article_pagination,611,189-196%??,189-196
+article_pagination,612,613??-5,613-5
+article_pagination,636,#153%-6,153-6
+article_pagination,640,120-6 ST  -$ Bioavailability and tolerab#ility of intranasal diazepam in healthy adult volunteers-,120-6 ST  - Bioavailability and tolerability of intranasal diazepam in healthy adult volunteers-
+article_pagination,644,nan,e483; author's reply e484
+article_pagination,655,nan,19-24
+article_pagination,656,167-17#$5,167-175
+article_pagination,662,nan,A31
+article_pagination,671,nan,139
+article_pagination,672,nan,700-4
+article_pagination,681,nan,50-55
+article_pagination,686,??9@@-Mar,9-Mar
+article_pagination,690,nan,447-52 ST  - [Studies on cefotaxime (HR 756) concentration in human biliary tract and clinical effect for acute or subacute cholecystitis with cholelithiasis (author's transl)]-
+article_pagination,692,nan,G11-G15
+article_pagination,694,139-14$5??,139-145
+article_pagination,697,nan,332-3
+article_pagination,699,47-51 S@@T  - The concept of neurosis in a cross-cultural per#spective-,47-51 ST  - The concept of neurosis in a cross-cultural perspective-
+article_pagination,711,nan,77-95
+article_pagination,714,nan,414-6
+article_pagination,715,nan,1756-1764
+article_pagination,716,1307.3005984289366,419
+article_pagination,729,S@@32-47,S32-47
+article_pagination,732,nan,56-60
+article_pagination,733,nan,974-81
+article_pagination,745,??105-18,105-18
+article_pagination,755,nan,1017-28
+article_pagination,757,8??15-22,815-22
+article_pagination,759,48-57$; #quiz 58 60,48-57; quiz 58 60
+article_pagination,771,1$1#40-50,1140-50
+article_pagination,793,221-#32,221-32
+article_pagination,795,615??-7,615-7
+article_pagination,800,42-5%$3,42-53
+article_pagination,815,nan,11342-11352
+article_pagination,823,nan,10-10 ST  - CSM2004 best platform-
+article_pagination,827,nan,65-68-
+article_pagination,829,1337$-45,1337-45
+article_pagination,835,nan,639-49
+article_pagination,836,nan,925-31
+article_pagination,847,nan,969-75
+article_pagination,855,nan,343-51
+article_pagination,866,217-@@24@@,217-24
+article_pagination,867,CD0013??64,CD001364
+article_pagination,874,nan,Cd001799
+article_pagination,877,nan,138-52 ST  - The cost of depression-complicated alcoholism: health-care utilization and treatment effectiveness-
+article_pagination,879,507-%18$,507-18
+article_pagination,894,nan,1468-74
+article_pagination,912,nan,e1001835; discussion e1001835-e1001835; discussion e1001835
+article_pagination,913,244-23????3,244-233
+article_pagination,918,nan,813-20
+article_pagination,923,P4??3%5,P435
+article_pagination,925,2@@48-54,248-54
+article_pagination,928,18-No#v,18-Nov
+article_pagination,929,20-4 ST  - Preferences and practices of Americans and their physicians in antihypertensive therap%y-,20-4 ST  - Preferences and practices of Americans and their physicians in antihypertensive therapy-
+article_pagination,939,nan,545-9
+article_pagination,944,??446-@@55,446-55
+article_pagination,951,nan,e109114
+article_pagination,953,nan,159-166
+article_pagination,955,nan,720-6
+article_pagination,957,323#-333,323-333
+article_pagination,962,$546-8,546-8
+article_pagination,967,69??3-#9,693-9
+article_pagination,968,nan,556-65
+article_pagination,970,nan,103-119
+article_pagination,984,nan,295-301
+article_pagination,987,nan,Aug-71
+article_pagination,991,13@@4@@3S-1353S,1343S-1353S
+article_pagination,992,nan,1147-60
+article_pagination,993,3917-3??#1,3917-31
+article_pagination,996,nan,297-301
+author_list,2,{Valentina A VolchkovaJaroslav VoracPhilip LawrenceLa$urie Repiquet-PaireViktor E Volchkov},{Valentina A VolchkovaJaroslav VoracPhilip LawrenceLaurie Repiquet-PaireViktor E Volchkov}
+author_list,20,nan,{James C MartinIan MayhewLee M RomerThomas Korff}
+author_list,21,nan,{Lynne M AusmanMartin S ObinXiang-Dong WangChun LiuBlanche C IpDonald E SmithKang-Quan Hu}
+author_list,39,{K. S??andrick},{K. Sandrick}
+author_list,40,{Ri#ch SinertShoma DesaiAntonia HippCarmen L%opez},{Rich SinertShoma DesaiAntonia HippCarmen Lopez}
+author_list,42,nan,{Jacques Van HoeckeHayat BanoujaafarChristine MarieClaude M Mossiat}
+author_list,45,{R. Luck%P. MagoN. Fumo},{R. LuckP. MagoN. Fumo}
+author_list,65,nan,{Laura GiacintiSilvia Ileana FattorusoMaria Grazia ArenaLuigi Di LauroMassimo LopezDomenico SergiDiana Giannarelli}
+author_list,68,nan,{M. PujolP. BarragnJ.M. TiraboschiA. ImazM.. Dom_nguezD. Podzamczer}
+author_list,71,{Anas YounesL Jeffrey MedeirosF@@rederick HagemeisterMaria Alma RodriguezSima JehaPaolo FiumaraLynne V AbruzzoJohn T ManningJorge RomagueraA@@ndre GoyDan JonesPeter McLaughlin},{Anas YounesL Jeffrey MedeirosFrederick HagemeisterMaria Alma RodriguezSima JehaPaolo FiumaraLynne V AbruzzoJohn T ManningJorge RomagueraAndre GoyDan JonesPeter McLaughlin}
+author_list,76,nan,{M. Mitka}
+author_list,83,{Mil#agros M. Se$ssionsKevin J. Miller},{Milagros M. SessionsKevin J. Miller}
+author_list,91,nan,{Giovanni TeodoriMarta LeveroneEraldo OcchettaMiriam BortnikPaolo MarinoMarco Marcolongo}
+author_list,92,nan,{B H Mbatchou NgahaneG DevouassouxH BaudrandB GuibertN FreymondY PachecoA Traverse-Glehen}
+author_list,93,{M. W.?? Ma??rtinR. SaundersS. Levin},{M. W. MartinR. SaundersS. Levin}
+author_list,97,{N. JakubikL. TrzpilF. RaciborskiU. Samolinska-ZawiszaL. SamoliskiD. PaczesnyZ. HalatJ. MarszalkowskaB. SamolinskiP. S$amel-KowalikA. LusawaJ. GutowskaA. Tomas??zewskaA. Walkiewicz},{N. JakubikL. TrzpilF. RaciborskiU. Samolinska-ZawiszaL. SamoliskiD. PaczesnyZ. HalatJ. MarszalkowskaB. SamolinskiP. Samel-KowalikA. LusawaJ. GutowskaA. TomaszewskaA. Walkiewicz}
+author_list,98,{B#. ??A. Burt},{B. A. Burt}
+author_list,102,nan,{M. Tercedor SnchezJ.A. Prieto Velasco}
+author_list,103,nan,{A. KelirisI. KoutsourelakisA. MinaritzoglouS. Zakynthinos}
+author_list,115,nan,{A H ZwindermanM MunnekeG J TijhuisZ de JongJ M HazesT P Vliet Vlieland}
+author_list,124,nan,{Yasunori OtaMasaaki NoguchiKei-Ji SugimotoHiroshi IzumiNorio KomatsuNanae YamaguchiHidenori ImaiAsami ShimadaYasunobu SekiguchiMutsumi Wakabayashi}
+author_list,125,{A. J. Ghia%V. J. GonzalezJ. D. TwardA. M. Str$oupD. K. GaffneyL. Pappas},{A. J. GhiaV. J. GonzalezJ. D. TwardA. M. StroupD. K. GaffneyL. Pappas}
+author_list,128,nan,{M. P. BachD. Cosic}
+author_list,143,{R. DanielM. T. AnsariL. W%eeksS. DoucetteA. TsertsvadzeB. SkidmoreK. SinghL. GaudetM. WalkerS. Tsouros},{R. DanielM. T. AnsariL. WeeksS. DoucetteA. TsertsvadzeB. SkidmoreK. SinghL. GaudetM. WalkerS. Tsouros}
+author_list,153,nan,{R R van RijnS G F Robben}
+author_list,158,nan,{Debbi Ann Morrissette}
+author_list,161,nan,{Pakenham K.I.Fitzell A.}
+author_list,163,{K. Y. TsengH. F. HuangK. I. Ch#engH. T. HsuP. ??Y. ChangY. C. ChenI. C. Lu},{K. Y. TsengH. F. HuangK. I. ChengH. T. HsuP. Y. ChangY. C. ChenI. C. Lu}
+author_list,166,nan,{S. G. JenkinsT. M. FileD. J. Farrell}
+author_list,168,nan,{N R St-PierreD SauvantP SchmidelyJ J Daudin}
+author_list,177,@@{D. C. Heimburger},{D. C. Heimburger}
+author_list,179,{J van der MeulenJ KluckE va@@n DijkJ H M Straatm$an},{J van der MeulenJ KluckE van DijkJ H M Straatman}
+author_list,180,nan,{Robert T TrousdaleJ Ryan Martin}
+author_list,188,{H LiKf ChungH LiuSp Zha$ngM X$u},{H LiKf ChungH LiuSp ZhangM Xu}
+author_list,191,nan,{J. J. CoranT. Koropeckyj-CoxC. L. Arnold}
+author_list,193,{OR. Interna$tional Society for Technology i??n Education EugeneBjorn Norstrom},{OR. International Society for Technology in Education EugeneBjorn Norstrom}
+author_list,197,nan,{Shao-Cheng LiuChi-Chung WuHsing-Won WangChuan-Hsiang KaoYueng-Hsiang Chu}
+author_list,202,nan,{John B. Sell}
+author_list,214,nan,{NULL}
+author_list,217,{%NUL??L},{NULL}
+author_list,222,{I. RobertsE. HeitmanC. Diguise@@ppiT. Di$nh-Zarr},{I. RobertsE. HeitmanC. DiguiseppiT. Dinh-Zarr}
+author_list,228,nan,{D M Aboulafia}
+author_list,234,nan,{K. C. McDermottJ. L. BlomquistV. L. HandaE. C. Evers}
+author_list,237,{Andreas M_ggeChrist@@oph HanefeldRainer H B_ger[Collective N@@ame] CARDIAC study investigators},{Andreas M_ggeChristoph HanefeldRainer H B_ger[Collective Name] CARDIAC study investigators}
+author_list,243,nan,{Anders HallingHkan OdebergHenrik ForssellJacob OdebergMarie-Louise PerssonLennart RstamIvar VaaraUlf LindbladMichael Freitag}
+author_list,245,{A BrandJ Van der HeydenS de VironH Van Oyen#N Malats},{A BrandJ Van der HeydenS de VironH Van OyenN Malats}
+author_list,256,{Dalia ElimamKeith A WebsterAhmed Omr@@anFei YinLina A Shehadeh},{Dalia ElimamKeith A WebsterAhmed OmranFei YinLina A Shehadeh}
+author_list,257,nan,{Jia-rui PuDan LiDe-hua YangLi-duan ZhengXiao-dan ZhengHong MeiXuan XiangQiang-song Tong}
+author_list,258,nan,{J. FalkinghamM. EvandrouA. VlachantoniJ. Robards}
+author_list,266,nan,{Justin W TimbieMarcela Horvitz-LennonSharon-Lise T NormandRichard G Frank}
+author_list,267,{Paola BolliniGiuseppe TibaldiBruce KupelnickCarmine MunizzaSandro Pa$mpallona},{Paola BolliniGiuseppe TibaldiBruce KupelnickCarmine MunizzaSandro Pampallona}
+author_list,268,nan,{A. UngkanungdechaC. ChayachindaJ. VeeragulJ. Jisabai}
+author_list,280,nan,{Ahmad QamarMuhammad ShahidMd. Abdur RahmanAhmed LbathAkhlaq AhmadFaizan Ur RehmanAbdullah MuradBilal Sadiq}
+author_list,282,{R. R. M. BosE. W. HovingM. Wagema@@kers},{R. R. M. BosE. W. HovingM. Wagemakers}
+author_list,285,{Ilaria CasettaG#erardo IulianoGraziella Filippini},{Ilaria CasettaGerardo IulianoGraziella Filippini}
+author_list,288,nan,{N. M. PinheiroR. Almeida-ReisL. OlivaM. A. MartinsM. L. V. OlivaO. A. Theodoro-JuniorE. A. LeickI. F. L. C. TibrioC. M. PradoR. F. RighettiB. T. M. Oliveira}
+author_list,291,nan,{S IkawaM SudohM SuzukiS MatsubaraM ShiotaK Kawakami}
+author_list,295,nan,{M. A. AlbaS. Prieto-GonzalezA. Garcia-MartinezM. C. CidM. ButjosaG. Espigol-FrigoleJ. Hernandez-Rodriguez}
+author_list,297,nan,{T. FoltynieR.A. BarkerS.J.G. LewisC.H. Williams-Gray}
+author_list,300,nan,{Katherine A YeagerSusan Bauer-Wu}
+author_list,316,nan,{Qiao-Hong HuZhi-Liang HuangXiao-Ming FanShuang-Xi ChenXiang-Yang SongXiao-Ying Qiu}
+author_list,320,{Jesper I ReimersSabrina G ElleseHenrik  Andersen%}$,{Jesper I ReimersSabrina G ElleseHenrik  Andersen}
+author_list,321,{Christi%an T. L. Janssen%},{Christian T. L. Janssen}
+author_list,322,{S MuratH AvseverS Y_kselC $S PaksoyB OnderK Kamburoglu},{S MuratH AvseverS Y_kselC S PaksoyB OnderK Kamburoglu}
+author_list,324,nan,{Enie Akhtar Bt NawawiAhlam M Al-KharabshehTsia-Shu Lo}
+author_list,331,nan,{Joel W. GrubeJuan A. LunaDavid A. GilderJennifer RobertsDaniel CalacCindy L. EhlersRoland S. Moore}
+author_list,337,{Ca@@rmelo Graffagnino@@DaiWai M Olson},{Carmelo GraffagninoDaiWai M Olson}
+author_list,342,nan,{W. BodschT. Rommel}
+author_list,343,{NUL@@L},{NULL}
+author_list,345,{N@@@@ULL},{NULL}
+author_list,346,{S. A. MurrellB. T. MastA??. R. Azar},{S. A. MurrellB. T. MastA. R. Azar}
+author_list,347,{N D# OsgoodT O Teng%s},{N D OsgoodT O Tengs}
+author_list,348,{H WeatherlyD EpsteinJ BurchN WoolacottD JayneD FoxA Baba-A@@kbari Sari},{H WeatherlyD EpsteinJ BurchN WoolacottD JayneD FoxA Baba-Akbari Sari}
+author_list,349,nan,{Barbara ZeligsStephen M PetersOnorina Di MitaShahla RiaziHenry YeagerGerman A BenavidesJoseph A Bellanti}
+author_list,351,{S. Sakam??otoY. Oku%mura},{S. SakamotoY. Okumura}
+author_list,354,nan,{Franco RovielloDaniele MarrelliCarla VindigniValeria PascaleGiovanni Corso}
+author_list,362,nan,{F. BolandardM. BonninP. DubandJ. E. BazinJ. P. Mission}
+author_list,367,{Prem RamburuthMas$simil%iano Tani},{Prem RamburuthMassimiliano Tani}
+author_list,368,{H FukudaH KasudaJ SaitohH MitsuhataY Hira@@bayashiK SaitohR Shimizu},{H FukudaH KasudaJ SaitohH MitsuhataY HirabayashiK SaitohR Shimizu}
+author_list,373,{??W.?? YuR. PaganiL. Huang},{W. YuR. PaganiL. Huang}
+author_list,385,{T ReinholdF M_ller-RiemenschneiderS N Wi$llich},{T ReinholdF M_ller-RiemenschneiderS N Willich}
+author_list,387,nan,{Bafna Bassler Blarney Coleman Hillier Kerr Kerr Kerr Livingston Marshall Pauls Peponis Pikora Stokols Templer Zimring AndersenGayle Nicoll}
+author_list,391,nan,{D J BrunoB S BloomR JayadevappaD Y Maman}
+author_list,396,nan,{Julia Dawn JonesTouran Heidi KeenPeter Sze Chai WongReza AshrafiOmer KhanzadaDerek Richard RobinsonUpul Wickramarachchi}
+author_list,405,{R F HofsteinJ M MottT% L BarreraE #J Teng},{R F HofsteinJ M MottT L BarreraE J Teng}
+author_list,408,nan,{Kenichi KokuboTaro KamisasanukiKengo HayashiKenichiro KasaiNobutada Katori}
+author_list,411,{J. DO  - 000268051 [pii] 10.1159/000268051 [doi] DP  - Nlm ET  - 2009/12/24 RizviF. H. Na??waz},{J. DO  - 000268051 [pii] 10.1159/000268051 [doi] DP  - Nlm ET  - 2009/12/24 RizviF. H. Nawaz}
+author_list,413,{Sebastian Pa@@ul Suggate},{Sebastian Paul Suggate}
+author_list,421,nan,{A.U. MonschM. TolnayK.I. TaylorA. ProbstA.R. Miserez}
+author_list,426,{R. V. IyerG. M. WoodsE. VichinskyT. R. KinneyJ. I. VerterS. T. MillerC. T. HolbrookC. H. PegelowJ. M. Falle$ttaG. R. Buchanan},{R. V. IyerG. M. WoodsE. VichinskyT. R. KinneyJ. I. VerterS. T. MillerC. T. HolbrookC. H. PegelowJ. M. FallettaG. R. Buchanan}
+author_list,427,{N#ULL},{NULL}
+author_list,430,nan,{K. TamakiA. G. C_larS. BeyrerH. Aoki}
+author_list,436,nan,{J. NaesdalM. DanilewitzJ. AdlerD. G. DA  - Oct DO  - 10.1111/j.1572-0241.2008.02115.x DP  - NLM ET  - 2008/09/09 SilbergC. HwangD. A. Drossman}
+author_list,440,{M RadererC GedlickaA LenauerD DepischW ScheithauerB SchneeweissW FiebigerF LangG V KornekB Sch_@@ll},{M RadererC GedlickaA LenauerD DepischW ScheithauerB SchneeweissW FiebigerF LangG V KornekB Sch_ll}
+author_list,446,nan,{Frances WilliamsAlehegn GelayeSusan SteigerwaltYara DaloulHadeel AssadTimothy R LarsenBarryton WaanbahMichael Williams}
+author_list,452,{A BereketZ HochbergY YavuzH L MullerR H LustigR WeissW KiessA P ??Goldstone},{A BereketZ HochbergY YavuzH L MullerR H LustigR WeissW KiessA P Goldstone}
+author_list,453,nan,{Chandra Y. and Bains Sujeev S. and Egede Leonard E. Osborn}
+author_list,469,{Nielsen H.O.Edwin B.H_nerbein M.Ho@@vendal C.Liedman B.Mortensen M.B.},{Nielsen H.O.Edwin B.H_nerbein M.Hovendal C.Liedman B.Mortensen M.B.}
+author_list,474,nan,{Alexander AttardJosephine PsailaAdrian ZammitDeborah Grech Marguerat}
+author_list,476,{Bi??n H$eEric C Frey},{Bin HeEric C Frey}
+author_list,485,nan,{T. Sone}
+author_list,487,{Janet Webb??er#Fiona Liddell},{Janet WebberFiona Liddell}
+author_list,491,{B. Vijayala??kshmiD. Siva Rama PrasadD.% RaveendranathK. Sri Rama MurthyA. Harinatha Reddy},{B. VijayalakshmiD. Siva Rama PrasadD. RaveendranathK. Sri Rama MurthyA. Harinatha Reddy}
+author_list,493,{Travis G MaakTh??omas L WickiewiczVolker MusahlJames E VoosAndrew D #Pearle},{Travis G MaakThomas L WickiewiczVolker MusahlJames E VoosAndrew D Pearle}
+author_list,497,nan,{H. Q. XuM. SnyderS. FyfitchA. ChetaG. BezdikianV. N. ShahT. R. LiszkaiH. CharkasN. GuptaY. ShojiC. S. BajwaC. MayM. SanwarwalaM. BrumovskyI. Ezekoye}
+author_list,500,{Richard J. A????. Murrin},{Richard J. A. Murrin}
+author_list,510,nan,{Yh HsuMs YaoCs WongCh BaiMy WuYf LinCy HsiangKw TamYw LiHf Hsiang}
+author_list,515,{Mc$Neal M.M.Sanchez S.E.Jacob S.Javid P.J.Englund J.A.Horslen S.P.},{McNeal M.M.Sanchez S.E.Jacob S.Javid P.J.Englund J.A.Horslen S.P.}
+author_list,519,nan,{Julio S G MontanerKora DebeckEvan WoodThomas KerrEdward J MillsDan Werb}
+author_list,523,nan,{A AvenellH H Handoll}
+author_list,527,nan,{Jos H VerbeekRob KokJan L HovingFrederieke G SchaafsmaFrank J H van DijkPaul B A Smits}
+author_list,531,nan,{Michelle Firestone}
+author_list,535,{J P IoannidisJ LauC MilchD SalemP W ChewN Te%rrinE% M Balk},{J P IoannidisJ LauC MilchD SalemP W ChewN TerrinE M Balk}
+author_list,537,{@@NULL},{NULL}
+author_list,540,{A. M. WalkerJ. Xerry??K. Davi#esN. C. ElvissR. J. Owen},{A. M. WalkerJ. XerryK. DaviesN. C. ElvissR. J. Owen}
+author_list,547,{R. T. Malis$onE. F. Pace-SchottV. CoricP. T. @@MorganR. StickgoldZ. H. Sahul},{R. T. MalisonE. F. Pace-SchottV. CoricP. T. MorganR. StickgoldZ. H. Sahul}
+author_list,549,nan,{D CaronS J WitchellM A JewettE L St LouisR R GrayC BombardierS KumraK E PsihramisM R Ryan}
+author_list,552,{K.% S??eoL. G. Epstein},{K. SeoL. G. Epstein}
+author_list,565,{Basta Beard Beard Beel-Bates Bierman Bowling Cagney Calkins Carder Carlsson Chan Clark Clarke Cutchin Cutler Davidoff Diehl Doty Durrett Feldman %Foote Freedman Gaugler Gitlin Gitlin Glass Golant Golant Golant Golant Golant Golant Golant Grafova Gross Hunt AlleyStephen M. Golant},{Basta Beard Beard Beel-Bates Bierman Bowling Cagney Calkins Carder Carlsson Chan Clark Clarke Cutchin Cutler Davidoff Diehl Doty Durrett Feldman Foote Freedman Gaugler Gitlin Gitlin Glass Golant Golant Golant Golant Golant Golant Golant Grafova Gross Hunt AlleyStephen M. Golant}
+author_list,571,{Ana Maria Baptista MenezesDavid Alejandro GonzlezElaine Cardozo MacedoPedro Curi HallalMaria de Ftima MaiaMarli KnorstSamuel Carvalho DumithJeovany Mart_nez-MesaRicardo Bica NoalFernando Csar WehrmeisterJos Ro%berto Jardim},{Ana Maria Baptista MenezesDavid Alejandro GonzlezElaine Cardozo MacedoPedro Curi HallalMaria de Ftima MaiaMarli KnorstSamuel Carvalho DumithJeovany Mart_nez-MesaRicardo Bica NoalFernando Csar WehrmeisterJos Roberto Jardim}
+author_list,577,{P MichelV PapavasileiouG N@@taiosA Barg@@iotaK Makaritsis},{P MichelV PapavasileiouG NtaiosA BargiotaK Makaritsis}
+author_list,579,{H. ChoiE. S. KangS. K. LimS. Y. JeongH. C. LeeH. J. KimS. KimY. RheeY. H. LeeJ. H. Mo%onK. R. KimC. W. AhnB. S. ChaE. J. Lee},{H. ChoiE. S. KangS. K. LimS. Y. JeongH. C. LeeH. J. KimS. KimY. RheeY. H. LeeJ. H. MoonK. R. KimC. W. AhnB. S. ChaE. J. Lee}
+author_list,588,nan,{S NadeauF MalouinB.J McFadyen}
+author_list,600,{Jutta BeierPeter D'AndreaMichelle HenleyStephanie KornKai-Michael BeehDo??nald BanerjiDalal Jadayel},{Jutta BeierPeter D'AndreaMichelle HenleyStephanie KornKai-Michael BeehDonald BanerjiDalal Jadayel}
+author_list,610,nan,{F VinF A AllaertJ P BenigniS Sadoun}
+author_list,611,{R.A. MesaN.C.P. CrossJ.O. Mascarenha$s},{R.A. MesaN.C.P. CrossJ.O. Mascarenhas}
+author_list,615,{Gilles MontalescotGordon FitzGeraldKurt G Barringhaus[Collective Name] GRACE InvestigatorsFrans Van de WerfJoel M GoreDavid D McManusJos L_pez-Send_nPhilippe Gabrie??l StegKay Lee Par??k},{Gilles MontalescotGordon FitzGeraldKurt G Barringhaus[Collective Name] GRACE InvestigatorsFrans Van de WerfJoel M GoreDavid D McManusJos L_pez-Send_nPhilippe Gabriel StegKay Lee Park}
+author_list,617,nan,{A PolychronakiCh RoussosA KoutsoukouI DimitroulisJ Milic-EmiliN G KoulourisS RetsouE N KosmasM Gaga}
+author_list,620,nan,{S. T. VisserM. J. PostmaP. DenigF. M. De VriesE. Hak}
+author_list,633,{J. GschwendS. Schirrmacher-MemmelA. BeekerM. O. GrimmB. BrehmerM. ZaissU. Von VerschuerS. Pahe#rnikM. BosM. De SantisM. RetzS. Krause},{J. GschwendS. Schirrmacher-MemmelA. BeekerM. O. GrimmB. BrehmerM. ZaissU. Von VerschuerS. PahernikM. BosM. De SantisM. RetzS. Krause}
+author_list,636,nan,{H. OshimaK. KobayashiT. YamamotoM. KasaiC. FukayaY. Katayama}
+author_list,641,nan,{Irene G SaladoAna MartinezDaniel I PerezBrian C KraemerMurilo L BelloConcepci_n PerezNicole F LiachkoMagalie LecourtoisMiriam RedondoCarmen GilLaetitia Miguel}
+author_list,643,nan,{Ashley McDonaldShannon N ZenkColleen CorteKelly K Jones}
+author_list,644,{Sergio Raposeiras-Roub_nJos Ma%ria Garc_a-AcuaJos Ram_n Gonzlez-Juanatey},{Sergio Raposeiras-Roub_nJos Maria Garc_a-AcuaJos Ram_n Gonzlez-Juanatey}
+author_list,647,nan,{Cameron F AbramsSpencer T Stober}
+author_list,657,{N_ria LloberasMarcel la Fr??anquesaJosep M CruzadoJosep M Griny_Ins RamaGabriela AlperovichImmaculada Herrero-FresnedaJoan TorrasPepita Gimnez-Bonaf},{N_ria LloberasMarcel la FranquesaJosep M CruzadoJosep M Griny_Ins RamaGabriela AlperovichImmaculada Herrero-FresnedaJoan TorrasPepita Gimnez-Bonaf}
+author_list,663,nan,{Wolfgang KonertzOtto KrogmannPascal M DohmenBirgit FranzbachEmanuela AngeliCarlo Pace NapoleoneJohannes KrollGleb TarusinovTorsten ChristGaetano Gargiulo}
+author_list,664,nan,{Yong-Long ChiXiao-Lei ZhangNai-Feng TianYao-Sen WuXin-Lei WuXiang-Yang WangFang-Min MaoLi-Jun WuXu-Qi Hu}
+author_list,665,nan,{Hansel J OteroPeter J NeumannChi H FangRobert J WardMeera Sekar}
+author_list,679,nan,{Debashish ChakravarthyElizabeth A. HintonTracey C. VlahovicCynthia Ann Fleck}
+author_list,681,{Vanashri Nargund-JoshiJean S. L@@ee},{Vanashri Nargund-JoshiJean S. Lee}
+author_list,684,nan,{A D NageswariS VaniP MuthuveeralakshmiS ShanmugalakshmiV DheenadhayalanG ArivarignanR M Pitchappan}
+author_list,688,{D. RingR. G. AlbersT. G. Guit#ton},{D. RingR. G. AlbersT. G. Guitton}
+author_list,703,nan,{U. S. SangkomkamhangP. LumbiganonW. PrasertcharoensukM. Laopaiboon}
+author_list,708,{K Ishik$awa-TakataT OhtaK MoritakiT GotouS Inoue},{K Ishikawa-TakataT OhtaK MoritakiT GotouS Inoue}
+author_list,710,nan,{J. M. ClaiseS. NeelP. CatilinaL. FontanaS. Ughetto}
+author_list,718,{Hisako HaraYukio SekiNoriyuki Murai%Isao Koshim@@aTakuya IidaMakoto MiharaTakeshi Todokoro},{Hisako HaraYukio SekiNoriyuki MuraiIsao KoshimaTakuya IidaMakoto MiharaTakeshi Todokoro}
+author_list,719,nan,{K.-W. ParkJ. SongH.-J. KimS.-R. MoonM.S. Lee}
+author_list,723,nan,{S. V. DriamovS. ButzP. T. BuserC. E. ZauggM. Bellahcene}
+author_list,726,{Brooklyn. Office of Educational Assessment. New York City Board of Educat??ion},{Brooklyn. Office of Educational Assessment. New York City Board of Education}
+author_list,735,{Marlos Rodrigues Domingues$Ana?? Claudia Gastal FassaMaria Laura Vidal Carret},{Marlos Rodrigues DominguesAna Claudia Gastal FassaMaria Laura Vidal Carret}
+author_list,736,{M. C.# Klein},{M. C. Klein}
+author_list,738,nan,{Sergio GarridoAngeles PulgarStefan DuschekMar_a Mart_n-VzquezGustavo A Reyes Del Paso}
+author_list,746,{N. HarcourtS. C. $MasriM. ColvinG. Raveendran},{N. HarcourtS. C. MasriM. ColvinG. Raveendran}
+author_list,748,nan,{NULL}
+author_list,749,nan,{T. SentellT. UsagawaM. HagiwaraT. PeacockH. Hee HeoM. G. PearceL. ChoyM. R. Dela Cruz}
+author_list,750,{M Wabits#ch$A MossD Kunze},{M WabitschA MossD Kunze}
+author_list,753,{Linda M. BurtonAltman Bullard Burton Burton Burton Burton Burton Clark Conley Dilworth-Williams Fischer Foucault Franklin Gieryn Gilbert Goering Hooks Howard Kidder Lahiri Lawson Clark Lawson Clark Lawson Clark Low Massey Oliver P#erkins Rosenbaum Rosenbaum Sanders Stack AllanSherri Lawson Clark},{Linda M. BurtonAltman Bullard Burton Burton Burton Burton Burton Clark Conley Dilworth-Williams Fischer Foucault Franklin Gieryn Gilbert Goering Hooks Howard Kidder Lahiri Lawson Clark Lawson Clark Lawson Clark Low Massey Oliver Perkins Rosenbaum Rosenbaum Sanders Stack AllanSherri Lawson Clark}
+author_list,755,nan,{T. Sone}
+author_list,758,nan,{NULL}
+author_list,759,nan,{S. AshelfordV. Taylor}
+author_list,771,{G Boutet@@},{G Boutet}
+author_list,773,nan,{Carolyn Gotay}
+author_list,779,nan,{A. R. AleandriD. ManciniT. CosentiniR. Le DonneN. Colavita}
+author_list,781,{B. PollinC. GenyJ. P. NguyenP.?? CesaroA. Feve},{B. PollinC. GenyJ. P. NguyenP. CesaroA. Feve}
+author_list,790,{J. M. Neal??D. J#. KopaczM. A. LewisJ. J. Deck},{J. M. NealD. J. KopaczM. A. LewisJ. J. Deck}
+author_list,791,nan,{Lucio MontebugnoliLuca MorandiLuca ScapoliAnnalisa PalmieriDavide B GissiMaria Pia FoschiniIlaria Manelli}
+author_list,793,nan,{I. DelgadoJ. Vega}
+author_list,798,{Jeff KnightJeffery M# SmithThomas E Tru%mbleWren V McCallister},{Jeff KnightJeffery M SmithThomas E TrumbleWren V McCallister}
+author_list,809,nan,{Hanan Al-ModallalAnn PedenDebra Anderson}
+author_list,816,{N. A. Mark EstesScott?? McNittWojciech ZarebaBronislava PolonskyDouglas LaidlawMark S. LinkFrank MarcusKathleen Gear},{N. A. Mark EstesScott McNittWojciech ZarebaBronislava PolonskyDouglas LaidlawMark S. LinkFrank MarcusKathleen Gear}
+author_list,817,{R. A. OrdA. SalamaR. Mova%hedS. A. McClure},{R. A. OrdA. SalamaR. MovahedS. A. McClure}
+author_list,824,nan,{David CooperErik K Alexander}
+author_list,834,nan,{Stephen A GeraciMohammed KaziChristian A Koch}
+author_list,839,nan,{David B HoytSandro B RizoliAndrew J BakerEileen M BulgerWolfgang G JungerJoseph CuschieriShawn G RhindPang N Shek}
+author_list,841,@@{NULL}@@,{NULL}
+author_list,842,nan,{Somjot S BrarWilliam A Gray}
+author_list,843,nan,{S Y ChenH ChenH Y LiJ ZhangY H Hua}
+author_list,847,{Konstantinos NastosKonstantinos EvangelouMarilena PapaioannouJohn VlachogiannakosMaria GazouliApostolos PapaloisChristos ZeglinasIoannis$ Papaconstantinou@@Panagis LykoudisCharalampos TzathasAnneza Yiallourou},{Konstantinos NastosKonstantinos EvangelouMarilena PapaioannouJohn VlachogiannakosMaria GazouliApostolos PapaloisChristos ZeglinasIoannis PapaconstantinouPanagis LykoudisCharalampos TzathasAnneza Yiallourou}
+author_list,853,{Yusuf S@@Fox KAChow CKAnan%d SSJolly SRao-Melacini P},{Yusuf SFox KAChow CKAnand SSJolly SRao-Melacini P}
+author_list,857,@@{NCT011536$20 },{NCT01153620 }
+author_list,858,{S. LinS. E. NissenK. WolskiI. SipahiE. M. TuzcuS. J. NichollsT. ChurchillP. SchoenhagenT. CroweC. WangA. LoydC. A@@pperson-HansenW. A. Magyar},{S. LinS. E. NissenK. WolskiI. SipahiE. M. TuzcuS. J. NichollsT. ChurchillP. SchoenhagenT. CroweC. WangA. LoydC. Apperson-HansenW. A. Magyar}
+author_list,860,{R. ??ArabyatD. W. Rai#sch},{R. ArabyatD. W. Raisch}
+author_list,862,{N??k ShuklaSn DasP GaurAk Singh},{Nk ShuklaSn DasP GaurAk Singh}
+author_list,870,nan,{P. KludingS. A. DA  - Winter DO  - 10.1310/let5-xnby-98q6-q8tg DP  - NLM ET  - 2005/03/01 Billinger}
+author_list,881,{T ForsnJ Eriks%sonC OsmondD Barker},{T ForsnJ ErikssonC OsmondD Barker}
+author_list,894,{Gerard H KoppelmanJohan C de JongsteLiset E M ElstgeestHenri_tte A SmitUlrike GehringAnne??mien Haveman-NiesMarjan KerkhofMarga B M BekkersAlet H WijgaSalome Scholtens},{Gerard H KoppelmanJohan C de JongsteLiset E M ElstgeestHenri_tte A SmitUlrike GehringAnnemien Haveman-NiesMarjan KerkhofMarga B M BekkersAlet H WijgaSalome Scholtens}
+author_list,901,{Demetrios J. KutsogiannisNeil K. SinglaFrances Chu??ngStephen R. La@@neJeremey LevinJoseph V.J. PergolizziBrendan JohnsonLinda BlackburnSonia K. Singla},{Demetrios J. KutsogiannisNeil K. SinglaFrances ChungStephen R. LaneJeremey LevinJoseph V.J. PergolizziBrendan JohnsonLinda BlackburnSonia K. Singla}
+author_list,909,{M. HeidenE. LyskovM. Barn??ek#ow-BergkvistM. Nakata},{M. HeidenE. LyskovM. Barnekow-BergkvistM. Nakata}
+author_list,913,nan,{Ruth H. Striegel-MooreEmilia BarzegarnazariFary M. CachelinCatherine Veisel}
+author_list,914,{Roya Etemad-RezaiAmir M Owrangi$Nabil HussainJack ChiuAndrew LuBrandon En#twistleGrace Parraga},{Roya Etemad-RezaiAmir M OwrangiNabil HussainJack ChiuAndrew LuBrandon EntwistleGrace Parraga}
+author_list,923,{Thompson NCCal%verley PMAOlsson H},{Thompson NCCalverley PMAOlsson H}
+author_list,924,{%Zhao B.-X.Lao L.$Shen X.-Y.Chen H.-Y.},{Zhao B.-X.Lao L.Shen X.-Y.Chen H.-Y.}
+author_list,933,nan,{NULL}
+author_list,942,{E. IdrizovicA. OdobasicL. DedicA. PasicM. Dervisefendic??E. Iljazovic-Lati%fagicA. OdobasicL. Arnautalic},{E. IdrizovicA. OdobasicL. DedicA. PasicM. DervisefendicE. Iljazovic-LatifagicA. OdobasicL. Arnautalic}
+author_list,943,nan,{Periyanayagam U.Pang P.S.Kiraly A.Lyden A.Chan J.}
+author_list,946,{H. Cavusoglu????T. CanseverA. YilmazY. AydinH. A. GencA. M. MuslumanI. Colak},{H. CavusogluT. CanseverA. YilmazY. AydinH. A. GencA. M. MuslumanI. Colak}
+author_list,949,{NUL??L},{NULL}
+author_list,953,{Ana Paula de Lima FerreiraMarcelo de Souza FigueiroaBrbara Bernar@@do Rinaldo da SilvaKtia Roberta Rapso Sales $Lacerda},{Ana Paula de Lima FerreiraMarcelo de Souza FigueiroaBrbara Bernardo Rinaldo da SilvaKtia Roberta Rapso Sales Lacerda}
+author_list,955,{T. R. KostenL. Y. ZhaoD. H. EpsteinL.# LuJ. ShiX. Y. ZhangY. Liu@@X. L. Zhang},{T. R. KostenL. Y. ZhaoD. H. EpsteinL. LuJ. ShiX. Y. ZhangY. LiuX. L. Zhang}
+author_list,956,{Eikel#boom J.W.Hirsh J.},{Eikelboom J.W.Hirsh J.}
+author_list,959,nan,{R FernandezJ RelloN BonsomsA ArtigasJ MestreF BaigorriL BlanchD FontanalsJ Valles}
+author_list,961,{A. TaylorL. MaxwellV. StrandK. Ph#illipsP. S. TugwellU. KaiserM. de WitL. GossecJ. A. SinghE. H. ChoyL. S. SimonR. OsteloP. J. MeaseP. G. Conaghan},{A. TaylorL. MaxwellV. StrandK. PhillipsP. S. TugwellU. KaiserM. de WitL. GossecJ. A. SinghE. H. ChoyL. S. SimonR. OsteloP. J. MeaseP. G. Conaghan}
+author_list,963,nan,{NULL}
+author_list,974,nan,{Chunlin LiuWen-Hui ShenYing RuanDong-Hong ChenYong Huang}
+author_list,978,nan,{Matthew S Dryden}
+author_list,980,nan,{Michela MianiDecio L EizirikLaurence LadrireMaikel L ColliMiriam Cnop}
+author_list,986,nan,{Hawkey C.Gorbutt N.Guiblin H.Kong A.Beattie A.Curran J.Kamath B.}
+author_list,990,nan,{Kentaro ChinoHideyuki TakahashiRyota AkagiMichiko Dohi}
+author_list,995,@@{John F FraserKelv$in L ChooRoy M Kimble},{John F FraserKelvin L ChooRoy M Kimble}
+author_list,997,nan,{E. V. KumpyakV. N. KiselevA. V. KharlovV. V. ChupinA. V. MorozovB. M. KovalchukV. B. Zorin}

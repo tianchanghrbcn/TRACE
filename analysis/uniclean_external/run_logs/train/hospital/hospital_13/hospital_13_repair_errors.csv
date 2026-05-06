@@ -1,0 +1,22 @@
+Attribute,Index,Dirty Value,Cleaned Value,Clean Value
+HospitalName,413,russellville hospital,russellville $hospital,russellville hospital
+City,413,russellville,??russellville,russellville
+State,414,al,a??l,al
+Condition,400,heart failure,h%eart failure,heart failure
+Condition,418,heart attack,heart atta@@ck,heart attack
+Condition,971,pneumonia,pne%umon??ia,pneumonia
+Stateavg,433,ak_hf-1#@@,al_hf-1,ak_hf-1
+Stateavg,435,ak_hf-3,al_hf-3,ak_hf-3
+Stateavg,436,ak_hf-4,al_hf-4,ak_hf-4
+Stateavg,438,ak_@@p%n-3b,al_pn-3b,ak_pn-3b
+Stateavg,439,ak_pn-4,al_pn-4,ak_pn-4
+Stateavg,440,ak_pn-5c,al_pn-5c,ak_pn-5c
+Stateavg,442,ak_p??n%-7,al_pn-7,ak_pn-7
+Stateavg,444,ak_scip-inf-1,al_scip-inf-1,ak_scip-inf-1
+Stateavg,445,ak_scip-inf-2,al_scip-inf-2,ak_scip-inf-2
+Stateavg,446,ak_scip-inf-3,al_scip-inf-3,ak_scip-inf-3
+Stateavg,448,empty,al_scip-inf-6,ak_scip-inf-6
+Stateavg,449,ak_scip-vte-1,al_scip-vte-1,ak_scip-vte-1
+Stateavg,450,ak_scip-vte-2,al_scip-vte-2,ak_scip-vte-2
+Stateavg,451,ak_ami-1,al_ami-1,ak_ami-1
+Stateavg,452,ak_ami-2,al_ami-2,ak_ami-2

@@ -1,0 +1,450 @@
+Attribute,Index,Dirty Value,Clean Value
+ProviderNumber,4,empty,10018
+ProviderNumber,7,empty,10018
+ProviderNumber,14,empty,10019
+ProviderNumber,17,empty,10019
+ProviderNumber,31,empty,10001
+ProviderNumber,56,empty,10005
+ProviderNumber,67,empty,10005
+ProviderNumber,71,empty,10006
+ProviderNumber,72,empty,10006
+ProviderNumber,80,empty,10006
+ProviderNumber,83,empty,10006
+ProviderNumber,88,empty,10006
+ProviderNumber,90,empty,10006
+ProviderNumber,121,empty,10008
+ProviderNumber,145,empty,10009
+ProviderNumber,171,empty,10010
+ProviderNumber,184,empty,10010
+ProviderNumber,194,empty,10010
+ProviderNumber,206,empty,10011
+ProviderNumber,213,empty,10011
+ProviderNumber,222,empty,10012
+ProviderNumber,229,empty,10012
+ProviderNumber,233,empty,10012
+ProviderNumber,240,empty,10012
+ProviderNumber,263,empty,10015
+ProviderNumber,264,empty,10015
+ProviderNumber,279,empty,10016
+ProviderNumber,283,empty,10016
+ProviderNumber,287,empty,10016
+ProviderNumber,290,empty,10016
+ProviderNumber,292,empty,10016
+ProviderNumber,295,empty,10018
+ProviderNumber,301,empty,10018
+ProviderNumber,307,empty,10018
+ProviderNumber,315,empty,10038
+ProviderNumber,324,empty,10038
+ProviderNumber,332,empty,10055
+ProviderNumber,343,empty,10055
+ProviderNumber,347,empty,10055
+ProviderNumber,348,empty,10055
+ProviderNumber,358,empty,10086
+ProviderNumber,389,empty,10087
+ProviderNumber,418,empty,10164
+ProviderNumber,422,empty,10164
+ProviderNumber,424,empty,10164
+ProviderNumber,427,empty,10164
+ProviderNumber,432,empty,10164
+ProviderNumber,441,empty,20017
+ProviderNumber,450,empty,20017
+ProviderNumber,461,empty,10019
+ProviderNumber,464,empty,10019
+ProviderNumber,469,empty,10021
+ProviderNumber,472,empty,10021
+ProviderNumber,473,empty,10021
+ProviderNumber,485,empty,10021
+ProviderNumber,512,empty,10022
+ProviderNumber,519,empty,10023
+ProviderNumber,591,empty,10025
+ProviderNumber,598,empty,10027
+ProviderNumber,608,empty,10027
+ProviderNumber,611,empty,10027
+ProviderNumber,612,empty,10027
+ProviderNumber,616,empty,10027
+ProviderNumber,619,empty,10029
+ProviderNumber,621,empty,10029
+ProviderNumber,639,empty,10029
+ProviderNumber,652,empty,10032
+ProviderNumber,654,empty,10032
+ProviderNumber,666,empty,10032
+ProviderNumber,680,empty,10033
+ProviderNumber,698,empty,10034
+ProviderNumber,714,empty,10034
+ProviderNumber,721,empty,10035
+ProviderNumber,731,empty,10035
+ProviderNumber,764,empty,10036
+ProviderNumber,768,empty,10038
+ProviderNumber,787,empty,10039
+ProviderNumber,792,empty,10039
+ProviderNumber,838,empty,10043
+ProviderNumber,840,empty,10043
+ProviderNumber,852,empty,10043
+ProviderNumber,864,empty,10044
+ProviderNumber,876,empty,10044
+ProviderNumber,880,empty,10045
+ProviderNumber,884,empty,10045
+ProviderNumber,893,empty,10045
+ProviderNumber,898,empty,10045
+ProviderNumber,900,empty,10045
+ProviderNumber,929,empty,10046
+ProviderNumber,938,empty,10047
+ProviderNumber,950,empty,10047
+ProviderNumber,961,empty,10049
+ProviderNumber,997,empty,10050
+HospitalName,17,empty,helen keller memorial hospital
+HospitalName,56,empty,marshall medical center south
+HospitalName,194,empty,marshall medical center north
+HospitalName,324,empty,stringfellow memorial hospital
+HospitalName,354,empty,decatur general hospital
+HospitalName,464,empty,helen keller memorial hospital
+HospitalName,591,empty,g h lanier memorial hospital
+HospitalName,598,empty,elba general hospital
+HospitalName,652,empty,wedowee hospital
+HospitalName,731,empty,cullman regional medical center
+HospitalName,880,empty,fayette medical center
+HospitalName,997,empty,st vincents blount
+Address1,194,empty,8000 alabama highway 69
+Address1,354,empty,1201 7th street se
+State,354,empty,al
+ZipCode,324,empty,36201
+ZipCode,652,empty,36278
+CountyName,413,empty,franklin
+CountyName,414,empty,franklin
+HospitalType,170,empty,acute care hospitals
+HospitalType,435,empty,acute care hospitals
+HospitalType,451,empty,acute care hospitals
+HospitalType,791,empty,acute care hospitals
+HospitalOwner,17,empty,government - hospital district or authority
+HospitalOwner,194,empty,government - hospital district or authority
+HospitalOwner,598,empty,voluntary non-profit - other
+HospitalOwner,880,empty,voluntary non-profit - other
+Condition,76,empty,heart attack
+Condition,170,empty,heart attack
+Condition,207,empty,pneumonia
+Condition,235,empty,pneumonia
+Condition,240,empty,surgical infection prevention
+Condition,333,empty,heart failure
+Condition,435,empty,heart failure
+Condition,459,empty,surgical infection prevention
+Condition,735,empty,surgical infection prevention
+Condition,791,empty,pneumonia
+Condition,907,empty,heart attack
+Condition,991,empty,heart failure
+MeasureCode,15,empty,ami-8a
+MeasureCode,35,empty,pn-6
+MeasureCode,39,empty,scip-inf-2
+MeasureCode,41,empty,scip-inf-4
+MeasureCode,43,empty,scip-vte-1
+MeasureCode,54,empty,hf-3
+MeasureCode,67,empty,scip-inf-6
+MeasureCode,72,empty,ami-3
+MeasureCode,76,empty,ami-8a
+MeasureCode,78,empty,hf-2
+MeasureCode,79,empty,hf-3
+MeasureCode,93,empty,scip-vte-1
+MeasureCode,95,empty,ami-1
+MeasureCode,100,empty,ami-7a
+MeasureCode,123,empty,ami-4
+MeasureCode,136,empty,pn-7
+MeasureCode,140,empty,scip-inf-3
+MeasureCode,141,empty,scip-inf-4
+MeasureCode,142,empty,scip-inf-6
+MeasureCode,149,empty,ami-5
+MeasureCode,170,empty,ami-1
+MeasureCode,173,empty,ami-4
+MeasureCode,176,empty,ami-8a
+MeasureCode,196,empty,ami-2
+MeasureCode,201,empty,ami-8a
+MeasureCode,205,empty,hf-4
+MeasureCode,207,empty,pn-3b
+MeasureCode,209,empty,pn-5c
+MeasureCode,210,empty,pn-6
+MeasureCode,225,empty,ami-7a
+MeasureCode,235,empty,pn-6
+MeasureCode,240,empty,scip-inf-3
+MeasureCode,244,empty,scip-vte-2
+MeasureCode,259,empty,pn-5c
+MeasureCode,268,empty,scip-vte-1
+MeasureCode,290,empty,scip-inf-3
+MeasureCode,294,empty,scip-vte-2
+MeasureCode,303,empty,hf-2
+MeasureCode,308,empty,pn-4
+MeasureCode,309,empty,pn-5c
+MeasureCode,310,empty,pn-6
+MeasureCode,318,empty,ami-5
+MeasureCode,323,empty,hf-3
+MeasureCode,324,empty,hf-4
+MeasureCode,333,empty,hf-3
+MeasureCode,338,empty,pn-5c
+MeasureCode,371,empty,pn-7
+MeasureCode,379,empty,scip-vte-2
+MeasureCode,382,empty,ami-3
+MeasureCode,424,empty,hf-3
+MeasureCode,428,empty,pn-4
+MeasureCode,435,empty,hf-3
+MeasureCode,443,empty,scip-card-2
+MeasureCode,451,empty,ami-1
+MeasureCode,459,empty,scip-card-2
+MeasureCode,476,empty,hf-3
+MeasureCode,483,empty,pn-7
+MeasureCode,495,empty,ami-4
+MeasureCode,504,empty,pn-3b
+MeasureCode,505,empty,pn-4
+MeasureCode,515,empty,scip-vte-1
+MeasureCode,516,empty,scip-vte-2
+MeasureCode,521,empty,ami-5
+MeasureCode,531,empty,pn-5c
+MeasureCode,541,empty,scip-vte-2
+MeasureCode,545,empty,ami-4
+MeasureCode,564,empty,scip-inf-6
+MeasureCode,593,empty,ami-2
+MeasureCode,598,empty,ami-8a
+MeasureCode,612,empty,scip-inf-3
+MeasureCode,617,empty,ami-1
+MeasureCode,630,empty,pn-4
+MeasureCode,649,empty,hf-1
+MeasureCode,654,empty,pn-3b
+MeasureCode,657,empty,pn-6
+MeasureCode,666,empty,scip-vte-2
+MeasureCode,687,empty,scip-inf-3
+MeasureCode,697,empty,ami-7a
+MeasureCode,701,empty,hf-3
+MeasureCode,703,empty,pn-2
+MeasureCode,706,empty,pn-5c
+MeasureCode,734,empty,scip-card-2
+MeasureCode,735,empty,scip-inf-1
+MeasureCode,739,empty,scip-inf-6
+MeasureCode,741,empty,scip-vte-2
+MeasureCode,753,empty,pn-2
+MeasureCode,772,empty,scip-inf-6
+MeasureCode,782,empty,ami-5
+MeasureCode,785,empty,hf-1
+MeasureCode,791,empty,pn-4
+MeasureCode,795,empty,scip-card-2
+MeasureCode,809,empty,ami-8a
+MeasureCode,825,empty,scip-inf-6
+MeasureCode,831,empty,ami-4
+MeasureCode,849,empty,scip-inf-4
+MeasureCode,852,empty,scip-vte-2
+MeasureCode,853,empty,ami-1
+MeasureCode,854,empty,ami-2
+MeasureCode,858,empty,ami-7a
+MeasureCode,874,empty,scip-inf-4
+MeasureCode,876,empty,scip-vte-1
+MeasureCode,882,empty,ami-5
+MeasureCode,888,empty,hf-4
+MeasureCode,898,empty,scip-inf-3
+MeasureCode,899,empty,scip-inf-4
+MeasureCode,907,empty,ami-2
+MeasureCode,908,empty,ami-3
+MeasureCode,925,empty,scip-inf-2
+MeasureCode,933,empty,ami-3
+MeasureCode,935,empty,ami-5
+MeasureCode,941,empty,hf-4
+MeasureCode,955,empty,scip-vte-2
+MeasureCode,957,empty,ami-2
+MeasureCode,976,empty,scip-inf-3
+MeasureCode,984,empty,ami-4
+MeasureCode,988,empty,hf-1
+MeasureCode,991,empty,hf-4
+MeasureCode,996,empty,pn-6
+MeasureName,205,empty,heart failure patients given smoking cessation advice/counseling
+MeasureName,323,empty,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd)
+MeasureName,435,empty,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd)
+MeasureName,451,empty,heart attack patients given aspirin at arrival
+MeasureName,505,empty,pneumonia patients given smoking cessation advice/counseling
+MeasureName,630,empty,pneumonia patients given smoking cessation advice/counseling
+MeasureName,739,empty,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor)
+MeasureName,741,empty,patients who got treatment  at the right time (within 24 hours before or after their surgery) to help prevent blood clots after certain types of surgery
+Score,9,empty,97%
+Score,13,empty,86%
+Score,19,empty,100%
+Score,30,empty,100%
+Score,53,empty,99%
+Score,65,empty,95%
+Score,67,empty,100%
+Score,72,empty,93%
+Score,74,empty,96%
+Score,81,empty,90%
+Score,82,empty,95%
+Score,88,empty,99%
+Score,130,empty,0%
+Score,154,empty,100%
+Score,167,empty,100%
+Score,204,empty,98%
+Score,240,empty,98%
+Score,242,empty,100%
+Score,252,empty,100%
+Score,255,empty,88%
+Score,259,empty,96%
+Score,268,empty,90%
+Score,270,empty,99%
+Score,280,empty,100%
+Score,287,empty,89%
+Score,319,empty,0%
+Score,321,empty,87%
+Score,328,empty,97%
+Score,351,empty,85%
+Score,355,empty,100%
+Score,357,empty,100%
+Score,367,empty,98%
+Score,368,empty,98%
+Score,374,empty,99%
+Score,382,empty,100%
+Score,400,empty,94%
+Score,406,empty,94%
+Score,444,empty,96%
+Score,460,empty,92%
+Score,461,empty,91%
+Score,468,empty,100%
+Score,471,empty,83%
+Score,472,empty,0%
+Score,500,empty,94%
+Score,506,empty,89%
+Score,526,empty,100%
+Score,536,empty,97%
+Score,544,empty,79%
+Score,551,empty,85%
+Score,555,empty,91%
+Score,558,empty,82%
+Score,575,empty,99%
+Score,579,empty,95%
+Score,604,empty,100%
+Score,627,empty,100%
+Score,639,empty,100%
+Score,641,empty,90%
+Score,679,empty,92%
+Score,685,empty,88%
+Score,712,empty,100%
+Score,720,empty,100%
+Score,729,empty,100%
+Score,730,empty,100%
+Score,751,empty,86%
+Score,765,empty,80%
+Score,766,empty,80%
+Score,772,empty,100%
+Score,774,empty,89%
+Score,779,empty,100%
+Score,790,empty,99%
+Score,811,empty,100%
+Score,825,empty,100%
+Score,832,empty,100%
+Score,838,empty,100%
+Score,854,empty,67%
+Score,862,empty,78%
+Score,864,empty,96%
+Score,889,empty,85%
+Score,906,empty,100%
+Score,957,empty,100%
+Score,963,empty,96%
+Score,972,empty,100%
+Score,985,empty,100%
+Score,989,empty,85%
+Score,1000,empty,88%
+Sample,21,empty,516 patients
+Sample,51,empty,0 patients
+Sample,66,empty,0 patients
+Sample,70,empty,159 patients
+Sample,88,empty,457 patients
+Sample,96,empty,2 patients
+Sample,99,empty,2 patients
+Sample,114,empty,101 patients
+Sample,139,empty,2 patients
+Sample,156,empty,44 patients
+Sample,159,empty,51 patients
+Sample,161,empty,30 patients
+Sample,175,empty,0 patients
+Sample,176,empty,0 patients
+Sample,183,empty,65 patients
+Sample,188,empty,66 patients
+Sample,202,empty,316 patients
+Sample,213,empty,461 patients
+Sample,260,empty,26 patients
+Sample,278,empty,246 patients
+Sample,315,empty,73 patients
+Sample,332,empty,342 patients
+Sample,346,empty,1295 patients
+Sample,347,empty,497 patients
+Sample,357,empty,2 patients
+Sample,366,empty,66 patients
+Sample,372,empty,19 patients
+Sample,375,empty,98 patients
+Sample,393,empty,4 patients
+Sample,409,empty,1 patients
+Sample,411,empty,10 patients
+Sample,417,empty,1 patients
+Sample,418,empty,0 patients
+Sample,420,empty,0 patients
+Sample,421,empty,0 patients
+Sample,423,empty,105 patients
+Sample,438,empty,47 patients
+Sample,443,empty,106 patients
+Sample,450,empty,223 patients
+Sample,458,empty,119 patients
+Sample,464,empty,369 patients
+Sample,479,empty,67 patients
+Sample,489,empty,94 patients
+Sample,493,empty,1 patients
+Sample,496,empty,0 patients
+Sample,497,empty,0 patients
+Sample,513,empty,0 patients
+Sample,516,empty,5 patients
+Sample,517,empty,134 patients
+Sample,532,empty,71 patients
+Sample,535,empty,412 patients
+Sample,536,empty,423 patients
+Sample,540,empty,179 patients
+Sample,543,empty,165 patients
+Sample,547,empty,0 patients
+Sample,583,empty,60 patients
+Sample,603,empty,31 patients
+Sample,634,empty,208 patients
+Sample,643,empty,3 patients
+Sample,679,empty,378 patients
+Sample,688,empty,140 patients
+Sample,702,empty,9 patients
+Sample,708,empty,56 patients
+Sample,713,empty,0 patients
+Sample,735,empty,411 patients
+Sample,736,empty,417 patients
+Sample,781,empty,135 patients
+Sample,782,empty,301 patients
+Sample,784,empty,44 patients
+Sample,787,empty,102 patients
+Sample,808,empty,25 patients
+Sample,813,empty,70 patients
+Sample,815,empty,187 patients
+Sample,818,empty,153 patients
+Sample,821,empty,557 patients
+Sample,822,empty,564 patients
+Sample,836,empty,28 patients
+Sample,843,empty,38 patients
+Sample,850,empty,5 patients
+Sample,858,empty,0 patients
+Sample,863,empty,10 patients
+Sample,876,empty,4 patients
+Sample,900,empty,7 patients
+Sample,904,empty,4 patients
+Sample,911,empty,8 patients
+Sample,915,empty,90 patients
+Sample,936,empty,0 patients
+Sample,937,empty,0 patients
+Sample,941,empty,8 patients
+Sample,987,empty,0 patients
+Sample,998,empty,8 patients
+Sample,999,empty,28 patients
+Stateavg,35,empty,al_pn-6
+Stateavg,76,empty,al_ami-8a
+Stateavg,173,empty,al_ami-4
+Stateavg,201,empty,al_ami-8a
+Stateavg,207,empty,al_pn-3b
+Stateavg,382,empty,al_ami-3
+Stateavg,443,empty,ak_scip-card-2
+Stateavg,505,empty,al_pn-4
+Stateavg,666,empty,al_scip-vte-2
+Stateavg,701,empty,al_hf-3
+Stateavg,853,empty,al_ami-1
+Stateavg,888,empty,al_hf-4
+Stateavg,933,empty,al_ami-3
+Stateavg,957,empty,al_ami-2
