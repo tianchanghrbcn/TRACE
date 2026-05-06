@@ -1,42 +1,30 @@
-# Terminal Interface
+﻿# TRACE Terminal Interface
 
-TRACE uses a lightweight terminal interface rather than a web UI.
-
-Run:
-
-    python scripts/00_trace_home.py
-
-For a numbered terminal menu:
-
-    python scripts/00_trace_home.py --interactive
-
-## Mode entries
-
-The v0.1.2 advisor interface exposes the three Stage 3 modes:
-
-- Mode A: paper table/figure replay and traceability.
-- Mode B: lightweight smoke pipeline from scratch.
-- Mode C: strict cleaning-clustering proof checked from Linux validation evidence.
+The reviewer-facing interface is `scripts/trace.py`.
 
 ## Recommended commands
 
-Run release validation:
+    python scripts/trace.py release-check --run-trace-validation
+    python scripts/trace.py paper-replay
+    python scripts/trace.py preexp-validity --strict
+    python scripts/trace.py trace-validation --paper-exact
+    python scripts/trace.py benchmark-smoke --clean
+    python scripts/trace.py benchmark-full-audit
 
-    python scripts/98_validate_release_package.py
+## Interactive menu
 
-Validate Mode A only:
+    python scripts/00_trace_home.py
+    python scripts/00_trace_home.py --interactive
 
-    python scripts/62_validate_mode_a_paper_replay.py
+## Workflow names
 
-Validate Stage 3 strict completion:
+- `paper-replay`: paper table/figure replay and traceability.
+- `benchmark-smoke`: lightweight from-scratch benchmark smoke run.
+- `benchmark-full-audit`: strict benchmark proof validation.
+- `trace-validation`: TRACE Stage 4 paper-exact validation.
+- `preexp-validity`: alpha calibration and validity sensitivity checks.
+- `release-check`: final artifact validation gate.
 
-    python scripts/63_validate_stage3_strict.py
+Deprecated aliases are retained for compatibility only.
 
-## Why not a web UI
-
-TRACE is a research artifact. A command-line interface is easier to run in headless servers, easier to log, and less likely to introduce browser or deployment problems.
-
-## Stage 4 placeholders
-
-The menu includes planned Stage 4 entries, but does not implement them yet. This keeps the reviewer interface stable while making clear what remains future work.
 

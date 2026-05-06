@@ -7,68 +7,52 @@ baseline cleaner in the paper.
 
 | Workflow | Command | Purpose |
 |---|---|---|
-| release-check | `python scripts/trace.py release-check` | Validate the release package. |
-| paper-replay | `python scripts/trace.py paper-replay` | Reproduce paper-exact tables, figures, and traceability reports. |
-| preexp-validity | `python scripts/trace.py preexp-validity` | Replay alpha calibration and validate alpha/seed sensitivity. |
-| trace-validation | `python scripts/trace.py trace-validation --paper-exact` | Reproduce TRACE budget-guidance validation with 1000 blind-random replays. |
-| benchmark-smoke | `python scripts/trace.py benchmark-smoke --clean` | Run a lightweight from-scratch benchmark smoke test. |
+| release-check | `python scripts/trace.py release-check --run-trace-validation` | Validate the reviewer-facing artifact package. |
+| paper-replay | `python scripts/trace.py paper-replay` | Rebuild and validate paper tables, figures, and traceability reports. |
+| preexp-validity | `python scripts/trace.py preexp-validity --strict` | Replay alpha calibration and validate alpha/seed sensitivity. |
+| trace-validation | `python scripts/trace.py trace-validation --paper-exact` | Reproduce TRACE Stage 4 LODO validation with 1000 blind-random replays. |
+| benchmark-smoke | `python scripts/trace.py benchmark-smoke --clean` | Run a lightweight from-scratch cleaning-clustering pipeline check. |
 | benchmark-full-audit | `python scripts/trace.py benchmark-full-audit` | Validate strict benchmark proof/logs. |
-| benchmark-full-audit from scratch | `python scripts/trace.py benchmark-full-audit --from-scratch` | Long-running Linux/bash full benchmark audit. |
 
-## Deprecated aliases
+## Expected validation status
 
-The following names are retained only for compatibility:
+The main release check may report `PASS_WITH_WARNINGS` when warnings are
+diagnostic-only and have no paper-facing hard failures.
 
-| Deprecated alias | Use instead |
-|---|---|
-| mode-a | paper-replay |
-| mode-b | benchmark-smoke |
-| mode-c | benchmark-full-audit |
+Accepted warning examples:
 
-Reviewer-facing documentation should not use Mode A/B/C.
+- raw table equivalence has diagnostic mismatches, but the paper-facing layer has
+  zero hard failures;
+- paper-output traceability has accepted warnings while figure traceability passes;
+- release assets are not committed to git and must be unpacked before full audit.
 
+## TRACE Stage 4
 
-## TRACE Stage 4 paper-exact validation
-
-TRACE Stage 4 is closed.
-
-Reviewer-facing command:
+Maintained command:
 
     python scripts/trace.py trace-validation --paper-exact
 
-Maintained preflight command:
-
-    python scripts/49_validate_trace_stage4_inputs.py ^
-      --results-dir results/trace_cluster_replay_all ^
-      --output-dir results/processed/trace/lodo_paper_repro ^
-      --strict
-
-Maintained paper-exact command:
-
-    python -u scripts/39_run_trace_stage4_paper_repro.py ^
-      --results-dir results/trace_cluster_replay_all ^
-      --config configs/trace.yaml ^
-      --output-dir results/processed/trace/lodo_paper_repro ^
-      --random-seeds 1000 ^
-      --seed 20260424 ^
-      --rebuild-base ^
-      --pack ^
-      --log ^
-      --quiet
-
-Expected paper-aligned metrics:
+Expected metrics:
 
     TRACE T95 median            = 13.5%
     Blind random T95 median     = 27.0%
     TRACE AUC retention median  = 0.982
     Blind random AUC retention  = 0.954
 
-See docs/trace_stage4_repro.md for required inputs and outputs.
-
 ## UniClean
 
-UniClean is included in the paper-exact archived outputs and downstream paper
-analysis. A full from-scratch UniClean rerun requires the external UniClean
-repository and is not part of the default benchmark-smoke workflow.
+UniClean is supported through paper-exact archived outputs and runtime evidence:
 
-See `docs/uniclean_external.md`.
+    analysis/uniclean_external/
+
+Full UniClean deployment is external and is not part of the default smoke run.
+
+## Deprecated aliases
+
+| Deprecated alias | Use instead |
+|---|---|
+| `paper-replay` | `paper-replay` |
+| `benchmark-smoke` | `benchmark-smoke` |
+| `benchmark-full-audit` | `benchmark-full-audit` |
+
+

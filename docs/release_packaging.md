@@ -1,41 +1,44 @@
-# Release Packaging
+﻿# TRACE Release Packaging
 
-TRACE uses Git tags and GitHub Releases for advisor-review and submission artifact packages.
+TRACE uses git tags plus GitHub Release assets or archival storage for large
+generated outputs.
 
-## Current advisor-review release
+## Source repository
 
-Recommended next advisor-review version:
+The git repository contains code, configs, benchmark data, validation scripts,
+paper replay reports, and lightweight evidence.
 
-    v0.1.2-advisor
+## Release assets
 
-This version is intended to add paper-output traceability on top of v0.1.1.
+Large generated assets should be distributed outside the git tree:
 
-## What v0.1.2 should demonstrate
+- `trace_cluster_replay_all.zip`: TRACE Stage 4 input snapshot.
+- `trace_stage4_paper_exact.tgz`: TRACE Stage 4 paper-exact output pack.
+- `trace_benchmark_full_audit_proof_*.tgz`: strict benchmark proof logs.
+- `SHA256SUMS.txt`: checksums for release assets.
+- `release_manifest.json`: asset names, hashes, and intended unpack locations.
 
-- Mode A: paper table and figure replay validation.
-- Mode B: lightweight smoke pipeline from scratch.
-- Mode C: strict execution-layer proof from Linux validation evidence.
-- Combined Stage 3 strict validation.
-- Release validation through `scripts/98_validate_release_package.py`.
+## Full reviewer validation
 
-## Why GitHub Release instead of a package registry
+After unpacking release assets, the main command is:
 
-TRACE is a research artifact rather than an installable software product. Reviewers need source code, data, scripts, documentation, validation evidence, and release assets.
+    python scripts/trace.py release-check --run-trace-validation
 
-## Build local assets
+If the strict benchmark proof asset is not unpacked locally, use:
 
-Run:
+    python scripts/trace.py release-check --run-trace-validation --allow-missing-full-audit-proof
 
-    python scripts/44_build_release_assets.py --version v0.1.2-advisor --source-ref v0.1.2-advisor
+The latter is acceptable only for local packaging checks, not for the final
+artifact proof run.
 
-Generated files are placed under `release/`.
+## Do not commit
 
-## Suggested GitHub Release assets
+The following generated paths should not be committed directly:
 
-- `TRACE-v0.1.2-advisor-source.zip`
-- `TRACE-v0.1.2-advisor-handoff.zip`
-- `TRACE-v0.1.2-advisor-stage2-strict-proof.zip`
-- `TRACE-v0.1.2-advisor-paper-replay-proof.zip`
+    results/
+    figures/
+    artifacts/trace_stage4_paper_exact.tgz
 
-The Chinese advisor report is intended for internal advisor communication and does not need to be attached to the public reviewer-facing release.
+Evidence reports copied into `analysis/` may be committed.
+
 

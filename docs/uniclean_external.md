@@ -1,48 +1,41 @@
 ﻿# UniClean External / Archived Support
 
-UniClean appears in the paper as one of the candidate cleaning methods.
+UniClean is included in the TRACE paper as one of the candidate cleaning methods.
 
-## Role in the paper
+## Artifact policy
 
-UniClean is included in the paper-level analysis as a semantic/contextual cleaner.
-It appears in the paper's cleaning-method table and downstream repair/process
-summaries.
+TRACE does not vendor the full UniClean deployment. UniClean is treated as an
+external cleaner whose paper-level contribution is supported by archived outputs
+and runtime evidence.
 
-## Reviewer-facing artifact behavior
-
-UniClean is supported through paper-exact archived outputs and downstream
-analysis artifacts.
-
-The default reviewer workflows do not run UniClean from scratch:
-
-    python scripts/trace.py benchmark-smoke --clean
-
-The smoke workflow intentionally uses a lightweight method subset so that
-reviewers can quickly confirm the pipeline mechanics.
-
-## Full rerun behavior
-
-A full from-scratch UniClean rerun requires the external UniClean repository and
-its own environment/dependencies. TRACE therefore marks UniClean as:
+The method registry marks UniClean as:
 
     runner: external_archived
     paper_replay_supported: true
     benchmark_smoke_supported: false
     full_rerun_supported: external_only
 
-## Evidence retained for release assets
+## Reviewer-facing behavior
 
-The Linux full-audit proof package should retain UniClean run logs when present,
-for example:
+The default smoke workflow does not run UniClean:
 
-    uniclean_trace_all_clusterers_20260430_125709.log
-    uniclean_trace_hc_smoke_20260430_124228.log
+    python scripts/trace.py benchmark-smoke --clean
 
-These logs are release-asset evidence and do not need to be committed as source
-files in the git repository.
+The paper replay workflow includes UniClean through archived results and
+downstream paper evidence:
 
-## Interpretation
+    python scripts/trace.py paper-replay
 
-UniClean is part of the paper-exact benchmark evidence. It is not part of the
-default smoke rerun. This avoids requiring reviewers to install an additional
-external cleaner before they can validate the main artifact paths.
+The UniClean runtime evidence is stored in:
+
+    analysis/uniclean_external/
+
+## Why this is acceptable
+
+The TRACE artifact evaluates the cleaning-clustering benchmark and paper-level
+evidence chain. Requiring reviewers to deploy an additional external cleaner
+before running the smoke workflow would make the artifact unnecessarily brittle.
+
+For full audit evidence, the release package retains UniClean runtime logs and
+checksums, while documenting that full UniClean deployment is external.
+

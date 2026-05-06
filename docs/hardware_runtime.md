@@ -1,4 +1,4 @@
-# Hardware and Runtime Notes
+﻿# Hardware and Runtime Notes
 
 This document summarizes the observed runtime environment and practical hardware expectations.
 
@@ -27,11 +27,11 @@ Stage 2 strict validation passed on Linux. The observed wall-clock time was appr
 
 The longest steps are Baran and Unified. Low terminal output during these methods does not necessarily mean failure.
 
-Mode B smoke validation is lightweight and typically finishes in seconds to minutes depending on the clusterer runtime.
+benchmark-smoke smoke validation is lightweight and typically finishes in seconds to minutes depending on the clusterer runtime.
 
 ## Minimum practical requirements
 
-For quick Mode B smoke and Stage 3 replay:
+For quick benchmark-smoke smoke and Stage 3 replay:
 
 - 4 CPU cores
 - 8--16 GB RAM
@@ -48,4 +48,6 @@ For full Stage 2 strict validation:
 - Several hours of wall-clock time
 
 The full validation can run on smaller hardware, but reviewer runtime may be substantially longer.
+
+
 

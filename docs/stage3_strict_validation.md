@@ -1,42 +1,32 @@
-# Stage 3 Strict Validation
+﻿# Strict Reviewer Workflow Validation
 
-This document describes the TRACE Stage 3 strict validation wrapper.
+The strict workflow validator checks three reviewer-facing components:
 
-## Modes
+- `paper-replay`
+- `benchmark-smoke`
+- `benchmark-full-audit`
 
-Stage 3 strict validation checks:
+## Command
 
-- Mode A: paper table and figure replay validation.
-- Mode B: lightweight smoke pipeline from scratch.
-- Mode C: strict cleaning-clustering execution proof.
+    python scripts/63_validate_stage3_strict.py --skip-smoke-rerun
 
-## Run
+To use a specific full-audit proof directory:
 
-If the Linux Stage 2 strict proof is available under `results/logs/stage2_strict_*`:
+    python scripts/63_validate_stage3_strict.py ^
+      --skip-smoke-rerun ^
+      --full-audit-proof-dir results/logs/stage2_strict_YYYYMMDD_HHMMSS
 
-    python scripts/63_validate_stage3_strict.py
+## Accepted status
 
-If the proof is stored elsewhere:
+`PASS` means all three workflows passed.
 
-    python scripts/63_validate_stage3_strict.py --mode-c-proof-dir path/to/stage2_strict_YYYYMMDD_HHMMSS
+`PASS_WITH_WARNINGS` is acceptable when:
 
-To rebuild Mode A before validation:
+- paper-replay has accepted diagnostic warnings only;
+- benchmark-smoke passed;
+- benchmark-full-audit proof is present and passed, or is explicitly allowed as
+  missing for a local packaging check.
 
-    python scripts/63_validate_stage3_strict.py --rebuild-mode-a
+The final artifact proof should include the full-audit proof directory.
 
-## Outputs
-
-- `results/logs/stage3_strict_validation_report.json`
-- `results/logs/stage3_strict_validation_report.md`
-
-## Interpretation
-
-`PASS_WITH_WARNINGS` is acceptable for the current Stage 3 state when:
-
-- Mode A paper replay has accepted traceability warnings only;
-- Mode B smoke rerun passes;
-- Mode C strict Linux proof is present and passed;
-- claim-level narrative traceability is deferred.
-
-Mode C is checked from Linux strict proof by default rather than rerunning the long validation.
 

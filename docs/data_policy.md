@@ -1,4 +1,4 @@
-# Data Policy
+﻿# Data Policy
 
 TRACE uses benchmark tabular datasets to evaluate how data cleaning affects unsupervised clustering.
 
@@ -9,7 +9,7 @@ The reviewer-facing artifact keeps the data needed for reproducibility under:
 - `data/raw/train/`
 - `data/pre_experiment/`
 
-These files are intended to support Mode B smoke validation and Mode A result replay.
+These files are intended to support benchmark-smoke smoke validation and paper-replay result replay.
 
 ## What is not committed by default
 
@@ -40,5 +40,7 @@ If a dataset has unclear redistribution rights, use one of these alternatives:
 
 ## Current artifact decision
 
-For advisor-review v0.1.1, the required reproducibility data are kept under `data/raw/train/` and `data/pre_experiment/`. Generated artifacts remain ignored and reproducible.
+For reviewer-facing v0.1.1, the required reproducibility data are kept under `data/raw/train/` and `data/pre_experiment/`. Generated artifacts remain ignored and reproducible.
+
+
 

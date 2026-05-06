@@ -1,28 +1,25 @@
 {
-  "generated_at_utc": "2026-05-06T13:35:35.031800+00:00",
-  "status": "PASS_WITH_WARNINGS",
+  "generated_at_utc": "2026-05-06T15:05:32.388312+00:00",
+  "status": "PASS",
   "workflows": [
     {
       "workflow": "paper-replay",
       "description": "Paper-level evidence replay: tables, figures, traceability, and validity checks.",
-      "status": "PASS_WITH_WARNINGS",
+      "status": "PASS",
       "accepted": true,
       "command": {
         "command": "scripts/62_validate_mode_a_paper_replay.py",
         "returncode": 0,
         "status": "PASS",
-        "stdout_tail": "{\n  \"status\": \"PASS_WITH_WARNINGS\",\n  \"warning_count\": 2,\n  \"failure_count\": 0,\n  \"output\": \"analysis\\\\paper_generated\\\\paper_replay_validation_report.json\"\n}\n[TRACE] Paper evidence replay validation report written to: analysis\\paper_generated\\paper_replay_validation_report.json\n[TRACE] Paper evidence replay validation status: PASS_WITH_WARNINGS\n",
+        "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"warning_count\": 0,\n  \"failure_count\": 0,\n  \"output\": \"analysis\\\\paper_generated\\\\paper_replay_validation_report.json\"\n}\n[TRACE] Paper artifact replay validation report written to: analysis\\paper_generated\\paper_replay_validation_report.json\n[TRACE] Paper artifact replay validation status: PASS\n",
         "stderr_tail": ""
       },
       "report_path": "E:\\TRACE\\analysis\\paper_generated\\paper_replay_validation_report.json",
-      "report_status": "PASS_WITH_WARNINGS",
-      "warning_count": 2,
+      "report_status": "PASS",
+      "warning_count": 0,
       "failure_count": 0,
       "failures": [],
-      "warnings": [
-        "Report has accepted warning status: paper_table_layers=PASS_WITH_DIAGNOSTIC_WARNINGS",
-        "Report has accepted warning status: paper_output_traceability=PASS_WITH_WARNINGS"
-      ]
+      "warnings": []
     },
     {
       "workflow": "benchmark-smoke",
@@ -52,11 +49,7 @@
       "failures": []
     }
   ],
-  "warnings": [
-    "paper-replay accepted with status: PASS_WITH_WARNINGS",
-    "paper-replay: Report has accepted warning status: paper_table_layers=PASS_WITH_DIAGNOSTIC_WARNINGS",
-    "paper-replay: Report has accepted warning status: paper_output_traceability=PASS_WITH_WARNINGS"
-  ],
+  "warnings": [],
   "failures": [],
   "scope_note": "This validates strict reviewer workflows: paper-replay, benchmark-smoke, and benchmark-full-audit."
 }

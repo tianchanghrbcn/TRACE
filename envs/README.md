@@ -1,31 +1,32 @@
-# TRACE Environments
+﻿# TRACE Environments
 
-TRACE uses separate environments for different reproducibility modes.
+TRACE uses different environments for different reviewer workflows.
 
-## Mode A: archived-result reproduction
+## paper-replay
 
-- File: `envs/mode_a_trace_runner.yml`
-- Environment name: `trace-runner`
-- Purpose: setup checks, archived-result validation, analysis tables, TRACE replay, and figures.
-- This is the recommended reviewer-facing environment.
+Paper replay uses the standard Python environment for table/figure scripts and
+analysis reports.
 
-## Mode B: smoke from scratch
+## benchmark-smoke
 
-- File: `envs/mode_b_smoke.yml`
-- Default environment name: `trace-runner`
-- Purpose: run a small from-scratch pipeline subset.
-- If the original pipeline requires additional packages, use the Mode C fallback environment.
+The smoke workflow is lightweight and uses the default TRACE runner environment:
 
-## Mode C: full from scratch
+    python scripts/trace.py benchmark-smoke --clean
 
-- File: `envs/mode_c_pipeline_original.yml`
-- Environment name: `torch110`
-- Purpose: reproduce the original full cleaning-clustering pipeline.
-- This file is intentionally kept close to the original working environment.
+## benchmark-full-audit
 
-## Original setup script
+The full benchmark audit may require additional method-specific environments,
+including HoloClean services and torch-based cleaner dependencies. The final
+artifact validates this path through strict Linux proof logs.
 
-- File: `envs/original_config.sh`
-- This is the original setup script copied from the archived AutoMLClustering repository.
-- It is kept for auditability.
-- The normalized setup entry points are under `scripts/setup/`.
+## trace-validation
+
+TRACE Stage 4 uses the standard Python environment and the TRACE replay
+snapshot.
+
+## UniClean
+
+UniClean deployment is external. TRACE provides archived outputs and runtime
+evidence rather than vendoring the full UniClean environment.
+
+

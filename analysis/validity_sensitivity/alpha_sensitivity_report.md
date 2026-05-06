@@ -1,6 +1,6 @@
 # Alpha Sensitivity Report
 
-- Generated at UTC: 2026-05-06T13:34:09.808710+00:00
+- Generated at UTC: 2026-05-06T15:04:06.538062+00:00
 - Status: PASS
 - Base alpha: 0.47
 - Tested alphas: 0.25, 0.47, 0.5, 0.75

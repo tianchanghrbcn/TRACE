@@ -6,3 +6,21 @@
 *.yaml text eol=lf
 *.md text eol=lf
 *.json text eol=lf
+
+# Preserve UniClean runtime evidence exactly as extracted.
+analysis/uniclean_external/run_logs/** -text
+analysis/uniclean_external/*.json text eol=lf
+analysis/uniclean_external/*.txt text eol=lf
+analysis/uniclean_external/*.md text eol=lf
+
+# Preserve UniClean runtime evidence exactly as extracted.
+analysis/uniclean_external/run_logs/** -text
+analysis/uniclean_external/*.json text eol=lf
+analysis/uniclean_external/*.txt text eol=lf
+analysis/uniclean_external/*.md text eol=lf
+
+# Preserve UniClean runtime evidence exactly as extracted.
+analysis/uniclean_external/run_logs/** -text
+analysis/uniclean_external/*.json text eol=lf
+analysis/uniclean_external/*.txt text eol=lf
+analysis/uniclean_external/*.md text eol=lf

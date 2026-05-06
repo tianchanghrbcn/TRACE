@@ -1,93 +1,101 @@
-﻿# TRACE
+﻿# TRACE Artifact
 
-TRACE is an empirical artifact for studying how data cleaning changes unsupervised clustering.
+This repository accompanies the PVLDB EA&B paper:
 
-The package contains:
+**TRACE: An Empirical Study of How Data Cleaning Affects Unsupervised Clustering**
 
-- runnable cleaning-clustering pipeline entries,
-- method registry for cleaners and clusterers,
-- smoke and coverage scripts,
-- canonical result processing,
-- paper-table and figure replay scaffolds,
-- pre-experiment replay,
-- reviewer-facing visual demo,
-- release validation utilities.
+TRACE studies how data cleaning affects unsupervised clustering through four
+observable layers: data rewriting, process signals, outcome gains, and
+hyperparameter shifts. The artifact provides paper-level replay, smoke
+execution, TRACE budget-guidance validation, and strict audit evidence.
 
-## Recommended reviewer path
+## Current status
 
-Run the quick validation first:
+Stage 1--4 are complete.
 
-    python scripts/98_validate_release_package.py
+- Stage 1: data assets and corrupted-instance manifest.
+- Stage 2: benchmark execution pipeline and strict audit evidence.
+- Stage 3: paper table/figure replay and paper-output traceability.
+- Stage 4: TRACE paper-exact leave-one-dataset-out validation.
 
-This command runs the smoke pipeline, rebuilds canonical result tables, regenerates table summaries, figures, pre-experiment outputs, and the visual demo.
+Final packaging consists of release assets, checksums, and fresh-clone testing.
 
-## Reproducibility modes
+## Reviewer workflows
 
-Mode A: replay tables and figures from archived or already-generated results.
+| Goal | Command |
+|---|---|
+| Release check | `python scripts/trace.py release-check --run-trace-validation` |
+| Paper-level table/figure replay | `python scripts/trace.py paper-replay` |
+| Pre-experiment and validity checks | `python scripts/trace.py preexp-validity --strict` |
+| TRACE paper-exact validation | `python scripts/trace.py trace-validation --paper-exact` |
+| Lightweight benchmark smoke run | `python scripts/trace.py benchmark-smoke --clean` |
+| Strict benchmark proof validation | `python scripts/trace.py benchmark-full-audit` |
 
-Mode B: run a lightweight smoke pipeline from scratch.
+The release check may report `PASS_WITH_WARNINGS` when diagnostic-only table
+equivalence warnings are present. The paper-facing table layer has no hard
+failures, and paper figure validation/traceability pass.
 
-Mode C: full from-scratch experiment. This is long-running and is not recommended as the first reviewer action.
+## TRACE Stage 4
 
-## Quick smoke test
+The maintained TRACE paper-exact command is:
 
-    python scripts/00_setup_check.py --config configs/mode_b_smoke.yaml --strict
-    python scripts/90_run_smoke_from_scratch.py --config configs/mode_b_smoke.yaml --clean
+    python scripts/trace.py trace-validation --paper-exact
 
-## Result replay
+Expected paper-aligned metrics:
 
-    python scripts/30_build_canonical_results.py --results-dir results --output-dir results/processed
-    python scripts/31_build_paper_tables.py --processed-dir results/processed --output-dir results/tables
-    python scripts/32_build_analysis_tables.py --processed-dir results/processed --output-dir results/tables
-    python scripts/33_make_paper_figures.py --tables-dir results/tables --output-root figures
+    TRACE T95 median            = 13.5%
+    Blind random T95 median     = 27.0%
+    TRACE AUC retention median  = 0.982
+    Blind random AUC retention  = 0.954
 
-## Pre-experiment replay
+See `docs/trace_stage4_repro.md`.
 
-    python scripts/38_build_pre_experiment_outputs.py --source-csv data/pre_experiment/alpha_metrics.csv --output-dir results/pre_experiment --figure-dir figures/pre_experiment
+## UniClean
 
-## Visual demo replay
+UniClean is included in the paper-exact archived outputs and downstream
+analysis. A full from-scratch UniClean rerun requires the external UniClean
+repository and is not part of the default benchmark-smoke workflow.
 
-    python scripts/40_make_visual_demo.py --output-data-dir results/visual_demo --output-figure-dir figures/visual_demo
+UniClean runtime evidence is stored in:
 
-## Long-running validation
+    analysis/uniclean_external/
 
-The maintainer-side Stage 2 strict validation passed on Linux. It exercises setup checks, method registry, smoke run, clusterer coverage, dependency probes, HoloClean DB check, and individual cleaner coverage for mode, baran, holoclean, bigdansing, boostclean, horizon, scared, and unified.
+See `docs/uniclean_external.md`.
 
-The observed runtime was about six hours on the maintainer machine. Runtime on reviewer hardware may differ.
+## Release assets
 
-## Stage map
+Large generated assets are not committed directly to git. They are distributed
+through release assets or archival storage:
 
-TRACE is organized into four stages:
+- TRACE Stage 4 input snapshot: `results/trace_cluster_replay_all/`
+- TRACE Stage 4 paper-exact output pack: `artifacts/trace_stage4_paper_exact.tgz`
+- Benchmark full-audit proof logs: `results/logs/stage2_strict_*/`
+- Optional source/output archives and checksums.
 
-- Stage 1: repository and baseline preparation.
-- Stage 2: execution-layer validation for cleaners and clusterers.
-- Stage 3: result replay, figures, pre-experiment, visual demo, and advisor-review package.
-- Stage 4: planned TRACE validation, new algorithm extension, and new dataset onboarding.
+## Directory map
 
-Stage 1--3 are complete for advisor review. Stage 4 is planned.
+| Path | Purpose |
+|---|---|
+| `configs/` | Workflow and method configuration. |
+| `data/raw/train/` | Clean and dirty benchmark data. |
+| `src/` | Pipeline, cleaning, clustering, and TRACE implementation. |
+| `scripts/` | Reviewer-facing and validation scripts. |
+| `analysis/paper_generated/` | Paper table/figure replay reports. |
+| `analysis/validity_sensitivity/` | Pre-experiment and sensitivity evidence. |
+| `analysis/uniclean_external/` | UniClean external runtime evidence. |
+| `analysis/release_validation/` | Final validation reports copied from local runs. |
+| `docs/` | Reviewer documentation. |
 
-See `docs/stage1_to_stage4_plan.md` for details.
+## Deprecated aliases
 
-## Terminal home
+The old command aliases are retained only for compatibility:
 
-For orientation inside the artifact, run:
+| Deprecated alias | Use instead |
+|---|---|
+| `paper-replay` | `paper-replay` |
+| `benchmark-smoke` | `benchmark-smoke` |
+| `benchmark-full-audit` | `benchmark-full-audit` |
 
-    python scripts/00_trace_home.py
-
-For a numbered terminal menu:
-
-    python scripts/00_trace_home.py --interactive
-
-## Data availability
-
-Reviewer-facing data are stored under:
-
-- `data/raw/train/`
-- `data/pre_experiment/`
-
-Generated outputs are reproducible and ignored by default. See `docs/data_policy.md`.
-
-## License
-
-TRACE wrapper/orchestration code is released under the MIT License. Third-party method implementations retain their respective upstream licenses and notices. See `LICENSE` and `THIRD_PARTY_NOTICES.md`.
+Reviewer-facing documentation uses the new workflow names to avoid confusion
+with the `Mode impute` baseline cleaner.
 

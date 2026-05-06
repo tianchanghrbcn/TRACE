@@ -1,32 +1,34 @@
-# Paper Output Traceability
+﻿# Paper Output Traceability
 
-Stage 3R.6 combines paper-table and paper-figure evidence into a single reviewer-facing traceability report.
+Paper-level evidence is validated by:
 
-## Run
+    python scripts/trace.py paper-replay
 
-First ensure that table and figure reports exist:
+The workflow covers:
 
-    python scripts/trace.py mode-a --audit --clean --generated-summaries --paper-tables --table-equivalence
-    python scripts/trace.py mode-a --paper-figures --figure-traceability
+- paper source audit and source selection;
+- summary workbook generation and validation;
+- paper table script execution;
+- paper table output validation;
+- layered table equivalence;
+- paper figure script execution;
+- paper figure output validation;
+- figure traceability;
+- combined paper-output traceability;
+- pre-experiment and validity-sensitivity checks.
 
-Then build the combined report:
+## Accepted warnings
 
-    python scripts/61_build_paper_output_traceability_report.py
+Raw table equivalence may contain diagnostic failures for upstream intermediate
+or supporting files. The reviewer-facing decision is based on the layered report.
 
-## Output
+The accepted condition is:
 
-Generated reports:
+    paper-facing table hard_failure_count = 0
+    figure traceability status = PASS
 
-- `analysis/paper_generated/paper_output_traceability_report.json`
-- `analysis/paper_generated/paper_output_traceability_report.md`
+The combined report is:
 
-## Interpretation
+    analysis/paper_generated/paper_output_traceability_report.json
 
-`PASS_WITH_WARNINGS` is acceptable at this stage when:
-
-- paper-facing tables have no hard mismatches;
-- all LaTeX figure references have archived traceability;
-- warnings only indicate archived-only figures or upstream intermediate diagnostics.
-
-Narrative claim traceability is deferred until after table and figure traceability are stable.
 

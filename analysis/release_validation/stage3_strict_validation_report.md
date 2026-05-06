@@ -1,13 +1,13 @@
 # TRACE Strict Reviewer Workflow Validation
 
-- Generated at UTC: 2026-05-06T13:35:35.031800+00:00
-- Status: PASS_WITH_WARNINGS
+- Generated at UTC: 2026-05-06T15:05:32.388312+00:00
+- Status: PASS
 
 ## Workflow summary
 
 | Workflow | Status | Accepted | Description |
 |---|---|---:|---|
-| paper-replay | PASS_WITH_WARNINGS | True | Paper-level evidence replay: tables, figures, traceability, and validity checks. |
+| paper-replay | PASS | True | Paper-level evidence replay: tables, figures, traceability, and validity checks. |
 | benchmark-smoke | PASS | True | Lightweight cleaning-clustering smoke pipeline from scratch. |
 | benchmark-full-audit | PASS | True | Strict cleaning-clustering execution proof. |
 
@@ -17,9 +17,7 @@ No hard failures.
 
 ## Warnings
 
-- paper-replay accepted with status: PASS_WITH_WARNINGS
-- paper-replay: Report has accepted warning status: paper_table_layers=PASS_WITH_DIAGNOSTIC_WARNINGS
-- paper-replay: Report has accepted warning status: paper_output_traceability=PASS_WITH_WARNINGS
+No warnings.
 
 ## Interpretation
 

@@ -1,6 +1,6 @@
 # TRACE Validity Sensitivity Summary
 
-- Generated at UTC: 2026-05-06T13:34:09.874902+00:00
+- Generated at UTC: 2026-05-06T15:04:06.612336+00:00
 - Status: PASS
 - Scope: pre-experiment calibration, alpha sensitivity, and error-injection seed sensitivity.
 - Error-model/type sensitivity is intentionally excluded from this reviewer-facing summary.

@@ -1,46 +1,20 @@
-# Setup Scripts
+﻿# TRACE Setup Scripts
 
-This directory contains normalized setup entry points.
+The setup scripts are compatibility helpers. Reviewer-facing workflows should use:
 
-## Recommended order
+    python scripts/trace.py release-check --run-trace-validation
+    python scripts/trace.py benchmark-smoke --clean
+    python scripts/trace.py benchmark-full-audit
 
-### Mode A
+## Workflow setup
 
-```bash
-bash scripts/setup/setup_mode_a.sh
-$setupReadme = @'
-# Setup Scripts
+- paper-replay: standard Python analysis environment.
+- benchmark-smoke: lightweight smoke runner environment.
+- benchmark-full-audit: full benchmark environment with method-specific
+  dependencies.
+- trace-validation: standard Python environment plus TRACE Stage 4 snapshot.
 
-This directory contains normalized setup entry points.
+HoloClean and UniClean may require external services or repositories for full
+from-scratch reruns. The reviewer smoke path does not require deploying them.
 
-## Recommended order
 
-### Mode A
-
-```bash
-bash scripts/setup/setup_mode_a.sh
-
-Creates or updates the lightweight trace-runner environment.
-
-Mode B
-bash scripts/setup/setup_mode_b.sh
-
-Creates the smoke-test environment. It currently reuses trace-runner.
-
-Mode C
-bash scripts/setup/setup_mode_c_full.sh
-
-Creates the original full pipeline environment and auxiliary environments.
-
-Mode C may require system packages and database services for HoloClean and other cleaners.
-It is intended for full from-scratch execution, not for the first artifact setup check.
-
-Local system configuration
-
-Copy:
-
-cp configs/runtime/system.example.env configs/runtime/system.local.env
-
-Then edit configs/runtime/system.local.env.
-
-Do not commit system.local.env.
