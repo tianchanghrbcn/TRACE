@@ -9,7 +9,7 @@ cleaners:
     implementation: "src/cleaning/mode/mode.py"
     output_contract: "repaired_csv"
     default_env: "trace-runner"
-    notes: "Baseline cleaner used by Mode B-smoke."
+    notes: "Baseline cleaner used by benchmark-smoke."
 
   baran:
     id: 1
@@ -89,9 +89,26 @@ cleaners:
     output_contract: "repaired_csv"
     default_env: "torch110"
 
-  groundtruth:
+
+  uniclean:
     id: 8
     legacy_id: 9
+    display_name: "UniClean"
+    enabled: false
+    group: "candidate"
+    principle_group: "Csem"
+    runner: "external_archived"
+    implementation: "external/UniClean or UNICLEAN_HOME"
+    output_contract: "repaired_csv"
+    default_env: "uniclean"
+    paper_replay_supported: true
+    benchmark_smoke_supported: false
+    full_rerun_supported: "external_only"
+    notes: "Included in paper-exact archived outputs and downstream analysis. Full from-scratch rerun requires the upstream UniClean repository."
+
+  groundtruth:
+    id: 9
+    legacy_id: 10
     display_name: "GroundTruth"
     enabled: false
     group: "oracle"
@@ -190,6 +207,8 @@ aliases:
     scaredclean: "scared"
     scared_clean: "scared"
     unifiedclean: "unified"
+    uniclean: "uniclean"
+    uni_clean: "uniclean"
 
   clusterers:
     hierarchical: "HC"

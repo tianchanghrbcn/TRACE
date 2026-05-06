@@ -1,0 +1,345 @@
+{
+  "generated_at_utc": "2026-05-06T13:09:48.598251+00:00",
+  "status": "PASS_WITH_WARNINGS",
+  "selected_options": {
+    "skip_strict_benchmark_proof": false,
+    "skip_benchmark_smoke": false,
+    "skip_preexp_validity": false,
+    "skip_paper_replay": false,
+    "run_trace_validation": true,
+    "rebuild_paper_replay": false,
+    "allow_missing_full_audit_proof": false
+  },
+  "static_path_checks": [
+    {
+      "path": "README.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 3422
+    },
+    {
+      "path": "LICENSE",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1262
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1301
+    },
+    {
+      "path": "configs/paper_replay.yaml",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 610
+    },
+    {
+      "path": "configs/benchmark_smoke.yaml",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 487
+    },
+    {
+      "path": "configs/benchmark_full_audit.yaml",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 733
+    },
+    {
+      "path": "configs/trace.yaml",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 3117
+    },
+    {
+      "path": "data/README.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 994
+    },
+    {
+      "path": "data/raw/train/beers/clean.csv",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 238636
+    },
+    {
+      "path": "data/raw/train/flights/clean.csv",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 173153
+    },
+    {
+      "path": "data/raw/train/hospital/clean.csv",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 304322
+    },
+    {
+      "path": "data/raw/train/rayyan/clean.csv",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 257641
+    },
+    {
+      "path": "data/pre_experiment/alpha_metrics.csv",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1196
+    },
+    {
+      "path": "analysis/validity_sensitivity/inputs/validity_sensitivity_input_manifest.json",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 2121
+    },
+    {
+      "path": "analysis/validity_sensitivity/inputs/analysis_results/beers_summary.xlsx",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 145622
+    },
+    {
+      "path": "analysis/validity_sensitivity/inputs/analysis_results/flights_summary.xlsx",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 148247
+    },
+    {
+      "path": "analysis/validity_sensitivity/inputs/analysis_results/hospital_summary.xlsx",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 135112
+    },
+    {
+      "path": "analysis/validity_sensitivity/inputs/analysis_results/rayyan_summary.xlsx",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 132236
+    },
+    {
+      "path": "analysis/validity_sensitivity/seed_sensitivity_summary.json",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 815
+    },
+    {
+      "path": "analysis/validity_sensitivity/seed_sensitivity_report.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1098
+    },
+    {
+      "path": "src/analysis/trace_replay.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 86944
+    },
+    {
+      "path": "docs/data_policy.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1425
+    },
+    {
+      "path": "docs/hardware_runtime.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1553
+    },
+    {
+      "path": "docs/release_packaging.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1364
+    },
+    {
+      "path": "docs/terminal_interface.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1127
+    },
+    {
+      "path": "docs/workflows.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 2379
+    },
+    {
+      "path": "docs/pre_experiment_validity.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 2390
+    },
+    {
+      "path": "docs/trace_stage4_repro.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 2906
+    },
+    {
+      "path": "docs/stage3_strict_validation.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1191
+    },
+    {
+      "path": "docs/paper_output_traceability.md",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 1004
+    },
+    {
+      "path": "scripts/trace.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 18366
+    },
+    {
+      "path": "scripts/00_trace_home.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 6659
+    },
+    {
+      "path": "scripts/30_replay_trace.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 2712
+    },
+    {
+      "path": "scripts/36_eval_trace_blind_random.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 26947
+    },
+    {
+      "path": "scripts/38_lodo_trace_validation.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 19587
+    },
+    {
+      "path": "scripts/39_run_trace_stage4_paper_repro.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 21830
+    },
+    {
+      "path": "scripts/45_validate_data_availability.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 2265
+    },
+    {
+      "path": "scripts/49_validate_trace_stage4_inputs.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 5634
+    },
+    {
+      "path": "scripts/62_validate_mode_a_paper_replay.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 15167
+    },
+    {
+      "path": "scripts/63_validate_stage3_strict.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 14838
+    },
+    {
+      "path": "scripts/81_replay_pre_experiment_validity.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 32003
+    },
+    {
+      "path": "scripts/90_run_smoke_from_scratch.py",
+      "exists": true,
+      "is_file": true,
+      "size_bytes": 7641
+    }
+  ],
+  "commands": [
+    {
+      "name": "data_availability",
+      "command": "scripts/45_validate_data_availability.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "{\n  \"data_root\": \"data\\\\raw\\\\train\",\n  \"datasets\": [\n    {\n      \"dataset\": \"beers\",\n      \"exists\": true,\n      \"clean_csv\": true,\n      \"horizon_rules\": true,\n      \"holoclean_rules\": true,\n      \"dirty_file_count\": 15\n    },\n    {\n      \"dataset\": \"flights\",\n      \"exists\": true,\n      \"clean_csv\": true,\n      \"horizon_rules\": true,\n      \"holoclean_rules\": true,\n      \"dirty_file_count\": 15\n    },\n    {\n      \"dataset\": \"hospital\",\n      \"exists\": true,\n      \"clean_csv\": true,\n      \"horizon_rules\": true,\n      \"holoclean_rules\": true,\n      \"dirty_file_count\": 15\n    },\n    {\n      \"dataset\": \"rayyan\",\n      \"exists\": true,\n      \"clean_csv\": true,\n      \"horizon_rules\": true,\n      \"holoclean_rules\": true,\n      \"dirty_file_count\": 15\n    }\n  ],\n  \"pre_experiment_csv\": \"data\\\\pre_experiment\\\\alpha_metrics.csv\",\n  \"pre_experiment_csv_exists\": true,\n  \"failures\": [],\n  \"status\": \"PASS\"\n}\n[TRACE] Data availability status: PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "setup_benchmark_smoke",
+      "command": "scripts/00_setup_check.py --config configs/benchmark_smoke.yaml --strict",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "[TRACE] Repository root: E:\\TRACE\n[TRACE] Config: configs\\benchmark_smoke.yaml\n[TRACE] Wrote report: results/logs/setup_check.json\n[TRACE] SETUP CHECK PASSED\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "setup_benchmark_full_audit",
+      "command": "scripts/00_setup_check.py --config configs/benchmark_full_audit.yaml --check-all-data --strict",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "[TRACE] Repository root: E:\\TRACE\n[TRACE] Config: configs\\benchmark_full_audit.yaml\n[TRACE] Wrote report: results/logs/setup_check.json\n[TRACE] SETUP CHECK PASSED\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "preexp_validity",
+      "command": "scripts/trace.py preexp-validity --strict",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/38_build_pre_experiment_outputs.py --source-csv data/pre_experiment/alpha_metrics.csv --output-dir results/pre_experiment --figure-dir figures/pre_experiment\n{\n  \"copy_report\": {\n    \"source_csv\": \"data\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"output_csv\": \"results\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"row_count\": 20,\n    \"columns\": [\n      \"alpha\",\n      \"max_variance\",\n      \"median_avg\"\n    ]\n  },\n  \"alpha_metric_summary\": {\n    \"path\": \"results\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"row_count\": 20,\n    \"alpha_column\": \"alpha\",\n    \"metric_columns\": [\n      \"max_variance\",\n      \"median_avg\"\n    ],\n    \"alpha_min\": 0.0,\n    \"alpha_max\": 1.0\n  },\n  \"figure_manifest\": {\n    \"metrics_csv\": \"results\\\\pre_experiment\\\\alpha_metrics.csv\",\n    \"row_count\": 20,\n    \"generated_figures\": {\n      \"alpha_vs_variance\": {\n        \"metric_column\": \"max_variance\",\n        \"files\": {\n          \"png\": \"figures\\\\pre_experiment\\\\alpha_vs_variance.png\",\n          \"pdf\": \"figures\\\\pre_experiment\\\\alpha_vs_variance.pdf\"\n        }\n      },\n      \"alpha_vs_median\": {\n        \"metric_column\": \"median_avg\",\n        \"files\": {\n          \"png\": \"figures\\\\pre_experiment\\\\alpha_vs_median.png\",\n          \"pdf\": \"figures\\\\pre_experiment\\\\alpha_vs_median.pdf\"\n        }\n      }\n    }\n  }\n}\n[TRACE] Pre-experiment outputs were built.\n\n[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/80_build_alpha_sensitivity.py --summary-dir analysis/validity_sensitivity/inputs/analysis_results --output-dir analysis/validity_sensitivity --alphas 0.25 0.47 0.5 0.75 --base-alpha 0.47\n{\n  \"status\": \"PASS\",\n  \"input_row_count\": 3059,\n  \"row_score_count\": 12192,\n  \"min_combo_spearman\": 0.9012769201448446,\n  \"min_cleaner_spearman\": 0.8833333333333333,\n  \"min_clusterer_spearman\": 0.942857142857143,\n  \"top_combo_stability_rate\": 0.8333333333333334,\n  \"output\": \"analysis\\\\validity_sensitivity\\\\alpha_sensitivity_summary.json\"\n}\n[TRACE] Alpha sensitivity report written to: analysis\\validity_sensitivity\\alpha_sensitivity_report.md\n\n{\n  \"status\": \"PASS\",\n  \"failure_count\": 0,\n  \"warning_count\": 0,\n  \"report\": \"analysis/validity_sensitivity/pre_experiment_validity_report.json\",\n  \"validity_summary\": \"analysis/validity_sensitivity/validity_sensitivity_summary.json\"\n}\n[TRACE] Pre-experiment/validity report written to: E:\\TRACE\\analysis\\validity_sensitivity\\pre_experiment_validity_report.json\n\n[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/81_replay_pre_experiment_validity.py --generated-data-policy fail --error-model-policy fail\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "paper_replay",
+      "command": "scripts/62_validate_mode_a_paper_replay.py",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "{\n  \"status\": \"PASS_WITH_WARNINGS\",\n  \"warning_count\": 2,\n  \"failure_count\": 0,\n  \"output\": \"analysis\\\\paper_generated\\\\paper_replay_validation_report.json\"\n}\n[TRACE] Paper evidence replay validation report written to: analysis\\paper_generated\\paper_replay_validation_report.json\n[TRACE] Paper evidence replay validation status: PASS_WITH_WARNINGS\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "benchmark_smoke",
+      "command": "scripts/trace.py benchmark-smoke --clean",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "== Running preprocess.py · eigenvectors/trace-compatible-v2.3 ==\n[TRACE] Project root: E:\\TRACE\n[TRACE] Data directory: E:\\TRACE\\data\\raw\\train\n[TRACE] Output file: E:\\TRACE\\results\\eigenvectors.json\n[TRACE] Skip error injection; use existing dirty CSV files.\n[0] Processed beers/beers_1.csv => error_rate=5.00%\n\n[TRACE] Completed. Wrote 1 records to: E:\\TRACE\\results\\eigenvectors.json\n[TRACE] Project root: E:\\TRACE\n[TRACE] Methods config: E:\\TRACE\\configs\\methods.yaml\n[TRACE] Eigenvectors: E:\\TRACE\\results\\eigenvectors.json\n[TRACE] Results directory: E:\\TRACE\\results\n[TRACE] Cleaners: mode(id=0, legacy_id=1)\n[TRACE] Clusterers: HC(id=0, legacy_id=0)\n[TRACE] Cluster trial budget: 5\n[TRACE] Limit records: max_records=1\n[TRACE] Loaded records: 1\n[TRACE] Selected records: 1\n[INFO] Processing record: dataset_id=0, dataset=beers, csv=beers_1.csv, error_rate=4.9985%\n[INFO] Running cleaner: name=mode, trace_id=0, legacy_id=1\nRepaired data saved to E:\\TRACE\\src\\cleaning\\Repaired_res\\mode\\beers\\repaired_beers.csv\n[INFO] Mode completed for `beers` (0.37s).\n[INFO] Cleaner output copied: id=1, name=mode, path=E:\\TRACE\\results\\cleaned_data\\mode\\repaired_0.csv\n[INFO] Cleaning completed: dataset=beers, cleaner=mode\n[INFO] Cleaned file: E:\\TRACE\\results\\cleaned_data\\mode\\repaired_0.csv\n[INFO] Cleaning runtime: 0.37s\n[INFO] Running clustering: method=HC, dataset_id=0, cleaner=mode\n[INFO] Clustering trial budget: 5\n[INFO] Clustering stdout:\nAll files saved in: E:\\TRACE\\results\\clustered_data\\HC\\mode\\clustered_0\nProgram completed in 3.82 sec\n\n[INFO] Clustering completed: method=HC, dataset_id=0, runtime=3.82s\n[INFO] Clustering completed: method=HC, runtime=3.82s\n==================================================\n[TRACE] Cleaned results saved to: E:\\TRACE\\results\\cleaned_results.json\n[TRACE] Clustered results saved to: E:\\TRACE\\results\\clustered_results.json\n[TRACE] Start clustered-result analysis.\n[INFO] Top-K value: 5\n[INFO] Analysis results saved to E:\\TRACE\\results\\analyzed_results.json\n[TRACE] Analyzed results saved to: E:\\TRACE\\results\\analyzed_results.json\n[TRACE] Pipeline manifest saved to: E:\\TRACE\\results\\logs\\pipeline_run_manifest.json\n[TRACE] Pipeline completed: cleaned=1, clustered=1, failures=0, runtime=5.34s\n[TRACE] Smoke cleaners: ['mode']\n[TRACE] Smoke clusterers: ['HC']\n[TRACE] Running: C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.pipeline.preprocess --skip-injection --data-dir datasets/train --output-file results/eigenvectors.json --datasets beers --dirty-ids 1\n[TRACE] Running: C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m src.pipeline.runner --max-records 1 --workers 1 --cleaners group:smoke --clusterers group:smoke --cluster-trials 5\n[TRACE] Smoke summary written to: E:\\TRACE\\results\\logs\\mode_b_smoke_summary.json\n[TRACE] Mode B smoke test completed.\n\n[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/90_run_smoke_from_scratch.py --config configs/benchmark_smoke.yaml --clean\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "trace_validation_paper_exact",
+      "command": "scripts/trace.py trace-validation --paper-exact",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "[TRACE-PREFLIGHT] Project root: E:\\TRACE\n[TRACE-PREFLIGHT] Results dir : E:\\TRACE\\results\\trace_cluster_replay_all\n[TRACE-PREFLIGHT] Checking code files...\n  OK configs/trace.yaml\n  OK src/analysis/trace_replay.py\n  OK scripts/30_replay_trace.py\n  OK scripts/36_eval_trace_blind_random.py\n  OK scripts/38_lodo_trace_validation.py\n  OK scripts/39_run_trace_stage4_paper_repro.py\n[TRACE-PREFLIGHT] Checking TRACE replay snapshot...\n  OK results/trace_cluster_replay_all/eigenvectors.json\n  OK results/trace_cluster_replay_all/cleaned_results.json\n  OK results/trace_cluster_replay_all/clustered_results.json\n  OK results/trace_cluster_replay_all/clustered_data\n  OK results/trace_cluster_replay_all/analyzed_results.json\n  OK clustered_data contains JSON logs\n[TRACE-PREFLIGHT] Checking output dir: E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro\n  Existing lodo_* files: ['lodo_aggregate_summary.json', 'lodo_blind_random_dataset_summary.csv', 'lodo_folds.csv', 'lodo_trace_dataset_summary.csv']\n  Existing heldout_* dirs: ['heldout_beers', 'heldout_flights', 'heldout_hospital', 'heldout_rayyan']\n[TRACE-PREFLIGHT] Result: OK\n[TRACE-STAGE4] Paper-level TRACE LODO reproduction\n[TRACE-STAGE4] Project root: E:\\TRACE\n[TRACE-STAGE4] Results dir: E:\\TRACE\\results\\trace_cluster_replay_all\n[TRACE-STAGE4] Output dir: E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro\n[TRACE-STAGE4] Compact log: E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro\\logs\\trace_stage4_paper_repro_compact_20260506_210833.log\n[TRACE-STAGE4] Step 1/4: --rebuild-base requested; rebuilding base TRACE replay ledger.\n[TRACE-STAGE4] Step 1/4: build base TRACE replay ledger ...\n[TRACE-STAGE4] Step 1/4: build base TRACE replay ledger done.\n[TRACE-STAGE4] Step 2/4: run leave-one-dataset-out replay ...\n[TRACE-STAGE4] Step 2/4: run leave-one-dataset-out replay done.\n[TRACE-STAGE4] Step 3/4: figure generation skipped; use --make-figures to regenerate figures.\n[TRACE-STAGE4] Step 4/4: manifest and report written.\n[TRACE-STAGE4] Packing paper-exact artifact: E:\\TRACE\\artifacts\\trace_stage4_paper_exact.tgz\n{\n  \"output_dir\": \"E:\\\\TRACE\\\\results\\\\processed\\\\trace\\\\lodo_paper_repro\",\n  \"manifest\": \"E:\\\\TRACE\\\\results\\\\processed\\\\trace\\\\lodo_paper_repro\\\\trace_stage4_manifest.json\",\n  \"report\": \"E:\\\\TRACE\\\\results\\\\processed\\\\trace\\\\lodo_paper_repro\\\\trace_stage4_repro_report.md\",\n  \"pack_path\": \"E:\\\\TRACE\\\\artifacts\\\\trace_stage4_paper_exact.tgz\",\n  \"metric_checks_all_within_tolerance\": true,\n  \"aggregate\": {\n    \"n_datasets\": 60,\n    \"median_trace_hit95_progress\": 0.13476388888888888,\n    \"median_blind_random_hit95_progress\": 0.2701335656213705,\n    \"median_trace_auc_retention\": 0.982375574743322,\n    \"median_blind_random_auc_retention\": 0.9537331473633225\n  }\n}\n\n[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/49_validate_trace_stage4_inputs.py --results-dir results/trace_cluster_replay_all --output-dir results/processed/trace/lodo_paper_repro --strict\n\n[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/39_run_trace_stage4_paper_repro.py --results-dir results/trace_cluster_replay_all --config configs/trace.yaml --output-dir results/processed/trace/lodo_paper_repro --random-seeds 1000 --seed 20260424 --rebuild-base --pack --log --quiet\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "strict_reviewer_workflow_validation",
+      "command": "scripts/63_validate_stage3_strict.py --skip-smoke-rerun",
+      "returncode": 0,
+      "status": "PASS",
+      "stdout_tail": "[TRACE] >>> C:\\Users\\chang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe scripts/62_validate_mode_a_paper_replay.py\n{\n  \"status\": \"PASS_WITH_WARNINGS\",\n  \"warning_count\": 2,\n  \"failure_count\": 0,\n  \"output\": \"analysis\\\\paper_generated\\\\paper_replay_validation_report.json\"\n}\n[TRACE] Paper evidence replay validation report written to: analysis\\paper_generated\\paper_replay_validation_report.json\n[TRACE] Paper evidence replay validation status: PASS_WITH_WARNINGS\n\n{\n  \"status\": \"PASS_WITH_WARNINGS\",\n  \"workflow_statuses\": {\n    \"paper-replay\": \"PASS_WITH_WARNINGS\",\n    \"benchmark-smoke\": \"PASS\",\n    \"benchmark-full-audit\": \"PASS\"\n  },\n  \"warning_count\": 3,\n  \"failure_count\": 0,\n  \"output\": \"results\\\\logs\\\\stage3_strict_validation_report.json\"\n}\n[TRACE] Strict reviewer workflow validation report written to: results\\logs\\stage3_strict_validation_report.json\n[TRACE] Strict reviewer workflow validation status: PASS_WITH_WARNINGS\n",
+      "stderr_tail": ""
+    }
+  ],
+  "generated_report_statuses": {
+    "preexp_validity": "PASS",
+    "validity_sensitivity": "PASS",
+    "paper_replay": "PASS_WITH_WARNINGS",
+    "strict_reviewer_workflow": "PASS_WITH_WARNINGS",
+    "trace_stage4": "PASS"
+  },
+  "warnings": [
+    "paper-replay passed with accepted warnings.",
+    "strict reviewer workflow passed with accepted warnings."
+  ],
+  "failures": []
+}

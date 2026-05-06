@@ -1,0 +1,162 @@
+﻿E:\TRACE\envs\README.md:5: ## Mode A: archived-result reproduction
+E:\TRACE\envs\README.md:12: ## Mode B: smoke from scratch
+E:\TRACE\envs\README.md:17: - If the original pipeline requires additional packages, use the Mode C fallback environment.
+E:\TRACE\envs\README.md:19: ## Mode C: full from scratch
+E:\TRACE\scripts\setup\README.md:7: ### Mode A
+E:\TRACE\scripts\setup\README.md:18: ### Mode A
+E:\TRACE\scripts\setup\README.md:25: Mode B
+E:\TRACE\scripts\setup\README.md:30: Mode C
+E:\TRACE\scripts\setup\README.md:35: Mode C may require system packages and database services for HoloClean and other cleaners.
+E:\TRACE\README.md:26: Mode A: replay tables and figures from archived or already-generated results.
+E:\TRACE\README.md:28: Mode B: run a lightweight smoke pipeline from scratch.
+E:\TRACE\README.md:30: Mode C: full from-scratch experiment. This is long-running and is not recommended as the first reviewer action.
+E:\TRACE\README.md:64: - Stage 3: result replay, figures, pre-experiment, visual demo, and advisor-review package.
+E:\TRACE\README.md:65: - Stage 4: planned TRACE validation, new algorithm extension, and new dataset onboarding.
+E:\TRACE\README.md:67: Stage 1--3 are complete for advisor review. Stage 4 is planned.
+E:\TRACE\docs\artifact_modes.md:5: - Mode A: reproduce paper tables and figures from archived raw results.
+E:\TRACE\docs\artifact_modes.md:6: - Mode B: smoke test from scratch.
+E:\TRACE\docs\artifact_modes.md:7: - Mode C: full experiment from scratch.
+E:\TRACE\docs\artifact_modes.md:9: Mode A is the recommended review path.
+E:\TRACE\docs\artifact_tracks.md:3: To avoid confusion with the cleaner named `mode`, the artifact uses **tracks** rather than "Mode A/B/C".
+E:\TRACE\docs\artifact_tracks.md:25: Purpose: demonstrate how to onboard a new algorithm or dataset. UniClean and the tax dataset are planned as concrete examples of this track.
+E:\TRACE\docs\data_policy.md:12: These files are intended to support Mode B smoke validation and Mode A result replay.
+E:\TRACE\docs\data_policy.md:43: For advisor-review v0.1.1, the required reproducibility data are kept under `data/raw/train/` and `data/pre_experiment/`. Generated artifacts remain ignored and reproducible.
+E:\TRACE\docs\figures.md:20: The first Stage 3.4 figures are smoke-test scaffolds. They are generated from canonical tables and are intended to validate the figure pipeline before full Mode A archived results are connected.
+E:\TRACE\docs\hardware_runtime.md:30: Mode B smoke validation is lightweight and typically finishes in seconds to minutes depending on the clusterer runtime.
+E:\TRACE\docs\hardware_runtime.md:34: For quick Mode B smoke and Stage 3 replay:
+E:\TRACE\docs\known_limitations.md:3: This package is an advisor-review v0 release, not the final submission artifact.
+E:\TRACE\docs\migrated_figures_batch1.md:20: - `fig_7_CEGR_line_graph.py` inspired `result_score_by_error_rate`, but full CEGR and breakpoint analysis will be added after Mode A archived results expose EDR and full-search summary tables.
+E:\TRACE\docs\mode_a_paper_replay_validation.md:1: # Mode A Paper Replay Validation
+E:\TRACE\docs\mode_a_paper_replay_validation.md:3: Stage 3R.6.1 provides a single validation wrapper for Mode A paper replay.
+E:\TRACE\docs\mode_a_paper_replay_validation.md:29: Narrative claim traceability is intentionally deferred.
+E:\TRACE\docs\paper_output_traceability.md:9: python scripts/trace.py mode-a --audit --clean --generated-summaries --paper-tables --table-equivalence
+E:\TRACE\docs\paper_output_traceability.md:10: python scripts/trace.py mode-a --paper-figures --figure-traceability
+E:\TRACE\docs\paper_output_traceability.md:31: Narrative claim traceability is deferred until after table and figure traceability are stable.
+E:\TRACE\docs\release_checklist.md:3: This checklist defines the advisor-review package v0.
+E:\TRACE\docs\release_checklist.md:7: - Mode B setup check passes.
+E:\TRACE\docs\release_checklist.md:8: - Mode C data/config setup check passes.
+E:\TRACE\docs\release_checklist.md:9: - Mode B smoke pipeline passes.
+E:\TRACE\docs\release_packaging.md:3: TRACE uses Git tags and GitHub Releases for advisor-review and submission artifact packages.
+E:\TRACE\docs\release_packaging.md:5: ## Current advisor-review release
+E:\TRACE\docs\release_packaging.md:7: Recommended next advisor-review version:
+E:\TRACE\docs\release_packaging.md:9: v0.1.2-advisor
+E:\TRACE\docs\release_packaging.md:15: - Mode A: paper table and figure replay validation.
+E:\TRACE\docs\release_packaging.md:16: - Mode B: lightweight smoke pipeline from scratch.
+E:\TRACE\docs\release_packaging.md:17: - Mode C: strict execution-layer proof from Linux validation evidence.
+E:\TRACE\docs\release_packaging.md:29: python scripts/44_build_release_assets.py --version v0.1.2-advisor --source-ref v0.1.2-advisor
+E:\TRACE\docs\release_packaging.md:35: - `TRACE-v0.1.2-advisor-source.zip`
+E:\TRACE\docs\release_packaging.md:36: - `TRACE-v0.1.2-advisor-handoff.zip`
+E:\TRACE\docs\release_packaging.md:37: - `TRACE-v0.1.2-advisor-stage2-strict-proof.zip`
+E:\TRACE\docs\release_packaging.md:38: - `TRACE-v0.1.2-advisor-paper-replay-proof.zip`
+E:\TRACE\docs\reproducibility_modes.md:5: ## Mode A: result replay
+E:\TRACE\docs\reproducibility_modes.md:7: Mode A starts from existing raw or archived result files and rebuilds canonical result tables and figures.
+E:\TRACE\docs\reproducibility_modes.md:17: ## Mode B: smoke from scratch
+E:\TRACE\docs\reproducibility_modes.md:19: Mode B runs a small from-scratch pipeline on one dirty instance and a small method subset.
+E:\TRACE\docs\reproducibility_modes.md:26: ## Mode C: full from scratch
+E:\TRACE\docs\reproducibility_modes.md:28: Mode C is the full experiment mode. It may require specialized cleaner environments and long wall-clock time.
+E:\TRACE\docs\reproducibility_modes.md:34: Full execution should be planned separately. The quick reviewer path is Mode B plus Mode A replay.
+E:\TRACE\docs\results_replay.md:3: Stage 3 result replay starts from raw pipeline outputs or archived Mode A result files.
+E:\TRACE\docs\results_schema.md:22: The schema is intentionally conservative. It accepts partial smoke-test outputs and can later ingest full archived Mode A results without changing downstream table and figure scripts.
+E:\TRACE\docs\stage1_to_stage4_plan.md:15: - completed for advisor-review v0.1.1.
+E:\TRACE\docs\stage1_to_stage4_plan.md:28: - completed for advisor-review v0.1.1;
+E:\TRACE\docs\stage1_to_stage4_plan.md:43: - completed for advisor-review v0.1.1.
+E:\TRACE\docs\stage1_to_stage4_plan.md:57: - planned.
+E:\TRACE\docs\stage2_validation.md:7: - setup check for Mode B,
+E:\TRACE\docs\stage2_validation.md:8: - setup check for Mode C,
+E:\TRACE\docs\stage2_validation.md:11: - Mode B smoke run,
+E:\TRACE\docs\stage3_plan.md:20: - archived result inputs for Mode A replay
+E:\TRACE\docs\stage3_strict_validation.md:9: - Mode A: paper table and figure replay validation.
+E:\TRACE\docs\stage3_strict_validation.md:10: - Mode B: lightweight smoke pipeline from scratch.
+E:\TRACE\docs\stage3_strict_validation.md:11: - Mode C: strict cleaning-clustering execution proof.
+E:\TRACE\docs\stage3_strict_validation.md:21: python scripts/63_validate_stage3_strict.py --mode-c-proof-dir path/to/stage2_strict_YYYYMMDD_HHMMSS
+E:\TRACE\docs\stage3_strict_validation.md:23: To rebuild Mode A before validation:
+E:\TRACE\docs\stage3_strict_validation.md:25: python scripts/63_validate_stage3_strict.py --rebuild-mode-a
+E:\TRACE\docs\stage3_strict_validation.md:36: - Mode A paper replay has accepted traceability warnings only;
+E:\TRACE\docs\stage3_strict_validation.md:37: - Mode B smoke rerun passes;
+E:\TRACE\docs\stage3_strict_validation.md:38: - Mode C strict Linux proof is present and passed;
+E:\TRACE\docs\stage3_strict_validation.md:39: - claim-level narrative traceability is deferred.
+E:\TRACE\docs\stage3_strict_validation.md:41: Mode C is checked from Linux strict proof by default rather than rerunning the long validation.
+E:\TRACE\docs\terminal_interface.md:17: - Mode A: paper table/figure replay and traceability.
+E:\TRACE\docs\terminal_interface.md:18: - Mode B: lightweight smoke pipeline from scratch.
+E:\TRACE\docs\terminal_interface.md:19: - Mode C: strict cleaning-clustering proof checked from Linux validation evidence.
+E:\TRACE\docs\terminal_interface.md:27: Validate Mode A only:
+E:\TRACE\docs\terminal_interface.md:39: ## Stage 4 placeholders
+E:\TRACE\docs\terminal_interface.md:41: The menu includes planned Stage 4 entries, but does not implement them yet. This keeps the reviewer interface stable while making clear what remains future work.
+E:\TRACE\docs\workflows.md:24: | mode-a | paper-replay |
+E:\TRACE\docs\workflows.md:25: | mode-b | benchmark-smoke |
+E:\TRACE\docs\workflows.md:26: | mode-c | benchmark-full-audit |
+E:\TRACE\docs\workflows.md:28: Reviewer-facing documentation should not use Mode A/B/C.
+E:\TRACE\scripts\00_setup_check.py:108: help="For Mode A, require archived results to exist under results/raw.",
+E:\TRACE\scripts\00_setup_check.py:388: msg = f"Mode A archived result file not found yet: {rel(path, root)}"
+E:\TRACE\scripts\00_setup_check.py:436: # Missing archived raw results for Mode A are allowed before release unless --require-results is used.
+E:\TRACE\scripts\00_trace_home.py:4: This menu uses reviewer-facing workflow names instead of Mode A/B/C.
+E:\TRACE\scripts\00_trace_home.py:5: The old mode-a/mode-b/mode-c names are compatibility aliases only.
+E:\TRACE\scripts\00_trace_home.py:109: print("  mode-a -> paper-replay")
+E:\TRACE\scripts\00_trace_home.py:110: print("  mode-b -> benchmark-smoke")
+E:\TRACE\scripts\00_trace_home.py:111: print("  mode-c -> benchmark-full-audit")
+E:\TRACE\scripts\10_check_release_results.py:2: print("TRACE placeholder: scripts/10_check_release_results.py")
+E:\TRACE\scripts\12_hard_remove_cjk_stage2.py:67: # Replace CJK text runs with a neutral English placeholder.
+E:\TRACE\scripts\20_make_analysis_tables.py:2: print("TRACE placeholder: scripts/20_make_analysis_tables.py")
+E:\TRACE\scripts\30_validate_archived_results.py:2: """Validate raw result files for TRACE Mode A replay."""
+E:\TRACE\scripts\40_make_figures.py:2: print("TRACE placeholder: scripts/40_make_figures.py")
+E:\TRACE\scripts\44_build_release_assets.py:85: f"TRACE advisor-review package {args.version}",
+E:\TRACE\scripts\48_build_mode_a_paper_exact_archive.py:2: """Build Mode A paper-exact archive from selected legacy sources."""
+E:\TRACE\scripts\48_build_mode_a_paper_exact_archive.py:16: parser = argparse.ArgumentParser(description="Build Mode A paper-exact archive.")
+E:\TRACE\scripts\48_build_mode_a_paper_exact_archive.py:173: print("[TRACE] Mode A paper-exact archive was built.")
+E:\TRACE\scripts\49_validate_mode_a_paper_exact.py:2: """Validate Mode A paper-exact archive outputs."""
+E:\TRACE\scripts\49_validate_mode_a_paper_exact.py:34: parser = argparse.ArgumentParser(description="Validate Mode A paper-exact archive.")
+E:\TRACE\scripts\49_validate_mode_a_paper_exact.py:52: raise FileNotFoundError(f"Mode A archive manifest not found: {args.manifest}")
+E:\TRACE\scripts\49_validate_mode_a_paper_exact.py:100: print(f"[TRACE] Mode A validation report written to: {args.output}")
+E:\TRACE\scripts\49_validate_mode_a_paper_exact.py:101: print(f"[TRACE] Mode A paper-exact status: {report['status']}")
+E:\TRACE\scripts\50_audit_paper_table_scripts.py:2: """Audit selected paper table and analysis scripts for Mode A generated replay."""
+E:\TRACE\scripts\50_audit_paper_table_scripts.py:30: parser = argparse.ArgumentParser(description="Audit paper table scripts selected for Mode A replay.")
+E:\TRACE\scripts\52_validate_paper_summary_workbooks.py:2: """Validate generated paper summary workbooks against archived Mode A summaries."""
+E:\TRACE\scripts\53_run_paper_table_scripts.py:2: """Run selected legacy paper table scripts inside a controlled Mode A workspace."""
+E:\TRACE\scripts\54_validate_paper_table_outputs.py:3: """Validate outputs from the Mode A paper table script harness.
+E:\TRACE\scripts\55_validate_paper_table_equivalence.py:502: "This validates table-output equivalence between generated/available Mode A outputs and archived references.",
+E:\TRACE\scripts\58_run_paper_figure_scripts.py:2: """Run selected legacy paper figure scripts inside a controlled Mode A workspace."""
+E:\TRACE\scripts\60_validate_paper_figure_traceability.py:2: """Validate paper-figure traceability for Mode A.
+E:\TRACE\scripts\61_build_paper_output_traceability_report.py:149: "Claim-level traceability for narrative conclusions is intentionally deferred.",
+E:\TRACE\scripts\61_build_paper_output_traceability_report.py:240: "Narrative claim traceability is deferred."
+E:\TRACE\scripts\62_validate_mode_a_paper_replay.py:4: This replaces the old reviewer-facing "Mode A" semantics.
+E:\TRACE\scripts\62_validate_mode_a_paper_replay.py:309: "The old Mode A archive validation is not part of this reviewer-facing decision gate.",
+E:\TRACE\scripts\62_validate_mode_a_paper_replay.py:370: "and pre-experiment/validity checks. The old Mode A archive validation "
+E:\TRACE\scripts\63_validate_stage3_strict.py:10: --rebuild-mode-a       -> --rebuild-paper-replay
+E:\TRACE\scripts\63_validate_stage3_strict.py:11: --skip-mode-b-rerun    -> --skip-smoke-rerun
+E:\TRACE\scripts\63_validate_stage3_strict.py:12: --mode-c-proof-dir     -> --full-audit-proof-dir
+E:\TRACE\scripts\63_validate_stage3_strict.py:65: "--mode-c-proof-dir",
+E:\TRACE\scripts\63_validate_stage3_strict.py:78: "--skip-mode-b-rerun",
+E:\TRACE\scripts\63_validate_stage3_strict.py:90: "--rebuild-mode-a",
+E:\TRACE\scripts\63_validate_stage3_strict.py:102: "--allow-missing-mode-c-proof",
+E:\TRACE\scripts\90_run_smoke_from_scratch.py:4: Run TRACE Mode B smoke test from scratch.
+E:\TRACE\scripts\90_run_smoke_from_scratch.py:6: Mode B-smoke is a minimal end-to-end pipeline check. It is not intended to
+E:\TRACE\scripts\90_run_smoke_from_scratch.py:40: parser = argparse.ArgumentParser(description="Run TRACE Mode B smoke test.")
+E:\TRACE\scripts\90_run_smoke_from_scratch.py:44: help="Mode B config path. Currently used for record keeping.",
+E:\TRACE\scripts\90_run_smoke_from_scratch.py:267: print("[TRACE] Mode B smoke test completed.")
+E:\TRACE\scripts\97_validate_stage2_strict.sh:439: read -r -a CLEANERS <<< "${STAGE2_CLEANERS:-mode baran holoclean bigdansing boostclean horizon scared unified}"
+E:\TRACE\scripts\98_validate_release_package.py:109: "--rebuild-mode-a",
+E:\TRACE\scripts\99_run_full_from_scratch.py:2: print("TRACE placeholder: scripts/99_run_full_from_scratch.py")
+E:\TRACE\scripts\trace.py:13: mode-a -> paper-replay
+E:\TRACE\scripts\trace.py:14: mode-b -> benchmark-smoke
+E:\TRACE\scripts\trace.py:15: mode-c -> benchmark-full-audit
+E:\TRACE\scripts\trace.py:32: "mode-a": "paper-replay",
+E:\TRACE\scripts\trace.py:33: "mode-b": "benchmark-smoke",
+E:\TRACE\scripts\trace.py:34: "mode-c": "benchmark-full-audit",
+E:\TRACE\scripts\trace.py:184: "--skip-mode-b-rerun",
+E:\TRACE\scripts\trace.py:296: "--rebuild-mode-a",
+E:\TRACE\scripts\trace.py:351: For the deprecated mode-a alias, preserve the old minimal behavior unless
+E:\TRACE\scripts\trace.py:378: whose semantics have been changed from old "Mode A archive validation" to
+E:\TRACE\scripts\trace.py:412: cmd.append("--skip-mode-b-rerun")
+E:\TRACE\scripts\setup\README.md:7: ### Mode A
+E:\TRACE\scripts\setup\README.md:18: ### Mode A
+E:\TRACE\scripts\setup\README.md:25: Mode B
+E:\TRACE\scripts\setup\README.md:30: Mode C
+E:\TRACE\scripts\setup\README.md:35: Mode C may require system packages and database services for HoloClean and other cleaners.
+E:\TRACE\scripts\setup\setup_mode_a.sh:32: echo "[TRACE] Mode A environment is ready: $ENV_NAME"
+E:\TRACE\scripts\setup\setup_mode_b.sh:31: echo "[TRACE] Mode B smoke environment is ready: $ENV_NAME"
+E:\TRACE\scripts\setup\setup_mode_c_full.sh:43: echo "[TRACE] Mode C primary env file: $ENV_FILE"
+E:\TRACE\scripts\setup\setup_mode_c_full.sh:44: echo "[TRACE] Mode C primary env name: $ENV_NAME"
+E:\TRACE\scripts\setup\setup_mode_c_full.sh:97: echo "[TRACE] Mode C full environment setup completed."
+E:\TRACE\configs\methods.yaml:12: notes: "Baseline cleaner used by Mode B-smoke."
+E:\TRACE\configs\methods_uniclean.yaml:12: notes: Baseline cleaner used by Mode B-smoke.
+E:\TRACE\configs\runtime\environments.yaml:21: - "Mode B should first use lightweight cleaners/clusterers."

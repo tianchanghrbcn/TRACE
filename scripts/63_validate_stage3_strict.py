@@ -1,20 +1,15 @@
-#!/usr/bin/env python3
-"""Validate TRACE Stage 3 strict completion.
+﻿#!/usr/bin/env python3
+"""Validate TRACE strict reviewer workflow evidence.
 
-This wrapper validates the three Stage 3 modes:
+Reviewer-facing workflows:
+  paper-replay
+  benchmark-smoke
+  benchmark-full-audit
 
-Mode A:
-    Paper replay from archived/generated outputs.
-
-Mode B:
-    Lightweight smoke run from scratch.
-
-Mode C:
-    Strict execution-layer proof from Linux Stage 2 validation.
-
-The default behavior reruns Mode B because it is lightweight, validates existing
-Mode A reports, and checks Mode C proof files without rerunning the long Linux
-strict validation.
+Hidden compatibility options:
+  --rebuild-mode-a       -> --rebuild-paper-replay
+  --skip-mode-b-rerun    -> --skip-smoke-rerun
+  --mode-c-proof-dir     -> --full-audit-proof-dir
 """
 
 from __future__ import annotations
@@ -28,7 +23,11 @@ from pathlib import Path
 from typing import Any
 
 
-EXPECTED_MODE_C_CHECKS = [
+ROOT = Path(__file__).resolve().parents[1]
+
+# These names are produced by the historical Linux strict proof script.
+# They are kept as proof-row identifiers, not reviewer-facing workflow names.
+EXPECTED_FULL_AUDIT_CHECKS = [
     "setup_mode_b",
     "setup_mode_c",
     "method_registry",
@@ -54,30 +53,56 @@ EXPECTED_MODE_C_CHECKS = [
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Validate TRACE Stage 3 strict completion.")
+    parser = argparse.ArgumentParser(description="Validate TRACE strict reviewer workflow evidence.")
     parser.add_argument(
-        "--mode-c-proof-dir",
+        "--full-audit-proof-dir",
+        dest="full_audit_proof_dir",
         type=Path,
         default=None,
-        help=(
-            "Directory containing Linux Stage 2 strict proof files, including "
-            "RESULT and summary.tsv. Example: results/logs/stage2_strict_20260421_192851"
-        ),
+        help="Directory containing strict Linux full-audit proof files, including RESULT and summary.tsv.",
+    )
+    parser.add_argument(
+        "--mode-c-proof-dir",
+        dest="full_audit_proof_dir",
+        type=Path,
+        default=None,
+        help=argparse.SUPPRESS,
+    )
+    parser.add_argument(
+        "--skip-smoke-rerun",
+        dest="skip_smoke_rerun",
+        action="store_true",
+        help="Do not rerun benchmark-smoke. Only check existing smoke reports.",
     )
     parser.add_argument(
         "--skip-mode-b-rerun",
+        dest="skip_smoke_rerun",
         action="store_true",
-        help="Do not rerun Mode B smoke. Only check existing reports.",
+        help=argparse.SUPPRESS,
+    )
+    parser.add_argument(
+        "--rebuild-paper-replay",
+        dest="rebuild_paper_replay",
+        action="store_true",
+        help="Rebuild paper-replay evidence before validating it.",
     )
     parser.add_argument(
         "--rebuild-mode-a",
+        dest="rebuild_paper_replay",
         action="store_true",
-        help="Rebuild Mode A paper replay before validating it.",
+        help=argparse.SUPPRESS,
+    )
+    parser.add_argument(
+        "--allow-missing-full-audit-proof",
+        dest="allow_missing_full_audit_proof",
+        action="store_true",
+        help="Allow missing benchmark-full-audit proof as a warning. Not recommended for final archival release.",
     )
     parser.add_argument(
         "--allow-missing-mode-c-proof",
+        dest="allow_missing_full_audit_proof",
         action="store_true",
-        help="Allow missing Mode C proof as a warning. Not recommended for final strict validation.",
+        help=argparse.SUPPRESS,
     )
     parser.add_argument(
         "--output",
@@ -88,9 +113,10 @@ def parse_args() -> argparse.Namespace:
 
 
 def run_command(cmd: list[str]) -> dict[str, Any]:
-    print("[TRACE] >>>", " ".join(cmd))
+    print("[TRACE] >>>", " ".join([sys.executable] + cmd))
     proc = subprocess.run(
         [sys.executable] + cmd,
+        cwd=ROOT,
         text=True,
         capture_output=True,
     )
@@ -109,10 +135,13 @@ def run_command(cmd: list[str]) -> dict[str, Any]:
     }
 
 
-def read_json(path: Path) -> dict[str, Any]:
+def read_json_if_exists(path: Path) -> dict[str, Any]:
     if not path.exists():
-        raise FileNotFoundError(f"JSON report not found: {path}")
-    return json.loads(path.read_text(encoding="utf-8-sig", errors="replace"))
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8-sig", errors="replace"))
+    except Exception:
+        return {}
 
 
 def write_json(path: Path, data: dict[str, Any]) -> None:
@@ -120,12 +149,12 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def find_mode_c_proof_dir(explicit: Path | None) -> Path | None:
+def find_full_audit_proof_dir(explicit: Path | None) -> Path | None:
     if explicit:
         return explicit
 
     candidates = sorted(
-        Path("results/logs").glob("stage2_strict_*"),
+        (ROOT / "results/logs").glob("stage2_strict_*"),
         key=lambda p: p.name,
         reverse=True,
     )
@@ -137,15 +166,20 @@ def find_mode_c_proof_dir(explicit: Path | None) -> Path | None:
     return None
 
 
-def validate_mode_a(rebuild: bool) -> dict[str, Any]:
+def validate_paper_replay(rebuild: bool) -> dict[str, Any]:
     cmd = ["scripts/62_validate_mode_a_paper_replay.py"]
     if rebuild:
         cmd.append("--rebuild")
 
     run = run_command(cmd)
 
-    report_path = Path("analysis/paper_generated/mode_a_paper_replay_validation_report.json")
-    report = read_json(report_path) if report_path.exists() else {}
+    report_path = ROOT / "analysis/paper_generated/paper_replay_validation_report.json"
+    legacy_report_path = ROOT / "analysis/paper_generated/mode_a_paper_replay_validation_report.json"
+
+    report = read_json_if_exists(report_path)
+    if not report and legacy_report_path.exists():
+        report = read_json_if_exists(legacy_report_path)
+        report_path = legacy_report_path
 
     accepted = (
         run["returncode"] == 0
@@ -153,28 +187,35 @@ def validate_mode_a(rebuild: bool) -> dict[str, Any]:
         and not report.get("failures")
     )
 
+    status = "FAIL"
+    if accepted:
+        status = "PASS_WITH_WARNINGS" if report.get("status") == "PASS_WITH_WARNINGS" else "PASS"
+
     return {
-        "mode": "Mode A",
-        "description": "Paper table and figure replay validation.",
-        "status": "PASS_WITH_WARNINGS" if accepted and report.get("status") == "PASS_WITH_WARNINGS" else ("PASS" if accepted else "FAIL"),
+        "workflow": "paper-replay",
+        "description": "Paper-level evidence replay: tables, figures, traceability, and validity checks.",
+        "status": status,
         "accepted": accepted,
         "command": run,
         "report_path": str(report_path),
         "report_status": report.get("status", ""),
         "warning_count": len(report.get("warnings", [])),
         "failure_count": len(report.get("failures", [])),
+        "failures": [] if accepted else [f"paper-replay report not accepted: {report_path} status={report.get('status', '')}"],
+        "warnings": report.get("warnings", []),
     }
 
 
-def validate_mode_b(skip_rerun: bool) -> dict[str, Any]:
+def validate_benchmark_smoke(skip_rerun: bool) -> dict[str, Any]:
     commands = []
+    failures: list[str] = []
 
     if not skip_rerun:
         commands.append(
             run_command([
                 "scripts/00_setup_check.py",
                 "--config",
-                "configs/mode_b_smoke.yaml",
+                "configs/benchmark_smoke.yaml",
                 "--strict",
             ])
         )
@@ -182,42 +223,41 @@ def validate_mode_b(skip_rerun: bool) -> dict[str, Any]:
             run_command([
                 "scripts/90_run_smoke_from_scratch.py",
                 "--config",
-                "configs/mode_b_smoke.yaml",
+                "configs/benchmark_smoke.yaml",
                 "--clean",
             ])
         )
 
-    manifest_path = Path("results/logs/pipeline_run_manifest.json")
-    smoke_summary_path = Path("results/logs/mode_b_smoke_summary.json")
-
-    failures = []
+    manifest_path = ROOT / "results/logs/pipeline_run_manifest.json"
+    smoke_summary_path = ROOT / "results/logs/mode_b_smoke_summary.json"
 
     if not manifest_path.exists():
-        failures.append(f"Missing pipeline manifest: {manifest_path}")
+        failures.append(f"Missing benchmark-smoke pipeline manifest: {manifest_path}")
     else:
-        manifest = read_json(manifest_path)
+        manifest = read_json_if_exists(manifest_path)
         if manifest.get("failure_count", 0) != 0:
-            failures.append(f"Mode B pipeline manifest has failures: {manifest.get('failure_count')}")
+            failures.append(f"benchmark-smoke pipeline manifest has failures: {manifest.get('failure_count')}")
         if manifest.get("cleaned_result_count", 0) < 1:
-            failures.append("Mode B cleaned_result_count < 1")
+            failures.append("benchmark-smoke cleaned_result_count < 1")
         if manifest.get("clustered_result_count", 0) < 1:
-            failures.append("Mode B clustered_result_count < 1")
+            failures.append("benchmark-smoke clustered_result_count < 1")
 
     if not smoke_summary_path.exists():
-        failures.append(f"Missing Mode B smoke summary: {smoke_summary_path}")
+        failures.append(f"Missing benchmark-smoke summary: {smoke_summary_path}")
 
     for command in commands:
         if command["returncode"] != 0:
             failures.append(f"Command failed: {command['command']}")
 
     return {
-        "mode": "Mode B",
-        "description": "Smoke pipeline from scratch.",
+        "workflow": "benchmark-smoke",
+        "description": "Lightweight cleaning-clustering smoke pipeline from scratch.",
         "status": "PASS" if not failures else "FAIL",
         "accepted": not failures,
         "commands": commands,
         "manifest_path": str(manifest_path),
         "smoke_summary_path": str(smoke_summary_path),
+        "warnings": [],
         "failures": failures,
     }
 
@@ -238,24 +278,24 @@ def parse_summary_tsv(path: Path) -> list[dict[str, str]]:
     return rows
 
 
-def validate_mode_c(proof_dir: Path | None, allow_missing: bool) -> dict[str, Any]:
+def validate_benchmark_full_audit(proof_dir: Path | None, allow_missing: bool) -> dict[str, Any]:
     if proof_dir is None or not proof_dir.exists():
         status = "WARN_MISSING_PROOF" if allow_missing else "FAIL"
         return {
-            "mode": "Mode C",
-            "description": "Strict cleaning-clustering execution-layer proof.",
+            "workflow": "benchmark-full-audit",
+            "description": "Strict cleaning-clustering execution proof.",
             "status": status,
             "accepted": allow_missing,
             "proof_dir": str(proof_dir) if proof_dir else "",
-            "failures": [] if allow_missing else ["Mode C proof directory not found."],
-            "warnings": ["Mode C proof directory not found."] if allow_missing else [],
+            "failures": [] if allow_missing else ["benchmark-full-audit proof directory not found."],
+            "warnings": ["benchmark-full-audit proof directory not found."] if allow_missing else [],
         }
 
     result_path = proof_dir / "RESULT"
     summary_path = proof_dir / "summary.tsv"
 
-    failures = []
-    warnings = []
+    failures: list[str] = []
+    warnings: list[str] = []
 
     if not result_path.exists():
         failures.append(f"Missing RESULT file: {result_path}")
@@ -272,23 +312,22 @@ def validate_mode_c(proof_dir: Path | None, allow_missing: bool) -> dict[str, An
         rows = parse_summary_tsv(summary_path)
 
     row_by_name = {row["name"]: row for row in rows}
-
-    missing_checks = [name for name in EXPECTED_MODE_C_CHECKS if name not in row_by_name]
+    missing_checks = [name for name in EXPECTED_FULL_AUDIT_CHECKS if name not in row_by_name]
     fail_rows = [row for row in rows if row.get("status") == "FAIL"]
 
     if missing_checks:
-        failures.append(f"Missing Mode C checks: {missing_checks}")
+        failures.append(f"Missing full-audit checks: {missing_checks}")
 
     if fail_rows:
-        failures.append(f"Mode C summary has FAIL rows: {fail_rows}")
+        failures.append(f"Full-audit summary has FAIL rows: {fail_rows}")
 
-    for name in EXPECTED_MODE_C_CHECKS:
+    for name in EXPECTED_FULL_AUDIT_CHECKS:
         if name in row_by_name and row_by_name[name].get("status") != "PASS":
-            failures.append(f"Mode C check not PASS: {name}={row_by_name[name].get('status')}")
+            failures.append(f"Full-audit check not PASS: {name}={row_by_name[name].get('status')}")
 
     return {
-        "mode": "Mode C",
-        "description": "Strict cleaning-clustering execution-layer proof.",
+        "workflow": "benchmark-full-audit",
+        "description": "Strict cleaning-clustering execution proof.",
         "status": "PASS" if not failures else "FAIL",
         "accepted": not failures,
         "proof_dir": str(proof_dir),
@@ -296,7 +335,7 @@ def validate_mode_c(proof_dir: Path | None, allow_missing: bool) -> dict[str, An
         "summary_path": str(summary_path),
         "result_value": result_value,
         "summary_row_count": len(rows),
-        "expected_check_count": len(EXPECTED_MODE_C_CHECKS),
+        "expected_check_count": len(EXPECTED_FULL_AUDIT_CHECKS),
         "missing_checks": missing_checks,
         "fail_rows": fail_rows,
         "warnings": warnings,
@@ -306,43 +345,31 @@ def validate_mode_c(proof_dir: Path | None, allow_missing: bool) -> dict[str, An
 
 def write_markdown(path: Path, report: dict[str, Any]) -> None:
     lines = [
-        "# TRACE Stage 3 Strict Validation",
+        "# TRACE Strict Reviewer Workflow Validation",
         "",
         f"- Generated at UTC: {report['generated_at_utc']}",
         f"- Status: {report['status']}",
         "",
-        "## Mode summary",
+        "## Workflow summary",
         "",
-        "| Mode | Status | Accepted | Description |",
+        "| Workflow | Status | Accepted | Description |",
         "|---|---|---:|---|",
     ]
 
-    for mode in report["modes"]:
+    for workflow in report["workflows"]:
         lines.append(
-            f"| {mode['mode']} | {mode['status']} | {mode['accepted']} | {mode['description']} |"
+            f"| {workflow['workflow']} | {workflow['status']} | {workflow['accepted']} | {workflow['description']} |"
         )
 
-    lines += [
-        "",
-        "## Failures",
-        "",
-    ]
-
+    lines += ["", "## Failures", ""]
     if report["failures"]:
-        for failure in report["failures"]:
-            lines.append(f"- {failure}")
+        lines.extend(f"- {failure}" for failure in report["failures"])
     else:
         lines.append("No hard failures.")
 
-    lines += [
-        "",
-        "## Warnings",
-        "",
-    ]
-
+    lines += ["", "## Warnings", ""]
     if report["warnings"]:
-        for warning in report["warnings"]:
-            lines.append(f"- {warning}")
+        lines.extend(f"- {warning}" for warning in report["warnings"])
     else:
         lines.append("No warnings.")
 
@@ -350,14 +377,9 @@ def write_markdown(path: Path, report: dict[str, Any]) -> None:
         "",
         "## Interpretation",
         "",
-        "PASS means Mode A, Mode B, and Mode C all passed without warnings.",
+        "PASS means paper-replay, benchmark-smoke, and benchmark-full-audit all passed.",
         "",
-        "PASS_WITH_WARNINGS is acceptable for the current Stage 3 state when:",
-        "",
-        "- Mode A paper replay has accepted traceability warnings only;",
-        "- Mode B smoke rerun passes;",
-        "- Mode C strict Linux proof is present and passed;",
-        "- claim-level narrative traceability is deferred.",
+        "PASS_WITH_WARNINGS is acceptable only when warnings are documented and do not affect paper-table, paper-figure, TRACE, or benchmark proof validity.",
         "",
     ]
 
@@ -367,28 +389,28 @@ def write_markdown(path: Path, report: dict[str, Any]) -> None:
 def main() -> None:
     args = parse_args()
 
-    mode_c_dir = find_mode_c_proof_dir(args.mode_c_proof_dir)
+    full_audit_dir = find_full_audit_proof_dir(args.full_audit_proof_dir)
 
-    mode_a = validate_mode_a(args.rebuild_mode_a)
-    mode_b = validate_mode_b(args.skip_mode_b_rerun)
-    mode_c = validate_mode_c(mode_c_dir, args.allow_missing_mode_c_proof)
+    workflows = [
+        validate_paper_replay(args.rebuild_paper_replay),
+        validate_benchmark_smoke(args.skip_smoke_rerun),
+        validate_benchmark_full_audit(full_audit_dir, args.allow_missing_full_audit_proof),
+    ]
 
-    modes = [mode_a, mode_b, mode_c]
+    failures: list[str] = []
+    warnings: list[str] = []
 
-    failures = []
-    warnings = []
+    for workflow in workflows:
+        if not workflow.get("accepted"):
+            failures.append(f"{workflow['workflow']} failed: {workflow.get('status')}")
+        elif workflow.get("status") != "PASS":
+            warnings.append(f"{workflow['workflow']} accepted with status: {workflow.get('status')}")
 
-    for mode in modes:
-        if not mode.get("accepted"):
-            failures.append(f"{mode['mode']} failed: {mode.get('status')}")
-        elif mode.get("status") != "PASS":
-            warnings.append(f"{mode['mode']} accepted with status: {mode.get('status')}")
+        for failure in workflow.get("failures", []):
+            failures.append(f"{workflow['workflow']}: {failure}")
 
-        for failure in mode.get("failures", []):
-            failures.append(f"{mode['mode']}: {failure}")
-
-        for warning in mode.get("warnings", []):
-            warnings.append(f"{mode['mode']}: {warning}")
+        for warning in workflow.get("warnings", []):
+            warnings.append(f"{workflow['workflow']}: {warning}")
 
     if failures:
         status = "FAIL"
@@ -400,25 +422,20 @@ def main() -> None:
     report = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "status": status,
-        "modes": modes,
+        "workflows": workflows,
         "warnings": warnings,
         "failures": failures,
-        "scope_note": (
-            "This validates Stage 3 core completion for Mode A, Mode B, and Mode C. "
-            "Narrative claim traceability is deferred."
-        ),
+        "scope_note": "This validates strict reviewer workflows: paper-replay, benchmark-smoke, and benchmark-full-audit.",
     }
 
-    write_json(args.output, report)
-    write_markdown(args.output.with_suffix(".md"), report)
+    output = ROOT / args.output
+    write_json(output, report)
+    write_markdown(output.with_suffix(".md"), report)
 
     print(json.dumps(
         {
             "status": status,
-            "mode_statuses": {
-                mode["mode"]: mode["status"]
-                for mode in modes
-            },
+            "workflow_statuses": {workflow["workflow"]: workflow["status"] for workflow in workflows},
             "warning_count": len(warnings),
             "failure_count": len(failures),
             "output": str(args.output),
@@ -426,12 +443,11 @@ def main() -> None:
         indent=2,
         ensure_ascii=False,
     ))
-    print(f"[TRACE] Stage 3 strict validation report written to: {args.output}")
-    print(f"[TRACE] Stage 3 strict validation status: {status}")
+    print(f"[TRACE] Strict reviewer workflow validation report written to: {args.output}")
+    print(f"[TRACE] Strict reviewer workflow validation status: {status}")
 
     raise SystemExit(0 if status in {"PASS", "PASS_WITH_WARNINGS"} else 1)
 
 
 if __name__ == "__main__":
     main()
-

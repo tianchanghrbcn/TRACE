@@ -1,0 +1,62 @@
+{
+  "generated_at_utc": "2026-05-06T13:09:48.591230+00:00",
+  "status": "PASS_WITH_WARNINGS",
+  "workflows": [
+    {
+      "workflow": "paper-replay",
+      "description": "Paper-level evidence replay: tables, figures, traceability, and validity checks.",
+      "status": "PASS_WITH_WARNINGS",
+      "accepted": true,
+      "command": {
+        "command": "scripts/62_validate_mode_a_paper_replay.py",
+        "returncode": 0,
+        "status": "PASS",
+        "stdout_tail": "{\n  \"status\": \"PASS_WITH_WARNINGS\",\n  \"warning_count\": 2,\n  \"failure_count\": 0,\n  \"output\": \"analysis\\\\paper_generated\\\\paper_replay_validation_report.json\"\n}\n[TRACE] Paper evidence replay validation report written to: analysis\\paper_generated\\paper_replay_validation_report.json\n[TRACE] Paper evidence replay validation status: PASS_WITH_WARNINGS\n",
+        "stderr_tail": ""
+      },
+      "report_path": "E:\\TRACE\\analysis\\paper_generated\\paper_replay_validation_report.json",
+      "report_status": "PASS_WITH_WARNINGS",
+      "warning_count": 2,
+      "failure_count": 0,
+      "failures": [],
+      "warnings": [
+        "Report has accepted warning status: paper_table_layers=PASS_WITH_DIAGNOSTIC_WARNINGS",
+        "Report has accepted warning status: paper_output_traceability=PASS_WITH_WARNINGS"
+      ]
+    },
+    {
+      "workflow": "benchmark-smoke",
+      "description": "Lightweight cleaning-clustering smoke pipeline from scratch.",
+      "status": "PASS",
+      "accepted": true,
+      "commands": [],
+      "manifest_path": "E:\\TRACE\\results\\logs\\pipeline_run_manifest.json",
+      "smoke_summary_path": "E:\\TRACE\\results\\logs\\mode_b_smoke_summary.json",
+      "warnings": [],
+      "failures": []
+    },
+    {
+      "workflow": "benchmark-full-audit",
+      "description": "Strict cleaning-clustering execution proof.",
+      "status": "PASS",
+      "accepted": true,
+      "proof_dir": "E:\\TRACE\\results\\logs\\stage2_strict_20260421_192851",
+      "result_path": "E:\\TRACE\\results\\logs\\stage2_strict_20260421_192851\\RESULT",
+      "summary_path": "E:\\TRACE\\results\\logs\\stage2_strict_20260421_192851\\summary.tsv",
+      "result_value": "PASSED",
+      "summary_row_count": 21,
+      "expected_check_count": 21,
+      "missing_checks": [],
+      "fail_rows": [],
+      "warnings": [],
+      "failures": []
+    }
+  ],
+  "warnings": [
+    "paper-replay accepted with status: PASS_WITH_WARNINGS",
+    "paper-replay: Report has accepted warning status: paper_table_layers=PASS_WITH_DIAGNOSTIC_WARNINGS",
+    "paper-replay: Report has accepted warning status: paper_output_traceability=PASS_WITH_WARNINGS"
+  ],
+  "failures": [],
+  "scope_note": "This validates strict reviewer workflows: paper-replay, benchmark-smoke, and benchmark-full-audit."
+}

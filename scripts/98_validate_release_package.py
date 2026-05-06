@@ -1,19 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the TRACE reviewer-facing release package.
-
-This is the final package-level gate. It connects all reviewer workflows:
-
-  release-check
-  paper-replay
-  preexp-validity
-  trace-validation
-  benchmark-smoke
-  benchmark-full-audit
-
-TRACE validation is connected but optional by default because the paper-exact
-1000-replay check can be longer than the basic package check. Use
---run-trace-validation for the full final gate.
-"""
+"""Validate the TRACE reviewer-facing release package."""
 
 from __future__ import annotations
 
@@ -30,14 +16,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 REQUIRED_STATIC_PATHS = [
-    "configs/trace.yaml",
-    "src/analysis/trace_replay.py",
-    "scripts/30_replay_trace.py",
-    "scripts/36_eval_trace_blind_random.py",
-    "scripts/38_lodo_trace_validation.py",
-    "scripts/39_run_trace_stage4_paper_repro.py",
-    "scripts/49_validate_trace_stage4_inputs.py",
-
     "README.md",
     "LICENSE",
     "THIRD_PARTY_NOTICES.md",
@@ -45,6 +23,7 @@ REQUIRED_STATIC_PATHS = [
     "configs/paper_replay.yaml",
     "configs/benchmark_smoke.yaml",
     "configs/benchmark_full_audit.yaml",
+    "configs/trace.yaml",
 
     "data/README.md",
     "data/raw/train/beers/clean.csv",
@@ -61,18 +40,27 @@ REQUIRED_STATIC_PATHS = [
     "analysis/validity_sensitivity/seed_sensitivity_summary.json",
     "analysis/validity_sensitivity/seed_sensitivity_report.md",
 
+    "src/analysis/trace_replay.py",
+
     "docs/data_policy.md",
     "docs/hardware_runtime.md",
     "docs/release_packaging.md",
     "docs/terminal_interface.md",
     "docs/workflows.md",
     "docs/pre_experiment_validity.md",
+    "docs/trace_stage4_repro.md",
+    "docs/uniclean_external.md",
     "docs/stage3_strict_validation.md",
     "docs/paper_output_traceability.md",
 
     "scripts/trace.py",
     "scripts/00_trace_home.py",
+    "scripts/30_replay_trace.py",
+    "scripts/36_eval_trace_blind_random.py",
+    "scripts/38_lodo_trace_validation.py",
+    "scripts/39_run_trace_stage4_paper_repro.py",
     "scripts/45_validate_data_availability.py",
+    "scripts/49_validate_trace_stage4_inputs.py",
     "scripts/62_validate_mode_a_paper_replay.py",
     "scripts/63_validate_stage3_strict.py",
     "scripts/81_replay_pre_experiment_validity.py",
@@ -104,14 +92,19 @@ def parse_args() -> argparse.Namespace:
         help="Skip pre-experiment/validity replay during release check.",
     )
     parser.add_argument(
+        "--skip-paper-replay",
+        action="store_true",
+        help="Skip paper-replay validation during release check.",
+    )
+    parser.add_argument(
         "--run-trace-validation",
         action="store_true",
-        help="Also run TRACE paper-exact validation with 1000 blind-random replays.",
+        help="Run TRACE Stage 4 paper-exact validation.",
     )
     parser.add_argument(
         "--rebuild-paper-replay",
         action="store_true",
-        help="Ask strict validation to rebuild paper-replay outputs.",
+        help="Rebuild paper-replay evidence before validating it.",
     )
     parser.add_argument(
         "--rebuild-mode-a",
@@ -204,7 +197,6 @@ def write_markdown(path: Path, report: dict[str, Any]) -> None:
         lines.append(f"| {row['path']} | {row['exists']} | {row['size_bytes']} |")
 
     lines += ["", "## Command checks", "", "| Check | Status | Return code |", "|---|---|---:|"]
-
     for row in report["commands"]:
         lines.append(f"| {row['name']} | {row['status']} | {row['returncode']} |")
 
@@ -224,32 +216,30 @@ def write_markdown(path: Path, report: dict[str, Any]) -> None:
         "",
         "## Interpretation",
         "",
-        "PASS means the reviewer-facing release package passed all selected checks.",
-        "PASS_WITH_WARNINGS is acceptable only when skipped/optional checks are explicitly documented.",
+        "PASS means the selected reviewer-facing release checks passed.",
+        "PASS_WITH_WARNINGS is acceptable only when skipped or warning-level checks are explicitly documented.",
         "",
     ]
 
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def validate_generated_reports(failures: list[str], warnings: list[str]) -> dict[str, Any]:
-    reports = {
-        "preexp_validity": ROOT / "analysis/validity_sensitivity/pre_experiment_validity_report.json",
-        "validity_summary": ROOT / "analysis/validity_sensitivity/validity_sensitivity_summary.json",
-        "strict_workflow": ROOT / "results/logs/stage3_strict_validation_report.json",
-        "release": ROOT / "results/logs/release_validation_report.json",
-    }
-
-    status = {}
-    for name, path in reports.items():
-        data = read_json_if_exists(path)
-        status[name] = data.get("status", "") if data else ""
-        if name in {"preexp_validity", "validity_summary"}:
-            if not data:
-                failures.append(f"Missing generated report: {path}")
-            elif data.get("status") not in {"PASS", "PASS_WITH_WARNINGS"}:
-                failures.append(f"Generated report not accepted: {path} status={data.get('status')}")
-
+def require_report_status(
+    label: str,
+    path: Path,
+    accepted: set[str],
+    failures: list[str],
+    warnings: list[str],
+) -> str:
+    data = read_json_if_exists(path)
+    if not data:
+        failures.append(f"Missing generated report: {path}")
+        return ""
+    status = str(data.get("status", ""))
+    if status not in accepted:
+        failures.append(f"{label} status is not accepted: {status} ({path})")
+    elif status == "PASS_WITH_WARNINGS":
+        warnings.append(f"{label} passed with accepted warnings.")
     return status
 
 
@@ -257,7 +247,6 @@ def main() -> None:
     args = parse_args()
 
     static_checks = static_path_checks()
-
     failures: list[str] = []
     warnings: list[str] = []
     commands: list[dict[str, Any]] = []
@@ -266,9 +255,7 @@ def main() -> None:
         if not row["exists"] or not row["is_file"]:
             failures.append(f"Missing required file: {row['path']}")
 
-    commands.append(
-        run_command("data_availability", ["scripts/45_validate_data_availability.py"])
-    )
+    commands.append(run_command("data_availability", ["scripts/45_validate_data_availability.py"]))
 
     commands.append(
         run_command(
@@ -287,65 +274,86 @@ def main() -> None:
     if args.skip_preexp_validity:
         warnings.append("preexp-validity was skipped by user request.")
     else:
-        commands.append(
-            run_command(
-                "preexp_validity",
-                ["scripts/trace.py", "preexp-validity", "--strict"],
-            )
-        )
+        commands.append(run_command("preexp_validity", ["scripts/trace.py", "preexp-validity", "--strict"]))
+
+    if args.skip_paper_replay:
+        warnings.append("paper-replay was skipped by user request.")
+    else:
+        paper_cmd = ["scripts/62_validate_mode_a_paper_replay.py"]
+        if args.rebuild_paper_replay:
+            paper_cmd.append("--rebuild")
+        commands.append(run_command("paper_replay", paper_cmd))
 
     if args.skip_benchmark_smoke:
         warnings.append("benchmark-smoke was skipped by user request.")
     else:
-        commands.append(
-            run_command(
-                "benchmark_smoke",
-                ["scripts/trace.py", "benchmark-smoke", "--clean"],
-            )
-        )
+        commands.append(run_command("benchmark_smoke", ["scripts/trace.py", "benchmark-smoke", "--clean"]))
 
     if args.run_trace_validation:
-        commands.append(
-            run_command(
-                "trace_validation_paper_exact",
-                ["scripts/trace.py", "trace-validation", "--paper-exact"],
-            )
-        )
+        commands.append(run_command("trace_validation_paper_exact", ["scripts/trace.py", "trace-validation", "--paper-exact"]))
+    else:
+        warnings.append("TRACE Stage 4 paper-exact validation was not run. Use --run-trace-validation for the full TRACE gate.")
 
     if args.skip_strict_benchmark_proof:
-        warnings.append("Strict workflow validation was skipped by user request.")
+        warnings.append("Strict reviewer workflow validation was skipped by user request.")
     else:
         strict_cmd = ["scripts/63_validate_stage3_strict.py", "--skip-smoke-rerun"]
         if args.rebuild_paper_replay:
             strict_cmd.append("--rebuild-paper-replay")
         if args.allow_missing_full_audit_proof:
             strict_cmd.append("--allow-missing-full-audit-proof")
-        commands.append(run_command("strict_workflow_validation", strict_cmd))
+        commands.append(run_command("strict_reviewer_workflow_validation", strict_cmd))
 
     for row in commands:
         if row["status"] != "PASS":
             failures.append(f"Command failed: {row['name']}")
 
-    strict_report_path = ROOT / "results/logs/stage3_strict_validation_report.json"
-    strict_report = read_json_if_exists(strict_report_path)
+    preexp_status = require_report_status(
+        "preexp-validity",
+        ROOT / "analysis/validity_sensitivity/pre_experiment_validity_report.json",
+        {"PASS"},
+        failures,
+        warnings,
+    )
 
-    if not args.skip_strict_benchmark_proof:
-        if not strict_report:
-            failures.append(f"Missing strict workflow report: {strict_report_path}")
-        else:
-            strict_status = strict_report.get("status", "")
-            if strict_status not in {"PASS", "PASS_WITH_WARNINGS"}:
-                failures.append(f"Strict workflow status is not accepted: {strict_status}")
-            elif strict_status == "PASS_WITH_WARNINGS":
-                warnings.append("Strict workflow validation passed with accepted warnings.")
+    validity_status = require_report_status(
+        "validity-sensitivity summary",
+        ROOT / "analysis/validity_sensitivity/validity_sensitivity_summary.json",
+        {"PASS", "PASS_WITH_WARNINGS"},
+        failures,
+        warnings,
+    )
 
-    generated_report_statuses = validate_generated_reports(failures, warnings)
-
-    if not args.run_trace_validation:
-        warnings.append(
-            "TRACE paper-exact validation is connected but was not run. "
-            "Run with --run-trace-validation for the final full release gate."
+    paper_status = ""
+    if not args.skip_paper_replay:
+        paper_status = require_report_status(
+            "paper-replay",
+            ROOT / "analysis/paper_generated/paper_replay_validation_report.json",
+            {"PASS", "PASS_WITH_WARNINGS"},
+            failures,
+            warnings,
         )
+
+    strict_status = ""
+    if not args.skip_strict_benchmark_proof:
+        strict_status = require_report_status(
+            "strict reviewer workflow",
+            ROOT / "results/logs/stage3_strict_validation_report.json",
+            {"PASS", "PASS_WITH_WARNINGS"},
+            failures,
+            warnings,
+        )
+
+    trace_status = ""
+    if args.run_trace_validation:
+        trace_manifest = ROOT / "results/processed/trace/lodo_paper_repro/trace_stage4_manifest.json"
+        trace_report = read_json_if_exists(trace_manifest)
+        if not trace_report:
+            failures.append(f"Missing TRACE Stage 4 manifest: {trace_manifest}")
+        else:
+            trace_status = "PASS" if trace_report.get("metric_checks_all_within_tolerance") is True else "FAIL"
+            if trace_status != "PASS":
+                failures.append(f"TRACE Stage 4 metric checks not accepted: {trace_manifest}")
 
     if failures:
         status = "FAIL"
@@ -361,15 +369,20 @@ def main() -> None:
             "skip_strict_benchmark_proof": args.skip_strict_benchmark_proof,
             "skip_benchmark_smoke": args.skip_benchmark_smoke,
             "skip_preexp_validity": args.skip_preexp_validity,
+            "skip_paper_replay": args.skip_paper_replay,
             "run_trace_validation": args.run_trace_validation,
             "rebuild_paper_replay": args.rebuild_paper_replay,
             "allow_missing_full_audit_proof": args.allow_missing_full_audit_proof,
         },
         "static_path_checks": static_checks,
         "commands": commands,
-        "generated_report_statuses": generated_report_statuses,
-        "strict_workflow_report": str(strict_report_path),
-        "strict_workflow_status": strict_report.get("status", "") if strict_report else "",
+        "generated_report_statuses": {
+            "preexp_validity": preexp_status,
+            "validity_sensitivity": validity_status,
+            "paper_replay": paper_status,
+            "strict_reviewer_workflow": strict_status,
+            "trace_stage4": trace_status,
+        },
         "warnings": warnings,
         "failures": failures,
     }

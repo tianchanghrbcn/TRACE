@@ -1,0 +1,66 @@
+{
+  "created_at_utc": "2026-05-06T13:09:48.439810+00:00",
+  "project_root": "E:\\TRACE",
+  "git_commit": "e17885163c684f8b2685f767a506fa1c4c76290b",
+  "results_dir": "E:\\TRACE\\results\\trace_cluster_replay_all",
+  "base_trace_output_dir": "E:\\TRACE\\results\\processed\\trace\\cluster_replay_all",
+  "output_dir": "E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro",
+  "config": "E:\\TRACE\\configs\\trace.yaml",
+  "random_seeds": 1000,
+  "seed": 20260424,
+  "budgets": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "figures_generated": false,
+  "aggregate": {
+    "output_dir": "E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro",
+    "n_folds": 4,
+    "n_datasets": 60,
+    "random_seeds": 1000,
+    "median_trace_hit95_progress": 0.13476388888888888,
+    "median_blind_random_hit95_progress": 0.2701335656213705,
+    "median_trace_auc_retention": 0.982375574743322,
+    "median_blind_random_auc_retention": 0.9537331473633225,
+    "median_trace_hit95_not_worse_than_random_share": 0.6970000000000001,
+    "folds_csv": "E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro\\lodo_folds.csv",
+    "trace_dataset_summary_csv": "E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro\\lodo_trace_dataset_summary.csv",
+    "blind_random_dataset_summary_csv": "E:\\TRACE\\results\\processed\\trace\\lodo_paper_repro\\lodo_blind_random_dataset_summary.csv"
+  },
+  "metric_checks": [
+    {
+      "metric": "median_trace_hit95_progress",
+      "expected_reference": 0.1348,
+      "actual": 0.13476388888888888,
+      "abs_diff": 3.611111111112564e-05,
+      "within_tolerance": true
+    },
+    {
+      "metric": "median_blind_random_hit95_progress",
+      "expected_reference": 0.2701,
+      "actual": 0.2701335656213705,
+      "abs_diff": 3.356562137046826e-05,
+      "within_tolerance": true
+    },
+    {
+      "metric": "median_trace_auc_retention",
+      "expected_reference": 0.9824,
+      "actual": 0.982375574743322,
+      "abs_diff": 2.4425256678006768e-05,
+      "within_tolerance": true
+    },
+    {
+      "metric": "median_blind_random_auc_retention",
+      "expected_reference": 0.9537,
+      "actual": 0.9537331473633225,
+      "abs_diff": 3.314736332249435e-05,
+      "within_tolerance": true
+    }
+  ],
+  "metric_check_tolerance": 0.02,
+  "metric_checks_all_within_tolerance": true,
+  "elapsed_seconds": 75.29135751724243
+}
