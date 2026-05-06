@@ -99,3 +99,17 @@ The old command aliases are retained only for compatibility:
 Reviewer-facing documentation uses the new workflow names to avoid confusion
 with the `Mode impute` baseline cleaner.
 
+
+## Reviewer quickstart
+
+Before running reviewer commands, activate the TRACE conda environment:
+
+    conda activate trace-runner
+
+Then follow:
+
+    docs/reviewer_quickstart.md
+
+The main validation command after unpacking release assets is:
+
+    python scripts/trace.py release-check --run-trace-validation
