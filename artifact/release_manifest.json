@@ -1,0 +1,36 @@
+﻿{
+    "generated_at_local":  "2026-05-06T23:38:56",
+    "git_commit":  "ab504134a64ddc5f15cdef85fa3779124c51771b",
+    "purpose":  "TRACE PVLDB EA\u0026B artifact release assets",
+    "files":  [
+                  {
+                      "name":  "trace_benchmark_full_audit_proof_stage2_strict_20260421_192851.tgz",
+                      "path":  "release_assets/trace_benchmark_full_audit_proof_stage2_strict_20260421_192851.tgz",
+                      "size_bytes":  140468,
+                      "sha256":  "3d81b1a3c05e1e8b40ed25e449271719cc512239ad3e443d899b8832734e16a0"
+                  },
+                  {
+                      "name":  "trace_benchmark_full_audit_proof_stage2_strict_20260421_192851.tgz.sha256",
+                      "path":  "release_assets/trace_benchmark_full_audit_proof_stage2_strict_20260421_192851.tgz.sha256",
+                      "size_bytes":  148,
+                      "sha256":  "c27e417e93a419c2ff5c2cfe9f5469d8663eeec8c3f2ad16aba123524dc2f26a"
+                  },
+                  {
+                      "name":  "trace_cluster_replay_all.zip",
+                      "path":  "release_assets/trace_cluster_replay_all.zip",
+                      "size_bytes":  95729145,
+                      "sha256":  "fe2e7f6bd74c864220e32df9489f073b1378fa73a0e79342dd04d9d643e11ad3"
+                  },
+                  {
+                      "name":  "trace_stage4_paper_exact.tgz",
+                      "path":  "release_assets/trace_stage4_paper_exact.tgz",
+                      "size_bytes":  14519,
+                      "sha256":  "963d512683ff57f1209fa332a5438d622f1e110661b842a43ffe8d3537005fe6"
+                  }
+              ],
+    "unpacking":  {
+                      "trace_stage4_paper_exact.tgz":  "TRACE Stage 4 paper-exact output pack",
+                      "trace_benchmark_full_audit_proof*.tgz":  "tar -xzf into results/logs/",
+                      "trace_cluster_replay_all.zip":  "unzip into results/"
+                  }
+}
