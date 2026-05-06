@@ -27,3 +27,40 @@ The following names are retained only for compatibility:
 
 Reviewer-facing documentation should not use Mode A/B/C.
 
+
+## TRACE Stage 4 paper-exact validation
+
+TRACE Stage 4 is closed.
+
+Reviewer-facing command:
+
+    python scripts/trace.py trace-validation --paper-exact
+
+Maintained preflight command:
+
+    python scripts/49_validate_trace_stage4_inputs.py ^
+      --results-dir results/trace_cluster_replay_all ^
+      --output-dir results/processed/trace/lodo_paper_repro ^
+      --strict
+
+Maintained paper-exact command:
+
+    python -u scripts/39_run_trace_stage4_paper_repro.py ^
+      --results-dir results/trace_cluster_replay_all ^
+      --config configs/trace.yaml ^
+      --output-dir results/processed/trace/lodo_paper_repro ^
+      --random-seeds 1000 ^
+      --seed 20260424 ^
+      --rebuild-base ^
+      --pack ^
+      --log ^
+      --quiet
+
+Expected paper-aligned metrics:
+
+    TRACE T95 median            = 13.5%
+    Blind random T95 median     = 27.0%
+    TRACE AUC retention median  = 0.982
+    Blind random AUC retention  = 0.954
+
+See docs/trace_stage4_repro.md for required inputs and outputs.

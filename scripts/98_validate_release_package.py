@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Validate the TRACE reviewer-facing release package.
 
 This is the final package-level gate. It connects all reviewer workflows:
@@ -30,6 +30,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 REQUIRED_STATIC_PATHS = [
+    "configs/trace.yaml",
+    "src/analysis/trace_replay.py",
+    "scripts/30_replay_trace.py",
+    "scripts/36_eval_trace_blind_random.py",
+    "scripts/38_lodo_trace_validation.py",
+    "scripts/39_run_trace_stage4_paper_repro.py",
+    "scripts/49_validate_trace_stage4_inputs.py",
+
     "README.md",
     "LICENSE",
     "THIRD_PARTY_NOTICES.md",

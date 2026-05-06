@@ -216,33 +216,23 @@ def add_preexp_parser(sub: argparse._SubParsersAction) -> None:
 def add_trace_validation_parser(sub: argparse._SubParsersAction) -> None:
     p = sub.add_parser(
         "trace-validation",
-        help="Reproduce TRACE budget-guidance validation and Figure 7 inputs.",
+        help="Reproduce TRACE Stage 4 paper-exact LODO validation.",
     )
     p.set_defaults(workflow="trace-validation")
     p.add_argument(
-        "--processed-dir",
-        default="results/processed",
-        help="Canonical processed results directory.",
+        "--results-dir",
+        default="results/trace_cluster_replay_all",
+        help="TRACE Stage 4 input snapshot directory.",
     )
     p.add_argument(
-        "--trace-output-dir",
-        default="results/processed/trace",
-        help="Directory containing TRACE replay CSVs.",
+        "--config",
+        default="configs/trace.yaml",
+        help="TRACE strategy config.",
     )
     p.add_argument(
-        "--static-output-dir",
-        default="results/processed/trace_static",
-        help="Output dir for static TRACE screening tables.",
-    )
-    p.add_argument(
-        "--blind-output-dir",
-        default=None,
-        help="Output dir for blind-random validation. Default depends on random seeds.",
-    )
-    p.add_argument(
-        "--figure-dir",
-        default="figures/trace_validation",
-        help="Output dir for TRACE validation figures.",
+        "--output-dir",
+        default="results/processed/trace/lodo_paper_repro",
+        help="TRACE Stage 4 LODO output directory.",
     )
     p.add_argument(
         "--random-seeds",
@@ -250,15 +240,41 @@ def add_trace_validation_parser(sub: argparse._SubParsersAction) -> None:
         default=1000,
         help="Blind-random replay count. Paper-exact value is 1000.",
     )
-    p.add_argument("--seed", type=int, default=20260424, help="Base random seed.")
-    p.add_argument("--path-granularity", choices=["path", "trial"], default="path")
-    p.add_argument("--skip-static", action="store_true", help="Skip static TRACE screening build.")
-    p.add_argument("--skip-blind", action="store_true", help="Skip blind-random validation.")
-    p.add_argument("--skip-figures", action="store_true", help="Skip TRACE validation figures.")
+    p.add_argument(
+        "--seed",
+        type=int,
+        default=20260424,
+        help="Base random seed for blind randomized replay.",
+    )
     p.add_argument(
         "--paper-exact",
         action="store_true",
-        help="Force the paper-exact 1000 blind-random replay.",
+        help="Use the paper-exact settings: 1000 seeds, seed 20260424, rebuild-base, pack, log, quiet.",
+    )
+    p.add_argument(
+        "--rebuild-base",
+        action="store_true",
+        help="Rebuild the base TRACE replay ledger before LODO validation.",
+    )
+    p.add_argument(
+        "--pack",
+        action="store_true",
+        help="Create artifacts/trace_stage4_paper_exact.tgz.",
+    )
+    p.add_argument(
+        "--log",
+        action="store_true",
+        help="Write Stage 4 run logs.",
+    )
+    p.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Reduce per-dataset logging.",
+    )
+    p.add_argument(
+        "--skip-preflight",
+        action="store_true",
+        help="Skip scripts/49_validate_trace_stage4_inputs.py.",
     )
 
 
@@ -429,68 +445,52 @@ def assert_trace_replay_inputs(trace_dir: Path) -> None:
 
 
 def run_trace_validation(args: argparse.Namespace) -> int:
+    """Run TRACE Stage 4 paper-exact LODO validation.
+
+    Maintained paper path:
+      1. preflight input validation with scripts/49_validate_trace_stage4_inputs.py;
+      2. Stage 4 LODO reproduction with scripts/39_run_trace_stage4_paper_repro.py.
+
+    The old static TRACE path is retained only as legacy/diagnostic code.
+    """
     if args.paper_exact:
         args.random_seeds = 1000
+        args.seed = 20260424
+        args.rebuild_base = True
+        args.pack = True
+        args.log = True
+        args.quiet = True
 
-    processed_dir = Path(args.processed_dir)
-    trace_dir = Path(args.trace_output_dir)
-    static_dir = Path(args.static_output_dir)
-    blind_dir = Path(args.blind_output_dir) if args.blind_output_dir else trace_dir / f"blind_random_{args.random_seeds}"
-
-    if not args.skip_static:
-        code = run_python(
-            [
-                "scripts/34_build_trace_static_eval.py",
-                "--processed-dir",
-                str(processed_dir),
-                "--output-dir",
-                str(static_dir),
-            ]
-        )
+    if not args.skip_preflight:
+        preflight_cmd = [
+            "scripts/49_validate_trace_stage4_inputs.py",
+            "--results-dir", args.results_dir,
+            "--output-dir", args.output_dir,
+            "--strict",
+        ]
+        code = run_python(preflight_cmd)
         if code:
             return code
 
-    if not args.skip_blind:
-        trace_input_dir = trace_dir if trace_dir.is_absolute() else ROOT / trace_dir
-        try:
-            assert_trace_replay_inputs(trace_input_dir)
-        except FileNotFoundError as exc:
-            print(f"[TRACE] ERROR: {exc}", file=sys.stderr)
-            return 2
+    cmd = [
+        "scripts/39_run_trace_stage4_paper_repro.py",
+        "--results-dir", args.results_dir,
+        "--config", args.config,
+        "--output-dir", args.output_dir,
+        "--random-seeds", str(int(args.random_seeds)),
+        "--seed", str(int(args.seed)),
+    ]
 
-        code = run_python(
-            [
-                "scripts/36_eval_trace_blind_random.py",
-                "--trace-output-dir",
-                str(trace_dir),
-                "--output-dir",
-                str(blind_dir),
-                "--random-seeds",
-                str(int(args.random_seeds)),
-                "--seed",
-                str(int(args.seed)),
-                "--path-granularity",
-                args.path_granularity,
-                "--flush",
-            ]
-        )
-        if code:
-            return code
+    if args.rebuild_base:
+        cmd.append("--rebuild-base")
+    if args.pack:
+        cmd.append("--pack")
+    if args.log:
+        cmd.append("--log")
+    if args.quiet:
+        cmd.append("--quiet")
 
-    if not args.skip_figures:
-        code = run_python(
-            [
-                "scripts/37_plot_trace_validation.py",
-                "--blind-dir",
-                str(blind_dir),
-                "--out-dir",
-                args.figure_dir,
-            ]
-        )
-        if code:
-            return code
-
-    return 0
+    return run_python(cmd)
 
 
 def run_release_check(args: argparse.Namespace) -> int:
