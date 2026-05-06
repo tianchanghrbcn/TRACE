@@ -64,3 +64,11 @@ Expected paper-aligned metrics:
     Blind random AUC retention  = 0.954
 
 See docs/trace_stage4_repro.md for required inputs and outputs.
+
+## UniClean
+
+UniClean is included in the paper-exact archived outputs and downstream paper
+analysis. A full from-scratch UniClean rerun requires the external UniClean
+repository and is not part of the default benchmark-smoke workflow.
+
+See `docs/uniclean_external.md`.

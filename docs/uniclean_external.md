@@ -1,45 +1,48 @@
 ﻿# UniClean External / Archived Support
 
-UniClean is included in the paper as a candidate cleaner.
+UniClean appears in the paper as one of the candidate cleaning methods.
 
-In the reviewer-facing TRACE artifact, UniClean is handled as an external/archived
-cleaner:
+## Role in the paper
 
-- paper-replay includes UniClean through archived paper-exact outputs and
-  downstream analysis reports;
-- benchmark-smoke does not run UniClean by default;
-- benchmark-full-audit records UniClean-related evidence through the external
-  Linux proof logs when available;
-- a full from-scratch UniClean rerun requires the upstream UniClean repository
-  and its own environment.
+UniClean is included in the paper-level analysis as a semantic/contextual cleaner.
+It appears in the paper's cleaning-method table and downstream repair/process
+summaries.
 
-This design keeps the default reviewer path lightweight while preserving the
-paper-level evidence for UniClean.
+## Reviewer-facing artifact behavior
 
-## Relevant paper role
+UniClean is supported through paper-exact archived outputs and downstream
+analysis artifacts.
 
-UniClean belongs to the semantic/contextual cleaner group and is treated as a
-candidate cleaner, not as an oracle reference.
+The default reviewer workflows do not run UniClean from scratch:
 
-GroundTruth remains the oracle reference only and is excluded from ordinary
-method rankings.
-
-## Reviewer commands
-
-The default reviewer commands are:
-
-    python scripts/trace.py paper-replay
     python scripts/trace.py benchmark-smoke --clean
-    python scripts/trace.py trace-validation --paper-exact
-    python scripts/trace.py release-check --run-trace-validation
 
-None of these commands require the reviewer to install UniClean.
+The smoke workflow intentionally uses a lightweight method subset so that
+reviewers can quickly confirm the pipeline mechanics.
 
-## Full rerun
+## Full rerun behavior
 
-A full UniClean rerun is external-only. It requires the upstream UniClean
-repository and should be documented by setting an external path such as:
+A full from-scratch UniClean rerun requires the external UniClean repository and
+its own environment/dependencies. TRACE therefore marks UniClean as:
 
-    UNICLEAN_HOME=/path/to/UniClean
+    runner: external_archived
+    paper_replay_supported: true
+    benchmark_smoke_supported: false
+    full_rerun_supported: external_only
 
-The TRACE artifact does not make this external rerun part of benchmark-smoke.
+## Evidence retained for release assets
+
+The Linux full-audit proof package should retain UniClean run logs when present,
+for example:
+
+    uniclean_trace_all_clusterers_20260430_125709.log
+    uniclean_trace_hc_smoke_20260430_124228.log
+
+These logs are release-asset evidence and do not need to be committed as source
+files in the git repository.
+
+## Interpretation
+
+UniClean is part of the paper-exact benchmark evidence. It is not part of the
+default smoke rerun. This avoids requiring reviewers to install an additional
+external cleaner before they can validate the main artifact paths.
