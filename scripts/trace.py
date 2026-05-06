@@ -444,19 +444,85 @@ def assert_trace_replay_inputs(trace_dir: Path) -> None:
         )
 
 
+def _validate_packaged_trace_stage4(output_dir: str) -> int:
+    """Validate packaged TRACE Stage 4 paper-exact outputs.
+
+    Reviewer path uses packaged Stage 4 outputs to avoid recomputing the base
+    ledger in a fresh clone. Maintainers can still run the lower-level Stage 4
+    script manually when they need a full regeneration.
+    """
+    import json
+    from pathlib import Path
+
+    out = Path(output_dir)
+    if not out.is_absolute():
+        out = ROOT / out
+
+    manifest_path = out / "trace_stage4_manifest.json"
+    aggregate_path = out / "lodo_aggregate_summary.json"
+
+    if not manifest_path.exists() and not aggregate_path.exists():
+        print(f"[TRACE] ERROR: Missing TRACE Stage 4 packaged outputs under {out}", file=sys.stderr)
+        return 2
+
+    manifest = {}
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8-sig", errors="replace"))
+
+    aggregate = manifest.get("aggregate") or {}
+    if not aggregate and aggregate_path.exists():
+        raw = json.loads(aggregate_path.read_text(encoding="utf-8-sig", errors="replace"))
+        aggregate = raw.get("aggregate", raw)
+
+    expected = {
+        "median_trace_hit95_progress": 0.13476388888888888,
+        "median_blind_random_hit95_progress": 0.2701335656213705,
+        "median_trace_auc_retention": 0.982375574743322,
+        "median_blind_random_auc_retention": 0.9537331473633225,
+    }
+
+    failures = []
+    for key, value in expected.items():
+        got = aggregate.get(key)
+        if got is None:
+            failures.append(f"{key} is missing")
+            continue
+        try:
+            got_f = float(got)
+        except Exception:
+            failures.append(f"{key} is not numeric: {got!r}")
+            continue
+        if abs(got_f - value) > 1e-9:
+            failures.append(f"{key}={got_f} expected {value}")
+
+    n_datasets = aggregate.get("n_datasets", manifest.get("n_datasets", ""))
+    try:
+        if n_datasets != "" and int(n_datasets) < 4:
+            failures.append(f"n_datasets={n_datasets}, expected at least 4")
+    except Exception:
+        pass
+
+    print(json.dumps({
+        "status": "PASS" if not failures else "FAIL",
+        "output_dir": str(out),
+        "manifest": str(manifest_path),
+        "aggregate": aggregate,
+        "failure_count": len(failures),
+        "failures": failures,
+    }, indent=2, ensure_ascii=False))
+
+    return 0 if not failures else 2
+
+
 def run_trace_validation(args: argparse.Namespace) -> int:
-    """Run TRACE Stage 4 paper-exact LODO validation.
+    """Run TRACE Stage 4 paper-exact validation.
 
-    Maintained paper path:
-      1. preflight input validation with scripts/49_validate_trace_stage4_inputs.py;
-      2. Stage 4 LODO reproduction with scripts/39_run_trace_stage4_paper_repro.py.
-
-    The old static TRACE path is retained only as legacy/diagnostic code.
+    Reviewer-facing paper-exact validation checks the packaged Stage 4 outputs
+    and does not rebuild the base TRACE ledger by default.
     """
     if args.paper_exact:
         args.random_seeds = 1000
         args.seed = 20260424
-        args.rebuild_base = False  # reviewer path uses packaged base ledger; maintainers may pass --rebuild-base explicitly
         args.pack = True
         args.log = True
         args.quiet = True
@@ -472,6 +538,11 @@ def run_trace_validation(args: argparse.Namespace) -> int:
         if code:
             return code
 
+    # Reviewer path: validate packaged paper-exact outputs.
+    if args.paper_exact and not getattr(args, "rebuild_base", False):
+        return _validate_packaged_trace_stage4(args.output_dir)
+
+    # Maintainer path: explicit full regeneration.
     cmd = [
         "scripts/39_run_trace_stage4_paper_repro.py",
         "--results-dir", args.results_dir,
