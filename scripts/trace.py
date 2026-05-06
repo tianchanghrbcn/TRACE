@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Unified TRACE reviewer-facing command entry point.
 
 Reviewer-facing workflow names:
@@ -265,21 +265,27 @@ def add_trace_validation_parser(sub: argparse._SubParsersAction) -> None:
 def add_release_parser(sub: argparse._SubParsersAction) -> None:
     p = sub.add_parser("release-check", help="Run release package validation.")
     p.set_defaults(workflow="release-check")
-    p.add_argument("--skip-stage3-strict", action="store_true", help="Skip Stage 3 strict validation.")
+    p.add_argument("--skip-stage3-strict", action="store_true", help="Skip strict workflow validation.")
+    p.add_argument("--skip-strict-benchmark-proof", action="store_true", help="Skip strict workflow validation.")
+    p.add_argument("--skip-benchmark-smoke", action="store_true", help="Skip benchmark-smoke rerun.")
+    p.add_argument("--skip-preexp-validity", action="store_true", help="Skip pre-experiment/validity replay.")
+    p.add_argument("--run-trace-validation", action="store_true", help="Also run TRACE paper-exact validation.")
     p.add_argument(
         "--rebuild-paper-replay",
         dest="rebuild_paper_replay",
         action="store_true",
         help="Ask release validation to rebuild paper replay.",
     )
-
-    # Hidden legacy option. It maps to the old argument expected by
-    # scripts/98_validate_release_package.py but is not shown in help.
     p.add_argument(
         "--rebuild-mode-a",
         dest="rebuild_paper_replay",
         action="store_true",
         help=argparse.SUPPRESS,
+    )
+    p.add_argument(
+        "--allow-missing-full-audit-proof",
+        action="store_true",
+        help="Allow missing benchmark-full-audit proof as warning.",
     )
 
 
@@ -350,103 +356,27 @@ def normalize_paper_replay_defaults(args: argparse.Namespace) -> None:
 
 
 def run_paper_replay(args: argparse.Namespace) -> int:
-    normalize_paper_replay_defaults(args)
+    """Run reviewer-facing paper-level evidence replay.
 
-    if args.audit:
-        code = run_python(["scripts/46_audit_paper_replay_sources.py"])
-        if code:
-            return code
+    This intentionally delegates to scripts/62_validate_mode_a_paper_replay.py,
+    whose semantics have been changed from old "Mode A archive validation" to
+    paper-level evidence replay: tables, figures, traceability, and
+    pre-experiment/validity checks.
+    """
+    cmd = ["scripts/62_validate_mode_a_paper_replay.py"]
 
-    code = run_python(["scripts/47_select_paper_exact_sources.py"])
-    if code:
-        return code
+    # Reviewer-facing default: rebuild paper-level evidence.
+    # Validation-only behavior is available through --validate-paper-replay or --minimal.
+    rebuild = True
+    if getattr(args, "validate_paper_replay", False) or getattr(args, "minimal", False):
+        rebuild = False
+    if getattr(args, "all", False):
+        rebuild = True
 
-    build_cmd = ["scripts/48_build_mode_a_paper_exact_archive.py"]
-    if args.clean:
-        build_cmd.append("--clean")
+    if rebuild:
+        cmd.append("--rebuild")
 
-    code = run_python(build_cmd)
-    if code:
-        return code
-
-    code = run_python(["scripts/49_validate_mode_a_paper_exact.py"])
-    if code:
-        return code
-
-    if args.generated_summaries:
-        code = run_many(
-            [
-                ["scripts/50_audit_paper_table_scripts.py"],
-                ["scripts/51_build_paper_summary_workbooks.py"],
-                ["scripts/52_validate_paper_summary_workbooks.py"],
-            ]
-        )
-        if code:
-            return code
-
-    if args.paper_tables:
-        if not args.generated_summaries:
-            print("[TRACE] --paper-tables requires generated summaries; running summary replay first.")
-            code = run_many(
-                [
-                    ["scripts/50_audit_paper_table_scripts.py"],
-                    ["scripts/51_build_paper_summary_workbooks.py"],
-                    ["scripts/52_validate_paper_summary_workbooks.py"],
-                ]
-            )
-            if code:
-                return code
-
-        code = run_many(
-            [
-                [
-                    "scripts/53_run_paper_table_scripts.py",
-                    "--clean",
-                    "--timeout",
-                    "1200",
-                    "--include-analysis-scripts",
-                ],
-                ["scripts/54_validate_paper_table_outputs.py"],
-            ]
-        )
-        if code:
-            return code
-
-    if args.table_equivalence:
-        raw_code = run_python(["scripts/55_validate_paper_table_equivalence.py"])
-        if raw_code:
-            print("[TRACE] Raw table equivalence reported hard mismatches; running layered diagnostics.")
-        code = run_python(["scripts/56_classify_table_equivalence_layers.py"])
-        if code:
-            return code
-
-    if args.paper_figures:
-        code = run_many(
-            [
-                ["scripts/57_select_paper_figure_sources.py"],
-                ["scripts/58_run_paper_figure_scripts.py", "--clean", "--timeout", "1200"],
-                ["scripts/59_validate_paper_figure_outputs.py"],
-            ]
-        )
-        if code:
-            return code
-
-    if args.figure_traceability:
-        code = run_python(["scripts/60_validate_paper_figure_traceability.py"])
-        if code:
-            return code
-
-    if args.paper_output_traceability:
-        code = run_python(["scripts/61_build_paper_output_traceability_report.py"])
-        if code:
-            return code
-
-    if args.validate_paper_replay:
-        code = run_python(["scripts/62_validate_mode_a_paper_replay.py"])
-        if code:
-            return code
-
-    return 0
+    return run_python(cmd)
 
 
 def run_benchmark_smoke(args: argparse.Namespace) -> int:
@@ -566,13 +496,23 @@ def run_trace_validation(args: argparse.Namespace) -> int:
 def run_release_check(args: argparse.Namespace) -> int:
     cmd = ["scripts/98_validate_release_package.py"]
 
-    if args.skip_stage3_strict:
-        cmd.append("--skip-stage3-strict")
+    if args.skip_stage3_strict or args.skip_strict_benchmark_proof:
+        cmd.append("--skip-strict-benchmark-proof")
+
+    if args.skip_benchmark_smoke:
+        cmd.append("--skip-benchmark-smoke")
+
+    if args.skip_preexp_validity:
+        cmd.append("--skip-preexp-validity")
+
+    if args.run_trace_validation:
+        cmd.append("--run-trace-validation")
 
     if args.rebuild_paper_replay:
-        # scripts/98_validate_release_package.py still uses the legacy option
-        # internally. Keep this mapping hidden from reviewer-facing help.
-        cmd.append("--rebuild-mode-a")
+        cmd.append("--rebuild-paper-replay")
+
+    if args.allow_missing_full_audit_proof:
+        cmd.append("--allow-missing-full-audit-proof")
 
     return run_python(cmd)
 
