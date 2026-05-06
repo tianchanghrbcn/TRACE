@@ -1,5 +1,9 @@
-#!/usr/bin/env python3
-"""TRACE terminal home and reviewer menu."""
+﻿#!/usr/bin/env python3
+"""TRACE terminal home and reviewer menu.
+
+This menu uses reviewer-facing workflow names instead of Mode A/B/C.
+The old mode-a/mode-b/mode-c names are compatibility aliases only.
+"""
 
 from __future__ import annotations
 
@@ -15,49 +19,46 @@ ROOT = Path(__file__).resolve().parents[1]
 
 COMMANDS = {
     "1": {
-        "title": "Run release validation",
-        "cmd": ["scripts/98_validate_release_package.py"],
+        "title": "Release check: validate artifact package",
+        "cmd": ["scripts/trace.py", "release-check"],
     },
     "2": {
-        "title": "Mode A: validate paper replay",
-        "cmd": ["scripts/62_validate_mode_a_paper_replay.py"],
+        "title": "Paper replay: reproduce paper tables/figures/traceability",
+        "cmd": ["scripts/trace.py", "paper-replay"],
     },
     "3": {
-        "title": "Mode A: rebuild and validate paper replay",
-        "cmd": ["scripts/62_validate_mode_a_paper_replay.py", "--rebuild"],
+        "title": "Pre-experiment and validity sensitivity",
+        "cmd": ["scripts/trace.py", "preexp-validity"],
     },
     "4": {
-        "title": "Mode B: run smoke pipeline",
-        "cmd": ["scripts/90_run_smoke_from_scratch.py", "--config", "configs/mode_b_smoke.yaml", "--clean"],
+        "title": "TRACE validation: paper-exact 1000 blind-random replay",
+        "cmd": ["scripts/trace.py", "trace-validation", "--paper-exact"],
     },
     "5": {
-        "title": "Mode C: check strict execution proof",
-        "cmd": ["scripts/63_validate_stage3_strict.py", "--skip-mode-b-rerun"],
+        "title": "Benchmark smoke: quick from-scratch run",
+        "cmd": ["scripts/trace.py", "benchmark-smoke", "--clean"],
     },
     "6": {
-        "title": "Stage 3 strict validation",
-        "cmd": ["scripts/63_validate_stage3_strict.py"],
+        "title": "Benchmark full audit: validate strict proof/logs",
+        "cmd": ["scripts/trace.py", "benchmark-full-audit"],
     },
     "7": {
+        "title": "Benchmark full audit: Linux full from-scratch rerun",
+        "cmd": ["scripts/trace.py", "benchmark-full-audit", "--from-scratch"],
+    },
+    "8": {
         "title": "Build combined paper-output traceability report",
         "cmd": ["scripts/61_build_paper_output_traceability_report.py"],
     },
-    "8": {
+    "9": {
         "title": "Check data availability",
         "cmd": ["scripts/45_validate_data_availability.py"],
     },
-    "9": {
-        "title": "Build local release assets",
-        "cmd": ["scripts/44_build_release_assets.py", "--version", "v0.1.2-advisor", "--source-ref", "HEAD"],
-    },
     "10": {
         "title": "Show estimated long-run progress",
-        "cmd": ["scripts/95_monitor_repro_progress.py"],
+        "cmd": ["scripts/trace.py", "progress"],
     },
 }
-
-
-PLANNED = {}
 
 
 def git_value(args: list[str], default: str = "unknown") -> str:
@@ -96,7 +97,18 @@ def print_home() -> None:
 
     print("Empirical cleaning-clustering artifact")
     print()
-    print("You are in the TRACE advisor-review artifact.")
+    print("Reviewer-facing workflow names:")
+    print("  paper-replay           Reproduce paper tables, figures, and traceability.")
+    print("  benchmark-smoke        Quick from-scratch benchmark smoke run.")
+    print("  benchmark-full-audit   Long-running/full strict benchmark validation.")
+    print("  trace-validation       Reproduce TRACE budget-guidance validation.")
+    print("  preexp-validity        Replay alpha calibration and validity sensitivity.")
+    print("  release-check          Validate final artifact package.")
+    print()
+    print("Deprecated compatibility aliases:")
+    print("  mode-a -> paper-replay")
+    print("  mode-b -> benchmark-smoke")
+    print("  mode-c -> benchmark-full-audit")
     print()
     print(f"Project root : {ROOT}")
     print(f"Git branch   : {branch}")
@@ -109,25 +121,26 @@ def print_home() -> None:
         ("README.md", "README.md"),
         ("data policy", "docs/data_policy.md"),
         ("release validation script", "scripts/98_validate_release_package.py"),
-        ("Mode A paper replay validation", "scripts/62_validate_mode_a_paper_replay.py"),
-        ("Stage 3 strict validation", "scripts/63_validate_stage3_strict.py"),
+        ("paper replay validation", "scripts/62_validate_mode_a_paper_replay.py"),
+        ("strict benchmark validation", "scripts/63_validate_stage3_strict.py"),
+        ("preexp/validity validation", "scripts/81_replay_pre_experiment_validity.py"),
         ("paper-output traceability docs", "docs/paper_output_traceability.md"),
         ("hardware/runtime docs", "docs/hardware_runtime.md"),
+        ("paper replay config", "configs/paper_replay.yaml"),
+        ("benchmark smoke config", "configs/benchmark_smoke.yaml"),
+        ("benchmark full audit config", "configs/benchmark_full_audit.yaml"),
     ]:
         print(f"  {label:<40} {exists_label(path)}")
 
     print()
     print("Recommended first command:")
-    print("  python scripts/98_validate_release_package.py")
+    print("  python scripts/trace.py release-check")
     print()
-    print("Mode definitions:")
-    print("  Mode A: paper table/figure replay and traceability.")
-    print("  Mode B: lightweight smoke pipeline from scratch.")
-    print("  Mode C: strict cleaning-clustering proof checked from Linux validation evidence.")
-    print()
-    print("License:")
-    print("  TRACE wrapper/orchestration code: MIT License")
-    print("  Third-party method implementations: see THIRD_PARTY_NOTICES.md")
+    print("Useful reviewer commands:")
+    print("  python scripts/trace.py paper-replay")
+    print("  python scripts/trace.py preexp-validity")
+    print("  python scripts/trace.py trace-validation --paper-exact")
+    print("  python scripts/trace.py benchmark-smoke --clean")
     print()
     print("Note:")
     print("  This is a research artifact, not a web application.")
@@ -136,7 +149,7 @@ def print_home() -> None:
 
 def print_menu() -> None:
     print()
-    print("TRACE numbered menu")
+    print("TRACE reviewer menu")
     print("-------------------")
     print("   0. Show this home page")
     for key in sorted(COMMANDS, key=lambda value: int(value)):
@@ -162,10 +175,6 @@ def interactive_loop() -> None:
 
         if choice == "0":
             print_home()
-            continue
-
-        if choice in PLANNED:
-            print(f"[TRACE] {PLANNED[choice]} is planned for later work.")
             continue
 
         if choice not in COMMANDS:
@@ -194,4 +203,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
