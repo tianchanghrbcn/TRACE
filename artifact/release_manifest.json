@@ -1,7 +1,13 @@
 {
-  "generated_at_local": "2026-05-07T01:01:23",
-  "git_commit": "a7f858f6adfd1c04529ad7336e5728d6442d13cc",
+  "generated_at_local": "2026-05-07T02:08:34",
+  "git_commit": "367c8ca05ea7b8b064a910d3da55f79b0edaee8c",
   "purpose": "TRACE PVLDB EA&B reviewer release assets",
+  "fresh_clone_result": {
+    "status": "PASS",
+    "command": "python scripts/trace.py release-check --run-trace-validation",
+    "failure_count": 0,
+    "warning_count": 0
+  },
   "files": [
     {
       "name": "trace_benchmark_full_audit_proof_stage2_strict_20260421_192851.tgz",
