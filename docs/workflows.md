@@ -56,3 +56,11 @@ Full UniClean deployment is external and is not part of the default smoke run.
 | `benchmark-full-audit` | `benchmark-full-audit` |
 
 
+
+## Environment
+
+Activate the TRACE runner environment before using the reviewer workflows:
+
+    conda activate trace-runner
+
+The default reviewer workflows assume this environment unless otherwise stated.
